@@ -15,13 +15,13 @@
  * limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.your.theme.template"
+    package="com.pitchedapps.material.glass"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="19"
-        android:targetSdkVersion="20" />
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
 
     <uses-feature
         android:name="org.cyanogenmod.theme"
