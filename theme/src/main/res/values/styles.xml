@@ -31,9 +31,7 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
-        <item name="android:windowBackground">@color/backgroundt</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+
     </style>
 
 </resources>
