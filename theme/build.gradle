@@ -1,4 +1,16 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+    }
+}
 apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+}
 
 android {
     compileSdkVersion 21
@@ -15,6 +27,15 @@ android {
         release {
             //runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        glass_paid {
+            applicationId "com.pitchedapps.material.glass.paid"
+        }
+        glass_free {
+            applicationId "com.pitchedapps.material.glass.free"
         }
     }
 }

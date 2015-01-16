@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_t">#a0000000</color>
+    <color name="backgroundt">#a0000000</color>
+    <color name="background_t">#a0000000</color>
+    <color name="backgrounddt">#a0161616</color>
+    <color name="backgroundddt">#a0323232</color>
+    <color name="pblue_t">#cc748B96</color>
+    <color name="pbluee_t">#cc62757e</color>
+    <color name="dblue_t">#cc343d41</color>
+
+    <color name="background">#ff000000</color>
+    <color name="backgroundd">#ff161616</color>
+    <color name="backgrounddd">#ff323232</color>
+    <color name="text">#ffffffff</color>
+    <color name="textt">#ddffffff</color>
+    <color name="texttt">#bbffffff</color>
+    <color name="hint">#cc000000</color>
+    <color name="pblue">#ff748B96</color>
+    <color name="pbluel">#ffa7b8c0</color>
+    <color name="pbluee">#ff62757e</color>
+    <color name="dblue">#ff343d41</color>
+</resources>
