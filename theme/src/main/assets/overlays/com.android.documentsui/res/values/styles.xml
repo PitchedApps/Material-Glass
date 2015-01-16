@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialogWhenReallyLarge" parent="@android:style/Theme.DeviceDefault" />
+    <style name="DocumentsTheme" parent="@style/DialogWhenReallyLarge">
+        <item name="android:actionBarTheme">@android:style/ThemeOverlay.Material.Dark.ActionBar</item>
+        <item name="android:colorPrimary">@color/pblue</item>
+        <item name="android:colorPrimaryDark">@color/pbluee</item>
+        <item name="android:colorAccent">@color/text</item>
+        <item name="android:actionBarPopupTheme">@android:style/ThemeOverlay.Material</item>
+    </style>
+</resources>
