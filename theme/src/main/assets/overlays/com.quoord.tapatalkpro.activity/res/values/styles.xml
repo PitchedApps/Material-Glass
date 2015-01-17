@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme" />
+    <style name="Orange" parent="@android:style/Theme" />
+    <style name="custom_orange_style" parent="@android:style/Theme.Holo.Wallpaper" />
+    <style name="Dark_Custom_ActionButton.Overflow" parent="@android:style/Widget.Holo.ActionButton.Overflow" />
+    <style name="quoordActionBarStyle" parent="@android:style/Widget.Holo.ActionBar" />
+    <style name="blueActionBarStyle" parent="@android:style/Widget.Holo.ActionBar" />
+    <style name="DarkquoordColorActionBarStyle" parent="@android:style/Widget.Holo.ActionBar" />
+    <style name="quoordActionBarLightStyle" parent="@android:style/Widget.Holo.Light.ActionBar" />
+    <style name="quoordColorActionBarStyle" parent="@android:style/Widget.Holo.ActionBar" />   
+</resources>

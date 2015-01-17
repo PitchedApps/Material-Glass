@@ -9,20 +9,24 @@
         <item name="android:panelColorBackground">@color/backgroundt</item>
     </style>
     <style name="Theme.Black" parent="@android:style/Theme.Black">
-        <item name="android:colorBackground">@color/black_t</item>
-        <item name="android:windowBackground">@color/black_t</item>
+        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+        <item name="android:colorBackground">@color/backgroundt</item>
     </style>
     <style name="Theme.Holo" parent="@android:style/Theme.Holo">
         <item name="android:panelColorBackground">@color/backgroundt</item>
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+        <item name="android:colorBackground">@color/backgroundt</item>
         <item name="android:colorControlActivated">@color/text</item>
     </style>
     <style name="Theme.Holo.Wallpaper" parent="@android:style/Theme.Holo.Wallpaper">
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+        <item name="android:colorBackground">@color/backgroundt</item>
     </style>
     <style name="TextAppearance.Holo.DialogWindowTitle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
         <item name="android:textColor">@color/text</item>
@@ -31,6 +35,8 @@
         <item name="android:panelColorBackground">@color/backgroundt</item>
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+        <item name="android:colorBackground">@color/backgroundt</item>
         <item name="android:panelColorForeground">@color/text</item>
         <item name="android:navigationBarColor">@color/black_t</item>
     </style>
@@ -80,9 +86,10 @@
     <style name="Theme.Micro" parent="@android:style/Theme.Holo.NoActionBar">
         <item name="android:windowBackground">@color/black_t</item>
     </style>
-    <style name="Theme.DeviceDefault.Light" parent="@style/Theme.Material">
+    <style name="Theme.DeviceDefault.Light" parent="@android:style/Theme.Material">
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+        <item name="android:colorBackground">@color/backgroundt</item>
     </style>
 </resources>
