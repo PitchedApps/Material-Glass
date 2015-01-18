@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="drawable" name="com_facebook_picker_default_separator_color">#33464c59</item>
     <item type="drawable" name="list_normal">#80fffaec</item>
     <item type="drawable" name="list_active">#80fff0af</item>
     <item type="drawable" name="blue_light_highlight">#80cbeffe</item>
@@ -27,8 +26,7 @@
     <item type="drawable" name="color_style_deepblue_black_list_select_dark">#804d5b79</item>
     <item type="drawable" name="color_style_red_list_select">#80eccfcf</item>
     <item type="drawable" name="color_style_red_black_list_select_dark">#80764848</item>
-    <item type="drawable" name="new_diver_color_drawable">#0f000000</item>
     <item type="drawable" name="new_diver_color_dark_drawable">#80333435</item>
     <item type="drawable" name="first_color">#8033b5e5</item>
-    <item type="drawable" name="notificationsettingactivityactionbarback">#803a3a42</item>
+    <item type="drawable" name="notificationsettingactivityactionbarback">#80222222</item>
 </resources>
