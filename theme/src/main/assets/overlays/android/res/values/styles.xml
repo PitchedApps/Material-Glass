@@ -9,24 +9,20 @@
         <item name="android:panelColorBackground">@color/backgroundt</item>
     </style>
     <style name="Theme.Black" parent="@android:style/Theme.Black">
-        <item name="android:windowBackground">@color/backgroundt</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-        <item name="android:colorBackground">@color/backgroundt</item>
+        <item name="android:colorBackground">@color/black_t</item>
+        <item name="android:windowBackground">@color/black_t</item>
     </style>
     <style name="Theme.Holo" parent="@android:style/Theme.Holo">
         <item name="android:panelColorBackground">@color/backgroundt</item>
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-        <item name="android:colorBackground">@color/backgroundt</item>
         <item name="android:colorControlActivated">@color/text</item>
     </style>
     <style name="Theme.Holo.Wallpaper" parent="@android:style/Theme.Holo.Wallpaper">
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-        <item name="android:colorBackground">@color/backgroundt</item>
     </style>
     <style name="TextAppearance.Holo.DialogWindowTitle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
         <item name="android:textColor">@color/text</item>
@@ -35,16 +31,14 @@
         <item name="android:panelColorBackground">@color/backgroundt</item>
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-        <item name="android:colorBackground">@color/backgroundt</item>
         <item name="android:panelColorForeground">@color/text</item>
         <item name="android:navigationBarColor">@color/black_t</item>
     </style>
     <!--<style name="Theme.Material.Settings" parent="@android:style/Theme.Material.Settings">-->
-        <!--<item name="android:colorBackground">@color/black_t</item>-->
-        <!--<item name="android:windowBackground">@color/black_t</item>-->
-        <!--<item name="android:colorAccent">@color/text</item>-->
-        <!--<item name="android:panelColorBackground">@color/backgroundt</item>-->
+    <!--<item name="android:colorBackground">@color/black_t</item>-->
+    <!--<item name="android:windowBackground">@color/black_t</item>-->
+    <!--<item name="android:colorAccent">@color/text</item>-->
+    <!--<item name="android:panelColorBackground">@color/backgroundt</item>-->
     <!--</style>-->
     <style name="Widget.Material" parent="@android:style/Widget.Material">
         <item name="android:windowShowWallpaper">true</item>
@@ -53,43 +47,42 @@
         <item name="android:windowShowWallpaper">true</item>
     </style>
     <!--<style name="PreferencePanel.Dialog">-->
-        <!--<item name="android:background">@color/backgroundt</item>-->
+    <!--<item name="android:background">@color/backgroundt</item>-->
     <!--</style>-->
     <style name="Widget.Holo.PopupWindow.ActionMode" parent="@android:style/Widget.PopupWindow">
         <item name="android:popupBackground">@color/dblue_t</item>
     </style>
     <!--<style name="Theme.Material.BaseDialog" parent="@android:style/Theme.Material.BaseDialog">-->
-        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
+    <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
     <!--</style>-->
     <!--<style name="Theme.Material.Settings.BaseDialog" parent="@android:style/Theme.Material.Settings.BaseDialog">-->
-        <!--<item name="android:colorBackground">@color/backgroundt</item>-->
-        <!--<item name="android:colorPrimary">@color/backgroundd</item>-->
-        <!--<item name="android:colorPrimaryDark">@color/background</item>-->
-        <!--<item name="android:colorAccent">@color/text</item>-->
+    <!--<item name="android:colorBackground">@color/backgroundt</item>-->
+    <!--<item name="android:colorPrimary">@color/backgroundd</item>-->
+    <!--<item name="android:colorPrimaryDark">@color/background</item>-->
+    <!--<item name="android:colorAccent">@color/text</item>-->
     <!--</style>-->
     <!--<style name="Theme.Material.Settings.Dialog.BaseAlert" parent="@android:style/Theme.Material.Settings.Dialog.BaseAlert">-->
-        <!--<item name="android:colorBackground">@color/backgroundt</item>-->
-        <!--<item name="android:colorAccent">@color/text</item>-->
+    <!--<item name="android:colorBackground">@color/backgroundt</item>-->
+    <!--<item name="android:colorAccent">@color/text</item>-->
     <!--</style>-->
     <!--<style name="Theme.Material.Settings.Dialog.Presentation" parent="@android:style/Theme.Material.Settings.Dialog.Presentation">-->
-        <!--<item name="android:colorBackground">@color/backgroundt</item>-->
-        <!--<item name="android:colorAccent">@color/text</item>-->
+    <!--<item name="android:colorBackground">@color/backgroundt</item>-->
+    <!--<item name="android:colorAccent">@color/text</item>-->
     <!--</style>-->
     <!--<style name="Theme.Material.Settings.SearchBar" parent="@android:style/Theme.Material.Settings.SearchBar">-->
-        <!--<item name="android:colorBackground">@color/backgroundt</item>-->
-        <!--<item name="android:colorAccent">@color/text</item>-->
+    <!--<item name="android:colorBackground">@color/backgroundt</item>-->
+    <!--<item name="android:colorAccent">@color/text</item>-->
     <!--</style>-->
     <!--<style name="Theme.Material.Settings.CompactMenu" parent="@android:style/Theme.Material.Settings.CompactMenu">-->
-        <!--<item name="android:colorBackground">@color/backgroundt</item>-->
-        <!--<item name="android:colorAccent">@color/text</item>-->
+    <!--<item name="android:colorBackground">@color/backgroundt</item>-->
+    <!--<item name="android:colorAccent">@color/text</item>-->
     <!--</style>-->
     <style name="Theme.Micro" parent="@android:style/Theme.Holo.NoActionBar">
         <item name="android:windowBackground">@color/black_t</item>
     </style>
-    <style name="Theme.DeviceDefault.Light" parent="@android:style/Theme.Material">
+    <style name="Theme.DeviceDefault.Light" parent="@style/Theme.Material">
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-        <item name="android:colorBackground">@color/backgroundt</item>
     </style>
 </resources>
