@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="setup_wizard_navbar_bg_dark">#8021272b</color>
+    <color name="setup_wizard_navbar_bg_light">#80e4e7e9</color>
+    <color name="cardview_light_background">#80fafafa</color>
+    <color name="cardview_dark_background">#80202020</color>
+    <color name="title_color">@color/text</color>
+    <color name="lock_pattern_view_success_color">@color/pbluel</color>
+    <color name="unlock_pattern_view_success_color">@color/pbluel</color>
+    <color name="theme_primary">@color/backgroundd</color>
+    <color name="theme_primary_dark">@color/backgroundd</color>
+    <color name="theme_accent">@color/text</color>
+    <color name="dashboard_background_color">#30000000</color>
+    <color name="switchbar_background_color">@color/backgroundt</color>
+    <color name="ga_gesture_color">@color/dblue</color>
+
+    <color name="black_t">#a0000000</color>
+    <color name="backgroundt">#a0000000</color>
+    <color name="background_t">#a0000000</color>
+    <color name="backgrounddt">#a0161616</color>
+    <color name="backgroundddt">#a0323232</color>
+    <color name="pblue_t">#cc748B96</color>
+    <color name="pbluee_t">#cc62757e</color>
+    <color name="dblue_t">#cc343d41</color>
+
+    <color name="background">#ff000000</color>
+    <color name="backgroundd">#ff161616</color>
+    <color name="backgrounddd">#ff323232</color>
+    <color name="text">#ffffffff</color>
+    <color name="textt">#ddffffff</color>
+    <color name="texttt">#bbffffff</color>
+    <color name="hint">#cc000000</color>
+    <color name="pblue">#ff748B96</color>
+    <color name="pbluel">#ffa7b8c0</color>
+    <color name="pbluee">#ff62757e</color>
+    <color name="dblue">#ff343d41</color>
+</resources>
