@@ -7,10 +7,10 @@
     <color name="navigation_bar_background_opaque">@color/system_bar_background_opaque</color>
     <color name="navigation_bar_background_semi_transparent">@color/system_bar_background_semi_transparent</color>
     <color name="navigation_bar_background_transparent">@color/system_bar_background_transparent</color>
-    <color name="system_bar_background_opaque">#ff000000</color>
+    <color name="system_bar_background_opaque">@color/backgroundt</color>
     <color name="system_bar_background_semi_transparent">#66000000</color>
     <color name="system_bar_background_transparent">#00000000</color>
-    <!--<color name="notification_panel_solid_background">@color/backgroundt</color>-->
+    <color name="notification_panel_solid_background">@color/backgroundt</color>
     <color name="status_bar_recents_app_label_color">#ffffffff</color>
     <color name="notification_list_shadow_top">#80000000</color>
     <color name="batterymeter_frame_color">#66ffffff</color>
@@ -67,6 +67,10 @@
     <color name="fake_shadow_start_color">#44000000</color>
     <color name="fake_shadow_end_color">#03000000</color>
     <color name="equalizer_fill_color">#32ffffff</color>
+	<color name="gesture_overlay_background_fill_color">#80000000</color>
+    <color name="gesture_color">@color/pblue</color>
+    <color name="fab_color">#ffdc4c3c</color>
+    <color name="floating_action_button_icon_color">#ffffffff</color>
     <color name="transparent">@android:color/transparent</color>
     <!--<color name="keyguard_avatar_frame_color">#ffffffff</color>-->
     <!--<color name="keyguard_avatar_frame_shadow_color">#80000000</color>-->

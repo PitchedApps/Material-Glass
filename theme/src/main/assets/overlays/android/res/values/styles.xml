@@ -85,4 +85,8 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
     </style>
+
+    <style name="Widget">
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
 </resources>

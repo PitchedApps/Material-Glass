@@ -20,8 +20,8 @@ android {
         applicationId "com.pitchedapps.material.glass"
         minSdkVersion 21
         targetSdkVersion 21
-        versionCode 2
-        versionName "0.0.2"
+        versionCode 3
+        versionName "0.0.3"
     }
     buildTypes {
         release {
@@ -36,6 +36,9 @@ android {
         }
         glass_free {
             applicationId "com.pitchedapps.material.glass.free"
+        }
+        glass_xda {
+            applicationId "com.pitchedapps.material.glass.xda"
         }
     }
 }
