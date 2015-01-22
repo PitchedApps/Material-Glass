@@ -12,7 +12,9 @@
     <color name="highlighted_text_holo_light">#66607d8b</color>
     <color name="background_material_dark">@color/dblue_t</color>
     <color name="background_floating_material_dark">@color/backgrounddt</color>
-    <color name="primary_material_dark">@color/background</color>
+    <color name="primary_text_default_material_light">#ffaaaaaa</color>
+    <color name="secondary_text_default_material_light">#ffaaaaaa</color>
+    <color name="primary_material_dark">#ff000000</color>
     <color name="secondary_text_default_material_dark">@color/textt</color>
     <color name="material_deep_teal_200">@color/pblue</color>
     <color name="material_deep_teal_500">@color/pbluee</color>
@@ -37,4 +39,6 @@
     <color name="pblue_t">#cc748B96</color>
     <color name="pbluee_t">#cc62757e</color>
     <color name="dblue_t">#cc343d41</color>
+
+    <color name="neutral">#ff444444</color>
 </resources>
