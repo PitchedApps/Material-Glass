@@ -30,34 +30,38 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
     </style>
-    <!--<style name="PreferencePanelSinglePane" parent="@android:style/PreferencePanel">-->
-        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
-        <!--<item name="android:windowShowWallpaper">true</item>-->
-        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
-    <!--</style>-->
-    <!--<style name="PreferenceHeaderListSinglePane" parent="@android:style/PreferenceHeaderList">-->
-        <!--<item name="android:windowShowWallpaper">true</item>-->
-    <!--</style>-->
-    <!--<style name="PreferenceFragmentListSinglePane" parent="@android:style/PreferenceFragmentList">-->
-        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
-        <!--<item name="android:windowShowWallpaper">true</item>-->
-        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
-    <!--</style>-->
-    <!--<style name="SettingsPreferenceHeaderPanel" parent="@android:style/PreferenceHeaderPanel">-->
-        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
-        <!--<item name="android:windowShowWallpaper">true</item>-->
-        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
-    <!--</style>-->
-    <!--<style name="SettingsPreferenceHeaderList" parent="@android:style/PreferenceHeaderList">-->
-        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
-        <!--<item name="android:windowShowWallpaper">true</item>-->
-        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
-    <!--</style>-->
-    <!--<style name="PreferenceFragmentStyle" parent="@android:style/PreferenceFragment">-->
-        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
-        <!--<item name="android:windowShowWallpaper">true</item>-->
-        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
-    <!--</style>-->
+
+
+    <style name="PreferencePanelSinglePane" parent="@android:style/PreferencePanel">
+        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+    </style>
+    <style name="PreferenceHeaderListSinglePane" parent="@android:style/PreferenceHeaderList">
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+    <style name="PreferenceFragmentListSinglePane" parent="@android:style/PreferenceFragmentList">
+        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+    </style>
+    <style name="SettingsPreferenceHeaderPanel" parent="@android:style/PreferenceHeaderPanel">
+        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+    </style>
+    <style name="SettingsPreferenceHeaderList" parent="@android:style/PreferenceHeaderList">
+        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+    </style>
+    <style name="PreferenceFragmentStyle" parent="@android:style/PreferenceFragment">
+        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+    </style>
+
+
     <style name="SetupCardTitle">
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
@@ -81,5 +85,16 @@
     </style>
     <style name="Theme.AlertDialog" parent="@android:style/Theme.Material.Dialog.Alert">
         <item name="android:colorBackground">@color/dblue_t</item>
+    </style>
+
+<!-- temp workaround for dashboard-->
+    <style name="TextAppearance.CategoryTitle" parent="@android:style/TextAppearance.Material.Small">
+        <item name="android:textColor">@color/background</item>
+    </style>
+    <style name="TextAppearance.TileTitle" parent="@android:style/TextAppearance.Material.Medium">
+        <item name="android:textColor">@color/background</item>
+    </style>
+    <style name="TextAppearance.TileSubTitle" parent="@android:style/TextAppearance.Material.Small">
+        <item name="android:textColor">@color/background</item>
     </style>
 </resources>
