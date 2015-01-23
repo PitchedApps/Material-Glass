@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundt">#88000000</color>
+	<color name="text">#ffffffff</color>
+	<color name="textt">#ddffffff</color>
+	<color name="texttt">#bbffffff</color>
+</resources>

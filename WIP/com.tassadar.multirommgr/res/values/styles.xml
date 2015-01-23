@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+    <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="Item.Sticky" parent="@style/Item">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">#80111111</item>
+    </style>
+    <style name="Item.Top" parent="@style/Item">
+        <item name="android:background">#80111111</item>
+    </style>
+    <style name="Item">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">300.0dip</item>
+    </style>
+</resources>

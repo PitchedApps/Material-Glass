@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.K9.Startup" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowBackground">@color/backgroundt</item>
+    </style>
+    <style name="Theme.K9.Dark.Base" parent="@android:style/Theme.Holo.Wallpaper">
+        <item name="messageListUnreadItemBackgroundColor">#88333333</item>
+        <item name="messageListDividerColor">#11ffffff</item>
+        <item name="messageViewHeaderBackgroundColor">@color/backgroundt</item>
+        <item name="contactPictureFallbackDefaultBackgroundColor">#88444444</item>
+    </style>
+    <style name="Theme.K9.Dark" parent="@style/Theme.K9.Dark.Base">
+        <item name="composerBackgroundColor">@color/backgroundt</item>
+    </style>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="messageListUnreadItemBackgroundColor" format="reference|color" />
+    <attr name="messageListDividerColor" format="reference|color" />
+    <attr name="messageViewHeaderBackgroundColor" format="reference|color" />
+    <attr name="contactPictureFallbackDefaultBackgroundColor" format="reference|color" />
+    <attr name="composerBackgroundColor" format="reference|color" />
+</resources>

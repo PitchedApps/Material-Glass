@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vpi__background_holo_dark">#88000000</color>
+    <color name="backgroundt">#88000000</color>
+    <color name="backgrounddt">#88161616</color>
+    <color name="backgroundddt">#88323232</color>
+</resources>
