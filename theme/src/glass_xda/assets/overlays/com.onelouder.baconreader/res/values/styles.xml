@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Bacon" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@color/Black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+    <style name="Theme.Bacon.Black" parent="@style/Theme.Bacon.Black">
+        <item name="bg_main">#90000000</item>
+        <item name="setting_title_bg">#901b1b1b</item>
+        <item name="post_bg_top_line">#90636363</item>
+        <item name="post_bg_bottom_line">#90141414</item>
+        <item name="post_controls_bg">#90191f29</item>
+        <item name="detail_bg">#bb000000</item>
+        <item name="details_panel_bg">#bb0c0c0c</item>
+        <item name="detail_bg_highlight">#bb4a566b</item>
+        <item name="detail_buttons_bg">#90191f29</item>
+        <item name="detail_border">#11ffffff</item>
+        <item name="comment_divider">#11ffffff</item>
+        <item name="bar_comment_bg">#900c0c0c</item>
+        <item name="profile_divider">#11ffffff</item>
+        <item name="profile_header_bg">#900f0f0f</item>
+        <item name="post_header_bg">#90000000</item>
+        <item name="flair_bg">#90838383</item>
+        <item name="settings_background">#90000000</item>
+        <item name="settings_fragment_bg">#901f1f1f</item>
+    </style>
+</resources>

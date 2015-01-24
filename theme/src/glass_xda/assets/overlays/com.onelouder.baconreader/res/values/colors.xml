@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="vpi__background_holo_dark">#90000000</color>-->
+    <!--<color name="vpi__bright_foreground_holo_light">#ff000000</color>-->
+    <!--<color name="oms__v_dark_grey">#90999999</color>-->
+    <!--<color name="oms__vv_dark_grey">#90333333</color>-->
+    <color name="Gray">#90808080</color>
+    <color name="Black">#90000000</color>
+</resources>
