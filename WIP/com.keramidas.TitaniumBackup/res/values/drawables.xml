@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="drawable" name="solid_black">#90000000</item>
+    <item type="drawable" name="solid_black">#22000000</item>
+    <item type="drawable" name="color_dkgray">#22606460</item>
 </resources>

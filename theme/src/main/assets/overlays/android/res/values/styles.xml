@@ -46,9 +46,9 @@
     <style name="Widget.Material.ActionBar" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:windowShowWallpaper">true</item>
     </style>
-    <style name="PreferencePanel.Dialog" parent="@android:style/PreferencePanel.Dialog">
-    <item name="android:background">@color/backgroundt</item>
-    </style>
+    <!--<style name="PreferencePanel.Dialog" parent="@android:style/PreferencePanel.Dialog">-->
+    <!--<item name="android:background">@color/backgroundt</item>-->
+    <!--</style>-->
     <style name="Widget.Holo.PopupWindow.ActionMode" parent="@android:style/Widget.PopupWindow">
         <item name="android:popupBackground">@color/dblue_t</item>
     </style>
@@ -103,25 +103,12 @@
     <style name="Widget" parent="@android:style/Widget">
         <item name="android:windowShowWallpaper">true</item>
     </style>
-    <style name="AlertDialog.Micro" parent="@android:style/AlertDialog.Material" />
+    <!--<style name="AlertDialog.Micro" parent="@android:style/AlertDialog.Material" />-->
     <style name="Theme.DeviceDefault.Light.Dialog" parent="@android:style/Theme.DeviceDefault.Dialog" />
-    <style name="Theme.DeviceDefault.Light.Dialog.Presentation" parent="@android:style/Theme.DeviceDefault.Dialog.Presentation" />
-    <style name="Theme.DeviceDefault.Light.Dialog.Alert" parent="@android:style/Theme.DeviceDefault.Dialog.Alert" />
-    <style name="Theme.DeviceDefault.Light.SearchBar" parent="@android:style/Theme.DeviceDefault.SearchBar" />
+    <!--<style name="Theme.DeviceDefault.Light.Dialog.Presentation" parent="@android:style/Theme.DeviceDefault.Dialog.Presentation" />-->
+    <!--<style name="Theme.DeviceDefault.Light.Dialog.Alert" parent="@android:style/Theme.DeviceDefault.Dialog.Alert" />-->
+    <!--<style name="Theme.DeviceDefault.Light.SearchBar" parent="@android:style/Theme.DeviceDefault.SearchBar" />-->
     <style name="Widget.DeviceDefault.Light" parent="@android:style/Widget.Material" />
-    <style name="AlertDialog.DeviceDefault.Light" parent="@android:style/AlertDialog.Material" />
-    <style name="DialogWindowTitle.DeviceDefault.Light" parent="@android:style/DialogWindowTitle.Material" />
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!--<style name="AlertDialog.DeviceDefault.Light" parent="@android:style/AlertDialog.Material" />-->
+    <!--<style name="DialogWindowTitle.DeviceDefault.Light" parent="@android:style/DialogWindowTitle.Material" />-->
 </resources>

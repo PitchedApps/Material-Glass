@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_floating_material_dark">#90424242</color>
+    <color name="background_material_dark">#90303030</color>
+
+    <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
+    <color name="bright_foreground_inverse_material_dark">@android:color/black</color>
+    <color name="bright_foreground_material_dark">@android:color/white</color>
+    <color name="dim_foreground_material_dark">#ffbebebe</color>
+    <color name="highlighted_text_material_dark">#6680cbc4</color>
+    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
+    <color name="link_text_material_dark">@color/material_deep_teal_200</color>
+    <color name="material_deep_teal_200">#ff80cbc4</color>
+
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="primary_text_disabled_material_dark">#4dffffff</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+</resources>

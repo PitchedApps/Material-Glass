@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Base.InstrumentManager.Light.Dialog" parent="@android:style/Theme.Material.NoActionBar">
+    <style name="Theme.Base.InstrumentManager.Light.Dialog" parent="@android:style/Theme.NoTitleBar">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>
         <item name="android:windowIsTranslucent">true</item>
@@ -11,7 +11,7 @@
     <style name="PlayOnboardSimpleQuizCardListView">
         <item name="android:cacheColorHint">#00000000</item>
     </style>
-    <style name="PlayPopupSelector" parent="@android:style/Theme.Material.NoActionBar">
+    <style name="PlayPopupSelector" parent="@android:style/Theme.NoTitleBar">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>
@@ -26,7 +26,7 @@
     <style name="SettingsListHeader">
         <item name="android:background">@color/backgrounddt</item>
     </style>
-    <style name="SettingsTheme" parent="@android:style/Theme.Material" />
-    <style name="InstrumentTheme" parent="@android:style/Theme.Material.NoActionBar" />
-    <style name="FinskyLightDialogTheme" parent="@android:style/Theme.Material.NoActionBar" />
+    <style name="SettingsTheme" parent="@android:style/Theme" />
+    <style name="InstrumentTheme" parent="@android:style/Theme.NoTitleBar" />
+    <style name="FinskyLightDialogTheme" parent="@android:style/Theme.NoTitleBar" />
 </resources>

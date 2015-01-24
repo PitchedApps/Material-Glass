@@ -32,30 +32,30 @@
     </style>
 
 
-    <style name="PreferencePanelSinglePane" parent="@android:style/PreferencePanel">
+    <style name="PreferencePanelSinglePane">
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
     </style>
-    <style name="PreferenceHeaderListSinglePane" parent="@android:style/PreferenceHeaderList">
+    <style name="PreferenceHeaderListSinglePane">
         <item name="android:windowShowWallpaper">true</item>
     </style>
-    <style name="PreferenceFragmentListSinglePane" parent="@android:style/PreferenceFragmentList">
+    <style name="PreferenceFragmentListSinglePane">
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
     </style>
-    <style name="SettingsPreferenceHeaderPanel" parent="@android:style/PreferenceHeaderPanel">
+    <style name="SettingsPreferenceHeaderPanel">
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
     </style>
-    <style name="SettingsPreferenceHeaderList" parent="@android:style/PreferenceHeaderList">
+    <style name="SettingsPreferenceHeaderList">
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
     </style>
-    <style name="PreferenceFragmentStyle" parent="@android:style/PreferenceFragment">
+    <style name="PreferenceFragmentStyle">
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
