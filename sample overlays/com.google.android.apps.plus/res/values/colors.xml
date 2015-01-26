@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Google Plus' Colors-->
+
+<resources>
+	<color name="riviera_promo_header_square">#ff212021</color>
+    <color name="quantum_googred500">#ff212021</color>
+    <color name="quantum_googred700">#ff212021</color>
+	
+    <item type="color" name="action_bar_background">#ff212021</item>
+	
+	<color name="profile_edit_bg">#ff000000</color>
+	<color name="host_background">#ff000000</color>
+	<color name="card_separator">#ff000000</color>
+	<color name="separator">#ff000000</color>
+	<color name="large_image_embed_border">#ff000000</color>
+	<color name="compose_panel_bg">#ff000000</color>
+	<color name="notification_item_background_unread">#ff000000</color>
+	<color name="notification_item_background_read">#ff000000</color>
+	<color name="no_notifications_view_background">#ff000000</color>
+	<color name="write_place_review_bg">#ff000000</color>
+	
+
+</resources>

@@ -19,6 +19,8 @@
     <color name="current_user_border_color">@color/pblue_t</color>
     <color name="segmented_button_text_inactive">#77ffffff</color>
     <color name="gesture_color">@color/pblue</color>
+    <color name="fab_color">@color/dblue</color>
+    <color name="floating_action_button_icon_color">@color/text</color>
     
     <color name="black_t">#a0000000</color>
     <color name="background">#ff000000</color>

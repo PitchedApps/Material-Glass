@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- You are editing Contacts.apk's Styles-->
+
+<resources>
+    <style name="PeopleTheme" parent="@android:style/Theme.Material" >
+		<item name="android:statusBarColor">@color/primary_color_dark</item>
+        <item name="android:textColor">@color/text_color</item>
+	</style>
+</resources>
