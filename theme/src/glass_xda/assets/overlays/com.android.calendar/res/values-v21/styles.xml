@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.AdvancedSearch_SpinnerBase" parent="@android:style/Widget.Material.Spinner" />
+    <style name="TextAppearance.EditEvent_SpinnerBase" parent="@android:style/Widget.Material.Spinner" />
+    <style name="EditEvent_LayoutBase" parent="@android:style/Theme.Material" />
+    <style name="CalendarThemeBase" parent="@android:style/Theme.Material" />
+    <style name="CalendarThemeDialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="PreferencesThemeBase" parent="@android:style/Theme.Material" />
+
+    <style name="PreferencesTheme" parent="@style/PreferencesThemeBase">
+        <item name="android:statusBarColor">#00000000</item>
+    </style>
+    <style name="ActionBarBaseStyle" parent="@android:style/Widget.Material.ActionBar" />
+
+    <style name="CalendarTheme.BaseBaseTheme" parent="@android:style/Theme.Material" />
+
+    <style name="CalendarTheme.AllInOneActivity" parent="@style/CalendarTheme.BaseTheme">
+        <item name="android:statusBarColor">#00000000</item>
+    </style>
+    <style name="CalendarTheme.WithActionBar" parent="@style/CalendarTheme.BaseTheme">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:colorPrimary">@color/timely_background_color</item>
+        <item name="android:colorAccent">@color/accent_blue</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:colorEdgeEffect">@android:color/darker_gray</item>
+    </style>
+    <style name="DetailsThemeBase" parent="@android:style/Theme.Material.Dialog" />
+    <style name="DetailsThemeCommon" parent="@style/DetailsThemeBase">
+        <item name="android:statusBarColor">#00000000</item>
+    </style>
+
+    <style name="DayPopUpThemeBase" parent="@android:style/Theme.Material.Dialog" />
+    <style name="TextAppearance.Recurrence_SpinnerButton" parent="@android:style/Widget.Material.Spinner" />
+    <style name="DetailsBaseTheme" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:textColorHint">#80ffffff</item>
+    </style>
+</resources>

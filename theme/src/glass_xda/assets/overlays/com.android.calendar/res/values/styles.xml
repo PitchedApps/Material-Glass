@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Wallpaper" />
+    <style name="TextAppearance.EditEvent_Label" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="TextAppearance.EditEvent_Button" parent="@style/TextAppearance.EditEvent_Label">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="TextAppearance.Recurrence_Button" parent="@style/TextAppearance.EditEvent_Label">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="TextAppearance.EditEvent_Small" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="TextAppearance.EditEvent" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="TextAppearance.EditEventCalSpinner" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="TextAppearance.AdvancedSearch_SpinnerBase" parent="@android:style/Widget.Holo.Spinner" />
+    <style name="TextAppearance.AdvancedSearch_Spinner" parent="@style/TextAppearance.AdvancedSearch_SpinnerBase">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="TextAppearance.EditEvent_SpinnerBase" parent="@android:style/Widget.Holo.Spinner" />
+    <style name="TextAppearance.EditEvent_Spinner" parent="@style/TextAppearance.EditEvent_SpinnerBase">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="TextAppearance.EditEvent_homeTime" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="EditEvent_LayoutBase" parent="@android:style/Theme.Holo" />
+    <style name="CalendarThemeBase" parent="@android:style/Theme.Holo" />
+    <style name="CalendarThemeDialog" parent="@android:style/Theme.Holo.Dialog" />
+    <style name="PreferencesThemeBase" parent="@android:style/Theme.Holo" />
+    <style name="ActionBarBaseStyle" parent="@android:style/Widget.Holo.ActionBar.Solid" />
+    <style name="CalendarTheme.BaseBaseTheme" parent="@android:style/Theme.Holo" />
+    <style name="CalendarTheme.BaseTheme" parent="@style/CalendarTheme.BaseBaseTheme">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="DetailsThemeBase" parent="@android:style/Theme.Holo.Dialog" />
+    <style name="DayPopUpThemeBase" parent="@android:style/Theme.Holo.Dialog" />
+    <style name="NotificationSecondaryText" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">@color/textt</item>
+    </style>
+    <style name="TextAppearance.Recurrence_SpinnerButton" parent="@android:style/Widget.Holo.Spinner" />
+    <style name="Edit.Text.DoneButton" parent="@style/Edit.Text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="Edit.Text.CustomNotification.Title" parent="@style/Edit.Text.CustomNotification">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:paddingTop">20.0dip</item>
+        <item name="android:paddingBottom">20.0dip</item>
+    </style>
+    <style name="Edit.Text.CustomNotification.Blue" parent="@style/Edit.Text.CustomNotification">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="QuickCreateTextAppearance">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="TaskSuggestTextAppearance">
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="Edit.Text.CustomNotification" parent="@style/Edit.Text">
+        <item name="android:paddingLeft">24.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">24.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="Edit.Text" parent="@style/Edit">
+        <item name="android:textSize">@dimen/edit_text_size</item>
+        <item name="android:textColor">@color/edit_text_color</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+    <style name="Edit">
+        <item name="android:background">@null</item>
+    </style>
+
+
+
+</resources>
