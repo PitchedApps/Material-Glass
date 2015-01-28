@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:visible="true" android:exitFadeDuration="@integer/card_press_fade_duration"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@color/link_text" />
+    <item android:state_pressed="true" android:drawable="@color/link_text" />
+    <item android:drawable="@android:color/transparent" />
+</selector>

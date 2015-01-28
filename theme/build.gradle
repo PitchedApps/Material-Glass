@@ -20,8 +20,8 @@ android {
         applicationId "com.pitchedapps.material.glass"
         minSdkVersion 21
         targetSdkVersion 21
-        versionCode 14
-        versionName "0.1.4"
+        versionCode 20
+        versionName "0.2.0"
     }
     buildTypes {
         release {

@@ -13,6 +13,7 @@
     <color name="ic_orb_loading">#ff111111</color>
     <color name="ic_mic_color">#ff555555</color>
     <color name="recurrence_picker_background">@color/background</color>
+    <color name="search_plate_hint_text_color">#ffbdbdbd</color>
     <color name="recurrence_bubble_text_normal">@color/text</color>
     <color name="edit_event_text">@color/text</color>
     <color name="edit_event_text_hint">@color/textt</color>
