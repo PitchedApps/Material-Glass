@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_action_text">16.0sp</dimen>
+    <dimen name="quarter_unit">4.0dip</dimen>
+    <dimen name="first_run_padding">16.0dip</dimen>
+</resources>
