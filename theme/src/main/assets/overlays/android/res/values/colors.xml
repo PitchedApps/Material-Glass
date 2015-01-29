@@ -16,8 +16,11 @@
     <color name="secondary_text_default_material_light">#ffaaaaaa</color>
     <color name="primary_material_dark">#ff000000</color>
     <color name="secondary_text_default_material_dark">@color/textt</color>
-    <color name="material_deep_teal_200">@color/pblue</color>
-    <color name="material_deep_teal_500">@color/pbluee</color>
+    <color name="material_deep_teal_200">@color/text</color>
+    <color name="material_deep_teal_500">@color/text</color>
+    <color name="material_blue_grey_800">@color/backgroundd</color>
+    <color name="material_blue_grey_900">@color/backgroundd</color>
+    <color name="material_blue_grey_950">@color/backgroundd</color>
     <color name="config_defaultNotificationColor">#aa000000</color>
 
     <color name="black_t">#a0000000</color>

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="setup_wizard_navbar_style">
-        <item name="android:windowShowWallpaper">true</item>
-    </style>
-    <style name="setup_wizard_navbar_theme_dark">
-        <item name="android:windowShowWallpaper">true</item>
-    </style>
-    <style name="setup_wizard_navbar_theme_light">
-        <item name="android:windowShowWallpaper">true</item>
-    </style>
-    <style name="setup_wizard_navbar_button_style" parent="@android:style/Widget.Material.Button.Borderless">
-        <item name="android:windowShowWallpaper">true</item>
-    </style>
-    <style name="CardView">
-        <item name="android:windowShowWallpaper">true</item>
-    </style>
-    <style name="CardView.Light" parent="@style/CardView">
-        <item name="android:windowShowWallpaper">true</item>
-    </style>
-    <style name="CardView.Dark" parent="@style/CardView">
-        <item name="android:windowShowWallpaper">true</item>
-    </style>
+    <!--<style name="setup_wizard_navbar_style">-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+    <!--</style>-->
+    <!--<style name="setup_wizard_navbar_theme_dark">-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+    <!--</style>-->
+    <!--<style name="setup_wizard_navbar_theme_light">-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+    <!--</style>-->
+    <!--<style name="setup_wizard_navbar_button_style" parent="@android:style/Widget.Material.Button.Borderless">-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+    <!--</style>-->
+    <!--<style name="CardView">-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+    <!--</style>-->
+    <!--<style name="CardView.Light" parent="@style/CardView">-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+    <!--</style>-->
+    <!--<style name="CardView.Dark" parent="@style/CardView">-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+    <!--</style>-->
     <style name="TallTitleBarTheme" parent="@android:style/Theme.NoTitleBar">
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -32,47 +32,47 @@
     </style>
 
 
-    <style name="PreferencePanelSinglePane">
-        <item name="android:windowBackground">@color/backgroundt</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-    </style>
-    <style name="PreferenceHeaderListSinglePane">
-        <item name="android:windowShowWallpaper">true</item>
-    </style>
-    <style name="PreferenceFragmentListSinglePane">
-        <item name="android:windowBackground">@color/backgroundt</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-    </style>
-    <style name="SettingsPreferenceHeaderPanel">
-        <item name="android:windowBackground">@color/backgroundt</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-    </style>
-    <style name="SettingsPreferenceHeaderList">
-        <item name="android:windowBackground">@color/backgroundt</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-    </style>
-    <style name="PreferenceFragmentStyle">
-        <item name="android:windowBackground">@color/backgroundt</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-    </style>
+    <!--<style name="PreferencePanelSinglePane">-->
+        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
+    <!--</style>-->
+    <!--<style name="PreferenceHeaderListSinglePane">-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+    <!--</style>-->
+    <!--<style name="PreferenceFragmentListSinglePane">-->
+        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
+    <!--</style>-->
+    <!--<style name="SettingsPreferenceHeaderPanel">-->
+        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
+    <!--</style>-->
+    <!--<style name="SettingsPreferenceHeaderList">-->
+        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
+    <!--</style>-->
+    <!--<style name="PreferenceFragmentStyle">-->
+        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
+    <!--</style>-->
 
 
-    <style name="SetupCardTitle">
-        <item name="android:windowBackground">@color/backgroundt</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-    </style>
-    <style name="Transparent">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowShowWallpaper">true</item>
-    </style>
+    <!--<style name="SetupCardTitle">-->
+        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
+    <!--</style>-->
+    <!--<style name="Transparent">-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+    <!--</style>-->
     <style name="CryptKeeperBlankTheme" parent="@android:style/Theme.Material.NoActionBar">
         <item name="android:background">@color/backgroundt</item>
     </style>
@@ -96,5 +96,15 @@
     </style>
     <style name="TextAppearance.TileSubTitle" parent="@android:style/TextAppearance.Material.Small">
         <item name="android:textColor">@color/background</item>
+    </style>
+
+    <style name="wifi_item_label">
+        <item name="android:textColor">@color/theme_accent</item>
+    </style>
+    <style name="wifi_item_content">
+        <item name="android:textColor">@color/theme_accent</item>
+    </style>
+    <style name="wifi_item_edit_content">
+        <item name="android:textColor">@color/theme_accent</item>
     </style>
 </resources>

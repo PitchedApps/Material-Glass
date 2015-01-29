@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<familyset>
+    <family>
+        <nameset>
+            <name>sans-serif</name>
+            <name>arial</name>
+            <name>helvetica</name>
+            <name>tahoma</name>
+            <name>verdana</name>
+        </nameset>
+        <fileset>
+            <file>DroidSerif-Regular.ttf</file>
+            <file>DroidSerif-Bold.ttf</file>
+            <file>DroidSerif-Italic.ttf</file>
+            <file>DroidSerif-BoldItalic.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <nameset>
+            <name>sans-serif-condensed</name>
+        </nameset>
+        <fileset>
+            <file>DroidSerif-Regular.ttf</file>
+            <file>DroidSerif-Italic.ttf</file>
+            <file>DroidSerif-Bold.ttf</file>
+            <file>DroidSerif-BoldItalic.ttf</file>
+        </fileset>
+    </family>
+</familyset>
