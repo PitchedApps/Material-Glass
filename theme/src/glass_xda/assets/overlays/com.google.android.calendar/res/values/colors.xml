@@ -25,8 +25,8 @@
     <color name="calendar_selected_date_text">@color/text</color>
     <color name="done_text_color_dark_disabled">@color/texttt</color>
     <color name="done_disabled_dark">@color/texttt</color>
-    <color name="google_blue">@color/text</color>
-    <color name="google_blue_highlight">#ff666666</color>
+    <color name="google_blue">#ff666666</color>
+    <color name="google_blue_highlight">#ff777777</color>
     <color name="timely_background_color">@color/backgroundx</color>
     <color name="timely_background_shaded_color">@color/backgrounddd</color>
     <color name="actionbar_title_text_color">@color/text</color>
@@ -166,5 +166,6 @@
     <color name="backgroundd">#88161616</color>
     <color name="backgrounddd">#88323232</color>
     <color name="backgroundx">#ff000000</color>
-
+    <color name="white">#ff666666</color>
+    <color name="drawables">#ffffffff</color>
 </resources>
