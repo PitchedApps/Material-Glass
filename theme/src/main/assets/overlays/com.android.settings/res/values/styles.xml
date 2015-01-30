@@ -33,7 +33,7 @@
         <item name="android:numbersBackgroundColor">@color/backgroundt</item>
     </style>
     <style name="SetupWizardWifiTheme.Light" parent="@android:style/Theme.Material.NoActionBar">
-        <item name="android:windowBackground">?android:colorBackground</item>
+        <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowSoftInputMode">adjustPan</item>
         <item name="android:alertDialogTheme">@style/Theme.Light.WifiDialog</item>
         <item name="android:listPreferredItemPaddingStart">@dimen/setup_wizard_margin_sides</item>
@@ -41,7 +41,7 @@
         <!--<item name="android:preferencePanelStyle">@android:style/PreferencePanel.Dialog</item>-->
         <item name="android:colorAccent">@color/text</item>
         <item name="preferenceBackgroundColor">@color/backgroundt</item>
-        <item name="ic_menu_add">@drawable/ic_menu_add_light</item>
+        <item name="ic_menu_add">@drawable/ic_menu_add_dark</item>
         <item name="ic_menu_moreoverflow">@android:drawable/ic_menu_help</item>
         <item name="ic_wps">@drawable/ic_wps_light</item>
         <item name="setup_divider_color">@color/backgrounddt</item>
@@ -55,13 +55,14 @@
 
     <style name="Theme.Light.WifiDialog" parent="@android:style/Theme.Material.Dialog.Alert">
         <item name="android:windowSoftInputMode">adjustResize</item>
-        <item name="ic_menu_add">@drawable/ic_menu_add_light</item>
+        <item name="ic_menu_add">@drawable/ic_menu_add_dark</item>
         <item name="ic_menu_moreoverflow">@android:drawable/ic_menu_help</item>
         <item name="ic_wps">@drawable/ic_wps_light</item>
         <!--<item name="wifi_signal">@drawable/wifi_signal_light</item>-->
     </style>
     <style name="Theme.ActionBar" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:contentInsetStart">@dimen/actionbar_contentInsetStart</item>
+        <item name="android:background">@color/backgroundt</item>
     </style>
     <style name="Theme.DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge">
         <item name="android:colorBackground">@color/backgroundt</item>
