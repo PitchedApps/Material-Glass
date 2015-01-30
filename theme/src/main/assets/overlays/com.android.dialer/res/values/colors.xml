@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="dialer_theme_color">@color/backgroundd</color>
-    <color name="dialer_theme_color_dark">@color/backgroundd</color>
+    <color name="dialer_theme_color">@color/backgrounddx</color>
+    <color name="dialer_theme_color_dark">@color/backgrounddx</color>
     <color name="background_dialpad">@color/background</color>
     <color name="background_dialpad_pressed">@color/backgroundd</color>
     <color name="dialpad_primary_text_color">@color/text</color>
@@ -126,4 +126,6 @@
     <color name="background">#88000000</color>
     <color name="backgroundd">#88161616</color>
     <color name="backgrounddd">#88323232</color>
+    <color name="backgrounddx">#ff161616</color>
+
 </resources>
