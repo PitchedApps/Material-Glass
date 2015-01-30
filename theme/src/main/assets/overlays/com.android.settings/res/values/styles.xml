@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material.Wallpaper" />
+    <style name="Theme.Settings" parent="@style/Theme.SettingsBase">
+        <item name="android:colorBackground">@color/backgroundt</item>
+    </style>
+
     <style name="CardView">
         <item name="cardBackgroundColor">@color/backgrounddt</item>
         <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
