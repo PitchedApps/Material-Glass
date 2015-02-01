@@ -28,5 +28,6 @@
     <application android:hasCode="false"
         android:icon="@drawable/ic_launcher"
         android:label="@string/theme_name"/>
+    <!--android:hasCode="false"-->
 
 </manifest>

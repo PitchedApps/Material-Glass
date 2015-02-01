@@ -8,11 +8,12 @@
     <color name="qs_detail_progress_track">@color/pblue_t</color>
     <color name="keyguard_overflow_content_color">@color/backgrounddt</color>
     <color name="recents_task_bar_dark_text_color">@color/textt</color>
+    <color name="notification_header">#d0111111</color>
     <color name="notification_legacy_background_color">@color/backgrounddt</color>
-    <color name="notification_material_background_color">#cc111111</color>
-    <color name="notification_material_background_dimmed_color">#cc090909</color>
-    <color name="notification_material_background_low_priority_color">#cc111111</color>
-    <color name="notification_material_background_media_default_color">#cc111111</color>
+    <color name="notification_material_background_color">#a9111111</color>
+    <color name="notification_material_background_dimmed_color">#a9090909</color>
+    <color name="notification_material_background_low_priority_color">#a9111111</color>
+    <color name="notification_material_background_media_default_color">#a9111111</color>
     <color name="notification_ripple_untinted_color">#28A8A8A8</color>
     <color name="notification_ripple_color_low_priority">#30A8A8A8</color>
     <color name="qs_detail_transition">#66ffffff</color>
@@ -26,7 +27,7 @@
     <color name="background">#ff000000</color>
 	<color name="backgroundd">#ff161616</color>
 	<color name="backgrounddd">#ff323232</color>
-	<color name="backgroundt">#a0000000</color>	
+	<color name="backgroundt">#a0000000</color>
 	<color name="background_t">#a0000000</color>
 	<color name="backgrounddt">#a0161616</color>
 	<color name="backgroundddt">#a0323232</color>
