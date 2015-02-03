@@ -20,8 +20,6 @@ android {
         applicationId "com.pitchedapps.material.glass"
         minSdkVersion 21
         targetSdkVersion 21
-        versionCode 31
-        versionName "0.3.1"
     }
     buildTypes {
         release {
@@ -31,20 +29,23 @@ android {
     }
 
     productFlavors {
-        glass_paid {
-            applicationId "com.pitchedapps.material.glass.paid"
-        }
         glass_free {
+            buildConfigField "boolean", "DONATIONS_GOOGLE", "true"
             applicationId "com.pitchedapps.material.glass.free"
+            versionCode 50
+            versionName '0.5.0'
         }
         glass_xda {
+            buildConfigField "boolean", "DONATIONS_GOOGLE", "false"
             applicationId "com.pitchedapps.material.glass.xda"
+            versionCode 50
+            versionName '0.5.0'
         }
     }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:support-v4:21.1.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:21.0.3'
     compile project(':libraries:Donations')
 }

@@ -6,20 +6,20 @@
     <color name="holo_blue_bright">@color/backgrounddt</color>
     <color name="sliding_tab_text_color_active">@color/text</color>
     <color name="notification_icon_bg_color">@color/backgrounddt</color>
-    <color name="system_notification_accent_color">@color/text</color>
+    <color name="system_notification_accent_color">@color/textb</color>
     <color name="background_holo_dark">@color/backgroundt</color>
     <color name="highlighted_text_holo_dark">#66607d8b</color>
     <color name="highlighted_text_holo_light">#66607d8b</color>
     <color name="background_material_dark">#a0303030</color>
     <color name="background_material_light">#a0eeeeee</color>
-    <color name="background_floating_material_dark">#cc424242</color>
+    <color name="background_floating_material_dark">#cc111111</color>
     <color name="background_floating_material_light">#cceeeeee</color>
     <color name="primary_text_default_material_light">#ffaaaaaa</color>
     <color name="secondary_text_default_material_light">#ffaaaaaa</color>
     <color name="primary_material_dark">#ff000000</color>
     <color name="secondary_text_default_material_dark">@color/textt</color>
-    <color name="material_deep_teal_200">@color/text</color>
-    <color name="material_deep_teal_500">@color/text</color>
+    <color name="material_deep_teal_200">@color/textb</color>
+    <color name="material_deep_teal_500">@color/textb</color>
     <color name="material_blue_grey_800">@color/backgroundd</color>
     <color name="material_blue_grey_900">@color/backgroundd</color>
     <color name="material_blue_grey_950">@color/backgroundd</color>
@@ -36,7 +36,8 @@
     <color name="background_t">#a0000000</color>
     <color name="backgrounddt">#a0161616</color>
     <color name="backgroundddt">#a0323232</color>
-    <color name="text">#ffffffff</color>
+    <color name="text">#fff0f0f0</color>
+    <color name="textb">#ffeeeeee</color>
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>
     <color name="link">#ff29abe2</color>
@@ -48,5 +49,8 @@
     <color name="pbluee_t">#cc62757e</color>
     <color name="dblue_t">#cc343d41</color>
 
+    <!--<color name="white">#ffe0e0e0</color>-->
     <color name="neutral">#ff888888</color>
+
+    <color name="bright_foreground_inverse_holo_light">@color/neutral</color>
 </resources>

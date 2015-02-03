@@ -18,7 +18,7 @@
     <color name="drawer_item_textcolor">@color/text</color>
     <color name="drawer_item_default">@color/background</color>
     <color name="drawer_item_pressed">@color/backgroundd</color>
-    <color name="drawer_divider_line">@color/backgrounddt</color>
+    <color name="drawer_divider_line">@android:color/transparent</color>
     <color name="default_circle_indicator_fill_color">#ff00b1e5</color>
     <color name="default_circle_indicator_page_color">#ff808184</color>
     <color name="default_circle_indicator_stroke_color">#ffdddddd</color>

@@ -4,7 +4,7 @@
     <color name="notification_panel_solid_background">@color/backgroundt</color>
     <color name="system_primary_color">@color/background</color>
     <color name="system_secondary_color">@color/backgroundd</color>
-    <color name="system_accent_color">@color/text</color>
+    <color name="system_accent_color">@color/textb</color>
     <color name="qs_detail_progress_track">@color/pblue_t</color>
     <color name="keyguard_overflow_content_color">@color/backgrounddt</color>
     <color name="recents_task_bar_dark_text_color">@color/textt</color>
@@ -32,6 +32,7 @@
 	<color name="backgrounddt">#a0161616</color>
 	<color name="backgroundddt">#a0323232</color>
 	<color name="text">#ffffffff</color>
+	<color name="textb">#ffe8e8e8</color>
 	<color name="textt">#ddffffff</color>
 	<color name="texttt">#bbffffff</color>	
 	<color name="link">#ff29abe2</color>
