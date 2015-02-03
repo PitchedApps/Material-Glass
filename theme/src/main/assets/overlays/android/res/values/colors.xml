@@ -10,8 +10,10 @@
     <color name="background_holo_dark">@color/backgroundt</color>
     <color name="highlighted_text_holo_dark">#66607d8b</color>
     <color name="highlighted_text_holo_light">#66607d8b</color>
-    <color name="background_material_dark">@color/dblue_t</color>
-    <color name="background_floating_material_dark">@color/backgrounddt</color>
+    <color name="background_material_dark">#a0303030</color>
+    <color name="background_material_light">#a0eeeeee</color>
+    <color name="background_floating_material_dark">#cc424242</color>
+    <color name="background_floating_material_light">#cceeeeee</color>
     <color name="primary_text_default_material_light">#ffaaaaaa</color>
     <color name="secondary_text_default_material_light">#ffaaaaaa</color>
     <color name="primary_material_dark">#ff000000</color>
