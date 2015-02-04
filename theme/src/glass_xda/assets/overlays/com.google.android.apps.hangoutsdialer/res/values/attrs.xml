@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorControlHighlight" format="color" />
+    <attr name="isLightTheme" format="boolean" />
+    <attr name="selectableItemBackground" format="reference" />
+    <attr name="buttonBarStyle" format="reference" />
+    <attr name="buttonBarButtonStyle" format="reference" />
+</resources>

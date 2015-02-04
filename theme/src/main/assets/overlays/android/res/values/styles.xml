@@ -63,6 +63,18 @@
         <item name="android:navigationBarColor">@color/black_t</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+    <style name="Theme.Material.Wallpaper" parent="@android:style/Theme.Material.Wallpaper">
+        <item name="android:panelColorBackground">@color/backgroundt</item>
+        <item name="android:panelColorForeground">@color/text</item>
+        <item name="android:colorBackground">@color/backgroundt</item>
+        <item name="android:colorForeground">@color/text</item>
+        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+        <item name="android:colorControlActivated">@color/text</item>
+        <item name="android:navigationBarColor">@color/black_t</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
     <style name="Theme.Material.Light" parent="@android:style/Theme.Material.Light">
         <item name="android:panelColorBackground">@color/backgroundt_light</item>
         <item name="android:panelColorForeground">@android:color/black</item>
@@ -124,7 +136,11 @@
     <style name="Widget.DeviceDefault.AbsListView" parent="@android:style/Widget.Material" />
     <style name="Widget.DeviceDefault.Light" parent="@android:style/Widget.Material" />
     <style name="Widget.DeviceDefault.Light.ActionBar" parent="@android:style/Widget.Material.ActionBar" />
-    <style name="Widget.DeviceDefault.Light.ActionBar.Solid" parent="@android:style/Widget.Material.ActionBar.Solid" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.Solid" parent="@android:style/Widget.Material.ActionBar" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.Solid.Inverse" parent="@android:style/Widget.Material.ActionBar" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.TabBar.Inverse" parent="@android:style/Widget.Material.ActionBar.TabBar" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.TabView.Inverse" parent="@android:style/Widget.Material.ActionBar.TabView" />
+    <style name="Widget.DeviceDefault.Light.ActionBar.TabText.Inverse" parent="@android:style/Widget.Material.ActionBar.TabText" />
     <style name="Widget.DeviceDefault.Light.ActionBar.TabBar" parent="@android:style/Widget.Material.ActionBar.TabBar" />
     <style name="Widget.DeviceDefault.Light.ActionBar.TabText" parent="@android:style/Widget.Material.ActionBar.TabText" />
     <style name="Widget.DeviceDefault.Light.ActionBar.TabView" parent="@android:style/Widget.Material.ActionBar.TabView" />
@@ -221,15 +237,6 @@
     <style name="TextAppearance.Material.Notification.Emphasis" parent="@style/TextAppearance.Material.Notification">
         <item name="android:textColor">#66ffffff</item>
     </style>
-    <!--<style name="TextAppearance.Material.Notification.Info" parent="@style/TextAppearance.Material.Notification">-->
-        <!--<item name="android:textColor">@color/text</item>-->
-    <!--</style>-->
-    <!--<style name="TextAppearance.Material.Notification.Line2" parent="@style/TextAppearance.Material.Notification">-->
-        <!--<item name="android:textColor">@color/text</item>-->
-    <!--</style>-->
-    <!--<style name="TextAppearance.Material.Notification.Time" parent="@style/TextAppearance.Material.Notification">-->
-        <!--<item name="android:textColor">@color/text</item>-->
-    <!--</style>-->
     <style name="TextAppearance.Material.Notification.Title" parent="@style/TextAppearance.Material.Notification">
         <item name="android:textColor">@color/text</item>
     </style>

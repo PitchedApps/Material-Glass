@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="background_dark">@color/backgroundt</color>
+    <color name="background_light">#a0ffffff</color>
     <color name="holo_blue_light">@color/pblue</color>
     <color name="holo_blue_dark">@color/pbluee</color>
     <color name="holo_blue_bright">@color/backgrounddt</color>
-    <color name="sliding_tab_text_color_active">@color/text</color>
-    <color name="notification_icon_bg_color">@color/backgrounddt</color>
     <color name="system_notification_accent_color">@color/textb</color>
     <color name="background_holo_dark">@color/backgroundt</color>
     <color name="highlighted_text_holo_dark">#66607d8b</color>
@@ -14,17 +13,44 @@
     <color name="background_material_light">#a0eeeeee</color>
     <color name="background_floating_material_dark">#cc111111</color>
     <color name="background_floating_material_light">#cceeeeee</color>
-    <color name="primary_text_default_material_light">#ffaaaaaa</color>
-    <color name="secondary_text_default_material_light">#ffaaaaaa</color>
+    <color name="primary_text_default_material_light">#ff000000</color>
+    <color name="secondary_text_default_material_light">#b3000000</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="primary_material_dark">#ff000000</color>
-    <color name="secondary_text_default_material_dark">@color/textt</color>
-    <color name="material_deep_teal_200">@color/textb</color>
-    <color name="material_deep_teal_500">@color/textb</color>
+    <color name="material_deep_teal_200">@color/text</color>
+    <color name="material_deep_teal_500">@color/text</color>
     <color name="material_blue_grey_800">@color/backgroundd</color>
     <color name="material_blue_grey_900">@color/backgroundd</color>
     <color name="material_blue_grey_950">@color/backgroundd</color>
     <color name="config_defaultNotificationColor">#aa000000</color>
     <color name="battery_saver_mode_color">@color/dblue</color>
+
+    <color name="bright_foreground_dark">@color/text</color>
+    <color name="bright_foreground_light">@color/background</color>
+    <color name="bright_foreground_dark_disabled">#aaffffff</color>
+    <color name="bright_foreground_light_disabled">#aa000000</color>
+    <color name="search_url_text_selected">@color/text</color>
+    <color name="search_url_text_pressed">@color/text</color>
+    <color name="search_widget_corpus_item_background">@color/backgroundt</color>
+    <color name="sliding_tab_text_color_active">@color/text</color>
+    <color name="sliding_tab_text_color_shadow">@color/text</color>
+    <color name="micro_text_light">@color/textt</color>
+    <color name="notification_icon_bg_color">@color/backgrounddt</color>
+    <color name="bright_foreground_holo_dark">@color/text</color>
+    <color name="bright_foreground_holo_light">@color/background</color>
+    <color name="timepicker_default_ampm_selected_background_color_holo_light">@color/textt</color>
+    <color name="timepicker_default_ampm_selected_background_color_holo_dark">@color/backgrounddt</color>
+    <color name="datepicker_default_normal_text_color_holo_light">@color/backgroundd</color>
+    <color name="datepicker_default_normal_text_color_holo_dark">@color/text</color>
+    <color name="accent_material_light">@color/background</color>
+    <color name="accent_material_dark">@color/text</color>
+    <color name="button_material_dark">#80222222</color>
+    <color name="button_material_light">#80dddddd</color>
+    <color name="link_text_material_dark">@color/textt</color>
+    <color name="link_text_material_light">@color/backgroundd</color>
+    <color name="timepicker_default_ampm_selected_background_color_material">@color/backgroundd</color>
+    <color name="timepicker_default_selector_color_material">@color/backgroundd</color>
 
 
     <color name="black_t">#a0000000</color>

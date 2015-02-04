@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ConversationListFadeBase" parent="@android:style/Widget.Holo.ListView" />
+    <style name="MinTimeProgressDialogStyleBase" parent="@android:style/Theme.Holo.Dialog" />
+    <style name="MessageAttachmentButtonBaseStyle" parent="@style/MessageButtonStyleBase">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minHeight">0.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="MessageButtonStyleBase" parent="@android:style/Widget.Holo.Button.Borderless" />
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="WaitFragmentTitle" parent="@style/WaitFragmentTitleBase">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="WaitFragmentTitleBase" parent="@android:style/Widget.Holo.TextView" />
+    <style name="NotificationPrimaryText">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="UnifiedEmailTheme" parent="@android:style/Theme.Material">
+        <item name="android:listViewWhiteStyle">@android:style/Widget.Material.ListView</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:actionModeBackground">@color/action_mode_background</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBarOverflowButtonStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_wht_24dp_with_rtl</item>
+        <item name="android:actionBarWidgetTheme">@style/ActionBarWidgetTheme</item>
+    </style>
+    <style name="ActionBarOverflowButtonStyle" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_moreoverflow_mtrl_alpha</item>
+    </style>
+    <style name="ActionBarWidgetTheme" parent="@android:style/Theme.Material">
+        <item name="android:dropDownListViewStyle">@style/ActionBarDividerlessListViewStyle</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.Material.ListPopupWindow</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/ActionBarTextAppearanceLargeStyle</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/ActionBarTextAppearanceSmallStyle</item>
+    </style>
+    <style name="ActionBarDividerlessListViewStyle" parent="@android:style/Widget.Holo.ListView">
+        <item name="android:divider">@null</item>
+    </style>
+    <style name="ActionBarTextAppearanceLargeStyle" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="ActionBarTextAppearanceSmallStyle" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu.Small">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="AccountSetupDialogActivityTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar" />
+    <style name="LabelSyncTheme" parent="@android:style/Theme.Holo.Dialog" />
+    <style name="GmailTheme.NoActionBar" parent="@android:style/Theme.Holo.NoActionBar" />
+    <style name="GmailTheme.NoActionBar.Fullscreen" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+
+</resources>
