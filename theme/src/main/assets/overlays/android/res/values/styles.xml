@@ -11,13 +11,13 @@
         <item name="android:colorControlActivated">@color/text</item>
     </style>
     <style name="Theme.Black" parent="@android:style/Theme.Black">
-        <item name="android:panelColorBackground">@color/backgroundt</item>
+        <item name="android:panelColorBackground">@color/background</item>
         <item name="android:panelColorForeground">@color/text</item>
-        <item name="android:colorBackground">@color/backgroundt</item>
+        <item name="android:colorBackground">@color/background</item>
         <item name="android:colorForeground">@color/text</item>
-        <item name="android:windowBackground">@color/backgroundt</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:colorBackgroundCacheHint">@color/background</item>
         <item name="android:colorControlActivated">@color/text</item>
     </style>
     <style name="Theme.Holo" parent="@android:style/Theme.Holo">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+<!--
     <style name="AppBaseTheme" parent="@android:style/Theme" />
     <style name="AppTheme" parent="@style/AppBaseTheme" />
     <style name="OpenX_Video_Dialog">
@@ -169,218 +169,110 @@
     <style name="Text_Black3f" parent="@android:attr/textAppearance">
         <item name="android:textColor">@color/text_black_3f</item>
     </style>
-    <style name="Text_Gray_Light" parent="@android:attr/textAppearance">
-        <item name="android:textColor">@color/text_gray_88</item>
-    </style>
     <style name="Text_Gray_Dark" parent="@android:attr/textAppearance">
         <item name="android:textColor">@color/text_gray_88</item>
-    </style>
-    <style name="Text_Black_Gray88_Light" parent="@android:attr/textAppearance">
-        <item name="android:textColor">@color/text_black</item>
     </style>
     <style name="Text_Black_Gray88_Dark" parent="@android:attr/textAppearance">
         <item name="android:textColor">@color/text_gray_88</item>
     </style>
-    <style name="Text_Black_GrayA8_Light" parent="@android:attr/textAppearance">
-        <item name="android:textColor">@color/text_black</item>
-    </style>
     <style name="Text_Black_GrayA8_Dark" parent="@android:attr/textAppearance">
         <item name="android:textColor">@color/text_gray_a8</item>
-    </style>
-    <style name="Text_Black_GrayCC_Light" parent="@android:attr/textAppearance">
-        <item name="android:textColor">@color/text_black</item>
     </style>
     <style name="Text_Black_GrayCC_Dark" parent="@android:attr/textAppearance">
         <item name="android:textColor">@color/text_gray_cc</item>
     </style>
-    <style name="Text_Black_White_Light" parent="@android:attr/textAppearance">
-        <item name="android:textColor">@color/text_black</item>
-    </style>
     <style name="Text_Black_White_Dark" parent="@android:attr/textAppearance">
         <item name="android:textColor">@color/text_white</item>
-    </style>
-    <style name="Text_Blue_Light" parent="@android:attr/textAppearance">
-        <item name="android:textColor">@color/text_blue</item>
     </style>
     <style name="Text_Blue_Dark" parent="@android:attr/textAppearance">
         <item name="android:textColor">@color/text_blue</item>
     </style>
-    <style name="Text_White_Light" parent="@android:attr/textAppearance">
-        <item name="android:textColor">@color/text_white</item>
-    </style>
     <style name="Text_White_Dark" parent="@android:attr/textAppearance">
         <item name="android:textColor">@color/text_all_black</item>
-    </style>
-    <style name="Text_GrayA8_Gray88_Light" parent="@android:attr/textAppearance">
-        <item name="android:textColor">@color/text_gray_a8</item>
     </style>
     <style name="Text_GrayA8_Gray88_Dark" parent="@android:attr/textAppearance">
         <item name="android:textColor">@color/text_gray_88</item>
     </style>
-    <style name="Text_GrayA8_White_Light" parent="@android:attr/textAppearance">
-        <item name="android:textColor">@color/text_gray_a8</item>
-    </style>
     <style name="Text_GrayA8_White_Dark" parent="@android:attr/textAppearance">
         <item name="android:textColor">@color/text_white</item>
-    </style>
-    <style name="Text_Gray59_GrayA8_Light" parent="@android:attr/textAppearance">
-        <item name="android:textColor">@color/text_gray_59</item>
     </style>
     <style name="Text_Gray59_GrayA8_Dark" parent="@android:attr/textAppearance">
         <item name="android:textColor">@color/text_gray_a8</item>
     </style>
-    <style name="Text_12_Gray_Light" parent="@style/Text_Gray_Light">
-        <item name="android:textSize">@dimen/text_size_12</item>
-    </style>
     <style name="Text_12_Gray_Dark" parent="@style/Text_Gray_Dark">
-        <item name="android:textSize">@dimen/text_size_12</item>
-    </style>
-    <style name="Text_12_Black_Gray88_Light" parent="@style/Text_Black_Gray88_Light">
         <item name="android:textSize">@dimen/text_size_12</item>
     </style>
     <style name="Text_12_Black_Gray88_Dark" parent="@style/Text_Black_Gray88_Dark">
         <item name="android:textSize">@dimen/text_size_12</item>
     </style>
-    <style name="Text_12_Black_White_Light" parent="@style/Text_Black_White_Light">
-        <item name="android:textSize">@dimen/text_size_12</item>
-    </style>
     <style name="Text_12_Black_White_Dark" parent="@style/Text_Black_White_Dark">
-        <item name="android:textSize">@dimen/text_size_12</item>
-    </style>
-    <style name="Text_12_Blue_Light" parent="@style/Text_Blue_Light">
         <item name="android:textSize">@dimen/text_size_12</item>
     </style>
     <style name="Text_12_Blue_Dark" parent="@style/Text_Blue_Dark">
         <item name="android:textSize">@dimen/text_size_12</item>
     </style>
-    <style name="Text_12_White_Light" parent="@style/Text_White_Light">
-        <item name="android:textSize">@dimen/text_size_12</item>
-    </style>
     <style name="Text_12_White_Dark" parent="@style/Text_White_Dark">
         <item name="android:textSize">@dimen/text_size_12</item>
     </style>
-    <style name="Text_14_Gray_Light" parent="@style/Text_Gray_Light">
-        <item name="android:textSize">@dimen/text_size_14</item>
-    </style>
     <style name="Text_14_Gray_Dark" parent="@style/Text_Gray_Dark">
-        <item name="android:textSize">@dimen/text_size_14</item>
-    </style>
-    <style name="Text_14_Black_Gray88_Light" parent="@style/Text_Black_Gray88_Light">
         <item name="android:textSize">@dimen/text_size_14</item>
     </style>
     <style name="Text_14_Black_Gray88_Dark" parent="@style/Text_Black_Gray88_Dark">
         <item name="android:textSize">@dimen/text_size_14</item>
     </style>
-    <style name="Text_14_Black_White_Light" parent="@style/Text_Black_White_Light">
-        <item name="android:textSize">@dimen/text_size_14</item>
-    </style>
     <style name="Text_14_Black_White_Dark" parent="@style/Text_Black_White_Dark">
-        <item name="android:textSize">@dimen/text_size_14</item>
-    </style>
-    <style name="Text_14_Blue_Light" parent="@style/Text_Blue_Light">
         <item name="android:textSize">@dimen/text_size_14</item>
     </style>
     <style name="Text_14_Blue_Dark" parent="@style/Text_Blue_Dark">
         <item name="android:textSize">@dimen/text_size_14</item>
     </style>
-    <style name="Text_14_White_Light" parent="@style/Text_White_Light">
-        <item name="android:textSize">@dimen/text_size_14</item>
-    </style>
     <style name="Text_14_White_Dark" parent="@style/Text_White_Dark">
         <item name="android:textSize">@dimen/text_size_14</item>
     </style>
-    <style name="Text_16_Gray_Light" parent="@style/Text_Gray_Light">
-        <item name="android:textSize">@dimen/text_size_16</item>
-    </style>
     <style name="Text_16_Gray_Dark" parent="@style/Text_Gray_Dark">
-        <item name="android:textSize">@dimen/text_size_16</item>
-    </style>
-    <style name="Text_16_Black_Gray88_Light" parent="@style/Text_Black_Gray88_Light">
         <item name="android:textSize">@dimen/text_size_16</item>
     </style>
     <style name="Text_16_Black_Gray88_Dark" parent="@style/Text_Black_Gray88_Dark">
         <item name="android:textSize">@dimen/text_size_16</item>
     </style>
-    <style name="Text_16_Black_White_Light" parent="@style/Text_Black_White_Light">
-        <item name="android:textSize">@dimen/text_size_16</item>
-    </style>
     <style name="Text_16_Black_White_Dark" parent="@style/Text_Black_White_Dark">
-        <item name="android:textSize">@dimen/text_size_16</item>
-    </style>
-    <style name="Text_16_Blue_Light" parent="@style/Text_Blue_Light">
         <item name="android:textSize">@dimen/text_size_16</item>
     </style>
     <style name="Text_16_Blue_Dark" parent="@style/Text_Blue_Dark">
         <item name="android:textSize">@dimen/text_size_16</item>
     </style>
-    <style name="Text_16_White_Light" parent="@style/Text_White_Light">
-        <item name="android:textSize">@dimen/text_size_16</item>
-    </style>
     <style name="Text_16_White_Dark" parent="@style/Text_White_Dark">
         <item name="android:textSize">@dimen/text_size_16</item>
     </style>
-    <style name="Text_18_Gray_Light" parent="@style/Text_Gray_Light">
-        <item name="android:textSize">@dimen/text_size_18</item>
-    </style>
     <style name="Text_18_Gray_Dark" parent="@style/Text_Gray_Dark">
-        <item name="android:textSize">@dimen/text_size_18</item>
-    </style>
-    <style name="Text_18_Black_Gray88_Light" parent="@style/Text_Black_Gray88_Light">
         <item name="android:textSize">@dimen/text_size_18</item>
     </style>
     <style name="Text_18_Black_Gray88_Dark" parent="@style/Text_Black_Gray88_Dark">
         <item name="android:textSize">@dimen/text_size_18</item>
     </style>
-    <style name="Text_18_Black_White_Light" parent="@style/Text_Black_White_Light">
-        <item name="android:textSize">@dimen/text_size_18</item>
-    </style>
     <style name="Text_18_Black_White_Dark" parent="@style/Text_Black_White_Dark">
-        <item name="android:textSize">@dimen/text_size_18</item>
-    </style>
-    <style name="Text_18_Blue_Light" parent="@style/Text_Blue_Light">
         <item name="android:textSize">@dimen/text_size_18</item>
     </style>
     <style name="Text_18_Blue_Dark" parent="@style/Text_Blue_Dark">
         <item name="android:textSize">@dimen/text_size_18</item>
     </style>
-    <style name="Text_18_White_Light" parent="@style/Text_White_Light">
-        <item name="android:textSize">@dimen/text_size_18</item>
-    </style>
     <style name="Text_18_White_Dark" parent="@style/Text_White_Dark">
         <item name="android:textSize">@dimen/text_size_18</item>
     </style>
-    <style name="Text_20_Gray_Light" parent="@style/Text_Gray_Light">
-        <item name="android:textSize">@dimen/text_size_20</item>
-    </style>
     <style name="Text_20_Gray_Dark" parent="@style/Text_Gray_Dark">
-        <item name="android:textSize">@dimen/text_size_20</item>
-    </style>
-    <style name="Text_20_Black_Gray88_Light" parent="@style/Text_Black_Gray88_Light">
         <item name="android:textSize">@dimen/text_size_20</item>
     </style>
     <style name="Text_20_Black_Gray88_Dark" parent="@style/Text_Black_Gray88_Dark">
         <item name="android:textSize">@dimen/text_size_20</item>
     </style>
-    <style name="Text_20_Black_White_Light" parent="@style/Text_Black_White_Light">
-        <item name="android:textSize">@dimen/text_size_20</item>
-    </style>
     <style name="Text_20_Black_White_Dark" parent="@style/Text_Black_White_Dark">
-        <item name="android:textSize">@dimen/text_size_20</item>
-    </style>
-    <style name="Text_20_Blue_Light" parent="@style/Text_Blue_Light">
         <item name="android:textSize">@dimen/text_size_20</item>
     </style>
     <style name="Text_20_Blue_Dark" parent="@style/Text_Blue_Dark">
         <item name="android:textSize">@dimen/text_size_20</item>
     </style>
-    <style name="Text_20_White_Light" parent="@style/Text_White_Light">
-        <item name="android:textSize">@dimen/text_size_20</item>
-    </style>
     <style name="Text_20_White_Dark" parent="@style/Text_White_Dark">
         <item name="android:textSize">@dimen/text_size_20</item>
-    </style>
-    <style name="Text_12_GrayA8_Gray88_Light" parent="@style/Text_GrayA8_Gray88_Light">
-        <item name="android:textSize">@dimen/text_size_12</item>
     </style>
     <style name="Text_12_GrayA8_Gray88_Dark" parent="@style/Text_GrayA8_Gray88_Dark">
         <item name="android:textSize">@dimen/text_size_12</item>
@@ -578,62 +470,32 @@
     <style name="background_gray_f3">
         <item name="android:background">@color/backgroundt</item>
     </style>
-    <style name="background_gray_Light">
-        <item name="android:background">@color/background_gray_l</item>
-    </style>
     <style name="background_gray_Dark">
         <item name="android:background">@color/background_gray_d</item>
-    </style>
-    <style name="background_white_Light">
-        <item name="android:background">@color/background_white_l</item>
     </style>
     <style name="background_white_Dark">
         <item name="android:background">@color/background_white_d</item>
     </style>
-    <style name="background_white_black38_Light">
-        <item name="android:background">@color/background_white_l</item>
-    </style>
     <style name="background_white_black38_Dark">
         <item name="android:background">@color/background_black_38</item>
-    </style>
-    <style name="background_white_black21_Light">
-        <item name="android:background">@color/background_white_l</item>
     </style>
     <style name="background_white_black21_Dark">
         <item name="android:background">@color/background_black_21</item>
     </style>
-    <style name="background_translucent_Light">
-        <item name="android:background">@color/background_translucent_l</item>
-    </style>
     <style name="background_translucent_Dark">
         <item name="android:background">@color/background_translucent_d</item>
-    </style>
-    <style name="background_topicImg_Light">
-        <item name="android:background">@color/background_topic_img_l</item>
     </style>
     <style name="background_topicImg_Dark">
         <item name="android:background">@color/background_topic_img_d</item>
     </style>
-    <style name="background_blue_Light">
-        <item name="android:background">@color/background_blue_l</item>
-    </style>
     <style name="background_blue_Dark">
         <item name="android:background">@color/background_blue_d</item>
-    </style>
-    <style name="background_blue11A2C8_blue246278_Light">
-        <item name="android:background">@color/background_blue_11a2c8</item>
     </style>
     <style name="background_blue11A2C8_blue246278_Dark">
         <item name="android:background">@color/background_blue_246278</item>
     </style>
-    <style name="background_black383231_Light">
-        <item name="android:background">@color/background_black_383231</item>
-    </style>
     <style name="background_black383231_Dark">
         <item name="android:background">@color/background_gray_32</item>
-    </style>
-    <style name="background_grayE0_gray2C_Light">
-        <item name="android:background">@color/background_gray_e0</item>
     </style>
     <style name="background_grayE0_gray2C_Dark">
         <item name="android:background">@color/background_gray_2c</item>
@@ -641,14 +503,8 @@
     <style name="background_no_image_gray_Dark">
         <item name="android:background">@drawable/no_image_gray_bg_repeat_dark</item>
     </style>
-    <style name="divider1_Light">
-        <item name="android:background">@color/divider1_l</item>
-    </style>
     <style name="divider1_Dark">
         <item name="android:background">@color/divider1_d</item>
-    </style>
-    <style name="divider2_Light">
-        <item name="android:background">@color/divider2_l</item>
     </style>
     <style name="divider2_Dark">
         <item name="android:background">@color/divider2_d</item>
@@ -656,14 +512,8 @@
     <style name="divider3_Dark">
         <item name="android:background">@drawable/drawerlayout_breakline_dark</item>
     </style>
-    <style name="divider4_Light">
-        <item name="android:background">@color/divider4_l</item>
-    </style>
     <style name="divider4_Dark">
         <item name="android:background">@color/divider4_d</item>
-    </style>
-    <style name="divider5_Light">
-        <item name="android:background">@color/divider5_l</item>
     </style>
     <style name="divider5_Dark">
         <item name="android:background">@color/divider5_d</item>
@@ -691,5 +541,5 @@
     </style>
     <style name="backgroud_black3e">
         <item name="android:background">@color/background_black_3e</item>
-    </style>
+    </style>-->
 </resources>
