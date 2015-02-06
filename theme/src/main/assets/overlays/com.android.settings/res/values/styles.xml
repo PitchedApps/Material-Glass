@@ -64,7 +64,7 @@
     </style>
     <style name="Theme.ActionBar" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:contentInsetStart">@dimen/actionbar_contentInsetStart</item>
-        <item name="android:background">@color/backgroundt</item>
+        <item name="android:background">@color/actionbar</item>
     </style>
     <style name="Theme.DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge">
         <item name="android:colorBackground">@color/background</item>
