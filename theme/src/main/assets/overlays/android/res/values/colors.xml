@@ -28,8 +28,36 @@
 
     <color name="bright_foreground_dark">@color/text</color>
     <color name="bright_foreground_light">@color/background</color>
-    <color name="bright_foreground_dark_disabled">#aaffffff</color>
-    <color name="bright_foreground_light_disabled">#aa000000</color>
+    <color name="bright_foreground_dark_disabled">#ccffffff</color>
+    <color name="bright_foreground_light_disabled">#cc000000</color>
+    <color name="bright_foreground_dark_inverse">@color/bright_foreground_light</color>
+    <color name="bright_foreground_light_inverse">@color/bright_foreground_dark</color>
+    <color name="dim_foreground_dark">#ccffffff</color>
+    <color name="dim_foreground_dark_disabled">#aaffffff</color>
+    <color name="dim_foreground_dark_inverse">#cc000000</color>
+    <color name="dim_foreground_dark_inverse_disabled">#aa000000</color>
+    <color name="hint_foreground_dark">#ccffffff</color>
+    <color name="dim_foreground_light">#cc000000</color>
+    <color name="dim_foreground_light_disabled">#aa000000</color>
+    <color name="dim_foreground_light_inverse">#ccffffff</color>
+    <color name="dim_foreground_light_inverse_disabled">#aaffffff</color>
+
+    <color name="bright_foreground_holo_dark">@color/text</color>
+    <color name="bright_foreground_holo_light">@color/background</color>
+    <color name="bright_foreground_disabled_holo_dark">#ddffffff</color>
+    <color name="bright_foreground_disabled_holo_light">#dd000000</color>
+    <color name="bright_foreground_inverse_holo_dark">@color/bright_foreground_holo_light</color>
+    <color name="bright_foreground_inverse_holo_light">@color/bright_foreground_holo_dark</color>
+    <color name="dim_foreground_holo_dark">#ccffffff</color>
+    <color name="dim_foreground_disabled_holo_dark">#aaffffff</color>
+    <color name="dim_foreground_inverse_holo_dark">#cc000000</color>
+    <color name="dim_foreground_inverse_disabled_holo_dark">#aa000000</color>
+    <color name="hint_foreground_holo_dark">#ccffffff</color>
+    <color name="dim_foreground_holo_light">#cc000000</color>
+    <color name="dim_foreground_disabled_holo_light">#aa000000</color>
+    <color name="dim_foreground_inverse_holo_light">#ccffffff</color>
+    <color name="dim_foreground_inverse_disabled_holo_light">#aaffffff</color>
+
     <color name="search_url_text_selected">@color/text</color>
     <color name="search_url_text_pressed">@color/text</color>
     <color name="search_widget_corpus_item_background">@color/backgroundt</color>
@@ -37,8 +65,6 @@
     <color name="sliding_tab_text_color_shadow">@color/text</color>
     <color name="micro_text_light">@color/textt</color>
     <color name="notification_icon_bg_color">@color/backgrounddt</color>
-    <color name="bright_foreground_holo_dark">@color/text</color>
-    <color name="bright_foreground_holo_light">@color/background</color>
     <color name="timepicker_default_ampm_selected_background_color_holo_light">@color/textt</color>
     <color name="timepicker_default_ampm_selected_background_color_holo_dark">@color/backgrounddt</color>
     <color name="datepicker_default_normal_text_color_holo_light">@color/backgroundd</color>
@@ -52,6 +78,9 @@
     <color name="timepicker_default_ampm_selected_background_color_material">@color/backgroundd</color>
     <color name="timepicker_default_selector_color_material">@color/backgroundd</color>
 
+    <!--euphoria-->
+    <color name="notification_material_action_textcolor">#8affffff</color>
+    <color name="notification_template_material_big_picture_background_color">#cc000000</color>
 
     <color name="black_t">#a0000000</color>
     <color name="background">#ff000000</color>
@@ -78,5 +107,5 @@
     <!--<color name="white">#ffe0e0e0</color>-->
     <color name="neutral">#ff888888</color>
 
-    <color name="bright_foreground_inverse_holo_light">@color/neutral</color>
+    <!--<color name="bright_foreground_inverse_holo_light">@color/neutral</color>-->
 </resources>

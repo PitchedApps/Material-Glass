@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.SystemUI.Dialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="Theme.SystemUI.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:colorControlActivated">@color/system_accent_color</item>
+        <item name="android:colorPrimary">@color/system_primary_color</item>
+        <item name="android:colorBackground">@color/backgroundt</item>
+    </style>
 
     <style name="Widget.TransportControl.SeekBar" parent="@android:style/Widget.DeviceDefault.SeekBar">
         <item name="android:focusable">true</item>

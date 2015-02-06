@@ -240,4 +240,35 @@
     <style name="TextAppearance.Material.Notification.Title" parent="@style/TextAppearance.Material.Notification">
         <item name="android:textColor">@color/text</item>
     </style>
+
+    <!--Dialog-->
+    <!--<style name="Theme.Holo.Dialog" parent="@android:style/Theme.Material.Dialog">-->
+        <!--<item name="android:colorBackground">@color/backgroundt</item>-->
+        <!--<item name="android:textColor">@color/text</item>-->
+    <!--</style>-->
+    <!--<style name="Theme.Holo.Light.Dialog" parent="@android:style/Theme.Material.Light.Dialog">-->
+        <!--<item name="android:colorBackground">@color/textt</item>-->
+        <!--<item name="android:textColor">@color/background</item>-->
+    <!--</style>-->
+
+
+    <style name="Widget.Holo.Button" parent="@android:style/Widget.Material.Button">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="Widget.Holo.Light.Button" parent="@android:style/Widget.Material.Light.Button">
+        <item name="android:textColor">@color/background</item>
+    </style>
+    <style name="TextAppearance.Widget.Button" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="TextAppearance.Widget.EditText" parent="@android:style/TextAppearance.Widget">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHint">@color/textt</item>
+    </style>
+
+    <!--<style name="Widget.Holo.ListView" parent="@android:style/Widget.Material.ListView" />-->
+    <!--<style name="Widget.Holo.Light.ListView" parent="@android:style/Widget.Material.Light.ListView" />-->
+    <!--<style name="Widget.Holo.ListView.DropDown" parent="@android:style/Widget.Material.ListView.DropDown" />-->
+    <!--<style name="Widget.Holo.Light.ListView.DropDown" parent="@android:style/Widget.Material.Light.ListView.DropDown" />-->
+
 </resources>
