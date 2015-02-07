@@ -25,14 +25,14 @@
     <item component="ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGmail}" drawable="gmail"/>
     <item component="ComponentInfo{com.jjdoherty98.Google_Developer_Console/com.jjdoherty98.Google_Developer_Console.main}" drawable="googledeveloperconsole"/>
     <item component="ComponentInfo{com.google.android.gms/com.google.android.gms.app.settings.GoogleSettingsActivity}" drawable="googlesettings"/>
-    <item component="ComponentInfo{com.google.android.apps.plus/com.google.android.apps.plus.phone.HomeActivity}" drawable="google"/>
+    <item component="ComponentInfo{com.google.android.apps.plus/com.google.android.apps.plus.phone.HomeActivity}" drawable="googleplus"/>
     <item component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyActivity}" drawable="greenify"/>
     <item component="ComponentInfo{com.google.android.talk/com.google.android.talk.SigningInActivity}" drawable="hangouts"/>
     <item component="ComponentInfo{com.google.android.apps.hangoutsdialer/com.google.android.apps.hangoutsdialer.app.LaunchActivity}" drawable="hangoutsdialer"/>
     <item component="ComponentInfo{com.fsck.k9/com.fsck.k9.activity.Accounts}" drawable="k9mail"/>
     <item component="ComponentInfo{com.android.lmt/com.android.lmt.LMT}" drawable="lmt"/>
     <item component="ComponentInfo{com.android.mms/com.android.mms.ui.ConversationList}" drawable="messaging"/>
-    <item component="ComponentInfo{com.facebook.orca/com.facebook.orca.auth.StartScreenActivity}" drawable="messenger"/>
+    <item component="ComponentInfo{com.facebook.orca/com.facebook.orca.auth.StartScreenActivity}" drawable="messengerfb"/>
     <item component="ComponentInfo{com.cyanogenmod.eleven/com.cyanogenmod.eleven.ui.activities.HomeActivity}" drawable="music"/>
     <item component="ComponentInfo{com.teslacoilsw.launcher/com.android.launcher2.Launcher}" drawable="novalauncher"/>
     <item component="ComponentInfo{com.android.dialer/com.android.dialer.DialtactsActivity}" drawable="phone"/>
@@ -57,4 +57,31 @@
     <item component="ComponentInfo{com.google.android.apps.translate/com.google.android.apps.translate.TranslateActivity}" drawable="translate"/>
     <item component="ComponentInfo{com.bigeyes0x0.trickstermod/com.bigeyes0x0.trickstermod.main.Activity-Nate}" drawable="trickstermod"/>
     <item component="ComponentInfo{com.android.voicedialer/com.android.voicedialer.VoiceDialerActivity}" drawable="voicedialer"/>
+
+    <item component="ComponentInfo{com.adobe.reader/com.adobe.reader.AdobeReader}" drawable="adobereader"/>
+    <item component="ComponentInfo{com.sand.airdroid/com.sand.airdroid.ui.splash.SplashActivity_}" drawable="airdroid"/>
+    <item component="ComponentInfo{com.nolanlawson.logcat/com.nolanlawson.logcat.LogcatActivity}" drawable="catlog"/>
+    <item component="ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}" drawable="chrome"/>
+    <item component="ComponentInfo{com.google.android.apps.chromecast.app/com.google.android.apps.chromecast.app.DiscoveryActivity}" drawable="chromecast"/>
+    <item component="ComponentInfo{com.google.earth/com.google.earth.EarthActivity}" drawable="earth"/>
+    <item component="ComponentInfo{com.facebook.katana/com.facebook.katana.LoginActivity}" drawable="facebook"/>
+    <item component="ComponentInfo{com.google.android.apps.fitness/com.google.android.apps.fitness.welcome.WelcomeActivity}" drawable="fit"/>
+    <item component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.SearchActivity}" drawable="google"/>
+    <item component="ComponentInfo{com.google.android.inputmethod.latin/com.android.inputmethod.latin.setup.SetupActivity}" drawable="googlekeyboard"/>
+    <item component="ComponentInfo{com.google.android.launcher/com.google.android.launcher.StubApp}" drawable="googlenowlauncher"/>
+    <item component="ComponentInfo{com.google.android.apps.inbox/com.google.android.apps.bigtop.activities.InitActivity}" drawable="inbox"/>
+    <item component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity}" drawable="instagram"/>
+    <item component="ComponentInfo{com.google.android.keep/com.google.android.keep.activities.BrowseActivity}" drawable="keep"/>
+    <item component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.MapsActivity}" drawable="maps"/>
+    <item component="ComponentInfo{com.google.android.apps.messaging/com.google.android.apps.messaging.ui.ConversationListActivity}" drawable="messenger"/>
+    <item component="ComponentInfo{com.google.android.apps.genie.geniewidget/com.google.android.apps.genie.geniewidget.activities.NewsActivity}" drawable="newsweather"/>
+    <item component="ComponentInfo{com.google.android.videos/com.google.android.youtube.videos.EntryPoint}" drawable="playmovies"/>
+    <item component="ComponentInfo{com.google.android.music/com.android.music.activitymanagement.TopLevelActivity}" drawable="playmusic"/>
+    <item component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.apps.docs.app.NewMainProxyActivity}" drawable="sheets"/>
+    <item component="ComponentInfo{com.skype.raider/com.skype.raider.Main}" drawable="skype"/>
+    <item component="ComponentInfo{com.twitter.android/com.twitter.android.StartActivity}" drawable="twitter"/>
+    <item component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.VoiceSearchActivity}" drawable="voicesearch"/>
+    <item component="ComponentInfo{com.whatsapp/com.whatsapp.Main}" drawable="whatsapp"/>
+    <item component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube"/>
+
 </resources>

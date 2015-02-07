@@ -115,14 +115,7 @@
     <color name="material_blue_grey_800">@color/background</color>
     <color name="material_blue_grey_900">@color/background</color>
     <color name="material_blue_grey_950">@color/background</color>
-    <color name="accent">@color/backgrounddx</color>
-    <color name="accent_dark">@color/backgrounddx</color>
-    <color name="text_shadow_color_light">#33000000</color>
-    <color name="text_default_color_dark">#ccffffff</color>
-    <color name="text_secondary_default_color_dark">#9affffff</color>
-    <color name="text_tertiary_default_color_dark">#66ffffff</color>
-    <color name="text_default_color_light">@color/textt</color>
-    <color name="text_secondary_default_color_light">#9affffff</color>
+
     -->
 </resources>
 

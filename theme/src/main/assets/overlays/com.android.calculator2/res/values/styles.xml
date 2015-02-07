@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="CalculatorTheme" parent="@android:style/Theme.Material">
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:colorPrimary">@android:color/black</item>
-        <item name="android:statusBarColor">@color/display_background_color</item>
-        <item name="android:navigationBarColor">@color/display_background_color</item>
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@android:style/Widget.Material.ActionBar.TabView" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@android:style/Widget.Material.PopupMenu" />
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
     </style>
-    <style name="DisplayEditTextStyle" parent="@android:style/Widget.Material.EditText">
-        <item name="android:gravity">end|bottom|center</item>
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:cursorVisible">false</item>
-        <item name="android:includeFontPadding">false</item>
-        <item name="android:fontFamily">sans-serif-light</item>
-    </style>
-    <style name="PadButtonStyle" parent="@android:style/Widget.Material.Button.Borderless">
-        <item name="android:textColor">@color/pad_button_text_color</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/pad_button_background</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:minWidth">0.0dip</item>
-        <item name="android:minHeight">0.0dip</item>
-        <item name="android:includeFontPadding">false</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:fontFamily">sans-serif-light</item>
+    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
     </style>
 </resources>

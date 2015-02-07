@@ -4,6 +4,19 @@
         <item name="android:background">@color/backgroundt</item>
     </style>
 
+
+    <style name="Theme.Material.Black" parent="@android:style/Theme.Material">
+        <item name="android:panelColorBackground">@color/backgroundx</item>
+        <item name="android:panelColorForeground">@color/text</item>
+        <item name="android:colorBackground">@color/backgroundx</item>
+        <item name="android:colorForeground">@color/text</item>
+        <item name="android:windowBackground">@color/backgroundx</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundx</item>
+        <item name="android:colorControlActivated">@color/text</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@color/backgroundx</item>
+    </style>
     <!--
 
     <item name="android:statusBarColor">@android:color/transparent</item>

@@ -10,7 +10,7 @@
         <item name="android:actionMenuTextColor">#ffffff</item>
     </style>
 
-    <style name="ThemeChooserActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+    <style name="ThemeChooserActionBar" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:displayOptions">useLogo|showHome|showTitle</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="android:titleTextStyle">@style/ThemeChooserActionBarTitleText</item>
