@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/lbl_google_username"
+        android:textColor="@color/settings_label"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txtGoogleUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/lbl_no_grid_columns"
+        android:textColor="@color/settings_label"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txtNoOfColumns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/lbl_gallery_name"
+        android:textColor="@color/settings_label"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txtGalleryName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded_corner"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/lbl_btn_save"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>
