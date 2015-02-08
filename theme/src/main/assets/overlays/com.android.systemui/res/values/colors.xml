@@ -3,7 +3,7 @@
     <color name="system_bar_background_opaque">@color/backgroundt</color>
     <color name="notification_panel_solid_background">@color/backgroundt</color>
     <color name="system_primary_color">@color/background</color>
-    <color name="system_secondary_color">@color/backgroundd</color>
+    <color name="system_secondary_color">@color/background</color>
     <color name="system_accent_color">@color/textb</color>
     <color name="qs_detail_progress_track">@color/pblue_t</color>
     <color name="keyguard_overflow_content_color">@color/backgrounddt</color>
@@ -17,7 +17,7 @@
     <color name="notification_ripple_untinted_color">#28A8A8A8</color>
     <color name="notification_ripple_color_low_priority">#30A8A8A8</color>
     <color name="qs_detail_transition">#66ffffff</color>
-    <color name="current_user_border_color">@color/pblue_t</color>
+    <color name="current_user_border_color">@color/textt</color>
     <color name="segmented_button_text_inactive">#77ffffff</color>
     <color name="gesture_color">@color/pblue</color>
     <color name="fab_color">@color/dblue</color>

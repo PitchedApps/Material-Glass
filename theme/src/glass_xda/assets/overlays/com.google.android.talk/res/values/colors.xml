@@ -7,7 +7,7 @@
     <color name="audience_remove_background">@color/backgroundd</color>
     <color name="audience_remove_x_background">@color/backgrounddd</color>
     <color name="audience_view_text_hint_color">@color/textt</color>
-    <color name="last_seen">#ccffffff</color>
+    <color name="last_seen">#ccaaaaaa</color>
     <color name="solid_black">@*common:color/neutral</color>
     <color name="photo_status_bar_black">#d9000000</color>
     <color name="photo_crop_dim_color">#cc000000</color>
@@ -55,11 +55,11 @@
     <color name="quantum_brown">@color/quantum_brown500</color>
     <color name="quantum_grey">@color/quantum_grey500</color>
     <!--###-->
-    <color name="quantum_black_100">@color/text</color>
-    <color name="quantum_black_text">#ddffffff</color>
-    <color name="quantum_black_secondary_text">#89ffffff</color>
-    <color name="quantum_black_hint_text">#42ffffff</color>
-    <color name="quantum_black_divider">#1fffffff</color>
+    <!--<color name="quantum_black_100">@color/text</color>-->
+    <!--<color name="quantum_black_text">#ddffffff</color>-->
+    <!--<color name="quantum_black_secondary_text">#89ffffff</color>-->
+    <!--<color name="quantum_black_hint_text">#42ffffff</color>-->
+    <!--<color name="quantum_black_divider">#1fffffff</color>-->
     <!--### ???-->
     <color name="quantum_white_100">@color/background</color>
     <color name="quantum_white_text">#ffffffff</color>
@@ -498,7 +498,7 @@
     <color name="realtimechat_message_timestamp_otr">#66ffffff</color>
     <color name="realtimechat_message_textlink">@color/textt</color>
     <color name="realtimechat_message_byline_failed">#ffff3d3d</color>
-    <color name="realtimechat_system_information_foreground">@color/quantum_black_secondary_text</color>
+    <color name="realtimechat_system_information_foreground">@color/text</color>
     <color name="realtimechat_system_error_foreground">#ffda4336</color>
     <color name="button_bar_background">@color/background</color>
     <color name="ongoing_hangout_background">@color/background</color>

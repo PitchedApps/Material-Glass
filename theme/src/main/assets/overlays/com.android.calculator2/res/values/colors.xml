@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="calculator_accent_color">#ffffffff</color>
+    <color name="calculator_accent_color">#ff222222</color>
     <color name="calculator_error_color">#fff40056</color>
     <color name="display_background_color">#88ffffff</color>
     <color name="display_formula_text_color">#dd000000</color>

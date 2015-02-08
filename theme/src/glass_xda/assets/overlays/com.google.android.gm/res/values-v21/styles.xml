@@ -8,7 +8,7 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
         <item name="android:navigationBarColor">@color/background</item>
-        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowBackground">@color/backgroundt</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material.Wallpaper">
         <item name="android:windowNoTitle">true</item>
@@ -17,7 +17,7 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
         <item name="android:navigationBarColor">@color/background</item>
-        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowBackground">@color/backgroundt</item>
     </style>
     <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
         <item name="android:windowNoTitle">true</item>
@@ -62,7 +62,16 @@
         <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
         <item name="android:navigationBarColor">@color/background</item>
         <item name="android:textColor">@color/text</item>
-        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowBackground">@color/backgroundt</item>
     </style>
 
+
+    <style name="GmailTheme.NoActionBar.SetupAddresses" parent="@style/GmailTheme.NoActionBar">
+        <item name="android:colorPrimary">@color/backgroundx</item>
+        <item name="android:colorPrimaryDark">@color/backgroundx</item>
+    </style>
+    <style name="GmailTheme.NoActionBar.WelcomeTour" parent="@style/GmailTheme.NoActionBar">
+        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:colorPrimaryDark">@color/backgroundx</item>
+    </style>
 </resources>

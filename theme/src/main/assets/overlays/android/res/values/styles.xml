@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--<style name="Theme" parent="@android:style/Theme">-->
-        <!--<item name="android:panelColorBackground">@color/backgroundt</item>-->
-        <!--<item name="android:panelColorForeground">@color/text</item>-->
-        <!--<item name="android:colorBackground">@color/backgroundt</item>-->
-        <!--<item name="android:colorForeground">@color/text</item>-->
-        <!--<item name="android:windowBackground">@color/backgroundt</item>-->
-        <!--<item name="android:windowShowWallpaper">true</item>-->
-        <!--<item name="android:colorBackgroundCacheHint">@color/backgroundt</item>-->
-        <!--<item name="android:colorControlActivated">@color/text</item>-->
-    <!--</style>-->
+    <style name="Theme" parent="@android:style/Theme">
+        <item name="android:panelColorBackground">@color/backgroundt</item>
+        <item name="android:panelColorForeground">@color/text</item>
+        <item name="android:colorBackground">@color/backgroundt</item>
+        <item name="android:colorForeground">@color/text</item>
+        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+        <item name="android:colorControlActivated">@color/text</item>
+    </style>
     <style name="Theme.Black" parent="@android:style/Theme.Black">
         <item name="android:panelColorBackground">@color/background</item>
         <item name="android:panelColorForeground">@color/text</item>
@@ -46,9 +46,9 @@
         <item name="android:panelColorForeground">@color/text</item>
         <item name="android:colorBackground">@color/backgroundt</item>
         <item name="android:colorForeground">@color/text</item>
-        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:windowBackground">@color/backgroundtt</item>
         <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundtt</item>
         <item name="android:colorControlActivated">@color/text</item>
     </style>
 
@@ -68,9 +68,9 @@
         <item name="android:panelColorForeground">@color/text</item>
         <item name="android:colorBackground">@color/backgroundt</item>
         <item name="android:colorForeground">@color/text</item>
-        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:windowBackground">@color/backgroundtt</item>
         <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundtt</item>
         <item name="android:colorControlActivated">@color/text</item>
         <item name="android:navigationBarColor">@color/black_t</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
@@ -271,4 +271,19 @@
     <!--<style name="Widget.Holo.ListView.DropDown" parent="@android:style/Widget.Material.ListView.DropDown" />-->
     <!--<style name="Widget.Holo.Light.ListView.DropDown" parent="@android:style/Widget.Material.Light.ListView.DropDown" />-->
 
+    <!--<style name="Theme.Material.BaseDialog" parent="@android:style/Theme.Material.BaseDialog">-->
+        <!--<item name="android:windowShowWallpaper">false</item>-->
+    <!--</style>-->
+    <style name="Theme.Material.Panel" parent="@android:style/Theme.Material.Panel">
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+    <!--<style name="Theme.Material.Light.BaseDialog" parent="@android:style/Theme.Material.Light.BaseDialog">-->
+        <!--<item name="android:windowShowWallpaper">false</item>-->
+    <!--</style>-->
+    <style name="Theme.Material.Panel.Light" parent="@android:style/Theme.Material.Light.Panel">
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+    <style name="Theme.Material.DialogWhenLarge" parent="@android:style/Theme.Material">
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
 </resources>

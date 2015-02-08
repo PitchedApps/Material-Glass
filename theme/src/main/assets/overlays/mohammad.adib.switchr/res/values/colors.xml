@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ics_blue">#ffffffff</color>
+    <color name="blue">#90000000</color>
+    <color name="darkblue">#90000000</color>
+    <color name="red">#90000000</color>
+    <color name="grayStart">#90000000</color>
+    <color name="grayEnd">#90000000</color>
+    <color name="black">#90000000</color>
+    <color name="bg_handle_pressed">#90333333</color>
+    <color name="vpi__background_holo_dark">#90000000</color>
+    <color name="vpi__background_holo_light">#90000000</color>
+    <color name="vpi__bright_foreground_holo_dark">#ffffffff</color>
+    <color name="vpi__bright_foreground_holo_light">#ffffffff</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ccffffff</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ccffffff</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+    <color name="default_line_indicator_selected_color">#ffffffff</color>
+    <color name="default_line_indicator_unselected_color">#ffbbbbbb</color>
+    <color name="default_title_indicator_footer_color">#ffffffff</color>
+    <color name="default_title_indicator_selected_color">#ffffffff</color>
+    <color name="default_title_indicator_text_color">#bbffffff</color>
+    <color name="default_underline_indicator_selected_color">#ffffffff</color>
+</resources>

@@ -35,8 +35,8 @@
     <color name="done_text_color_disabled">@color/textt</color>
     <color name="numbers_text_color">@color/textt</color>
     <color name="transparent_black">#7f000000</color>
-    <color name="blue">#ff33b5e5</color>
-    <color name="blue_focused">#ffc1e8f7</color>
+    <color name="blue">@color/backgroundd</color>
+    <color name="blue_focused">@color/backgrounddd</color>
     <color name="neutral_pressed">#33999999</color>
     <color name="darker_blue">#ff0099cc</color>
     <color name="date_picker_text_normal">@color/text</color>
@@ -44,8 +44,8 @@
     <color name="calendar_header">@color/backgroundd</color>
     <color name="date_picker_view_animator">@color/background</color>
     <color name="calendar_selected_date_text">@color/text</color>
-    <color name="red">#ffff3333</color>
-    <color name="red_focused">#ff853333</color>
+    <color name="red">@color/backgroundd</color>
+    <color name="red_focused">@color/backgrounddd</color>
     <color name="light_gray">@color/backgrounddd</color>
     <color name="dark_gray">#ff666666</color>
     <color name="line_dark">@color/backgroundd</color>
@@ -124,8 +124,8 @@
     <color name="very_light_grey">@color/backgroundddx</color>
     <color name="mail_app_blue">@color/text</color>
     <color name="divider_color">#11ffffff</color>
-    <color name="senders_text_color">@color/text_color_black</color>
-    <color name="subject_text_color_read">@color/text_color_grey</color>
+    <!--<color name="senders_text_color">@color/text_color_black</color>-->
+    <!--<color name="subject_text_color_read">@color/text_color_grey</color>-->
     <color name="subject_text_color_unread">@color/text_color_black</color>
     <color name="snippet_text_color">@color/text_color_grey</color>
     <color name="date_text_color_unread">#ff4285f4</color>
@@ -200,8 +200,8 @@
     <color name="folder_item_text_color_normal">@color/text_color_grey</color>
     <color name="mail_orange">#ffe7790d</color>
     <color name="statusbar_orange">#ffd06d0c</color>
-    <color name="primary_color">@color/quantum_googred500</color>
-    <color name="primary_dark_color">@color/quantum_googred800</color>
+    <color name="primary_color">@color/backgroundx</color>
+    <color name="primary_dark_color">@color/backgroundx</color>
     <color name="mail_activity_status_bar_color">@android:color/transparent</color>
     <color name="action_mode_background">@color/background</color>
     <color name="action_mode_statusbar_color">@android:color/transparent</color>
@@ -213,8 +213,8 @@
     <color name="conversation_item_grey_background_color">@color/background</color>
     <color name="conversation_item_grey_pressed_color">@color/backgroundd</color>
     <color name="conversation_item_grey_ripple_color">#30ffffff</color>
-    <color name="compose_button_background_color">@color/primary_color</color>
-    <color name="compose_button_pressed_background_color">@color/primary_dark_color</color>
+    <color name="compose_button_background_color">#88444444</color>
+    <color name="compose_button_pressed_background_color">#88666666</color>
     <color name="compose_button_tint">#ccffffff</color>
     <color name="text_color_undo">#fffeb500</color>
     <color name="text_color_undo_description">@android:color/white</color>
@@ -249,12 +249,12 @@
     <color name="link_text">@color/textt</color>
     <color name="grey_separator_color">#11ffffff</color>
     <color name="list_ad_background_color">@color/background</color>
-    <color name="google_account_letter_tile_default_color">@color/quantum_googblue400</color>
+    <color name="google_account_letter_tile_default_color">@color/text</color>
     <color name="quantum_googred400">#ffe06055</color>
     <color name="quantum_googred500">#ffda4336</color>
     <color name="quantum_googred800">#ffb93221</color>
     <color name="quantum_gray200">#ffeeeeee</color>
-    <color name="quantum_gray400">#ffbdbdbd</color>
+    <color name="quantum_gray400">@color/background</color>
     <color name="quantum_pink300">#fff06292</color>
     <color name="quantum_deeppurple300">#ff9575cd</color>
     <color name="quantum_deeppurpleA100">#ffb388ff</color>
@@ -311,4 +311,5 @@
     <color name="background">#88000000</color>
     <color name="backgroundd">#88161616</color>
     <color name="backgrounddd">#88323232</color>
+    <color name="backgroundt">#40000000</color>
 </resources>

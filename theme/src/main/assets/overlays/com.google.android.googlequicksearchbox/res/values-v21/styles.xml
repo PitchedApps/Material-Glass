@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Shim" parent="@android:style/Theme.Material.Wallpaper">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="Theme.Shim.NoActionBar" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="Theme.Shim.Light" parent="@android:style/Theme.Material.Wallpaper">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="Theme.Shim.Light.NoActionBar" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

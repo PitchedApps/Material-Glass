@@ -34,6 +34,7 @@
     <color name="divider">#11ffffff</color>
     <color name="ripple_material_dark">#40ffffff</color>
 
+    <color name="40000000">#40000000</color>
     <color name="black_t">#a0000000</color>
     <color name="backgroundt">#90000000</color>
     <color name="backgrounddt">#90161616</color>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material" />
+    <style name="StyleTheme" parent="@android:style/Theme.Material" />
+    <style name="DialogTheme" parent="@android:style/Theme.Material.Dialog" />
+    <style name="IntroTheme" parent="@android:style/Theme.Material.NoActionBar" />
+    <style name="ButtonBarButton" parent="@android:style/Widget.Material.Button.Borderless">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+    <style name="ButtonBar" parent="@android:style/Widget.Material">
+        <item name="android:background">@null</item>
+    </style>
+</resources>
