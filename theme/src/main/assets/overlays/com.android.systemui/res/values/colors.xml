@@ -8,7 +8,7 @@
     <color name="qs_detail_progress_track">@color/pblue_t</color>
     <color name="keyguard_overflow_content_color">@color/backgrounddt</color>
     <color name="recents_task_bar_dark_text_color">@color/textt</color>
-    <color name="notification_header">#d0111111</color>
+    <color name="notification_header">#d0080808</color>
     <color name="notification_legacy_background_color">@color/backgrounddt</color>
     <color name="notification_material_background_color">#a9111111</color>
     <color name="notification_material_background_dimmed_color">#a9090909</color>
