@@ -3,19 +3,45 @@
     <style name="Pitch.ActionBar" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:background">@color/backgroundt</item>
     </style>
+    <style name="Transparent.ActionBar" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 
-
-    <style name="Theme.Material.Black" parent="@android:style/Theme.Material">
+	<style name="Theme.Material.Black" parent="@style/Theme.Material" />
+	<style name="Theme.Material.Launcher" parent="@android:style/Theme.Material">
+        <item name="android:panelColorBackground">@color/background</item>
+        <item name="android:panelColorForeground">@color/text</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:colorForeground">@color/text</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
+        <item name="android:colorControlActivated">@color/text</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/background</item>
+    </style>
+    <style name="Theme.Material" parent="@android:style/Theme.Material">
         <item name="android:panelColorBackground">@color/backgroundx</item>
         <item name="android:panelColorForeground">@color/text</item>
         <item name="android:colorBackground">@color/backgroundx</item>
         <item name="android:colorForeground">@color/text</item>
         <item name="android:windowBackground">@color/backgroundx</item>
-        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowShowWallpaper">false</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundx</item>
         <item name="android:colorControlActivated">@color/text</item>
         <item name="android:statusBarColor">@android:color/black</item>
         <item name="android:navigationBarColor">@color/backgroundx</item>
+    </style>
+	<style name="Theme.Material.Light" parent="@android:style/Theme.Material.Light">
+        <item name="android:panelColorBackground">@color/background_light</item>
+        <item name="android:panelColorForeground">@android:color/black</item>
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="android:colorForeground">@android:color/black</item>
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:colorBackgroundCacheHint">@color/background_light</item>
+        <item name="android:colorControlActivated">@android:color/black</item>
+        <item name="android:navigationBarColor">@color/black_t</item>
     </style>
     <!--
 

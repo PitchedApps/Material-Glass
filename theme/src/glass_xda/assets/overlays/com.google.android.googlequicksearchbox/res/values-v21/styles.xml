@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Shim.Light" parent="@*common:style/Theme.Material.Launcher" />
+    <style name="Theme.Shim.Light.NoActionBar" parent="@android:style/Theme.Material.NoActionBar" />
+    <style name="Theme.Shim.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="Widget.Shim.Light.ActionBar" parent="@android:style/Widget.Material.ActionBar" />
+
+    <style name="Theme.Gsa" parent="@*common:style/Theme.Material.Launcher" />
+</resources>

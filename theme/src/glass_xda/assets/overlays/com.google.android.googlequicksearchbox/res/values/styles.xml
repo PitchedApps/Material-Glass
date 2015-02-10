@@ -125,4 +125,12 @@
         <item name="android:layout_marginLeft">12.0dip</item>
         <item name="android:layout_marginRight">12.0dip</item>
     </style>
+
+    <!--<style name="Theme.Velvet" parent="@android:style/Theme.Material">-->
+        <!--<item name="android:windowBackground">@color/background</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowDisablePreview">true</item>-->
+        <!--<item name="android:windowSoftInputMode">adjustPan|stateUnchanged</item>-->
+        <!--<item name="android:windowActionBar">false</item>-->
+    <!--</style>-->
 </resources>

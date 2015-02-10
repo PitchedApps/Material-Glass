@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Widget.AppCompat.Light.ActionBar" parent="@android:style/Widget.Material.ActionBar" />
+    <style name="Base.Widget.AppCompat.ActionBar.Solid" parent="@android:style/Widget.Material.ActionBar" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.Solid" parent="@android:style/Widget.Material.ActionBar" />
+    <style name="Default" parent="@android:style/Theme.Material.NoActionBar" />
+    <style name="Default.ActivityPreferences" parent="@android:style/Theme.Material" />
+
+    <style name="PlaybackBase" parent="@*common:style/Theme.Material">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="Light" parent="@android:style/Theme.Material" />
+    <style name="DarkBase" parent="@android:style/Theme.Material" />
+
+    <style name="ActionBarTheme.Dark" parent="@*common:style/Transparent.ActionBar" />
+    <style name="ActionBarTheme.Light" parent="@*common:style/Transparent.ActionBar" />
+    <style name="ActionBarTheme.Light.DarkActionBar" parent="@*common:style/Transparent.ActionBar" />
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<style name="ActionBarStyle" parent="@*common:style/Transparent.ActionBar">-->
+        <!--<item name="android:colorAccent">@android:color/white</item>-->
+    <!--</style>-->
+    <!--<style name="AppTheme" parent="@android:style/Theme.Material" />-->
+    <!--<style name="AppThemeActionBar" parent="@android:style/Theme.Material">-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:colorBackground">@android:color/transparent</item>-->
+    <!--</style>-->
+</resources>
