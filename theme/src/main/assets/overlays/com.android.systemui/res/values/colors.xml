@@ -19,7 +19,7 @@
     <color name="qs_detail_transition">#66ffffff</color>
     <color name="current_user_border_color">@color/textt</color>
     <color name="segmented_button_text_inactive">#77ffffff</color>
-    <color name="gesture_color">@color/pblue</color>
+    <color name="gesture_color">@color/text</color>
     <color name="fab_color">@color/dblue</color>
     <color name="floating_action_button_icon_color">@color/text</color>
     

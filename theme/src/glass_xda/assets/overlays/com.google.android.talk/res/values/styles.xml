@@ -35,4 +35,5 @@
         <!--<item name="android:windowBackground">@color/background</item>-->
     </style>
     <style name="Base.Theme.AppCompat.Light" parent="@style/Base.Theme.AppCompat" />
+
 </resources>

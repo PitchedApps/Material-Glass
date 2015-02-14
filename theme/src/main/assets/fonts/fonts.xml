@@ -9,21 +9,34 @@
             <name>verdana</name>
         </nameset>
         <fileset>
-            <file>DroidSerif-Regular.ttf</file>
-            <file>DroidSerif-Bold.ttf</file>
-            <file>DroidSerif-Italic.ttf</file>
-            <file>DroidSerif-BoldItalic.ttf</file>
+            <file>Roboto-Regular.otf</file>
         </fileset>
     </family>
+
+    <family>
+        <nameset>
+            <name>sans-serif-light</name>
+        </nameset>
+        <fileset>
+            <file>Roboto-Light.otf</file>
+        </fileset>
+    </family>
+
+    <family>
+        <nameset>
+            <name>sans-serif-thin</name>
+        </nameset>
+        <fileset>
+            <file>Roboto-Thin.otf</file>
+        </fileset>
+    </family>
+
     <family>
         <nameset>
             <name>sans-serif-condensed</name>
         </nameset>
         <fileset>
-            <file>DroidSerif-Regular.ttf</file>
-            <file>DroidSerif-Italic.ttf</file>
-            <file>DroidSerif-Bold.ttf</file>
-            <file>DroidSerif-BoldItalic.ttf</file>
+            <file>RobotoCondensed-Regular.otf</file>
         </fileset>
     </family>
 </familyset>

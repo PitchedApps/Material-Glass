@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Base.InstrumentManager.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@android:style/Widget.Material.PopupMenu" />
+    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@android:style/ThemeOverlay.Material.Dark">
+        <item name="android:colorControlNormal">?colorControlNormal</item>
+        <item name="android:colorControlHighlight">?colorControlHighlight</item>
+        <item name="isLightTheme">false</item>
+        <item name="colorControlHighlight">@color/ripple_material_light</item>
+    </style>
+    <!--<style name="PlayDrawerSelectedText" parent="@style/PlayDrawerBaseText">-->
+        <!--<item name="android:background">@color/background</item>-->
+    <!--</style>-->
+    <style name="PlayDrawerProfileNameText" parent="@style/PlayMediumPlainText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="PlayMediumPlainText">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <!--background below was /white but no need to change-->
+    <!--<style name="SetupWizardButtonContainer" parent="@android:style/Widget.Material.Button.Borderless">-->
+        <!--<item name="android:gravity">end</item>-->
+        <!--<item name="android:orientation">horizontal</item>-->
+        <!--<item name="android:background">@color/background</item>-->
+        <!--<item name="android:layout_width">fill_parent</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:measureWithLargestChild">true</item>-->
+        <!--<item name="android:elevation">8.0dip</item>-->
+    <!--</style>-->
+    <style name="FinskyTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/play_main_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorPrimaryDark">@color/backgroundx</item>
+        <item name="finskyButtonBarStyle">@style/ButtonBarDefaultStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonStyle</item>
+    </style>
+    <style name="Theme.AppCompat.NoActionBar" parent="@android:style/Theme.Material.NoActionBar" />
+    <style name="SettingsTheme" parent="@android:style/Theme.Material">
+        <item name="android:windowBackground">@color/play_main_background</item>
+        <item name="android:actionBarStyle">@style/SettingsActionBarStyle</item>
+        <item name="android:colorPrimaryDark">@color/backgroundx</item>
+    </style>
+    <style name="FinskyBaseDialogTheme" parent="@android:style/Theme.Material.Dialog" />
+    <style name="FinskyLightDialogTheme" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="RateReviewTheme" parent="@android:style/Theme.Material">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/PlayPopupSelectorAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan|stateUnchanged</item>
+        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="SettingsActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:background">@color/background</item>
+    </style>
+    <style name="SetupWizardTheme.Light" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorSecondary">@color/setup_wizard_color_secondary_light</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>

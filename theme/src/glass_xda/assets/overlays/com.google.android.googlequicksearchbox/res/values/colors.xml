@@ -73,7 +73,7 @@
     <color name="info_target_hover_tint">#da0099cc</color>
     <color name="cling_scrim_background">#80000000</color>
     <color name="bubble_dark_background">#20000000</color>
-    <color name="focused_background">#80c6c5c5</color>
+    <color name="focused_background">#80333333</color>
     <color name="appwidget_error_color">#ffcccccc</color>
     <color name="workspace_icon_text_color">#ffffffff</color>
     <color name="quantum_panel_text_color">#ff666666</color>
@@ -94,7 +94,7 @@
     <color name="action_card_radio_button_grey">#ffbdbdbd</color>
     <color name="lighthouse_countdown_bar">#ff4688f1</color>
     <color name="lighthouse_app_choice_lowlight">#08000000</color>
-    <color name="lighthouse_intent_header_background">#fff5f5f5</color>
+    <color name="lighthouse_intent_header_background">@color/background</color>
     <color name="voice_of_google_highlight">#ff4989f4</color>
     <color name="primary_text_normal">@android:color/white</color>
     <color name="primary_text_disabled">#66ffffff</color>
@@ -223,7 +223,7 @@
     <color name="qp_gray_module">#08000000</color>
     <color name="qp_selected_gray">@color/backgrounddd</color>
     <color name="opt_in_button_disabled">#16000000</color>
-    <color name="opt_in_progress_background">#84cccccc</color>
+    <color name="opt_in_progress_background">#84111111</color>
     <color name="opt_in_dot_selection">#aaffffff</color>
     <color name="now_product_tutorial_1">#ff71cca0</color>
     <color name="now_product_tutorial_2">#fff1ab01</color>
@@ -290,10 +290,10 @@
     <color name="training_closet_title_pressed">#fffafafa</color>
     <color name="training_closet_header_pressed">#ff4285f4</color>
     <color name="training_closet_secondary_text">@color/textt</color>
-    <color name="second_screen_bg_color">#ff4285f4</color>
-    <color name="second_screen_title_background">#ff4374e0</color>
-    <color name="second_screen_header_highlight">#ff427fed</color>
-    <color name="second_screen_image_header_background">#b3000000</color>
+    <color name="second_screen_bg_color">@color/background</color>
+    <color name="second_screen_title_background">@color/background</color>
+    <color name="second_screen_header_highlight">@color/backgroundd</color>
+    <color name="second_screen_image_header_background">@color/background</color>
     <color name="second_screen_image_header_highlight">#1affffff</color>
     <color name="voice_of_google_loud_text">#ffffffff</color>
     <color name="configuration_list_background">@color/background</color>

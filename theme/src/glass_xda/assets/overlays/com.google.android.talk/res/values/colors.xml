@@ -42,19 +42,19 @@
     <color name="quantum_deeppurple">@color/quantum_deeppurple500</color>
     <!--???-->
     <color name="quantum_indigo">@color/texttt</color>
-    <color name="quantum_googblue">@color/quantum_googblue500</color>
-    <color name="quantum_lightblue">@color/quantum_lightblue500</color>
-    <color name="quantum_teal">@color/quantum_teal500</color>
-    <color name="quantum_cyan">@color/quantum_cyan500</color>
-    <color name="quantum_googgreen">@color/quantum_googgreen500</color>
-    <color name="quantum_lightgreen">@color/quantum_lightgreen500</color>
-    <color name="quantum_lime">@color/quantum_lime500</color>
-    <color name="quantum_yellow">@color/quantum_yellow500</color>
-    <color name="quantum_googyellow">@color/quantum_googyellow500</color>
-    <color name="quantum_orange">@color/quantum_orange500</color>
-    <color name="quantum_deeporange">@color/quantum_deeporange500</color>
-    <color name="quantum_brown">@color/quantum_brown500</color>
-    <color name="quantum_grey">@color/quantum_grey500</color>
+    <!--<color name="quantum_googblue">@color/quantum_googblue500</color>-->
+    <!--<color name="quantum_lightblue">@color/quantum_lightblue500</color>-->
+    <!--<color name="quantum_teal">@color/quantum_teal500</color>-->
+    <!--<color name="quantum_cyan">@color/quantum_cyan500</color>-->
+    <!--<color name="quantum_googgreen">@color/quantum_googgreen500</color>-->
+    <!--<color name="quantum_lightgreen">@color/quantum_lightgreen500</color>-->
+    <!--<color name="quantum_lime">@color/quantum_lime500</color>-->
+    <!--<color name="quantum_yellow">@color/quantum_yellow500</color>-->
+    <!--<color name="quantum_googyellow">@color/quantum_googyellow500</color>-->
+    <!--<color name="quantum_orange">@color/quantum_orange500</color>-->
+    <!--<color name="quantum_deeporange">@color/quantum_deeporange500</color>-->
+    <!--<color name="quantum_brown">@color/quantum_brown500</color>-->
+    <!--<color name="quantum_grey">@color/quantum_grey500</color>-->
     <!--###-->
     <!--<color name="quantum_black_100">@color/text</color>-->
     <!--<color name="quantum_black_text">#ddffffff</color>-->
@@ -379,7 +379,7 @@
     <color name="quantum_amberA100">#ffffe57f</color>
     <color name="quantum_amberA200">#ffffd740</color>
     <color name="quantum_amberA400">#ffffc400</color>
-    <color name="quantum_amberA700">#ffffab00</color>
+    <!--<color name="quantum_amberA700">#ffffab00</color>-->
     <color name="abc_search_url_text_normal">@color/textt</color>
     <color name="abc_search_url_text_selected">@color/text</color>
     <color name="abc_search_url_text_pressed">@color/text</color>
@@ -431,8 +431,8 @@
     <color name="material_blue_grey_950">@color/background</color>
     <color name="default_account_details_color">@color/text</color>
     <color name="manage_accounts_text_color">@color/text</color>
-    <color name="add_accounts_text_color">@color/manage_accounts_text_color</color>
-    <color name="account_text_color">@color/manage_accounts_text_color</color>
+    <color name="add_accounts_text_color">@color/text</color>
+    <color name="account_text_color">@color/text</color>
     <color name="primary">@color/backgrounddx</color>
     <color name="primary_dark">@color/backgrounddx</color>
     <item type="color" name="gray_alpha">0.54</item>
@@ -475,7 +475,7 @@
     <color name="widgets_bottom_panel_light_gray">@color/background</color>
     <color name="participants_gallery_translucent">#9a000000</color>
     <color name="participants_gallery_active_border">#8800ff00</color>
-    <color name="search_translucent_bg_color">#bb070707</color>
+    <color name="search_translucent_bg_color">#dd070707</color>
     <color name="search_query_highlight_color">@color/text</color>
     <color name="section_header_color">@color/backgroundd</color>
     <color name="photo_home_background_color">@color/background</color>
@@ -503,7 +503,7 @@
     <color name="realtimechat_system_error_foreground">#ffda4336</color>
     <color name="button_bar_background">@color/background</color>
     <color name="ongoing_hangout_background">@color/background</color>
-    <color name="hangout_common_menu_background">@color/participants_gallery_translucent</color>
+    <color name="hangout_common_menu_background">#cc000000</color>
     <color name="hangout_pinned_participant_color">#ffeaeaea</color>
     <color name="hangout_audio_only_exit">#ffda4336</color>
     <color name="hangout_mute_toolbar_selected">#ffda4336</color>
@@ -546,7 +546,7 @@
     <color name="status_message_exceed_length">#ffff0000</color>
     <item type="color" name="status_message_alpha">0.6</item>
     <color name="voice_tos_button_background">@color/backgroundd</color>
-    <color name="make_phone_call_hint_color">@color/sufficient_contrast_hint_text</color>
+    <color name="make_phone_call_hint_color">@color/textt</color>
     <!--!!!-->
     <color name="background_dialpad">#ff000000</color>
     <color name="background_dialpad_pressed">#ff222222</color>
@@ -556,7 +556,7 @@
     <color name="dialpad_separator_line_color">#11ffffff</color>
     <color name="dialpad_calling_rates_text_color">@color/textt</color>
     <color name="dialpad_calling_rates_text_highlight_color">#ff59b041</color>
-    <color name="contact_text_color">@color/textt</color>
+    <!--<color name="contact_text_color">@color/textt</color>-->
     <color name="widget_conversation_name">@color/textt</color>
     <color name="widget_time_since">@color/textt</color>
     <color name="widget_last_message">@color/textt</color>
@@ -577,8 +577,8 @@
     <color name="attachment_error">#ff666666</color>
     <color name="wearable_notification_participants_count">@color/textt</color>
     <color name="android_auto_default_color">#888bc349</color>
-    <color name="notification_off_background">#88d8453c</color>
-    <color name="butter_bar_background">@color/background</color>
+    <color name="notification_off_background">#88222222</color>
+    <color name="butter_bar_background">#33000000</color>
     <color name="screen_capture_stop_button_text">#ffff4e4e</color>
     <color name="navigation_drawer_item_text">@color/text</color>
     <color name="navigation_drawer_disabled_item_text">@color/textt</color>
