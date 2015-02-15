@@ -111,22 +111,23 @@
     <color name="material_blue_grey_800">@color/background</color>
     <color name="material_blue_grey_900">@color/background</color>
     <color name="material_blue_grey_950">@color/background</color>
-    <color name="text_color_medium_grey">@color/textt</color>
-    <color name="text_color_grey">@color/text</color>
-    <color name="text_color_black">@color/text</color>
+    <color name="text_color_medium_grey">@color/text</color>
+    <!--for subject and body-->
+    <color name="text_color_grey">@color/textneutral</color>
+    <color name="text_color_black">@color/textneutral</color>
     <color name="text_color_disabled">@color/textt</color>
     <color name="accent_blue">@color/text</color>
     <color name="text_color_blue">@color/textt</color>
     <color name="text_color_draft_red">@color/primary_color</color>
     <color name="text_color_hint_grey">@color/textt</color>
-    <color name="gray_text_color">@color/textt</color>
-    <color name="dark_gray_text_color">@color/text</color>
+    <color name="gray_text_color">@color/textneutral</color>
+    <color name="dark_gray_text_color">@color/textneutral</color>
     <color name="very_light_grey">@color/backgroundddx</color>
     <color name="mail_app_blue">@color/text</color>
     <color name="divider_color">#11ffffff</color>
     <!--???-->
-    <color name="senders_text_color">@color/aaa</color>
-    <color name="subject_text_color_read">@color/aaa</color>
+    <color name="senders_text_color">@color/text</color>
+    <color name="subject_text_color_read">@color/text</color>
     <color name="subject_text_color_unread">@color/text_color_black</color>
     <color name="snippet_text_color">@color/text_color_grey</color>
     <color name="date_text_color_unread">#ff4285f4</color>
@@ -304,6 +305,8 @@
     <color name="domain_naver_com">#ff2d8400</color>
 
     <color name="aaa">#ffff00ff</color>
+    <color name="bbb">#ff00ffff</color>
+    <color name="textneutral">#ffaaaaaa</color>
     <color name="text">#ffffffff</color>
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>

@@ -86,14 +86,14 @@
         <item name="android:actionOverflowButtonStyle">@style/ContactsActionBarOverflowQP</item>
         <item name="android:alertDialogTheme">@style/ContactsAlertDialogTheme</item>
         <item name="android:homeAsUpIndicator">@drawable/ic_back_arrow</item>
-        <!--<item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb</item>-->
+        <item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb</item>
         <item name="android:colorPrimary">@color/primary_color</item>
         <item name="android:colorPrimaryDark">@color/primary_color_dark</item>
         <item name="android:colorAccent">@color/primary_color</item>
         <item name="list_item_height">?android:listPreferredItemHeight</item>
         <item name="list_section_header_height">24.0dip</item>
-        <!--<item name="activated_background">@drawable/list_item_activated_background</item>-->
-        <!--<item name="section_header_background">@drawable/list_title_holo</item>-->
+        <item name="activated_background">@drawable/list_item_activated_background</item>
+        <item name="section_header_background">@drawable/list_title_holo</item>
         <item name="list_item_padding_top">@dimen/contact_browser_list_item_padding_top_or_bottom</item>
         <item name="list_item_padding_right">32.0dip</item>
         <item name="list_item_padding_bottom">@dimen/contact_browser_list_item_padding_top_or_bottom</item>

@@ -432,11 +432,11 @@
     <color name="default_account_details_color">@color/text</color>
     <color name="manage_accounts_text_color">@color/text</color>
     <color name="add_accounts_text_color">@color/text</color>
-    <color name="account_text_color">@color/text</color>
+    <color name="account_text_color">@color/aaa</color>
     <color name="primary">@color/backgrounddx</color>
     <color name="primary_dark">@color/backgrounddx</color>
     <item type="color" name="gray_alpha">0.54</item>
-    <color name="accent">@color/text</color>
+    <color name="accent">@color/aaa</color>
     <color name="accent_dark">@color/text</color>
     <color name="default_status_bar_color">#00000000</color>
     <color name="solid_white">@*common:color/neutral</color>
@@ -471,7 +471,7 @@
     <color name="tab_text_color">#ffffffff</color>
     <color name="stream_tab_line_color">#ffdd4b39</color>
     <color name="image_selected_stroke">@color/backgrounddx</color>
-    <color name="widgets_action_button_disabled_text_color">@color/textt</color>
+    <color name="widgets_action_button_disabled_text_color">@color/aaa</color>
     <color name="widgets_bottom_panel_light_gray">@color/background</color>
     <color name="participants_gallery_translucent">#9a000000</color>
     <color name="participants_gallery_active_border">#8800ff00</color>
@@ -532,8 +532,8 @@
     <color name="unblock_button">#9affffff</color>
     <color name="recommended_item_overlay_color">#7f333333</color>
     <color name="compose_message_view_bg">@color/background</color>
-    <color name="compose_message_view_text_color">@color/text</color>
-    <color name="compose_message_view_text_color_otr">@color/text</color>
+    <color name="compose_message_view_text_color">@color/aaa</color>
+    <color name="compose_message_view_text_color_otr">@color/aaa</color>
     <color name="compose_message_view_hint_text_color">@color/sufficient_contrast_hint_text</color>
     <color name="compose_message_view_hint_text_color_otr">@color/sufficient_contrast_hint_text</color>
     <color name="attachment_name_background_color">#e6151515</color>
@@ -563,10 +563,10 @@
     <color name="bg_transport_spinner_item_selected">#67333333</color>
     <color name="bg_transport_spinner_item_pressed">@color/backgroundd</color>
     <color name="hangout_on_air_live_foreground">@color/text</color>
-    <color name="hangout_on_air_live_background">#88ffbf00</color>
+    <color name="hangout_on_air_live_background">@color/background</color>
     <color name="recorded_foreground">#ffffffff</color>
-    <color name="recorded_background">#88d73d32</color>
-    <color name="last_seen_bubble_text">#ffffffff</color>
+    <color name="recorded_background">@color/backgroundd</color>
+    <color name="last_seen_bubble_text">#ffeeeeee</color>
     <color name="promo_title_text">@color/text</color>
     <color name="promo_body_text">@color/textt</color>
     <color name="promo_button_text">@color/text</color>
@@ -584,6 +584,7 @@
     <color name="navigation_drawer_disabled_item_text">@color/textt</color>
     <color name="bg_item_touch_feedback">#55ffffff</color>
 
+    <color name="aaa">#ffff00ff</color>
     <color name="text">#ffffffff</color>
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>
