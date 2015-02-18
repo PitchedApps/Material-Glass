@@ -32,8 +32,8 @@ android {
         glass_free {
             buildConfigField "boolean", "DONATIONS_GOOGLE", "true"
             applicationId "com.pitchedapps.material.glass.free"
-            versionCode 63
-            versionName '0.6.3'
+            versionCode 64
+            versionName '0.6.4'
         }
         glass_xda {
             buildConfigField "boolean", "DONATIONS_GOOGLE", "false"

@@ -31,7 +31,7 @@
     <color name="parameter_selector_active_item_text">#ffffffff</color>
     <color name="parameter_selector_inactive_item_text">#ff737373</color>
     <color name="action_parameter_preview_title">#ffffffff</color>
-    <color name="action_parameter_preview_background">#af1f1f1f</color>
+    <color name="action_parameter_preview_background">@color/background</color>
     <color name="parameter_readout_text_color">#ffffffff</color>
     <color name="parameter_readout_scale_major_index">#afffffff</color>
     <color name="parameter_readout_scale_minor_index">#7fffffff</color>
@@ -103,13 +103,15 @@
     <color name="preview_controls_background">@color/background</color>
     <color name="flat_button_pressed_bg">#66333333</color>
     <color name="transparent">#00000000</color>
-    <color name="white">#ffffffff</color>
+    <!--test-->
+    <color name="white">#ffdddddd</color>
     <color name="black">#ff000000</color>
     <color name="off_white">#fff5f5f5</color>
-    <color name="lightest_gray">#ffe5e5e5</color>
-    <color name="lighter_gray">#ff999999</color>
-    <color name="light_gray">#ff737373</color>
-    <color name="mid_gray">#ff666666</color>
+    <color name="lightest_gray">@color/background</color>
+    <!--used for both-->
+    <color name="lighter_gray">@color/background</color>
+    <color name="light_gray">@color/textt</color>
+    <color name="mid_gray">@color/bbb</color>
     <color name="dark_gray">#ff333333</color>
     <color name="darker_gray">#ff212121</color>
     <color name="darkest_gray">#ff191919</color>
@@ -664,7 +666,8 @@
     <color name="quantum_grey800">#ff424242</color>
     <color name="quantum_grey900">#ff212121</color>
     <color name="quantum_greyblack1000">@color/background</color>
-    <color name="quantum_greywhite1000">#ffffffff</color>
+    <!--did not check below-->
+    <color name="quantum_greywhite1000">@color/background</color>
     <color name="quantum_bluegrey50">#ffeceff1</color>
     <color name="quantum_bluegrey100">#ffcfd8dc</color>
     <color name="quantum_bluegrey200">#ffb0bec5</color>
@@ -807,7 +810,7 @@
     <color name="write_place_review_bg">@color/background</color>
     <color name="stream_location_off_text_color">@color/text</color>
     <color name="photo_action_bar_layout_divider_background">#33ffffff</color>
-    <color name="play_fg_tabs">@color/background</color>
+    <color name="play_fg_tabs">@color/backgroundd</color>
     <color name="play_tab_strip_bottom">#26ffffff</color>
     <color name="play_tab_strip_side">#19ffffff</color>
     <color name="photos_home_tab_color">#ff4285f4</color>
@@ -839,9 +842,9 @@
     <color name="text">#ffffffff</color>
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>
-    <color name="background">#ff000000</color>
-    <color name="backgroundd">#ff161616</color>
-    <color name="backgrounddd">#ff323232</color>
+    <color name="background">#aa000000</color>
+    <color name="backgroundd">#aa161616</color>
+    <color name="backgrounddd">#aa323232</color>
     <color name="backgroundx">#ff000000</color>
     <color name="backgrounddx">#ff161616</color>
     <color name="backgroundddx">#ff323232</color>
