@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab_text_size">14.0sp</dimen>
+    <dimen name="action_bar_elevation">2.0dip</dimen>
+
+</resources>

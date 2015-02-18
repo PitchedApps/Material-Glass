@@ -186,4 +186,14 @@
     </style>
 
 
+
+    <!--<style name="PlaySearchSuggestionText">-->
+        <!--<item name="android:textStyle">normal</item>-->
+        <!--<item name="android:textColor">@color/text</item>-->
+        <!--<item name="android:ellipsize">middle</item>-->
+        <!--<item name="android:gravity">center_vertical</item>-->
+        <!--<item name="android:singleLine">true</item>-->
+    <!--</style>-->
+
+    <style name="Widget.AppCompat.Light.ActionBar.Solid" parent="@android:style/Widget.Material.ActionBar" />
 </resources>

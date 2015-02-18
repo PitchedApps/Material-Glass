@@ -133,4 +133,64 @@
         <!--<item name="android:windowSoftInputMode">adjustPan|stateUnchanged</item>-->
         <!--<item name="android:windowActionBar">false</item>-->
     <!--</style>-->
+
+    <style name="opt_in_wizard_item">
+        <item name="android:layout_marginLeft">@dimen/qp_opt_in_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/qp_opt_in_horizontal_margin</item>
+        <item name="android:layout_marginStart">@dimen/qp_opt_in_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/qp_opt_in_horizontal_margin</item>
+    </style>
+    <style name="opt_in_wizard_header_headline" parent="@style/opt_in_wizard_item">
+        <item name="android:textSize">@dimen/qp_opt_in_header_headline_text_size</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="opt_in_wizard_header_subheader" parent="@style/opt_in_wizard_item">
+        <item name="android:textSize">@dimen/qp_opt_in_header_subheader_text_size</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="opt_in_wizard_header" parent="@style/opt_in_wizard_item">
+        <item name="android:textSize">@dimen/qp_opt_in_header_text_size</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:lineSpacingMultiplier">@dimen/qp_h1_line_spacing_multiplier</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="opt_in_wizard_subheader" parent="@style/opt_in_wizard_item">
+        <item name="android:textSize">@dimen/qp_opt_in_subheader_text_size</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:lineSpacingMultiplier">@dimen/qp_h4_line_spacing_multiplier</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+
+
+    <style name="TextOrIconDefaultStyle" parent="@style/CardText">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="CardText">
+        <item name="android:textSize">@dimen/card_small_text</item>
+        <item name="android:textColor">@color/card_text</item>
+        <item name="android:textColorLink">@color/link_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="Theme.Velvet.Card.TextAppearance.ActionFieldValue" parent="@style/Theme.Velvet.Card.TextAppearance.Medium">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/unit</item>
+        <item name="android:layout_marginRight">@dimen/unit</item>
+        <item name="android:layout_marginBottom">@dimen/half_unit</item>
+        <item name="android:layout_marginStart">@dimen/unit</item>
+        <item name="android:layout_marginEnd">@dimen/unit</item>
+    </style>
+    <style name="Theme.Velvet.Card.TextAppearance.Medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:textColor">@color/gsa_dark_gray</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
 </resources>

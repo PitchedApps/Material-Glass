@@ -6,7 +6,7 @@
     <color name="audience_chip_foreground">@color/text</color>
     <color name="audience_remove_background">@color/backgroundd</color>
     <color name="audience_remove_x_background">@color/backgrounddd</color>
-    <color name="audience_view_text_hint_color">@color/textt</color>
+    <color name="audience_view_text_hint_color">@*common:color/textneutral</color>
     <color name="last_seen">#ccaaaaaa</color>
     <color name="solid_black">@*common:color/neutral</color>
     <color name="photo_status_bar_black">#d9000000</color>
@@ -307,10 +307,10 @@
     <color name="quantum_grey300">@color/backgroundd</color>
     <color name="quantum_grey400">#ffbdbdbd</color>
     <color name="quantum_grey500">#80ffffff</color>
-    <color name="quantum_grey600">@color/text</color>
-    <color name="quantum_grey700">@color/text</color>
-    <color name="quantum_grey800">@color/text</color>
-    <color name="quantum_grey900">@color/text</color>
+    <color name="quantum_grey600">#ffbbbbbb</color>
+    <color name="quantum_grey700">#ffbbbbbb</color>
+    <color name="quantum_grey800">#ffbbbbbb</color>
+    <color name="quantum_grey900">#ffbbbbbb</color>
     <color name="quantum_greywhite1000">@color/background</color>
     <color name="quantum_greyblack1000">#ffffffff</color>
     <color name="quantum_bluegrey50">#ffeceff1</color>
@@ -380,9 +380,9 @@
     <color name="quantum_amberA200">#ffffd740</color>
     <color name="quantum_amberA400">#ffffc400</color>
     <!--<color name="quantum_amberA700">#ffffab00</color>-->
-    <color name="abc_search_url_text_normal">@color/textt</color>
-    <color name="abc_search_url_text_selected">@color/text</color>
-    <color name="abc_search_url_text_pressed">@color/text</color>
+    <color name="abc_search_url_text_normal">@*common:color/textneutral</color>
+    <color name="abc_search_url_text_selected">@*common:color/textneutral</color>
+    <color name="abc_search_url_text_pressed">@*common:color/textneutral</color>
     <color name="abc_input_method_navigation_guard">@color/text</color>
     <color name="background_material_dark">@color/background</color>
     <!--<color name="background_material_light">@color/background</color>-->
@@ -432,11 +432,11 @@
     <color name="default_account_details_color">@color/text</color>
     <color name="manage_accounts_text_color">@color/text</color>
     <color name="add_accounts_text_color">@color/text</color>
-    <color name="account_text_color">@color/aaa</color>
+    <color name="account_text_color">@color/bbb</color>
     <color name="primary">@color/backgrounddx</color>
     <color name="primary_dark">@color/backgrounddx</color>
     <item type="color" name="gray_alpha">0.54</item>
-    <color name="accent">@color/aaa</color>
+    <color name="accent">@color/bbb</color>
     <color name="accent_dark">@color/text</color>
     <color name="default_status_bar_color">#00000000</color>
     <color name="solid_white">@*common:color/neutral</color>
@@ -444,7 +444,7 @@
     <color name="mid_translucent_white">#d8ffffff</color>
     <color name="translucent_white">#80ffffff</color>
     <color name="dark_shadow_black">#cc000000</color>
-    <color name="background_activity_translucent_overlay">#55000000</color>
+    <color name="background_activity_translucent_overlay">@color/background</color>
     <color name="solid_green">#8853a93f</color>
     <color name="transparent_green">#4453a93f</color>
     <color name="transparent_red">#88e04947</color>
@@ -471,7 +471,7 @@
     <color name="tab_text_color">#ffffffff</color>
     <color name="stream_tab_line_color">#ffdd4b39</color>
     <color name="image_selected_stroke">@color/backgrounddx</color>
-    <color name="widgets_action_button_disabled_text_color">@color/aaa</color>
+    <color name="widgets_action_button_disabled_text_color">@color/bbb</color>
     <color name="widgets_bottom_panel_light_gray">@color/background</color>
     <color name="participants_gallery_translucent">#9a000000</color>
     <color name="participants_gallery_active_border">#8800ff00</color>
@@ -532,8 +532,8 @@
     <color name="unblock_button">#9affffff</color>
     <color name="recommended_item_overlay_color">#7f333333</color>
     <color name="compose_message_view_bg">@color/background</color>
-    <color name="compose_message_view_text_color">@color/aaa</color>
-    <color name="compose_message_view_text_color_otr">@color/aaa</color>
+    <color name="compose_message_view_text_color">@color/text</color>
+    <color name="compose_message_view_text_color_otr">@color/text</color>
     <color name="compose_message_view_hint_text_color">@color/sufficient_contrast_hint_text</color>
     <color name="compose_message_view_hint_text_color_otr">@color/sufficient_contrast_hint_text</color>
     <color name="attachment_name_background_color">#e6151515</color>
@@ -580,14 +580,16 @@
     <color name="notification_off_background">#88222222</color>
     <color name="butter_bar_background">#33000000</color>
     <color name="screen_capture_stop_button_text">#ffff4e4e</color>
-    <color name="navigation_drawer_item_text">@color/text</color>
-    <color name="navigation_drawer_disabled_item_text">@color/textt</color>
-    <color name="bg_item_touch_feedback">#55ffffff</color>
+    <!--for white drawer background-->
+    <!--<color name="navigation_drawer_item_text">@color/text</color>-->
+    <!--<color name="navigation_drawer_disabled_item_text">@color/textt</color>-->
+    <color name="bg_item_touch_feedback">#55aaaaaa</color>
 
     <color name="aaa">#ffff00ff</color>
-    <color name="text">#ffffffff</color>
-    <color name="textt">#ddffffff</color>
-    <color name="texttt">#bbffffff</color>
+    <color name="bbb">#ff0000ff</color>
+    <color name="text">#ffeeeeee</color>
+    <color name="textt">#ffdddddd</color>
+    <color name="texttt">#ffbbbbbb</color>
     <color name="backgroundx">#ff000000</color>
     <color name="backgrounddx">#ff161616</color>
     <color name="backgroundddx">#ff323232</color>

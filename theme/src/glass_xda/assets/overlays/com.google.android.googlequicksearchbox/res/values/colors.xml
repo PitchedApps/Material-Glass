@@ -9,7 +9,7 @@
     <color name="common_signin_btn_light_text_disabled">#ffaaaaaa</color>
     <color name="common_signin_btn_light_text_focused">#ff737373</color>
     <color name="common_signin_btn_default_background">#ffdd4b39</color>
-    <color name="common_action_bar_splitter">#ffd2d2d2</color>
+    <color name="common_action_bar_splitter">#33ffffff</color>
     <color name="search_plate_hint_text_color">#ffbdbdbd</color>
     <color name="medium_gray">#ff8d8d8d</color>
     <color name="stable_streaming_text">#ffc9c9c9</color>
@@ -33,13 +33,13 @@
     <color name="ic_mic_color">#ff555555</color>
     <color name="recurrence_picker_background">@color/background</color>
     <color name="recurrence_bubble_text_normal">@color/text</color>
-    <color name="white">#ffffffff</color>
+    <color name="white">#88aaaaaa</color>
     <color name="edit_event_text">@color/text</color>
     <color name="edit_event_text_hint">@color/textt</color>
     <color name="edit_event_text_highlight">#66666666</color>
     <color name="edit_event_text_link">#ffd2d2f4</color>
     <color name="edit_event_button_background_stroke">#33000000</color>
-    <color name="pressed">#330066ff</color>
+    <color name="pressed">#33ffffff</color>
     <color name="circle_background">@color/background</color>
     <color name="line_background">@color/backgroundd</color>
     <color name="ampm_text_color">@color/textt</color>
@@ -64,7 +64,7 @@
     <color name="done_text_color_dark_normal">#ffffffff</color>
     <color name="done_text_color_dark_disabled">#ff888888</color>
     <color name="done_disabled_dark">#ffbfbfbf</color>
-    <color name="default_account_details_color">@android:color/black</color>
+    <color name="default_account_details_color">@color/textt</color>
     <color name="manage_accounts_text_color">#ff212121</color>
     <color name="add_accounts_text_color">@color/manage_accounts_text_color</color>
     <color name="account_text_color">@color/manage_accounts_text_color</color>
@@ -229,8 +229,8 @@
     <color name="now_product_tutorial_2">#fff1ab01</color>
     <color name="mini_card_text">#57ffffff</color>
     <color name="mini_card_reminder">#ff80cbc4</color>
-    <color name="setup_wizard_color_accent_dark">#ff00bbd3</color>
-    <color name="setup_wizard_color_accent_light">#ff0096a6</color>
+    <color name="setup_wizard_color_accent_dark">@color/text</color>
+    <color name="setup_wizard_color_accent_light">@color/text</color>
     <color name="setup_wizard_color_primary_dark">#ffcbcbcb</color>
     <color name="setup_wizard_color_primary_light">#ff333333</color>
     <color name="setup_wizard_color_secondary_dark">#ff8e8e8e</color>
@@ -239,11 +239,11 @@
     <color name="setup_wizard_link_color_dark">#ff00e4ff</color>
     <color name="setup_wizard_highlight_color">#ffff6500</color>
     <color name="setup_wizard_divider_color_dark">#33ffffff</color>
-    <color name="setup_wizard_divider_color_light">#33000000</color>
-    <color name="setup_wizard_navbar_bg_dark">#ff21272b</color>
-    <color name="setup_wizard_navbar_bg_light">#ffe4e7e9</color>
+    <color name="setup_wizard_divider_color_light">#33ffffff</color>
+    <color name="setup_wizard_navbar_bg_dark">@color/background</color>
+    <color name="setup_wizard_navbar_bg_light">@color/background</color>
     <color name="setup_wizard_navbar_text_dark">#deffffff</color>
-    <color name="setup_wizard_navbar_text_light">#de000000</color>
+    <color name="setup_wizard_navbar_text_light">#deffffff</color>
     <color name="card_text">@color/text</color>
     <color name="card_title_text">@color/text</color>
     <color name="card_light_text">@color/text</color>
@@ -256,7 +256,7 @@
     <color name="traffic_light">#ff669900</color>
     <color name="stock_loss">#ffff4444</color>
     <color name="stock_gain">#ff29a426</color>
-    <color name="stock_disclaimer">#ffb7b7b7</color>
+    <color name="stock_disclaimer">@color/textt</color>
     <color name="location_history_last_month">#ffff8800</color>
     <color name="location_history_before_last_month">#99bdbcbc</color>
     <color name="grid_header_background">@color/background</color>
@@ -304,7 +304,7 @@
     <color name="tv_badge_background">#ff1ea61a</color>
     <color name="transportation_circle">#ffb5b5b5</color>
     <color name="incidents_multiple">#ffdb4437</color>
-    <color name="spinner_pressed_state_color">#6633b5e5</color>
+    <color name="spinner_pressed_state_color">#33ffffff</color>
     <color name="spinner_primary_text_color">@color/textt</color>
     <color name="spinner_custom_dropdown_background">#99000000</color>
     <color name="transit_alarm_vog_text">@color/text</color>
@@ -327,10 +327,13 @@
     <color name="touch_feedback_color">@color/backgroundd</color>
     <color name="speech_blue">#ff4285f4</color>
 
-    <color name="background">#90000000</color>
-    <color name="backgroundd">#90161616</color>
-    <color name="backgrounddd">#90323232</color>
     <color name="text">#ffffffff</color>
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>
+    <color name="background">#88000000</color>
+    <color name="backgroundd">#88161616</color>
+    <color name="backgrounddd">#88323232</color>
+    <color name="backgroundx">#ff000000</color>
+    <color name="backgrounddx">#ff161616</color>
+    <color name="backgroundddx">#ff323232</color>
 </resources>

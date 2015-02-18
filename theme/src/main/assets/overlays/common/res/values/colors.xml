@@ -31,9 +31,13 @@
 
     <color name="ripple">#40ffffff</color>
     <color name="neutral">#ff666666</color>
-    <color name="divider">#11ffffff</color>
+	<color name="textneutral">#ffbbbbbb</color>
+    <color name="divider">#22ffffff</color>
     <color name="ripple_material_dark">#40ffffff</color>
 
+    <color name="fab">#44444444</color>
+    <color name="fabb">#66666666</color>
+    <color name="dialog">#cc111111</color>
     <color name="40000000">#40000000</color>
     <color name="black_t">#a0000000</color>
     <color name="backgroundt">#90000000</color>
