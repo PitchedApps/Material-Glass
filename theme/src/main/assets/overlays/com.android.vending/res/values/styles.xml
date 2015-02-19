@@ -24,9 +24,9 @@
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:background">@color/backgrounddt</item>
-        <item name="android:paddingLeft">12.0dip</item>
-        <item name="android:paddingTop">6.0dip</item>
-        <item name="android:paddingBottom">6.0dip</item>
+        <!--<item name="android:paddingLeft">12.0dip</item>-->
+        <!--<item name="android:paddingTop">6.0dip</item>-->
+        <!--<item name="android:paddingBottom">6.0dip</item>-->
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
@@ -59,10 +59,10 @@
     <style name="PlayClusterMore" parent="@style/PlayMediumPlainText">
         <item name="android:textSize">@dimen/play_cluster_header_more_size</item>
         <item name="android:textColor">@color/text</item>
-        <item name="android:paddingLeft">@dimen/play_cluster_header_more_xpadding</item>
-        <item name="android:paddingTop">@dimen/play_cluster_header_more_top_padding</item>
-        <item name="android:paddingRight">@dimen/play_cluster_header_more_xpadding</item>
-        <item name="android:paddingBottom">@dimen/play_cluster_header_more_bottom_padding</item>
+        <!--<item name="android:paddingLeft">@dimen/play_cluster_header_more_xpadding</item>-->
+        <!--<item name="android:paddingTop">@dimen/play_cluster_header_more_top_padding</item>-->
+        <!--<item name="android:paddingRight">@dimen/play_cluster_header_more_xpadding</item>-->
+        <!--<item name="android:paddingBottom">@dimen/play_cluster_header_more_bottom_padding</item>-->
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:singleLine">true</item>
@@ -89,9 +89,9 @@
         <item name="android:minWidth">@dimen/standard_button_minwidth</item>
         <item name="android:minHeight">@dimen/details_button_small_height</item>
         <item name="android:layout_weight">1.0</item>
-        <item name="action_xpadding">16.0dip</item>
-        <item name="action_top_padding">7.0dip</item>
-        <item name="action_bottom_padding">8.0dip</item>
+        <!--<item name="action_xpadding">16.0dip</item>-->
+        <!--<item name="action_top_padding">7.0dip</item>-->
+        <!--<item name="action_bottom_padding">8.0dip</item>-->
     </style>
     <style name="CirclesButton" parent="@style/PlayPlainText">
         <item name="android:textSize">@dimen/play_price_small_size</item>
@@ -112,9 +112,9 @@
         <item name="android:textColor">@color/text</item>
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:paddingLeft">@dimen/play_follow_cluster_text_padding</item>
-        <item name="android:paddingTop">@dimen/play_follow_cluster_title_top_margin</item>
-        <item name="android:paddingRight">@dimen/play_follow_cluster_text_padding</item>
+        <!--<item name="android:paddingLeft">@dimen/play_follow_cluster_text_padding</item>-->
+        <!--<item name="android:paddingTop">@dimen/play_follow_cluster_title_top_margin</item>-->
+        <!--<item name="android:paddingRight">@dimen/play_follow_cluster_text_padding</item>-->
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:maxLines">1</item>
@@ -124,8 +124,8 @@
         <item name="android:textColor">@color/text</item>
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:paddingLeft">@dimen/play_follow_cluster_text_padding</item>
-        <item name="android:paddingRight">@dimen/play_follow_cluster_text_padding</item>
+        <!--<item name="android:paddingLeft">@dimen/play_follow_cluster_text_padding</item>-->
+        <!--<item name="android:paddingRight">@dimen/play_follow_cluster_text_padding</item>-->
         <item name="android:paddingBottom">8.0dip</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
