@@ -88,7 +88,7 @@
     <color name="backgroundd">#ff161616</color>
     <color name="backgrounddd">#ff323232</color>
     <color name="backgroundt">#a0000000</color>
-    <color name="backgroundtt">#66000000</color>
+    <color name="backgroundtt">#00000000</color>
     <color name="backgroundt_light">#a0ffffff</color>
     <color name="background_t">#a0000000</color>
     <color name="backgrounddt">#a0161616</color>

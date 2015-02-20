@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Wallpaper" />
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material.Wallpaper">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
     <style name="TextAppearance.EditEvent_Label" parent="@android:style/TextAppearance">
         <item name="android:textColor">@color/text</item>
     </style>
@@ -30,24 +35,37 @@
     <style name="TextAppearance.EditEvent_homeTime" parent="@android:style/TextAppearance">
         <item name="android:textColor">@color/text</item>
     </style>
-    <style name="EditEvent_LayoutBase" parent="@android:style/Theme.Holo" />
-    <style name="CalendarThemeBase" parent="@android:style/Theme.Holo" />
-    <style name="CalendarThemeDialog" parent="@android:style/Theme.Holo.Dialog" />
-    <style name="PreferencesThemeBase" parent="@android:style/Theme.Holo" />
-    <style name="ActionBarBaseStyle" parent="@android:style/Widget.Holo.ActionBar.Solid" />
-    <style name="CalendarTheme.BaseBaseTheme" parent="@android:style/Theme.Holo" />
-    <style name="CalendarTheme.BaseTheme" parent="@style/CalendarTheme.BaseBaseTheme">
+    <style name="EditEvent_LayoutBase" parent="@android:style/Theme.Material">
         <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
         <item name="android:textColor">@color/text</item>
     </style>
-    <style name="DetailsThemeBase" parent="@android:style/Theme.Holo.Dialog" />
-    <style name="DayPopUpThemeBase" parent="@android:style/Theme.Holo.Dialog" />
-    <style name="NotificationSecondaryText" parent="@android:style/TextAppearance.Holo">
+    <style name="CalendarThemeBase" parent="@android:style/Theme.Material">
+    <item name="android:windowBackground">@color/background</item>
+    <item name="android:colorBackground">@color/background</item>
+    <item name="android:textColor">@color/text</item>
+</style>
+    <style name="CalendarThemeDialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="PreferencesThemeBase" parent="@android:style/Theme.Material" />
+    <style name="ActionBarBaseStyle" parent="@android:style/Widget.Material.ActionBar" />
+    <style name="CalendarTheme.BaseBaseTheme" parent="@android:style/Theme.Material">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="CalendarTheme.BaseTheme" parent="@style/CalendarTheme.BaseBaseTheme">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="DetailsThemeBase" parent="@android:style/Theme.Material.Dialog" />
+    <style name="DayPopUpThemeBase" parent="@android:style/Theme.Material.Dialog" />
+    <style name="NotificationSecondaryText" parent="@android:style/TextAppearance.Material">
         <item name="android:textColor">@color/textt</item>
     </style>
 
 
-    <style name="TextAppearance.Recurrence_SpinnerButton" parent="@android:style/Widget.Holo.Spinner" />
+    <style name="TextAppearance.Recurrence_SpinnerButton" parent="@android:style/Widget.Material.Spinner" />
     <style name="Edit.Text.DoneButton" parent="@style/Edit.Text">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@color/text</item>
@@ -80,7 +98,7 @@
         <item name="android:imeOptions">actionDone</item>
     </style>
     <style name="Edit">
-        <item name="android:background">@null</item>
+        <item name="android:background">@*common:color/background</item>
     </style>
 
 

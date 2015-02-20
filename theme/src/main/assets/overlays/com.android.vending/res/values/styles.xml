@@ -59,10 +59,10 @@
     <style name="PlayClusterMore" parent="@style/PlayMediumPlainText">
         <item name="android:textSize">@dimen/play_cluster_header_more_size</item>
         <item name="android:textColor">@color/text</item>
-        <!--<item name="android:paddingLeft">@dimen/play_cluster_header_more_xpadding</item>-->
-        <!--<item name="android:paddingTop">@dimen/play_cluster_header_more_top_padding</item>-->
-        <!--<item name="android:paddingRight">@dimen/play_cluster_header_more_xpadding</item>-->
-        <!--<item name="android:paddingBottom">@dimen/play_cluster_header_more_bottom_padding</item>-->
+        <item name="android:paddingLeft">@dimen/play_cluster_header_more_xpadding</item>
+        <item name="android:paddingTop">@dimen/play_cluster_header_more_top_padding</item>
+        <item name="android:paddingRight">@dimen/play_cluster_header_more_xpadding</item>
+        <item name="android:paddingBottom">@dimen/play_cluster_header_more_bottom_padding</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:singleLine">true</item>
@@ -112,9 +112,9 @@
         <item name="android:textColor">@color/text</item>
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center_horizontal</item>
-        <!--<item name="android:paddingLeft">@dimen/play_follow_cluster_text_padding</item>-->
-        <!--<item name="android:paddingTop">@dimen/play_follow_cluster_title_top_margin</item>-->
-        <!--<item name="android:paddingRight">@dimen/play_follow_cluster_text_padding</item>-->
+        <item name="android:paddingLeft">@dimen/play_follow_cluster_text_padding</item>
+        <item name="android:paddingTop">@dimen/play_follow_cluster_title_top_margin</item>
+        <item name="android:paddingRight">@dimen/play_follow_cluster_text_padding</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:maxLines">1</item>
@@ -124,8 +124,8 @@
         <item name="android:textColor">@color/text</item>
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center_horizontal</item>
-        <!--<item name="android:paddingLeft">@dimen/play_follow_cluster_text_padding</item>-->
-        <!--<item name="android:paddingRight">@dimen/play_follow_cluster_text_padding</item>-->
+        <item name="android:paddingLeft">@dimen/play_follow_cluster_text_padding</item>
+        <item name="android:paddingRight">@dimen/play_follow_cluster_text_padding</item>
         <item name="android:paddingBottom">8.0dip</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -187,13 +187,13 @@
 
 
 
-    <!--<style name="PlaySearchSuggestionText">-->
-        <!--<item name="android:textStyle">normal</item>-->
-        <!--<item name="android:textColor">@color/text</item>-->
-        <!--<item name="android:ellipsize">middle</item>-->
-        <!--<item name="android:gravity">center_vertical</item>-->
-        <!--<item name="android:singleLine">true</item>-->
-    <!--</style>-->
+    <style name="PlaySearchSuggestionText">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
 
     <style name="Widget.AppCompat.Light.ActionBar.Solid" parent="@android:style/Widget.Material.ActionBar" />
 </resources>

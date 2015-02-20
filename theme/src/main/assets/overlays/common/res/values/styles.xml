@@ -8,18 +8,18 @@
     </style>
 
 	<style name="Theme.Material.Black" parent="@style/Theme.Material" />
-	<style name="Theme.Material.Launcher" parent="@android:style/Theme.Material">
-        <item name="android:panelColorBackground">@color/background</item>
-        <item name="android:panelColorForeground">@color/text</item>
-        <item name="android:colorBackground">@android:color/transparent</item>
-        <item name="android:colorForeground">@color/text</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowShowWallpaper">false</item>
-        <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
-        <item name="android:colorControlActivated">@color/text</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@color/background</item>
-    </style>
+	<!--<style name="Theme.Material.Launcher" parent="@android:style/Theme.Material">-->
+        <!--<item name="android:panelColorBackground">@color/background</item>-->
+        <!--<item name="android:panelColorForeground">@color/text</item>-->
+        <!--<item name="android:colorBackground">@android:color/transparent</item>-->
+        <!--<item name="android:colorForeground">@color/text</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowShowWallpaper">false</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@android:color/transparent</item>-->
+        <!--<item name="android:colorControlActivated">@color/text</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+        <!--<item name="android:navigationBarColor">@color/background</item>-->
+    <!--</style>-->
     <style name="Theme.Material" parent="@android:style/Theme.Material">
         <item name="android:panelColorBackground">@color/backgroundx</item>
         <item name="android:panelColorForeground">@color/text</item>

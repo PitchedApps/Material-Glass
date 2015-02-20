@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Holo">
-    </style>
-    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Holo.Dialog">
-    </style>
-    <style name="Theme.Locale.Light" parent="@android:style/Theme.Holo" />
-</resources>

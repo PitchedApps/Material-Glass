@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppBaseTheme" parent="@android:style/Theme" />
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material.Wallpaper" />
     <style name="setup_wizard_display1">
         <item name="android:textSize">34.0sp</item>
         <item name="android:textStyle">normal</item>
@@ -109,10 +109,13 @@
     <style name="KeepPopupMenuStyle" parent="@android:style/Widget.Holo.ListPopupWindow">
         <item name="android:background">@android:color/background_dark</item>
     </style>
-    <style name="Theme.Shim.Light" parent="@android:style/Theme.Holo" />
-    <style name="Theme.Shim.Light.NoActionBar" parent="@android:style/Theme.Holo.NoActionBar" />
-    <style name="Theme.Shim.Light.Dialog" parent="@android:style/Theme.Holo.Dialog" />
-    <style name="Widget.Shim.Light.ActionBar" parent="@android:style/Widget.Holo.ActionBar" />
+    <style name="Theme.Shim.Light" parent="@android:style/Theme.Material.Wallpaper" />
+    <style name="Theme.Shim.Light.NoActionBar" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+    </style>
+    <style name="Theme.Shim.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="Widget.Shim.Light.ActionBar" parent="@android:style/Widget.Material.ActionBar" />
     <style name="horizontal_divider">
         <item name="android:background">@color/backgroundd</item>
         <item name="android:layout_width">fill_parent</item>
