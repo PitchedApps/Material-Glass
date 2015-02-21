@@ -17,6 +17,8 @@
         <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
         <item name="android:navigationBarColor">@color/background</item>
         <item name="android:windowBackground">@color/background</item>
+
+        <item name="android:background">@color/background</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
     <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">

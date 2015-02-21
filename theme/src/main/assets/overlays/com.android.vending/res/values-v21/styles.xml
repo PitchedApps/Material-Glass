@@ -23,13 +23,15 @@
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 <!--causes layering issues-->
-    <!--<style name="FinskyTheme" parent="@style/Theme.AppCompat.NoActionBar">-->
-        <!--<item name="android:windowBackground">@*common:color/dialog</item>-->
-        <!--<item name="android:windowContentOverlay">@null</item>-->
-        <!--<item name="android:colorPrimaryDark">@color/backgroundx</item>-->
+    <style name="FinskyTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@*common:color/dialog</item>
+        <item name="android:background">@*common:color/dialog</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorPrimaryDark">@color/backgroundx</item>
         <!--<item name="finskyButtonBarStyle">@style/ButtonBarDefaultStyle</item>-->
         <!--<item name="finskyButtonBarButtonStyle">?android:buttonStyle</item>-->
-    <!--</style>-->
+    </style>
 
     <style name="Theme.AppCompat.NoActionBar" parent="@android:style/Theme.Material.NoActionBar" />
     <style name="SettingsTheme" parent="@android:style/Theme.Material">
