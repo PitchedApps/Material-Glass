@@ -3,7 +3,7 @@
     <color name="dialer_theme_color">@color/backgroundd</color>
     <color name="dialer_theme_color_dark">@color/backgroundd</color>
     <color name="background_dialpad">@color/backgroundt</color>
-    <color name="background_dialpad_pressed">?android:colorControlHighlight</color>
+    <color name="background_dialpad_pressed">@color/backgrounddt</color>
     <color name="dialpad_primary_text_color">@color/text</color>
     <color name="dialpad_secondary_text_color">#b3ffffff</color>
     <color name="dialpad_digits_text_color">#ffffffff</color>
@@ -67,7 +67,7 @@
     <color name="secondary_call_info_divider_highlight_color">@color/texttt</color>
     <color name="end_call_touch_feedback_tint">@color/backgrounddd</color>
     <color name="incall_dialpad_background">@color/background</color>
-    <color name="incall_dialpad_background_pressed">#ccaaaaaa</color>
+    <color name="incall_dialpad_background_pressed">@color/backgroundd</color>
     <color name="button_background_color">@color/backgroundt</color>
     <color name="button_selected_color">@color/backgrounddt</color>
     <color name="button_default_color">#b3ffffff</color>

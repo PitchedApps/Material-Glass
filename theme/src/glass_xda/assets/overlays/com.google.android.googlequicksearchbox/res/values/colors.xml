@@ -76,8 +76,8 @@
     <color name="focused_background">#80333333</color>
     <color name="appwidget_error_color">#ffcccccc</color>
     <color name="workspace_icon_text_color">#ffffffff</color>
-    <color name="quantum_panel_text_color">#ff666666</color>
-    <color name="quantum_panel_text_shadow_color">#ffc4c4c4</color>
+    <color name="quantum_panel_text_color">@color/textt</color>
+    <color name="quantum_panel_text_shadow_color">#30000000</color>
     <color name="outline_color">#ffffffff</color>
     <color name="widget_text_panel">#ff374248</color>
     <color name="solid_black">#ff000000</color>
@@ -99,7 +99,7 @@
     <color name="primary_text_normal">@android:color/white</color>
     <color name="primary_text_disabled">#aaffffff</color>
     <color name="primary_text_inverse">@android:color/black</color>
-    <color name="primary_text_inverse_disabled">#66000000</color>
+    <color name="primary_text_inverse_disabled">#aa000000</color>
     <color name="secondary_text_normal">#ccffffff</color>
     <color name="secondary_text_disabled">#aaffffff</color>
     <color name="secondary_text_inverse">#ff888888</color>
@@ -134,7 +134,7 @@
     <color name="suggestion_divider_background">#11ffffff</color>
     <color name="suggestion_header_divider_background">#22ffffff</color>
     <color name="first_run_text_shadow">#fff2f2f2</color>
-    <color name="place_confirm_text_shadow">#ff707070</color>
+    <color name="place_confirm_text_shadow">#40000000</color>
     <color name="ime_state_text">#ffffffff</color>
     <color name="attribution_text">#ffe5e5e5</color>
     <color name="web_image_view_placeholder">@color/backgroundd</color>

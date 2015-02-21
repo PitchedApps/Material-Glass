@@ -22,4 +22,12 @@
     <style name="ThemeChooserActionBarTabText">
         <item name="android:textColor">#FFFFFF</item>
     </style>
+
+    <style name="ChooserToolbarStyle" parent="@android:style/Widget.Material.Toolbar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:titleTextAppearance">@style/ChooserActionBarTitleText</item>
+    </style>
+    <style name="ChooserActionBarTitleText" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text_color</item>
+    </style>
 </resources>

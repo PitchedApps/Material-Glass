@@ -16,8 +16,8 @@
     <color name="apply_button_pressed_color">@color/backgroundddt</color>
     <color name="designed_for_color">@color/textt</color>
     <color name="drawer_item_textcolor">@color/text</color>
-    <color name="drawer_item_default">@color/background</color>
-    <color name="drawer_item_pressed">@color/backgroundd</color>
+    <color name="drawer_item_default">#99000000</color>
+    <color name="drawer_item_pressed">#22ffffff</color>
     <color name="drawer_divider_line">@android:color/transparent</color>
     <color name="default_circle_indicator_fill_color">#ff00b1e5</color>
     <color name="default_circle_indicator_page_color">#ff808184</color>

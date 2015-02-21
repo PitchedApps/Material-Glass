@@ -32,14 +32,14 @@ android {
         glass_free {
             buildConfigField "boolean", "DONATIONS_GOOGLE", "true"
             applicationId "com.pitchedapps.material.glass.free"
-            versionCode 64
-            versionName '0.6.4'
+            versionCode 71
+            versionName '0.7.1'
         }
         glass_xda {
             buildConfigField "boolean", "DONATIONS_GOOGLE", "false"
             applicationId "com.pitchedapps.material.glass.xda"
-            versionCode 60
-            versionName '0.6.0'
+            versionCode 70
+            versionName '0.7.0'
         }
     }
 }

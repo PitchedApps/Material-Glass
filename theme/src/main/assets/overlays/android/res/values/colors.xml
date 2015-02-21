@@ -79,6 +79,7 @@
     <color name="timepicker_default_ampm_selected_background_color_material">@color/backgroundd</color>
     <color name="timepicker_default_selector_color_material">@color/backgroundd</color>
 
+
     <!--euphoria-->
     <color name="notification_material_action_textcolor">#a0ffffff</color>
     <color name="notification_template_material_big_picture_background_color">#cc000000</color>
@@ -110,4 +111,8 @@
     <color name="neutral">#ff888888</color>
 
     <!--<color name="bright_foreground_inverse_holo_light">@color/neutral</color>-->
+
+    <color name="notification_mtrl_action_textcolor">@color/textt</color>
+    <color name="notification_mtrl_big_picture_bg">@color/background</color>
+    <color name="resolver_list_bg">@color/background</color>
 </resources>
