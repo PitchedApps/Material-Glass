@@ -41,6 +41,12 @@ android {
             versionCode 70
             versionName '0.7.0'
         }
+        glass_test {
+            buildConfigField "boolean", "DONATIONS_GOOGLE", "false"
+            applicationId "com.pitchedapps.material.glass.test"
+            versionCode 1
+            versionName '0.0.1'
+        }
     }
 }
 

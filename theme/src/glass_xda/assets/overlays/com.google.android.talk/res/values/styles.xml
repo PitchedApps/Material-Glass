@@ -36,4 +36,9 @@
     </style>
     <style name="Base.Theme.AppCompat.Light" parent="@style/Base.Theme.AppCompat" />
 
+
+    <style name="Theme.ConversationActivity" parent="@style/Theme.EmeraldSea">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:background">@color/background</item>
+    </style>
 </resources>
