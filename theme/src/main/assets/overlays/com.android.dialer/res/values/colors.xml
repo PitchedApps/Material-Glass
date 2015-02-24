@@ -41,7 +41,7 @@
     <color name="frequently_contacted_title_color">@color/text</color>
     <color name="actionbar_text_color">#ffffffff</color>
     <color name="actionbar_unselected_text_color">#a6ffffff</color>
-    <color name="searchbox_text_color">#ffffffff</color>
+    <color name="searchbox_text_color">@color/text</color>
     <color name="searchbox_background_color">@color/backgroundd</color>
     <color name="searchbox_hint_text_color">#4dffffff</color>
     <color name="searchbox_icon_tint">#ffffffff</color>

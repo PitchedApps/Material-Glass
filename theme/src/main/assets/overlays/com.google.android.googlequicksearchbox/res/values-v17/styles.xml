@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TimeToLeaveTitleMessage" parent="@android:style/Widget.Material.TextView">
+        <item name="android:textSize">@dimen/card_action_text</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/card_title_text</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">@dimen/quarter_unit</item>
+        <item name="android:paddingBottom">@dimen/quarter_unit</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:paddingStart">16.0dip</item>
+    </style>
+</resources>

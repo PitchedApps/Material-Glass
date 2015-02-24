@@ -24,23 +24,24 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
         <item name="android:navigationBarColor">@color/background</item>
-        <!--<item name="android:textColor">@color/text</item>-->
-        <!--<item name="android:windowBackground">@color/background</item>-->
+        <item name="android:textColor">@color/text</item>
+        <item name="android:windowBackground">@color/background</item>
     </style>
     <style name="Base.Theme.AppCompat" parent="@android:style/Theme.Material.Wallpaper">
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
         <item name="android:navigationBarColor">@color/background</item>
-        <!--<item name="android:textColor">@color/text</item>-->
-        <!--<item name="android:windowBackground">@color/background</item>-->
+        <item name="android:textColor">@color/text</item>
+        <item name="android:windowBackground">@color/background</item>
     </style>
     <style name="Base.Theme.AppCompat.Light" parent="@style/Base.Theme.AppCompat" />
 
 
-    <!--<style name="RealTimeChat.ConversationList.LastMessage" parent="@android:style/Theme.Material">-->
-        <!--<item name="android:textSize">14.0sp</item>-->
-        <!--<item name="android:textColor">@color/last_message</item>-->
-        <!--<item name="android:ellipsize">end</item>-->
-        <!--<item name="android:colorBackground">@color/background</item>-->
+
+    <!--<style name="PeopleListItemViewBackgroundStyle">-->
+        <!--<item name="android:paddingLeft">@dimen/m_space</item>-->
+        <!--<item name="android:paddingRight">@dimen/l_space</item>-->
+        <!--<item name="android:background">@color/background</item>-->
+
     <!--</style>-->
 </resources>

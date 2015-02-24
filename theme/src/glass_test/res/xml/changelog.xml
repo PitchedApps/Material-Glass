@@ -11,7 +11,22 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <changelog>
+    <!--
+    <version name="">
+        <text></text>
+    </version>
+    -->
+
+    <version name="0.7.2">
+        <text>Made google now drawer text a bit lighter</text>
+        <text>Made dialer search background black</text>
+        <text>Themed xposed</text>
+        <text>Materialized theme engine drawer</text>
+        <text>Fixed euphoria OTA</text>
+    </version>
+
     <version name="0.7.1">
         <text>Testing in progress</text>
     </version>
+
 </changelog>

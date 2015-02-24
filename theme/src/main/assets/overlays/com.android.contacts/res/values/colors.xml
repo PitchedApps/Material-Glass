@@ -9,7 +9,7 @@
     <color name="background_dialpad">@color/backgroundt</color>
     <color name="background_dialpad_pressed">@color/backgrounddt</color>
     <color name="dialpad_primary_text_color">@color/text</color>
-    <color name="dialpad_secondary_text_color">@color/text</color>
+    <color name="dialpad_secondary_text_color">@color/textt</color>
     <color name="dialpad_digits_text_color">@color/text</color>
     <color name="dialpad_separator_line_color">#11ffffff</color>
     <color name="dialpad_icon_tint">@color/text</color>
