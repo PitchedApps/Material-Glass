@@ -17,6 +17,13 @@ limitations under the License.
     </version>
     -->
 
+    <version name="">
+        <text>Nerfed holo colors</text>
+        <text>Fixed up some gmail components</text>
+        <text>Themed a few modules</text>
+        <text>Themed theme.holo related styles</text>
+        <text>Fixed up SystemUI a bit</text>
+    </version>
     <version name="0.7.2">
         <text>Made google now drawer text a bit lighter</text>
         <text>Made dialer search background black</text>

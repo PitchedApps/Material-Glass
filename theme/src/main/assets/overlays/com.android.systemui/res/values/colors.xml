@@ -16,12 +16,17 @@
     <color name="notification_material_background_media_default_color">#a9111111</color>
     <color name="notification_ripple_untinted_color">#28A8A8A8</color>
     <color name="notification_ripple_color_low_priority">#30A8A8A8</color>
+    <color name="icon_tint">@color/text</color>
     <color name="qs_detail_transition">#66ffffff</color>
     <color name="current_user_border_color">@color/textt</color>
     <color name="segmented_button_text_inactive">#77ffffff</color>
     <color name="gesture_color">@color/text</color>
     <color name="fab_color">@color/dblue</color>
     <color name="floating_action_button_icon_color">@color/text</color>
+
+    <color name="navring_check_tint">@android:color/white</color>
+    <color name="navring_edit_fill">@color/backgroundt</color>
+    <color name="navring_edit_tint">@color/backgroundddt</color>
     
     <color name="black_t">#a0000000</color>
     <color name="background">#ff000000</color>

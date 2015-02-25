@@ -15,10 +15,10 @@
     <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
     <color name="wallet_dim_foreground_inverse_holo_dark">#ff323232</color>
     <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
-    <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
-    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
-    <color name="wallet_hint_foreground_holo_light">#ff808080</color>
-    <color name="wallet_hint_foreground_holo_dark">#ff808080</color>
+    <color name="wallet_bright_foreground_disabled_holo_light">@color/texttt</color>
+    <color name="wallet_bright_foreground_holo_light">@color/text</color>
+    <color name="wallet_hint_foreground_holo_light">@color/textt</color>
+    <color name="wallet_hint_foreground_holo_dark">@color/textt</color>
     <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
     <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
     <color name="wallet_holo_blue_light">#ff33b5e5</color>
@@ -27,7 +27,7 @@
     <color name="manage_accounts_text_color">@color/text</color>
     <color name="add_accounts_text_color">@color/manage_accounts_text_color</color>
     <color name="account_text_color">@color/manage_accounts_text_color</color>
-    <color name="white">#ffffffff</color>
+    <color name="white">@color/background</color>
     <color name="circle_background">@color/background</color>
     <color name="line_background">@color/backgroundd</color>
     <color name="ampm_text_color">@color/textt</color>
@@ -118,7 +118,7 @@
     <color name="text_color_disabled">@color/textt</color>
     <color name="accent_blue">@color/text</color>
     <color name="text_color_blue">@color/textt</color>
-    <color name="text_color_draft_red">@color/primary_color</color>
+    <color name="text_color_draft_red">@color/quantum_googred500</color>
     <color name="text_color_hint_grey">@color/textt</color>
     <color name="gray_text_color">@color/textneutral</color>
     <color name="dark_gray_text_color">@color/textneutral</color>
@@ -130,8 +130,8 @@
     <color name="subject_text_color_read">@color/text</color>
     <color name="subject_text_color_unread">@color/text_color_black</color>
     <color name="snippet_text_color">@color/text_color_grey</color>
-    <color name="date_text_color_unread">#ff4285f4</color>
-    <color name="date_text_color_read">@color/textt</color>
+    <color name="date_text_color_unread">@color/text</color>
+    <color name="date_text_color_read">@color/texttt</color>
     <color name="message_info_text_color">@color/gray_text_color</color>
     <color name="ap_background_color">@color/background</color>
     <color name="ap_overflow_badge_color">@color/backgroundd</color>
@@ -144,7 +144,7 @@
     <color name="account_item_selected_text_color">@color/text</color>
     <color name="folder_list_heading_text_color">@color/text_color_medium_grey</color>
     <color name="list_background_color">@color/background</color>
-    <color name="drawer_item_activated_background_color">#12000000</color>
+    <color name="drawer_item_activated_background_color">#12ffffff</color>
     <color name="mini_drawer_activated_background_color">@color/background</color>
     <color name="folder_list_divider_color">@color/divider_color</color>
     <color name="compose_label_text">@color/text_color_grey</color>
@@ -160,7 +160,7 @@
     <color name="conversation_view_footer_text_color">#ffa7a7a7</color>
     <color name="conversation_view_footer_load_more_text_color">@color/accent_blue</color>
     <color name="widget_header_bg_color">@color/background</color>
-    <color name="widget_conversation_list_divider_color">#ffe5e5e5</color>
+    <color name="widget_conversation_list_divider_color">#22ffffff</color>
     <color name="attachment_name_color">#ffaaaaaa</color>
     <color name="attachment_tile_shadow_box_color">#7f000000</color>
     <color name="attachment_tile_subtitle_color">@color/text_color_hint_grey</color>
@@ -170,7 +170,7 @@
     <color name="high_spam_warning_background_color">#ffdd4b39</color>
     <color name="low_spam_color">#ff333333</color>
     <color name="low_spam_warning_background_color">@color/backgrounddd</color>
-    <color name="notification_icon_color">@color/primary_color</color>
+    <color name="notification_icon_color">@color/text</color>
     <color name="search_query_hint_text">@color/text_color_grey</color>
     <color name="search_query_text">@color/text_color_black</color>
     <color name="search_suggestion_item_text">@color/text_color_grey</color>
@@ -243,7 +243,7 @@
     <color name="password_warning_color">#ffd30000</color>
     <color name="email_confirmation_color">@color/textt</color>
     <color name="quick_response_text_color">@color/text</color>
-    <color name="folder_teaser_count_text">@android:color/white</color>
+    <color name="folder_teaser_count_text">@color/textt</color>
     <color name="ad_undo_text_color">#ffee8100</color>
     <color name="ad_undo_description_text_color">@color/textt</color>
     <color name="viewpager_indicator_current">@color/textt</color>
