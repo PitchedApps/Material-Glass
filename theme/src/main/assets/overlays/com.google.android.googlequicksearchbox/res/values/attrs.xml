@@ -22,6 +22,16 @@
     <attr name="useViewLifecycle" format="boolean" />
     <attr name="zOrderOnTop" format="boolean" />
     <attr name="uiMapToolbar" format="boolean" />
+    <attr name="externalRouteEnabledDrawable" format="reference" />
+    <attr name="mediaRouteButtonStyle" format="reference" />
+    <attr name="mediaRouteOffDrawable" format="reference" />
+    <attr name="mediaRouteConnectingDrawable" format="reference" />
+    <attr name="mediaRouteOnDrawable" format="reference" />
+    <attr name="accountDetailsTextColor" format="reference" />
+    <attr name="accountExpandOpenDrawable" format="reference" />
+    <attr name="accountExpandCloseDrawable" format="reference" />
+    <attr name="accountExpandDividerDrawable" format="reference" />
+    <attr name="forceFullHeight" format="boolean" />
     <attr name="imageAspectRatioAdjust">
         <enum name="none" value="0" />
         <enum name="adjust_height" value="2" />
@@ -84,17 +94,6 @@
         <enum name="text2" value="1" />
     </attr>
     <attr name="sectionContent" format="string" localization="suggested" />
-    <attr name="listeningColor" format="reference" />
-    <attr name="loadingColor" format="reference" />
-    <attr name="ttsColor" format="reference" />
-    <attr name="soundLevelColor" format="reference" />
-    <attr name="orbMaxRadius" format="reference" />
-    <attr name="fixedSize" format="boolean" />
-    <attr name="accountDetailsTextColor" format="reference" />
-    <attr name="accountExpandOpenDrawable" format="reference" />
-    <attr name="accountExpandCloseDrawable" format="reference" />
-    <attr name="accountExpandDividerDrawable" format="reference" />
-    <attr name="forceFullHeight" format="boolean" />
     <attr name="windowSize" format="integer" />
     <attr name="defaultScreen" format="integer" />
     <attr name="cellCountX" format="integer" />
@@ -136,11 +135,23 @@
     <attr name="ringOutset" format="dimension" />
     <attr name="indicatorSize" format="dimension" />
     <attr name="layout_ignoreInsets" format="boolean" />
-    <attr name="externalRouteEnabledDrawable" format="reference" />
-    <attr name="mediaRouteButtonStyle" format="reference" />
-    <attr name="mediaRouteOffDrawable" format="reference" />
-    <attr name="mediaRouteConnectingDrawable" format="reference" />
-    <attr name="mediaRouteOnDrawable" format="reference" />
+    <attr name="cardBackgroundColor" format="color" />
+    <attr name="cardCornerRadius" format="dimension" />
+    <attr name="cardElevation" format="dimension" />
+    <attr name="cardMaxElevation" format="dimension" />
+    <attr name="cardUseCompatPadding" format="boolean" />
+    <attr name="cardPreventCornerOverlap" format="boolean" />
+    <attr name="contentPadding" format="dimension" />
+    <attr name="contentPaddingLeft" format="dimension" />
+    <attr name="contentPaddingRight" format="dimension" />
+    <attr name="contentPaddingTop" format="dimension" />
+    <attr name="contentPaddingBottom" format="dimension" />
+    <attr name="listeningColor" format="reference" />
+    <attr name="loadingColor" format="reference" />
+    <attr name="ttsColor" format="reference" />
+    <attr name="soundLevelColor" format="reference" />
+    <attr name="orbMaxRadius" format="reference" />
+    <attr name="fixedSize" format="boolean" />
     <attr name="layout_column" format="integer">
         <enum name="end" value="-2" />
         <enum name="span_all" value="-1" />
@@ -182,6 +193,8 @@
         <enum name="slide_down" value="2" />
         <enum name="slide_up" value="1" />
     </attr>
+    <attr name="layout_appearAnimationDuration" format="reference|integer" />
+    <attr name="layout_disappearAnimationDuration" format="reference|integer" />
     <attr name="enabledBackgroundColor" format="reference|color" />
     <attr name="disabledBackgroundColor" format="reference|color" />
     <attr name="levelGuideColor" format="reference|color" />
@@ -274,6 +287,9 @@
     <attr name="textInDuration" format="integer" />
     <attr name="textOutDuration" format="integer" />
     <attr name="tintList" format="reference" />
+    <attr name="radius" format="reference|dimension" />
+    <attr name="color" format="reference|color" />
+    <attr name="elevation" format="reference|integer" />
     <attr name="qpDarkTextColor" format="reference|color" />
     <attr name="qpNormalTextColor" format="reference|color" />
     <attr name="qpLightTextColor" format="reference|color" />

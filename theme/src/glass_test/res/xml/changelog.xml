@@ -17,7 +17,10 @@ limitations under the License.
     </version>
     -->
 
-    <version name="">
+    <version name="0.7.4">
+        <text></text>
+    </version>
+    <version name="0.7.3">
         <text>Nerfed holo colors</text>
         <text>Fixed up some gmail components</text>
         <text>Themed a few modules</text>

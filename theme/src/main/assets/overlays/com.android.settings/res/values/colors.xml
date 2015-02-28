@@ -43,10 +43,10 @@
     <color name="security_settings_billing_desc_color">@color/text</color>
 
     <color name="black_t">#a0000000</color>
-    <color name="backgroundt">#00000000</color>
-    <color name="background_t">#00000000</color>
-    <color name="backgrounddt">#00161616</color>
-    <color name="backgroundddt">#00323232</color>
+    <color name="backgroundt">#20000000</color>
+    <color name="background_t">#20000000</color>
+    <color name="backgrounddt">#20161616</color>
+    <color name="backgroundddt">#20323232</color>
     <color name="pblue_t">#cc748B96</color>
     <color name="pbluee_t">#cc62757e</color>
     <color name="dblue_t">#cc343d41</color>

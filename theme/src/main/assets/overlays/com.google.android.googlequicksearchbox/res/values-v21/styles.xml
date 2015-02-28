@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Theme.Gsa" parent="@style/Theme.Shim.Light">
+        <item name="qpActionIconTint">@android:color/white</item>
+    </style>
+    <style name="Theme_Holo_Light_Dialog_Alert" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
     <style name="Theme.Shim.Light" parent="@android:style/Theme.Material" />
     <style name="Theme.Shim.Light.NoActionBar" parent="@android:style/Theme.Material.NoActionBar">
         <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:colorBackground">@android:color/transparent</item>
     </style>
     <style name="Theme.Shim.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
     <style name="Widget.Shim.Light.ActionBar" parent="@android:style/Widget.Material.ActionBar" />
-
-    <style name="Theme.Gsa" parent="@android:style/Theme.Material" />
 </resources>
