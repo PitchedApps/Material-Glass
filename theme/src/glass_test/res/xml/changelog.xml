@@ -17,8 +17,16 @@ limitations under the License.
     </version>
     -->
 
+    <version name="0.7.5">
+        <text>Fixed issue with primary light text</text>
+        <text>Improved on gmail, more transparency and black dropdown</text>
+        <text>Darkened snapchat\'s splash color</text>
+        <text>Downsized the bootanimation in hopes of supporting phones with hdpi and under (you can still get the xxhdpi version on android file host)</text>
+    </version>
     <version name="0.7.4">
-        <text></text>
+        <text>Updated google to latest update (feb 26)</text>
+        <text>Slightly darkened settings</text>
+        <text>Cleaned up google + code</text>
     </version>
     <version name="0.7.3">
         <text>Nerfed holo colors</text>
@@ -34,7 +42,6 @@ limitations under the License.
         <text>Materialized theme engine drawer</text>
         <text>Fixed euphoria OTA</text>
     </version>
-
     <version name="0.7.1">
         <text>Testing in progress</text>
     </version>

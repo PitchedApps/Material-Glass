@@ -10,7 +10,7 @@
         <item name="android:navigationBarColor">@color/background</item>
         <item name="android:windowBackground">@color/backgroundt</item>
     </style>
-    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material.Wallpaper">
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
 

@@ -58,20 +58,24 @@
 
     <style name="AbstractComposeArea">
         <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:background">@color/background</item>
+        <item name="android:background">@color/backgroundt</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:animateLayoutChanges">true</item>
     </style>
     <style name="ComposeTheme" parent="@style/UnifiedEmailTheme.Appcompat">
-        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColor">@color/text</item>
+        <!--<item name="android:background">@color/backgroundt</item>-->
+        <item name="android:colorBackground">@color/backgroundt</item>
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:dropDownListViewStyle">@style/ComposeDropdownListViewStyle</item>
-        <item name="android:colorBackgroundCacheHint">@android:color/white</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
     </style>
     <style name="ComposeDropdownListViewStyle" parent="@android:style/Widget.Material.ListView">
         <item name="android:divider">@null</item>
         <item name="android:dividerHeight">0.0dip</item>
+        <item name="android:background">@color/backgroundx</item>
+        <item name="android:textColor">@color/text</item>
     </style>
     <style name="GmailTheme.NoActionBar.WelcomeTour" parent="@style/GmailTheme.NoActionBar">
         <item name="android:windowBackground">@color/backgroundt</item>
@@ -82,6 +86,9 @@
         <item name="colorPrimary">@color/primary_color</item>
         <item name="colorPrimaryDark">@color/primary_dark_color</item>
         <item name="colorAccent">@color/accent_blue</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:colorBackground">@color/backgroundt</item>
+        <item name="android:windowBackground">@color/backgroundt</item>
     </style>
 
     <style name="Theme.AppCompat.CompactMenu" parent="@android:style/Theme.Material" />
