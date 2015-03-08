@@ -17,6 +17,10 @@ limitations under the License.
     </version>
     -->
 
+    <version name="0.7.6">
+        <text>Removed dialer and contact theming (too buggy, use the xda version if you want it)</text>
+        <text>Added border along toast messages</text>
+    </version>
     <version name="0.7.5">
         <text>Fixed issue with primary light text</text>
         <text>Improved on gmail, more transparency and black dropdown</text>

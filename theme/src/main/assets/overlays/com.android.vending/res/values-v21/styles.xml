@@ -67,4 +67,8 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
+
+    <style name="Platform.AppCompat" parent="@android:style/Theme.Material" />
+    <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
+
 </resources>

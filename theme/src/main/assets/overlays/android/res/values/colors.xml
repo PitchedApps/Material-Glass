@@ -115,6 +115,6 @@
     <!--<color name="bright_foreground_inverse_holo_light">@color/neutral</color>-->
 
     <color name="notification_mtrl_action_textcolor">@color/textt</color>
-    <color name="notification_mtrl_big_picture_bg">@color/background</color>
-    <color name="resolver_list_bg">@color/background</color>
+    <color name="notification_mtrl_big_picture_bg">@color/backgroundt</color>
+    <color name="resolver_list_bg">@color/backgroundt</color>
 </resources>

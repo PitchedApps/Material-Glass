@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Green" parent="@android:style/Theme.Material">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/darker_green</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="colorControlActivated">@color/backgroundd</item>
+        <item name="colorControlHighlight">@color/backgrounddd</item>
+    </style>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EsActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:logo">@android:color/transparent</item>
+        <item name="android:titleTextStyle">@style/EsActionBar.Title</item>
+    </style>
+    <style name="EsActionBar.Title" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/header_text_size</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:background">#00000000</item>
+    </style>
+    <style name="Theme.EmeraldSea.Settings" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/EsActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_black</item>
+    </style>
+    <style name="Theme.InCallDialpad" parent="@android:style/Theme.Holo.Dialog.NoActionBar" />
+    <style name="Theme.Hangout.IncomingRing" parent="@android:style/Theme.Holo.DialogWhenLarge.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

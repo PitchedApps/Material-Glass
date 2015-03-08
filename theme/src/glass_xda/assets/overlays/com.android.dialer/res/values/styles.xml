@@ -11,10 +11,10 @@
     <style name="ListViewStyle" parent="@android:style/Widget.Material.ListView">
         <item name="android:overScrollMode">always</item>
     </style>
-    <style name="ContactListFilterTheme" parent="@*common:style/Theme.Material.Black">
+    <style name="ContactListFilterTheme" parent="@android:style/Theme.Material">
         <item name="android:listViewStyle">@style/ListViewStyle</item>
     </style>
-    <style name="BackgroundOnlyTheme" parent="@*common:style/Theme.Material.Black">
+    <style name="BackgroundOnlyTheme" parent="@android:style/Theme.Material">
         <item name="android:windowBackground">@null</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
@@ -22,7 +22,7 @@
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:windowNoDisplay">true</item>
     </style>
-    <style name="InCallPopupMenuStyle" parent="@*common:style/Theme.Material.Black">
+    <style name="InCallPopupMenuStyle" parent="@android:style/Theme.Material">
         <item name="android:textColorPrimary">@color/popup_menu_color</item>
     </style>
     <style name="InCallActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
@@ -59,11 +59,11 @@
 
         <item name="android:windowActionBarOverlay">false</item>
         <item name="android:actionOverflowButtonStyle">@style/DialtactsActionBarOverflowWhite</item>
-</style>
+    </style>
 
 
 
-<style name="DialtactsTheme" parent="@android:style/Theme.Material">
+    <style name="DialtactsTheme" parent="@android:style/Theme.Material">
         <item name="android:textColorPrimary">@color/dialtacts_primary_text_color</item>
         <item name="android:textColorSecondary">@color/dialtacts_secondary_text_color</item>
         <item name="android:windowContentOverlay">@null</item>

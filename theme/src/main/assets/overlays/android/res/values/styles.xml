@@ -60,6 +60,15 @@
         <item name="android:background">@null</item>
     </style>
 
+    <!--Dialog, fixes wallpaper issue-->
+    <style name="Theme.Material.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+    <style name="Theme.Material.Light.Dialog" parent="@android:style/Theme.Material.Light.Dialog">
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+
+
     <style name="Theme.Material" parent="@android:style/Theme.Material">
         <item name="android:panelColorBackground">@color/backgroundt</item>
         <item name="android:panelColorForeground">@color/text</item>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Setup" parent="@android:style/Theme.Material">
+        <item name="android:windowBackground">@color/page_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorLink">@color/accent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

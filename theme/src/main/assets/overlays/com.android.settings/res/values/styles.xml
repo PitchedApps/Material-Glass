@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material.Wallpaper" />
-    <style name="Theme.Settings" parent="@style/Theme.SettingsBase">
-        <item name="android:colorBackground">@color/background</item>
+    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material.Wallpaper">
         <item name="android:statusBarColor">@color/actionbar</item>
-        <item name="android:actionBarStyle">@style/Theme.ActionBar</item>
     </style>
 
-    <style name="CardView">
-        <item name="cardBackgroundColor">@color/backgrounddt</item>
-        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
-        <item name="cardElevation">@dimen/cardview_default_elevation</item>
-        <item name="cardMaxElevation">@dimen/cardview_default_elevation</item>
-        <item name="cardUseCompatPadding">false</item>
-        <item name="cardPreventCornerOverlap">true</item>
-    </style>
-    <style name="CardView.Light" parent="@style/CardView">
-        <item name="cardBackgroundColor">@color/backgrounddt</item>
-    </style>
     <style name="SecurityPreferenceButtonContainer" parent="@android:style/Widget.Material.SegmentedButton">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -34,34 +20,7 @@
     <style name="Widget.TimePicker" parent="@android:style/Widget.Material.TimePicker">
         <item name="android:numbersBackgroundColor">@color/background</item>
     </style>
-    <style name="SetupWizardWifiTheme.Light" parent="@android:style/Theme.Material.NoActionBar">
-        <item name="android:windowBackground">@color/background</item>
-        <item name="android:windowSoftInputMode">adjustPan</item>
-        <item name="android:alertDialogTheme">@style/Theme.Light.WifiDialog</item>
-        <item name="android:listPreferredItemPaddingStart">@dimen/setup_wizard_margin_sides</item>
-        <item name="android:listPreferredItemPaddingEnd">@dimen/setup_wizard_margin_sides</item>
-        <!--<item name="android:preferencePanelStyle">@android:style/PreferencePanel.Dialog</item>-->
-        <item name="android:colorAccent">@color/text</item>
-        <item name="preferenceBackgroundColor">@color/background</item>
-        <item name="ic_menu_add">@drawable/ic_menu_add_dark</item>
-        <item name="ic_menu_moreoverflow">@android:drawable/ic_menu_help</item>
-        <item name="ic_wps">@drawable/ic_wps_light</item>
-        <item name="setup_divider_color">@color/backgrounddt</item>
-        <item name="wifi_signal_color">@color/text</item>
-        <!--<item name="wifi_signal">@drawable/wifi_signal_teal</item>-->
-    </style>
 
-
-
-
-
-    <style name="Theme.Light.WifiDialog" parent="@android:style/Theme.Material.Dialog.Alert">
-        <item name="android:windowSoftInputMode">adjustResize</item>
-        <item name="ic_menu_add">@drawable/ic_menu_add_dark</item>
-        <item name="ic_menu_moreoverflow">@android:drawable/ic_menu_help</item>
-        <item name="ic_wps">@drawable/ic_wps_light</item>
-        <!--<item name="wifi_signal">@drawable/wifi_signal_light</item>-->
-    </style>
     <style name="Theme.ActionBar" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:contentInsetStart">@dimen/actionbar_contentInsetStart</item>
         <item name="android:background">@color/actionbar</item>

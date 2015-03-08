@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="HoloWhite" parent="@android:style/Theme.Holo.Wallpaper" />
+    <style name="HoloWhite" parent="@android:style/Theme.Material.Wallpaper" />
 </resources>
