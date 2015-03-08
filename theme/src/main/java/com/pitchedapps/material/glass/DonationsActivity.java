@@ -44,18 +44,6 @@ public class DonationsActivity extends FragmentActivity implements View.OnClickL
     private static final String PAYPAL_CURRENCY_CODE = "CAD";
 
     /**
-     * Flattr
-     */
-    private static final String FLATTR_PROJECT_URL = "https://github.com/dschuermann/android-donations-lib/";
-    // FLATTR_URL without http:// !
-    private static final String FLATTR_URL = "flattr.com/thing/712895/dschuermannandroid-donations-lib-on-GitHub";
-
-    /**
-     * Bitcoin
-     */
-    private static final String BITCOIN_ADDRESS = "1CXUJDMaXNed69U42okCxeMyiGHjboVw1j";
-
-    /**
      * FABulous constants
      */
     private static final String FAB_MAIN = "fab_main";
@@ -112,7 +100,7 @@ public class DonationsActivity extends FragmentActivity implements View.OnClickL
             case FAB_MAIN:
                 Intent intent = getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
                 if (intent == null) {
-                    Toast.makeText(this, "Theme chooser not installed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Cyanogenmod theme chooser is not installed!", Toast.LENGTH_SHORT).show();
                 } else {
                     startActivity(intent);
                 }

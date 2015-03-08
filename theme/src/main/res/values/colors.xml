@@ -20,6 +20,6 @@
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>
 
-    <color name="fab_unpressed">#ff444444</color>
-    <color name="fab_pressed">#ff666666</color>
+    <color name="fab_unpressed">#44444444</color>
+    <color name="fab_pressed">#66666666</color>
 </resources>
