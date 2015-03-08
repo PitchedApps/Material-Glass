@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating_button"
+    android:layout_width="@dimen/floating_button_layout_size_compat"
+    android:layout_height="@dimen/floating_button_layout_size_compat"
+    android:layout_marginBottom="@dimen/floating_button_bottom_padding"
+    android:layout_marginRight="@dimen/floating_button_bottom_padding"
+    android:layout_gravity="right|bottom"
+    android:background="@drawable/shadow">
+
+    <View
+        android:id="@+id/fab_circle"
+        android:layout_width="@dimen/floating_button_size"
+        android:layout_height="@dimen/floating_button_size"
+        android:layout_gravity="center"
+        android:background="@drawable/fab_background"/>
+
+    <ImageView
+        android:id="@+id/fab_icon"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/fab_icon_width"
+        android:layout_height="@dimen/fab_icon_height"/>
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/donations_activity_content"/>
+
+    <include
+        layout="@layout/fab_layout"
+        android:id="@+id/fab_main"/>
+
+</FrameLayout>

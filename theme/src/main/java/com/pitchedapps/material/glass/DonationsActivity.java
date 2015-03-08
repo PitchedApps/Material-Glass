@@ -22,10 +22,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.View;
+import android.widget.Toast;
 
 import org.sufficientlysecure.donations.DonationsFragment;
 
-public class DonationsActivity extends FragmentActivity {
+public class DonationsActivity extends FragmentActivity implements View.OnClickListener {
 
     /**
      * Google
@@ -54,13 +56,21 @@ public class DonationsActivity extends FragmentActivity {
     private static final String BITCOIN_ADDRESS = "1CXUJDMaXNed69U42okCxeMyiGHjboVw1j";
 
     /**
+     * FABulous constants
+     */
+    private static final String FAB_MAIN = "fab_main";
+
+    /**
      * Called when the activity is first created.
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.donations_activity);
+        setContentView(R.layout.donations_activity_frame);
+
+        View mMainFab = findViewById(R.id.fab_main);
+        Util.setUpFab(mMainFab, R.drawable.themes, FAB_MAIN, this);
 
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         DonationsFragment donationsFragment;
@@ -96,4 +106,17 @@ public class DonationsActivity extends FragmentActivity {
         }
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getTag().toString()) {
+            case FAB_MAIN:
+                Intent intent = getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+                if (intent == null) {
+                    Toast.makeText(this, "Theme chooser not installed", Toast.LENGTH_SHORT).show();
+                } else {
+                    startActivity(intent);
+                }
+                break;
+        }
+    }
 }
