@@ -72,8 +72,8 @@
     <color name="datepicker_default_normal_text_color_holo_dark">@color/text</color>
     <color name="accent_material_light">@color/background</color>
     <color name="accent_material_dark">@color/text</color>
-    <color name="button_material_dark">#40222222</color>
-    <color name="button_material_light">#40dddddd</color>
+    <color name="button_material_dark">#50505050</color>
+    <color name="button_material_light">#50afafaf</color>
     <color name="link_text_material_dark">@color/textt</color>
     <color name="link_text_material_light">@color/backgroundd</color>
     <color name="timepicker_default_ampm_selected_background_color_material">@color/backgroundd</color>

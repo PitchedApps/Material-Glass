@@ -16,15 +16,14 @@ public class Util {
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public static void setUpFab(View fabContainer, int iconRes, String tag, View.OnClickListener listener) {
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-        {
-        fabContainer.setOutlineProvider(new FABOutlineProvider());
-        fabContainer.setTag(tag);
-        fabContainer.setOnClickListener(listener);
-//        } else {
-//            View fabCircle = fabContainer.findViewById(R.id.fab_circle);
-//            fabCircle.setTag(tag);
-//            fabCircle.setOnClickListener(listener);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            fabContainer.setOutlineProvider(new FABOutlineProvider());
+            fabContainer.setTag(tag);
+            fabContainer.setOnClickListener(listener);
+        } else {
+            View fabCircle = fabContainer.findViewById(R.id.fab_circle);
+            fabCircle.setTag(tag);
+            fabCircle.setOnClickListener(listener);
         }
         ImageView fabIcon = (ImageView) fabContainer.findViewById(R.id.fab_icon);
         fabIcon.setImageResource(iconRes);
@@ -38,13 +37,11 @@ public class Util {
      */
     public static float getBottomOfFabCircle(Context context, View fabContainer) {
         float bottom;
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-        {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             bottom = fabContainer.getHeight();
+        } else {
+            bottom = fabContainer.getHeight() - Util.convertDpToPixel(8 /* in dp, "leftover" space for shadow */, context);
         }
-//        else {
-//            bottom = fabContainer.getHeight() - Util.convertDpToPixel(8 /* in dp, "leftover" space for shadow */, context);
-//        }
         return bottom;
     }
 

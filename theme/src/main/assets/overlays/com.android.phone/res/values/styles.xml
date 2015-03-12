@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="VerticalSeparator">
+        <item name="android:background">@*common:color/divider</item>
+        <item name="android:layout_width">2.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="Theme.Settings" parent="@android:style/Theme.Material.DialogWhenLarge">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:statusBarColor">@color/actionbar</item>
+    </style>
+    <style name="SettingsLight" parent="@android:style/Theme.Material">
+        <item name="android:textColorPrimary">@color/setting_primary_color</item>
+        <item name="android:textColorSecondary">@color/setting_secondary_color</item>
+        <item name="android:windowBackground">@color/phone_settings_background_color</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--<item name="android:actionBarStyle">@style/DialtactsActionBarStyle</item>-->
+        <item name="android:windowActionBarOverlay">false</item>
+        <!--<item name="android:actionOverflowButtonStyle">@style/DialtactsActionBarOverflow</item>-->
+        <!--<item name="android:homeAsUpIndicator">@drawable/ic_back_arrow</item>-->
+        <item name="android:actionMenuTextColor">@color/phone_settings_actionbar_text_color</item>
+        <item name="android:colorPrimaryDark">@color/actionbar_background_color_dark</item>
+    </style>
+    <style name="DialerAlertDialogTheme" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:colorAccent">@color/dialer_theme_color</item>
+    </style>
+    <style name="NetworkOperatorsSettingsTheme" parent="@android:style/Theme.Material">
+        <item name="android:actionBarTheme">@android:style/ThemeOverlay.Material.Dark.ActionBar</item>
+        <item name="android:colorPrimary">@color/network_operators_color_primary</item>
+        <item name="android:colorPrimaryDark">@color/network_operators_color_primary_dark</item>
+    </style>
+    <style name="Theme.InCallScreen" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <!--<item name="android:windowAnimationStyle">@style/InCallAnimationStyle</item>-->
+    </style>
+
+    <style name="EmergencyDialerTheme" parent="@android:style/Theme.Material">
+        <item name="android:actionBarStyle">@style/TelephonyActionBarStyle</item>
+        <item name="android:colorPrimary">@color/dialer_theme_color</item>
+        <item name="android:colorPrimaryDark">@color/dialer_theme_color_dark</item>
+        <item name="dialpad_key_button_touch_tint">@color/dialer_dialpad_touch_tint</item>
+    </style>
+    <style name="SimImportTheme" parent="@android:style/Theme.Material">
+        <item name="android:actionBarStyle">@style/TelephonyActionBarStyle</item>
+        <item name="android:colorPrimaryDark">@color/dialer_theme_color_dark</item>
+    </style>
+    <style name="OutgoingCallBroadcasterTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <!--<item name="android:windowAnimationStyle">@style/OutgoingAnimationStyle</item>-->
+    </style>
+    <style name="Theme.Material.Settings" parent="@android:style/Theme.Material">
+        <item name="android:actionBarSize">56.0dip</item>
+        <item name="android:colorPrimary">@color/settings_theme_primary</item>
+        <item name="android:colorPrimaryDark">@color/settings_theme_primary_dark</item>
+    </style>
+
+
+    <style name="TelephonyActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:background">@color/actionbar_background_color</item>
+        <!--<item name="android:height">@dimen/action_bar_height</item>-->
+        <item name="android:displayOptions">homeAsUp|showHome|showTitle</item>
+        <!--<item name="android:titleTextStyle">@style/DialtactsActionBarTitleText</item>-->
+        <!--<item name="android:elevation">@dimen/action_bar_elevation</item>-->
+    </style>
+
+</resources>

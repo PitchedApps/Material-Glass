@@ -9,7 +9,7 @@
     <color name="gesture_color">@color/text</color>
     <color name="icon_tint">@color/text</color>
     <color name="keyguard_overflow_content_color">@color/text</color>
-    <color name="navring_check_tint">@android:color/white</color>
+    <color name="navring_check_tint">@color/textt</color>
     <color name="navring_edit_fill">@color/backgroundt</color>
     <color name="navring_edit_tint">@color/backgroundddt</color>
     <color name="notification_guts_bg_color">#a9111111</color>
@@ -34,6 +34,14 @@
     <color name="system_secondary_color">@color/background</color>
     <color name="system_bar_background_opaque">@color/backgroundt</color>
 
+    <!-- Background of the volume panel. See also: volume_dialog_background -->
+    <color name="volume_panel_background_color">@color/backgroundt</color>
+    <!-- Battery base color -->
+    <color name="batterymeter_base_color">#FFFFFFFF</color>
+    <!-- Color for notification icons -->
+    <color name="notification_icon_color">#FFFFFFFF</color>
+    <!-- Navigation button ripple color -->
+    <color name="navbutton_ripple_color">#FFFFFFFF</color>
 
     <color name="black_t">#a0000000</color>
     <color name="background">#ff000000</color>

@@ -4,8 +4,8 @@
     <dimen name="floating_button_size">56dp</dimen>                     <!-- Radius of the floating action button -->
     <dimen name="floating_button_radius">28dp</dimen>
     <dimen name="floating_button_bottom_padding">8dp</dimen>            <!-- The shadow takes care of some padding -->
-    <dimen name="fab_icon_width">24dp</dimen>
-    <dimen name="fab_icon_height">24dp</dimen>
+    <dimen name="fab_icon_width">30dp</dimen>
+    <dimen name="fab_icon_height">30dp</dimen>
 
     <dimen name="button_elevation">2dp</dimen>
     <dimen name="button_press_elevation">4dp</dimen>

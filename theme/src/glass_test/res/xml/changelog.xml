@@ -14,9 +14,29 @@ limitations under the License.
     <!--
     <version name="">
         <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
+        <text></text>
     </version>
     -->
 
+    <version name="0.7.8">
+        <text>Added ripples to a lot of areas</text>
+        <text>Themed newest nova launcher (join beta)</text>
+        <text>Made youtube settings readable</text>
+        <text>Fully themed contacts</text>
+        <text>Themed more system ui</text>
+    </version>
+    <version name="0.7.7">
+        <text>Fixed up play store</text>
+        <text>Reintroduced dialer and contacts</text>
+        <text>Themed emergency dial and mobile networks, plus a bit more</text>
+        <text>Potential fix for dialog pop ups showing just the wallpaper</text>
+        <text>Added FAB in the app to launch the theme chooser (thanks Ivon)</text>
+    </version>
     <version name="0.7.6">
         <text>Removed dialer and contact theming (too buggy, use the xda version if you want it)</text>
         <text>Added border along toast messages</text>

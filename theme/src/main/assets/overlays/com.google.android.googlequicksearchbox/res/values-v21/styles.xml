@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
     <style name="Theme.Gsa" parent="@style/Theme.Shim.Light">
+        <item name="qpActionIconAlpha">1</item>
         <item name="qpActionIconTint">@android:color/white</item>
     </style>
     <style name="Theme_Holo_Light_Dialog_Alert" parent="@android:style/Theme.Material.Dialog">

@@ -2,25 +2,26 @@
 <resources>
     <color name="account_text_color">@color/manage_accounts_text_color</color>
     <color name="action_card_app_choice_lowlight">#08ffffff</color>
-    <color name="action_card_blue">@color/card</color>
-    <color name="action_card_continue_disabled">@color/card</color>
-    <color name="action_card_continue_enabled">@color/cardd</color>
+    <color name="action_card_blue">@color/textt</color>
+    <color name="action_card_continue_disabled">@color/texttt</color>
+    <color name="action_card_continue_enabled">@color/textt</color>
     <color name="action_card_continue_highlighted">@color/cardd</color>
-    <color name="action_card_dark_grey">@color/cardd</color>
+    <color name="action_card_dark_grey">@color/text</color>
     <color name="action_card_intent_header_background">@color/cardd</color>
-    <color name="action_card_light_blue">@color/card</color>
-    <color name="action_card_light_grey">@color/card</color>
+    <color name="action_card_light_blue">@color/texttt</color>
+    <color name="action_card_light_grey">@color/textt</color>
     <color name="action_card_light_red">#fff56b5c</color>
-    <color name="action_card_medium_grey">@color/card</color>
-    <color name="action_card_radio_button_grey">@color/cardd</color>
-    <color name="action_card_red">@color/cardd</color>
+    <color name="action_card_medium_grey">@color/textt</color>
+    <color name="action_card_radio_button_grey">@color/texttt</color>
+    <color name="action_card_red">@color/texttt</color>
     <color name="action_card_separator_grey">#22ffffff</color>
     <color name="activity_background">@color/background</color>
     <color name="add_accounts_text_color">@color/manage_accounts_text_color</color>
-    <color name="ampm_text_color">@color/text</color>
+    <color name="ampm_text_color">@color/textt</color>
     <color name="appwidget_error_color">@color/backgrounddd</color>
     <color name="attraction_open_hours">#ff659900</color>
-    <color name="attribution_text">#ffe5e5e5</color>
+    <!--???-->
+    <color name="attribution_text">#ff111111</color>
     <color name="audio_progress_bar_color">#33ffffff</color>
     <color name="back_of_card_light_text">@color/textt</color>
     <color name="back_of_card_text">#fff5f5f5</color>
@@ -50,7 +51,7 @@
     <color name="card_separator">#22ffffff</color>
     <color name="card_text">@color/textt</color>
     <color name="card_title_text">@color/text</color>
-<!--???-->
+    <!--???-->
     <color name="car_rental_dropoff_time">#ff659800</color>
     <color name="car_rental_dropoff_time_late">#ffcc0000</color>
     <color name="circle_background">@color/backgroundd</color>
@@ -66,9 +67,10 @@
     <color name="common_signin_btn_light_text_focused">@color/text</color>
     <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
     <color name="configuration_list_background">@color/background</color>
+    <!--check-->
     <color name="contact_pill_background">@color/backgroundd</color>
     <color name="contact_select_item_label">@color/textt</color>
-<!--attention-->
+    <!--attention-->
     <color name="context_header_color_dawn">#ff01bfa6</color>
     <color name="context_header_color_daylight">#ff0285d3</color>
     <color name="context_header_color_dusk">#ff3f51b5</color>
@@ -76,16 +78,16 @@
     <color name="corpus_container_select_bar">@color/background</color>
     <color name="countdown_bar">#ff4285f4</color>
     <color name="darker_blue">#ff0099cc</color>
-    <color name="dark_gray">@color/background</color>
+    <color name="dark_gray">#ffbbbbbb</color>
     <color name="date_picker_text_disabled">@color/textt</color>
     <color name="date_picker_text_normal">@color/text</color>
-<!--verify-->    
-	<color name="date_picker_view_animator">#fff2f2f2</color>
+    <!--verify-->
+    <color name="date_picker_view_animator">#fff2f2f2</color>
     <color name="delete_target_hover_tint">#daff0000</color>
     <color name="dismiss_list_background">@color/background</color>
     <color name="domain_text">@color/text</color>
-<!--verify-->    
-	<color name="done_disabled_dark">@color/backgroundd</color>
+    <!--verify-->
+    <color name="done_disabled_dark">@color/backgroundd</color>
     <color name="done_text_color_dark_disabled">@color/textt</color>
     <color name="done_text_color_dark_normal">#ffffffff</color>
     <color name="done_text_color_disabled">#ffcccccc</color>
@@ -96,8 +98,8 @@
     <color name="e300_inverse_text">@color/text</color>
     <color name="e300_main_text">@color/text</color>
     <color name="e300_primary_action_text">@color/text</color>
-<!--verify-->   
- 	<color name="e300_primary_color">#ff4285f4</color>
+    <!--verify-->
+    <color name="e300_primary_color">#ff4285f4</color>
     <color name="e300_primary_color_dark">#ff3367d7</color>
     <color name="e300_secondary_text">@color/textt</color>
     <color name="edit_event_button_background_stroke">#33ffffff</color>
@@ -111,10 +113,10 @@
     <color name="five_star_rating_text_color">@color/textt</color>
     <color name="focused_background">@color/backgroundd</color>
     <!--verify-->
-	<color name="follow_on_countdown">#ffff4141</color>
+    <color name="follow_on_countdown">#ffff4141</color>
     <color name="footer_background">@color/background</color>
-   <!--check-->
-	<color name="gray">@color/textt</color>
+    <!--check-->
+    <color name="gray">@color/textt</color>
     <color name="gray_700">@color/textt</color>
     <color name="grid_header_background">@color/background</color>
     <color name="gsa_dark_gray">@color/text</color>
@@ -132,18 +134,18 @@
     <color name="histogram_bar_text">#ffffffff</color>
     <color name="histogram_drop_shadow">#55000000</color>
     <color name="horizontal_bar_separator">#22ffffff</color>
-<!--???-->
+    <!--???-->
     <color name="ic_g_idle_color">#ff7e7e7e</color>
     <color name="ic_mic_color">#ffbfbfbf</color>
     <color name="ic_mic_shadow_color">#40000000</color>
     <color name="ic_orb_listening">#ffff3e3e</color>
-<!--???-->
+    <!--???-->
     <color name="ic_orb_loading">#ffffffff</color>
     <color name="ic_orb_tts">#ff4285f4</color>
     <color name="image_pressed_highlight">#07ffffff</color>
     <color name="ime_level_primary">#4c999999</color>
     <color name="ime_mic_levels">#55ffffff</color>
-    <color name="ime_mic_rec_levels">#55ffffff</color>
+    <color name="ime_mic_rec_levels">#ff666666</color>
     <color name="ime_retry_text">@color/texttt</color>
     <color name="ime_spinner_text">@color/textt</color>
     <color name="ime_state_text">#ffffffff</color>
@@ -169,7 +171,7 @@
     <color name="mini_card_reminder">@color/card</color>
     <color name="mini_card_reminders_text">@color/textt</color>
     <color name="mini_card_text">@color/textt</color>
-<!--check-->
+    <!--check-->
     <color name="navigation_button_color">@color/text</color>
     <color name="nav_suggest">@color/suggest_text_normal</color>
     <color name="nav_suggest_disabled">@color/suggest_text_disabled</color>
@@ -178,7 +180,7 @@
     <color name="neutral_pressed">#33999999</color>
     <color name="news_source">#ff659800</color>
     <color name="normal_icon_corpus_bar">@color/normal_text_corpus_bar</color>
-    <color name="normal_text_corpus_bar">@color/textt</color>
+    <color name="normal_text_corpus_bar">#ff111111</color>
     <color name="nowspace_hamburger_tint">@color/textt</color>
     <color name="nowspace_header_bg_color">@color/background</color>
     <color name="nowspace_refresh_button_tint">@color/textt</color>
@@ -261,7 +263,7 @@
     <color name="search_plate_hint_text_color">@color/textt</color>
     <color name="search_plate_suggestion_divider_background">#22ffffff</color>
     <color name="search_plate_text_color">@color/text</color>
-<!--verify-->
+    <!--verify-->
     <color name="search_scrim">@color/card</color>
     <color name="secondary_text_disabled">@color/texttt</color>
     <color name="secondary_text_inverse">@color/textt</color>
@@ -273,7 +275,7 @@
     <color name="second_screen_title_background">@color/background</color>
     <color name="selected_icon_corpus_bar">@color/selected_text_corpus_bar</color>
     <color name="selected_search_language_header_background">@color/background</color>
-    <color name="selected_text_corpus_bar">@color/text</color>
+    <color name="selected_text_corpus_bar">#ff000000</color>
     <color name="selection_highlight_color">#66666666</color>
     <color name="setup_wizard_color_accent_dark">@color/text</color>
     <color name="setup_wizard_color_accent_light">@color/text</color>
@@ -292,7 +294,7 @@
     <color name="setup_wizard_navbar_text_light">#deffffff</color>
     <color name="solid_black">#ff000000</color>
     <color name="speech_blue">#ff4285f4</color>
-<!--check-->
+    <!--check-->
     <color name="spinner_color">#ffd9d9d9</color>
     <color name="spinner_custom_dropdown_background">#cc000000</color>
     <color name="spinner_pressed_state_color">#cc111111</color>
@@ -322,7 +324,7 @@
     <color name="traffic_heavy">#ffcc0000</color>
     <color name="traffic_light">#ff669900</color>
     <color name="traffic_medium">#ffff8800</color>
-<!--check-->
+    <!--check-->
     <color name="training_closet_header_pressed">#ff4285f4</color>
     <color name="training_closet_secondary_text">@color/textt</color>
     <color name="training_closet_title_normal">@color/text</color>
@@ -355,21 +357,22 @@
     <color name="widget_background">@color/background</color>
     <color name="widget_card_background">@color/card</color>
     <!--check-->
-	<color name="widget_text_panel">@color/background</color>
+    <color name="widget_text_panel">@color/background</color>
     <color name="workspace_icon_text_color">#ffffffff</color>
- 	<color name="default_account_details_color">@android:color/white</color>
- 	
- 	<color name="aaa">#ffff00ff</color>
-	<color name="bbb">#ff00ffff</color>
-	<color name="text">#ffffffff</color>
-	<color name="textt">#ccffffff</color>
-	<color name="texttt">#aaffffff</color>
-	<color name="card">#dd000000</color>
-	<color name="cardd">#dd111111</color>
-	<color name="background">#88000000</color>
-	<color name="backgroundd">#88161616</color>
-	<color name="backgrounddd">#88323232</color>
-	<color name="backgroundx">#ff000000</color>
-	<color name="backgrounddx">#ff161616</color>
-	<color name="backgroundddx">#ff323232</color>
+    <!--???-->
+    <color name="default_account_details_color">@color/backgroundd</color>
+
+    <color name="aaa">#ffff00ff</color>
+    <color name="bbb">#ff00ffff</color>
+    <color name="text">#ffffffff</color>
+    <color name="textt">#ffdddddd</color>
+    <color name="texttt">#ffaaaaaa</color>
+    <color name="card">#dd000000</color>
+    <color name="cardd">#dd111111</color>
+    <color name="background">#88000000</color>
+    <color name="backgroundd">#88161616</color>
+    <color name="backgrounddd">#88323232</color>
+    <color name="backgroundx">#ff000000</color>
+    <color name="backgrounddx">#ff161616</color>
+    <color name="backgroundddx">#ff323232</color>
 </resources>

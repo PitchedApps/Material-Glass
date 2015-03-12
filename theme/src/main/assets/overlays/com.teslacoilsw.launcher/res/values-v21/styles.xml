@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.MatCompat.Widget.Light.RadioButton" parent="@android:style/Widget.Material.CompoundButton.RadioButton" />
+    <style name="Base.MatCompat.Widget.SeekBar" parent="@android:style/Widget.Material.SeekBar" />
+    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@android:style/ThemeOverlay.Material">
+        <item name="isLightTheme">false</item>
+        <item name="colorControlHighlight">@color/ripple_material_dark</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@android:style/Widget.Material.ActionBar.TabView" />
+    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@android:style/Widget.Material.PopupMenu" />
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+
+    <style name="MD_Light" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="md_btn_negative_selector">@drawable/md_btn_selector_ripple</item>
+        <item name="md_btn_neutral_selector">@drawable/md_btn_selector_ripple</item>
+        <item name="md_btn_positive_selector">@drawable/md_btn_selector_ripple</item>
+        <item name="md_btn_stacked_selector">?android:selectableItemBackground</item>
+        <item name="md_divider">@color/md_divider_black</item>
+        <item name="md_list_selector">?android:selectableItemBackground</item>
+    </style>
+</resources>

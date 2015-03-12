@@ -116,16 +116,16 @@
         <item name="android:maxLines">1</item>
     </style>
     <style name="EntryItemSubText" parent="@android:style/TextAppearance.Small">
-        <item name="android:textColor">@color/textt</item>
-        <item name="android:textColorLink">@color/link_text</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorLink">@color/textt</item>
         <item name="android:ellipsize">end</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:maxLines">1</item>
     </style>
     <style name="UnconfirmedEntryText" parent="@android:style/TextAppearance.Small">
-        <item name="android:textColor">@color/textt</item>
-        <item name="android:textColorLink">@color/link_text</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorLink">@color/textt</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
@@ -224,8 +224,8 @@
     </style>
     <style name="reminder_edit_spinner" parent="@android:style/Widget.Material.Spinner">
         <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@color/textt</item>
-        <item name="android:textColorHint">@color/search_plate_hint_text_color</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHint">@color/textt</item>
         <item name="android:layout_marginLeft">12.0dip</item>
         <item name="android:layout_marginRight">12.0dip</item>
     </style>
@@ -237,5 +237,23 @@
     <style name="Theme.Velvet.Card.TextAppearance.Tiny" parent="@android:style/TextAppearance.Small">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="VoiceOfGoogle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorLink">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="Theme.HandsFree" parent="@android:style/Theme.Material">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowActionBar">false</item>
     </style>
 </resources>

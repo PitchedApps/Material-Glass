@@ -34,6 +34,9 @@
         <item name="android:textColorLink">@color/textt</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
 
+        <item name="android:listChoiceBackgroundIndicator">@drawable/item_background_material</item>
+        <item name="android:selectableItemBackground">@drawable/item_background_material</item>
+
     </style>
     <style name="Theme.Holo.Light" parent="@android:style/Theme.Holo.Light">
         <item name="android:panelColorBackground">@color/backgroundt_light</item>
@@ -216,13 +219,13 @@
 
     <!--Settings-->
     <style name="Theme.Material.Settings" parent="@android:style/Theme.Material" />
-    <style name="Theme.Leanback.Settings.Dialog.Alert" parent="@android:style/Theme.DeviceDefault.Dialog">
+    <style name="Theme.Leanback.Settings.Dialog.Alert" parent="@android:style/Theme.Material.Dialog">
         <item name="android:colorBackground">@color/backgroundt</item>
     </style>
-    <style name="Theme.Material.Settings.BaseDialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+    <style name="Theme.Material.Settings.BaseDialog" parent="@android:style/Theme.Material.Dialog">
         <item name="android:colorBackground">@color/backgroundt</item>
     </style>
-    <style name="Theme.Material.Settings.Dialog.BaseAlert" parent="@android:style/Theme.DeviceDefault.Dialog">
+    <style name="Theme.Material.Settings.Dialog.BaseAlert" parent="@android:style/Theme.Material.Dialog">
         <item name="android:colorBackground">@color/backgroundt</item>
     </style>
     <style name="Theme.Material.Settings.Dialog.Presentation" parent="@android:style/Theme.Material.Dialog.Presentation">
