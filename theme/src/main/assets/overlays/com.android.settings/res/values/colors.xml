@@ -18,7 +18,7 @@
     <color name="background_color_darker_gray">@color/backgroundt</color>
     <color name="background_color_gray">@color/backgroundt</color>
     <color name="background_color_holo_blue_light">@color/backgroundt</color>
-    <!--<color name="background_color_transparent">@android:color/transparent</color>-->
+    <color name="background_color_transparent">@color/backgroundt</color>
     <color name="background_color_white">@color/backgroundt</color>
     <color name="text_color_black">@color/text</color>
     <color name="text_color_darker_gray">@color/textt</color>
@@ -38,15 +38,15 @@
     <color name="lockscreen_shortcuts_text_color">#cccccc</color>
     <color name="lockscreen_shortcuts_tint_color">#dddddd</color>
     <!-- Owner info -->
-    <color name="ownerinfo_divider_color">@color/backgrounddt</color>
+    <color name="ownerinfo_divider_color">#22ffffff</color>
     <!-- Installed app details -->
     <color name="security_settings_billing_desc_color">@color/text</color>
 
     <color name="black_t">#a0000000</color>
-    <color name="backgroundt">#20000000</color>
-    <color name="background_t">#20000000</color>
-    <color name="backgrounddt">#20161616</color>
-    <color name="backgroundddt">#20323232</color>
+    <color name="backgroundt">#50000000</color>
+    <color name="background_t">#50000000</color>
+    <color name="backgrounddt">#50161616</color>
+    <color name="backgroundddt">#50323232</color>
     <color name="pblue_t">#cc748B96</color>
     <color name="pbluee_t">#cc62757e</color>
     <color name="dblue_t">#cc343d41</color>

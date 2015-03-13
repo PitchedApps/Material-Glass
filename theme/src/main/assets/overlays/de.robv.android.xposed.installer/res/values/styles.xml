@@ -6,5 +6,6 @@
         <item name="pager_tab_strip_bg">@color/pager_tab_strip_bg_dark</item>
         <item name="text_important">@android:color/holo_orange_light</item>
         <item name="download_status_installed">@android:color/holo_orange_light</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 </resources>

@@ -18,11 +18,17 @@ limitations under the License.
         <text></text>
         <text></text>
         <text></text>
-        <text></text>
-        <text></text>
     </version>
     -->
 
+    <version name="0.8.0">
+        <text>Themed Google Keyboard</text>
+        <text>Fixed up google search</text>
+        <text>Themed AOSP messaging</text>
+        <text>Themed AOSP music</text>
+        <text>Recolored dialer and contacts</text>
+        <text>Added parts to system ui</text>
+    </version>
     <version name="0.7.8">
         <text>Added ripples to a lot of areas</text>
         <text>Themed newest nova launcher (join beta)</text>

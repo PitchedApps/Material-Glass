@@ -32,7 +32,8 @@
         <item name="android:colorControlActivated">@color/text</item>
 
         <item name="android:textColorLink">@color/textt</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:actionBarStyle">@style/Widget.Material.ActionBar</item>
+        <item name="android:statusBarColor">@*common:color/status</item>
 
         <item name="android:listChoiceBackgroundIndicator">@drawable/item_background_material</item>
         <item name="android:selectableItemBackground">@drawable/item_background_material</item>
@@ -57,6 +58,8 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundtt</item>
         <item name="android:colorControlActivated">@color/text</item>
+        <item name="android:actionBarStyle">@style/Widget.Material.ActionBar</item>
+        <item name="android:statusBarColor">@*common:color/status</item>
     </style>
 
     <style name="Widget.Holo.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
@@ -82,6 +85,8 @@
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
         <item name="android:colorControlActivated">@color/text</item>
         <item name="android:navigationBarColor">@color/black_t</item>
+        <item name="android:actionBarStyle">@style/Widget.Material.ActionBar</item>
+        <item name="android:statusBarColor">@*common:color/status</item>
     </style>
     <style name="Theme.Material.Wallpaper" parent="@android:style/Theme.Material.Wallpaper">
         <item name="android:panelColorBackground">@color/backgroundt</item>
@@ -93,7 +98,8 @@
         <item name="android:colorBackgroundCacheHint">@color/backgroundtt</item>
         <item name="android:colorControlActivated">@color/text</item>
         <item name="android:navigationBarColor">@color/black_t</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:actionBarStyle">@style/Widget.Material.ActionBar</item>
+        <item name="android:statusBarColor">@*common:color/status</item>
     </style>
     <style name="Theme.Material.Light" parent="@android:style/Theme.Material.Light">
         <item name="android:panelColorBackground">@color/backgroundt_light</item>
@@ -109,12 +115,12 @@
 
     <!--ActionBar-->
     <style name="Widget.Material.ActionBar" parent="@android:style/Widget.Material.ActionBar">
-        <item name="android:background">@android:color/transparent</item>
+        <item name="android:background">@*common:color/actionbar</item>
         <item name="android:backgroundStacked">?android:colorPrimary</item>
         <item name="android:backgroundSplit">?android:colorPrimary</item>
     </style>
     <style name="Widget.Material.ActionBar.Solid" parent="@android:style/Widget.Material.ActionBar.Solid">
-        <item name="android:background">@android:color/transparent</item>
+        <item name="android:background">@*common:color/actionbar</item>
         <item name="android:backgroundStacked">?android:colorPrimary</item>
         <item name="android:backgroundSplit">?android:colorPrimary</item>
     </style>
@@ -282,22 +288,11 @@
     <!--materialization -->
     <style name="Widget.Holo.Button" parent="@android:style/Widget.Material.Button">
         <item name="android:textColor">@color/text</item>
+        <item name="android:showText">false</item>
     </style>
     <style name="Widget.Holo.Light.Button" parent="@android:style/Widget.Material.Light.Button">
         <item name="android:textColor">@color/background</item>
     </style>
-    <!--<style name="Widget.Holo.ListView" parent="@android:style/Widget.Material.ListView" />-->
-    <!--<style name="Widget.Holo.GridView" parent="@android:style/Widget.Material.GridView" />-->
-    <!--<style name="Widget.Holo.PopupWindow" parent="@android:style/Widget.Material.PopupWindow" />-->
-    <!--<style name="Theme.Holo.Dialog" parent="@android:style/Theme.Material.Dialog">-->
-        <!--<item name="android:colorBackground">@color/background_floating_material_dark</item>-->
-        <!--<item name="android:background">@color/background_floating_material_dark</item>-->
-        <!--<item name="android:windowBackground">@drawable/dialog_background_material_dark</item>-->
-        <!--<item name="android:listPreferredItemPaddingLeft">16.0dip</item>-->
-        <!--<item name="android:listPreferredItemPaddingRight">16.0dip</item>-->
-        <!--<item name="android:listPreferredItemPaddingStart">16.0dip</item>-->
-        <!--<item name="android:listPreferredItemPaddingEnd">16.0dip</item>-->
-    <!--</style>-->
 
-    <style name="Widget.Holo.TabWidget" parent="@android:style/Widget.Material.TabWidget" />
+
 </resources>
