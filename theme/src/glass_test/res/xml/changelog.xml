@@ -21,6 +21,11 @@ limitations under the License.
     </version>
     -->
 
+    <version name="0.8.1">
+        <text>Quick fix for white actionbar</text>
+        <text>System UI is more transparent</text>
+        <text>Colored FAB for dialer and contacts</text>
+    </version>
     <version name="0.8.0">
         <text>Themed Google Keyboard</text>
         <text>Fixed up google search</text>
@@ -28,6 +33,7 @@ limitations under the License.
         <text>Themed AOSP music</text>
         <text>Recolored dialer and contacts</text>
         <text>Added parts to system ui</text>
+        <text>Started using sdk 22</text>
     </version>
     <version name="0.7.8">
         <text>Added ripples to a lot of areas</text>

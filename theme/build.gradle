@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0'
+        classpath 'com.android.tools.build:gradle:1.1.0'
     }
 }
 apply plugin: 'com.android.application'
@@ -19,7 +19,7 @@ android {
     defaultConfig {
         applicationId "com.pitchedapps.material.glass"
         minSdkVersion 21
-        targetSdkVersion 21
+        targetSdkVersion 22
     }
     buildTypes {
         release {
@@ -32,8 +32,8 @@ android {
         glass_free {
             buildConfigField "boolean", "DONATIONS_GOOGLE", "true"
             applicationId "com.pitchedapps.material.glass.free"
-            versionCode 80
-            versionName '0.8.0'
+            versionCode 81
+            versionName '0.8.1'
         }
         glass_xda {
             buildConfigField "boolean", "DONATIONS_GOOGLE", "false"
@@ -52,6 +52,6 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:support-v4:22.0.0'
     compile project(':libraries:Donations')
 }

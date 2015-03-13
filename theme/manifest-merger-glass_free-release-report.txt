@@ -25,9 +25,9 @@ ADDED from AndroidManifest.xml:23:5
 		ADDED from AndroidManifest.xml:23:43
 uses-sdk
 ADDED from AndroidManifest.xml:25:5
-MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.android.support:support-v4:22.0.0:20:5
 MERGED from Material Glass.libraries:Donations:unspecified:7:5
-MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.android.support:support-v4:22.0.0:20:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:25:42
 		INJECTED from AndroidManifest.xml:0:0
@@ -50,9 +50,9 @@ ADDED from AndroidManifest.xml:28:5
 		ADDED from AndroidManifest.xml:28:16
 application
 ADDED from AndroidManifest.xml:30:5
-MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
 MERGED from Material Glass.libraries:Donations:unspecified:11:5
-MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
 	android:label
 		ADDED from AndroidManifest.xml:33:9
 	android:allowBackup
