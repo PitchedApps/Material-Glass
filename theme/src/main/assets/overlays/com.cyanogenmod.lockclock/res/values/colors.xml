@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="backgroundt">#66000000</color>
     <color name="theme_primary">#ff000000</color>
     <color name="theme_primary_dark">#ff000000</color>
     <color name="theme_accent">#ffffffff</color>
     <color name="clock_white">#ffffffff</color>
     <color name="clock_gray">#80ffffff</color>
+    <color name="colorPrimary">#ff3462b3</color>
+    <color name="tPrimary">#663462b3</color>
+    <color name="colorPrimaryDark">#ff294d8c</color>
+    <color name="tPrimaryDark">#66294d8c</color>
+    <color name="colorAccent">#ff3462b3</color>
     <color name="text_shadow">#33000000</color>
     <color name="text_shadow_opaque">#3f000000</color>
     <color name="list_selector_focused">#55ffffff</color>

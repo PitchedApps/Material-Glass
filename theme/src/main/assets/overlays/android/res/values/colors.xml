@@ -64,7 +64,7 @@
     <color name="search_widget_corpus_item_background">@color/backgroundt</color>
     <color name="sliding_tab_text_color_active">@color/text</color>
     <color name="sliding_tab_text_color_shadow">@color/text</color>
-    <color name="micro_text_light">@color/textt</color>
+    <!--<color name="micro_text_light">@color/textt</color>-->
     <color name="notification_icon_bg_color">@color/backgrounddt</color>
     <color name="timepicker_default_ampm_selected_background_color_holo_light">@color/textt</color>
     <color name="timepicker_default_ampm_selected_background_color_holo_dark">@color/backgrounddt</color>
@@ -110,7 +110,7 @@
     <color name="dblue_t">#cc343d41</color>
 
     <!--<color name="white">#ffe0e0e0</color>-->
-    <color name="neutral">#ff888888</color>
+    <color name="neutral">#ff555555</color>
 
     <!--<color name="bright_foreground_inverse_holo_light">@color/neutral</color>-->
 

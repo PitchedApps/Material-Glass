@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppTheme" parent="@android:style/Theme.Material" />
+    <style name="Theme.Main" parent="@android:style/Theme.Material">
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:alertDialogTheme">@style/Theme.AlertDialog</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/tPrimaryDark</item>
+        <item name="android:actionBarStyle">@style/Pitch.ActionBar</item>
+        <item name="android:colorBackground">@color/backgroundt</item>
+    </style>
+    <style name="Theme.AlertDialog" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Pitch.ActionBar" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:background">@color/tPrimary</item>
+    </style>
 </resources>

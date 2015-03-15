@@ -3,6 +3,8 @@
     <item type="drawable" name="notification_number_text_color">@color/text</item>
     <item type="drawable" name="ticker_background_color">@color/backgroundt</item>
     <item type="drawable" name="system_bar_background">@color/backgroundt</item>
+    <item type="drawable" name="status_bar_recents_app_thumbnail_background">@color/backgroundt</item>
+    <item type="drawable" name="status_bar_notification_row_background_color">@color/backgroundt</item>
     <item type="drawable" name="recents_callout_line">#22ffffff</item>
     <item type="drawable" name="heads_up_notification_bg_pressed">@color/backgroundd</item>
 </resources>
