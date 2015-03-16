@@ -843,10 +843,12 @@
     <color name="text">#ffffffff</color>
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>
-    <color name="background">#aa000000</color>
-    <color name="backgroundd">#aa161616</color>
-    <color name="backgrounddd">#aa323232</color>
+    <color name="background">#88000000</color>
+    <color name="backgroundd">#88161616</color>
+    <color name="backgrounddd">#88323232</color>
     <color name="backgroundx">#ff000000</color>
     <color name="backgrounddx">#ff161616</color>
     <color name="backgroundddx">#ff323232</color>
+
+    <!--check bg_embed_lightgrey.9.png-->
 </resources>
