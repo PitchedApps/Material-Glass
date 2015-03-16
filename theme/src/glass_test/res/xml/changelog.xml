@@ -21,6 +21,14 @@ limitations under the License.
     </version>
     -->
 
+    <version name="0.8.2">
+        <text>Tested and working on android 5.1 (euphoria, hammerhead)</text>
+        <text>Themed Launcher3</text>
+        <text>Made nova folder background configurable</text>
+        <text>System UI changes</text>
+        <text></text>
+        <text></text>
+    </version>
     <version name="0.8.1">
         <text>Quick fix for white actionbar</text>
         <text>System UI is more transparent</text>

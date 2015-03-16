@@ -5,8 +5,8 @@
     <color name="abc_search_url_text_normal">@color/text</color>
     <color name="abc_search_url_text_pressed">@color/text</color>
     <color name="abc_search_url_text_selected">@color/text</color>
-    <color name="accent_material_dark">@color/text</color>
-    <color name="accent_material_light">@color/text</color>
+    <color name="accent_material_dark">@color/textt</color>
+    <color name="accent_material_light">@color/textt</color>
     <color name="acl_circle_color">@color/quantum_googblue</color>
     <color name="acl_circle_empty_color">@color/quantum_googblue300</color>
     <color name="acl_extended_circles_color">@color/quantum_googgreen800</color>
@@ -747,8 +747,8 @@
     <color name="text_black_87_percent">#ddffffff</color>
     <color name="text_blue">@color/text</color>
     <color name="text_gray">@color/textt</color>
-    <color name="text_hint">@color/text_black_26_percent</color>
-    <color name="text_normal">@color/text_black_87_percent</color>
+    <color name="text_hint">@color/textt</color>
+    <color name="text_normal">#ffaaaaaa</color>
     <color name="text_red">#ffc3352c</color>
     <color name="text_white">@color/text</color>
     <color name="text_white_26_percent">#42ffffff</color>
@@ -840,9 +840,9 @@
     <color name="neutral">#ffaaaaaa</color>
     <color name="aaa">#ffff00ff</color>
     <color name="bbb">#ff0000ff</color>
-    <color name="text">#ffffffff</color>
-    <color name="textt">#ddffffff</color>
-    <color name="texttt">#bbffffff</color>
+    <color name="text">#ffdddddd</color>
+    <color name="textt">#ffcccccc</color>
+    <color name="texttt">#ffbbbbbb</color>
     <color name="background">#88000000</color>
     <color name="backgroundd">#88161616</color>
     <color name="backgrounddd">#88323232</color>
