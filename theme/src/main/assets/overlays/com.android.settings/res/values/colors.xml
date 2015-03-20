@@ -18,7 +18,7 @@
     <color name="background_color_darker_gray">@color/backgroundt</color>
     <color name="background_color_gray">@color/backgroundt</color>
     <color name="background_color_holo_blue_light">@color/backgroundt</color>
-    <color name="background_color_transparent">@color/backgroundt</color>
+    <color name="background_color_transparent">@android:color/transparent</color>
     <color name="background_color_white">@color/backgroundt</color>
     <color name="text_color_black">@color/text</color>
     <color name="text_color_darker_gray">@color/textt</color>
@@ -69,4 +69,6 @@
     <color name="actionbar">#99000000</color>
     <color name="ripple">#40ffffff</color>
     <color name="selectable_mask">#ffffffff</color>
+
+    <color name="switchbar_text_color">@color/text</color>
 </resources>

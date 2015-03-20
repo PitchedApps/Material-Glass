@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ConversationListFadeBase" parent="@android:style/Widget.Material.ListView" />
     <style name="MinTimeProgressDialogStyleBase" parent="@android:style/Theme.Material.Dialog" />
     <style name="MessageAttachmentButtonBaseStyle" parent="@style/MessageButtonStyleBase">
         <item name="android:textAppearance">?android:textAppearanceSmall</item>
@@ -13,7 +12,7 @@
     </style>
     <style name="MessageButtonStyleBase" parent="@android:style/Widget.Material.Button.Borderless" />
     <style name="ActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
-        <item name="android:background">@android:color/transparent</item>
+        <item name="android:background">@*common:color/actionbar</item>
     </style>
     <style name="WaitFragmentTitle" parent="@style/WaitFragmentTitleBase">
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
@@ -86,9 +85,12 @@
         <item name="colorPrimary">@color/primary_color</item>
         <item name="colorPrimaryDark">@color/primary_dark_color</item>
         <item name="colorAccent">@color/accent_blue</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/backgroundx</item>
+        <!--<item name="android:background">@color/backgroundt</item>-->
         <item name="android:colorBackground">@color/backgroundt</item>
         <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+
     </style>
 
     <style name="Theme.AppCompat.CompactMenu" parent="@android:style/Theme.Material" />

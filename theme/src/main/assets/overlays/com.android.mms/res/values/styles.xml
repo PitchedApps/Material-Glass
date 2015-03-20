@@ -10,13 +10,15 @@
     </style>
     <style name="ListViewStyle" parent="@android:style/Widget.Material.ListView">
         <item name="android:overScrollMode">always</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
     </style>
     <style name="ContactListFilterTheme" parent="@android:style/Theme.Material">
         <item name="android:listViewStyle">@style/ListViewStyle</item>
     </style>
 
     <style name="BackgroundOnlyTheme" parent="@android:style/Theme.Material">
-        <item name="android:windowBackground">@null</item>
+        <item name="android:windowBackground">@*common:color/status</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -28,12 +30,15 @@
         <item name="android:colorPrimary">@color/mms_theme_color</item>
         <item name="android:colorPrimaryDark">@color/mms_theme_color_dark</item>
         <item name="android:colorAccent">@color/mms_theme_color_accent</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/mms_theme_color_dark_t</item>
     </style>
     <style name="HeaderTheme" parent="@android:style/ThemeOverlay.Material.Dark.ActionBar">
         <item name="android:colorBackground">@color/background</item>
         <item name="android:spinnerDropDownItemStyle">@style/HeaderSpinnerDropDown</item>
         <item name="android:colorAccent">?android:textColorPrimary</item>
-        <item name="android:popupTheme">@android:style/ThemeOverlay.Material</item>
+        <item name="android:popupTheme">@android:style/ThemeOverlay.Material.Dark</item>
     </style>
     <style name="HeaderTabText" parent="@android:style/Widget.Material.ActionBar.TabText">
         <item name="android:textSize">@dimen/tab_text_size</item>
@@ -46,7 +51,7 @@
     </style>
     <style name="MmsActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:icon">@android:color/transparent</item>
-        <item name="android:background">@color/mms_theme_color</item>
+        <item name="android:background">@color/mms_theme_color_t</item>
         <item name="android:elevation">@dimen/action_bar_elevation</item>
     </style>
     <style name="WidgetTitle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
@@ -81,4 +86,11 @@
         <item name="android:textColor">@color/textt</item>
     </style>
 
+    <style name="TextShadowLight">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:shadowColor">@color/text_shadow_color_light</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
 </resources>

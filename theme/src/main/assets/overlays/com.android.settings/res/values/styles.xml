@@ -2,6 +2,7 @@
 <resources>
     <style name="Theme.SettingsBase" parent="@android:style/Theme.Material.Wallpaper">
         <item name="android:statusBarColor">@color/actionbar</item>
+        <item name="android:colorBackground">@color/background</item>
     </style>
 
     <style name="SecurityPreferenceButtonContainer" parent="@android:style/Widget.Material.SegmentedButton">

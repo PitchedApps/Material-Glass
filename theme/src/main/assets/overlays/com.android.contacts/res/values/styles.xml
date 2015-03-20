@@ -85,7 +85,7 @@
         <item name="android:actionOverflowButtonStyle">@style/ContactsActionBarOverflowQP</item>
         <item name="android:alertDialogTheme">@style/ContactsAlertDialogTheme</item>
         <item name="android:homeAsUpIndicator">@drawable/ic_back_arrow</item>
-        <item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb</item>
+        <!--<item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb</item>-->
         <item name="android:colorPrimary">@color/primary_color</item>
         <item name="android:colorPrimaryDark">@color/primary_color_dark</item>
         <item name="android:colorAccent">@color/primary_color</item>

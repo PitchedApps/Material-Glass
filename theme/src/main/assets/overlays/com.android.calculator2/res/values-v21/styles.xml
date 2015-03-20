@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="CalculatorTheme" parent="@android:style/Theme.Material.Light">
+    <style name="CalculatorTheme" parent="@android:style/Theme.Material">
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:colorPrimary">@android:color/white</item>
-        <item name="android:statusBarColor">@color/display_background_color</item>
-        <item name="android:navigationBarColor">@color/display_background_color</item>
+        <item name="android:colorPrimary">@color/text</item>
+        <item name="android:statusBarColor">@*common:color/status</item>
+        <item name="android:navigationBarColor">@*common:color/backgroundt</item>
         <item name="android:textColor">@color/pad_button_text_color</item>
     </style>
     <style name="DisplayEditTextStyle" parent="@android:style/Widget.Material.EditText">

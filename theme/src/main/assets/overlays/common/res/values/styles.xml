@@ -4,7 +4,7 @@
         <item name="android:background">@color/backgroundt</item>
     </style>
     <style name="Transparent.ActionBar" parent="@android:style/Widget.Material.ActionBar">
-        <item name="android:background">@android:color/transparent</item>
+        <item name="android:background">@color/actionbar</item>
     </style>
 
 	<style name="Theme.Material.Black" parent="@style/Theme.Material" />

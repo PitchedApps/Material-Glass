@@ -34,14 +34,14 @@
     <color name="letter_tile_default_color">#ffcccccc</color>
     <color name="letter_tile_font_color">#ffffffff</color>
     <color name="text_highlight_color">#66666666</color>
-    <color name="actionbar_background_color">@color/mms_theme_color</color>
+    <color name="actionbar_background_color">@color/mms_theme_color_t</color>
     <color name="actionbar_icon_color">#ffffffff</color>
-    <color name="actionbar_background_color_dark">#ff008aa1</color>
+    <color name="actionbar_background_color_dark">@color/background</color>
     <color name="tab_ripple_color">@color/tab_accent_color</color>
-    <color name="tab_accent_color">#ffffffff</color>
+    <color name="tab_accent_color">@color/text</color>
     <color name="tab_selected_underline_color">@color/tab_accent_color</color>
     <color name="frequently_contacted_title_color">@color/actionbar_background_color</color>
-    <color name="actionbar_text_color">#ffffffff</color>
+    <color name="actionbar_text_color">@color/text</color>
     <color name="actionbar_unselected_text_color">#a6ffffff</color>
     <color name="searchbox_text_color">@color/text</color>
     <color name="searchbox_background_color">@color/background</color>
@@ -94,12 +94,14 @@
     <color name="banner_item_selected">#88ffffff</color>
     <color name="banner_item_pressed">#66ffffff</color>
     <color name="text_shadow_color_light">#33000000</color>
-    <color name="solid_white">#ffffffff</color>
+    <color name="solid_white">@color/background</color>
     <color name="slot_indicator_background">@color/backgroundd</color>
     <color name="mms_theme_color">#ff00acc1</color>
+    <color name="mms_theme_color_t">#8800acc1</color>
     <color name="mms_theme_color_dark">#ff0097a7</color>
+    <color name="mms_theme_color_dark_t">#880097a7</color>
     <color name="mms_theme_color_accent">#ff00bcd4</color>
-    <color name="floating_action_button_icon_color">#ffffffff</color>
+    <color name="floating_action_button_icon_color">@color/text</color>
     <color name="tab_text_color">@color/text</color>
 
     <color name="msg">#ff111111</color>

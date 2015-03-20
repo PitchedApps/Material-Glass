@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@android:style/Widget.Material.PopupMenu" />
     <style name="Platform.AppCompat" parent="@android:style/Theme.Material.Wallpaper">
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/backgroundx</item>
         <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
         <item name="android:navigationBarColor">@color/background</item>
         <item name="android:windowBackground">@color/backgroundt</item>
@@ -14,7 +15,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
 
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/backgroundx</item>
         <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
         <item name="android:navigationBarColor">@color/background</item>
         <item name="android:windowBackground">@color/backgroundt</item>
@@ -23,13 +24,17 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
     </style>
-    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@android:style/ThemeOverlay.Material">
+    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@android:style/ThemeOverlay.Material.Dark">
         <item name="isLightTheme">false</item>
         <item name="colorControlHighlight">@color/ripple_material_dark</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-
+        <item name="android:statusBarColor">@color/backgroundx</item>
     </style>
+    <style name="Base.Theme.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="Base.V21.Theme.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
+
+
     <style name="ConversationListFadeBase" parent="@android:style/Widget.Material.ListView" />
+
     <style name="MinTimeProgressViewStyle" parent="@android:style/Widget.Material.ProgressBar" />
     <style name="MinTimeProgressDialogStyleBase" parent="@android:style/Theme.Material.Dialog" />
     <style name="UnifiedEmailTheme" parent="@android:style/Theme.Material">
@@ -40,7 +45,11 @@
         <item name="android:colorPrimaryDark">@color/backgrounddx</item>
         <item name="android:colorAccent">@color/text</item>
         <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/backgroundx</item>
+        <!--<item name="android:background">@color/background</item>-->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackgroundCacheHint">@color/background</item>
 
     </style>
     <style name="ActionBarOverflowButtonStyle" parent="@android:style/Widget.Material.ActionButton.Overflow" />
@@ -55,7 +64,7 @@
         <item name="android:colorPrimaryDark">@color/primary_dark_color</item>
         <item name="android:colorAccent">@color/accent_blue</item>
         <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/backgroundx</item>
 
     </style>
     <style name="GmailTheme.NoActionBar.Fullscreen" parent="@android:style/Theme.Material.NoActionBar.Fullscreen">
@@ -64,7 +73,7 @@
         <item name="android:colorAccent">@color/text</item>
         <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
 
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/backgroundx</item>
         <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
         <item name="android:navigationBarColor">@color/background</item>
         <item name="android:textColor">@color/text</item>

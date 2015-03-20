@@ -24,10 +24,14 @@ limitations under the License.
     <version name="0.8.2">
         <text>Tested and working on android 5.1 (euphoria, hammerhead)</text>
         <text>Themed Launcher3</text>
+        <text>Themed Reddit News Pro (night mode)</text>
         <text>Made nova folder background configurable</text>
-        <text>System UI changes</text>
-        <text></text>
-        <text></text>
+        <text>Check xda version for themed google +!</text>
+        <text>Fixed up calculator</text>
+        <text>Fixed menu transparency issue</text>
+        <text>Tweaked MMS</text>
+        <text>Tweaked gmail</text>
+        <text>New icon</text>
     </version>
     <version name="0.8.1">
         <text>Quick fix for white actionbar</text>

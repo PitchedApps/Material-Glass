@@ -840,8 +840,8 @@
     <color name="neutral">#ffaaaaaa</color>
     <color name="aaa">#ffff00ff</color>
     <color name="bbb">#ff0000ff</color>
-    <color name="text">#ffdddddd</color>
-    <color name="textt">#ffcccccc</color>
+    <color name="text">#ffcccccc</color>
+    <color name="textt">#ffc0c0c0</color>
     <color name="texttt">#ffbbbbbb</color>
     <color name="background">#88000000</color>
     <color name="backgroundd">#88161616</color>
