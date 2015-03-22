@@ -44,7 +44,6 @@ public class Main extends ActionBarActivity {
     private boolean withLicenseChecker = false;
     private Context context;
 
-//TODO theme drawer
 //TODO theme card in main view
 
     @Override

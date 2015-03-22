@@ -99,6 +99,7 @@ public class WallsGridAdapter extends BaseAdapter {
 //                .placeholder(R.drawable.placeholder);
                 .resize(imageWidth, imageWidth)
                 //TODO fix error above? if error and placeholder aren't there it's fine
+                //TODO fix weird loading sizes
                 .centerCrop()
                 .into(wall);
 

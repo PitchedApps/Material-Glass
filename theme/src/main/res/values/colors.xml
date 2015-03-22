@@ -3,6 +3,8 @@
     <color name="background">#88000000</color>
     <color name="backgroundd">#88161616</color>
     <color name="backgrounddd">#88323232</color>
+    <color name="drawer">#aa000000</color>
+    <color name="drawerr">#aa161616</color>
     <color name="dblue">#ff343d41</color>
     <color name="dblue_t">#cc343d41</color>
     <color name="hint">#cc000000</color>
