@@ -34,7 +34,7 @@
     <color name="primary_dark">#1565c0</color>
     <color name="primary_pressed">#039be5</color>
     <color name="accent">@color/text</color>
-    <color name="ripple">#40ffffff</color>
+    <color name="ripple">#70ffffff</color>
     <color name="accent_pressed">@color/textt</color>
     <color name="accent_secondary">@color/accent</color>
     <color name="secondary">@color/textt</color>

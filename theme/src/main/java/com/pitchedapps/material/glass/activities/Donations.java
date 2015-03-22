@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.pitchedapps.material.glass;
+package com.pitchedapps.material.glass.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,9 +25,13 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.Toast;
 
+import com.pitchedapps.material.glass.BuildConfig;
+import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.Util;
+
 import org.sufficientlysecure.donations.DonationsFragment;
 
-public class DonationsActivity extends FragmentActivity implements View.OnClickListener {
+public class Donations extends FragmentActivity implements View.OnClickListener {
 
     /**
      * Google

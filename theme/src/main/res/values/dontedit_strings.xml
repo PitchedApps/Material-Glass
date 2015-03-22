@@ -44,18 +44,6 @@
     <string name="web">WEBSITE</string>
     <string name="gplus">"GOOGLE+"</string>
 
-    <!-- Launchers names -->
-    <string name="laction">Action Launcher</string>
-    <string name="ladw">ADW Launcher</string>
-    <string name="lapex">Apex Launcher</string>
-    <string name="latom">Atom Launcher</string>
-    <string name="laviate">Aviate Launcher</string>
-    <string name="lgo">GO Launcher</string>
-    <string name="lholo">Holo Launcher</string>
-    <string name="linspire">Inspire Launcher</string>
-    <string name="lnext">Next Launcher</string>
-    <string name="lnova">Nova Launcher</string>
-    <string name="lsmart">Smart Launcher</string>
 
     <!-- Wallpapers Stuff -->
     <string name="apply">Apply</string>

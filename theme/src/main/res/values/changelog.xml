@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="current_version">1.0</string>
+
+    <string name="changelog_content">
+"v0.8.3
+- Themed nav buttons
+- Framework tweak
+- Brightened up documentsUI wallpaper
+-
+-
+v0.8.2
+- Tested and working on android 5.1 (euphoria, hammerhead)
+- Themed Launcher3
+- Themed Reddit News Pro (night mode)
+- Made nova folder background configurable
+- Check xda version for themed google +!
+- Fixed up calculator
+- Fixed menu transparency issue
+- Tweaked MMS
+- Tweaked gmail
+- New app icon
+v0.8.1
+- Quick fix for white actionbar
+- System UI is more transparent
+- Colored FAB for dialer and contacts
+v0.8.0
+- Themed Google Keyboard
+- Fixed up google search
+- Themed AOSP messaging
+- Themed AOSP music
+- Recolored dialer and contacts
+- Added parts to system ui
+- Started using sdk 22
+v0.7.8
+- Added ripples to a lot of areas
+- Themed newest nova launcher (join beta)
+- Made youtube settings readable
+- Fully themed contacts
+- Themed more system ui
+v0.7.7
+- Fixed up play store
+- Reintroduced dialer and contacts
+- Themed emergency dial and mobile networks, plus a bit more
+- Potential fix for dialog pop ups showing just the wallpaper
+- Added FAB in the app to launch the theme chooser (thanks Ivon)
+v0.7.6
+- Removed dialer and contact theming (too buggy, use the xda version if you want it)
+- Added border along toast messages
+v0.7.5
+- Fixed issue with primary light text
+- Improved on gmail, more transparency and black dropdown
+- Darkened snapchat\'s splash color
+- Downsized the bootanimation in hopes of supporting phones with hdpi and under (you can still get the xxhdpi version on android file host)
+v0.7.4
+- Updated google to latest update (feb 26)
+- Slightly darkened settings
+- Cleaned up google + code
+v0.7.3
+- Nerfed holo colors
+- Fixed up some gmail components
+- Themed a few modules
+- Themed theme.holo related styles
+- Fixed up SystemUI a bit
+v0.7.2
+- Made google now drawer text a bit lighter
+- Made dialer search background black
+- Themed xposed
+- Materialized theme engine drawer
+- Fixed euphoria OTA
+v0.7.1
+- Initial changelog
+- Testing in progress"</string>
+</resources>

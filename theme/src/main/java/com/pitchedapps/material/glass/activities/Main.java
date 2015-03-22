@@ -12,6 +12,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -256,9 +257,9 @@ public class Main extends ActionBarActivity {
             }
         }
     }
-
+//TODO check this? added style
     private void changelog() {
-        new MaterialDialog.Builder(context)
+        new MaterialDialog.Builder(new ContextThemeWrapper(this, R.style.ChangelogDialog))
                 .title(R.string.changelog_dialog_title)
                 .content(R.string.changelog_content)
                 .positiveText(R.string.nice)

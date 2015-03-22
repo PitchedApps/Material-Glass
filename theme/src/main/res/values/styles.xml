@@ -74,4 +74,7 @@
         <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 
+    <style name="ChangelogDialog" parent="Theme.AppCompat.Dialog"/>
+
+
 </resources>

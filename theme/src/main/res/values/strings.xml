@@ -40,7 +40,6 @@
     <!-- Main Strings -->
     <string name="app_name">"Material Glass"</string>
     <string name="app_long_name">"Material Glass by Pitched Apps"</string>
-    <string name="current_version">1.0</string>
     <string name="package_name">"com.pitchedapps.material.glass"</string>
 
     <!-- Some launchers stuff -->
@@ -84,12 +83,6 @@
     <string name="app_three_content">"Here will go the description of your third app."</string>
     <string name="app_three_link">"https://www.google.com/"</string>
 
-    <!-- This will be the content of the changelog dialod -->
-    <string name="changelog_content">"v 1.0
-- First OpenSource version.
-- Includes many Material Design elements.
-- Code improvements.
-"</string>
 
     <!-- Your card in About The App section (In desc you can use html markup)-->
     <string name="iconpack_designer">Pitched Apps</string>

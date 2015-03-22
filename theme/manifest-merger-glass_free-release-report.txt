@@ -61,7 +61,7 @@ MERGED from com.android.support:support-v4:22.0.0:22:5
 		ADDED from AndroidManifest.xml:31:9
 	android:theme
 		ADDED from AndroidManifest.xml:34:9
-activity#com.pitchedapps.material.glass.DonationsActivity
+activity#com.pitchedapps.material.glass.activities.DonationsActivity
 ADDED from AndroidManifest.xml:35:9
 	android:label
 		ADDED from AndroidManifest.xml:37:13
