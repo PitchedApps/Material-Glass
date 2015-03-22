@@ -4,14 +4,18 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,8 +23,6 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.utils.Preferences;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.accountswitcher.AccountHeader;
@@ -28,6 +30,8 @@ import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
+import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.utils.Preferences;
 
 
 public class Main extends ActionBarActivity {
@@ -44,6 +48,7 @@ public class Main extends ActionBarActivity {
     private Preferences mPrefs;
     private boolean withLicenseChecker = false;
     private Context context;
+    private Context mContext;
 
 //TODO theme card in main view
 
@@ -213,8 +218,26 @@ public class Main extends ActionBarActivity {
                 break;
 
             case R.id.sendemail:
+                StringBuilder emailBuilder = new StringBuilder();
+
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + getResources().getString(R.string.email_id)));
                 intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject));
+
+                emailBuilder.append("\nOS Version: " + System.getProperty("os.version") + "(" + Build.VERSION.INCREMENTAL + ")");
+                emailBuilder.append("\nOS API Level: " + Build.VERSION.SDK_INT);
+                emailBuilder.append("\nDevice: " + Build.DEVICE);
+                emailBuilder.append("\nManufacturer: " + Build.MANUFACTURER);
+                emailBuilder.append("\nModel (and Product): " + Build.MODEL + " (" + Build.PRODUCT + ")");
+                PackageInfo appInfo = null;
+                try {
+                    appInfo = mContext.getPackageManager().getPackageInfo(mContext.getPackageName(), 0);
+                } catch (PackageManager.NameNotFoundException e) {
+                    e.printStackTrace();
+                }
+                emailBuilder.append("\nApp Version Name: " + appInfo.versionName);
+                emailBuilder.append("\nApp Version Code: " + appInfo.versionCode);
+//TODO make email add on device info
+
                 startActivity(Intent.createChooser(intent, (getResources().getString(R.string.send_title))));
                 break;
 
