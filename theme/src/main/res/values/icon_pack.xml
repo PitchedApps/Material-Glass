@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- These sections below are for your "Previews" section -->
+    <!-- These names should match YOUR actual icon names
+    	 the names used below are just for sampling purposes -->
+
+    <!-- LATEST ICONS -->
+    <!-- All of your Latest icons listed here -->
+    <string-array name="latest"></string-array>
+
+    <!-- SYSTEM ICONS -->
+    <!-- System icons listed here -->
+    <string-array name="system">
+        <item>facebook</item>
+        <item>gmail</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+    </string-array>
+
+    <!-- GOOGLE APPS ICONS -->
+    <!-- Google Apps icons are listed here -->
+    <string-array name="google">
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+    </string-array>
+
+    <!-- GAMES ICONS -->
+    <!-- Game icons are listed here -->
+    <string-array name="games">
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+    </string-array>
+
+
+    <!-- ALL ICONS -->
+    <!-- All of your icons listed here -->
+    <string-array name="icon_pack" translatable="false">
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+        <item>andy</item>
+    </string-array>
+</resources>

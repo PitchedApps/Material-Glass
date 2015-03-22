@@ -33,8 +33,8 @@
 
         <item name="android:textColorLink">@color/textt</item>
 
-        <item name="android:listChoiceBackgroundIndicator">@drawable/item_background_material</item>
-        <item name="android:selectableItemBackground">@drawable/item_background_material</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/item_background_pitch</item>
+        <item name="android:selectableItemBackground">@drawable/item_background_pitch</item>
 
     </style>
     <style name="Theme.Holo.Light" parent="@android:style/Theme.Holo.Light">

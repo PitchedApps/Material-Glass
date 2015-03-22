@@ -8,11 +8,6 @@
                     <solid android:color="@color/fab_pressed" />
                 </shape>
             </item>
-            <!--<item>
-                <shape android:shape="oval">
-                    <solid android:color="#803f51b5" />
-                </shape>
-            </item>-->
         </layer-list>
     </item>
 

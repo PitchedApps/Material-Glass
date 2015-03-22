@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wall_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:progressBarStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/wall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/wall"
+        android:layout_gravity="bottom"
+        android:background="@color/wallitem">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="start"
+            android:paddingBottom="@dimen/cards_padding"
+            android:paddingLeft="@dimen/cards_padding"
+            android:paddingRight="@dimen/cards_padding"
+            android:paddingTop="@dimen/cards_padding"
+            android:textColor="@color/text"
+            android:textSize="@dimen/text_small"
+            tools:text="Title" />
+
+    </LinearLayout>
+
+</FrameLayout>

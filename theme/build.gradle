@@ -54,4 +54,25 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:support-v4:22.0.0'
     compile project(':libraries:Donations')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:cardview-v7:22.0.0'
+//Material Dialogs ftw
+    compile 'com.afollestad:material-dialogs:0.6.4.5'
+//Material Drawer ftw
+    compile('com.mikepenz.materialdrawer:library:2.5.3@aar') {
+        transitive = true
+    }
+//Needed for wallpapers section
+    compile 'com.squareup.picasso:picasso:2.5.0'
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+//Muzei Support
+    compile 'com.google.android.apps.muzei:muzei-api:+'
+//FloatingActionButtons
+    compile 'com.melnykov:floatingactionbutton:1.2.0'
+    compile 'com.getbase:floatingactionbutton:1.9.0'
+//not implemented yet
+    compile 'com.android.support:recyclerview-v7:22.0.0'
 }

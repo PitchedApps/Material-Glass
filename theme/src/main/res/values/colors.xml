@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="background">#ff000000</color>
-    <color name="background_t">#a0000000</color>
-    <color name="backgroundd">#ff161616</color>
-    <color name="backgrounddd">#ff323232</color>
-    <color name="backgroundddt">#a0323232</color>
-    <color name="backgrounddt">#a0161616</color>
-    <color name="backgroundt">#a0000000</color>
-    <color name="black_t">#a0000000</color>
+    <color name="background">#88000000</color>
+    <color name="backgroundd">#88161616</color>
+    <color name="backgrounddd">#88323232</color>
     <color name="dblue">#ff343d41</color>
     <color name="dblue_t">#cc343d41</color>
     <color name="hint">#cc000000</color>
@@ -19,7 +14,42 @@
     <color name="text">#ffffffff</color>
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>
+    <color name="card">#30000000</color>
+    <color name="cardd">#30333333</color>
+    <color name="wallitem">#b0000000</color>
+
+
+    <color name="status">#881565c0</color>
+    <color name="actionbar">#881976d2</color>
 
     <color name="fab_unpressed">#bb111111</color>
     <color name="fab_pressed">#bb555555</color>
+    <color name="faboverlay">#80000000</color>
+
+
+
+    <color name="primary">#1976d2</color>
+    <color name="primary_dark">#1565c0</color>
+    <color name="primary_pressed">#039be5</color>
+    <color name="accent">@color/text</color>
+    <color name="ripple">#40ffffff</color>
+    <color name="accent_pressed">@color/textt</color>
+    <color name="accent_secondary">@color/accent</color>
+    <color name="secondary">@color/textt</color>
+    <color name="secondary_pressed">@color/textt</color>
+    <color name="navbar">#aa000000</color>
+
+    <!-- Don't Edit!!! -->
+    <color name="white">#ffffff</color>
+    <!--<color name="light_bg">#fafafa</color>-->
+    <color name="transparent">#00ffffff</color>
+    <color name="semitransparent_white">#b3ffffff</color>
+    <color name="dark_grey">#ff4d4d4d</color>
+    <color name="window_bg">@color/primary_dark</color>
+    <color name="black_semi_transparent">#b2000000</color>
+    <color name="dialogcontent">#6d6d6d</color>
+    <color name="theme_info_header">@color/primary</color>
+    <color name="theme_info">@color/primary</color>
+    <color name="theme">@color/primary</color>
+    <color name="divider">#20ffffff</color>
 </resources>

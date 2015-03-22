@@ -20,6 +20,14 @@
 
     <uses-permission android:name="com.android.vending.BILLING" />
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+
     <uses-feature android:required="true" android:name="org.cyanogenmod.theme" />
 
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
@@ -33,12 +41,44 @@
         android:label="@string/theme_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".DonationsActivity"
-            android:label="@string/theme_name" >
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pitchedapps.material.glass.activities.Main"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pitchedapps.material.glass.activities.DetailedWallpaper"
+            android:label="@string/title_activity_detailed_wallpaper"
+            android:theme="@style/Default">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pitchedapps.material.glass.activities.DetailedWallpaper" />
         </activity>
     </application>
 
