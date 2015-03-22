@@ -222,7 +222,7 @@ public class Main extends ActionBarActivity {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + getResources().getString(R.string.email_id)));
                 intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject));
 
-                emailBuilder.append("\nOS Version: " + System.getProperty("os.version") + "(" + Build.VERSION.INCREMENTAL + ")");
+                emailBuilder.append("\n \n \nOS Version: " + System.getProperty("os.version") + "(" + Build.VERSION.INCREMENTAL + ")");
                 emailBuilder.append("\nOS API Level: " + Build.VERSION.SDK_INT);
                 emailBuilder.append("\nDevice: " + Build.DEVICE);
                 emailBuilder.append("\nManufacturer: " + Build.MANUFACTURER);
@@ -235,7 +235,8 @@ public class Main extends ActionBarActivity {
                 }
                 emailBuilder.append("\nApp Version Name: " + appInfo.versionName);
                 emailBuilder.append("\nApp Version Code: " + appInfo.versionCode);
-//TODO make email add on device info
+
+                intent.putExtra(Intent.EXTRA_TEXT, emailBuilder.toString());
 
                 startActivity(Intent.createChooser(intent, (getResources().getString(R.string.send_title))));
                 break;

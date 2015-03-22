@@ -35,7 +35,7 @@
 
 
 
-    <string name="json_file_url">"https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/tree/master/Material Glass/wallpapers.json"</string>
+    <string name="json_file_url">"https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass/0wallpapers.json"</string>
 
     <!-- Main Strings -->
     <string name="app_name">"Material Glass"</string>
@@ -117,7 +117,7 @@
      7. (Empty text won't replace anything else).
      And at the end the only text that will stay is "WallpaperName.png" which will be the final name of downloaded file.
      -->
-    <string name="replace_one">"https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/tree/master/Material Glass/"</string>
+    <string name="replace_one">"https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass/"</string>
     <string name="replace_two">"Material Glass"</string>
     <string name="replace_three"></string>
     <string name="replace_four"></string>
