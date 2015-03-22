@@ -21,6 +21,13 @@ limitations under the License.
     </version>
     -->
 
+    <version name="0.8.3">
+        <text>Themed nav buttons</text>
+        <text>Framework tweak</text>
+        <text>Brightened up documentsUI wallpaper</text>
+        <text></text>
+        <text></text>
+    </version>
     <version name="0.8.2">
         <text>Tested and working on android 5.1 (euphoria, hammerhead)</text>
         <text>Themed Launcher3</text>
@@ -31,7 +38,7 @@ limitations under the License.
         <text>Fixed menu transparency issue</text>
         <text>Tweaked MMS</text>
         <text>Tweaked gmail</text>
-        <text>New icon</text>
+        <text>New app icon</text>
     </version>
     <version name="0.8.1">
         <text>Quick fix for white actionbar</text>
@@ -91,6 +98,7 @@ limitations under the License.
         <text>Fixed euphoria OTA</text>
     </version>
     <version name="0.7.1">
+        <text>Initial changelog</text>
         <text>Testing in progress</text>
     </version>
 

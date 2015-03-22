@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="popupMenuStyle" format="reference" />
+    <attr name="dropDownListViewStyle" format="reference" />
+    <attr name="listItemTextColorUnderV11" format="color" />
+</resources>

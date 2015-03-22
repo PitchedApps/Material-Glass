@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="DialogWhenReallyLarge" parent="@android:style/Theme.DeviceDefault" />
+    <style name="DialogWhenReallyLarge" parent="@android:style/Theme.Material.Wallpaper" />
     <style name="DocumentsTheme" parent="@style/DialogWhenReallyLarge">
         <item name="android:actionBarPopupTheme">@android:style/ThemeOverlay.Material</item>
     </style>

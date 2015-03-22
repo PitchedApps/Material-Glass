@@ -8,12 +8,12 @@
     <color name="item_doc_grid_overlay_disabled">#88ffffff</color>
     <color name="item_doc_list_overlay_disabled">#88ffffff</color>
     <color name="item_doc_list_background_activated">@color/backgrounddt</color>
-    <color name="black_t">#a0000000</color>
+    <color name="black_t">#88000000</color>
     <color name="background">#ff000000</color>
 	<color name="backgroundd">#ff323232</color>
-	<color name="backgroundt">#a0000000</color>	
-	<color name="background_t">#a0000000</color>
-	<color name="backgrounddt">#a0323232</color>
+	<color name="backgroundt">#88000000</color>
+	<color name="background_t">#88000000</color>
+	<color name="backgrounddt">#88323232</color>
 	<color name="text">#ffffffff</color>
 	<color name="textt">#ddffffff</color>
 	<color name="texttt">#bbffffff</color>		
