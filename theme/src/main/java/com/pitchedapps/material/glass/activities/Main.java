@@ -15,7 +15,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -230,7 +229,7 @@ public class Main extends ActionBarActivity {
                 emailBuilder.append("\nModel (and Product): " + Build.MODEL + " (" + Build.PRODUCT + ")");
                 PackageInfo appInfo = null;
                 try {
-                    appInfo = mContext.getPackageManager().getPackageInfo(mContext.getPackageName(), 0);
+                    appInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
                 } catch (PackageManager.NameNotFoundException e) {
                     e.printStackTrace();
                 }
