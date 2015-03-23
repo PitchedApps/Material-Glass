@@ -71,4 +71,122 @@ v0.7.2
 v0.7.1
 - Initial changelog
 - Testing in progress"</string>
+
+    <string-array name="changelog_root">
+        <item>@array/v0_8_3</item>
+        <item>@array/v0_8_2</item>
+        <item>@array/v0_8_1</item>
+        <item>@array/v0_8_0</item>
+        <item>@array/v0_7_8</item>
+        <item>@array/v0_7_7</item>
+        <item>@array/v0_7_6</item>
+        <item>@array/v0_7_5</item>
+        <item>@array/v0_7_4</item>
+        <item>@array/v0_7_3</item>
+        <item>@array/v0_7_2</item>
+        <item>@array/v0_7_1</item>
+    </string-array>
+
+    <string-array name="v0_8_3">
+        <item>v0.8.3</item>
+        <item>Themed nav buttons</item>
+        <item>Framework tweak</item>
+        <item>Brightened up documentsUI wallpaper</item>
+    </string-array>
+
+    <string-array name="v0_8_2">
+        <item>v0.8.2</item>
+        <item>Tested and working on android 5.1 (euphoria, hammerhead)</item>
+        <item>Themed Launcher3</item>
+        <item>Themed Reddit News Pro (night mode)</item>
+        <item>Made nova folder background configurable</item>
+        <item>Check xda version for themed google +!</item>
+        <item>Fixed up calculator</item>
+        <item>Fixed menu transparency issue</item>
+        <item>Tweaked MMS</item>
+        <item>Tweaked gmail</item>
+        <item>New app icon</item>
+    </string-array>
+
+    <string-array name="v0_8_1">
+        <item>v0.8.1</item>
+        <item>Quick fix for white actionbar</item>
+        <item>System UI is more transparent</item>
+        <item>Colored FAB for dialer and contacts</item>
+    </string-array>
+
+    <string-array name="v0_8_0">
+        <item>v0.8.0</item>
+        <item>Themed Google Keyboard</item>
+        <item>Fixed up google search</item>
+        <item>Themed AOSP messaging</item>
+        <item>Themed AOSP music</item>
+        <item>Recolored dialer and contacts</item>
+        <item>Added parts to system ui</item>
+        <item>Started using sdk 22</item>
+    </string-array>
+
+    <string-array name="v0_7_8">
+        <item>v0.7.8</item>
+        <item>Added ripples to a lot of areas</item>
+        <item>Themed newest nova launcher (join beta)</item>
+        <item>Made youtube settings readable</item>
+        <item>Fully themed contacts</item>
+        <item>Themed more system ui</item>
+    </string-array>
+
+    <string-array name="v0_7_7">
+        <item>v0.7.7</item>
+        <item>Fixed up play store</item>
+        <item>Reintroduced dialer and contacts</item>
+        <item>Themed emergency dial and mobile networks, plus a bit more</item>
+        <item>Potential fix for dialog pop ups showing just the wallpaper</item>
+        <item>Added FAB in the app to launch the theme chooser (thanks Ivon)</item>
+    </string-array>
+
+    <string-array name="v0_7_6">
+        <item>v0.7.6</item>
+        <item>Removed dialer and contact theming (too buggy, use the xda version if you want it)</item>
+        <item>Added border along toast messages</item>
+    </string-array>
+
+    <string-array name="v0_7_5">
+        <item>v0.7.5</item>
+        <item>Fixed issue with primary light text</item>
+        <item>Improved on gmail, more transparency and black dropdown</item>
+        <item>Darkened snapchat\'s splash color</item>
+        <item>Downsized the bootanimation in hopes of supporting phones with hdpi and under (you can still get the xxhdpi version on android file host)</item>
+    </string-array>
+
+    <string-array name="v0_7_4">
+        <item>v0.7.4</item>
+        <item>Updated google to latest update (feb 26)</item>
+        <item>Slightly darkened settings</item>
+        <item>Cleaned up google + code</item>
+    </string-array>
+
+    <string-array name="v0_7_3">
+        <item>v0.7.3</item>
+        <item>Nerfed holo colors</item>
+        <item>Fixed up some gmail components</item>
+        <item>Themed a few modules</item>
+        <item>Themed theme.holo related styles</item>
+        <item>Fixed up SystemUI a bit</item>
+    </string-array>
+
+    <string-array name="v0_7_2">
+        <item>v0.7.2</item>
+        <item>Made google now drawer text a bit lighter</item>
+        <item>Made dialer search background black</item>
+        <item>Themed xposed</item>
+        <item>Materialized theme engine drawer</item>
+        <item>Fixed euphoria OTA</item>
+    </string-array>
+
+    <string-array name="v0_7_1">
+        <item>v0.7.1</item>
+        <item>Initial changelog</item>
+        <item>Testing in progress</item>
+    </string-array>
+
 </resources>
