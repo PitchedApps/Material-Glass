@@ -257,7 +257,8 @@ public class Main extends ActionBarActivity {
         IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(3);
 //        IDrawerItem request = new PrimaryDrawerItem().withName(thaRequest).withIcon(GoogleMaterial.Icon.gmd_forum).withIdentifier(5);
         if (enable_features) {
-            result.addItem(walls, 3);
+            result.addItem(walls, 2);
+			//check 2, was 3
 //            result.addItem(request, 4);
         } else {
         }
