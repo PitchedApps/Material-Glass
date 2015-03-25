@@ -28,12 +28,23 @@
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
 
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+
     <uses-feature android:required="true" android:name="org.cyanogenmod.theme" />
 
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
 
     <meta-data android:name="org.cyanogenmod.theme.name" android:value="@string/theme_name"/>
     <meta-data android:name="org.cyanogenmod.theme.author" android:value="@string/theme_author" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:resizeable="true" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -80,6 +91,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pitchedapps.material.glass.activities.DetailedWallpaper" />
         </activity>
+        <!--Muzei
+        <service android:name="ddev.iconpack.MuzeiArtSource"
+            android:label="@string/artsource_name"
+            android:description="@string/artsource_desc"
+            android:icon="@drawable/ic_muzei_logo">
+            <intent-filter>
+                <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
+            </intent-filter>
+            <meta-data android:name="color" android:value="@color/primary" />
+        </service>-->
     </application>
 
 </manifest>

@@ -12,6 +12,7 @@
 
 
 
+    <dimen name="changelog">0dp</dimen>
     <dimen name="margin_medium_sm">8dp</dimen>
     <dimen name="margin_medium">10dp</dimen>
     <dimen name="iconcolumn">70dp</dimen>
@@ -31,10 +32,10 @@
 
     <dimen name="cards_margin">10dp</dimen>
     <dimen name="finalcard_margin">12dp</dimen>
-    <dimen name="cards_elevation">3dp</dimen>
+    <dimen name="cards_elevation">1dp</dimen>
     <dimen name="cards_padding">16dp</dimen>
     <dimen name="cards_text_margin">5dp</dimen>
-    <dimen name="card_corner_radius">4dp</dimen>
+    <dimen name="card_corner_radius">3dp</dimen>
 
     <dimen name="toolbar_contentInset">72dp</dimen>
 

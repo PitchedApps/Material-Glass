@@ -292,7 +292,7 @@ public class Main extends ActionBarActivity {
         ChangelogAdapter adapter = new ChangelogAdapter(this, R.array.changelog_root);
         listView.setAdapter(adapter);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.PitchDialog);
         builder.setTitle(R.string.changelog_dialog_title)
                 .setView(listView)
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {

@@ -68,7 +68,7 @@ public class ChangelogAdapter extends BaseAdapter {
                 // No need for new line on the first item
                 contentStr += "\n";
             }
-            contentStr += "- ";
+            contentStr += "\u2022 ";
             contentStr += mChangelog[position][i];
         }
 
