@@ -41,7 +41,7 @@ public class Main extends ActionBarActivity {
     private static final int PROFILE_SETTING = 1;
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
-    public String thaApp, thaHome, thaPreviews, thaWalls, thaCredits;
+    public String thaApp, thaHome, thaPreviews, thaWalls, thaDonate, thaCredits;
 //    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits;
     public String version, drawerVersion;
     public int currentItem;
@@ -72,6 +72,7 @@ public class Main extends ActionBarActivity {
 //        thaApply = getResources().getString(R.string.section_three);
         thaWalls = getResources().getString(R.string.section_four);
 //        thaRequest = getResources().getString(R.string.section_five);
+        thaDonate = getResources().getString(R.string.donate);
         thaCredits = getResources().getString(R.string.section_seven);
 
         drawerVersion = "v " + getResources().getString(R.string.current_version);
@@ -99,7 +100,9 @@ public class Main extends ActionBarActivity {
                         new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),
 //                        new PrimaryDrawerItem().withName(thaApply).withIcon(GoogleMaterial.Icon.gmd_loyalty).withIdentifier(3),
                         new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName(thaCredits).withIdentifier(4)
+                        new SecondaryDrawerItem().withName(thaDonate).withIdentifier(4),
+                        //gmd_credit_card
+                        new SecondaryDrawerItem().withName(thaCredits).withIdentifier(5)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -153,6 +156,13 @@ public class Main extends ActionBarActivity {
 //                                tx.commit();
                             } else if (drawerItem.getIdentifier() == 4) {
                                 currentItem = 4;
+                                getSupportActionBar().setTitle(thaDonate);
+                                FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+                                tx.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
+                                tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.pitchedapps.material.glass.activities.Donations"));
+                                tx.commit();
+                            } else if (drawerItem.getIdentifier() == 5) {
+                                currentItem = 5;
                                 getSupportActionBar().setTitle(thaCredits);
                                 FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
                                 tx.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
