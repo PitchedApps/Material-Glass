@@ -91,6 +91,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pitchedapps.material.glass.activities.DetailedWallpaper" />
         </activity>
+        <activity
+            android:name="com.pitchedapps.material.glass.activities.Donations"
+            android:label="Change Me!"
+            android:theme="@style/Default"/>
         <!--Muzei
         <service android:name="ddev.iconpack.MuzeiArtSource"
             android:label="@string/artsource_name"
