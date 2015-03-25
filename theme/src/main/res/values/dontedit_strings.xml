@@ -21,9 +21,6 @@
     <string name="send_title">Send via</string>
     <string name="rate">Rate theme</string>
     <string name="sendemail">Email developer</string>
-    <string name="request_precontent">"These apps are not themed. Thanks in advance.
-
-"</string>
     <string name="changelog">See changelog</string>
 
     <!-- String Array for Tabs -->
