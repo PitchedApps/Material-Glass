@@ -219,7 +219,7 @@ public class Main extends ActionBarActivity {
             case R.id.share:
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                String shareBody = "Check out this awesome icon pack by " + getResources().getString(R.string.iconpack_designer) + ".    Download Here: " + getResources().getString(R.string.play_store_link);
+                String shareBody = "Check out this awesome cm theme by " + getResources().getString(R.string.themer) + ".    Download Here: " + getResources().getString(R.string.play_store_link);
                 sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
                 startActivity(Intent.createChooser(sharingIntent, (getResources().getString(R.string.share_title))));
                 break;

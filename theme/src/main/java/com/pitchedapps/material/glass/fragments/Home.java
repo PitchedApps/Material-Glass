@@ -39,12 +39,12 @@ public class Home extends Fragment {
             }
         });
 
-        TextView apponebtn = (TextView) root.findViewById(R.id.appone_button);
-        apponebtn.setOnClickListener(new View.OnClickListener() {
+        TextView pitchedglassbtn = (TextView) root.findViewById(R.id.pitchedglass_button);
+        pitchedglassbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent appone = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.app_one_link)));
-                startActivity(appone);
+                Intent pitchedglass = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.pitched_glass_link)));
+                startActivity(pitchedglass);
             }
         });
 

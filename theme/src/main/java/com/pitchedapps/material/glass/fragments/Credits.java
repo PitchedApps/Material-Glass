@@ -33,11 +33,14 @@ public class Credits extends Fragment {
 
         context = getActivity();
 
+        TextView designerdesc = (TextView) root.findViewById(R.id.dev_card_content);
+        designerdesc.setText(Html.fromHtml(getString(R.string.themer_desc)));
+
         TextView authordesc = (TextView) root.findViewById(R.id.dashauthor_info);
         authordesc.setText(Html.fromHtml(getString(R.string.dashboard_author_desc)));
 
-        TextView designerdesc = (TextView) root.findViewById(R.id.dev_card_content);
-        designerdesc.setText(Html.fromHtml(getString(R.string.iconpack_designer_desc)));
+        TextView ivondesc = (TextView) root.findViewById(R.id.ivon_card_content);
+        ivondesc.setText(Html.fromHtml(getString(R.string.ivon_desc)));
 
         TextView shapeviewlib = (TextView) root.findViewById(R.id.libone_content);
         shapeviewlib.setText(Html.fromHtml(getString(R.string.shapeview_desc)));
@@ -150,6 +153,24 @@ public class Credits extends Fragment {
             public void onClick(View v) {
                 Intent devgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_gplus_link)));
                 startActivity(devgplus);
+            }
+        });
+
+        TextView ivonweb = (TextView) root.findViewById(R.id.ivon_play_button);
+        ivonweb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ivonweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ivon_play)));
+                startActivity(ivonweb);
+            }
+        });
+
+        TextView ivongoogleplus = (TextView) root.findViewById(R.id.ivon_gplus_button);
+        ivongoogleplus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ivongplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ivon_gplus_link)));
+                startActivity(ivongplus);
             }
         });
 

@@ -173,7 +173,7 @@
                         android:contentDescription="@null"
                         android:minWidth="100dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_appone_logo" />
+                        android:src="@drawable/pitched_glass" />
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -187,7 +187,7 @@
                             android:paddingLeft="16dp"
                             android:paddingRight="16dp"
                             android:paddingTop="16dp"
-                            android:text="@string/app_one_title"
+                            android:text="@string/pitched_glass_title"
                             android:textColor="@color/text"
                             android:textSize="@dimen/text_big" />
 
@@ -198,7 +198,7 @@
                             android:paddingBottom="@dimen/cards_padding"
                             android:paddingLeft="@dimen/cards_padding"
                             android:paddingRight="@dimen/cards_padding"
-                            android:text="@string/app_one_content"
+                            android:text="@string/pitched_glass_content"
                             android:textColor="@color/textt"
                             android:textSize="@dimen/text_small" />
 
@@ -214,7 +214,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/appone_button"
+                                android:id="@+id/pitchedglass_button"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="?selectableItemBackground"
