@@ -59,7 +59,7 @@
     </style>
     <style name="PitchDialog" parent="@android:style/Theme.Material.Dialog">
         <item name="android:windowBackground">@drawable/dialog_background_material_transparent</item>
-        <item name="android:background">@color/background</item>
+        <item name="android:background">@color/dialog</item>
     </style>
 
 </resources>
