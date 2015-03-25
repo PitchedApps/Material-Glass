@@ -8,10 +8,13 @@
         android:id="@+id/toolbar"
         layout="@layout/app_bar" />
 
-    <include layout="@layout/donations_activity_content"/>
+    <include
+        layout="@layout/donations_activity_content"/>
 
     <include
         layout="@layout/fab_layout"
         android:id="@+id/fab_main"/>
+
+<!--TODO properly align this rather than depend on padding-->
 
 </FrameLayout>

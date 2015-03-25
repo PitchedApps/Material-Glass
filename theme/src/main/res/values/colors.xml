@@ -17,11 +17,11 @@
     <color name="text">#ffffffff</color>
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>
-    <color name="card">#55343d41</color>
+    <color name="card">#50000000</color>
     <color name="wallitem">#b0000000</color>
 
 
-    <color name="dialog">#aa060606</color>
+    <color name="dialog">#bb060606</color>
 
     <color name="status">#881565c0</color>
     <color name="actionbar">#881976d2</color>

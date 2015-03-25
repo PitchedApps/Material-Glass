@@ -94,7 +94,11 @@
         <activity
             android:name="com.pitchedapps.material.glass.activities.Donations"
             android:label="@string/donate"
-            android:theme="@style/Default"/>
+            android:theme="@style/Default">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pitchedapps.material.glass.activities.Main" />
+        </activity>
         <!--Muzei
         <service android:name="ddev.iconpack.MuzeiArtSource"
             android:label="@string/artsource_name"

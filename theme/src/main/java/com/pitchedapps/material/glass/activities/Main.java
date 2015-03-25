@@ -123,13 +123,6 @@ public class Main extends ActionBarActivity {
                                 tx.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                 tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.pitchedapps.material.glass.fragments.Previews"));
                                 tx.commit();
-//                            } else if (drawerItem.getIdentifier() == 3) {
-//                                currentItem = 3;
-//                                getSupportActionBar().setTitle(thaApply);
-//                                FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-//                                tx.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
-//                                tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.pitchedapps.material.glass.fragments.Apply"));
-//                                tx.commit();
                             } else if (drawerItem.getIdentifier() == 3) {
                                 ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
                                 NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
@@ -145,14 +138,6 @@ public class Main extends ActionBarActivity {
                                 } else {
                                     showNotConnectedDialog();
                                 }
-
-//                            } else if (drawerItem.getIdentifier() == 5) {
-//                                currentItem = 5;
-//                                getSupportActionBar().setTitle(thaRequest);
-//                                FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-//                                tx.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
-//                                tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.pitchedapps.material.glass.fragments.Request"));
-//                                tx.commit();
                             } else if (drawerItem.getIdentifier() == 4) {
                                 /*currentItem = 4;
                                 getSupportActionBar().setTitle(thaDonate);
@@ -160,7 +145,9 @@ public class Main extends ActionBarActivity {
                                 tx.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                 tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.pitchedapps.material.glass.activities.Donations"));
                                 tx.commit();*/
+
                                 Intent intent = new Intent(Main.this, Donations.class);
+//TODO add proper animations
                                 startActivity(intent);
                             } else if (drawerItem.getIdentifier() == 5) {
                                 currentItem = 5;
