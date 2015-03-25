@@ -41,12 +41,6 @@ android {
             versionCode 80
             versionName '0.8.0'
         }
-        glass_test {
-            buildConfigField "boolean", "DONATIONS_GOOGLE", "false"
-            applicationId "com.pitchedapps.material.glass.test"
-            versionCode 1
-            versionName '0.0.1'
-        }
     }
 }
 

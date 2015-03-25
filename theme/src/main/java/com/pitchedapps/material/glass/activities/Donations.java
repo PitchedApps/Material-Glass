@@ -19,11 +19,11 @@ package com.pitchedapps.material.glass.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
 
@@ -33,8 +33,8 @@ import com.pitchedapps.material.glass.Util;
 
 import org.sufficientlysecure.donations.DonationsFragment;
 
-public class Donations extends ActionBarActivity implements View.OnClickListener {
-//public class Donations extends FragmentActivity implements View.OnClickListener {
+public class Donations extends FragmentActivity implements View.OnClickListener {
+//public class Donations extends ActionBarActivity implements View.OnClickListener {
 
     /**
      * Google
@@ -54,7 +54,7 @@ public class Donations extends ActionBarActivity implements View.OnClickListener
      * FABulous constants
      */
     private static final String FAB_MAIN = "fab_main";
-    private Toolbar toolbar;
+//    private Toolbar toolbar;
 
     /**
      * Called when the activity is first created.
@@ -67,11 +67,11 @@ public class Donations extends ActionBarActivity implements View.OnClickListener
 
 
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle(R.string.donate);
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle(R.string.donate);
+//        getSupportActionBar().setHomeButtonEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         View mMainFab = findViewById(R.id.fab_main);
         Util.setUpFab(mMainFab, R.drawable.themes, FAB_MAIN, this);
