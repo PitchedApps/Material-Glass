@@ -57,6 +57,9 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
-    <style name="PitchDialog" parent="@android:style/Theme.Material.Dialog"/>
+    <style name="PitchDialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background_material_transparent</item>
+        <item name="android:background">@color/dialog</item>
+    </style>
 
 </resources>
