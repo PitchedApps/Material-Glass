@@ -16,7 +16,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -155,12 +154,14 @@ public class Main extends ActionBarActivity {
 //                                tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.pitchedapps.material.glass.fragments.Request"));
 //                                tx.commit();
                             } else if (drawerItem.getIdentifier() == 4) {
-                                currentItem = 4;
+                                /*currentItem = 4;
                                 getSupportActionBar().setTitle(thaDonate);
                                 FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
                                 tx.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                 tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.pitchedapps.material.glass.activities.Donations"));
-                                tx.commit();
+                                tx.commit();*/
+                                Intent intent = new Intent(Main.this, Donations.class);
+                                startActivity(intent);
                             } else if (drawerItem.getIdentifier() == 5) {
                                 currentItem = 5;
                                 getSupportActionBar().setTitle(thaCredits);
