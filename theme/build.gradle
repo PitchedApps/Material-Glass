@@ -32,14 +32,14 @@ android {
         glass_free {
             buildConfigField "boolean", "DONATIONS_GOOGLE", "true"
             applicationId "com.pitchedapps.material.glass.free"
-            versionCode 82
-            versionName '0.8.2'
+            versionCode 90
+            versionName '0.9.0'
         }
         glass_xda {
             buildConfigField "boolean", "DONATIONS_GOOGLE", "false"
             applicationId "com.pitchedapps.material.glass.xda"
-            versionCode 80
-            versionName '0.8.0'
+            versionCode 90
+            versionName '0.9.0'
         }
     }
 }
@@ -48,12 +48,11 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:support-v4:22.0.0'
     compile project(':libraries:Donations')
-    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.android.support:support-v4:22.0.0'
     compile 'com.android.support:cardview-v7:22.0.0'
 //Material Dialogs ftw
-    compile 'com.afollestad:material-dialogs:0.6.4.5'
+    compile 'com.afollestad:material-dialogs:0.6.5.2'
 //Material Drawer ftw
     compile('com.mikepenz.materialdrawer:library:2.5.3@aar') {
         transitive = true

@@ -138,7 +138,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="?selectableItemBackground"
                                 android:padding="@dimen/cards_padding"
-                                android:text="@string/download"
+                                android:text="@string/donate"
                                 android:textColor="@color/text"
                                 android:textSize="@dimen/text_ultrasmall"
                                 android:textStyle="bold" />

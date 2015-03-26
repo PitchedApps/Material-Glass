@@ -25,16 +25,14 @@
 
     <!-- String Array for Tabs -->
     <string-array name="tabs">
-        <item>LATEST</item>
         <item>SYSTEM</item>
-        <item>GOOGLE APPS</item>
-        <item>GAMES</item>
+        <item>PLAY</item>
         <item>ALL</item>
     </string-array>
 
     <!-- Changelog Dialog Content -->
     <string name="changelog_dialog_title">Changelog</string>
-    <string name="nice">great</string>
+    <string name="nice">Great</string>
 
     <string name="drawer_open">Menu open</string>
     <string name="drawer_close">Menu closed</string>
@@ -61,7 +59,6 @@
     <!-- Some texts for Dialogs -->
     <string name="dismiss">Dismiss</string>
     <string name="close">Close</string>
-    <string name="building_request">Building Request</string>
     <string name="submit">Submit</string>
     <string name="googleplus">Google+</string>
     <string name="instagram">Instagram</string>

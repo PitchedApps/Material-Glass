@@ -41,15 +41,12 @@ public class Main extends ActionBarActivity {
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
     public String thaApp, thaHome, thaPreviews, thaWalls, thaDonate, thaCredits;
-//    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits;
     public String version, drawerVersion;
     public int currentItem;
-    SharedPreferences sharedPreferences;
     private boolean firstrun, enable_features;
     private Preferences mPrefs;
     private boolean withLicenseChecker = false;
     private Context context;
-    private Context mContext;
 
 //TODO theme card in main view
 
@@ -68,9 +65,7 @@ public class Main extends ActionBarActivity {
         thaApp = getResources().getString(R.string.app_name);
         thaHome = getResources().getString(R.string.section_one);
         thaPreviews = getResources().getString(R.string.section_two);
-//        thaApply = getResources().getString(R.string.section_three);
         thaWalls = getResources().getString(R.string.section_four);
-//        thaRequest = getResources().getString(R.string.section_five);
         thaDonate = getResources().getString(R.string.donate);
         thaCredits = getResources().getString(R.string.section_seven);
 
@@ -97,7 +92,6 @@ public class Main extends ActionBarActivity {
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
                         new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),
-//                        new PrimaryDrawerItem().withName(thaApply).withIcon(GoogleMaterial.Icon.gmd_loyalty).withIdentifier(3),
                         new DividerDrawerItem(),
                         new SecondaryDrawerItem().withName(thaDonate).withIdentifier(4),
                         //gmd_credit_card
@@ -139,13 +133,6 @@ public class Main extends ActionBarActivity {
                                     showNotConnectedDialog();
                                 }
                             } else if (drawerItem.getIdentifier() == 4) {
-                                /*currentItem = 4;
-                                getSupportActionBar().setTitle(thaDonate);
-                                FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-                                tx.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
-                                tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.pitchedapps.material.glass.activities.Donations"));
-                                tx.commit();*/
-
                                 Intent intent = new Intent(Main.this, Donations.class);
 //TODO add proper animations
                                 startActivity(intent);
@@ -253,11 +240,9 @@ public class Main extends ActionBarActivity {
 
     public void addItemsToDrawer() {
         IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(3);
-//        IDrawerItem request = new PrimaryDrawerItem().withName(thaRequest).withIcon(GoogleMaterial.Icon.gmd_forum).withIdentifier(5);
         if (enable_features) {
             result.addItem(walls, 2);
-			//check 2, was 3
-//            result.addItem(request, 4);
+
         } else {
         }
     }
@@ -293,7 +278,7 @@ public class Main extends ActionBarActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.PitchDialog);
         builder.setTitle(R.string.changelog_dialog_title)
                 .setView(listView)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.nice, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
