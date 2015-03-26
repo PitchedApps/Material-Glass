@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.activities.Donations;
 
 /**
  * Created by Jahir on 28/02/2015.
@@ -34,8 +35,9 @@ public class Home extends Fragment {
         donatebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent donate = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.app_three_link)));
+                Intent donate = new Intent(getActivity(), Donations.class);
                 startActivity(donate);
+                //TODO add animations
             }
         });
 

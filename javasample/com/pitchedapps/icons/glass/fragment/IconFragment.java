@@ -25,10 +25,10 @@ public class IconFragment extends Fragment
 	private List<Fragment> mFragments;
 	private int[] mTitles = 
 							{
-								R.string.icons_latest, 
+//								R.string.icons_latest,
 								R.string.icons_all,  
-//								R.string.icons_system,
-//								R.string.icons_play,
+								R.string.icons_system,
+								R.string.icons_play,
 //								R.string.icons_games,
 //								R.string.icons_misc
 							};
@@ -66,10 +66,10 @@ public class IconFragment extends Fragment
 	private void addPages()
 	{
 		mFragments = new ArrayList<Fragment>();
-		mFragments.add(IconSectionFragment.newInstance(R.array.latesticons));
+//		mFragments.add(IconSectionFragment.newInstance(R.array.latesticons));
 		mFragments.add(IconSectionFragment.newInstance(R.array.icon_pack));
-//		mFragments.add(IconSectionFragment.newInstance(R.array.systemicons));
-//		mFragments.add(IconSectionFragment.newInstance(R.array.playicons));
+		mFragments.add(IconSectionFragment.newInstance(R.array.systemicons));
+		mFragments.add(IconSectionFragment.newInstance(R.array.playicons));
 //		mFragments.add(IconSectionFragment.newInstance(R.array.gamesicons));
 //		mFragments.add(IconSectionFragment.newInstance(R.array.miscicons));
 	}

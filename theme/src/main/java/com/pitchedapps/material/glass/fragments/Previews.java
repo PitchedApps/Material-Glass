@@ -79,8 +79,9 @@ public class Previews extends Fragment {
 
         @Override
         public int getCount() {
-            return 5;
+            return 3;
         }
+        //change if tabs change
     }
 
 }

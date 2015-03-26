@@ -26,7 +26,7 @@
     <!-- String Array for Tabs -->
     <string-array name="tabs">
         <item>SYSTEM</item>
-        <item>GAMES</item>
+        <item>PLAY</item>
         <item>ALL</item>
     </string-array>
 
