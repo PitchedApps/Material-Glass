@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
 
-   <string-array name="System">
+   <string-array name="system">
        <item>browser</item>
        <item>calculator</item>
        <item>clock</item>
@@ -20,88 +20,9 @@
        <item>themes</item>
        <item>voicedialer</item>
        <item>voicesearch</item>
-   </string-array>
-
-   <string-array name="Google">
-       <item>authenticator</item>
-       <item>calendar</item>
-       <item>camera</item>
-       <item>chrome</item>
-       <item>chromecast</item>
-       <item>docs</item>
-       <item>drive</item>
-       <item>earth</item>
-       <item>fit</item>
-       <item>gmail</item>
-       <item>google</item>
-       <item>googlekeyboard</item>
-       <item>googlenowlauncher</item>
-       <item>googleplus</item>
-       <item>googlesettings</item>
-       <item>hangouts</item>
-       <item>hangoutsdialer</item>
-       <item>inbox</item>
-       <item>keep</item>
-       <item>maps</item>
-       <item>messenger</item>
-       <item>photos</item>
-       <item>playmovies</item>
-       <item>playmusic</item>
-       <item>playstore</item>
-       <item>rewards</item>
-       <item>sheets</item>
-       <item>translate</item>
-       <item>youtube</item>
    </string-array>
 
    <string-array name="icon_pack" translatable="true">
-       <item>authenticator</item>
-       <item>calendar</item>
-       <item>camera</item>
-       <item>chrome</item>
-       <item>chromecast</item>
-       <item>docs</item>
-       <item>drive</item>
-       <item>earth</item>
-       <item>fit</item>
-       <item>gmail</item>
-       <item>google</item>
-       <item>googlekeyboard</item>
-       <item>googlenowlauncher</item>
-       <item>googleplus</item>
-       <item>googlesettings</item>
-       <item>hangouts</item>
-       <item>hangoutsdialer</item>
-       <item>inbox</item>
-       <item>keep</item>
-       <item>maps</item>
-       <item>messenger</item>
-       <item>photos</item>
-       <item>playmovies</item>
-       <item>playmusic</item>
-       <item>playstore</item>
-       <item>rewards</item>
-       <item>sheets</item>
-       <item>translate</item>
-       <item>youtube</item>
-       <item>browser</item>
-       <item>calculator</item>
-       <item>clock</item>
-       <item>contacts</item>
-       <item>documents</item>
-       <item>downloads</item>
-       <item>email</item>
-       <item>filemanager</item>
-       <item>gallery</item>
-       <item>messaging</item>
-       <item>music</item>
-       <item>phone</item>
-       <item>settings</item>
-       <item>soundrecorder</item>
-       <item>supersu</item>
-       <item>themes</item>
-       <item>voicedialer</item>
-       <item>voicesearch</item>
        <item>adaway</item>
        <item>adobereader</item>
        <item>airdroid</item>
@@ -126,6 +47,24 @@
        <item>smsbackuprestorepro</item>
        <item>snapchat</item>
        <item>swiftkeykeyboard</item>
+       <item>browser</item>
+       <item>calculator</item>
+       <item>clock</item>
+       <item>contacts</item>
+       <item>documents</item>
+       <item>downloads</item>
+       <item>email</item>
+       <item>filemanager</item>
+       <item>gallery</item>
+       <item>messaging</item>
+       <item>music</item>
+       <item>phone</item>
+       <item>settings</item>
+       <item>soundrecorder</item>
+       <item>supersu</item>
+       <item>themes</item>
+       <item>voicedialer</item>
+       <item>voicesearch</item>
        <item>tapatalk</item>
        <item>tasker</item>
        <item>themedebug</item>
