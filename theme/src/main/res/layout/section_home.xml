@@ -64,11 +64,89 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/welcome_contenttest"
-                        android:padding="@dimen/cards_text_margin"
+                        android:padding="@dimen/image_home_padding"
                         android:src="@drawable/icons_banner" />
 
                 </RelativeLayout>
 
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                card_view:cardCornerRadius="@dimen/card_corner_radius"
+                card_view:cardElevation="@dimen/cards_elevation"
+                card_view:cardBackgroundColor="@color/card">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/image_home_padding"
+                        android:contentDescription="@null"
+                        android:minWidth="100dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_donate" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/app_three_title"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/text_big" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.2"
+                            android:paddingBottom="@dimen/cards_padding"
+                            android:paddingLeft="@dimen/cards_padding"
+                            android:paddingRight="@dimen/cards_padding"
+                            android:text="@string/app_three_content"
+                            android:textColor="@color/textt"
+                            android:textSize="@dimen/text_small" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/divider"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/donate_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="?selectableItemBackground"
+                                android:padding="@dimen/cards_padding"
+                                android:text="@string/download"
+                                android:textColor="@color/text"
+                                android:textSize="@dimen/text_ultrasmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -90,6 +168,7 @@
                         android:id="@+id/imageView"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/image_home_padding"
                         android:contentDescription="@null"
                         android:minWidth="100dp"
                         android:scaleType="fitCenter"
@@ -170,10 +249,11 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/image_home_padding"
                         android:contentDescription="@null"
                         android:minWidth="100dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/pitched_glass" />
+                        android:src="@drawable/ic_pitched_glass" />
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -247,10 +327,11 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/image_home_padding"
                         android:contentDescription="@null"
                         android:minWidth="100dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_apptwo_logo" />
+                        android:src="@drawable/ic_xda" />
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -264,7 +345,7 @@
                             android:paddingLeft="16dp"
                             android:paddingRight="16dp"
                             android:paddingTop="16dp"
-                            android:text="@string/app_two_title"
+                            android:text="@string/xda_title"
                             android:textColor="@color/text"
                             android:textSize="@dimen/text_big" />
 
@@ -275,7 +356,7 @@
                             android:paddingBottom="@dimen/cards_padding"
                             android:paddingLeft="@dimen/cards_padding"
                             android:paddingRight="@dimen/cards_padding"
-                            android:text="@string/app_two_content"
+                            android:text="@string/xda_content"
                             android:textColor="@color/textt"
                             android:textSize="@dimen/text_small" />
 
@@ -291,89 +372,12 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/apptwo_button"
+                                android:id="@+id/xda_button"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="?selectableItemBackground"
                                 android:padding="@dimen/cards_padding"
-                                android:text="@string/download"
-                                android:textColor="@color/text"
-                                android:textSize="@dimen/text_ultrasmall"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/cards_margin"
-                card_view:cardCornerRadius="@dimen/card_corner_radius"
-                card_view:cardElevation="@dimen/cards_elevation"
-                card_view:cardBackgroundColor="@color/card">
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:contentDescription="@null"
-                        android:minWidth="100dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_appthree_logo" />
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingBottom="8dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingTop="16dp"
-                            android:text="@string/app_three_title"
-                            android:textColor="@color/text"
-                            android:textSize="@dimen/text_big" />
-
-                        <TextView
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:lineSpacingMultiplier="1.2"
-                            android:paddingBottom="@dimen/cards_padding"
-                            android:paddingLeft="@dimen/cards_padding"
-                            android:paddingRight="@dimen/cards_padding"
-                            android:text="@string/app_three_content"
-                            android:textColor="@color/textt"
-                            android:textSize="@dimen/text_small" />
-
-                        <View
-                            android:layout_width="fill_parent"
-                            android:layout_height="1px"
-                            android:background="@color/divider"
-                            android:visibility="invisible" />
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="fill_parent"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/appthree_button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="?selectableItemBackground"
-                                android:padding="@dimen/cards_padding"
-                                android:text="@string/download"
+                                android:text="@string/link"
                                 android:textColor="@color/text"
                                 android:textSize="@dimen/text_ultrasmall"
                                 android:textStyle="bold" />

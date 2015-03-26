@@ -30,6 +30,15 @@ public class Home extends Fragment {
 
         context = getActivity();
 
+        TextView donatebtn = (TextView) root.findViewById(R.id.donate_button);
+        donatebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent donate = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.app_three_link)));
+                startActivity(donate);
+            }
+        });
+
         TextView playbtn = (TextView) root.findViewById(R.id.play_button);
         playbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,21 +57,12 @@ public class Home extends Fragment {
             }
         });
 
-        TextView apptwobtn = (TextView) root.findViewById(R.id.apptwo_button);
-        apptwobtn.setOnClickListener(new View.OnClickListener() {
+        TextView xdabtn = (TextView) root.findViewById(R.id.xda_button);
+        xdabtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent apptwo = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.app_two_link)));
-                startActivity(apptwo);
-            }
-        });
-
-        TextView appthreebtn = (TextView) root.findViewById(R.id.appthree_button);
-        appthreebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent appthree = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.app_three_link)));
-                startActivity(appthree);
+                Intent xda = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.xda_link)));
+                startActivity(xda);
             }
         });
 

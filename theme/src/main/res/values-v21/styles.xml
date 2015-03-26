@@ -53,9 +53,9 @@
         <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
         <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
 
-        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/background</item>
         <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:colorBackgroundCacheHint">@color/background</item>
         <item name="android:statusBarColor">@color/status</item>
     </style>
     <style name="PitchDialog" parent="@android:style/Theme.Material.Dialog">

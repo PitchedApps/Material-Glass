@@ -38,8 +38,8 @@
     <string name="json_file_url">"https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass/0wallpapers.json"</string>
 
     <!-- Main Strings -->
-    <string name="app_name">"Material Glass"</string>
-    <string name="app_long_name">"Material Glass by Pitched Apps"</string>
+    <string name="app_name">Material Glass</string>
+    <string name="app_long_name">Material Glass by Pitched Apps</string>
     <string name="package_name">"com.pitchedapps.material.glass"</string>
 
     <!-- Some launchers stuff -->
@@ -57,11 +57,12 @@
     <string name="email_id">pitchedapps@gmail.com</string>
 
     <!-- Mail subjects for simple e-mail and requests e-mail -->
-    <string name="email_subject">"Material Glass Support"</string>
+    <string name="email_subject">Material Glass Support</string>
     <!--<string name="email_request_subject">"PaperBoard - Icon Requests"</string>-->
 
     <!-- This are the strings for the cards in the main screen -->
-    <string name="welcome_title">Wallpaper + Darkness = Material Glass</string>
+    <!--<string name="welcome_title">Wallpaper + Darkness = Material Glass</string>-->
+    <string name="welcome_title">Let your wallpaper shine through with material darkness!</string>
 
     <string name="play_card_title">Pitched Apps on Google Play</string>
     <string name="play_card_content">Check my other apps and download them.</string>
@@ -70,9 +71,9 @@
     <string name="pitched_glass_content">Want more icons? Check out my free icon pack with over 2000 hand crafted drawables.</string>
     <string name="pitched_glass_link">https://play.google.com/store/apps/details?id=com.pitchedapps.icons.glass</string>
 
-    <string name="app_two_title">App Two</string>
-    <string name="app_two_content">"Here will go the description of your second app."</string>
-    <string name="app_two_link">"https://www.google.com/"</string>
+    <string name="xda_title">XDA Thread</string>
+    <string name="xda_content">Help the development and receive beta builds! Feedback is also welcome in this thread.</string>
+    <string name="xda_link">http://forum.xda-developers.com/google-nexus-5/themes-apps/theme-material-glass-t3005025</string>
 
     <string name="app_three_title">App Three</string>
     <string name="app_three_content">"Here will go the description of your third app."</string>
