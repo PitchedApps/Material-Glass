@@ -37,6 +37,14 @@
         <item name="actionOverflowMenuStyle">@android:style/Widget.Material.PopupMenu.Overflow</item>
         <item name="popupMenuStyle">@android:style/Widget.Material.PopupMenu</item>
 
+
+        <item name="md_dark_theme">true</item>
+        <item name="md_background_color">@color/dialog</item>
+        <item name="md_title_color">@color/text</item>
+        <item name="md_content_color">@color/text</item>
+        <item name="md_positive_color">@color/text</item>
+        <item name="md_neutral_color">@color/text</item>
+        <item name="md_negative_color">@color/text</item>
     </style>
 
     <style name="Default" parent="Theme.AppCompat.NoActionBar">
@@ -55,6 +63,14 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/background</item>
         <item name="android:statusBarColor">@color/status</item>
+
+        <item name="md_dark_theme">true</item>
+        <item name="md_background_color">@color/dialog</item>
+        <item name="md_title_color">@color/text</item>
+        <item name="md_content_color">@color/text</item>
+        <item name="md_positive_color">@color/text</item>
+        <item name="md_neutral_color">@color/text</item>
+        <item name="md_negative_color">@color/text</item>
     </style>
     <style name="PitchDialog" parent="@android:style/Theme.Material.Dialog">
         <item name="android:windowBackground">@drawable/dialog_background_material_transparent</item>

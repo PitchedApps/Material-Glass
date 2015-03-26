@@ -30,7 +30,6 @@
     <dimen name="list_item_height_mini">40dp</dimen>
 
     <dimen name="mini_margin">2dp</dimen>
-    <!--<dimen name="md_dialog_frame_margin">5dp</dimen>-->
 
     <dimen name="cards_margin">10dp</dimen>
     <dimen name="finalcard_margin">12dp</dimen>

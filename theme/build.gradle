@@ -52,7 +52,7 @@ dependencies {
     compile 'com.android.support:support-v4:22.0.0'
     compile 'com.android.support:cardview-v7:22.0.0'
 //Material Dialogs ftw
-    compile 'com.afollestad:material-dialogs:0.6.4.5'
+    compile 'com.afollestad:material-dialogs:0.6.5.2'
 //Material Drawer ftw
     compile('com.mikepenz.materialdrawer:library:2.5.3@aar') {
         transitive = true
