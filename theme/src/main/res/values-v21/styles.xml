@@ -16,8 +16,6 @@
 -->
 
 <resources>
-
-
     <style name="AppTheme" parent="AppTheme.Base">
         <item name="android:colorPrimary">@color/primary</item>
         <item name="android:colorPrimaryDark">@color/primary_dark</item>

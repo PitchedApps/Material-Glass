@@ -25,9 +25,7 @@
 
     <!-- String Array for Tabs -->
     <string-array name="tabs">
-        <item>LATEST</item>
         <item>SYSTEM</item>
-        <item>GOOGLE APPS</item>
         <item>GAMES</item>
         <item>ALL</item>
     </string-array>

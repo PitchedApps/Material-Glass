@@ -11,9 +11,7 @@ import android.view.ViewGroup;
 
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.iconfragments.AllTheIcons;
-import com.pitchedapps.material.glass.iconfragments.GamesIcons;
 import com.pitchedapps.material.glass.iconfragments.GoogleAppsIcons;
-import com.pitchedapps.material.glass.iconfragments.LatestIcons;
 import com.pitchedapps.material.glass.iconfragments.SystemIcons;
 import com.pitchedapps.material.glass.tabs.SlidingTabLayout;
 
@@ -62,18 +60,12 @@ public class Previews extends Fragment {
             Fragment f = new Fragment();
             switch (position) {
                 case 0:
-                    f = new LatestIcons();
-                    break;
-                case 1:
                     f = new SystemIcons();
                     break;
-                case 2:
+                case 1:
                     f = new GoogleAppsIcons();
                     break;
-                case 3:
-                    f = new GamesIcons();
-                    break;
-                case 4:
+                case 2:
                     f = new AllTheIcons();
                     break;
             }
