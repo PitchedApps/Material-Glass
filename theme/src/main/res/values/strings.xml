@@ -15,7 +15,7 @@
  * limitations under the License.
 -->
 
-<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+<resources>
 
 
     <string name="theme_name">Material Glass</string>
@@ -75,10 +75,8 @@
     <string name="xda_content">Help the development and receive beta builds! Feedback is also welcome in this thread.</string>
     <string name="xda_link">http://forum.xda-developers.com/google-nexus-5/themes-apps/theme-material-glass-t3005025</string>
 
-    <string name="app_three_title">Donations</string>
-    <string name="app_three_content">Donations are always appreciated, and help me justify the countless hours I spend on creating this theme, as well as supporting apps I don\'t use.</string>
-    <string name="app_three_link">"https://www.google.com/"</string>
-
+    <string name="donate_home_title">Donations</string>
+    <string name="donate_home_content">Donations are always appreciated, and help me justify the countless hours I spend on creating this theme, as well as supporting apps I don\'t use.</string>
 
     <!-- Your card in About The App section (In desc you can use html markup)-->
     <string name="themer">Pitched Apps</string>

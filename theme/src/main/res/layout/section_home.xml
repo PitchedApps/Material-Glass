@@ -106,7 +106,7 @@
                             android:paddingLeft="16dp"
                             android:paddingRight="16dp"
                             android:paddingTop="16dp"
-                            android:text="@string/app_three_title"
+                            android:text="@string/donate_home_title"
                             android:textColor="@color/text"
                             android:textSize="@dimen/text_big" />
 
@@ -117,7 +117,7 @@
                             android:paddingBottom="@dimen/cards_padding"
                             android:paddingLeft="@dimen/cards_padding"
                             android:paddingRight="@dimen/cards_padding"
-                            android:text="@string/app_three_content"
+                            android:text="@string/donate_home_content"
                             android:textColor="@color/textt"
                             android:textSize="@dimen/text_small" />
 
