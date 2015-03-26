@@ -11,6 +11,17 @@
 
     <!-- SYSTEM ICONS -->
     <!-- System icons listed here -->
+
+
+
+    <!-- To Ivon: he array name will be the name of the folder that is under the ICON subfolder
+    All subsequent items are the names of the drawables (code for that is already available)
+
+    Essentially, there needs to be an array for each individual folder with the drawables in them, as well as a combined array
+    (with the first line <string-array name="icon_pack" translatable="false">) that incldes all of the drawables in the
+    ICONS folder (including all subfolders). This would then generate one icon_pack.xml like this one-->
+
+
     <string-array name="system">
         <item>facebook</item>
         <item>gmail</item>
