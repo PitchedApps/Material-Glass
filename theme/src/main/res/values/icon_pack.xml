@@ -1,138 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+<resources>
 
-    <!-- These sections below are for your "Previews" section -->
-    <!-- These names should match YOUR actual icon names
-    	 the names used below are just for sampling purposes -->
+   <string-array name="google">
+       <item>authenticator</item>
+       <item>calendar</item>
+       <item>camera</item>
+       <item>chrome</item>
+       <item>chromecast</item>
+       <item>docs</item>
+       <item>drive</item>
+       <item>earth</item>
+       <item>fit</item>
+       <item>gmail</item>
+       <item>google</item>
+       <item>googlekeyboard</item>
+       <item>googlenowlauncher</item>
+       <item>googleplus</item>
+       <item>googlesettings</item>
+       <item>hangouts</item>
+       <item>hangoutsdialer</item>
+       <item>inbox</item>
+       <item>keep</item>
+       <item>maps</item>
+       <item>messenger</item>
+       <item>photos</item>
+       <item>playmovies</item>
+       <item>playmusic</item>
+       <item>playstore</item>
+       <item>rewards</item>
+       <item>sheets</item>
+       <item>translate</item>
+       <item>youtube</item>
+   </string-array>
 
-    <!-- LATEST ICONS -->
-    <!-- All of your Latest icons listed here -->
-    <string-array name="latest"></string-array>
+   <string-array name="system">
+       <item>browser</item>
+       <item>calculator</item>
+       <item>clock</item>
+       <item>contacts</item>
+       <item>documents</item>
+       <item>downloads</item>
+       <item>email</item>
+       <item>filemanager</item>
+       <item>gallery</item>
+       <item>messaging</item>
+       <item>music</item>
+       <item>phone</item>
+       <item>settings</item>
+       <item>soundrecorder</item>
+       <item>supersu</item>
+       <item>themes</item>
+       <item>voicedialer</item>
+       <item>voicesearch</item>
+   </string-array>
 
-    <!-- SYSTEM ICONS -->
-    <!-- System icons listed here -->
+   <string-array name="icon_pack" translatable="true">
+       <item>adaway</item>
+       <item>adobereader</item>
+       <item>airdroid</item>
+       <item>audiofx</item>
+       <item>authenticator</item>
+       <item>browser</item>
+       <item>calculator</item>
+       <item>calendar</item>
+       <item>camera</item>
+       <item>catlog</item>
+       <item>chrome</item>
+       <item>chromecast</item>
+       <item>clock</item>
+       <item>contacts</item>
+       <item>docs</item>
+       <item>documents</item>
+       <item>downloads</item>
+       <item>drive</item>
+       <item>dropbox</item>
+       <item>earth</item>
+       <item>email</item>
+       <item>evolvesms</item>
+       <item>facebook</item>
+       <item>filemanager</item>
+       <item>fit</item>
+       <item>gallery</item>
+       <item>gmail</item>
+       <item>google</item>
+       <item>googledeveloperconsole</item>
+       <item>googlekeyboard</item>
+       <item>googlenowlauncher</item>
+       <item>googleplus</item>
+       <item>googlesettings</item>
+       <item>greenify</item>
+       <item>hangouts</item>
+       <item>hangoutsdialer</item>
+       <item>inbox</item>
+       <item>instagram</item>
+       <item>k9mail</item>
+       <item>keep</item>
+       <item>lmt</item>
+       <item>maps</item>
+       <item>messaging</item>
+       <item>messenger</item>
+       <item>messengerfb</item>
+       <item>music</item>
+       <item>newsweather</item>
+       <item>novalauncher</item>
+       <item>phone</item>
+       <item>photos</item>
+       <item>playmovies</item>
+       <item>playmusic</item>
+       <item>playstore</item>
+       <item>quickpic</item>
+       <item>realcalc</item>
+       <item>rewards</item>
+       <item>rootexplorer</item>
+       <item>sdmaid</item>
+       <item>settings</item>
+       <item>sheets</item>
+       <item>skype</item>
+       <item>smsbackuprestorepro</item>
+       <item>snapchat</item>
+       <item>soundrecorder</item>
+       <item>supersu</item>
+       <item>swiftkeykeyboard</item>
+       <item>tapatalk</item>
+       <item>tasker</item>
+       <item>themedebug</item>
+       <item>themes</item>
+       <item>titaniumbackup</item>
+       <item>translate</item>
+       <item>trickstermod</item>
+       <item>twitter</item>
+       <item>voicedialer</item>
+       <item>voicesearch</item>
+       <item>whatsapp</item>
+       <item>youtube</item>
+   </string-array>
 
-
-
-    <!-- To Ivon: he array name will be the name of the folder that is under the ICON subfolder
-    All subsequent items are the names of the drawables (code for that is already available)
-
-    Essentially, there needs to be an array for each individual folder with the drawables in them, as well as a combined array
-    (with the first line <string-array name="icon_pack" translatable="false">) that incldes all of the drawables in the
-    ICONS folder (including all subfolders). This would then generate one icon_pack.xml like this one-->
-
-
-    <string-array name="system">
-        <item>facebook</item>
-        <item>gmail</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-    </string-array>
-
-    <!-- GOOGLE APPS ICONS -->
-    <!-- Google Apps icons are listed here -->
-    <string-array name="google">
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-    </string-array>
-
-    <!-- GAMES ICONS -->
-    <!-- Game icons are listed here -->
-    <string-array name="games">
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-    </string-array>
-
-
-    <!-- ALL ICONS -->
-    <!-- All of your icons listed here -->
-    <string-array name="icon_pack" translatable="false">
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-        <item>andy</item>
-    </string-array>
 </resources>
