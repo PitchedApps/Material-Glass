@@ -19,7 +19,7 @@
     <dimen name="app_icon_size">36dp</dimen>
     <dimen name="allapps_icon_preview">144dp</dimen>
     <dimen name="dialog_icon_size">96dp</dimen>
-    <dimen name="image_home_padding">1dp</dimen>
+    <dimen name="image_home_padding">2dp</dimen>
 
     <dimen name="list_image_right_pad">20.0dip</dimen>
     <dimen name="list_margin">20dp</dimen>
@@ -30,6 +30,7 @@
     <dimen name="list_item_height_mini">40dp</dimen>
 
     <dimen name="mini_margin">2dp</dimen>
+    <!--<dimen name="md_dialog_frame_margin">5dp</dimen>-->
 
     <dimen name="cards_margin">10dp</dimen>
     <dimen name="finalcard_margin">12dp</dimen>
