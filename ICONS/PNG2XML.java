@@ -7,6 +7,7 @@ import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class PNG2XML
@@ -43,7 +44,14 @@ public class PNG2XML
         }
         
         // Sort master list alphabetically
-        Collections.sort(images);
+        Collections.sort(images, new Comparator<File>() {
+
+			@Override
+			public int compare(File file1, File file2) {
+				return file1.getName().compareToIgnoreCase(file2.getName());
+			}
+        	
+        });
         
         // Write images if found, else return error message
         if (images.size() > 0)
@@ -102,18 +110,24 @@ public class PNG2XML
         {
         	if (subfolder.length > 0) {
         	
-	        	// Starting writing this subfolder's array
-	            icon.append("   <string-array name=\"" + subfolder[0].getParentFile().getName() + "\">\n");
-	            
-	            // Loop through all the images within this subfolder and assign a value for each
-	            // Drawables only need to be written once, so we will not write them here
-	            for (File img : subfolder) {
-	                icon.append("       <item>" + img.getName().replace(".png", "").replace(".PNG", "") + "</item>\n");
-	            }
-	
-	            // Close this subfolder's array
-	            icon.append("   </string-array>\n\n");
-	            
+        		// Get name of subfolder
+        		String subfolderName = subfolder[0].getParentFile().getName();
+        		
+        		if (!subfolderName.equals("uncategorized")) {
+        		
+		        	// Starting writing this subfolder's array
+		            icon.append("   <string-array name=\"" + subfolderName + "\">\n");
+		            
+		            // Loop through all the images within this subfolder and assign a value for each
+		            // Drawables only need to be written once, so we will not write them here
+		            for (File img : subfolder) {
+		                icon.append("       <item>" + img.getName().replace(".png", "").replace(".PNG", "") + "</item>\n");
+		            }
+		
+		            // Close this subfolder's array
+		            icon.append("   </string-array>\n\n");
+		            
+        		}
         	}
         }
         
