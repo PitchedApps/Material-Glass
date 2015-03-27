@@ -10,12 +10,11 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.melnykov.fab.FloatingActionButton;
+import com.melnykov.fab.ObservableScrollView;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.Donations;
 
@@ -36,7 +35,6 @@ public class Home extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_home, null);
-//TODO change to section_home2?
         context = getActivity();
 
         ActionBar toolbar = ((ActionBarActivity)context).getSupportActionBar();
@@ -79,12 +77,13 @@ public class Home extends Fragment {
             }
         });
 //based on home2
-        ListView mList = (ListView) getActivity().findViewById(R.id.home2);
+        //ListView mList = (ListView) getActivity().findViewById(R.id.home2);
+        ObservableScrollView mScrollView = (ObservableScrollView) root.findViewById(R.id.scrollView1);
         FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.cm_apply);
-        fab.attachToListView(mList);
-        mButton = root.findViewById(R.id.cm_apply);
+        fab.attachToScrollView(mScrollView);
+        //mButton = root.findViewById(R.id.cm_apply);
 //        mButton.setVisibility(View.GONE);
-        mButton.setOnClickListener(new View.OnClickListener() {
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getTag().toString()) {
@@ -96,8 +95,8 @@ public class Home extends Fragment {
                             startActivity(intent);
                         }
                         break;
-                    }
                 }
+            }
         });
 
         return root;
