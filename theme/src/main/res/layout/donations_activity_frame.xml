@@ -11,9 +11,9 @@
     <include
         layout="@layout/donations_activity_content"/>
 
-    <include
-        layout="@layout/fab_layout"
-        android:id="@+id/fab_main"/>
+    <!--<include-->
+        <!--layout="@layout/fab_layout"-->
+        <!--android:id="@+id/fab_main"/>-->
 
 <!--TODO properly align this rather than depend on padding-->
 

@@ -1,5 +1,3 @@
-package com.ivon.png2xml;
-
 import java.io.File;
 import java.io.FileFilter;
 import java.io.FileOutputStream;
@@ -15,7 +13,7 @@ public class PNG2XML
     private static List<File> images;
     private static List<File[]> subfolderIndex;
     private static StringBuilder icon;
-    private static StringBuilder drawable;
+//    private static StringBuilder drawable;
     
     public static void main(String args[])
     {
@@ -96,14 +94,14 @@ public class PNG2XML
     {
         // Initialize String
         icon = new StringBuilder();
-        drawable = new StringBuilder();
+//        drawable = new StringBuilder();
         
         // Write headers
         icon.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
         icon.append("<resources>\n\n");
-        drawable.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
-        drawable.append("<resources>\n\n");
-        drawable.append("    <version>1</version>\n\n");
+//        drawable.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
+//        drawable.append("<resources>\n\n");
+//        drawable.append("    <version>1</version>\n\n");
 
         // Loop through all the subfolders that need to have their own string-array
         for (File[] subfolder : subfolderIndex)
@@ -138,7 +136,7 @@ public class PNG2XML
         for (File img : images)
         {
             icon.append("       <item>" + img.getName().replace(".png", "").replace(".PNG", "") + "</item>\n");
-            drawable.append("       <item drawable=\"" + img.getName().replace(".png", "").replace(".PNG", "") + "\"/>\n");
+//            drawable.append("       <item drawable=\"" + img.getName().replace(".png", "").replace(".PNG", "") + "\"/>\n");
         }
 
         // Close the main array
@@ -146,7 +144,7 @@ public class PNG2XML
         
         // Write footers
         icon.append("</resources>");
-        drawable.append("\n</resources>");
+//        drawable.append("\n</resources>");
     }
     
     private static void saveFiles(String dir)
@@ -165,7 +163,7 @@ public class PNG2XML
         }
         
         // Save drawable.xml
-        try
+        /*try
         {
             File drawableFile = new File(dir, "drawable.xml");
             FileOutputStream f = new FileOutputStream(drawableFile);
@@ -175,6 +173,6 @@ public class PNG2XML
         catch(Exception e)
         {
             System.out.println("Oops, an error occured while writing drawable.xml");
-        }
+        }*/
     }
 }

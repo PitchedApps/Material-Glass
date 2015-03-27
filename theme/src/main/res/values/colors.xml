@@ -26,8 +26,8 @@
     <color name="status">#881565c0</color>
     <color name="actionbar">#881976d2</color>
 
-    <color name="fab_unpressed">#bb111111</color>
-    <color name="fab_pressed">#bb555555</color>
+    <color name="fab_unpressed">#bb1976d2</color>
+    <color name="fab_pressed">#bb1565c0</color>
     <color name="faboverlay">#80000000</color>
 
 

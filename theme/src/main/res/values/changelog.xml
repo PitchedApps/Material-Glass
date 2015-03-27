@@ -3,6 +3,7 @@
     <string name="current_version">0.9.0</string>
 
     <string-array name="changelog_root">
+        <item>@array/v13</item>
         <item>@array/v12</item>
         <item>@array/v11</item>
         <item>@array/v10</item>
@@ -16,14 +17,22 @@
         <item>@array/v2</item>
         <item>@array/v1</item>
     </string-array>
-<!--
+
     <string-array name="v">
-        <item></item>
+        <item>v</item>
         <item></item>
         <item></item>
         <item></item>
     </string-array>
--->
+
+    <string-array name="v13">
+        <item>v0.9.0 beta2</item>
+        <item>Revamped UI</item>
+        <item>   Fixed loading issues with wallpapers and icons (thanks to PaperBoard)</item>
+        <item>   Added Muzei support (thanks to PaperBoard)</item>
+        <item>   Added FAB (thanks Ivon)</item>
+    </string-array>
+
     <string-array name="v12">
         <item>v0.9.0 beta1</item>
         <item>Brand new UI! (WIP, please don\'t submit bug reports yet)</item>

@@ -33,7 +33,7 @@ import com.pitchedapps.material.glass.Util;
 
 import org.sufficientlysecure.donations.DonationsFragment;
 
-public class Donations extends ActionBarActivity implements View.OnClickListener {
+public class Donations extends ActionBarActivity {
 //public class Donations extends ActionBarActivity implements View.OnClickListener {
 
     /**
@@ -53,7 +53,7 @@ public class Donations extends ActionBarActivity implements View.OnClickListener
     /**
      * FABulous constants
      */
-    private static final String FAB_MAIN = "fab_main";
+//    private static final String FAB_MAIN = "fab_main";
     private Toolbar toolbar;
 
     /**
@@ -73,8 +73,8 @@ public class Donations extends ActionBarActivity implements View.OnClickListener
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        View mMainFab = findViewById(R.id.fab_main);
-        Util.setUpFab(mMainFab, R.drawable.themes, FAB_MAIN, this);
+//        View mMainFab = findViewById(R.id.fab_main);
+//        Util.setUpFab(mMainFab, R.drawable.ic_themes, FAB_MAIN, this);
 
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         DonationsFragment donationsFragment;
@@ -110,17 +110,17 @@ public class Donations extends ActionBarActivity implements View.OnClickListener
         }
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getTag().toString()) {
-            case FAB_MAIN:
-                Intent intent = getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
-                if (intent == null) {
-                    Toast.makeText(this, "Cyanogenmod theme chooser is not installed!", Toast.LENGTH_SHORT).show();
-                } else {
-                    startActivity(intent);
-                }
-                break;
-        }
-    }
+//    @Override
+//    public void onClick(View v) {
+//        switch (v.getTag().toString()) {
+//            case FAB_MAIN:
+//                Intent intent = getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+//                if (intent == null) {
+//                    Toast.makeText(this, "Cyanogenmod theme chooser is not installed!", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    startActivity(intent);
+//                }
+//                break;
+//        }
+//    }
 }

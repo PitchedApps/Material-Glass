@@ -76,26 +76,18 @@ public class Home extends Fragment {
                 startActivity(xda);
             }
         });
-//based on home2
-        //ListView mList = (ListView) getActivity().findViewById(R.id.home2);
         ObservableScrollView mScrollView = (ObservableScrollView) root.findViewById(R.id.scrollView1);
         FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.cm_apply);
         fab.attachToScrollView(mScrollView);
-        //mButton = root.findViewById(R.id.cm_apply);
-//        mButton.setVisibility(View.GONE);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*switch (v.getTag().toString()) {
-                    case CM_APPLY:*/
-                        Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
-                        if (intent == null) {
-                            Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
-                        } else {
-                            startActivity(intent);
-                        }
-                        //break;
-                //}
+                Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+                if (intent == null) {
+                    Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
+                } else {
+                    startActivity(intent);
+                }
             }
         });
 
