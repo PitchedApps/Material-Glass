@@ -26,7 +26,7 @@
 -->
     <string-array name="v12">
         <item>v0.9.0 beta1</item>
-        <item>Brand new UI! (WIP, please don\'t submit bug reports  yet)</item>
+        <item>Brand new UI! (WIP, please don\'t submit bug reports yet)</item>
         <item>Fixed heads up issue</item>
         <item>Themed nav buttons</item>
         <item>Framework tweak</item>
