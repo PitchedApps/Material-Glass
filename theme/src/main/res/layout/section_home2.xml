@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundt">
+
+    <ListView
+        android:id="@+id/home2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:fitsSystemWindows="true" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/cm_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/cards_padding"
+        android:layout_marginEnd="@dimen/cards_padding"
+        android:layout_marginRight="@dimen/cards_padding"
+        android:src="@drawable/themes"
+        fab:fab_colorNormal="@color/fab_unpressed"
+        fab:fab_colorPressed="@color/fab_pressed"
+        fab:fab_colorRipple="@color/ripple" />
+
+</RelativeLayout>
+

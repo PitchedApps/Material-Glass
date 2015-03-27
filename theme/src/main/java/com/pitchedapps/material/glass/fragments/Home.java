@@ -10,8 +10,12 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.melnykov.fab.FloatingActionButton;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.Donations;
 
@@ -21,6 +25,8 @@ import com.pitchedapps.material.glass.activities.Donations;
 public class Home extends Fragment {
 
     private Context context;
+    private View mButton;
+    private static final String CM_APPLY = "cm_apply";
 
     public static Fragment newInstance(Context context) {
         Home f = new Home();
@@ -30,7 +36,7 @@ public class Home extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_home, null);
-
+//TODO change to section_home2?
         context = getActivity();
 
         ActionBar toolbar = ((ActionBarActivity)context).getSupportActionBar();
@@ -71,6 +77,27 @@ public class Home extends Fragment {
                 Intent xda = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.xda_link)));
                 startActivity(xda);
             }
+        });
+//based on home2
+        ListView mList = (ListView) getActivity().findViewById(R.id.home2);
+        FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.cm_apply);
+        fab.attachToListView(mList);
+        mButton = root.findViewById(R.id.cm_apply);
+//        mButton.setVisibility(View.GONE);
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getTag().toString()) {
+                    case CM_APPLY:
+                        Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+                        if (intent == null) {
+                            Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
+                        } else {
+                            startActivity(intent);
+                        }
+                        break;
+                    }
+                }
         });
 
         return root;

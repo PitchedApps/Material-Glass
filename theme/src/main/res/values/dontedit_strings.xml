@@ -173,6 +173,11 @@ Licensed under CreativeCommons-Attribution License."</string>
     <string name="license_success_title">License Check Success</string>
     <string name="exit">Exit App</string>
 
+
+
+
+    <string name="cm_not_installed">Cyanogenmod theme chooser is not installed!</string>
+
 <!--TODO check if necessary-->
     <string name="ratebtn">RATE</string>
 
