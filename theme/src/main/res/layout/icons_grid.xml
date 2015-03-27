@@ -12,12 +12,11 @@
         android:cacheColorHint="@android:color/transparent"
         android:columnWidth="@dimen/iconcolumn"
         android:dividerHeight="@dimen/margin_medium_sm"
-        android:fastScrollEnabled="true"
         android:gravity="center_horizontal"
         android:listSelector="@android:color/transparent"
         android:numColumns="auto_fit"
         android:scrollbars="none"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="@dimen/margin_medium" />
+        android:verticalSpacing="@dimen/margin_medium_sm" />
 
 </LinearLayout>

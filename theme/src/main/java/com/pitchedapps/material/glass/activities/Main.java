@@ -30,7 +30,7 @@ import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.pitchedapps.material.glass.ChangelogAdapter;
+import com.pitchedapps.material.glass.utils.ChangelogAdapter;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.utils.Preferences;
 
@@ -258,8 +258,11 @@ public class Main extends ActionBarActivity {
             }
         } else {
             if (withLicenseChecker) {
-                if (!enable_features) {
+                if (enable_features == false) {
                     showNotLicensedDialog();
+                } else {
+                    addItemsToDrawer();
+                    showChangelogDialog();
                 }
             } else {
                 addItemsToDrawer();
@@ -270,25 +273,9 @@ public class Main extends ActionBarActivity {
 //TODO check this? added style
     private void changelog() {
 
-
-        ListView listView = new ListView(this);
-        ChangelogAdapter adapter = new ChangelogAdapter(this, R.array.changelog_root);
-        listView.setAdapter(adapter);
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.PitchDialog);
-        builder.setTitle(R.string.changelog_dialog_title)
-                .setView(listView)
-                .setPositiveButton(R.string.nice, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                })
-                .create().show();
-
-        /*new MaterialDialog.Builder(new ContextThemeWrapper(this, R.style.ChangelogDialog))
+        new MaterialDialog.Builder(this)
                 .title(R.string.changelog_dialog_title)
-                .content(R.string.changelog_content)
+                .adapter(new ChangelogAdapter(this, R.array.changelog_root), null)
                 .positiveText(R.string.nice)
                 .callback(new MaterialDialog.ButtonCallback() {
                     @Override
@@ -296,7 +283,8 @@ public class Main extends ActionBarActivity {
                         mPrefs.setNotFirstrun();
                     }
                 })
-                .show();*/
+                .show();
+
     }
 
     private void showChangelogDialog() {

@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/wall_card"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="4dp">
 
     <ProgressBar
         android:id="@+id/progress"
@@ -19,11 +20,13 @@
         tools:ignore="ContentDescription" />
 
     <LinearLayout
+        android:id="@+id/titlebg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/wall"
         android:layout_gravity="bottom"
-        android:background="@color/wallitem">
+        android:alpha="0.7"
+        android:background="#000">
 
         <TextView
             android:id="@+id/name"

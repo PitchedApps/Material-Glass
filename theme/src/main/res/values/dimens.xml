@@ -40,6 +40,9 @@
 
     <dimen name="toolbar_contentInset">72dp</dimen>
 
+    <dimen name="dialog_margin">24dp</dimen>
+
+
     <!-- Texts Sizes -->
     <dimen name="text_big">20sp</dimen>
     <dimen name="text_med">18sp</dimen>

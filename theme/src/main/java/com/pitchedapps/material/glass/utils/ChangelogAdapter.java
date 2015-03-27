@@ -1,4 +1,4 @@
-package com.pitchedapps.material.glass;
+package com.pitchedapps.material.glass.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,9 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-/**
- * Created by ivon on 22/03/15.
- */
+import com.pitchedapps.material.glass.R;
+
 public class ChangelogAdapter extends BaseAdapter {
 
     private Context mContext;
@@ -24,7 +23,7 @@ public class ChangelogAdapter extends BaseAdapter {
         // Populate the two-dimensional array
         TypedArray typedArray = mContext.getResources().obtainTypedArray(rootArray);
         mChangelog = new String[typedArray.length()][];
-        for (int i=0; i<typedArray.length(); i++) {
+        for (int i = 0; i < typedArray.length(); i++) {
             int id = typedArray.getResourceId(i, 0);
             if (id > 0) {
                 mChangelog[i] = mContext.getResources().getStringArray(id);
@@ -63,7 +62,7 @@ public class ChangelogAdapter extends BaseAdapter {
         String nameStr = mChangelog[position][0];
         String contentStr = "";
 
-        for (int i=1; i<mChangelog[position].length; i++) {
+        for (int i = 1; i < mChangelog[position].length; i++) {
             if (i > 1) {
                 // No need for new line on the first item
                 contentStr += "\n";

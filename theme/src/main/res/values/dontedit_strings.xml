@@ -55,6 +55,16 @@
     <string name="wall_error">"Sorry, previous action wasn't actually applied, because it seems there's no picture. Check your Internet connection and try again."</string>
     <string name="download_done">"Download completed succesfully. Picture is located at "</string>
     <string name="json_error_toast">"Error while downloading wallpapers info. Try again later."</string>
+    <string name="share_wall">"Share Wallpaper"</string>
+
+
+    <!-- Sharing wallpaper from Muzei -->
+    <string name="partone">"My wallpaper for today is "</string>
+    <string name="parttwo">" by "</string>
+    <string name="partthree">" from "</string>
+    <string name="partfour">".\n"</string>
+    <string name="partfive">"Get it now at "</string>
+
 
     <!-- Some texts for Dialogs -->
     <string name="dismiss">Dismiss</string>
@@ -76,13 +86,7 @@
     <string name="ok">OK</string>
     <string name="download">DOWNLOAD</string>
 
-    <!-- LauncherNotInstalled Dialog -->
-    <string name="lni_title">Launcher Not Installed</string>
-    <string name="lni_content">" Launcher is currently not installed in your device.
-Would you like to install it from Play Store?"</string>
-    <string name="lni_yes">Yes</string>
-    <string name="lni_no">No</string>
-
+   
     <string name="copyright">"Copyright© 2015.
 Licensed under CreativeCommons-Attribution License."</string>
     <string name="apache_license">"Licensed under Apache 2.0 License."</string>
@@ -169,4 +173,15 @@ Licensed under CreativeCommons-Attribution License."</string>
     <string name="license_success_title">License Check Success</string>
     <string name="exit">Exit App</string>
 
+<!--TODO check if necessary-->
+    <string name="ratebtn">RATE</string>
+
+    <string name="installed">Installed</string>
+    <string name="noninstalled">Not Installed</string>
+
+    <string name="muzeisets_title">"Refresh Source every:"</string>
+    <string name="minutes">Minutes</string>
+    <string name="hours">Hours</string>
+    <string name="muzei_info">"Note: This Settings may affect the update time of the Wallpapers info."</string>
+    <string name="justshare">Share</string>
 </resources>

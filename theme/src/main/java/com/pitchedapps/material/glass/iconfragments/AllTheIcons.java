@@ -7,8 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.BaseAdapter;
-import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 
@@ -39,7 +40,6 @@ public class AllTheIcons extends Fragment {
 
     private class IconAdapter extends BaseAdapter {
         private Context mContext;
-        private int iconSource;
         private ArrayList<Integer> mThumbs;
 
         public IconAdapter(Context mContext, int iconsize) {
@@ -65,27 +65,34 @@ public class AllTheIcons extends Fragment {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
 
-            FrameLayout icon;
-            ImageView iconImg;
+            View icono = convertView;
+            IconsHolder holder = null;
+            Animation anim = AnimationUtils.loadAnimation(context, R.anim.fade_in);
 
-            inflater = (LayoutInflater) context
-                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
-            View iconView = inflater.inflate(R.layout.icon, parent, false);
-
-            iconSource = mThumbs.get(position);
-
-            icon = (FrameLayout) iconView.findViewById(R.id.icon);
-            iconImg = (ImageView) iconView.findViewById(R.id.icon_img);
-
-            if (convertView == null) {
-                icon.setLayoutParams(new GridView.LayoutParams(120, 120));
+            if (icono == null) {
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                icono = inflater.inflate(R.layout.icon, parent, false);
+                icono.setLayoutParams(new GridView.LayoutParams(120, 120));
+                holder = new IconsHolder(icono);
+                icono.setTag(holder);
             } else {
-                icon = (FrameLayout) convertView;
+                holder = (IconsHolder) icono.getTag();
+
             }
 
-            iconImg.setImageResource(iconSource);
-            return icon;
+            holder.icon.startAnimation(anim);
+            holder.icon.setImageResource(mThumbs.get(position));
+
+            return icono;
+        }
+
+        class IconsHolder {
+            ImageView icon;
+
+            IconsHolder(View v) {
+                icon = (ImageView) v.findViewById(R.id.icon_img);
+            }
+
         }
 
         private void loadIcon() {

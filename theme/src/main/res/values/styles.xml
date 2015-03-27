@@ -75,6 +75,9 @@
     </style>
 
     <style name="PitchDialog" parent="@android:style/Theme.Holo.Dialog"/>
+    <style name="ActionBar.Popup" parent="ThemeOverlay.AppCompat">
+        <item name="android:colorBackground">@color/dialog</item>
+    </style>
 
 
 </resources>

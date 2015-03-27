@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +24,7 @@ public class Previews extends Fragment {
 
     private ViewPager mPager;
     private SlidingTabLayout mTabs;
+    private Context context;
 
     public static Fragment newInstance(Context context) {
         Previews f = new Previews();
@@ -31,6 +34,11 @@ public class Previews extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_all_icons, null);
+
+        context = getActivity();
+
+        ActionBar toolbar = ((ActionBarActivity)context).getSupportActionBar();
+        toolbar.setTitle(R.string.section_two);
 
         mPager = (ViewPager) root.findViewById(R.id.pager);
         mPager.setAdapter(new MyPagerAdapter(getActivity().getSupportFragmentManager()));

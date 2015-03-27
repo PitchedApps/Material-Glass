@@ -7,7 +7,7 @@
     android:minHeight="?actionBarSize"
     android:transitionName="actionBar"
     app:contentInsetStart="@dimen/toolbar_contentInset"
-    app:popupTheme="@style/ThemeOverlay.AppCompat"
+    app:popupTheme="@style/ActionBar.Popup"
     app:theme="@style/MyActionBarTheme">
 
 </android.support.v7.widget.Toolbar>

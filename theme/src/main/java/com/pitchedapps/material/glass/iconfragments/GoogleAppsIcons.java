@@ -8,6 +8,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.GridView;
@@ -43,9 +45,7 @@ public class GoogleAppsIcons extends Fragment {
 
     private class IconAdapter extends BaseAdapter {
         private Context mContext;
-        private int iconSource;
         private ArrayList<Integer> mThumbs;
-        private ArrayList<String> mThemedApps;
 
         public IconAdapter(Context mContext, int iconsize) {
             this.mContext = mContext;
@@ -70,58 +70,42 @@ public class GoogleAppsIcons extends Fragment {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
 
-            FrameLayout icon;
-            ImageView iconImg;
+            View icono = convertView;
+            IconsHolder holder = null;
+            Animation anim = AnimationUtils.loadAnimation(context, R.anim.fade_in);
 
-            inflater = (LayoutInflater) context
-                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
-            View iconView = inflater.inflate(R.layout.icon, parent, false);
-            iconDialog = inflater.inflate(R.layout.dialog_icon, null);
-
-            iconSource = mThumbs.get(position);
-            // AppName = "AppName";
-
-            icono = getResources().getDrawable(iconSource);
-
-            icon = (FrameLayout) iconView.findViewById(R.id.icon);
-            iconImg = (ImageView) iconView.findViewById(R.id.icon_img);
-            // dialogIcon = (ImageView) iconDialog.findViewById(R.id.dialogicon);
-
-            if (convertView == null) {
-                icon.setLayoutParams(new GridView.LayoutParams(120, 120));
+            if (icono == null) {
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                icono = inflater.inflate(R.layout.icon, parent, false);
+                icono.setLayoutParams(new GridView.LayoutParams(120, 120));
+                holder = new IconsHolder(icono);
+                icono.setTag(holder);
             } else {
-                icon = (FrameLayout) convertView;
+                holder = (IconsHolder) icono.getTag();
+
             }
 
-            iconImg.setImageResource(iconSource);
+            holder.icon.startAnimation(anim);
+            holder.icon.setImageResource(mThumbs.get(position));
 
-            /*
-            icon.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    dialogIcon.setImageDrawable(null);
-                    dialogIcon.setImageDrawable(icono);
-                    new MaterialDialog.Builder(context)
-                            .title(AppName)
-                            .customView(iconDialog)
-                            .positiveText(R.string.close)
-                            .show();
+            return icono;
+            }
+
+        class IconsHolder {
+            ImageView icon;
+
+            IconsHolder(View v) {
+                icon = (ImageView) v.findViewById(R.id.icon_img);
                 }
-            });
-            */
 
-            return icon;
         }
 
         private void loadIcon() {
             mThumbs = new ArrayList<Integer>();
-            // mThemedApps = new ArrayList<String>();
 
             final Resources resources = getResources();
             final String packageName = getActivity().getApplication().getPackageName();
             addIcon(resources, packageName, R.array.google);
-            // addApps(resources, R.array.google_apps);
 
         }
 
@@ -136,14 +120,7 @@ public class GoogleAppsIcons extends Fragment {
                     }
                 }
             }
-        }/*
-
-        private void addApps(Resources resources, int list) {
-            final String[] extras = resources.getStringArray(list);
-            for (String extra : extras) {
-                mThemedApps.add(extra);
             }
-        }*/
     }
 
 }

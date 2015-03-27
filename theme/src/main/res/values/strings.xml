@@ -85,7 +85,7 @@
         <b>Allan W</b> or asdfasdfvful on xda, is an avid themer who has spent countless hours in hopes of creating the best cm theme ever.
         ]]>
     </string>
-    <string name="dev_link">"https://www.google.com/"</string>
+    <string name="dev_link">@string/play_store_dev_link</string>
     <string name="dev_gplus_link">https://plus.google.com/+AllanWPitchedApps</string>
 
     <!-- All about Ivon -->
@@ -128,4 +128,10 @@
     <string name="replace_five"></string>
     <string name="replace_six"></string>
     <string name="replace_seven"></string>
+
+
+    <!-- Muzei Stuff -->
+    <string name="artsource_name">@string/app_name</string>
+    <string name="artsource_desc">Beautiful wallpapers for a beautiful theme</string>
+    <string name="muzei_settings">Muzei Settings</string>
 </resources>

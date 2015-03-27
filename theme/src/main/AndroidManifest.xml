@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
- * Copyright (C) 2014 The CyanogenMod Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
--->
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pitchedapps.material.glass">
 
     <uses-permission android:name="com.android.vending.BILLING" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -27,9 +10,8 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
-
-    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
-    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <uses-feature android:required="true" android:name="org.cyanogenmod.theme" />
 
@@ -99,8 +81,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pitchedapps.material.glass.activities.Main" />
         </activity>
-        <!--Muzei
-        <service android:name="ddev.iconpack.MuzeiArtSource"
+        <service android:name="com.pitchedapps.material.glass.muzei.ArtSource"
             android:label="@string/artsource_name"
             android:description="@string/artsource_desc"
             android:icon="@drawable/ic_muzei_logo">
@@ -108,7 +89,13 @@
                 <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
             </intent-filter>
             <meta-data android:name="color" android:value="@color/primary" />
-        </service>-->
+            <meta-data android:name="settingsActivity" android:value="com.pitchedapps.material.glass.muzei.Settings"/>
+        </service>
+        <activity android:name="com.pitchedapps.material.glass.muzei.Settings"
+            android:label="@string/muzei_settings"
+            android:theme="@style/Default"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden"/>
     </application>
 
 </manifest>

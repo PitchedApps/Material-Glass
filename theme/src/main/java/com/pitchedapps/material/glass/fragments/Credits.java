@@ -138,12 +138,12 @@ public class Credits extends Fragment {
             }
         });
 
-        TextView web = (TextView) root.findViewById(R.id.web_button);
+        TextView web = (TextView) root.findViewById(R.id.play_button);
         web.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent devweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_link)));
-                startActivity(devweb);
+                Intent devplay = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_dev_link)));
+                startActivity(devplay);
             }
         });
 
