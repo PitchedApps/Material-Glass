@@ -59,6 +59,15 @@ public class Home extends Fragment {
             }
         });
 
+        TextView xdabtn = (TextView) root.findViewById(R.id.xda_button);
+        xdabtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent xda = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.xda_link)));
+                startActivity(xda);
+            }
+        });
+
         TextView pitchedglassbtn = (TextView) root.findViewById(R.id.pitchedglass_button);
         pitchedglassbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,14 +77,6 @@ public class Home extends Fragment {
             }
         });
 
-        TextView xdabtn = (TextView) root.findViewById(R.id.xda_button);
-        xdabtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent xda = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.xda_link)));
-                startActivity(xda);
-            }
-        });
         ObservableScrollView mScrollView = (ObservableScrollView) root.findViewById(R.id.scrollView1);
         FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.cm_apply);
         fab.attachToScrollView(mScrollView);

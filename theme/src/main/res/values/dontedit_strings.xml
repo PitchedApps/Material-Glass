@@ -159,6 +159,14 @@ Licensed under CreativeCommons-Attribution License."</string>
         ]]></string>
     <string name="okhttp_web">https://github.com/square/okhttp</string>
 
+    <string name="libdonate_author">Dschuermann</string>
+    <string name="libdonate_name">Android Donation Lib</string>
+    <string name="libdonate_desc">
+        <![CDATA[
+        <b>Android Donations Lib</b> supports donations by Google Play Store, Flattr, PayPal, and Bitcoin.
+        ]]></string>
+    <string name="libdonate_web">https://github.com/dschuermann/android-donations-lib</string>
+
     <string name="materialdrawer_author">Mike Penz</string>
     <string name="materialdrawer_web">https://github.com/mikepenz/MaterialDrawer</string>
     <string name="materialdrawer_name">MaterialDrawer</string>

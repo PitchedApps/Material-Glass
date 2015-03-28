@@ -24,13 +24,20 @@
         <item></item>
         <item></item>
         <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 
     <string-array name="v14">
         <item>v0.9.1</item>
-        <item>SystemUI tweaks</item>
+        <item>SystemUI: Fixed navring targets</item>
+        <item>Settings: Added icon (Meticulus)</item>
+        <item>Euphoria OTA: beautifully rethemed</item>
         <item></item>
         <item></item>
+        <item></item>
+        <item>UI: Add credits to donation lib</item>
+        <item>UI: Reorder home</item>
     </string-array>
 
     <string-array name="v13">

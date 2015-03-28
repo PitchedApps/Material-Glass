@@ -24,12 +24,9 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.Toast;
 
 import com.pitchedapps.material.glass.BuildConfig;
 import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.Util;
 
 import org.sufficientlysecure.donations.DonationsFragment;
 

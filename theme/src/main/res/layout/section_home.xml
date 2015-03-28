@@ -20,7 +20,7 @@
         android:src="@drawable/ic_themes"
         fab:fab_colorNormal="@color/fab_unpressed"
         fab:fab_colorPressed="@color/fab_pressed"
-        fab:fab_colorRipple="@color/ripple" />
+        fab:fab_colorRipple="@color/ripple"/>
 
 </RelativeLayout>
 

@@ -253,84 +253,6 @@
                         android:contentDescription="@null"
                         android:minWidth="100dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_pitched_glass" />
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingBottom="8dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingTop="16dp"
-                            android:text="@string/pitched_glass_title"
-                            android:textColor="@color/text"
-                            android:textSize="@dimen/text_big" />
-
-                        <TextView
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:lineSpacingMultiplier="1.2"
-                            android:paddingBottom="@dimen/cards_padding"
-                            android:paddingLeft="@dimen/cards_padding"
-                            android:paddingRight="@dimen/cards_padding"
-                            android:text="@string/pitched_glass_content"
-                            android:textColor="@color/textt"
-                            android:textSize="@dimen/text_small" />
-
-                        <View
-                            android:layout_width="fill_parent"
-                            android:layout_height="1px"
-                            android:background="@color/divider"
-                            android:visibility="invisible" />
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="fill_parent"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/pitchedglass_button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="?selectableItemBackground"
-                                android:padding="@dimen/cards_padding"
-                                android:text="@string/download"
-                                android:textColor="@color/text"
-                                android:textSize="@dimen/text_ultrasmall"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/cards_margin"
-                card_view:cardCornerRadius="@dimen/card_corner_radius"
-                card_view:cardElevation="@dimen/cards_elevation"
-                card_view:cardBackgroundColor="@color/card">
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:paddingLeft="@dimen/image_home_padding"
-                        android:contentDescription="@null"
-                        android:minWidth="100dp"
-                        android:scaleType="fitCenter"
                         android:src="@drawable/ic_xda" />
 
                     <LinearLayout
@@ -378,6 +300,84 @@
                                 android:background="?selectableItemBackground"
                                 android:padding="@dimen/cards_padding"
                                 android:text="@string/link"
+                                android:textColor="@color/text"
+                                android:textSize="@dimen/text_ultrasmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                card_view:cardCornerRadius="@dimen/card_corner_radius"
+                card_view:cardElevation="@dimen/cards_elevation"
+                card_view:cardBackgroundColor="@color/card">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/image_home_padding"
+                        android:contentDescription="@null"
+                        android:minWidth="100dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_pitched_glass" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/pitched_glass_title"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/text_big" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.2"
+                            android:paddingBottom="@dimen/cards_padding"
+                            android:paddingLeft="@dimen/cards_padding"
+                            android:paddingRight="@dimen/cards_padding"
+                            android:text="@string/pitched_glass_content"
+                            android:textColor="@color/textt"
+                            android:textSize="@dimen/text_small" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/divider"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/pitchedglass_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="?selectableItemBackground"
+                                android:padding="@dimen/cards_padding"
+                                android:text="@string/download"
                                 android:textColor="@color/text"
                                 android:textSize="@dimen/text_ultrasmall"
                                 android:textStyle="bold" />

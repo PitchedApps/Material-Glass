@@ -66,6 +66,9 @@ public class Credits extends Fragment {
         TextView okhttplib = (TextView) root.findViewById(R.id.libeight_content);
         okhttplib.setText(Html.fromHtml(getString(R.string.okhttp_desc)));
 
+        TextView donatelib = (TextView) root.findViewById(R.id.libdonate_content);
+        donatelib.setText(Html.fromHtml(getString(R.string.libdonate_desc)));
+
         CardView libonecard = (CardView) root.findViewById(R.id.libonecard);
         libonecard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,6 +138,15 @@ public class Credits extends Fragment {
             public void onClick(View v) {
                 Intent libeightweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.okhttp_web)));
                 startActivity(libeightweb);
+            }
+        });
+
+        CardView libdonatecard = (CardView) root.findViewById(R.id.libdonatecard);
+        libdonatecard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent libdonateweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.libdonate_web)));
+                startActivity(libdonateweb);
             }
         });
 
