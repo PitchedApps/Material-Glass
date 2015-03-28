@@ -108,6 +108,10 @@
         <item name="android:colorControlActivated">@android:color/black</item>
         <item name="android:navigationBarColor">@color/black_t</item>
     </style>
+<!--wallpaper style compatibility-->
+    <!--<style name="Widget" parent="@android:style/Widget">-->
+        <!--<item name="android:windowShowWallpaper">true</item>-->
+    <!--</style>-->
 
     <!--ActionBar-->
     <style name="Widget.Material.ActionBar" parent="@android:style/Widget.Material.ActionBar">

@@ -18,5 +18,9 @@
 <resources>
 
     <string name="theme_name">Material Glass XDA</string>
+    <string name="app_name">Material Glass XDA</string>
+    <string name="app_long_name">Material Glass XDA by Pitched Apps</string>
+    <string name="email_subject">Material Glass XDA Support</string>
+
 
 </resources>
