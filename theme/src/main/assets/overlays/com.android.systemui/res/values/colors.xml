@@ -58,8 +58,11 @@
     <color name="recents_task_bar_light_text_color">@color/textt</color>
     <color name="recents_task_view_lock_to_app_button_background_color">@color/backgroundt</color>
     <color name="recents_task_view_lock_to_app_button_color">@color/dblue</color>
+    <color name="screen_pinning_nav_icon_highlight_outer">#33ffffff</color>
+    <color name="screen_pinning_request_bg">@color/dblue</color>
+    <color name="screen_pinning_request_window_bg">#80000000</color>
     <color name="search_panel_circle_color">@color/backgroundt</color>
-    <color name="search_panel_ripple_color">#ffbbbbbb</color>
+    <color name="search_panel_ripple_color">@color/backgroundddt</color>
     <color name="segmented_button_text_inactive">#77ffffff</color>
     <color name="status_bar_clock_color">@color/text</color>
     <color name="status_bar_recents_app_label_color">@color/text</color>
@@ -72,6 +75,7 @@
     <color name="system_secondary_color">@color/background</color>
     <color name="system_warning_color">#fff4511e</color>
     <color name="volume_panel_background_color">@color/backgroundt</color>
+    <color name="volume_panel_divider">#1FFFFFFF</color>
 
     <color name="black_t">#a0000000</color>
     <color name="background">#ff000000</color>

@@ -18,9 +18,17 @@
         <item>@array/v1</item>
     </string-array>
 
+
     <string-array name="v">
         <item>v</item>
         <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v14">
+        <item>v0.9.1</item>
+        <item>SystemUI tweaks</item>
         <item></item>
         <item></item>
     </string-array>

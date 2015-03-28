@@ -49,14 +49,14 @@
     <color name="searchbox_background_color">@color/backgroundd</color>
     <color name="searchbox_hint_text_color">@color/textt</color>
     <color name="searchbox_icon_tint">@color/searchbox_hint_text_color</color>
-    <color name="search_shortcut_background_color">@color/background</color>
+    <color name="search_shortcut_background_color">@color/backgroundt</color>
     <color name="search_shortcut_icon_color">#fff8f8f8</color>
     <color name="background_primary">@color/background</color>
     <color name="contact_all_list_background_color">@color/background</color>
     <color name="quickcontact_name_detail_background">#66000000</color>
     <color name="quickcontact_entry_sub_header_text_color">@color/text</color>
     <color name="quickcontact_entry_header_text_color">@color/text</color>
-    <color name="background_social_updates">@color/background</color>
+    <color name="background_social_updates">@color/backgroundt</color>
     <color name="action_bar_background">#ff0288d1</color>
     <color name="action_bar_background_highlight">@color/backgrounddd</color>
     <color name="action_bar_button_text_color">#ffffffff</color>
@@ -80,9 +80,10 @@
     <color name="contact_tile_text_color">@color/textt</color>
     <color name="frequent_contact_text_color">@color/text</color>
     <color name="list_item_name_text_color">@color/text</color>
-    <color name="editor_account_header_bg">@color/background</color>
+    <color name="editor_account_header_bg">@color/backgroundt</color>
 
 
+    <color name="aaa">#ffff00ff</color>
     <color name="text">#ffffffff</color>
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>
