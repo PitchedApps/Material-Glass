@@ -62,6 +62,15 @@
     </style>
 
 
+    <!--<style name="DialtactsTheme">-->
+        <!--<item name="android:textColor">@color/dialtacts_primary_text_color</item>-->
+        <!--<item name="android:textColorPrimary">@color/dialtacts_primary_text_color</item>-->
+        <!--<item name="android:textColorSecondary">@color/dialtacts_secondary_text_color</item>-->
+        <!--<item name="android:colorBackground">@color/background</item>-->
+        <!--<item name="android:windowBackground">@color/background</item>-->
+    <!--</style>-->
+
+
 
     <style name="DialtactsTheme" parent="@android:style/Theme.Material">
         <item name="android:textColorPrimary">@color/dialtacts_primary_text_color</item>

@@ -88,7 +88,7 @@
 
    
     <string name="copyright">"Copyright© 2015.
-Licensed under CreativeCommons-Attribution License."</string>
+Licensed under MIT License."</string>
     <string name="apache_license">"Licensed under Apache 2.0 License."</string>
     <string name="mit_license">"Licensed under MIT License."</string>
 

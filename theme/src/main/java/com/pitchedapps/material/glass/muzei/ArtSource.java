@@ -105,25 +105,27 @@ public class ArtSource extends RemoteMuzeiArtSource {
     @Override
     protected void onTryUpdate(int reason) throws RetryException {
 
-        String currentToken = (getCurrentArtwork() != null)? getCurrentArtwork().getToken() : null;
+        if (mPrefs.isFeaturesEnabled()) {
 
-        if (wallslist.size()==0) {
-            getWallpaperURL(JSON_URL);
+            String currentToken = (getCurrentArtwork() != null) ? getCurrentArtwork().getToken() : null;
+
+            if (wallslist.size() == 0) {
+                getWallpaperURL(JSON_URL);
+            }
+
+            int i = getRandomInt();
+
+            String token = wallslist.get(i).getWallURL();
+            publishArtwork(new Artwork.Builder()
+                    .title(wallslist.get(i).getWallName())
+                    .byline(wallslist.get(i).getWallAuthor())
+                    .imageUri(Uri.parse(wallslist.get(i).getWallURL()))
+                    .token(token)
+                    .viewIntent(new Intent(Intent.ACTION_VIEW, Uri.parse(wallslist.get(i).getWallURL())))
+                    .build());
+
+            scheduleUpdate(System.currentTimeMillis() + mPrefs.getRotateTime());
         }
-
-        int i = getRandomInt();
-
-        String token = wallslist.get(i).getWallURL();
-        publishArtwork(new Artwork.Builder()
-                .title(wallslist.get(i).getWallName())
-                .byline(wallslist.get(i).getWallAuthor())
-                .imageUri(Uri.parse(wallslist.get(i).getWallURL()))
-                .token(token)
-                .viewIntent(new Intent(Intent.ACTION_VIEW,Uri.parse(wallslist.get(i).getWallURL())))
-                .build());
-
-        scheduleUpdate(System.currentTimeMillis() + mPrefs.getRotateTime());
-
     }
 
     private int getRandomInt() {

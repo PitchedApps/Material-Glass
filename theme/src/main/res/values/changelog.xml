@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">0.9.0</string>
+    <string name="current_version">0.9.1</string>
 
     <string-array name="changelog_root">
+        <item>@array/v14</item>
         <item>@array/v13</item>
         <item>@array/v12</item>
         <item>@array/v11</item>
@@ -32,12 +33,12 @@
         <item>v0.9.1</item>
         <item>SystemUI: Fixed navring targets</item>
         <item>Settings: Added icon (Meticulus)</item>
+        <item>Contacts: Minor tweaks</item>
         <item>Euphoria OTA: beautifully rethemed</item>
-        <item></item>
-        <item></item>
-        <item></item>
         <item>UI: Add credits to donation lib</item>
         <item>UI: Reorder home</item>
+        <item>UI: Smaller dialog font sizes</item>
+        <item>PaperBoard: Muzei changes</item>
     </string-array>
 
     <string-array name="v13">
