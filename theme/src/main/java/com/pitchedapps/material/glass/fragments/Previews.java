@@ -12,14 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.iconfragments.AllTheIcons;
-import com.pitchedapps.material.glass.iconfragments.GoogleAppsIcons;
-import com.pitchedapps.material.glass.iconfragments.SystemIcons;
 import com.pitchedapps.material.glass.tabs.SlidingTabLayout;
 
-/**
- * Created by Jahir on 28/02/2015.
- */
 public class Previews extends Fragment {
 
     private ViewPager mPager;
@@ -68,13 +62,13 @@ public class Previews extends Fragment {
             Fragment f = new Fragment();
             switch (position) {
                 case 0:
-                    f = new SystemIcons();
+                    f = IconsFragment.newInstance(R.array.system);
                     break;
                 case 1:
-                    f = new GoogleAppsIcons();
+                    f = IconsFragment.newInstance(R.array.google);
                     break;
                 case 2:
-                    f = new AllTheIcons();
+                    f = IconsFragment.newInstance(R.array.icon_pack);
                     break;
             }
             return f;

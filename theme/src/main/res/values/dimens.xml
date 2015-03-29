@@ -31,8 +31,8 @@
 
     <dimen name="mini_margin">2dp</dimen>
 
-    <dimen name="cards_margin">10dp</dimen>
-    <dimen name="finalcard_margin">12dp</dimen>
+    <dimen name="cards_margin">12dp</dimen>
+    <dimen name="finalcard_margin">14dp</dimen>
     <dimen name="cards_elevation">1dp</dimen>
     <dimen name="cards_padding">16dp</dimen>
     <dimen name="cards_text_margin">5dp</dimen>

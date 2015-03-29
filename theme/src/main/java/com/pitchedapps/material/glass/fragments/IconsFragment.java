@@ -1,8 +1,7 @@
-package com.pitchedapps.material.glass.iconfragments;
+package com.pitchedapps.material.glass.fragments;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -11,7 +10,6 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.BaseAdapter;
-import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 
@@ -20,13 +18,10 @@ import com.pitchedapps.material.glass.R;
 import java.util.ArrayList;
 
 
-public class GoogleAppsIcons extends Fragment {
+public class IconsFragment extends Fragment {
 
-    public View iconDialog;
-    public ImageView dialogIcon;
-    public Drawable icono;
-    public String AppName;
-    LayoutInflater inflater;
+
+    public LayoutInflater inflater;
     private Context context;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,18 +32,24 @@ public class GoogleAppsIcons extends Fragment {
         context = getActivity();
         int iconSize = getResources().getDimensionPixelSize(R.dimen.allapps_icon_preview);
         GridView gridview = (GridView) view.findViewById(R.id.icons_grid);
-        final IconAdapter icAdapter = new IconAdapter(getActivity(), iconSize);
+        IconAdapter icAdapter = new IconAdapter();
         gridview.setAdapter(icAdapter);
         return view;
 
     }
 
+    public static IconsFragment newInstance(int iconsArray) {
+        IconsFragment fragment = new IconsFragment();
+        Bundle args = new Bundle();
+        args.putInt("iconsArrayId", iconsArray);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     private class IconAdapter extends BaseAdapter {
-        private Context mContext;
         private ArrayList<Integer> mThumbs;
 
-        public IconAdapter(Context mContext, int iconsize) {
-            this.mContext = mContext;
+        public IconAdapter() {
             loadIcon();
         }
 
@@ -68,10 +69,10 @@ public class GoogleAppsIcons extends Fragment {
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, View convertView, ViewGroup parent) {
 
             View icono = convertView;
-            IconsHolder holder = null;
+            IconsHolder holder;
             Animation anim = AnimationUtils.loadAnimation(context, R.anim.fade_in);
 
             if (icono == null) {
@@ -87,25 +88,28 @@ public class GoogleAppsIcons extends Fragment {
 
             holder.icon.startAnimation(anim);
             holder.icon.setImageResource(mThumbs.get(position));
-
+            //TODO add ripples because ripples are cool
+//            holder.icon.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                }
+//            });
             return icono;
-            }
+        }
 
         class IconsHolder {
             ImageView icon;
-
             IconsHolder(View v) {
                 icon = (ImageView) v.findViewById(R.id.icon_img);
-                }
-
+            }
         }
 
         private void loadIcon() {
-            mThumbs = new ArrayList<Integer>();
+            mThumbs = new ArrayList<>();
 
             final Resources resources = getResources();
             final String packageName = getActivity().getApplication().getPackageName();
-            addIcon(resources, packageName, R.array.google);
+            addIcon(resources, packageName, getArguments().getInt("iconsArrayId", 0));
 
         }
 
@@ -120,7 +124,9 @@ public class GoogleAppsIcons extends Fragment {
                     }
                 }
             }
-            }
+        }
+
     }
+
 
 }

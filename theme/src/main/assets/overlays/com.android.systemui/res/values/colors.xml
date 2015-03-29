@@ -72,7 +72,7 @@
     <color name="system_bar_background_transparent">#00000000</color>
     <color name="system_primary_color">@color/background</color>
     <color name="system_primary_color_translucent">#bb0b0b0b</color>
-    <color name="system_secondary_color">@color/background</color>
+    <color name="system_secondary_color">@color/backgroundt</color>
     <color name="system_warning_color">#fff4511e</color>
     <color name="volume_panel_background_color">@color/backgroundt</color>
     <color name="volume_panel_divider">#1FFFFFFF</color>
