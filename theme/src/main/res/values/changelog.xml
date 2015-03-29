@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">0.9.1</string>
+    <string name="current_version">0.9.2beta1</string>
 
     <string-array name="changelog_root">
+        <item>@array/v15</item>
         <item>@array/v14</item>
         <item>@array/v13</item>
         <item>@array/v12</item>
@@ -27,6 +28,14 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+
+    <string-array name="v15">
+        <item>v0.9.2beta1</item>
+        <item>vXDA: modified google + to be more dependent on app compat</item>
+        <item>vXDA: themed ModernHub (material Github)</item>
+        <item>SystemUI tweaks</item>
+        <item>PaperBoard massive UI cleanup</item>
     </string-array>
 
     <string-array name="v14">

@@ -4,7 +4,8 @@
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@android:style/Widget.Material.PopupMenu" />
-    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
+    <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
+    <style name="Platform.AppCompat" parent="@android:style/Theme.Material">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowBackground">@color/background</item>

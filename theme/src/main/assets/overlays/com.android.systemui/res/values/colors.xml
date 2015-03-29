@@ -58,7 +58,7 @@
     <color name="recents_task_bar_light_text_color">@color/textt</color>
     <color name="recents_task_view_lock_to_app_button_background_color">@color/backgroundt</color>
     <color name="recents_task_view_lock_to_app_button_color">@color/dblue</color>
-    <color name="screen_pinning_nav_icon_highlight_outer">#33ffffff</color>
+    <color name="screen_pinning_nav_icon_highlight_outer">@color/dblue</color>
     <color name="screen_pinning_request_bg">@color/dblue</color>
     <color name="screen_pinning_request_window_bg">#80000000</color>
     <color name="search_panel_circle_color">@color/backgroundt</color>

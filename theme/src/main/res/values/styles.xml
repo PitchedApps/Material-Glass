@@ -33,6 +33,7 @@
         <!--<item name="selectableItemBackground">@drawable/item_background_pitch</item>-->
         <!--<item name="android:selectableItemBackground">@drawable/item_background_pitch</item>-->
 
+        <item name="colorButtonNormal">@color/button</item>
 
         <item name="material_drawer_window_background">@color/drawer</item>
         <item name="material_drawer_background">@color/drawer</item>
