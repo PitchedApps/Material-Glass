@@ -2,5 +2,5 @@
 <shape
   xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="@color/backgroundt" />
-    <corners android:radius="2.0dip" />
+    <corners android:radius="@dimen/notification_material_rounded_rect_radius" />
 </shape>

@@ -30,6 +30,15 @@
         <item></item>
     </string-array>
 
+    <string-array name="v16">
+        <item>v0.9.2</item>
+        <item>SystemUI: transparent volume panel</item>
+        <item>CM MMS: fixed drawables</item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <string-array name="v15">
         <item>v0.9.2beta1</item>
         <item>vXDA: modified google + to be more dependent on app compat</item>

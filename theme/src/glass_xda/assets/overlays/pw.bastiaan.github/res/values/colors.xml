@@ -2,6 +2,8 @@
 <resources>
     <color name="background_id">@color/backgroundd</color>
     <color name="background_selected">@color/backgrounddd</color>
+    <!--drawer-->
+    <color name="background_white">@color/drawer</color>
     <color name="inset_background">@color/background</color>
     <color name="inset_outer">@color/backgroundd</color>
     <color name="inset_inner">@color/background</color>
@@ -65,6 +67,10 @@
     <color name="primary">@color/backgroundx</color>
     <color name="primary_dark">@color/backgroundx</color>
     <color name="accent">@color/text</color>
+
+    <color name="text21">@color/text</color>
+    <color name="text73">@color/textt</color>
+    <color name="drawer_divider">#11ffffff</color>
 
     <color name="ripple_material_light">@*common:color/ripple</color>
 
