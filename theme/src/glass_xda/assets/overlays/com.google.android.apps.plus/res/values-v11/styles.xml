@@ -5,10 +5,10 @@
         <item name="android:colorBackground">@color/background</item>
         <item name="android:textColor">@color/text</item>
     </style>
-    <style name="StoriesEditTextTheme" parent="@android:style/Theme.Material.Dialog">
+    <style name="StoriesEditTextTheme" parent="@style/Platform.AppCompat.Dialog">
         <!--<item name="android:actionOverflowButtonStyle">@style/Overflow</item>-->
     </style>
-    <style name="Oob.Dialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="Oob.Dialog" parent="@style/Platform.AppCompat.Dialog" />
     <style name="Base.Widget.AppCompat.ProgressBar.Horizontal" parent="@android:style/Widget.Material.ProgressBar.Horizontal" />
     <style name="Base.Widget.AppCompat.ProgressBar" parent="@android:style/Widget.Material.ProgressBar" />
     <style name="Platform.AppCompat" parent="@android:style/Theme.Material">

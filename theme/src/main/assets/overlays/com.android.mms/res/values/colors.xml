@@ -104,6 +104,9 @@
     <color name="floating_action_button_icon_color">@color/text</color>
     <color name="tab_text_color">@color/text</color>
 
+    <!--new april 2-->
+    <color name="search_activity_background_color">@color/background</color>
+
     <color name="msg">#ff111111</color>
     <color name="msgg">#ff222222</color>
 

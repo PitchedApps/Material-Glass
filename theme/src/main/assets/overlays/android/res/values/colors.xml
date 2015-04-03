@@ -14,8 +14,8 @@
     <color name="background_floating_material_dark">#cc111111</color>
     <color name="background_floating_material_light">#cceeeeee</color>
     <!--warning-->
-    <color name="primary_text_default_material_light">#ff222222</color>
-    <color name="secondary_text_default_material_light">#ff333333</color>
+    <color name="primary_text_default_material_light">#ff000000</color>
+    <color name="secondary_text_default_material_light">#ff111111</color>
     <color name="primary_text_default_material_dark">#ffffffff</color>
     <color name="secondary_text_default_material_dark">#ffeeeeee</color>
     <color name="primary_material_dark">#ff000000</color>
@@ -111,6 +111,7 @@
 
     <!--<color name="white">#ffe0e0e0</color>-->
     <color name="neutral">#ff555555</color>
+    <color name="resolver_selected">#66222222</color>
 
     <!--<color name="bright_foreground_inverse_holo_light">@color/neutral</color>-->
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">0.9.2beta1</string>
+    <string name="current_version">0.9.2</string>
 
     <string-array name="changelog_root">
         <item>@array/v15</item>
@@ -34,7 +34,11 @@
         <item>v0.9.2</item>
         <item>SystemUI: transparent volume panel</item>
         <item>CM MMS: fixed drawables</item>
-        <item></item>
+        <item>Framework: fixed resolver list</item>
+        <item>Framework: fixed fastscroll label color</item>
+        <item>Framework: reverted material light text colors</item>
+        <item>Removed Relay for reddit (reddit news) for now</item>
+        <item>Google + tweaks</item>
         <item></item>
         <item></item>
     </string-array>

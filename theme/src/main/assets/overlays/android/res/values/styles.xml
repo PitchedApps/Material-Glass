@@ -222,6 +222,19 @@
     <style name="Widget.DeviceDefault.PopupWindow.ActionMode" parent="@android:style/Widget.Material" />
     <style name="Widget.DeviceDefault.Spinner.DropDown.ActionBar" parent="@android:style/Widget.Material" />
     <style name="Theme.DeviceDefault.Dialog.Alert" parent="@android:style/Theme.Material.Dialog.Alert" />
+    <style name="Theme.DeviceDefault.Light.SearchBar" parent="@android:style/Theme.Material.Panel" />
+    <style name="Theme.DeviceDefault.Resolver" parent="@android:style/Theme.Material">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:colorControlActivated">@color/resolver_selected</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+
 
     <!--Settings-->
     <style name="Theme.Material.Settings" parent="@android:style/Theme.Material" />

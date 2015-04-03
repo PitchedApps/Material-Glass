@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
+    <style name="Platform.AppCompat" parent="@*common:style/Pitch.AppCompat" />
+    <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@android:style/Widget.Material.ActionBar.TabText" />
@@ -50,6 +52,7 @@
         <item name="android:colorBackground">@color/background</item>
         <item name="android:windowBackground">@color/background</item>
         <item name="android:colorBackgroundCacheHint">@color/background</item>
+        <item name="android:cacheColorHint">@color/background</item>
 
     </style>
     <style name="ActionBarOverflowButtonStyle" parent="@android:style/Widget.Material.ActionButton.Overflow" />

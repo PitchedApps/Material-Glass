@@ -10,19 +10,19 @@
     <color name="common_signin_btn_light_text_focused">#ff737373</color>
     <color name="common_signin_btn_default_background">#ffdd4b39</color>
     <color name="common_action_bar_splitter">#ffd2d2d2</color>
-    <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
-    <color name="wallet_dim_foreground_holo_dark">#ffbebebe</color>
-    <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
-    <color name="wallet_dim_foreground_inverse_holo_dark">#ff323232</color>
-    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
-    <color name="wallet_bright_foreground_disabled_holo_light">@color/texttt</color>
-    <color name="wallet_bright_foreground_holo_light">@color/text</color>
-    <color name="wallet_hint_foreground_holo_light">@color/textt</color>
-    <color name="wallet_hint_foreground_holo_dark">@color/textt</color>
-    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
-    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
-    <color name="wallet_holo_blue_light">#ff33b5e5</color>
-    <color name="wallet_link_text_light">#ff0000ee</color>
+    <!--<color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>-->
+    <!--<color name="wallet_dim_foreground_holo_dark">#ffbebebe</color>-->
+    <!--<color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>-->
+    <!--<color name="wallet_dim_foreground_inverse_holo_dark">#ff323232</color>-->
+    <!--<color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>-->
+    <!--<color name="wallet_bright_foreground_disabled_holo_light">@color/texttt</color>-->
+    <!--<color name="wallet_bright_foreground_holo_light">@color/text</color>-->
+    <!--<color name="wallet_hint_foreground_holo_light">@color/textt</color>-->
+    <!--<color name="wallet_hint_foreground_holo_dark">@color/textt</color>-->
+    <!--<color name="wallet_highlighted_text_holo_light">#6633b5e5</color>-->
+    <!--<color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>-->
+    <!--<color name="wallet_holo_blue_light">#ff33b5e5</color>-->
+    <!--<color name="wallet_link_text_light">#ff0000ee</color>-->
     <color name="default_account_details_color">@color/text</color>
     <color name="manage_accounts_text_color">@color/text</color>
     <color name="add_accounts_text_color">@color/manage_accounts_text_color</color>
@@ -303,6 +303,37 @@
     <color name="domain_icloud_com">#ff78b1c6</color>
     <color name="domain_hanmail_com">#ffef625b</color>
     <color name="domain_naver_com">#ff2d8400</color>
+
+    <!--new april 2-->
+    <color name="ad_app_install_text_color">@color/text</color>
+    <color name="cardview_dark_background">#30000000</color>
+    <color name="cardview_light_background">@color/cardview_dark_background</color>
+    <color name="cardview_shadow_end_color">#10000000</color>
+    <color name="cardview_shadow_start_color">#10000000</color>
+    <color name="chips_dropdown_text_activated">@color/text</color>
+    <color name="chips_dropdown_text_default">@color/text</color>
+    <color name="chips_dropdown_text_highlighted">@color/text</color>
+    <color name="conversation_view_overlay_background_color">#30000000</color>
+    <color name="light_grey">#ccaaaaaa</color>
+    <color name="play_action_button_pressed_grey">#80f0f0f0</color>
+    <color name="play_apps_primary">#ff689f38</color>
+    <color name="play_highlight_blue_fill">@color/backgroundd</color>
+    <color name="play_highlight_blue_outline">#20ffffff</color>
+    <color name="play_highlight_grey_fill_dark">#40cccccc</color>
+    <color name="play_ripple_dark">#20ffffff</color>
+    <color name="promo_action_negative_text">@color/text</color>
+    <color name="promo_action_positive_background">@color/backgroundd</color>
+    <color name="promo_action_positive_background_pressed">@color/backgroundd</color>
+    <color name="promo_action_positive_text">@color/text</color>
+    <color name="promo_background">@color/backgroundd</color>
+    <color name="swiped_bg_color_archive">#660b8043</color>
+    <color name="swiped_bg_color_delete">#66ff5722</color>
+
+
+
+
+
+
 
     <color name="aaa">#ffff00ff</color>
     <color name="bbb">#ff00ffff</color>

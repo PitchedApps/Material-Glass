@@ -6,7 +6,15 @@
     <style name="Transparent.ActionBar" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:background">@color/actionbar</item>
     </style>
+    <!--
+    <style name="Platform.AppCompat" parent="@*common:style/Pitch.AppCompat" />
+    <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
 
+-->
+    <style name="Pitch.AppCompat" parent="@android:style/Theme.Material">
+        <item name="buttonBarStyle">@android:style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
+    </style>
 	<style name="Theme.Material.Black" parent="@style/Theme.Material" />
 	<!--<style name="Theme.Material.Launcher" parent="@android:style/Theme.Material">-->
         <!--<item name="android:panelColorBackground">@color/background</item>-->
