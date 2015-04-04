@@ -5,7 +5,7 @@
     <color name="holo_blue_light">@color/pblue</color>
     <color name="holo_blue_dark">@color/pbluee</color>
     <color name="holo_blue_bright">@color/backgrounddt</color>
-    <color name="system_notification_accent_color">@color/textb</color>
+    <color name="system_notification_accent_color">@color/backgrounddd</color>
     <color name="background_holo_dark">@color/backgroundt</color>
     <color name="highlighted_text_holo_dark">#66666666</color>
     <color name="highlighted_text_holo_light">#66666666</color>
@@ -14,8 +14,8 @@
     <color name="background_floating_material_dark">#cc111111</color>
     <color name="background_floating_material_light">#cceeeeee</color>
     <!--warning-->
-    <color name="primary_text_default_material_light">#ff000000</color>
-    <color name="secondary_text_default_material_light">#ff111111</color>
+    <color name="primary_text_default_material_light">#ff060606</color>
+    <color name="secondary_text_default_material_light">#ff121212</color>
     <color name="primary_text_default_material_dark">#ffffffff</color>
     <color name="secondary_text_default_material_dark">#ffeeeeee</color>
     <color name="primary_material_dark">#ff000000</color>
@@ -76,13 +76,17 @@
     <color name="button_material_light">#50afafaf</color>
     <color name="link_text_material_dark">@color/textt</color>
     <color name="link_text_material_light">@color/backgroundd</color>
-    <color name="timepicker_default_ampm_selected_background_color_material">@color/backgroundd</color>
-    <color name="timepicker_default_selector_color_material">@color/backgroundd</color>
+    <color name="timepicker_default_ampm_selected_background_color_material">@color/backgrounddt</color>
+    <color name="timepicker_default_selector_color_material">@color/backgrounddt</color>
 
 
     <!--euphoria-->
-    <color name="notification_material_action_textcolor">#a0ffffff</color>
+    <color name="notification_material_action_textcolor">@color/textt</color>
     <color name="notification_template_material_big_picture_background_color">#cc000000</color>
+
+	<color name="notification_media_primary_color">@color/text</color>
+    <color name="notification_media_secondary_color">@color/textt</color>
+    <color name="notification_action_color_filter">@color/textt</color>
 
     <color name="aaa">#ffff00ff</color>
     <color name="bbb">#ff00ffff</color>
