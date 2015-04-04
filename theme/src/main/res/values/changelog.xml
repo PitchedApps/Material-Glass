@@ -42,10 +42,9 @@
     <string-array name="v17">
         <item>v0.9.3</item>
         <item>Framework: fixed notification button colors</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Font: changed to Helvetica Neue</item>
+        <item>Gmail: fixed conversation background color</item>
+        <item>Nova: fixed icon picker crash (white on white though)</item>
     </string-array>
 
     <string-array name="v16">

@@ -33,11 +33,11 @@ public class Credits extends Fragment {
 
         context = getActivity();
 
-        TextView designerdesc = (TextView) root.findViewById(R.id.dev_card_content);
-        designerdesc.setText(Html.fromHtml(getString(R.string.themer_desc)));
-
         TextView authordesc = (TextView) root.findViewById(R.id.dashauthor_info);
         authordesc.setText(Html.fromHtml(getString(R.string.dashboard_author_desc)));
+
+        TextView designerdesc = (TextView) root.findViewById(R.id.dev_card_content);
+        designerdesc.setText(Html.fromHtml(getString(R.string.themer_desc)));
 
         TextView ivondesc = (TextView) root.findViewById(R.id.ivon_card_content);
         ivondesc.setText(Html.fromHtml(getString(R.string.ivon_desc)));
@@ -150,6 +150,24 @@ public class Credits extends Fragment {
             }
         });
 
+        TextView dashauthorweb = (TextView) root.findViewById(R.id.dashauthor_web_button);
+        dashauthorweb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent dashauthorweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dashboard_author_link)));
+                startActivity(dashauthorweb);
+            }
+        });
+
+        TextView dashauthorgoogleplus = (TextView) root.findViewById(R.id.dashauthor_gplus_button);
+        dashauthorgoogleplus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent dashauthorgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dashboard_author_gplus)));
+                startActivity(dashauthorgplus);
+            }
+        });
+
         TextView web = (TextView) root.findViewById(R.id.play_button);
         web.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -183,24 +201,6 @@ public class Credits extends Fragment {
             public void onClick(View v) {
                 Intent ivongplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ivon_gplus_link)));
                 startActivity(ivongplus);
-            }
-        });
-
-        TextView dashauthorweb = (TextView) root.findViewById(R.id.dashauthor_web_button);
-        dashauthorweb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent dashauthorweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dashboard_author_link)));
-                startActivity(dashauthorweb);
-            }
-        });
-
-        TextView dashauthorgoogleplus = (TextView) root.findViewById(R.id.dashauthor_gplus_button);
-        dashauthorgoogleplus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent dashauthorgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dashboard_author_gplus)));
-                startActivity(dashauthorgplus);
             }
         });
 

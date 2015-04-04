@@ -315,7 +315,7 @@
     <color name="chips_dropdown_text_highlighted">@color/text</color>
     <color name="conversation_view_overlay_background_color">#30000000</color>
     <color name="light_grey">#ccaaaaaa</color>
-    <color name="play_action_button_pressed_grey">#80f0f0f0</color>
+    <color name="play_action_button_pressed_grey">#80333333</color>
     <color name="play_apps_primary">#ff689f38</color>
     <color name="play_highlight_blue_fill">@color/backgroundd</color>
     <color name="play_highlight_blue_outline">#20ffffff</color>
@@ -332,9 +332,7 @@
 
 
 
-
-
-
+    <color name="abstractcomposearea">#88333333</color>
     <color name="aaa">#ffff00ff</color>
     <color name="bbb">#ff00ffff</color>
     <color name="textneutral">#ffaaaaaa</color>

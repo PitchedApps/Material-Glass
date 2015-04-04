@@ -2,6 +2,7 @@
 <resources>
     <attr name="isLightTheme" format="boolean" />
     <attr name="colorControlHighlight" format="color" />
+    <attr name="colorControlActivated" format="color" />
     <attr name="height" format="dimension" />
     <attr name="width" format="dimension" />
     <attr name="tint" format="color" />

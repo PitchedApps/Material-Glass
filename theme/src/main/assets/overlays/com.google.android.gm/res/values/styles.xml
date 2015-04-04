@@ -57,7 +57,7 @@
 
     <style name="AbstractComposeArea">
         <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:background">@color/backgroundt</item>
+        <item name="android:background">@color/background</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:animateLayoutChanges">true</item>
@@ -105,5 +105,9 @@
         <item name="android:inputType">textEmailAddress|textMultiLine</item>
         <item name="android:textDirection">locale</item>
         <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="MailActivityTheme" parent="@style/UnifiedEmailTheme.Appcompat.Toolbar">
+        <item name="android:windowBackground">@color/background</item>
     </style>
 </resources>
