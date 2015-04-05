@@ -54,6 +54,69 @@
        <item>voicesearch</item>
    </string-array>
 
+   <string-array name="user">
+       <item>a1weather</item>
+       <item>adaway</item>
+       <item>adobereader</item>
+       <item>airdroid</item>
+       <item>appredirect</item>
+       <item>audiofx</item>
+       <item>bitbeaker</item>
+       <item>catlog</item>
+       <item>checkersfree</item>
+       <item>chessfree</item>
+       <item>cmbrowser</item>
+       <item>cmsecurity</item>
+       <item>colornote</item>
+       <item>copy</item>
+       <item>dropbox</item>
+       <item>dropsync</item>
+       <item>dumpster</item>
+       <item>evolvesms</item>
+       <item>facebook</item>
+       <item>gmdgestures</item>
+       <item>googledeveloperconsole</item>
+       <item>gpsstatus</item>
+       <item>greenify</item>
+       <item>instagram</item>
+       <item>k9mail</item>
+       <item>lmt</item>
+       <item>mapsme</item>
+       <item>megav1</item>
+       <item>messengerfb</item>
+       <item>multirommanager</item>
+       <item>mxplayer</item>
+       <item>newsweather</item>
+       <item>novalauncher</item>
+       <item>paperboard</item>
+       <item>poweramp</item>
+       <item>pushbullet</item>
+       <item>quickpic</item>
+       <item>quizlet</item>
+       <item>realcalc</item>
+       <item>relaypro</item>
+       <item>romsettingsbackuppro</item>
+       <item>rootexplorer</item>
+       <item>sdmaid</item>
+       <item>skype</item>
+       <item>smsbackuprestorepro</item>
+       <item>snapchat</item>
+       <item>swiftkeykeyboard</item>
+       <item>syncme</item>
+       <item>tapatalk</item>
+       <item>tasker</item>
+       <item>teslaunreadplugin</item>
+       <item>themedebug</item>
+       <item>titaniumbackup</item>
+       <item>trickstermod</item>
+       <item>twitter</item>
+       <item>wallpapersaver</item>
+       <item>wechat</item>
+       <item>whatsapp</item>
+       <item>xdapremium4</item>
+       <item>xposedinstaller</item>
+   </string-array>
+
    <string-array name="icon_pack" translatable="true">
        <item>a1weather</item>
        <item>adaway</item>

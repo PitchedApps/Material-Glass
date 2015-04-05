@@ -45,8 +45,6 @@ public class Main extends ActionBarActivity {
     private boolean withLicenseChecker = false;
     private Context context;
 
-//TODO theme card in main view
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,7 +88,6 @@ public class Main extends ActionBarActivity {
                         new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),
                         new DividerDrawerItem(),
                         new SecondaryDrawerItem().withName(thaDonate).withIdentifier(4),
-                        //gmd_credit_card
                         new SecondaryDrawerItem().withName(thaCredits).withIdentifier(5)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
@@ -119,10 +116,9 @@ public class Main extends ActionBarActivity {
                                     }
                                     break;
                                 case 4:
-//                                    switchFragment(4, thaDonate, "Donate");
                                     Intent intent = new Intent(Main.this, Donations.class);
-//TODO add proper animations
                                     startActivity(intent);
+                                    overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                                     break;
                                 case 5:
                                     switchFragment(5, thaCredits, "Credits");
@@ -224,7 +220,6 @@ public class Main extends ActionBarActivity {
             case R.id.changelog:
                 changelog();
                 break;
-            //TODO theme changelog
         }
         return true;
     }
@@ -259,11 +254,11 @@ public class Main extends ActionBarActivity {
             }
         }
     }
-//TODO check this? added style
     private void changelog() {
 
         new MaterialDialog.Builder(this)
                 .title(R.string.changelog_dialog_title)
+                .backgroundColorRes(R.color.drawer)
                 .adapter(new ChangelogAdapter(this, R.array.changelog_root), null)
                 .positiveText(R.string.nice)
                 .negativeText(R.string.rate2)

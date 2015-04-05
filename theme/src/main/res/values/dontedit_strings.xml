@@ -27,8 +27,9 @@
 
     <!-- String Array for Tabs -->
     <string-array name="tabs">
+        <item>USER</item>
         <item>SYSTEM</item>
-        <item>PLAY</item>
+        <item>GOOGLE</item>
         <item>ALL</item>
     </string-array>
 

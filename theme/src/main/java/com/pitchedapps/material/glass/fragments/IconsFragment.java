@@ -86,12 +86,6 @@ public class IconsFragment extends Fragment {
 
             holder.icon.startAnimation(anim);
             holder.icon.setImageResource(mThumbs.get(position));
-            //TODO add ripples because ripples are cool
-//            holder.icon.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                }
-//            });
             return icono;
         }
 

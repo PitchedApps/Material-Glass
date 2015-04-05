@@ -62,12 +62,15 @@ public class Previews extends Fragment {
             Fragment f = new Fragment();
             switch (position) {
                 case 0:
-                    f = IconsFragment.newInstance(R.array.system);
+                    f = IconsFragment.newInstance(R.array.user);
                     break;
                 case 1:
-                    f = IconsFragment.newInstance(R.array.google);
+                    f = IconsFragment.newInstance(R.array.system);
                     break;
                 case 2:
+                    f = IconsFragment.newInstance(R.array.google);
+                    break;
+                case 3:
                     f = IconsFragment.newInstance(R.array.icon_pack);
                     break;
             }
@@ -81,7 +84,7 @@ public class Previews extends Fragment {
 
         @Override
         public int getCount() {
-            return 3;
+            return 4;
         }
         //change if tabs change
     }
