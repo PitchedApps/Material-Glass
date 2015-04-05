@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">0.9.2</string>
+    <string name="current_version">0.9.5</string>
 
     <string-array name="changelog_root">
-        <item>@array/bugs</item>
+        <item>@array/v19</item>
+        <item>@array/v18</item>
         <item>@array/v17</item>
         <item>@array/v16</item>
         <item>@array/v15</item>
@@ -23,12 +24,6 @@
         <item>@array/v1</item>
     </string-array>
 
-    <string-array name="bugs">
-        <item>Known Issues/Bugs</item>
-        <item>Crash in Nova Launcher\'s icon picker</item>
-        <item>Latest gmail isn\'t transparent</item>
-    </string-array>
-
 
     <string-array name="v">
         <item>v</item>
@@ -37,6 +32,20 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+
+    <string-array name="v19">
+        <item>v0.9.5</item>
+        <item>30 new icons</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v18">
+        <item>v0.9.4</item>
+        <item>Quick fix for theme error (sorry guys)</item>
     </string-array>
 
     <string-array name="v17">

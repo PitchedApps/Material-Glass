@@ -267,10 +267,22 @@ public class Main extends ActionBarActivity {
                 .title(R.string.changelog_dialog_title)
                 .adapter(new ChangelogAdapter(this, R.array.changelog_root), null)
                 .positiveText(R.string.nice)
+                .negativeText(R.string.rate2)
+                .neutralText(R.string.donate)
                 .callback(new MaterialDialog.ButtonCallback() {
                     @Override
                     public void onPositive(MaterialDialog dialog) {
                         mPrefs.setNotFirstrun();
+                    }
+                    @Override
+                    public void onNegative(MaterialDialog dialog) {
+                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_link)));
+                        startActivity(browserIntent);
+                    }
+                    @Override
+                    public void onNeutral(MaterialDialog dialog) {
+                        Intent intent = new Intent(Main.this, Donations.class);
+                        startActivity(intent);
                     }
                 })
                 .show();

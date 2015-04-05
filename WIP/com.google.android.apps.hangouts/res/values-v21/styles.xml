@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.EmeraldSea.Settings" parent="@android:style/Theme.Holo">
-        <item name="android:actionBarStyle">@style/EsActionBar</item>
-        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_black</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-    </style>
-</resources>

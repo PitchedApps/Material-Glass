@@ -41,13 +41,14 @@
     <dimen name="toolbar_contentInset">72dp</dimen>
 
     <dimen name="dialog_margin">24dp</dimen>
+    <dimen name="dialog_padding">8dp</dimen>
 
 
     <!-- Texts Sizes -->
-    <dimen name="text_big">20sp</dimen>
-    <dimen name="text_med">18sp</dimen>
-    <dimen name="text_small">16sp</dimen>
-    <dimen name="text_ultrasmall">14sp</dimen>
+    <dimen name="text_big">16sp</dimen>
+    <dimen name="text_med">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_ultrasmall">10sp</dimen>
 
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>

@@ -83,5 +83,36 @@
     <item component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.VoiceSearchActivity}" drawable="voicesearch"/>
     <item component="ComponentInfo{com.whatsapp/com.whatsapp.Main}" drawable="whatsapp"/>
     <item component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube"/>
+	<item component="ComponentInfo{com.handmark.expressweather/com.handmark.expressweather.MainActivity}" drawable="a1weather"/>
+<item component="ComponentInfo{com.nevoxo.tapatalk.redirect/com.nevoxo.tapatalk.redirect.SettingsActivity}" drawable="appredirect"/>
+<item component="ComponentInfo{fi.iki.kuitsi.bitbeaker/fi.iki.kuitsi.bitbeaker.activities.LoginActivity}" drawable="bitbeaker"/>
+<item component="ComponentInfo{uk.co.aifactory.checkersfree/uk.co.aifactory.checkersfree.CheckersFreeActivity}" drawable="checkersfree"/>
+<item component="ComponentInfo{uk.co.aifactory.chessfree/uk.co.aifactory.chessfree.ChessFreeActivity}" drawable="chessfree"/>
+<item component="ComponentInfo{com.ksmobile.cb/com.ijinshan.browser.screen.BrowserActivity}" drawable="cmbrowser"/>
+<item component="ComponentInfo{com.cleanmaster.security/ks.cm.antivirus.main.SplashActivity}" drawable="cmsecurity"/>
+<item component="ComponentInfo{com.socialnmobile.dictapps.notepad.color.note/com.socialnmobile.colornote.activity.Main}" drawable="colornote"/>
+<item component="ComponentInfo{com.copy/com.copy.activities.MainActivity}" drawable="copy"/>
+<item component="ComponentInfo{com.ttxapps.dropsync/com.ttxapps.syncapp.MainActivity}" drawable="dropsync"/>
+<item component="ComponentInfo{com.baloota.dumpster/com.baloota.dumpster.DumpsterMain}" drawable="dumpster"/>
+<item component="ComponentInfo{com.klinker.android.evolve_sms/com.klinker.android.evolve_sms.ui.MainActivity}" drawable="evolvesms"/>
+<item component="ComponentInfo{com.goodmooddroid.gesturecontrol/com.gmd.gc.view.GestureActivity}" drawable="gmdgestures"/>
+<item component="ComponentInfo{com.eclipsim.gpsstatus2/com.eclipsim.gpsstatus2.GPSStatus}" drawable="gpsstatus"/>
+<item component="ComponentInfo{com.mapswithme.maps.pro/com.mapswithme.maps.DownloadResourcesActivity}" drawable="mapsme"/>
+<item component="ComponentInfo{com.flyingottersoftware.mega/com.flyingottersoftware.mega.ManagerActivity}" drawable="megav1"/>
+<item component="ComponentInfo{com.tassadar.multirommgr/com.tassadar.multirommgr.MainActivity}" drawable="multirommanager"/>
+<item component="ComponentInfo{com.mxtech.videoplayer.ad/com.mxtech.videoplayer.ad.ActivityMediaList}" drawable="mxplayer"/>
+<item component="ComponentInfo{com.jahirfiquitiva.dashboardsample/com.jahirfiquitiva.dashboardsample.Home}" drawable="paperboard"/>
+<item component="ComponentInfo{com.maxmpz.audioplayer/com.maxmpz.audioplayer.StartupActivity}" drawable="poweramp"/>
+<item component="ComponentInfo{com.pushbullet.android/com.pushbullet.android.ui.LaunchActivity}" drawable="pushbullet"/>
+<item component="ComponentInfo{com.quizlet.quizletandroid/com.quizlet.quizletandroid.activities.RootActivity}" drawable="quizlet"/>
+<item component="ComponentInfo{reddit.news/reddit.news.RedditNavigation}" drawable="relaypro"/>
+<item component="ComponentInfo{com.flextrick.settingssaverpro/com.flextrick.settingssaverpro.ScreenSlidePagerActivity}" drawable="romsettingsbackuppro"/>
+<item component="ComponentInfo{com.syncme.syncmeapp/com.syncme.activities.SplashActivity}" drawable="syncme"/>
+<item component="ComponentInfo{com.teslacoilsw.notifier/com.teslacoilsw.notifier.NotifierSettings}" drawable="teslaunreadplugin"/>
+<item component="ComponentInfo{dk.alroe.apps.WallpaperSaver_Paid/dk.alroe.apps.WallpaperSaverFree.view.activity.MainActivity}" drawable="wallpapersaver"/>
+<item component="ComponentInfo{com.tencent.mm/com.tencent.mm.ui.LauncherUI}" drawable="wechat"/>
+<item component="ComponentInfo{com.quoord.tapatalkxdapre.activity/com.quoord.tapatalkpro.activity.directory.ics.IcsRebrandingEntryActivity}" drawable="xdapremium4"/>
+<item component="ComponentInfo{de.robv.android.xposed.installer/de.robv.android.xposed.installer.WelcomeActivity}" drawable="xposedinstaller"/>
+
 
 </resources>
