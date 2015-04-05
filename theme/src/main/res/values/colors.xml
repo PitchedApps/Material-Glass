@@ -45,16 +45,7 @@
     <color name="navbar">#aa000000</color>
 
     <!-- Don't Edit!!! -->
-    <color name="white">#ffffff</color>
-    <!--<color name="light_bg">#fafafa</color>-->
-    <color name="transparent">#00ffffff</color>
-    <color name="semitransparent_white">#b3ffffff</color>
-    <color name="dark_grey">#ff4d4d4d</color>
-    <color name="window_bg">@color/primary_dark</color>
-    <color name="black_semi_transparent">#b2000000</color>
-    <color name="dialogcontent">#6d6d6d</color>
-    <color name="theme_info_header">@color/primary</color>
-    <color name="theme_info">@color/primary</color>
+    <color name="dialogcontent">@color/drawer</color>
     <color name="theme">@color/primary</color>
     <color name="divider">#20ffffff</color>
 </resources>

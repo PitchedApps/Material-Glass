@@ -21,7 +21,6 @@ import java.util.ArrayList;
 public class IconsFragment extends Fragment {
 
 
-    public LayoutInflater inflater;
     private Context context;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,7 +29,6 @@ public class IconsFragment extends Fragment {
         View view = inflater.inflate(R.layout.icons_grid, container, false);
 
         context = getActivity();
-        int iconSize = getResources().getDimensionPixelSize(R.dimen.allapps_icon_preview);
         GridView gridview = (GridView) view.findViewById(R.id.icons_grid);
         IconAdapter icAdapter = new IconAdapter();
         gridview.setAdapter(icAdapter);

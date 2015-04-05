@@ -6,7 +6,7 @@
     android:paddingRight="@dimen/dialog_margin"
     android:paddingBottom="@dimen/dialog_padding"
     android:orientation="vertical"
-    android:background="@color/transparent">
+    android:background="@android:color/transparent">
 
     <TextView
         android:paddingTop="@dimen/dialog_padding"

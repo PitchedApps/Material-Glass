@@ -34,7 +34,7 @@ public class Settings extends ActionBarActivity implements View.OnClickListener 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(getResources().getString(R.string.muzei_settings));
-        toolbar.setTitleTextColor(getResources().getColor(R.color.white));
+        toolbar.setTitleTextColor(getResources().getColor(R.color.text));
         setSupportActionBar(toolbar);
 
         numberpicker = (NumberPicker) findViewById(R.id.number_picker);

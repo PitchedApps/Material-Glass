@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/icon"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/cards_elevation">
+    android:background="?selectableItemBackground"
+    android:paddingBottom="@dimen/no_height"
+    android:paddingLeft="@dimen/mini_margin"
+    android:paddingRight="@dimen/mini_margin"
+    android:paddingTop="@dimen/no_height">
 
     <ImageView
         android:id="@+id/icon_img"
@@ -12,4 +16,4 @@
         android:layout_height="match_parent"
         tools:ignore="ContentDescription" />
 
-</FrameLayout>
+</LinearLayout>

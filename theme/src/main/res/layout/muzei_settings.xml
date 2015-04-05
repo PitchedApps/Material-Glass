@@ -5,9 +5,16 @@
     android:layout_height="match_parent"
     tools:context="com.jahirfiquitiva.paperboard.muzei.Settings">
 
-    <include
-        layout="@layout/app_bar"
-        android:id="@+id/toolbar"/>
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/actionbar"
+        android:minHeight="?actionBarSize"
+        android:transitionName="actionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat"
+        app:theme="@style/MyActionBarTheme" />
 
     <ScrollView
         android:layout_width="match_parent"

@@ -11,12 +11,11 @@
         android:layout_height="match_parent"
         android:cacheColorHint="@android:color/transparent"
         android:columnWidth="@dimen/iconcolumn"
-        android:dividerHeight="@dimen/margin_medium_sm"
-        android:gravity="center_horizontal"
-        android:listSelector="@android:color/transparent"
+        android:dividerHeight="@dimen/dividers"
+        android:gravity="center"
         android:numColumns="auto_fit"
         android:scrollbars="none"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="@dimen/margin_medium_sm" />
+        android:listSelector="@drawable/selectable"/>
 
 </LinearLayout>
