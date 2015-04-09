@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Item name in the drawer and toolbar -->
+    <string name="section_eight">Info</string>
+
+    <!-- Tab titles -->
+    <string-array name="info_sections">
+        <item>Section 1</item>
+        <item>Section 2</item>
+        <item>Section 3</item>
+    </string-array>
+
+    <!-- Tab contents -->
+    <string-array name="info_contents">
+        <item>Some content</item>
+        <item>More content</item>
+        <item>Even more content!</item>
+    </string-array>
+
+</resources>

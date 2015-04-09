@@ -37,7 +37,7 @@ public class Main extends ActionBarActivity {
 
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
-    public String thaApp, thaHome, thaPreviews, thaWalls, thaDonate, thaCredits;
+    public String thaApp, thaHome, thaPreviews, thaWalls, thaDonate, thaCredits, sectionInfo;
     public String version, drawerVersion;
     public int currentItem;
     private boolean firstrun, enable_features;
@@ -63,6 +63,7 @@ public class Main extends ActionBarActivity {
         thaWalls = getResources().getString(R.string.section_four);
         thaDonate = getResources().getString(R.string.donate);
         thaCredits = getResources().getString(R.string.section_seven);
+        sectionInfo = getResources().getString(R.string.section_eight);
 
         drawerVersion = "v " + getResources().getString(R.string.current_version);
 
@@ -85,6 +86,7 @@ public class Main extends ActionBarActivity {
                 .withAccountHeader(headerResult)
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(sectionInfo).withIcon(GoogleMaterial.Icon.gmd_info).withIdentifier(9),
                         new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),
                         new DividerDrawerItem(),
                         new SecondaryDrawerItem().withName(thaDonate).withIdentifier(4),
@@ -123,6 +125,9 @@ public class Main extends ActionBarActivity {
                                 case 5:
                                     switchFragment(5, thaCredits, "Credits");
                                     break;
+                                case 9:
+                                    switchFragment(9, sectionInfo, "Info");
+                                    break;
                             }
                         }
                     }
@@ -147,7 +152,7 @@ public class Main extends ActionBarActivity {
         tx.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
         tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.pitchedapps.material.glass.fragments." + fragment));
         tx.commit();
-        }
+    }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
