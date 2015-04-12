@@ -41,7 +41,9 @@
         <item>Framework: Fixed material borderless ripples</item>
         <item>SystemMUI: Made quick settings slightly darker</item>
         <item>Snapchat: Darkened notification color</item>
-        <item></item>
+        <item>UI: Borderless ripples in icon section</item>
+        <item>Framework: Thinner switches</item>
+        <item>Dialer and Contacts: Fixed nav button issues</item>
     </string-array>
 
     <string-array name="v19">

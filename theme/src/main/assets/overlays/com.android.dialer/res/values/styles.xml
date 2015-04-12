@@ -21,9 +21,13 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:windowNoDisplay">true</item>
+        <item name="android:navigationBarColor">@color/backgroundx</item>
+
     </style>
     <style name="InCallPopupMenuStyle" parent="@android:style/Theme.Material">
         <item name="android:textColorPrimary">@color/popup_menu_color</item>
+        <item name="android:navigationBarColor">@color/backgroundx</item>
+
     </style>
     <style name="InCallActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:textColor">@color/incall_action_bar_text_color</item>
@@ -125,6 +129,9 @@
         <item name="call_log_voicemail_status_background_color">@color/backgroundd</item>
         <item name="call_log_voicemail_status_text_color">@color/text</item>
         <item name="call_log_voicemail_status_action_text_color">@color/text</item>
+
+        <item name="android:navigationBarColor">@color/backgroundx</item>
+
     </style>
 
     <style name="DialtactsActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
