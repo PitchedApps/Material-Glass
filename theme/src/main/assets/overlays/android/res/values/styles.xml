@@ -35,7 +35,7 @@
 
         <item name="android:listChoiceBackgroundIndicator">@drawable/item_background_pitch</item>
         <item name="android:selectableItemBackground">@drawable/item_background_pitch</item>
-
+        <item name="android:selectableItemBackgroundBorderless">@drawable/item_background_borderless_pitch</item>
     </style>
     <style name="Theme.Holo.Light" parent="@android:style/Theme.Holo.Light">
         <item name="android:panelColorBackground">@color/backgroundt_light</item>
@@ -56,6 +56,10 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundtt</item>
         <item name="android:colorControlActivated">@color/text</item>
+
+        <item name="android:listChoiceBackgroundIndicator">@drawable/item_background_pitch</item>
+        <item name="android:selectableItemBackground">@drawable/item_background_pitch</item>
+        <item name="android:selectableItemBackgroundBorderless">@drawable/item_background_borderless_pitch</item>
     </style>
 
     <style name="Widget.Holo.ActionBar" parent="@android:style/Widget.Holo.ActionBar">

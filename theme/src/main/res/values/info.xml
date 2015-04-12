@@ -13,9 +13,61 @@
 
     <!-- Tab contents -->
     <string-array name="info_contents">
-        <item>Some content</item>
-        <item>More content</item>
-        <item>Even more content!</item>
+        <item>Welcome to the info section! Please take a moment to carefully read the section below if you have any bugs or concerns
+            \n\nREBOOT YOUR PHONE BEFORE SENDING BUG REPORTS.
+            \nI\'ve received way too many bug reports that were solved with a simple restart.
+            \n\nAnother common issue is having an updated rom; you MUST have a rom with the latest updated commits for this theme to properly function. New tweaks are added every day, and as of now the major changes were merged in early March. As such, if you don\'t have those commits, you will see issues that I won\'t be able to fix.
+            \n\nBOOTLOOPS
+            \n\nThis theme should technically never put you into a bootloop, but odd things do happen occasionally to some people. In the event that it occurs, first check to see what you have applied in the theme. Note that the bootanimation is tailored to xhdpi phones (originally xxhdpi, but I made that a separate zip to support more phones), so it may cause issues on low end devices. If the problem persists, you can always go into the TWRP (recovery) file manager and delete the apk from there. At the end of the day, please understand that the theme chooser is still in alpha, and whatever you do is your own responsibility. I have no intentions of messing up your phone, but you\'ll have to be prepared to deal with it if it happens. This theme is my daily and I can say at least for myself that it is extremely stable.
+            \n\nPlease also understand that I am one themer with one phone. Apart from the Nexus 5, on very few selected roms, this theme hasn\'t been officially tested. It does however work for most users, which is a positive sign.
+        </item>
+        <item>SYSTEM
+            \n&#8226; Framework-res
+            \n&#8226; SystemUI
+            \n&#8226; Settings
+            \n&#8226; Cell Broadcast Receiver
+            \n&#8226; Documents UI
+            \n&#8226; Face Lock
+            \n&#8226; Phone
+            \n&#8226; Telecom
+            \n&#8226; CyanogenMod Account
+            \n&#8226; CyanogenMod Music Player (Eleven)
+            \n&#8226; Cyanogenmod Lock Clock
+            \n&#8226; Cyanogenmod Setup Wizard
+            \n&#8226; Cyanogenmod Trebuchet
+            \n&#8226; Cyanogenmod Updater
+            \n&#8226; Cyanogenmod Theme Chooser
+            \n&#8226; Euphoria OTA
+            \n\nAOSP
+            \n\n&#8226; Calculator
+            \n&#8226; Contacts
+            \n&#8226; Desk Clock
+            \n&#8226; Dialer
+            \n&#8226; AOSP Keyboard
+            \n&#8226; Launcher 3
+            \n&#8226; MMS
+            \n\nGOOGLE
+            \n\n&#8226; Google +
+            \n&#8226; Gmail
+            \n&#8226; Google Search
+            \n&#8226; Google Now
+            \n&#8226; Youtube (bug fix only)
+            \n&#8226; Google Keyboard
+            \n\nUSER
+            \n\n&#8226; K9-Mail
+            \n&#8226; Notification Manager (xposed)
+            \n&#8226; SnapPref (xposed)
+            \n&#8226; Snapchat (light touches)
+            \n&#8226; Nova Launcher
+            \n&#8226; Xposed
+            \n&#8226; Hells Core Kernel Updater
+            \n&#8226; Switchr
+        </item>
+        <item>
+            &#8226; Dialer and Contacts have unpredicatable crashes, especially with custom DPI\'s or low DPI
+            \n&#8226; Gmail widget and other parts have white backgrounds
+            \n&#8226; Blisspop sometimes has incompatibilities. Please note that this rom is heavily modified, and deviates quite a lot from standard AOSP. As such, it may not always work with this theme.
+        </item>
     </string-array>
 
 </resources>

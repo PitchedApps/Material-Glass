@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">0.9.5beta1</string>
+    <string name="current_version">0.9.6</string>
 
     <string-array name="changelog_root">
+        <item>@array/v20</item>
         <item>@array/v19</item>
         <item>@array/v18</item>
         <item>@array/v17</item>
@@ -34,10 +35,18 @@
         <item></item>
     </string-array>
 
+    <string-array name="v20">
+        <item>v0.9.5</item>
+        <item>UI: Added initial info section</item>
+        <item>Framework: Fixed material borderless ripples</item>
+        <item>SystemMUI: Made quick settings slightly darker</item>
+        <item>Snapchat: Darkened notification color</item>
+        <item></item>
+    </string-array>
+
     <string-array name="v19">
         <item>v0.9.5-beta1</item>
         <item>30 new icons</item>
-        <item></item>
         <item>UI: changelog dialog updates</item>
         <item>UI: new user icon tab</item>
         <item>Paperboard update v5</item>

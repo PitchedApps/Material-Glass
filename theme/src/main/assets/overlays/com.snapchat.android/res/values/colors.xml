@@ -3,6 +3,7 @@
     <color name="bright_yellow">@color/background</color>
     <color name="bright_yellow_pressed">@color/backgroundd</color>
     <color name="dark_yellow">@color/background</color>
+    <color name="dark_yellow_semi_transparent">#dd000000</color>
 
     <color name="background">#ff000000</color>
     <color name="backgroundd">#ff2f2f2f</color>

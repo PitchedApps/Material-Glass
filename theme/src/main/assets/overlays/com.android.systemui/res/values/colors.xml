@@ -39,8 +39,8 @@
     <color name="notification_ripple_color_low_priority">@color/notification_ripple_untinted_color</color>
     <color name="notification_ripple_tinted_color">#30ffffff</color>
     <color name="notification_ripple_untinted_color">#33bbbbbb</color>
-    <color name="qs">#50000000</color>
-    <color name="qss">#50050505</color>
+    <color name="qs">#55000000</color>
+    <color name="qss">#55050505</color>
     <color name="qs_batterymeter_frame_color">#FF404040</color>
     <color name="qs_detail_empty">#24B0BEC5</color>
     <color name="qs_detail_progress_track">@color/pblue_t</color>
