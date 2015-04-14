@@ -1,4 +1,4 @@
-package com.pitchedapps.material.glass.tabs;
+package com.pitchedapps.material.glass.views;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -28,7 +28,7 @@ import com.pitchedapps.material.glass.R;
  * <p/>
  * The colors can be customized in two ways. The first and simplest is to provide an array of colors
  * via {@link #setSelectedIndicatorColors(int...)}. The
- * alternative is via the {@link com.pitchedapps.material.glass.tabs.SlidingTabLayout.TabColorizer} interface which provides you complete control over
+ * alternative is via the {@link com.pitchedapps.material.glass.views.SlidingTabLayout.TabColorizer} interface which provides you complete control over
  * which color is used for any individual position.
  * <p/>
  * The views used as tabs can be customized by calling {@link #setCustomTabView(int, int)},
@@ -72,7 +72,7 @@ public class SlidingTabLayout extends HorizontalScrollView {
     }
 
     /**
-     * Set the custom {@link com.pitchedapps.material.glass.tabs.SlidingTabLayout.TabColorizer} to be used.
+     * Set the custom {@link com.pitchedapps.material.glass.views.SlidingTabLayout.TabColorizer} to be used.
      * <p/>
      * If you only require simple custmisation then you can use
      * {@link #setSelectedIndicatorColors(int...)} to achieve
@@ -95,7 +95,7 @@ public class SlidingTabLayout extends HorizontalScrollView {
     }
 
     /**
-     * Set the {@link android.support.v4.view.ViewPager.OnPageChangeListener}. When using {@link com.pitchedapps.material.glass.tabs.SlidingTabLayout} you are
+     * Set the {@link android.support.v4.view.ViewPager.OnPageChangeListener}. When using {@link com.pitchedapps.material.glass.views.SlidingTabLayout} you are
      * required to set any {@link android.support.v4.view.ViewPager.OnPageChangeListener} through this method. This is so
      * that the layout can update it's scroll position correctly.
      *
@@ -232,7 +232,7 @@ public class SlidingTabLayout extends HorizontalScrollView {
 
     /**
      * Allows complete control over the colors drawn in the tab layout. Set with
-     * {@link #setCustomTabColorizer(com.pitchedapps.material.glass.tabs.SlidingTabLayout.TabColorizer)}.
+     * {@link #setCustomTabColorizer(com.pitchedapps.material.glass.views.SlidingTabLayout.TabColorizer)}.
      */
     public interface TabColorizer {
 

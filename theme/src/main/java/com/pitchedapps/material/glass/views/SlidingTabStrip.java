@@ -1,4 +1,4 @@
-package com.pitchedapps.material.glass.tabs;
+package com.pitchedapps.material.glass.views;
 
 import android.R;
 import android.content.Context;

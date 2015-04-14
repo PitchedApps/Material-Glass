@@ -9,10 +9,11 @@
         android:orientation="vertical"
         tools:context="com.pitchedapps.material.glass.activities.Main">
 
-        <com.pitchedapps.material.glass.tabs.SlidingTabLayout
+        <com.pitchedapps.material.glass.views.SlidingTabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:elevation="@dimen/toolbar_elevation"
             android:background="@color/primary" />
 
         <android.support.v4.view.ViewPager
@@ -22,4 +23,5 @@
             android:layout_weight="1" />
 
     </LinearLayout>
+
 </RelativeLayout>

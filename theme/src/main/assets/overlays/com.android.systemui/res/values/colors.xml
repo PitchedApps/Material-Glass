@@ -8,7 +8,7 @@
     <color name="data_usage_graph_track">#33FFFFFF</color>
     <color name="data_usage_graph_warning">#FFFFFFFF</color>
     <color name="data_usage_secondary">@color/textt</color>
-    <color name="doze_small_icon_background_color">@color/backgroundd</color>
+    <color name="doze_small_icon_background_color">#ff434343</color>
     <color name="fab_color">@color/dblue</color>
     <color name="fake_shadow_end_color">#03000000</color>
     <color name="fake_shadow_start_color">#44000000</color>

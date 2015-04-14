@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.tabs.SlidingTabLayout;
+import com.pitchedapps.material.glass.views.SlidingTabLayout;
 
 public class Previews extends Fragment {
 
@@ -20,10 +20,6 @@ public class Previews extends Fragment {
     private SlidingTabLayout mTabs;
     private Context context;
 
-    public static Fragment newInstance(Context context) {
-        Previews f = new Previews();
-        return f;
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -33,6 +29,7 @@ public class Previews extends Fragment {
 
         ActionBar toolbar = ((ActionBarActivity)context).getSupportActionBar();
         toolbar.setTitle(R.string.section_two);
+        toolbar.setElevation(0);
 
         mPager = (ViewPager) root.findViewById(R.id.pager);
         mPager.setAdapter(new MyPagerAdapter(getActivity().getSupportFragmentManager()));
@@ -84,9 +81,8 @@ public class Previews extends Fragment {
 
         @Override
         public int getCount() {
-            return 4;
+            return tabs.length;
         }
-        //change if tabs change
     }
 
 }

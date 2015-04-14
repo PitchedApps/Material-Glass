@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.tabs.SlidingTabLayout;
+import com.pitchedapps.material.glass.views.SlidingTabLayout;
 
 public class Info extends Fragment {
 

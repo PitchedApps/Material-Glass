@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.pitchedapps.material.glass.tabs.SlidingTabLayout
+    <com.pitchedapps.material.glass.views.SlidingTabLayout
         android:id="@+id/info_tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

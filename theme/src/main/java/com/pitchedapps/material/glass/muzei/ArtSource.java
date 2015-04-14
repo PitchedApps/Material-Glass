@@ -32,8 +32,8 @@ public class ArtSource extends RemoteMuzeiArtSource {
     private static final String ARTSOURCE_NAME = "Material Glass";
     JSONObject jsonobject;
 
-//    private static final String JSON_URL = "https://raw.githubusercontent.com/jahirfiquitiva/MinDesigns-Wallpapers/master/JSON-Files/walls_test.json";
     private static final String JSON_URL = "https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass/0wallpapers.json";
+    private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
 
     public static final int COMMAND_ID_SHARE = 1337;
 
@@ -85,14 +85,14 @@ public class ArtSource extends RemoteMuzeiArtSource {
             Uri artUrl = currentArtwork.getImageUri();
             String wallName = currentArtwork.getTitle();
             String authorName = currentArtwork.getByline();
-            String storeUrl = getString(R.string.play_store_link);
+            String storeUrl = MARKET_URL + getResources().getString(R.string.package_name);
             String iconPackName = getString(R.string.app_name);
 
             shareWall.putExtra(Intent.EXTRA_TEXT,
                     getString(R.string.partone) + wallName +
                             getString(R.string.parttwo) + authorName +
-                            getString(R.string.partthree) + iconPackName + getString(R.string.partfour) +
-                            getString(R.string.partfive) + storeUrl );
+                            getString(R.string.partthree) + iconPackName +
+                            getString(R.string.partfour) + storeUrl );
 
             shareWall = Intent.createChooser(shareWall, getString(R.string.share_title));
             shareWall.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

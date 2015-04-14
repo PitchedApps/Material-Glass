@@ -13,6 +13,7 @@
         android:background="@color/actionbar"
         android:minHeight="?actionBarSize"
         android:transitionName="actionBar"
+        android:elevation="@dimen/toolbar_elevation"
         app:popupTheme="@style/ThemeOverlay.AppCompat"
         app:theme="@style/MyActionBarTheme" />
 
