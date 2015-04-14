@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.DetailedWallpaper;
-import com.pitchedapps.material.glass.utils.JSONParser;
+import com.pitchedapps.material.glass.utilities.JSONParser;
 
 import org.json.JSONArray;
 import org.json.JSONException;

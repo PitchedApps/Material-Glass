@@ -42,9 +42,6 @@ public class Credits extends Fragment {
         TextView ivondesc = (TextView) root.findViewById(R.id.ivon_card_content);
         ivondesc.setText(Html.fromHtml(getString(R.string.ivon_desc)));
 
-        TextView shapeviewlib = (TextView) root.findViewById(R.id.libone_content);
-        shapeviewlib.setText(Html.fromHtml(getString(R.string.shapeview_desc)));
-
         TextView fablib = (TextView) root.findViewById(R.id.libtwo_content);
         fablib.setText(Html.fromHtml(getString(R.string.fab_desc)));
 

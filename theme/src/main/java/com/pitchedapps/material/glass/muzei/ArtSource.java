@@ -8,8 +8,8 @@ import com.google.android.apps.muzei.api.Artwork;
 import com.google.android.apps.muzei.api.RemoteMuzeiArtSource;
 import com.google.android.apps.muzei.api.UserCommand;
 import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.utils.JSONParser;
-import com.pitchedapps.material.glass.utils.Preferences;
+import com.pitchedapps.material.glass.utilities.JSONParser;
+import com.pitchedapps.material.glass.utilities.Preferences;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

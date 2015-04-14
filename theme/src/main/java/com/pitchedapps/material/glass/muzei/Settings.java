@@ -13,7 +13,7 @@ import android.widget.NumberPicker;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import com.pitchedapps.material.glass.utils.Preferences;
+import com.pitchedapps.material.glass.utilities.Preferences;
 
 import com.pitchedapps.material.glass.R;
 

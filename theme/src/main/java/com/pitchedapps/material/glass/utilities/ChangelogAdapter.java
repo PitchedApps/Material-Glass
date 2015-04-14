@@ -1,4 +1,4 @@
-package com.pitchedapps.material.glass.utils;
+package com.pitchedapps.material.glass.utilities;
 
 import android.content.Context;
 import android.content.res.TypedArray;

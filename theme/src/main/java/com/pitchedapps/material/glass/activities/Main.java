@@ -28,9 +28,9 @@ import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.pitchedapps.material.glass.utils.ChangelogAdapter;
+import com.pitchedapps.material.glass.utilities.ChangelogAdapter;
 import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.utils.Preferences;
+import com.pitchedapps.material.glass.utilities.Preferences;
 
 
 public class Main extends ActionBarActivity {

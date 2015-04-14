@@ -1,9 +1,7 @@
 package com.pitchedapps.material.glass.fragments;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Point;
-import android.support.v7.graphics.Palette;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,18 +10,13 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.BaseAdapter;
-import android.widget.FrameLayout;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.activities.DetailedWallpaper;
-import com.pitchedapps.material.glass.utils.PaletteTransformation;
-import static com.pitchedapps.material.glass.utils.PaletteTransformation.PaletteCallback;
-import com.squareup.picasso.Callback;
+
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -38,8 +31,6 @@ public class WallsGridAdapter extends BaseAdapter {
     private HashMap<String, String> jsondata = new HashMap<String, String>();
 
     private WallsHolder holder;
-
-    private boolean usePalette = false;
 
     public WallsGridAdapter(Context context,
                             ArrayList<HashMap<String, String>> arraylist, int numColumns) {
@@ -102,35 +93,11 @@ public class WallsGridAdapter extends BaseAdapter {
                 .centerCrop()
                 .placeholder(R.drawable.placeholder)
                 .error(R.drawable.error)
-                .transform(PaletteTransformation.instance())
-                .into(holder.wall,
-                new PaletteCallback(holder.wall){
-                    @Override
-                    public void onSuccess(Palette palette){
-                        holder.progressBar.setVisibility(View.GONE);
-
-                        if (usePalette) {
-                            if (palette != null) {
-                                Palette.Swatch wallSwatch = palette.getVibrantSwatch();
-                                if (wallSwatch != null) {
-                                    holder.titleBg.setBackgroundColor(wallSwatch.getRgb());
-                                    holder.titleBg.setAlpha(1);
-                                    holder.name.setTextColor(wallSwatch.getTitleTextColor());
-                                    holder.name.setAlpha(1);
-                                }
-                            }
-                        }
-
-                    }
-
-                    @Override
-                    public void onError() {
-
-                    }
-                });
-
+                .into(holder.wall);
         return wallitem;
     }
+
+
 
     class WallsHolder {
         ImageView wall;

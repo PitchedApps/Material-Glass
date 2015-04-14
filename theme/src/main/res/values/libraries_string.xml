@@ -32,14 +32,6 @@
         <b>Material Dialogs</b> is a beautiful, "easy-to-use", and customizable dialogs API, enabling you  to use Material design themed dialogs across all versions of Android.
         ]]></string>
 
-    <!--<string name="pkrequestmanager_author">Pkmmte Xeleon</string>-->
-    <!--<string name="pkrequestmanager_web">https://github.com/pkmmte/PkRequestManager</string>-->
-    <!--<string name="pkrequestmanager_name">PkRequestManager</string>-->
-    <!--<string name="pkrequestmanager_desc">-->
-		<!--<![CDATA[-->
-        <!--<b>PkRequestManager</b> is a helpful, yet simple, tool which makes it easy to load and send application icon requests for Android.-->
-        <!--]]></string>-->
-
     <string name="picasso_author">Square</string>
     <string name="picasso_name">Picasso</string>
     <string name="picasso_desc">
@@ -62,15 +54,6 @@
     <string name="materialdrawer_desc">
         <![CDATA[
         The <b>MaterialDrawer</b> library aims to provide the easiest possible implementation of a navigation drawer for your application.
-        ]]>
-    </string>
-
-    <string name="materialripples_author">Balys Valentukevicius</string>
-    <string name="materialripples_web">https://github.com/balysv/material-ripple/</string>
-    <string name="materialripples_name">Material Ripples</string>
-    <string name="materialripples_desc">
-        <![CDATA[
-        <b>Material Ripples</b> is a library to provide ripple effects on Android Views.
         ]]>
     </string>
 
