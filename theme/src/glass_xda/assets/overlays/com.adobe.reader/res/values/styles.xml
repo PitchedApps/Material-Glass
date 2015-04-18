@@ -25,4 +25,8 @@
         <item name="android:homeAsUpIndicator">@drawable/chevron_left</item>
         <item name="android:actionModeStyle">@style/readerActionModeStyle</item>
     </style>
+    <style name="adobeReaderDialogLight" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowBackground">@*common:color/dialog</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
 </resources>

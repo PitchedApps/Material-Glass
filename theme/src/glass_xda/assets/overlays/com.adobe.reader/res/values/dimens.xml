@@ -5,4 +5,9 @@
     <dimen name="color_selector_corner_radius">2.0dip</dimen>
     <dimen name="color_selector_padding">10.0dip</dimen>
     <dimen name="color_selector_dimensions">26.0dip</dimen>
+    <dimen name="bookmark_tab_layout_padding">15.0dip</dimen>
+    <dimen name="bookmark_selected_tab_stroke_height">6.0dip</dimen>
+    <dimen name="bookmark_selected_tab_stroke_offset">-6.0dip</dimen>
+    <dimen name="bookmark_unselected_tab_stroke_height">2.0dip</dimen>
+    <dimen name="bookmark_unselected_tab_stroke_offset">-22.0dip</dimen>
 </resources>
