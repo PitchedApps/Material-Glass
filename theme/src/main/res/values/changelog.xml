@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">0.9.6v2</string>
+    <string name="current_version">0.9.7</string>
 
     <string-array name="changelog_root">
+        <item>@array/v22</item>
         <item>@array/v21</item>
         <item>@array/v20</item>
         <item>@array/v19</item>
@@ -36,11 +37,23 @@
         <item></item>
     </string-array>
 
+    <string-array name="v22">
+        <item>v0.9.7</item>
+        <item>Framework: added proper ripples for holo actionbars</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <string-array name="v21">
         <item>v0.9.6</item>
         <item>New: themed relay for reddit (free and pro)</item>
         <item>New: themed ebay notifications</item>
-        <item>New: themed addobe acrobat</item>
+        <item>New: themed addobe acrobat (in xda beta version)</item>
+        <item>Icon: added true caller</item>
+        <item>Google + updates (xda version)</item>
+        <item>Play Store is more transparent</item>
         <item>UI: Code cleanup</item>
         <item>Paperboard: Update 6</item>
     </string-array>

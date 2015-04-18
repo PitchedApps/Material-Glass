@@ -113,6 +113,7 @@
 <item component="ComponentInfo{com.tencent.mm/com.tencent.mm.ui.LauncherUI}" drawable="wechat"/>
 <item component="ComponentInfo{com.quoord.tapatalkxdapre.activity/com.quoord.tapatalkpro.activity.directory.ics.IcsRebrandingEntryActivity}" drawable="xdapremium4"/>
 <item component="ComponentInfo{de.robv.android.xposed.installer/de.robv.android.xposed.installer.WelcomeActivity}" drawable="xposedinstaller"/>
+<item component="ComponentInfo{com.truecaller.phoneapp/com.truecaller.phoneapp.DialActivity}" drawable="truedialer"/>
 
 
 </resources>
