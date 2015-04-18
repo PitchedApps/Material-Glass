@@ -64,7 +64,6 @@
     </style>
     <style name="ComposeTheme" parent="@style/UnifiedEmailTheme.Appcompat">
         <item name="android:textColor">@color/text</item>
-        <!--<item name="android:background">@color/backgroundt</item>-->
         <item name="android:colorBackground">@color/backgroundt</item>
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:dropDownListViewStyle">@style/ComposeDropdownListViewStyle</item>
@@ -107,7 +106,5 @@
         <item name="android:textAlignment">viewStart</item>
     </style>
 
-    <style name="MailActivityTheme" parent="@style/UnifiedEmailTheme.Appcompat.Toolbar">
-        <item name="android:windowBackground">@color/background</item>
-    </style>
+
 </resources>

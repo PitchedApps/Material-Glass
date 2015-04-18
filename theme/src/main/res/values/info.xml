@@ -15,8 +15,9 @@
     <string-array name="info_contents">
         <item>Welcome to the info section! Please take a moment to carefully read the section below if you have any bugs or concerns
             \n\nREBOOT YOUR PHONE BEFORE SENDING BUG REPORTS.
-            \nI\'ve received way too many bug reports that were solved with a simple restart.
+            \nI\'ve received way too many bug reports that were solved with a simple restart. Additionally, DO NOTE SUBMIT REPORTS IF YOU HAVE XPOSED INSTALED. The least you should do is to disable all the modules and trying again. However, if you have any other bug reports, please note that screenshots help a lot with the fixes.
             \n\nAnother common issue is having an updated rom; you MUST have a rom with the latest updated commits for this theme to properly function. New tweaks are added every day, and as of now the major changes were merged in early March. As such, if you don\'t have those commits, you will see issues that I won\'t be able to fix.
+            \n\nMake sure you have a rom with the latest cm theme commits for everything to work properly. New changes are constantly added, so please check and use the latest rom before filing reports. However, please also note that newer roms like Cyanogen OS (not the same as CyanogenMod) do not have the commits either, so there will be some incompatibilities with it; but since you have the app themer there it shouldn\'t be a problem.
             \n\nBOOTLOOPS
             \n\nThis theme should technically never put you into a bootloop, but odd things do happen occasionally to some people. In the event that it occurs, first check to see what you have applied in the theme. Note that the bootanimation is tailored to xhdpi phones (originally xxhdpi, but I made that a separate zip to support more phones), so it may cause issues on low end devices. If the problem persists, you can always go into the TWRP (recovery) file manager and delete the apk from there. At the end of the day, please understand that the theme chooser is still in alpha, and whatever you do is your own responsibility. I have no intentions of messing up your phone, but you\'ll have to be prepared to deal with it if it happens. This theme is my daily and I can say at least for myself that it is extremely stable.
             \n\nPlease also understand that I am one themer with one phone. Apart from the Nexus 5, on very few selected roms, this theme hasn\'t been officially tested. It does however work for most users, which is a positive sign.
@@ -67,6 +68,7 @@
             &#8226; Dialer and Contacts have unpredicatable crashes, especially with custom DPI\'s or low DPI
             \n&#8226; Gmail widget and other parts have white backgrounds
             \n&#8226; Blisspop sometimes has incompatibilities. Please note that this rom is heavily modified, and deviates quite a lot from standard AOSP. As such, it may not always work with this theme.
+            \n&#8226; Some issues with Cyanogen OS; Note that they have not merged the latest theme commits, which is why it isn\'t working. It\'s up to them to update it, and us themers can\'t do anything about it yet.
         </item>
     </string-array>
 

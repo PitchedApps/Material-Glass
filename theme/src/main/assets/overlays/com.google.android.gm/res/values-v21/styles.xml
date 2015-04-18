@@ -87,4 +87,7 @@
         <item name="android:colorPrimaryDark">@color/backgroundx</item>
     </style>
     <style name="UnifiedEmailTheme.Appcompat.Toolbar" parent="@android:style/Theme.Material.NoActionBar" />
+    <style name="MailActivityTheme" parent="@style/UnifiedEmailTheme.Appcompat.Toolbar">
+        <item name="android:windowBackground">@color/background</item>
+    </style>
 </resources>

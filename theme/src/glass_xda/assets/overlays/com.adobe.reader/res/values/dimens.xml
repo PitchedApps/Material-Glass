@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="action_bar_custom_height">60.0dip</dimen>
+    <dimen name="color_selector_stroke_width">1.0dip</dimen>
+    <dimen name="color_selector_corner_radius">2.0dip</dimen>
+    <dimen name="color_selector_padding">10.0dip</dimen>
+    <dimen name="color_selector_dimensions">26.0dip</dimen>
+</resources>

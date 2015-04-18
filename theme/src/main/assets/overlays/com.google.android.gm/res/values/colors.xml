@@ -240,57 +240,20 @@
     <color name="grey_separator_color">#11ffffff</color>
     <color name="list_ad_background_color">@color/background</color>
     <color name="google_account_letter_tile_default_color">@color/text</color>
-    <color name="quantum_googred400">#ffe06055</color>
+
     <color name="quantum_googred500">#ffda4336</color>
-    <color name="quantum_googred800">#ffb93221</color>
-    <color name="quantum_gray200">#ffeeeeee</color>
+
+    <color name="quantum_gray200">@color/backgroundx</color>
     <color name="quantum_gray400">@color/backgroundx</color>
-    <color name="quantum_pink300">#fff06292</color>
-    <color name="quantum_deeppurple300">#ff9575cd</color>
-    <color name="quantum_deeppurpleA100">#ffb388ff</color>
-    <color name="quantum_indigo900">@color/text</color>
-    <color name="quantum_indigoA100">#ff8c9eff</color>
-    <color name="quantum_googblue400">#ff5e97f6</color>
-    <color name="quantum_googblue500">#ff4285f4</color>
-    <color name="quantum_lightblue600">@color/background</color>
-    <color name="quantum_lightblue700">#ff0288d1</color>
-    <color name="quantum_cyan300">#ff4dd0e1</color>
-    <color name="quantum_tealA700">#ff00bfa5</color>
-    <color name="quantum_googgreen500">#ff0f9d58</color>
-    <color name="quantum_googgreenA700">#ff00c853</color>
-    <color name="quantum_lightgreen400">#ff9ccc65</color>
-    <color name="quantum_yellow700">#fffbc02d</color>
-    <color name="quantum_yellow800">#fff9a825</color>
-    <color name="quantum_deeporange500">#ffff5722</color>
-    <color name="quantum_deeporange700">#ffe64a19</color>
-    <color name="quantum_deeporangeA200">#ffff6e40</color>
-    <color name="quantum_grey400">#ff9e9e9e</color>
+
+    <color name="quantum_lightblue600">@color/backgroundx</color>
+    <color name="quantum_lightblue700">@color/backgroundx</color>
+
+    <color name="quantum_grey400">@color/backgroundx</color>
     <color name="grey_15pc">@color/aaa</color>
     <color name="grey_5pc">@color/aaa</color>
     <color name="white_opacity_60pc">#99ffffff</color>
-    <color name="brand_outlook">#ff258edc</color>
-    <color name="brand_yahoo">#ff500095</color>
-    <color name="brand_aol">#ff212121</color>
-    <color name="brand_apple">#ff999999</color>
-    <color name="brand_mail_ru">#ffffa930</color>
-    <color name="brand_qq">#ffbf360c</color>
-    <color name="brand_comcast">#ffd10021</color>
-    <color name="brand_docomo">#ffff1744</color>
-    <color name="brand_bol_br">#ff00a996</color>
-    <color name="brand_163_com">#ffb93221</color>
-    <color name="brand_ig_br">#ff8999f0</color>
-    <color name="brand_terra_br">#fff57f17</color>
-    <color name="brand_verizon">#f6404719</color>
-    <color name="brand_uol_br">#ffc68c3b</color>
-    <color name="brand_orange_fr">#ffff8200</color>
-    <color name="domain_hotmail_com">#ffe64a19</color>
-    <color name="domain_msn_com">#ff0ca4fb</color>
-    <color name="domain_live_co_uk">#ff8bc34a</color>
-    <color name="domain_windowslive_com">#ff689f38</color>
-    <color name="domain_me_com">#ff00bcd4</color>
-    <color name="domain_icloud_com">#ff78b1c6</color>
-    <color name="domain_hanmail_com">#ffef625b</color>
-    <color name="domain_naver_com">#ff2d8400</color>
+
 
     <!--new april 2-->
     <color name="ad_app_install_text_color">@color/text</color>

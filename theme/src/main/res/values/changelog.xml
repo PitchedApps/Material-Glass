@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">0.9.6</string>
+    <string name="current_version">0.9.6v2</string>
 
     <string-array name="changelog_root">
+        <item>@array/v21</item>
         <item>@array/v20</item>
         <item>@array/v19</item>
         <item>@array/v18</item>
@@ -33,6 +34,15 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+
+    <string-array name="v21">
+        <item>v0.9.6</item>
+        <item>New: themed relay for reddit (free and pro)</item>
+        <item>New: themed ebay notifications</item>
+        <item>New: themed addobe acrobat</item>
+        <item>UI: Code cleanup</item>
+        <item>Paperboard: Update 6</item>
     </string-array>
 
     <string-array name="v20">
