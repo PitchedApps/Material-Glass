@@ -20,8 +20,8 @@ android {
         applicationId "com.pitchedapps.material.glass"
         minSdkVersion 21
         targetSdkVersion 22
-        versionCode 96
-        versionName '0.9.6'
+        versionCode 97
+        versionName '0.9.7'
     }
     buildTypes {
         release {
@@ -50,19 +50,19 @@ dependencies {
     compile 'com.android.support:support-v4:22.0.0'
     compile 'com.android.support:cardview-v7:22.0.0'
 //Material Dialogs ftw
-    compile 'com.afollestad:material-dialogs:0.6.7.2'
+    compile 'com.afollestad:material-dialogs:0.7.2.4'
 //Material Drawer ftw
-    compile('com.mikepenz.materialdrawer:library:2.7.0@aar') {
+    compile('com.mikepenz.materialdrawer:library:2.7.9@aar') {
         transitive = true
     }
 //Needed for wallpapers section
-    compile 'com.squareup.picasso:picasso:2.5.0'
-    compile 'com.squareup.okhttp:okhttp:2.2.0'
-    compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.okhttp:okhttp:2.3.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0'
 //Muzei Support
     compile 'com.google.android.apps.muzei:muzei-api:2.0'
 //FloatingActionButtons
-    compile 'com.melnykov:floatingactionbutton:1.2.0'
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
     compile 'com.getbase:floatingactionbutton:1.9.0'
 //not implemented yet
     compile 'com.android.support:recyclerview-v7:22.0.0'

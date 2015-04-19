@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="key_background_lxx_dark">@color/backgroundx</item>
+    <item type="drawable" name="key_background_lxx_light">@color/background</item>
+    <item type="drawable" name="key_background_pressed_lxx_light">#19ffffff</item>
+    <item type="drawable" name="writing_area_background_dark">@color/backgroundx</item>
+    <item type="drawable" name="writing_area_background_bright">@color/background</item>
+    <item type="drawable" name="btn_candidate_pressed_dark">@color/backgrounddx</item>
+    <item type="drawable" name="btn_candidate_pressed_light">@color/backgroundd</item>
+    <item type="drawable" name="suggested_word_background_selected_lxx_dark">#19ffffff</item>
+</resources>

@@ -40,8 +40,8 @@
     <string-array name="v22">
         <item>v0.9.7</item>
         <item>Framework: added proper ripples for holo actionbars</item>
-        <item></item>
-        <item></item>
+        <item>DocumentsUI: fully themed (based off of Euphoria)</item>
+        <item>New: themed google handwriting</item>
         <item></item>
         <item></item>
     </string-array>
