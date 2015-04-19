@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bitmap android:src="@drawable/ic_root_usb_light_alpha" android:tint="@color/secondary_text_material_dark"
+<bitmap android:src="@drawable/ic_root_usb_light_alpha" android:tint="@color/textt"
   xmlns:android="http://schemas.android.com/apk/res/android" />
