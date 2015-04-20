@@ -3,11 +3,11 @@
     <color name="batterymeter_base_color">@color/text</color>
     <color name="batterymeter_bolt_color">@color/text</color>
     <color name="batterymeter_charge_color">@color/text</color>
-    <color name="batterymeter_frame_color">@color/texttt</color>
+    <color name="batterymeter_frame_color">#66ffffff</color>
     <color name="current_user_border_color">@color/textt</color>
     <color name="data_usage_graph_track">#33FFFFFF</color>
     <color name="data_usage_graph_warning">#FFFFFFFF</color>
-    <color name="data_usage_secondary">@color/textt</color>
+    <color name="data_usage_secondary">@color/texttt</color>
     <color name="doze_small_icon_background_color">#ff434343</color>
     <color name="fab_color">@color/dblue</color>
     <color name="fake_shadow_end_color">#03000000</color>

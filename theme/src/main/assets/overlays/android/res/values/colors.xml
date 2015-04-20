@@ -25,7 +25,7 @@
     <color name="material_blue_grey_900">@color/backgroundd</color>
     <color name="material_blue_grey_950">@color/backgroundd</color>
     <color name="config_defaultNotificationColor">#aa000000</color>
-    <color name="battery_saver_mode_color">@color/dblue</color>
+    <color name="battery_saver_mode_color">#fff4511e</color>
 
     <color name="bright_foreground_dark">@color/text</color>
     <color name="bright_foreground_light">@color/background</color>
