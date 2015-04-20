@@ -76,6 +76,7 @@
             \n&#8226; Gmail widget and other parts have white backgrounds; sender has black text: I\'m aware of the issues
             \n&#8226; Blisspop sometimes has incompatibilities. Please note that this rom is heavily modified, and deviates quite a lot from standard AOSP. As such, it may not always work with this theme.
             \n&#8226; Some issues with Cyanogen OS; Note that they have not merged the latest theme commits, which is why it isn\'t working. It\'s up to them to update it, and us themers can\'t do anything about it yet.
+            \n&#8226; Whatsapp settings is white on white; will be fixed when I have time.
         </item>
     </string-array>
 
