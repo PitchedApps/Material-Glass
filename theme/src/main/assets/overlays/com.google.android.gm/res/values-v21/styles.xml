@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppBaseTheme" parent="@style/Platform.AppCompat" />
-    <style name="Platform.AppCompat" parent="@android:style/Theme.Material.Wallpaper">
-        <item name="android:statusBarColor">@color/background</item>
-        <item name="android:navigationBarColor">@color/background</item>
+    <style name="Platform.AppCompat" parent="@*common:style/Pitch.AppCompat">
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
-        <item name="buttonBarStyle">@android:style/ButtonBar</item>
-        <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@android:style/Widget.Material.ActionBar.TabView" />
@@ -89,5 +85,6 @@
     <style name="UnifiedEmailTheme.Appcompat.Toolbar" parent="@android:style/Theme.Material.NoActionBar" />
     <style name="MailActivityTheme" parent="@style/UnifiedEmailTheme.Appcompat.Toolbar">
         <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
     </style>
 </resources>
