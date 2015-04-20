@@ -3,7 +3,7 @@
     <color name="batterymeter_base_color">@color/text</color>
     <color name="batterymeter_bolt_color">@color/text</color>
     <color name="batterymeter_charge_color">@color/text</color>
-    <color name="batterymeter_frame_color">@color/texttt</color>
+    <color name="batterymeter_frame_color">#66ffffff</color>
     <color name="current_user_border_color">@color/textt</color>
     <color name="data_usage_graph_track">#33FFFFFF</color>
     <color name="data_usage_graph_warning">#FFFFFFFF</color>
