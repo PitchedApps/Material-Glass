@@ -77,6 +77,17 @@
     </style>
 
 
+    <style name="ThemeOverlay.Material" parent="@android:style/ThemeOverlay.Material">
+        <item name="android:panelColorBackground">@color/backgroundt</item>
+        <item name="android:panelColorForeground">@color/text</item>
+        <item name="android:colorBackground">@color/backgroundt</item>
+        <item name="android:colorForeground">@color/text</item>
+        <item name="android:windowBackground">@color/backgroundt</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
+        <item name="android:colorControlActivated">@color/text</item>
+        <item name="android:navigationBarColor">@color/black_t</item>
+    </style>
     <style name="Theme.Material" parent="@android:style/Theme.Material">
         <item name="android:panelColorBackground">@color/backgroundt</item>
         <item name="android:panelColorForeground">@color/text</item>
@@ -87,8 +98,6 @@
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
         <item name="android:colorControlActivated">@color/text</item>
         <item name="android:navigationBarColor">@color/black_t</item>
-        <!--<item name="android:actionBarStyle">@style/Widget.Material.ActionBar</item>-->
-        <!--<item name="android:statusBarColor">@*common:color/status</item>-->
     </style>
     <style name="Theme.Material.Wallpaper" parent="@android:style/Theme.Material.Wallpaper">
         <item name="android:panelColorBackground">@color/backgroundt</item>
@@ -99,9 +108,6 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundtt</item>
         <item name="android:colorControlActivated">@color/text</item>
-        <item name="android:navigationBarColor">@color/black_t</item>
-        <!--<item name="android:actionBarStyle">@style/Widget.Material.ActionBar</item>-->
-        <!--<item name="android:statusBarColor">@*common:color/status</item>-->
     </style>
     <style name="Theme.Material.Light" parent="@android:style/Theme.Material.Light">
         <item name="android:panelColorBackground">@color/backgroundt_light</item>
@@ -136,7 +142,7 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
         <item name="android:statusBarColor">@color/backgroundt</item>
-        <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
+        <!--<item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>-->
     </style>
     <style name="Theme.DeviceDefault.Light.Dialog" parent="@android:style/Theme.DeviceDefault.Dialog" />
     <style name="Widget.DeviceDefault.Light" parent="@android:style/Widget.DeviceDefault" />
