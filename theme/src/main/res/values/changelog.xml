@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">0.9.7-beta1</string>
+    <string name="current_version">0.9.7</string>
 
     <string-array name="changelog_root">
+        <item>@array/v23</item>
         <item>@array/v22</item>
         <item>@array/v21</item>
         <item>@array/v20</item>
@@ -25,6 +26,7 @@
         <item>@array/v3</item>
         <item>@array/v2</item>
         <item>@array/v1</item>
+        <item>@array/v0</item>
     </string-array>
 
 
@@ -37,23 +39,42 @@
         <item></item>
     </string-array>
 
+    <string-array name="v23">
+        <item>v0.9.7</item>
+        <item>Settings: Removed some teal (add qs tiles)</item>
+        <item>Settings: Fixed up battery chart section</item>
+        <item>Settings: Storage section colors now translucent</item>
+        <item>Google Services: Merged with common folders for fixes (xda alpha)</item>
+        <item>Gmail: Fixed recipient background color</item>
+        <item>Gmail: Fixed up cache colors (now solid black)</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <string-array name="v22">
         <item>v0.9.7-beta1</item>
-        <item>Framework: added proper ripples for holo actionbars</item>
-        <item>DocumentsUI: fully themed (based off of Euphoria)</item>
-        <item>New: themed google handwriting</item>
-        <item>New: themed google services (xda alpha)</item>
-        <item>New: themed adiutor (use dark theme)</item>
-        <item>Gmail: lots of fixes (widget is now clear!)</item>
-        <item>SystemUI: fixed battery circle base color</item>
+        <item>Framework: Added proper ripples for holo actionbars</item>
+        <item>DocumentsUI: Fully themed (based off of Euphoria)</item>
+        <item>New: Themed google handwriting</item>
+        <item>New: Themed google services (xda alpha)</item>
+        <item>New: Themed adiutor (use dark theme)</item>
+        <item>Gmail: Lots of fixes (widget is now clear!)</item>
+        <item>SystemUI: Fixed battery circle base color</item>
     </string-array>
 
     <string-array name="v21">
         <item>v0.9.6</item>
-        <item>New: themed relay for reddit (free and pro)</item>
-        <item>New: themed ebay notifications</item>
-        <item>New: themed adobe acrobat (in xda beta version)</item>
-        <item>Icon: added true caller</item>
+        <item>New: Themed relay for reddit (free and pro)</item>
+        <item>New: Themed ebay notifications</item>
+        <item>New: Themed adobe acrobat (in xda beta version)</item>
+        <item>Icon: Added true caller</item>
         <item>Google + updates (xda version)</item>
         <item>Play Store is more transparent</item>
         <item>UI: Code cleanup</item>
@@ -86,27 +107,27 @@
 
     <string-array name="v17">
         <item>v0.9.3</item>
-        <item>Framework: fixed notification button colors</item>
-        <item>Font: changed to Helvetica Neue</item>
-        <item>Gmail: fixed conversation background color</item>
-        <item>Nova: fixed icon picker crash (white on white though)</item>
+        <item>Framework: Fixed notification button colors</item>
+        <item>Font: Changed to Helvetica Neue</item>
+        <item>Gmail: Fixed conversation background color</item>
+        <item>Nova: Fixed icon picker crash (white on white though)</item>
     </string-array>
 
     <string-array name="v16">
         <item>v0.9.2</item>
-        <item>SystemUI: transparent volume panel</item>
-        <item>CM MMS: fixed drawables</item>
-        <item>Framework: fixed resolver list</item>
-        <item>Framework: fixed fastscroll label color</item>
-        <item>Framework: reverted material light text colors</item>
+        <item>SystemUI: Transparent volume panel</item>
+        <item>CM MMS: Fixed drawables</item>
+        <item>Framework: Fixed resolver list</item>
+        <item>Framework: Fixed fastscroll label color</item>
+        <item>Framework: Reverted material light text colors</item>
         <item>Removed Relay for reddit (reddit news) for now</item>
         <item>Google + tweaks</item>
     </string-array>
 
     <string-array name="v15">
         <item>v0.9.2-beta1</item>
-        <item>vXDA: modified google + to be more dependent on app compat</item>
-        <item>vXDA: themed ModernHub (material Github)</item>
+        <item>vXDA: Modified google + to be more dependent on app compat</item>
+        <item>vXDA: Themed ModernHub (material Github)</item>
         <item>SystemUI tweaks</item>
         <item>PaperBoard massive UI cleanup</item>
     </string-array>
@@ -233,6 +254,12 @@
         <item>v0.7.1</item>
         <item>Initial changelog</item>
         <item>Testing in progress</item>
+    </string-array>
+
+    <string-array name="v0">
+        <item>v0.0.1</item>
+        <item>January 16th, 2015: Material Glass is born</item>
+        <item>January 20th, 2015: Material Glass appears in the Play Store</item>
     </string-array>
 
 </resources>

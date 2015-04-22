@@ -67,5 +67,18 @@
     <item name="android:backgroundDimAmount">0.6</item>
     <item name="android:disabledAlpha">0.5</item>
     -->
+    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@android:style/ThemeOverlay.Material.Dark">
+        <item name="isLightTheme">false</item>
+        <item name="colorControlHighlight">@color/ripple</item>
+    </style>
+
+    <!--Google Services-->
+    <style name="common.Theme.Base.NoAppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="dividerHorizontal">?android:dividerHorizontal</item>
+    </style>
+
+
 
 </resources>

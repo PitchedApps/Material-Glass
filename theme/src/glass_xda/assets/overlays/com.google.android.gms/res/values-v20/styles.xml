@@ -4,10 +4,7 @@
         <item name="android:backgroundDimAmount">0.6</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
-    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@android:style/ThemeOverlay.Material.Dark">
-        <!--<item name="isLightTheme">false</item>-->
-        <!--<item name="colorControlHighlight">@color/ripple_material_dark</item>-->
-    </style>
+    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@*common:style/Base.ThemeOverlay.AppCompat.Light"/>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@android:style/Widget.Material.ActionBar.TabView" />
@@ -23,12 +20,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
     </style>
-    <style name="TrustAgentNotificationWithNoActionBar" parent="@android:style/Theme.DeviceDefault.NoActionBar" />
-    <style name="common.Theme.Base.NoAppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
-        <!--<item name="buttonBarStyle">?android:buttonBarStyle</item>-->
-        <!--<item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>-->
-        <item name="dividerHorizontal">?android:dividerHorizontal</item>
-    </style>
+    <style name="TrustAgentNotificationWithNoActionBar" parent="@*common:style/common.Theme.Base.NoAppCompat.Light.Dialog"/>
     <style name="drive_Button_Platform" parent="@android:style/Widget.Material.Button.Borderless" />
     <style name="drive_ProgressBarHorizontalIndeterminate" parent="@android:style/Widget.Material.ProgressBar.Horizontal">
         <item name="android:indeterminateOnly">true</item>
@@ -51,19 +43,19 @@
     <style name="SetBackupAccountActivity" parent="@android:style/Theme.Material.Dialog" />
     <style name="auth_minutemaid_theme_material" parent="@android:style/Theme.Material.NoActionBar">
         <!--<item name="android:textColorSecondary">@color/auth_minutemaid_color_secondary_light</item>-->
-        <!--<item name="android:windowSoftInputMode">adjustPan</item>-->
+        <item name="android:windowSoftInputMode">adjustPan</item>
         <!--<item name="android:colorAccent">@color/auth_minutemaid_color_accent_light</item>-->
-        <!--<item name="auth_setup_wizard_divider_color">@color/auth_minutemaid_divider_color_light</item>-->
-        <!--<item name="auth_setup_wizard_link_color">@color/auth_minutemaid_link_color_light</item>-->
+        <item name="auth_setup_wizard_divider_color">@color/auth_minutemaid_divider_color_light</item>
+        <item name="auth_setup_wizard_link_color">@color/auth_minutemaid_link_color_light</item>
     </style>
     <style name="auth_setup_wizard_theme_material.light" parent="@android:style/Theme.Material.NoActionBar">
         <!--<item name="android:textColorSecondary">@color/auth_setup_wizard_color_secondary_light</item>-->
-        <!--<item name="android:windowSoftInputMode">adjustPan</item>-->
+        <item name="android:windowSoftInputMode">adjustPan</item>
         <!--<item name="android:colorAccent">@color/auth_setup_wizard_color_accent_light</item>-->
         <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
         <!--<item name="android:navigationBarColor">@android:color/transparent</item>-->
-        <!--<item name="auth_setup_wizard_divider_color">@color/auth_setup_wizard_divider_color_light</item>-->
-        <!--<item name="auth_setup_wizard_link_color">@color/auth_setup_wizard_link_color_light</item>-->
+        <item name="auth_setup_wizard_divider_color">@*common:color/divider</item>
+        <item name="auth_setup_wizard_link_color">@color/textt</item>
     </style>
 
 

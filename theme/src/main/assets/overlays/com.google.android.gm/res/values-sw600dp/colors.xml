@@ -3,5 +3,5 @@
     <color name="folder_list_divider_color">#22ffffff</color>
     <color name="loading_messages_background_color">@color/background</color>
     <color name="mail_activity_status_bar_color">@color/backgroundx</color>
-    <color name="conversation_list_background_color">@color/background</color>
+    <color name="conversation_list_background_color">@android:color/transparent</color>
 </resources>

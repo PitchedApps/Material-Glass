@@ -14,7 +14,7 @@
     <color name="manage_accounts_text_color">@color/text</color>
     <color name="add_accounts_text_color">@color/manage_accounts_text_color</color>
     <color name="account_text_color">@color/manage_accounts_text_color</color>
-    <color name="white">@color/background</color>
+    <color name="white">@color/bbb</color>
     <color name="circle_background">@color/background</color>
     <color name="line_background">@color/backgroundd</color>
     <color name="ampm_text_color">@color/textt</color>
@@ -46,17 +46,19 @@
     <color name="chips_dropdown_background_activated">@color/backgroundd</color>
     <color name="chips_dropdown_background_pressed">@color/backgroundd</color>
     <color name="autocomplete_divider_color">#11ffffff</color>
-    <color name="chip_background">@color/background</color>
+    <!--sender circle background-->
+    <color name="chip_background">#60ffffff</color>
     <color name="chip_background_selected">@color/backgroundd</color>
     <color name="chip_background_invalid">#ffdb4437</color>
     <color name="abc_search_url_text_normal">@color/text</color>
     <color name="abc_search_url_text_selected">@color/text</color>
     <color name="abc_search_url_text_pressed">@color/text</color>
     <color name="abc_input_method_navigation_guard">@color/text</color>
-    <color name="background_material_dark">@color/background</color>
-    <color name="background_material_light">@color/background</color>
-    <color name="background_floating_material_dark">#cc111111</color>
-    <color name="background_floating_material_light">#cc111111</color>
+    <!--don't know-->
+    <color name="background_material_dark">@color/ddd</color>
+    <color name="background_material_light">@color/ddd</color>
+    <color name="background_floating_material_dark">#cc060606</color>
+    <color name="background_floating_material_light">#cc060606</color>
     <color name="primary_material_dark">@color/backgrounddx</color>
     <color name="primary_material_light">@color/backgrounddx</color>
     <color name="primary_dark_material_dark">@color/backgrounddx</color>
@@ -131,7 +133,8 @@
     <color name="default_folder_foreground_color">@color/gray_text_color</color>
     <color name="account_item_selected_text_color">@color/text</color>
     <color name="folder_list_heading_text_color">@color/text_color_medium_grey</color>
-    <color name="list_background_color">@color/background</color>
+    <!--drawer color-->
+    <color name="list_background_color">#a0000000</color>
     <color name="drawer_item_activated_background_color">#12ffffff</color>
     <color name="mini_drawer_activated_background_color">@color/background</color>
     <color name="folder_list_divider_color">@color/divider_color</color>
@@ -139,17 +142,19 @@
     <color name="compose_user_text">@color/text_color_black</color>
     <color name="compose_label_hint">@color/text_color_hint_grey</color>
     <color name="conv_header_add_label_text">@color/text</color>
-    <color name="conv_header_add_label_background">@color/background</color>
-    <color name="conversation_view_border_color">@color/divider_color</color>
-    <color name="conversation_view_background_color">@color/background</color>
+    <color name="conv_header_add_label_background">@color/bbb</color>
+    <color name="conversation_view_border_color">@android:color/transparent</color>
+    <!--cache when scrolling messages is white, hence below is opaque-->
+    <color name="conversation_view_background_color">@color/backgroundx</color>
     <color name="conversation_view_text_color_light">@color/text_color_grey</color>
     <color name="conversation_view_text_color_dark">@color/text_color_black</color>
-    <color name="conversation_view_text_color_link_blue">@color/text_color_blue</color>
+    <color name="conversation_view_text_color_link_blue">@color/textt</color>
     <color name="conversation_view_footer_text_color">@color/textt</color>
-    <color name="conversation_view_footer_load_more_text_color">@color/accent_blue</color>
+    <color name="conversation_view_footer_load_more_text_color">@color/text</color>
     <color name="widget_header_bg_color">@color/background</color>
     <color name="widget_conversation_list_divider_color">#22ffffff</color>
-    <color name="attachment_name_color">#ffaaaaaa</color>
+    <color name="attachment_name_color">@color/aaa</color>
+    <!--<color name="attachment_name_color">#ffaaaaaa</color>-->
     <color name="attachment_tile_shadow_box_color">#33000000</color>
     <color name="attachment_tile_subtitle_color">@color/text_color_hint_grey</color>
     <color name="attachment_image_background_color">@color/backgroundd</color>
@@ -251,6 +256,7 @@
     <color name="quantum_lightblue700">@color/backgroundx</color>
 
     <color name="quantum_grey400">@color/backgroundx</color>
+    <!--???-->
     <color name="grey_15pc">@color/aaa</color>
     <color name="grey_5pc">@color/aaa</color>
     <color name="white_opacity_60pc">#99ffffff</color>
@@ -265,8 +271,10 @@
     <color name="chips_dropdown_text_activated">@color/text</color>
     <color name="chips_dropdown_text_default">@color/text</color>
     <color name="chips_dropdown_text_highlighted">@color/text</color>
-    <color name="conversation_view_overlay_background_color">#30000000</color>
-    <color name="light_grey">@color/aaa</color>
+    <!--main background in individual conversations, containing the sender and reply sections-->
+    <color name="conversation_view_overlay_background_color">@color/backgroundx</color>
+    <!--???-->
+    <color name="light_grey">@color/ccc</color>
     <color name="play_action_button_pressed_grey">#80333333</color>
     <color name="play_apps_primary">#ff689f38</color>
     <color name="play_highlight_blue_fill">@color/backgroundd</color>
@@ -287,6 +295,9 @@
     <color name="abstractcomposearea">#88333333</color>
     <color name="aaa">#ffff00ff</color>
     <color name="bbb">#ff00ffff</color>
+    <color name="ccc">#ffffff00</color>
+    <color name="ddd">#ffff0000</color>
+    <color name="eee">#ff00ff00</color>
     <color name="textneutral">#ffaaaaaa</color>
     <color name="text">#ffffffff</color>
     <color name="textt">#ddffffff</color>

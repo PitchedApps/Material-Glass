@@ -2,4 +2,8 @@
 <resources>
     <attr name="buttonBarStyle" format="reference" />
     <attr name="buttonBarButtonStyle" format="reference" />
+    <attr name="colorControlHighlight" format="color" />
+    <attr name="isLightTheme" format="boolean" />
+    <!--google services-->
+    <attr name="dividerHorizontal" format="reference" />
 </resources>
