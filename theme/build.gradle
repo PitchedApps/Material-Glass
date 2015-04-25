@@ -1,3 +1,12 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.0'
+    }
+}
+
 apply plugin: 'com.android.application'
 
 repositories {
@@ -13,18 +22,18 @@ android {
         applicationId "com.pitchedapps.material.glass"
         minSdkVersion 21
         targetSdkVersion 22
-        versionCode 97
-        versionName '0.9.7'
+        versionCode 98
+        versionName '0.9.8'
     }
 
     buildTypes {
         debug {
-            minifyEnabled true
+            minifyEnabled false
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         release {
-            minifyEnabled true
+            minifyEnabled false
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
