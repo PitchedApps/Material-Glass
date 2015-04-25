@@ -8,7 +8,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -63,7 +63,7 @@ public class Wallpapers extends Fragment {
 
         context = getActivity();
 
-        ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
+        ActionBar toolbar = ((AppCompatActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.section_four);
 
         root = (ViewGroup) inflater.inflate(R.layout.section_wallpapers, null);

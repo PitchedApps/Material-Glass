@@ -3,7 +3,7 @@ package com.pitchedapps.material.glass.muzei;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -17,7 +17,7 @@ import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.utilities.Preferences;
 
 
-public class Settings extends ActionBarActivity implements View.OnClickListener {
+public class Settings extends AppCompatActivity implements View.OnClickListener {
 
     private RadioButton minute, hour;
     private NumberPicker numberpicker;

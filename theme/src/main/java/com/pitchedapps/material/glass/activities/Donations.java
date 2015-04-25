@@ -21,7 +21,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.pitchedapps.material.glass.BuildConfig;
@@ -29,8 +29,8 @@ import com.pitchedapps.material.glass.R;
 
 import org.sufficientlysecure.donations.DonationsFragment;
 
-public class Donations extends ActionBarActivity {
-//public class Donations extends ActionBarActivity implements View.OnClickListener {
+public class Donations extends AppCompatActivity {
+//public class Donations extends AppCompatActivity implements View.OnClickListener {
 
     /**
      * Google

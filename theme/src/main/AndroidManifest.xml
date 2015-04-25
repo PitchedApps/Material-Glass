@@ -77,7 +77,7 @@
         <activity
             android:name="com.pitchedapps.material.glass.activities.DetailedWallpaper"
             android:label="@string/title_activity_detailed_wallpaper"
-            android:theme="@style/Default">
+            android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pitchedapps.material.glass.activities.DetailedWallpaper" />
@@ -85,7 +85,7 @@
         <activity
             android:name="com.pitchedapps.material.glass.activities.Donations"
             android:label="@string/donate"
-            android:theme="@style/Default">
+            android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pitchedapps.material.glass.activities.Main" />
@@ -111,7 +111,7 @@
             android:name="com.pitchedapps.material.glass.muzei.Settings"
             android:exported="true"
             android:label="@string/muzei_settings"
-            android:theme="@style/Default"
+            android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
     </application>
 

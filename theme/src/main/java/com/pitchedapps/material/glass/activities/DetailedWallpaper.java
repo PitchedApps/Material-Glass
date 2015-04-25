@@ -10,7 +10,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
@@ -29,7 +29,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 
-public class DetailedWallpaper extends ActionBarActivity {
+public class DetailedWallpaper extends AppCompatActivity {
 
     public String wall;
     private Toolbar toolbar;

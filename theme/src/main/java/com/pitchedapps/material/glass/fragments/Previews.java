@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,7 +27,7 @@ public class Previews extends Fragment {
 
         context = getActivity();
 
-        ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
+        ActionBar toolbar = ((AppCompatActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.section_two);
         toolbar.setElevation(0);
 
