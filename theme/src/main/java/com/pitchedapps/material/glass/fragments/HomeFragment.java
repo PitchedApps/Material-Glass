@@ -14,17 +14,16 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.pitchedapps.material.glass.activities.MainActivity;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ObservableScrollView;
 import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.activities.Donations;
+import com.pitchedapps.material.glass.activities.DonationsActivity;
 
 public class HomeFragment extends Fragment {
 
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
 
-//    private String PlayStoreDevAccount, PlayStoreListing, AppOnePackage, AppTwoPackage, AppThreePackage;
+    //    private String PlayStoreDevAccount, PlayStoreListing, AppOnePackage, AppTwoPackage, AppThreePackage;
     private String PGL;
 
     @Override
@@ -54,7 +53,7 @@ public class HomeFragment extends Fragment {
         donatebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent donate = new Intent(getActivity(), Donations.class);
+                Intent donate = new Intent(getActivity(), DonationsActivity.class);
                 startActivity(donate);
                 //TODO add animations
             }

@@ -53,10 +53,14 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
  <!--dialog-->
-<dimen name="changelog">0dp</dimen>
+    <dimen name="changelog">0dp</dimen>
     <dimen name="md_title_textsize">18sp</dimen>
     <dimen name="md_content_textsize">14sp</dimen>
     <dimen name="md_button_textsize">14sp</dimen>
     <dimen name="md_listitem_textsize">14sp</dimen>
+
+
+    <dimen name="image_home_padding">5dp</dimen>
+
 
 </resources>

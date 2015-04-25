@@ -3,7 +3,6 @@ package com.pitchedapps.material.glass.fragments;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,22 +15,11 @@ import android.widget.ImageView;
 import com.pitchedapps.material.glass.R;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
 
 public class IconsFragment extends Fragment {
 
     private String[] iconsnames;
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.icons_grid, container, false);
-        GridView gridview = (GridView) view.findViewById(R.id.icons_grid);
-//        gridview.setColumnWidth(convertToPixel(72) + convertToPixel(4));
-        final IconAdapter icAdapter = new IconAdapter();
-        gridview.setAdapter(icAdapter);
-        return view;
-    }
 
     public static IconsFragment newInstance(int iconsArray) {
         IconsFragment fragment = new IconsFragment();
@@ -39,6 +27,15 @@ public class IconsFragment extends Fragment {
         args.putInt("iconsArrayId", iconsArray);
         fragment.setArguments(args);
         return fragment;
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.icons_grid, container, false);
+        GridView gridview = (GridView) view.findViewById(R.id.icons_grid);
+        final IconAdapter icAdapter = new IconAdapter();
+        gridview.setAdapter(icAdapter);
+        return view;
     }
 
     private class IconAdapter extends BaseAdapter {
@@ -81,34 +78,10 @@ public class IconsFragment extends Fragment {
 
             holder.icon.startAnimation(anim);
             holder.icon.setImageResource(mThumbs.get(position));
-//            holder.content.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    View dialogIconView = View.inflate(getActivity(), R.layout.dialog_icon, null);
-//                    ImageView dialogIcon = (ImageView) dialogIconView.findViewById(R.id.dialogicon);
-//                    dialogIcon.setImageResource(mThumbs.get(position));
-//                    String name = iconsnames[position].toLowerCase(Locale.getDefault());
-//                    new MaterialDialog.Builder(getActivity())
-//                            .customView(dialogIconView, false)
-//                            .title(convertText(name))
-//                            .positiveText(R.string.close)
-//                            .show();
-//                }
-//            });
+
 
             return convertView;
         }
-
-//        class IconsHolder {
-//
-//            final ImageView icon;
-//            final MaterialRippleLayout content;
-//
-//            IconsHolder(View v) {
-//                icon = (ImageView) v.findViewById(R.id.icon_img);
-//                content = (MaterialRippleLayout) v.findViewById(R.id.icons_ripple);
-//            }
-//        }
 
         private void loadIcon() {
             mThumbs = new ArrayList<>();
@@ -127,30 +100,17 @@ public class IconsFragment extends Fragment {
                     final int thumbRes = resources.getIdentifier(extra, "drawable", packageName);
                     if (thumbRes != 0)
                         mThumbs.add(thumbRes);
-                    }
                 }
             }
         }
 
-    private int convertToPixel(int dp) {
-        float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp,
-                getActivity().getResources().getDisplayMetrics());
-        return (int) px;
+        class IconsHolder {
+            ImageView icon;
+
+            IconsHolder(View v) {
+                icon = (ImageView) v.findViewById(R.id.icon_img);
+            }
+        }
     }
-
-//    private String convertText(String name) {
-//        String partialConvertedText = name.replaceAll("_", " ");
-//        String[] text = partialConvertedText.split("\\s+");
-//        StringBuilder sb = new StringBuilder();
-//        if (text[0].length() > 0) {
-//            sb.append(Character.toUpperCase(text[0].charAt(0))).append(text[0].subSequence(1, text[0].length()).toString().toLowerCase());
-//            for (int i = 1; i < text.length; i++) {
-//                sb.append(" ");
-//                sb.append(Character.toUpperCase(text[i].charAt(0))).append(text[i].subSequence(1, text[i].length()).toString().toLowerCase());
-//            }
-//        }
-//        return sb.toString();
 //    }
-
-
 }

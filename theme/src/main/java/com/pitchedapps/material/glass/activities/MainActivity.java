@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                     break;
                                 case 4:
-                                    Intent intent = new Intent(MainActivity.this, Donations.class);
+                                    Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
                                     startActivity(intent);
                                     overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                                     break;
@@ -282,7 +282,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onNeutral(MaterialDialog dialog) {
-                        Intent intent = new Intent(MainActivity.this, Donations.class);
+                        Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
                         startActivity(intent);
                     }
                 })
