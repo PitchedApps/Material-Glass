@@ -152,10 +152,8 @@ public class DetailedWallpaper extends AppCompatActivity {
         if (isFirstRun) {
 
             File folder = new File(saveWallLocation);
-            if (!folder.exists()) {
+            if (!folder.exists())
                 folder.mkdirs();
-            }
-
             getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
                     .putBoolean("isfirstrun", false).commit();
 
@@ -370,19 +368,15 @@ public class DetailedWallpaper extends AppCompatActivity {
         Drawable drawable = imageView.getDrawable();
         Bitmap bmp;
 
-        if (drawable instanceof BitmapDrawable) {
+        if (drawable instanceof BitmapDrawable)
             bmp = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
-        } else {
+        else
             return null;
-        }
-
         Uri bmpUri = null;
         try {
             File file = new File(saveWallLocation, picName + convertWallName(wall) + ".png");
             file.getParentFile().mkdirs();
-            if (file.exists()) {
-                file.delete();
-            }
+            file.delete();
             FileOutputStream out = new FileOutputStream(file);
             bmp.compress(Bitmap.CompressFormat.PNG, 100, out);
             out.close();
@@ -392,5 +386,4 @@ public class DetailedWallpaper extends AppCompatActivity {
         }
         return bmpUri;
     }
-
 }

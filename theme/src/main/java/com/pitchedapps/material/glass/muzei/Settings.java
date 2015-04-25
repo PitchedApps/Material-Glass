@@ -131,5 +131,4 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
             }
         }
     }
-
 }

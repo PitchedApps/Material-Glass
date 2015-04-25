@@ -8,22 +8,20 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 
-public class WallsDatabase extends SQLiteOpenHelper {
+class WallsDatabase extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "dashboard";
     private static final String TABLE_WALLPAPERS = "wallpapers";
-    private static final String
-            KEY_ID = "id";
+    private static final String KEY_ID = "id";
+
     private static final String
             KEY_WALLNAME = "wallname",
             KEY_WALLAUTHOR = "wallauthor",
             KEY_WALLURL = "wallurl";
-    private Context context;
 
     public WallsDatabase(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        this.context = context;
     }
 
     @Override
