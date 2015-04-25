@@ -43,14 +43,12 @@ public class Main extends AppCompatActivity {
     private boolean firstrun, enable_features;
     private Preferences mPrefs;
     private boolean withLicenseChecker = false;
-    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        context = this;
         mPrefs = new Preferences(Main.this);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -107,7 +105,7 @@ public class Main extends AppCompatActivity {
                                     switchFragment(2, thaPreviews, "Previews");
                                     break;
                                 case 3:
-                                    ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+                                    ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
                                     NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
                                     boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
 
@@ -147,7 +145,8 @@ public class Main extends AppCompatActivity {
 
     private void switchFragment(int itemId, String title, String fragment) {
         currentItem = itemId;
-        getSupportActionBar().setTitle(title);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setTitle(title);
         FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
         tx.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
         tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.pitchedapps.material.glass.fragments." + fragment));
@@ -203,19 +202,19 @@ public class Main extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + getResources().getString(R.string.email_id)));
                 intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject));
 
-                emailBuilder.append("\n \n \nOS Version: " + System.getProperty("os.version") + "(" + Build.VERSION.INCREMENTAL + ")");
-                emailBuilder.append("\nOS API Level: " + Build.VERSION.SDK_INT);
-                emailBuilder.append("\nDevice: " + Build.DEVICE);
-                emailBuilder.append("\nManufacturer: " + Build.MANUFACTURER);
-                emailBuilder.append("\nModel (and Product): " + Build.MODEL + " (" + Build.PRODUCT + ")");
+                emailBuilder.append("\n \n \nOS Version: ").append(System.getProperty("os.version")).append("(").append(Build.VERSION.INCREMENTAL).append(")");
+                emailBuilder.append("\nOS API Level: ").append(Build.VERSION.SDK_INT);
+                emailBuilder.append("\nDevice: ").append(Build.DEVICE);
+                emailBuilder.append("\nManufacturer: ").append(Build.MANUFACTURER);
+                emailBuilder.append("\nModel (and Product): ").append(Build.MODEL).append(" (").append(Build.PRODUCT).append(")");
                 PackageInfo appInfo = null;
                 try {
                     appInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
                 } catch (PackageManager.NameNotFoundException e) {
                     e.printStackTrace();
                 }
-                emailBuilder.append("\nApp Version Name: " + appInfo.versionName);
-                emailBuilder.append("\nApp Version Code: " + appInfo.versionCode);
+                emailBuilder.append("\nApp Version Name: ").append(appInfo.versionName);
+                emailBuilder.append("\nApp Version Code: ").append(appInfo.versionCode);
 
                 intent.putExtra(Intent.EXTRA_TEXT, emailBuilder.toString());
 
@@ -291,19 +290,15 @@ public class Main extends AppCompatActivity {
     }
 
     private void showChangelogDialog() {
-
         String launchinfo = getSharedPreferences("PrefsFile", MODE_PRIVATE).getString("version", "0");
-        if (!launchinfo.equals(getResources().getString(R.string.current_version))) {
+        if (launchinfo != null && !launchinfo.equals(getResources().getString(R.string.current_version)))
             changelog();
-        }
         storeSharedPrefs();
     }
 
     protected void storeSharedPrefs() {
         SharedPreferences sharedPreferences = getSharedPreferences("PrefsFile", MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("version", getResources().getString(R.string.current_version));
-        editor.commit();
+        sharedPreferences.edit().putString("version", getResources().getString(R.string.current_version)).commit();
     }
 
     private void showNotConnectedDialog() {
@@ -319,8 +314,7 @@ public class Main extends AppCompatActivity {
                             result.setSelection(nSelection);
                         }
                     }
-                })
-                .show();
+                }).show();
     }
 
     public void checkLicense() {
@@ -342,8 +336,7 @@ public class Main extends AppCompatActivity {
                                 showChangelogDialog();
 
                             }
-                        })
-                        .show();
+                        }).show();
                 showNotLicensedDialog();
             }
         } catch (Exception e) {
@@ -371,19 +364,19 @@ public class Main extends AppCompatActivity {
                         finish();
                     }
                 })
+                .cancelListener(new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialog) {
+                        finish();
+                    }
+                })
+                .dismissListener(new DialogInterface.OnDismissListener() {
+                    @Override
+                    public void onDismiss(DialogInterface dialog) {
+                        finish();
+                    }
+                })
                 .show();
-        dialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-            @Override
-            public void onCancel(DialogInterface dialog) {
-                finish();
-            }
-        });
-        dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
-            @Override
-            public void onDismiss(DialogInterface dialog) {
-                finish();
-            }
-        });
     }
 
 
