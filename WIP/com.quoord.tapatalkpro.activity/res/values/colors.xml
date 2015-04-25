@@ -344,8 +344,12 @@
     <color name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</color>
     <color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
     <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
-    <color name="abs__bright_foreground_inverse_holo_dark">@color/abs__bright_foreground_holo_light</color>
-    <color name="abs__bright_foreground_inverse_holo_light">@color/abs__bright_foreground_holo_dark</color>
+    <color name="abs__bright_foreground_inverse_holo_dark">
+        @color/abs__bright_foreground_holo_light
+    </color>
+    <color name="abs__bright_foreground_inverse_holo_light">
+        @color/abs__bright_foreground_holo_dark
+    </color>
     <color name="abs__holo_blue_light">#8033b5e5</color>
     <color name="abs_drop_bg">#80303030</color>
     <color name="author_name">#ffdf5632</color>
@@ -482,16 +486,16 @@
     <color name="trending_forumname_bg_363a3d">#80363a3d</color>
     <color name="trending_thumb_up_dark_bg">#80060606</color>
     <color name="trending_thumb_up_drive_dark_color">#804b4c50</color>
-    
+
     <color name="background">#80000000</color>
-	<color name="backgroundd">#80161616</color>
-	<color name="backgrounddd">#80323232</color>
-	<color name="backgroundt">#40000000</color>	
-	<color name="backgrounddt">#40161616</color>
-	<color name="backgroundddt">#40323232</color>
-	<color name="backgroundx">#d0000000</color>
-	<color name="backgrounddx">#d0161616</color>
-	<color name="text">#ffffffff</color>
-	<color name="textt">#ddffffff</color>
-	<color name="texttt">#bbffffff</color>
+    <color name="backgroundd">#80161616</color>
+    <color name="backgrounddd">#80323232</color>
+    <color name="backgroundt">#40000000</color>
+    <color name="backgrounddt">#40161616</color>
+    <color name="backgroundddt">#40323232</color>
+    <color name="backgroundx">#d0000000</color>
+    <color name="backgrounddx">#d0161616</color>
+    <color name="text">#ffffffff</color>
+    <color name="textt">#ddffffff</color>
+    <color name="texttt">#bbffffff</color>
 </resources>

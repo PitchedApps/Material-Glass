@@ -49,7 +49,9 @@
     <dimen name="contact_filter_icon_size">32.0dip</dimen>
     <dimen name="list_visible_scrollbar_padding">32.0dip</dimen>
     <dimen name="contact_browser_list_header_left_margin">16.0dip</dimen>
-    <item type="dimen" name="contact_browser_list_header_right_margin">@dimen/list_visible_scrollbar_padding</item>
+    <item name="contact_browser_list_header_right_margin" type="dimen">
+        @dimen/list_visible_scrollbar_padding
+    </item>
     <dimen name="contact_browser_list_item_text_indent">8.0dip</dimen>
     <dimen name="contact_list_section_header_width">48.0dip</dimen>
     <dimen name="shortcut_icon_size">0.0dip</dimen>
@@ -66,7 +68,7 @@
     <dimen name="tile_letter_font_size">40.0dip</dimen>
     <dimen name="tile_letter_font_size_small">20.0dip</dimen>
     <dimen name="tile_divider_width">1.0dip</dimen>
-    <item type="dimen" name="letter_to_tile_ratio">66.99999%</item>
+    <item name="letter_to_tile_ratio" type="dimen">66.99999%</item>
     <dimen name="tab_selected_underline_height">2.0dip</dimen>
     <dimen name="tab_text_size">14.0sp</dimen>
     <dimen name="tab_elevation">2.0dip</dimen>
@@ -116,8 +118,12 @@
     <dimen name="group_detail_border_padding">0.0dip</dimen>
     <dimen name="quick_contact_photo_container_height">180.0dip</dimen>
     <dimen name="search_view_width">0.0dip</dimen>
-    <item type="dimen" name="join_header_left_margin">@dimen/contact_browser_list_header_left_margin</item>
-    <item type="dimen" name="join_header_right_margin">@dimen/contact_browser_list_header_right_margin</item>
+    <item name="join_header_left_margin" type="dimen">
+        @dimen/contact_browser_list_header_left_margin
+    </item>
+    <item name="join_header_right_margin" type="dimen">
+        @dimen/contact_browser_list_header_right_margin
+    </item>
     <dimen name="join_header_top_margin">16.0dip</dimen>
     <dimen name="join_header_bottom_margin">0.0dip</dimen>
     <dimen name="no_accounts_message_margin">20.0dip</dimen>

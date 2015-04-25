@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
  * Copyright (C) 2014 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,6 +15,7 @@
 -->
 
 <resources>
+
     <style name="AppTheme" parent="AppTheme.Base">
         <item name="android:colorPrimary">@color/primary</item>
         <item name="android:colorPrimaryDark">@color/primary_dark</item>
@@ -34,7 +34,8 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
 
-        <item name="actionOverflowMenuStyle">@android:style/Widget.Material.PopupMenu.Overflow</item>
+        <item name="actionOverflowMenuStyle">@android:style/Widget.Material.PopupMenu.Overflow
+        </item>
         <item name="popupMenuStyle">@android:style/Widget.Material.PopupMenu</item>
 
 

@@ -5,13 +5,15 @@
         <item name="android:colorBackground">@color/background</item>
     </style>
 
-    <style name="SecurityPreferenceButtonContainer" parent="@android:style/Widget.Material.SegmentedButton">
+    <style name="SecurityPreferenceButtonContainer"
+        parent="@android:style/Widget.Material.SegmentedButton">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:weightSum">2.0</item>
         <item name="android:dividerPadding">8.0dip</item>
     </style>
-    <style name="SecurityPreferenceButton" parent="@android:style/Widget.Material.Button.Borderless">
+    <style name="SecurityPreferenceButton"
+        parent="@android:style/Widget.Material.Button.Borderless">
         <item name="android:ellipsize">marquee</item>
         <item name="android:layout_width">0.0dip</item>
         <item name="android:layout_height">wrap_content</item>
@@ -44,7 +46,8 @@
         <item name="ic_menu_add">@drawable/ic_menu_add_dark</item>
     </style>
 
-    <style name="TextAppearance.CategoryTitle" parent="@android:style/TextAppearance.Material.Small">
+    <style name="TextAppearance.CategoryTitle"
+        parent="@android:style/TextAppearance.Material.Small">
         <item name="android:textColor">@color/text</item>
     </style>
     <style name="TextAppearance.TileTitle" parent="@android:style/TextAppearance.Material.Medium">

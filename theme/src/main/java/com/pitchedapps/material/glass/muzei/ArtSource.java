@@ -27,16 +27,13 @@ import java.util.Random;
 
 public class ArtSource extends RemoteMuzeiArtSource {
 
-    private WallsDatabase wdb;
-    ArrayList<WallpaperInfo> wallslist;
+    public static final int COMMAND_ID_SHARE = 1337;
     private static final String ARTSOURCE_NAME = "Material Glass";
-    JSONObject jsonobject;
-
     private static final String JSON_URL = "https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass/0wallpapers.json";
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
-
-    public static final int COMMAND_ID_SHARE = 1337;
-
+    ArrayList<WallpaperInfo> wallslist;
+    JSONObject jsonobject;
+    private WallsDatabase wdb;
     private Preferences mPrefs;
 
     public ArtSource() {
@@ -46,7 +43,7 @@ public class ArtSource extends RemoteMuzeiArtSource {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         String command = intent.getExtras().getString("service");
-        if (command!=null) {
+        if (command != null) {
             try {
                 onTryUpdate(UPDATE_REASON_USER_NEXT);
             } catch (RetryException e) {
@@ -74,12 +71,12 @@ public class ArtSource extends RemoteMuzeiArtSource {
     }
 
     @Override
-    public void onCustomCommand(int id){
+    public void onCustomCommand(int id) {
         super.onCustomCommand(id);
 
-        if (id == COMMAND_ID_SHARE){
+        if (id == COMMAND_ID_SHARE) {
             Artwork currentArtwork = getCurrentArtwork();
-            Intent shareWall = new Intent (Intent.ACTION_SEND);
+            Intent shareWall = new Intent(Intent.ACTION_SEND);
             shareWall.setType("text/plain");
 
             Uri artUrl = currentArtwork.getImageUri();
@@ -92,7 +89,7 @@ public class ArtSource extends RemoteMuzeiArtSource {
                     getString(R.string.partone) + wallName +
                             getString(R.string.parttwo) + authorName +
                             getString(R.string.partthree) + iconPackName +
-                            getString(R.string.partfour) + storeUrl );
+                            getString(R.string.partfour) + storeUrl);
 
             shareWall = Intent.createChooser(shareWall, getString(R.string.share_title));
             shareWall.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -158,7 +155,7 @@ public class ArtSource extends RemoteMuzeiArtSource {
                     wallslist.clear();
                     wdb.deleteAllWallpapers();
                     for (int i = 0; i < jsonarray.length(); i++) {
-                        jsonobject  = jsonarray.getJSONObject(i);
+                        jsonobject = jsonarray.getJSONObject(i);
 
                         WallpaperInfo jsondata = new WallpaperInfo(
                                 jsonobject.getString("name"),

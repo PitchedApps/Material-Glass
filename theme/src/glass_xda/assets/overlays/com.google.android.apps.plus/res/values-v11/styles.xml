@@ -9,8 +9,10 @@
         <!--<item name="android:actionOverflowButtonStyle">@style/Overflow</item>-->
     </style>
     <style name="Oob.Dialog" parent="@style/Platform.AppCompat.Dialog" />
-    <style name="Base.Widget.AppCompat.ProgressBar.Horizontal" parent="@android:style/Widget.Material.ProgressBar.Horizontal" />
-    <style name="Base.Widget.AppCompat.ProgressBar" parent="@android:style/Widget.Material.ProgressBar" />
+    <style name="Base.Widget.AppCompat.ProgressBar.Horizontal"
+        parent="@android:style/Widget.Material.ProgressBar.Horizontal" />
+    <style name="Base.Widget.AppCompat.ProgressBar"
+        parent="@android:style/Widget.Material.ProgressBar" />
     <style name="Platform.AppCompat" parent="@android:style/Theme.Material">
         <item name="buttonBarStyle">?android:buttonBarStyle</item>
         <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>

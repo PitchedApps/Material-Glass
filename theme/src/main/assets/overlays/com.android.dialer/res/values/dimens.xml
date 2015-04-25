@@ -46,7 +46,9 @@
     <dimen name="contact_filter_icon_size">32.0dip</dimen>
     <dimen name="list_visible_scrollbar_padding">32.0dip</dimen>
     <dimen name="contact_browser_list_header_left_margin">16.0dip</dimen>
-    <item type="dimen" name="contact_browser_list_header_right_margin">@dimen/list_visible_scrollbar_padding</item>
+    <item name="contact_browser_list_header_right_margin" type="dimen">
+        @dimen/list_visible_scrollbar_padding
+    </item>
     <dimen name="contact_browser_list_item_text_indent">8.0dip</dimen>
     <dimen name="contact_list_section_header_width">48.0dip</dimen>
     <dimen name="shortcut_icon_size">0.0dip</dimen>
@@ -63,7 +65,7 @@
     <dimen name="tile_letter_font_size">40.0dip</dimen>
     <dimen name="tile_letter_font_size_small">20.0dip</dimen>
     <dimen name="tile_divider_width">1.0dip</dimen>
-    <item type="dimen" name="letter_to_tile_ratio">66.99999%</item>
+    <item name="letter_to_tile_ratio" type="dimen">66.99999%</item>
     <dimen name="tab_selected_underline_height">2.0dip</dimen>
     <dimen name="tab_text_size">14.0sp</dimen>
     <dimen name="tab_elevation">2.0dip</dimen>
@@ -154,7 +156,7 @@
     <dimen name="call_button_height">74.0dip</dimen>
     <dimen name="contact_tile_divider_width">1.0dip</dimen>
     <dimen name="contact_tile_info_button_height_and_width">36.0dip</dimen>
-    <item type="dimen" name="contact_tile_height_to_width_ratio">76.0%</item>
+    <item name="contact_tile_height_to_width_ratio" type="dimen">76.0%</item>
     <dimen name="contact_tile_text_side_padding">12.0dip</dimen>
     <dimen name="contact_tile_text_bottom_padding">9.0dip</dimen>
     <dimen name="favorites_row_top_padding">2.0dip</dimen>

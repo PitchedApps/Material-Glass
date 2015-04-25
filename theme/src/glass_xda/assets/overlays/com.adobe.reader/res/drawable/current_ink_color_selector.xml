@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
     <stroke android:width="@dimen/color_selector_stroke_width" android:color="@color/texttt" />
     <corners android:radius="@dimen/color_selector_corner_radius" />
-    <padding android:left="@dimen/color_selector_padding" android:top="@dimen/color_selector_padding" android:right="@dimen/color_selector_padding" android:bottom="@dimen/color_selector_padding" />
+    <padding android:bottom="@dimen/color_selector_padding"
+        android:left="@dimen/color_selector_padding" android:right="@dimen/color_selector_padding"
+        android:top="@dimen/color_selector_padding" />
     <solid android:color="@color/backgroundx" />
-    <size android:height="@dimen/color_selector_dimensions" android:width="@dimen/color_selector_dimensions" />
+    <size android:width="@dimen/color_selector_dimensions"
+        android:height="@dimen/color_selector_dimensions" />
 </shape>

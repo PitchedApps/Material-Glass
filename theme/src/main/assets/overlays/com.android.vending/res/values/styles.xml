@@ -15,8 +15,8 @@
         <item name="android:windowExitAnimation">@anim/play_popup_selector_close</item>
     </style>
     <!--<style name="PlayDrawerSelectedText" parent="@style/PlayDrawerBaseText">-->
-        <!--<item name="android:textStyle">bold</item>-->
-        <!--<item name="android:background">@color/backgroundt</item>-->
+    <!--<item name="android:textStyle">bold</item>-->
+    <!--<item name="android:background">@color/backgroundt</item>-->
     <!--</style>-->
     <style name="FinskyProgressSmallInverse" parent="@android:style/Widget.ProgressBar.Small" />
     <style name="SettingsListHeader">
@@ -55,7 +55,7 @@
         <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
     </style>
 
-<!--play_white text colors-->
+    <!--play_white text colors-->
     <style name="PlayClusterMore" parent="@style/PlayMediumPlainText">
         <item name="android:textSize">@dimen/play_cluster_header_more_size</item>
         <item name="android:textColor">@color/text</item>
@@ -186,7 +186,6 @@
     </style>
 
 
-
     <style name="PlaySearchSuggestionText">
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@color/text</item>
@@ -195,5 +194,6 @@
         <item name="android:singleLine">true</item>
     </style>
 
-    <style name="Widget.AppCompat.Light.ActionBar.Solid" parent="@android:style/Widget.Material.ActionBar" />
+    <style name="Widget.AppCompat.Light.ActionBar.Solid"
+        parent="@android:style/Widget.Material.ActionBar" />
 </resources>

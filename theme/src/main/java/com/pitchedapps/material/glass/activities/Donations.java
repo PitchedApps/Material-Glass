@@ -22,7 +22,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
-
 import android.support.v7.widget.Toolbar;
 
 import com.pitchedapps.material.glass.BuildConfig;
@@ -61,7 +60,6 @@ public class Donations extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.donations_activity_frame);
-
 
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);

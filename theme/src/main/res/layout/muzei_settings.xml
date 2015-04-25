@@ -11,9 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:background="@color/actionbar"
+        android:elevation="@dimen/toolbar_elevation"
         android:minHeight="?actionBarSize"
         android:transitionName="actionBar"
-        android:elevation="@dimen/toolbar_elevation"
         app:popupTheme="@style/ThemeOverlay.AppCompat"
         app:theme="@style/MyActionBarTheme" />
 
@@ -27,57 +27,57 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_gravity="center"
-            android:paddingTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
             android:paddingBottom="10dp"
-            android:gravity="center_vertical">
+            android:paddingTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/dialog_margin"
                 android:text="@string/muzeisets_title"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/accent"
-                android:paddingBottom="@dimen/dialog_margin"
-                android:layout_gravity="center"/>
+                android:textColor="@color/accent" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <NumberPicker
                     android:id="@+id/number_picker"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content" />
 
                 <RadioButton
                     android:id="@+id/minute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/minutes"/>
+                    android:text="@string/minutes" />
 
                 <RadioButton
                     android:id="@+id/hour"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/hours"/>
+                    android:text="@string/hours" />
 
             </LinearLayout>
 
             <TextView
-                android:padding="@dimen/dialog_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:lineSpacingMultiplier="1.2"
+                android:padding="@dimen/dialog_margin"
                 android:text="@string/muzei_info"
-                android:textSize="@dimen/text_med"
                 android:textColor="@color/text"
-                android:layout_gravity="center"/>
+                android:textSize="@dimen/text_med" />
 
         </LinearLayout>
 

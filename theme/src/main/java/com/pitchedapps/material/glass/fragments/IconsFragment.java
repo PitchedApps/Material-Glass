@@ -23,6 +23,14 @@ public class IconsFragment extends Fragment {
 
     private Context context;
 
+    public static IconsFragment newInstance(int iconsArray) {
+        IconsFragment fragment = new IconsFragment();
+        Bundle args = new Bundle();
+        args.putInt("iconsArrayId", iconsArray);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
@@ -34,14 +42,6 @@ public class IconsFragment extends Fragment {
         gridview.setAdapter(icAdapter);
         return view;
 
-    }
-
-    public static IconsFragment newInstance(int iconsArray) {
-        IconsFragment fragment = new IconsFragment();
-        Bundle args = new Bundle();
-        args.putInt("iconsArrayId", iconsArray);
-        fragment.setArguments(args);
-        return fragment;
     }
 
     private class IconAdapter extends BaseAdapter {
@@ -89,13 +89,6 @@ public class IconsFragment extends Fragment {
             return icono;
         }
 
-        class IconsHolder {
-            ImageView icon;
-            IconsHolder(View v) {
-                icon = (ImageView) v.findViewById(R.id.icon_img);
-            }
-        }
-
         private void loadIcon() {
             mThumbs = new ArrayList<>();
 
@@ -115,6 +108,14 @@ public class IconsFragment extends Fragment {
                         mThumbs.add(thumbRes);
                     }
                 }
+            }
+        }
+
+        class IconsHolder {
+            ImageView icon;
+
+            IconsHolder(View v) {
+                icon = (ImageView) v.findViewById(R.id.icon_img);
             }
         }
 

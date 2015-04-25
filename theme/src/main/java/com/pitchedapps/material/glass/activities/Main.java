@@ -28,8 +28,8 @@ import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.pitchedapps.material.glass.utilities.ChangelogAdapter;
 import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.utilities.ChangelogAdapter;
 import com.pitchedapps.material.glass.utilities.Preferences;
 
 
@@ -259,6 +259,7 @@ public class Main extends ActionBarActivity {
             }
         }
     }
+
     private void changelog() {
 
         new MaterialDialog.Builder(this)
@@ -273,11 +274,13 @@ public class Main extends ActionBarActivity {
                     public void onPositive(MaterialDialog dialog) {
                         mPrefs.setNotFirstrun();
                     }
+
                     @Override
                     public void onNegative(MaterialDialog dialog) {
                         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_link)));
                         startActivity(browserIntent);
                     }
+
                     @Override
                     public void onNeutral(MaterialDialog dialog) {
                         Intent intent = new Intent(Main.this, Donations.class);

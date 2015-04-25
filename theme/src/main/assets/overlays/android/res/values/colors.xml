@@ -67,7 +67,8 @@
     <color name="micro_text_light">@color/textt</color>
     <color name="notification_icon_bg_color">@color/backgrounddt</color>
     <color name="timepicker_default_ampm_selected_background_color_holo_light">@color/textt</color>
-    <color name="timepicker_default_ampm_selected_background_color_holo_dark">@color/backgrounddt</color>
+    <color name="timepicker_default_ampm_selected_background_color_holo_dark">@color/backgrounddt
+    </color>
     <color name="datepicker_default_normal_text_color_holo_light">@color/backgroundd</color>
     <color name="datepicker_default_normal_text_color_holo_dark">@color/text</color>
     <color name="accent_material_light">@color/background</color>
@@ -76,7 +77,8 @@
     <color name="button_material_light">#50afafaf</color>
     <color name="link_text_material_dark">@color/textt</color>
     <color name="link_text_material_light">@color/backgroundd</color>
-    <color name="timepicker_default_ampm_selected_background_color_material">@color/backgrounddt</color>
+    <color name="timepicker_default_ampm_selected_background_color_material">@color/backgrounddt
+    </color>
     <color name="timepicker_default_selector_color_material">@color/backgrounddt</color>
 
 
@@ -84,7 +86,7 @@
     <color name="notification_material_action_textcolor">@color/textt</color>
     <color name="notification_template_material_big_picture_background_color">#cc000000</color>
 
-	<color name="notification_media_primary_color">@color/text</color>
+    <color name="notification_media_primary_color">@color/text</color>
     <color name="notification_media_secondary_color">@color/textt</color>
     <color name="notification_action_color_filter">@color/textt</color>
 

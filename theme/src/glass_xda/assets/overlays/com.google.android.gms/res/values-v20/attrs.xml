@@ -31,7 +31,8 @@
     <attr name="styleWalletLinkButton" format="reference" />
     <attr name="styleWidgetWalletFormSpinner" format="reference" />
     <attr name="styleWidgetWalletSpinner" format="reference" />
-    <attr name="switchBarStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="switchBarStyle"
+        format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="title" format="string" />
     <attr name="zoom" format="fraction" />
     <attr name="navigationMode">

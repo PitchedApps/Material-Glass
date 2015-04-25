@@ -16,7 +16,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.pitchedapps.material.glass.R;
-
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -24,8 +23,8 @@ import java.util.HashMap;
 
 public class WallsGridAdapter extends BaseAdapter {
 
-    ArrayList<HashMap<String, String>> data;
     public String wallurl;
+    ArrayList<HashMap<String, String>> data;
     private Context context;
     private int numColumns;
     private HashMap<String, String> jsondata = new HashMap<String, String>();
@@ -96,7 +95,6 @@ public class WallsGridAdapter extends BaseAdapter {
                 .into(holder.wall);
         return wallitem;
     }
-
 
 
     class WallsHolder {

@@ -2,18 +2,18 @@
 <familyset version="22">
     <!-- first font is default -->
     <family name="sans-serif">
-        <font weight="100" style="normal">Roboto-Thin.ttf</font>
-        <font weight="100" style="italic">Roboto-ThinItalic.ttf</font>
-        <font weight="300" style="normal">Roboto-Light.ttf</font>
-        <font weight="300" style="italic">Roboto-LightItalic.ttf</font>
-        <font weight="400" style="normal">Roboto-Regular.ttf</font>
-        <font weight="400" style="italic">Roboto-Italic.ttf</font>
-        <font weight="500" style="normal">Roboto-Medium.ttf</font>
-        <font weight="500" style="italic">Roboto-MediumItalic.ttf</font>
-        <font weight="900" style="normal">Roboto-Black.ttf</font>
-        <font weight="900" style="italic">Roboto-BlackItalic.ttf</font>
-        <font weight="700" style="normal">Roboto-Bold.ttf</font>
-        <font weight="700" style="italic">Roboto-BoldItalic.ttf</font>
+        <font style="normal" weight="100">Roboto-Thin.ttf</font>
+        <font style="italic" weight="100">Roboto-ThinItalic.ttf</font>
+        <font style="normal" weight="300">Roboto-Light.ttf</font>
+        <font style="italic" weight="300">Roboto-LightItalic.ttf</font>
+        <font style="normal" weight="400">Roboto-Regular.ttf</font>
+        <font style="italic" weight="400">Roboto-Italic.ttf</font>
+        <font style="normal" weight="500">Roboto-Medium.ttf</font>
+        <font style="italic" weight="500">Roboto-MediumItalic.ttf</font>
+        <font style="normal" weight="900">Roboto-Black.ttf</font>
+        <font style="italic" weight="900">Roboto-BlackItalic.ttf</font>
+        <font style="normal" weight="700">Roboto-Bold.ttf</font>
+        <font style="italic" weight="700">Roboto-BoldItalic.ttf</font>
     </family>
 
     <!-- Note that aliases must come after the fonts they reference. -->
@@ -27,20 +27,20 @@
     <alias name="verdana" to="sans-serif" />
 
     <family name="sans-serif-condensed">
-        <font weight="300" style="normal">RobotoCondensed-Light.ttf</font>
-        <font weight="300" style="italic">RobotoCondensed-LightItalic.ttf</font>
-        <font weight="400" style="normal">RobotoCondensed-Regular.ttf</font>
-        <font weight="400" style="italic">RobotoCondensed-Italic.ttf</font>
-        <font weight="700" style="normal">RobotoCondensed-Bold.ttf</font>
-        <font weight="700" style="italic">RobotoCondensed-BoldItalic.ttf</font>
+        <font style="normal" weight="300">RobotoCondensed-Light.ttf</font>
+        <font style="italic" weight="300">RobotoCondensed-LightItalic.ttf</font>
+        <font style="normal" weight="400">RobotoCondensed-Regular.ttf</font>
+        <font style="italic" weight="400">RobotoCondensed-Italic.ttf</font>
+        <font style="normal" weight="700">RobotoCondensed-Bold.ttf</font>
+        <font style="italic" weight="700">RobotoCondensed-BoldItalic.ttf</font>
     </family>
     <alias name="sans-serif-condensed-light" to="sans-serif-condensed" weight="300" />
 
     <!--<family name="serif">-->
-        <!--<font weight="400" style="normal">NotoSerif-Regular.ttf</font>-->
-        <!--<font weight="700" style="normal">NotoSerif-Bold.ttf</font>-->
-        <!--<font weight="400" style="italic">NotoSerif-Italic.ttf</font>-->
-        <!--<font weight="700" style="italic">NotoSerif-BoldItalic.ttf</font>-->
+    <!--<font weight="400" style="normal">NotoSerif-Regular.ttf</font>-->
+    <!--<font weight="700" style="normal">NotoSerif-Bold.ttf</font>-->
+    <!--<font weight="400" style="italic">NotoSerif-Italic.ttf</font>-->
+    <!--<font weight="700" style="italic">NotoSerif-BoldItalic.ttf</font>-->
     <!--</family>-->
     <!--<alias name="times" to="serif" />-->
     <!--<alias name="times new roman" to="serif" />-->

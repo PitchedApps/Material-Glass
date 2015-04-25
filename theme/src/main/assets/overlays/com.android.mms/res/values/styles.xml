@@ -46,7 +46,8 @@
         <item name="android:textColor">@color/tab_text_color</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
-    <style name="HeaderSpinnerDropDown" parent="@android:style/Widget.Material.DropDownItem.Spinner">
+    <style name="HeaderSpinnerDropDown"
+        parent="@android:style/Widget.Material.DropDownItem.Spinner">
         <item name="android:textColor">@color/text</item>
     </style>
     <style name="MmsActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
@@ -54,7 +55,8 @@
         <item name="android:background">@color/mms_theme_color_t</item>
         <item name="android:elevation">@dimen/action_bar_elevation</item>
     </style>
-    <style name="WidgetTitle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+    <style name="WidgetTitle"
+        parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
         <item name="android:textColor">@color/text</item>
         <item name="android:singleLine">true</item>
     </style>

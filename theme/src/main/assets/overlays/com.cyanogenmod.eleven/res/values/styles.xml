@@ -29,6 +29,8 @@
         <item name="android:background">@color/header_action_bar_color</item>
         <!--<item name="android:titleTextStyle">@style/ActionBar.TitleText</item>-->
         <!--<item name="android:subtitleTextStyle">@style/ActionBar.SubtitleText</item>-->
-        <item name="android:actionOverflowButtonStyle">@android:style/Widget.Material.ActionButton.Overflow</item>
+        <item name="android:actionOverflowButtonStyle">
+            @android:style/Widget.Material.ActionButton.Overflow
+        </item>
     </style>
 </resources>

@@ -105,8 +105,6 @@
     </style>
 
 
-
-
     <style name="EntryItemTitleText" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/text</item>
         <item name="android:textColorLink">@color/link_text</item>
@@ -159,8 +157,6 @@
     </style>
 
 
-
-
     <style name="Relationship.EmptyTitle" parent="@style/Relationship">
         <item name="android:textSize">18.0sp</item>
         <item name="android:textColor">@color/text</item>
@@ -183,7 +179,8 @@
         <item name="android:divider">@color/gsa_light_gray</item>
         <item name="android:dividerHeight">1.0dip</item>
     </style>
-    <style name="EditReminderCustomActionButton" parent="@android:style/Widget.Material.ActionButton">
+    <style name="EditReminderCustomActionButton"
+        parent="@android:style/Widget.Material.ActionButton">
         <item name="android:gravity">center</item>
         <item name="android:orientation">horizontal</item>
         <!--<item name="android:background">@drawable/stateful_colored_background_no_hairline</item>-->
@@ -194,7 +191,8 @@
     </style>
 
 
-    <style name="Theme.Velvet.Card.TextAppearance.ActionFieldValue" parent="@style/Theme.Velvet.Card.TextAppearance.Medium">
+    <style name="Theme.Velvet.Card.TextAppearance.ActionFieldValue"
+        parent="@style/Theme.Velvet.Card.TextAppearance.Medium">
         <item name="android:textColor">@color/text</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -204,12 +202,14 @@
         <item name="android:layout_marginStart">@dimen/unit</item>
         <item name="android:layout_marginEnd">@dimen/unit</item>
     </style>
-    <style name="Theme.Velvet.Card.TextAppearance.Medium" parent="@android:style/TextAppearance.Medium">
+    <style name="Theme.Velvet.Card.TextAppearance.Medium"
+        parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">25.0sp</item>
         <item name="android:textColor">@color/text</item>
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
-    <style name="Closet.ActionButton.Overflow" parent="@android:style/Widget.Material.ActionButton.Overflow" />
+    <style name="Closet.ActionButton.Overflow"
+        parent="@android:style/Widget.Material.ActionButton.Overflow" />
     <style name="KeepPopupMenuStyle" parent="@android:style/Widget.Material.ListPopupWindow">
         <item name="android:background">@color/background</item>
     </style>
@@ -230,11 +230,13 @@
         <item name="android:layout_marginRight">12.0dip</item>
     </style>
 
-    <style name="Theme.Velvet.Card.TextAppearance.Small" parent="@android:style/TextAppearance.Small">
+    <style name="Theme.Velvet.Card.TextAppearance.Small"
+        parent="@android:style/TextAppearance.Small">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@color/text</item>
     </style>
-    <style name="Theme.Velvet.Card.TextAppearance.Tiny" parent="@android:style/TextAppearance.Small">
+    <style name="Theme.Velvet.Card.TextAppearance.Tiny"
+        parent="@android:style/TextAppearance.Small">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@color/text</item>
     </style>

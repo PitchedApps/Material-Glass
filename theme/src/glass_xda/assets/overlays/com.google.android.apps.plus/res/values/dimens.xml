@@ -17,7 +17,9 @@
     <dimen name="advanced_parameter_selector_item_height">48.0dip</dimen>
     <dimen name="advanced_parameter_selector_item_text_vert_padding">18.0dip</dimen>
     <dimen name="advanced_parameter_selector_item_text_horz_padding">52.0dip</dimen>
-    <item type="dimen" name="parameter_readout_font_size">@dimen/advanced_parameter_selector_item_font_size</item>
+    <item name="parameter_readout_font_size" type="dimen">
+        @dimen/advanced_parameter_selector_item_font_size
+    </item>
     <dimen name="parameter_readout_text_baseline">21.0dip</dimen>
     <dimen name="parameter_readout_text_horz_padding">52.0dip</dimen>
     <dimen name="parameter_readout_scale_horz_axis_y0">40.0dip</dimen>
@@ -48,7 +50,9 @@
     <dimen name="filter_preview_bottom_padding">80.0dip</dimen>
     <dimen name="filter_preview_bottom_padding_straighten">70.0dip</dimen>
     <dimen name="filter_preview_horz_padding">20.0dip</dimen>
-    <item type="dimen" name="straighten_preview_horz_double_padding">@dimen/filter_preview_horz_padding</item>
+    <item name="straighten_preview_horz_double_padding" type="dimen">
+        @dimen/filter_preview_horz_padding
+    </item>
     <dimen name="filter_list_item_space">0.0dip</dimen>
     <dimen name="filter_list_item_bottom_margin">8.0dip</dimen>
     <dimen name="filter_list_item_top_margin">8.0dip</dimen>
@@ -59,9 +63,9 @@
     <dimen name="filter_selector_image_bottom">8.0dip</dimen>
     <dimen name="looks_list_item_preset_circle_size">6.0dip</dimen>
     <dimen name="looks_item_font_size_number">18.0dip</dimen>
-    <item type="dimen" name="looks_image_top">@dimen/filter_selector_image_top</item>
-    <item type="dimen" name="looks_image_horz">@dimen/filter_selector_image_horz</item>
-    <item type="dimen" name="looks_image_bottom">@dimen/filter_selector_image_bottom</item>
+    <item name="looks_image_top" type="dimen">@dimen/filter_selector_image_top</item>
+    <item name="looks_image_horz" type="dimen">@dimen/filter_selector_image_horz</item>
+    <item name="looks_image_bottom" type="dimen">@dimen/filter_selector_image_bottom</item>
     <dimen name="tool_item_title_font_size">12.0dip</dimen>
     <dimen name="preset_list_item_size">75.0dip</dimen>
     <dimen name="preset_list_item_spacing">2.0dip</dimen>
@@ -112,9 +116,9 @@
     <dimen name="side_bar_width">180.0dip</dimen>
     <dimen name="main_video_height">242.0dip</dimen>
     <dimen name="main_video_width">400.0dip</dimen>
-    <item type="dimen" name="video_margin">@dimen/small_unit_2</item>
+    <item name="video_margin" type="dimen">@dimen/small_unit_2</item>
     <dimen name="storyboard_editor_undo_space">80.0dip</dimen>
-    <item type="dimen" name="editor_item_spacing">@dimen/small_unit_2</item>
+    <item name="editor_item_spacing" type="dimen">@dimen/small_unit_2</item>
     <dimen name="clip_editor_poster_width">96.0dip</dimen>
     <dimen name="clip_editor_preview_size">128.0dip</dimen>
     <dimen name="theme_selector_item_size">155.0dip</dimen>
@@ -126,10 +130,10 @@
     <dimen name="end_of_play_dismiss_circle_horizontal_translation">-70.0dip</dimen>
     <dimen name="end_of_play_dismiss_circle_vertical_translation">70.0dip</dimen>
     <dimen name="end_of_play_actions_label_text_size">14.0sp</dimen>
-    <item type="dimen" name="control_bar_embedded_side_margin">@dimen/small_unit_2</item>
-    <item type="dimen" name="control_bar_embedded_bottom_margin">@dimen/small_unit_2</item>
-    <item type="dimen" name="control_bar_fullscreen_side_margin">@dimen/unit_2</item>
-    <item type="dimen" name="control_bar_fullscreen_bottom_margin">@dimen/unit_3</item>
+    <item name="control_bar_embedded_side_margin" type="dimen">@dimen/small_unit_2</item>
+    <item name="control_bar_embedded_bottom_margin" type="dimen">@dimen/small_unit_2</item>
+    <item name="control_bar_fullscreen_side_margin" type="dimen">@dimen/unit_2</item>
+    <item name="control_bar_fullscreen_bottom_margin" type="dimen">@dimen/unit_3</item>
     <dimen name="minimum_video_poster_height">100.0dip</dimen>
     <dimen name="minimum_video_poster_width">100.0dip</dimen>
     <dimen name="clip_editor_preview_shadow_left">6.0dip</dimen>
@@ -607,8 +611,8 @@
     <dimen name="sul_card_header_height">86.0dip</dimen>
     <dimen name="sul_card_header_margin">0.5dip</dimen>
     <dimen name="sul_card_title_text_size">18.0sp</dimen>
-    <item type="dimen" name="disabled_alpha_material_light">0.26</item>
-    <item type="dimen" name="disabled_alpha_material_dark">0.3</item>
+    <item name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <item name="disabled_alpha_material_dark" type="dimen">0.3</item>
     <dimen name="abc_config_prefDialogWidth">320.0dip</dimen>
     <dimen name="abc_action_bar_stacked_tab_max_width">180.0dip</dimen>
     <dimen name="abc_action_bar_stacked_max_height">48.0dip</dimen>
@@ -621,8 +625,8 @@
     <dimen name="abc_dropdownitem_icon_width">32.0dip</dimen>
     <dimen name="dialog_fixed_width_major">320.0dip</dimen>
     <dimen name="dialog_fixed_width_minor">320.0dip</dimen>
-    <item type="dimen" name="dialog_fixed_height_major">79.99999%</item>
-    <item type="dimen" name="dialog_fixed_height_minor">100.0%</item>
+    <item name="dialog_fixed_height_major" type="dimen">79.99999%</item>
+    <item name="dialog_fixed_height_minor" type="dimen">100.0%</item>
     <dimen name="abc_control_inset_material">4.0dip</dimen>
     <dimen name="abc_control_padding_material">4.0dip</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20.0dip</dimen>
@@ -843,7 +847,7 @@
     <dimen name="people_add_circle_height">56.0dip</dimen>
     <dimen name="people_your_circles_max_card_width">370.0dip</dimen>
     <dimen name="people_suggestions_max_card_width">600.0dip</dimen>
-    <item type="dimen" name="unified_search_avatar_preview">@dimen/tiny_avatar_dimension</item>
+    <item name="unified_search_avatar_preview" type="dimen">@dimen/tiny_avatar_dimension</item>
     <dimen name="unified_search_photo_preview">80.0dip</dimen>
     <dimen name="unified_search_avatar_margin">8.0dip</dimen>
     <dimen name="unified_search_loading_padding">30.0dip</dimen>
@@ -941,7 +945,7 @@
     <dimen name="sul_title_text_size">20.0sp</dimen>
     <dimen name="sul_subtitle_text_size">13.0sp</dimen>
     <dimen name="sul_subtitle_width">300.0dip</dimen>
-    <item type="dimen" name="navigation_footer_text_size">@dimen/text_size_12</item>
+    <item name="navigation_footer_text_size" type="dimen">@dimen/text_size_12</item>
     <dimen name="cloud_aam_editing_promo_text_size">14.0sp</dimen>
     <dimen name="cloud_aam_editing_promo_padding">12.0dip</dimen>
     <dimen name="cloud_aam_editing_promo_margin">12.0dip</dimen>

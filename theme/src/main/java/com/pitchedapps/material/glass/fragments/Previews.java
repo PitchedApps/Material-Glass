@@ -27,7 +27,7 @@ public class Previews extends Fragment {
 
         context = getActivity();
 
-        ActionBar toolbar = ((ActionBarActivity)context).getSupportActionBar();
+        ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.section_two);
         toolbar.setElevation(0);
 

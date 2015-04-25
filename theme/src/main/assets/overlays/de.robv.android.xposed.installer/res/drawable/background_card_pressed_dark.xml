@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:dither="true" android:shape="rectangle">
             <corners android:radius="2.0dip" />
@@ -11,7 +10,8 @@
         <shape android:dither="true" android:shape="rectangle">
             <corners android:radius="2.0dip" />
             <solid android:color="@color/card_background_pressed_dark" />
-            <padding android:left="8.0dip" android:top="8.0dip" android:right="8.0dip" android:bottom="8.0dip" />
+            <padding android:bottom="8.0dip" android:left="8.0dip" android:right="8.0dip"
+                android:top="8.0dip" />
         </shape>
     </item>
 </layer-list>

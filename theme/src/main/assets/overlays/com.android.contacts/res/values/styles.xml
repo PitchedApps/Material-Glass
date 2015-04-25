@@ -79,7 +79,9 @@
         <item name="android:actionOverflowButtonStyle">@style/ContactsActionBarOverflowQP</item>
         <item name="android:homeAsUpIndicator">@drawable/ic_back_arrow</item>
         <item name="android:actionBarWidgetTheme">@style/ContactsActionBarTheme</item>
-        <item name="android:actionBarItemBackground">@drawable/item_background_material_borderless_dark</item>
+        <item name="android:actionBarItemBackground">
+            @drawable/item_background_material_borderless_dark
+        </item>
         <item name="android:colorPrimary">@color/primary_color</item>
         <item name="android:colorPrimaryDark">@color/primary_color_dark</item>
         <item name="android:colorAccent">@color/primary_color</item>
@@ -108,12 +110,17 @@
         <item name="list_section_header_height">24.0dip</item>
         <item name="activated_background">@drawable/list_item_activated_background</item>
         <item name="section_header_background">@drawable/list_title_holo</item>
-        <item name="list_item_padding_top">@dimen/contact_browser_list_item_padding_top_or_bottom</item>
+        <item name="list_item_padding_top">@dimen/contact_browser_list_item_padding_top_or_bottom
+        </item>
         <item name="list_item_padding_right">32.0dip</item>
-        <item name="list_item_padding_bottom">@dimen/contact_browser_list_item_padding_top_or_bottom</item>
+        <item name="list_item_padding_bottom">
+            @dimen/contact_browser_list_item_padding_top_or_bottom
+        </item>
         <item name="list_item_padding_left">16.0dip</item>
         <item name="list_item_name_text_color">@color/text</item>
-        <item name="list_item_gap_between_image_and_text">@dimen/contact_browser_list_item_gap_between_image_and_text</item>
+        <item name="list_item_gap_between_image_and_text">
+            @dimen/contact_browser_list_item_gap_between_image_and_text
+        </item>
         <item name="list_item_gap_between_label_and_data">5.0dip</item>
         <item name="list_item_presence_icon_margin">4.0dip</item>
         <item name="list_item_presence_icon_size">16.0dip</item>
@@ -136,11 +143,14 @@
         <item name="android:navigationBarColor">@color/backgroundx</item>
 
     </style>
-    <style name="ContactsActionBarOverflowQP" parent="@android:style/Widget.Material.ActionButton.Overflow" />
-    <style name="ContactsActionBarTabBarStyle" parent="@android:style/Widget.Material.ActionBar.TabBar">
+    <style name="ContactsActionBarOverflowQP"
+        parent="@android:style/Widget.Material.ActionButton.Overflow" />
+    <style name="ContactsActionBarTabBarStyle"
+        parent="@android:style/Widget.Material.ActionBar.TabBar">
         <item name="android:showDividers">none</item>
     </style>
-    <style name="ContactsActionBarTabTextStyle" parent="@android:style/Widget.Material.ActionBar.TabText">
+    <style name="ContactsActionBarTabTextStyle"
+        parent="@android:style/Widget.Material.ActionBar.TabText">
         <item name="android:textSize">@dimen/tab_text_size</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/tab_text_color</item>
@@ -152,10 +162,12 @@
         <item name="android:subtitleTextStyle">@style/ContactsActionBarSubTitleText</item>
         <item name="android:backgroundStacked">@color/actionbar_background_color</item>
     </style>
-    <style name="ContactsActionBarTitleText" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+    <style name="ContactsActionBarTitleText"
+        parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
         <item name="android:textColor">@color/actionbar_text_color</item>
     </style>
-    <style name="ContactsActionBarSubTitleText" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Subtitle">
+    <style name="ContactsActionBarSubTitleText"
+        parent="@android:style/TextAppearance.Material.Widget.ActionBar.Subtitle">
         <item name="android:textColor">@color/actionbar_text_color</item>
     </style>
 </resources>

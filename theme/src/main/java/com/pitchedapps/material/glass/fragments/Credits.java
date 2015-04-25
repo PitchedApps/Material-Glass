@@ -29,7 +29,7 @@ public class Credits extends Fragment {
 
         context = getActivity();
 
-        ActionBar toolbar = ((ActionBarActivity)context).getSupportActionBar();
+        ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.section_six);
         toolbar.setElevation(getResources().getDimension(R.dimen.toolbar_elevation));
 

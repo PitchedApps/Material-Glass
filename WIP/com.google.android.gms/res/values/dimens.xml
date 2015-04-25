@@ -128,14 +128,14 @@
     <dimen name="common_settings_margin_vertical">16.0dip</dimen>
     <dimen name="common_switch_bar_margin_end">16.0dip</dimen>
     <dimen name="common_switch_bar_margin_start">60.0dip</dimen>
-    <item type="dimen" name="dialog_fixed_height_major">79.99999%</item>
-    <item type="dimen" name="dialog_fixed_height_minor">100.0%</item>
+    <item name="dialog_fixed_height_major" type="dimen">79.99999%</item>
+    <item name="dialog_fixed_height_minor" type="dimen">100.0%</item>
     <dimen name="dialog_fixed_width_major">320.0dip</dimen>
     <dimen name="dialog_fixed_width_minor">320.0dip</dimen>
     <dimen name="dialog_inner_padding">15.0dip</dimen>
     <dimen name="dialog_side_padding">10.0dip</dimen>
-    <item type="dimen" name="disabled_alpha_material_dark">0.3</item>
-    <item type="dimen" name="disabled_alpha_material_light">0.26</item>
+    <item name="disabled_alpha_material_dark" type="dimen">0.3</item>
+    <item name="disabled_alpha_material_light" type="dimen">0.26</item>
     <dimen name="drive_ActionBar_Height">72.0dip</dimen>
     <dimen name="drive_ActionBar_Height_PhoneLandscape">64.0dip</dimen>
     <dimen name="drive_ActionBar_IconSize">40.0dip</dimen>
@@ -354,21 +354,33 @@
     <dimen name="games_onyx_list_card_avatar_width">52.0dip</dimen>
     <dimen name="games_onyx_list_card_image_container_right_padding">12.0dip</dimen>
     <dimen name="games_onyx_list_card_image_container_size">80.0dip</dimen>
-    <item type="dimen" name="games_onyx_list_card_main_container_padding">@dimen/games_onyx_internal_padding</item>
+    <item name="games_onyx_list_card_main_container_padding" type="dimen">
+        @dimen/games_onyx_internal_padding
+    </item>
     <dimen name="games_onyx_list_edge_padding">4.0dip</dimen>
-    <item type="dimen" name="games_onyx_medium_main_container_padding">@dimen/games_onyx_internal_padding</item>
+    <item name="games_onyx_medium_main_container_padding" type="dimen">
+        @dimen/games_onyx_internal_padding
+    </item>
     <dimen name="games_onyx_mini_card_image_size">80.0dip</dimen>
-    <item type="dimen" name="games_onyx_mini_card_main_container_padding">@dimen/games_onyx_internal_padding</item>
+    <item name="games_onyx_mini_card_main_container_padding" type="dimen">
+        @dimen/games_onyx_internal_padding
+    </item>
     <dimen name="games_onyx_mini_card_title_font_size">14.0sp</dimen>
-    <item type="dimen" name="games_onyx_mini_card_title_left_padding">@dimen/games_onyx_internal_padding</item>
-    <item type="dimen" name="games_onyx_mini_card_title_top_padding">@dimen/games_onyx_internal_padding</item>
+    <item name="games_onyx_mini_card_title_left_padding" type="dimen">
+        @dimen/games_onyx_internal_padding
+    </item>
+    <item name="games_onyx_mini_card_title_top_padding" type="dimen">
+        @dimen/games_onyx_internal_padding
+    </item>
     <dimen name="games_onyx_overflow_remaining_horiz_padding">20.0dip</dimen>
     <dimen name="games_onyx_overflow_remaining_vert_padding">18.0dip</dimen>
     <dimen name="games_onyx_overflow_wall_padding">6.0dip</dimen>
     <dimen name="games_onyx_subtitle_font_size">12.0sp</dimen>
     <dimen name="games_onyx_title_big_font_size">24.0sp</dimen>
     <dimen name="games_onyx_title_font_size">16.0sp</dimen>
-    <item type="dimen" name="games_onyx_wide_card_main_container_padding">@dimen/games_onyx_internal_padding</item>
+    <item name="games_onyx_wide_card_main_container_padding" type="dimen">
+        @dimen/games_onyx_internal_padding
+    </item>
     <dimen name="games_onyx_wide_image_overlay_font_size">12.0sp</dimen>
     <dimen name="games_onyx_wide_image_overlay_vertical_padding">4.0dip</dimen>
     <dimen name="games_onyx_wide_progress_height">4.0dip</dimen>
@@ -455,7 +467,8 @@
     <dimen name="games_tile_banner_view_profile_height">36.0dip</dimen>
     <dimen name="games_tile_continue_playing_achievement_comparison_font_size">13.0sp</dimen>
     <dimen name="games_tile_continue_playing_achievement_comparison_icon_size">24.0dip</dimen>
-    <dimen name="games_tile_continue_playing_achievement_comparison_text_padding_left">4.0dip</dimen>
+    <dimen name="games_tile_continue_playing_achievement_comparison_text_padding_left">4.0dip
+    </dimen>
     <dimen name="games_tile_continue_playing_button_divider_padding">8.0dip</dimen>
     <dimen name="games_tile_continue_playing_button_padding">8.0dip</dimen>
     <dimen name="games_tile_continue_playing_description_font_size">20.0sp</dimen>
@@ -590,7 +603,7 @@
     <dimen name="gh_item_vertical_padding">12.0dip</dimen>
     <dimen name="gh_left_margin">24.0dip</dimen>
     <dimen name="gh_microphone_padding_right">0.0dip</dimen>
-    <item type="dimen" name="gh_operation_hours_line_spacing">1.18</item>
+    <item name="gh_operation_hours_line_spacing" type="dimen">1.18</item>
     <dimen name="gh_padding">8.0dip</dimen>
     <dimen name="gh_popup_menu_max_width">320.0dip</dimen>
     <dimen name="gh_realtime_support_classifier_account_info_vertical_spacing">8.0dip</dimen>
@@ -751,7 +764,9 @@
     <dimen name="play_medium_size">12.0sp</dimen>
     <dimen name="play_mini_card_content_height">60.0sp</dimen>
     <dimen name="play_mini_card_price_threshold">117.0dip</dimen>
-    <item type="dimen" name="play_onboard__onboard_pager_padding_bottom">@dimen/play_onboard__splash_play_logo_bottom_margin</item>
+    <item name="play_onboard__onboard_pager_padding_bottom" type="dimen">
+        @dimen/play_onboard__splash_play_logo_bottom_margin
+    </item>
     <dimen name="play_onboard__onboard_pager_peek_width">8.0dip</dimen>
     <dimen name="play_onboard__onboard_tutorial_button_text_size">12.0sp</dimen>
     <dimen name="play_onboard__onboard_tutorial_footer_height">48.0dip</dimen>
@@ -773,7 +788,7 @@
     <dimen name="play_onboard__splash_play_logo_width">116.0dip</dimen>
     <dimen name="play_rating_bar_padding_bottom">1.0dip</dimen>
     <dimen name="play_reason_large_size">16.0sp</dimen>
-    <item type="dimen" name="play_reason_regular_size">@dimen/play_medium_size</item>
+    <item name="play_reason_regular_size" type="dimen">@dimen/play_medium_size</item>
     <dimen name="play_small_card_content_min_height">80.0sp</dimen>
     <dimen name="play_small_title_size">14.0sp</dimen>
     <dimen name="play_star_height_default">8.0dip</dimen>
@@ -793,7 +808,7 @@
     <dimen name="play_text_view_fadeout">32.0dip</dimen>
     <dimen name="play_text_view_fadeout_hint_margin">12.0dip</dimen>
     <dimen name="play_text_view_outline">1.0dip</dimen>
-    <item type="dimen" name="play_title_size">@dimen/play_large_size</item>
+    <item name="play_title_size" type="dimen">@dimen/play_large_size</item>
     <dimen name="play_xlarge_size">18.0sp</dimen>
     <dimen name="plus_action_bar_text_size">16.0sp</dimen>
     <dimen name="plus_activity_padding">0.0dip</dimen>
@@ -1016,7 +1031,7 @@
     <dimen name="setup_wizard_arrow_button_updown_height">47.0dip</dimen>
     <dimen name="setup_wizard_arrow_button_updown_width">59.0dip</dimen>
     <dimen name="setup_wizard_arrow_button_width">47.0dip</dimen>
-    <item type="dimen" name="setup_wizard_border_width_fraction">4.999995%</item>
+    <item name="setup_wizard_border_width_fraction" type="dimen">4.999995%</item>
     <dimen name="setup_wizard_button_height">48.0dip</dimen>
     <dimen name="setup_wizard_button_margin_top">16.0dip</dimen>
     <dimen name="setup_wizard_button_min_width">128.0dip</dimen>
@@ -1036,7 +1051,7 @@
     <dimen name="setup_wizard_heading_vmargins">16.0dip</dimen>
     <dimen name="setup_wizard_margin_bottom">16.0dip</dimen>
     <dimen name="setup_wizard_title_height">48.0dip</dimen>
-    <item type="dimen" name="setup_wizard_title_height_fraction">14.999998%</item>
+    <item name="setup_wizard_title_height_fraction" type="dimen">14.999998%</item>
     <dimen name="setup_wizard_title_margin_sides">0.0dip</dimen>
     <dimen name="setup_wizard_title_size">25.0dip</dimen>
     <dimen name="setup_wizard_vertical_spacing">12.0dip</dimen>
@@ -1095,7 +1110,7 @@
     <dimen name="wallet_credit_card_number_collapsed_left_margin">56.0dip</dimen>
     <dimen name="wallet_dialog_divider_height">1.0dip</dimen>
     <dimen name="wallet_dialog_divider_margin_left">0.0dip</dimen>
-    <item type="dimen" name="wallet_dialog_ideal_width">@dimen/abc_config_prefDialogWidth</item>
+    <item name="wallet_dialog_ideal_width" type="dimen">@dimen/abc_config_prefDialogWidth</item>
     <dimen name="wallet_dialog_right_icon_size">32.0dip</dimen>
     <dimen name="wallet_dialog_when_large_activity_horizontal_margin">16.0dip</dimen>
     <dimen name="wallet_font_body">14.0sp</dimen>

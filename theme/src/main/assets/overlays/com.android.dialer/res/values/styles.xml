@@ -33,7 +33,8 @@
         <item name="android:textColor">@color/incall_action_bar_text_color</item>
         <item name="android:background">@color/incall_action_bar_background_color</item>
     </style>
-    <style name="DialtactsActionBarTabTextStyle" parent="@android:style/Widget.Material.ActionBar.TabText">
+    <style name="DialtactsActionBarTabTextStyle"
+        parent="@android:style/Widget.Material.ActionBar.TabText">
         <item name="android:textSize">@dimen/tab_text_size</item>
         <item name="android:textColor">@color/tab_text_color</item>
         <item name="android:fontFamily">sans-serif-medium</item>
@@ -51,8 +52,10 @@
         <item name="android:textAllCaps">true</item>
     </style>
     <style name="DialtactsActionBarSpinner" parent="@android:style/Widget.Material" />
-    <style name="DialtactsActionBarOverflow" parent="@android:style/Widget.Material.ActionButton.Overflow" />
-    <style name="DialtactsActionBarOverflowWhite" parent="@android:style/Widget.Material.ActionButton.Overflow" />
+    <style name="DialtactsActionBarOverflow"
+        parent="@android:style/Widget.Material.ActionButton.Overflow" />
+    <style name="DialtactsActionBarOverflowWhite"
+        parent="@android:style/Widget.Material.ActionButton.Overflow" />
 
     <style name="SettingsStyle" parent="@android:style/Theme.Material">
         <item name="android:textColorSecondary">@color/textt</item>
@@ -67,13 +70,12 @@
 
 
     <!--<style name="DialtactsTheme">-->
-        <!--<item name="android:textColor">@color/dialtacts_primary_text_color</item>-->
-        <!--<item name="android:textColorPrimary">@color/dialtacts_primary_text_color</item>-->
-        <!--<item name="android:textColorSecondary">@color/dialtacts_secondary_text_color</item>-->
-        <!--<item name="android:colorBackground">@color/background</item>-->
-        <!--<item name="android:windowBackground">@color/background</item>-->
+    <!--<item name="android:textColor">@color/dialtacts_primary_text_color</item>-->
+    <!--<item name="android:textColorPrimary">@color/dialtacts_primary_text_color</item>-->
+    <!--<item name="android:textColorSecondary">@color/dialtacts_secondary_text_color</item>-->
+    <!--<item name="android:colorBackground">@color/background</item>-->
+    <!--<item name="android:windowBackground">@color/background</item>-->
     <!--</style>-->
-
 
 
     <style name="DialtactsTheme" parent="@android:style/Theme.Material">
@@ -99,7 +101,9 @@
         <item name="list_item_padding_right">32.0dip</item>
         <item name="list_item_padding_bottom">12.0dip</item>
         <item name="list_item_padding_left">16.0dip</item>
-        <item name="list_item_gap_between_image_and_text">@dimen/contact_browser_list_item_gap_between_image_and_text</item>
+        <item name="list_item_gap_between_image_and_text">
+            @dimen/contact_browser_list_item_gap_between_image_and_text
+        </item>
         <item name="list_item_gap_between_label_and_data">5.0dip</item>
         <item name="list_item_presence_icon_margin">4.0dip</item>
         <item name="list_item_presence_icon_size">16.0dip</item>
@@ -142,7 +146,8 @@
         <item name="android:elevation">@dimen/action_bar_elevation</item>
         <item name="android:contentInsetStart">@dimen/actionbar_contentInsetStart</item>
     </style>
-    <style name="DialtactsActionBarTitleText" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+    <style name="DialtactsActionBarTitleText"
+        parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
         <item name="android:textColor">@color/actionbar_text_color</item>
     </style>
 </resources>

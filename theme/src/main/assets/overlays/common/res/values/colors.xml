@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /* //device/apps/common/assets/res/any/colors.xml
 **
 ** Copyright 2006, The Android Open Source Project
@@ -22,7 +21,7 @@
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>
     <color name="background_light">#ffefefef</color>
-	<color name="backgroundx">#ff000000</color>
+    <color name="backgroundx">#ff000000</color>
     <color name="backgrounddx">#ff161616</color>
     <color name="backgroundddx">#ff323232</color>
     <color name="background">#88000000</color>
@@ -31,7 +30,7 @@
 
     <color name="ripple">#40ffffff</color>
     <color name="neutral">#ff666666</color>
-	<color name="textneutral">#ffbbbbbb</color>
+    <color name="textneutral">#ffbbbbbb</color>
     <color name="divider">#22ffffff</color>
     <color name="ripple_material_dark">#40ffffff</color>
 

@@ -26,9 +26,9 @@
                 android:layout_margin="@dimen/cards_margin"
                 android:clickable="false"
                 android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/card"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
-                card_view:cardElevation="@dimen/cards_elevation"
-                card_view:cardBackgroundColor="@color/card">
+                card_view:cardElevation="@dimen/cards_elevation">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -76,9 +76,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/cards_margin"
+                card_view:cardBackgroundColor="@color/card"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
-                card_view:cardElevation="@dimen/cards_elevation"
-                card_view:cardBackgroundColor="@color/card">
+                card_view:cardElevation="@dimen/cards_elevation">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -88,9 +88,9 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:paddingLeft="@dimen/image_home_padding"
                         android:contentDescription="@null"
                         android:minWidth="100dp"
+                        android:paddingLeft="@dimen/image_home_padding"
                         android:scaleType="fitCenter"
                         android:src="@drawable/ic_donate" />
 
@@ -137,11 +137,11 @@
 
                             <TextView
                                 android:id="@+id/donate_button"
-                                android:layout_gravity="right"
-                                android:gravity="right"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="right"
                                 android:background="?selectableItemBackground"
+                                android:gravity="right"
                                 android:padding="@dimen/cards_padding"
                                 android:text="@string/donate_caps"
                                 android:textColor="@color/text"
@@ -160,9 +160,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/cards_margin"
+                card_view:cardBackgroundColor="@color/card"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
-                card_view:cardElevation="@dimen/cards_elevation"
-                card_view:cardBackgroundColor="@color/card">
+                card_view:cardElevation="@dimen/cards_elevation">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -173,9 +173,9 @@
                         android:id="@+id/imageView"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:paddingLeft="@dimen/image_home_padding"
                         android:contentDescription="@null"
                         android:minWidth="100dp"
+                        android:paddingLeft="@dimen/image_home_padding"
                         android:scaleType="fitCenter"
                         android:src="@drawable/ic_playstore_logo" />
 
@@ -225,11 +225,11 @@
 
                             <TextView
                                 android:id="@+id/play_button"
-                                android:layout_gravity="right"
-                                android:gravity="right"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="right"
                                 android:background="?selectableItemBackground"
+                                android:gravity="right"
                                 android:padding="@dimen/cards_padding"
                                 android:text="@string/play"
                                 android:textColor="@color/text"
@@ -247,9 +247,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/cards_margin"
+                card_view:cardBackgroundColor="@color/card"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
-                card_view:cardElevation="@dimen/cards_elevation"
-                card_view:cardBackgroundColor="@color/card">
+                card_view:cardElevation="@dimen/cards_elevation">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -259,9 +259,9 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:paddingLeft="@dimen/image_home_padding"
                         android:contentDescription="@null"
                         android:minWidth="100dp"
+                        android:paddingLeft="@dimen/image_home_padding"
                         android:scaleType="fitCenter"
                         android:src="@drawable/ic_xda" />
 
@@ -308,11 +308,11 @@
 
                             <TextView
                                 android:id="@+id/xda_button"
-                                android:layout_gravity="right"
-                                android:gravity="right"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="right"
                                 android:background="?selectableItemBackground"
+                                android:gravity="right"
                                 android:padding="@dimen/cards_padding"
                                 android:text="@string/link"
                                 android:textColor="@color/text"
@@ -330,9 +330,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/cards_margin"
+                card_view:cardBackgroundColor="@color/card"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
-                card_view:cardElevation="@dimen/cards_elevation"
-                card_view:cardBackgroundColor="@color/card">
+                card_view:cardElevation="@dimen/cards_elevation">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -342,9 +342,9 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:paddingLeft="@dimen/image_home_padding"
                         android:contentDescription="@null"
                         android:minWidth="100dp"
+                        android:paddingLeft="@dimen/image_home_padding"
                         android:scaleType="fitCenter"
                         android:src="@drawable/ic_pitched_glass" />
 
@@ -391,11 +391,11 @@
 
                             <TextView
                                 android:id="@+id/pitchedglass_button"
-                                android:layout_gravity="right"
-                                android:gravity="right"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="right"
                                 android:background="?selectableItemBackground"
+                                android:gravity="right"
                                 android:padding="@dimen/cards_padding"
                                 android:text="@string/download"
                                 android:textColor="@color/text"

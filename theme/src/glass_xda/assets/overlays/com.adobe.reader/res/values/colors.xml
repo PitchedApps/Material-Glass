@@ -138,13 +138,13 @@
     <color name="bbb">#ff00ffff</color>
 
     <color name="text">#ffffffff</color>
-	<color name="textt">#ccffffff</color>
-	<color name="texttt">#99ffffff</color>
-	<color name="backgroundt">#30000000</color>
-	<color name="background">#66000000</color>
-	<color name="backgroundd">#77161616</color>
-	<color name="backgrounddd">#77323232</color>
-	<color name="backgroundx">#ff000000</color>
-	<color name="backgrounddx">#ff161616</color>
-	<color name="backgroundddx">#ff323232</color>
+    <color name="textt">#ccffffff</color>
+    <color name="texttt">#99ffffff</color>
+    <color name="backgroundt">#30000000</color>
+    <color name="background">#66000000</color>
+    <color name="backgroundd">#77161616</color>
+    <color name="backgrounddd">#77323232</color>
+    <color name="backgroundx">#ff000000</color>
+    <color name="backgrounddx">#ff161616</color>
+    <color name="backgroundddx">#ff323232</color>
 </resources>

@@ -73,12 +73,11 @@
     </style>
 
 
-    <style name="Base.Theme.AppCompat.Light" parent="@android:style/Theme.Material" >
+    <style name="Base.Theme.AppCompat.Light" parent="@android:style/Theme.Material">
         <item name="android:windowBackground">@color/background</item>
         <item name="android:colorBackground">@color/background</item>
         <item name="android:textColor">@color/text</item>
     </style>
-
 
 
     <style name="Base.Widget.AppCompat.ActionButton" parent="">

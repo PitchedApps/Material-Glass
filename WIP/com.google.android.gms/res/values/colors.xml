@@ -49,8 +49,10 @@
     <color name="bind__remove_bar_background">@color/bind__default_background</color>
     <color name="bright_foreground_disabled_material_dark">@color/texttt</color>
     <color name="bright_foreground_disabled_material_light">@color/texttt</color>
-    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
-    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
+    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light
+    </color>
+    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark
+    </color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/white</color>
     <color name="butterbar_background">#5c111111</color>
@@ -178,7 +180,8 @@
     <color name="games_tile_progress_unfilled_with_text_overlay">@color/backgrounddd</color>
     <color name="games_tile_quest_progress_bar_ended_filled_color">#ffce393a</color>
     <color name="games_tile_quest_progress_bar_ended_unfilled_color">#ffe0e2c5</color>
-    <color name="games_tile_quest_progress_bar_filled_color">@color/play_games_theme_secondary</color>
+    <color name="games_tile_quest_progress_bar_filled_color">@color/play_games_theme_secondary
+    </color>
     <color name="games_tile_quest_progress_bar_unfilled_color">#ffe0e2c5</color>
     <color name="games_tile_quest_text_color_accepted_time_left">#ffaaaaaa</color>
     <color name="games_tile_quest_text_color_current_progress">#ffffffff</color>
@@ -225,8 +228,10 @@
     <color name="header_background">@color/background</color>
     <color name="highlighted_text_material_dark">#44ffffff</color>
     <color name="highlighted_text_material_light">#44ffffff</color>
-    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
-    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
+    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark
+    </color>
+    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light
+    </color>
     <color name="item_default_color">@color/background</color>
     <color name="item_pressed_color">@color/backgroundd</color>
     <color name="kids_black">#ffaaaaaa</color>

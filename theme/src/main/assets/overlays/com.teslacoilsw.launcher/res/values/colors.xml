@@ -17,8 +17,10 @@
     <color name="bg_dialog_light">#cc111111</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80ffffff</color>
-    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
-    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
+    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light
+    </color>
+    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark
+    </color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/white</color>
     <color name="bubble_dark_background">#20000000</color>
@@ -39,8 +41,10 @@
     <color name="focused_background">@color/background</color>
     <color name="highlighted_text_material_dark">#66666666</color>
     <color name="highlighted_text_material_light">#66666666</color>
-    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
-    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
+    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark
+    </color>
+    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light
+    </color>
     <color name="info_target_hover_tint">#da2196f3</color>
     <color name="link_text_material_dark">@color/text</color>
     <color name="link_text_material_light">@color/text</color>
@@ -80,14 +84,14 @@
     <color name="workspace_all_apps_and_delete_zone_text_color">#cceeeeee</color>
     <color name="workspace_all_apps_and_delete_zone_text_shadow_color">#a0000000</color>
     <color name="workspace_icon_text_color">@color/text</color>
-    
+
     <color name="text">#ffdddddd</color>
-	<color name="textt">#ffcccccc</color>
-	<color name="texttt">#ffaaaaaa</color>
-	<color name="background">#88000000</color>
-	<color name="backgroundd">#88161616</color>
-	<color name="backgrounddd">#88323232</color>
-	<color name="backgroundx">#ff000000</color>
-	<color name="backgrounddx">#ff161616</color>
-	<color name="backgroundddx">#ff323232</color>
+    <color name="textt">#ffcccccc</color>
+    <color name="texttt">#ffaaaaaa</color>
+    <color name="background">#88000000</color>
+    <color name="backgroundd">#88161616</color>
+    <color name="backgrounddd">#88323232</color>
+    <color name="backgroundx">#ff000000</color>
+    <color name="backgrounddx">#ff161616</color>
+    <color name="backgroundddx">#ff323232</color>
 </resources>

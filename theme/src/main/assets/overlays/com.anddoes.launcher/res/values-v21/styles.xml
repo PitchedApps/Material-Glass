@@ -16,12 +16,12 @@
         <item name="android:windowBackground">@*common:color/40000000</item>
     </style>
     <!--<style name="Theme.Apex.Dialog" parent="@android:style/Theme.Material.Dialog">-->
-        <!--<item name="android:dialogTheme">@style/Theme.Apex.Dialog</item>-->
-        <!--<item name="android:alertDialogTheme">@style/Theme.Apex.Dialog.Alert</item>-->
-        <!--<item name="android:colorAccent">@color/primary_text_default_material_dark</item>-->
+    <!--<item name="android:dialogTheme">@style/Theme.Apex.Dialog</item>-->
+    <!--<item name="android:alertDialogTheme">@style/Theme.Apex.Dialog.Alert</item>-->
+    <!--<item name="android:colorAccent">@color/primary_text_default_material_dark</item>-->
     <!--</style>-->
     <!--<style name="Theme.Apex.Dialog.Alert" parent="@style/Theme.Apex.Dialog">-->
-        <!--<item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>-->
-        <!--<item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>-->
+    <!--<item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>-->
+    <!--<item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>-->
     <!--</style>-->
 </resources>

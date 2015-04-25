@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ripple android:color="@color/dblue"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/dblue">
     <item android:drawable="@drawable/btn_fab_recents" />
 </ripple>

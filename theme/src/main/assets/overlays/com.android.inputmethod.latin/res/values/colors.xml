@@ -62,7 +62,7 @@
     <color name="text_decorator_add_to_dictionary_indicator_text_highlight_color">#77777777</color>
     <color name="text_decorator_add_to_dictionary_indicator_background_color">#cc000000</color>
     <color name="text_decorator_add_to_dictionary_indicator_foreground_color">#ffffffff</color>
-    
+
     <color name="text">#ffffffff</color>
     <color name="textt">#ddffffff</color>
     <color name="texttt">#bbffffff</color>

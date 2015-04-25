@@ -65,8 +65,10 @@
     <color name="blue_steel">#ffa0a0a0</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80ffffff</color>
-    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
-    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_light</color>
+    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light
+    </color>
+    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_light
+    </color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/white</color>
     <color name="bt_stroke_grey">#22ffffff</color>
@@ -175,8 +177,10 @@
     <color name="highlighted_text">@color/text</color>
     <color name="highlighted_text_material_dark">#66666666</color>
     <color name="highlighted_text_material_light">#66666666</color>
-    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
-    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_dark</color>
+    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark
+    </color>
+    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_dark
+    </color>
     <color name="histogram_blue_fill">#ccd9d9b1</color>
     <color name="histogram_blue_stroke">#ff4d4db1</color>
     <color name="histogram_green_fill">#ccf2fff2</color>

@@ -10,7 +10,8 @@
         <!--<item name="android:windowMinWidthMajor">@null</item>-->
         <!--<item name="android:windowMinWidthMinor">@null</item>-->
         <item name="android:actionBarWidgetTheme">@null</item>
-        <item name="android:actionBarTheme">@android:style/ThemeOverlay.Material.Dark.ActionBar</item>
+        <item name="android:actionBarTheme">@android:style/ThemeOverlay.Material.Dark.ActionBar
+        </item>
         <item name="android:colorPrimary">@color/backgroundx</item>
         <item name="android:colorPrimaryDark">@color/backgroundx</item>
         <item name="android:colorAccent">@color/text</item>

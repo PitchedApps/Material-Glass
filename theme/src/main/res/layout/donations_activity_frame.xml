@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,13 +7,12 @@
         android:id="@+id/toolbar"
         layout="@layout/app_bar" />
 
-    <include
-        layout="@layout/donations_activity_content"/>
+    <include layout="@layout/donations_activity_content" />
 
     <!--<include-->
-        <!--layout="@layout/fab_layout"-->
-        <!--android:id="@+id/fab_main"/>-->
+    <!--layout="@layout/fab_layout"-->
+    <!--android:id="@+id/fab_main"/>-->
 
-<!--TODO properly align this rather than depend on padding-->
+    <!--TODO properly align this rather than depend on padding-->
 
 </FrameLayout>

@@ -24,7 +24,7 @@ public class ChangelogAdapter extends BaseAdapter {
         // Populate the two-dimensional array
         TypedArray typedArray = mContext.getResources().obtainTypedArray(rootArray);
         mChangelog = new String[typedArray.length()][];
-        for (int i=0; i<typedArray.length(); i++) {
+        for (int i = 0; i < typedArray.length(); i++) {
             int id = typedArray.getResourceId(i, 0);
             if (id > 0) {
                 mChangelog[i] = mContext.getResources().getStringArray(id);
@@ -63,7 +63,7 @@ public class ChangelogAdapter extends BaseAdapter {
         String nameStr = mChangelog[position][0];
         String contentStr = "";
 
-        for (int i=1; i<mChangelog[position].length; i++) {
+        for (int i = 1; i < mChangelog[position].length; i++) {
             if (i > 1) {
                 // No need for new line on the first item
                 contentStr += "\n";

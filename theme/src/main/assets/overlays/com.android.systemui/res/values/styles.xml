@@ -6,12 +6,16 @@
         <item name="android:colorBackground">@color/backgroundt</item>
     </style>
 
-    <style name="Widget.TransportControl.SeekBar" parent="@android:style/Widget.DeviceDefault.SeekBar">
+    <style name="Widget.TransportControl.SeekBar"
+        parent="@android:style/Widget.DeviceDefault.SeekBar">
         <item name="android:focusable">true</item>
         <item name="android:maxHeight">13.0dip</item>
         <item name="android:indeterminateOnly">false</item>
-        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_light</item>
-        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">
+            @drawable/scrubber_progress_horizontal_holo_light
+        </item>
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_light
+        </item>
         <item name="android:minHeight">13.0dip</item>
         <item name="android:thumb">@drawable/scrubber_control_selector_holo</item>
         <item name="android:thumbOffset">16.0dip</item>
@@ -19,7 +23,8 @@
         <item name="android:paddingEnd">16.0dip</item>
         <item name="android:mirrorForRtl">true</item>
     </style>
-    <style name="TextAppearance.Material.Notification.Parenthetical" parent="@android:style/TextAppearance.Material.Notification">
+    <style name="TextAppearance.Material.Notification.Parenthetical"
+        parent="@android:style/TextAppearance.Material.Notification">
         <item name="android:textStyle">bold|italic</item>
         <item name="android:textColor">#80ffffff</item>
     </style>

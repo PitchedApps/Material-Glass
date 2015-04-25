@@ -23,9 +23,9 @@ import com.pitchedapps.material.glass.activities.Donations;
  */
 public class Home extends Fragment {
 
+    private static final String CM_APPLY = "cm_apply";
     private Context context;
     private View mButton;
-    private static final String CM_APPLY = "cm_apply";
 
     public static Fragment newInstance(Context context) {
         Home f = new Home();
@@ -37,8 +37,8 @@ public class Home extends Fragment {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_home, null);
         context = getActivity();
 
-        ActionBar toolbar = ((ActionBarActivity)context).getSupportActionBar();
-               
+        ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
+
 
         TextView donatebtn = (TextView) root.findViewById(R.id.donate_button);
         donatebtn.setOnClickListener(new View.OnClickListener() {

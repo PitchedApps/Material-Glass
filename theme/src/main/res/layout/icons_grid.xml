@@ -13,9 +13,9 @@
         android:columnWidth="@dimen/iconcolumn"
         android:dividerHeight="@dimen/dividers"
         android:gravity="center"
+        android:listSelector="@drawable/selectable"
         android:numColumns="auto_fit"
         android:scrollbars="none"
-        android:stretchMode="columnWidth"
-        android:listSelector="@drawable/selectable"/>
+        android:stretchMode="columnWidth" />
 
 </RelativeLayout>

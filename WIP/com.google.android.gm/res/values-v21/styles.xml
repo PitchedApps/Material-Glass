@@ -11,22 +11,28 @@
         <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
-    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@android:style/Widget.Material.ActionBar.TabView" />
-    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@android:style/Widget.Material.ActionBar.TabText" />
-    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@android:style/Widget.Material.ActionBar.TabText" />
-    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@android:style/Widget.Material.PopupMenu" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView"
+        parent="@android:style/Widget.Material.ActionBar.TabView" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText"
+        parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse"
+        parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.PopupMenu"
+        parent="@android:style/Widget.Material.PopupMenu" />
     <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
     </style>
-    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@android:style/ThemeOverlay.Material.Dark">
+    <style name="Base.ThemeOverlay.AppCompat.Light"
+        parent="@android:style/ThemeOverlay.Material.Dark">
         <item name="isLightTheme">false</item>
         <item name="colorControlHighlight">@color/ripple_material_dark</item>
         <item name="android:statusBarColor">@color/backgroundx</item>
         <item name="android:windowBackground">@color/backgroundt</item>
     </style>
     <style name="Base.Theme.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
-    <style name="Base.V21.Theme.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="Base.V21.Theme.AppCompat.Light.Dialog"
+        parent="@android:style/Theme.Material.Dialog" />
 
 
     <style name="ConversationListFadeBase" parent="@android:style/Widget.Material.ListView" />
@@ -48,8 +54,10 @@
         <item name="android:cacheColorHint">@color/background</item>
 
     </style>
-    <style name="ActionBarOverflowButtonStyle" parent="@android:style/Widget.Material.ActionButton.Overflow" />
-    <style name="AccountSetupDialogActivityTheme" parent="@android:style/Theme.Material.Dialog.NoActionBar">
+    <style name="ActionBarOverflowButtonStyle"
+        parent="@android:style/Widget.Material.ActionButton.Overflow" />
+    <style name="AccountSetupDialogActivityTheme"
+        parent="@android:style/Theme.Material.Dialog.NoActionBar">
         <item name="android:colorPrimary">@color/primary_color</item>
         <item name="android:colorPrimaryDark">@color/primary_dark_color</item>
         <item name="android:colorAccent">@color/accent_blue</item>
@@ -64,7 +72,8 @@
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:colorBackground">@color/backgroundt</item>
     </style>
-    <style name="GmailTheme.NoActionBar.Fullscreen" parent="@android:style/Theme.Material.NoActionBar.Fullscreen">
+    <style name="GmailTheme.NoActionBar.Fullscreen"
+        parent="@android:style/Theme.Material.NoActionBar.Fullscreen">
         <item name="android:colorPrimary">@color/backgrounddx</item>
         <item name="android:colorPrimaryDark">@color/backgrounddx</item>
         <item name="android:colorAccent">@color/text</item>
@@ -86,7 +95,8 @@
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:colorPrimaryDark">@color/backgroundx</item>
     </style>
-    <style name="UnifiedEmailTheme.Appcompat.Toolbar" parent="@android:style/Theme.Material.NoActionBar" />
+    <style name="UnifiedEmailTheme.Appcompat.Toolbar"
+        parent="@android:style/Theme.Material.NoActionBar" />
     <style name="MailActivityTheme" parent="@style/UnifiedEmailTheme.Appcompat.Toolbar">
         <item name="android:windowBackground">@color/background</item>
     </style>

@@ -63,7 +63,7 @@ public class Wallpapers extends Fragment {
 
         context = getActivity();
 
-        ActionBar toolbar = ((ActionBarActivity)context).getSupportActionBar();
+        ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.section_four);
 
         root = (ViewGroup) inflater.inflate(R.layout.section_wallpapers, null);
