@@ -1,43 +1,53 @@
 package com.pitchedapps.material.glass.fragments;
 
-import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.pitchedapps.material.glass.activities.MainActivity;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ObservableScrollView;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.Donations;
 
-/**
- * Created by Jahir on 28/02/2015.
- */
-public class Home extends Fragment {
+public class HomeFragment extends Fragment {
 
-    private static final String CM_APPLY = "cm_apply";
-    private Context context;
-    private View mButton;
+    private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
 
-    public static Fragment newInstance(Context context) {
-        Home f = new Home();
-        return f;
-    }
+//    private String PlayStoreDevAccount, PlayStoreListing, AppOnePackage, AppTwoPackage, AppThreePackage;
+    private String PGL;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_home, null);
-        context = getActivity();
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_home, container, false);
 
-        ActionBar toolbar = ((AppCompatActivity) context).getSupportActionBar();
+//        PlayStoreDevAccount = getResources().getString(R.string.play_store_dev_link);
+//        PlayStoreListing = getActivity().getPackageName();
+        PGL = getResources().getString(R.string.pitched_glass_link);
+//        AppTwoPackage = getResources().getString(R.string.app_two_package);
+//        AppThreePackage = getResources().getString(R.string.app_three_package);
+
+        ActionBar toolbar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        if (toolbar != null)
+            toolbar.setTitle(R.string.app_name);
+
+        ObservableScrollView content = (ObservableScrollView) root.findViewById(R.id.HomeContent);
+
+        //Cards
+        CardView cardone = (CardView) root.findViewById(R.id.pitched_glass_card);
+        if (AppIsInstalled(PGL)) {
+            cardone.setVisibility((cardone.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
+        }
 
 
         TextView donatebtn = (TextView) root.findViewById(R.id.donate_button);
@@ -77,9 +87,13 @@ public class Home extends Fragment {
             }
         });
 
-        ObservableScrollView mScrollView = (ObservableScrollView) root.findViewById(R.id.scrollView1);
         FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.cm_apply);
-        fab.attachToScrollView(mScrollView);
+        fab.setColorNormal(getResources().getColor(R.color.fab_unpressed));
+        fab.setColorPressed(getResources().getColor(R.color.fab_pressed));
+        fab.setColorRipple(getResources().getColor(R.color.ripple));
+        fab.show(true);
+        fab.attachToScrollView(content);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,4 +109,15 @@ public class Home extends Fragment {
         return root;
     }
 
+    private boolean AppIsInstalled(String packageName) {
+        final PackageManager pm = getActivity().getPackageManager();
+        boolean installed;
+        try {
+            pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
+            installed = true;
+        } catch (PackageManager.NameNotFoundException e) {
+            installed = false;
+        }
+        return installed;
+    }
 }

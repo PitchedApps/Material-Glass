@@ -29,11 +29,11 @@ import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.utilities.ChangelogAdapter;
+import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
 import com.pitchedapps.material.glass.utilities.Preferences;
 
 
-public class Main extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
@@ -49,7 +49,7 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mPrefs = new Preferences(Main.this);
+        mPrefs = new Preferences(MainActivity.this);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -116,7 +116,7 @@ public class Main extends AppCompatActivity {
                                     }
                                     break;
                                 case 4:
-                                    Intent intent = new Intent(Main.this, Donations.class);
+                                    Intent intent = new Intent(MainActivity.this, Donations.class);
                                     startActivity(intent);
                                     overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                                     break;
@@ -149,7 +149,7 @@ public class Main extends AppCompatActivity {
             getSupportActionBar().setTitle(title);
         FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
         tx.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-        tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.pitchedapps.material.glass.fragments." + fragment));
+        tx.replace(R.id.main, Fragment.instantiate(MainActivity.this, "com.pitchedapps.material.glass.fragments." + fragment));
         tx.commit();
     }
 
@@ -282,7 +282,7 @@ public class Main extends AppCompatActivity {
 
                     @Override
                     public void onNeutral(MaterialDialog dialog) {
-                        Intent intent = new Intent(Main.this, Donations.class);
+                        Intent intent = new Intent(MainActivity.this, Donations.class);
                         startActivity(intent);
                     }
                 })

@@ -27,7 +27,7 @@ public class IconsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.icons_grid, container, false);
         GridView gridview = (GridView) view.findViewById(R.id.icons_grid);
-        gridview.setColumnWidth(convertToPixel(72) + convertToPixel(4));
+//        gridview.setColumnWidth(convertToPixel(72) + convertToPixel(4));
         final IconAdapter icAdapter = new IconAdapter();
         gridview.setAdapter(icAdapter);
         return view;
@@ -70,7 +70,9 @@ public class IconsFragment extends Fragment {
 
             if (convertView == null) {
                 LayoutInflater inflater = LayoutInflater.from(getActivity());
-                convertView = inflater.inflate(R.layout.item_icon, parent, false);
+                convertView = inflater.inflate(R.layout.icon, parent, false);
+                //added for support
+                convertView.setLayoutParams(new GridView.LayoutParams(120, 120));
                 holder = new IconsHolder(convertView);
                 convertView.setTag(holder);
             } else {

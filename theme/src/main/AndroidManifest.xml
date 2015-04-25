@@ -42,16 +42,7 @@
         android:label="@string/theme_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:noHistory="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.pitchedapps.material.glass.activities.Main"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.PICK" />
@@ -75,12 +66,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pitchedapps.material.glass.activities.DetailedWallpaper"
+            android:name=".activities.DetailedWallpaperActivity"
             android:label="@string/title_activity_detailed_wallpaper"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.pitchedapps.material.glass.activities.DetailedWallpaper" />
+                android:value=".activities.DetailedWallpaperActivity" />
         </activity>
         <activity
             android:name="com.pitchedapps.material.glass.activities.Donations"
@@ -88,7 +79,7 @@
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.pitchedapps.material.glass.activities.Main" />
+                android:value=".activities.MainActivity" />
         </activity>
 
         <service
