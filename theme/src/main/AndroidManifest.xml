@@ -74,7 +74,7 @@
                 android:value="com.pitchedapps.material.glass.activities.DetailedWallpaper" />
         </activity>
         <activity
-            android:name="com.pitchedapps.material.glass.activities.Donations"
+            android:name=".fragments.DonationsFragment2"
             android:label="@string/donate"
             android:theme="@style/AppTheme">
             <meta-data

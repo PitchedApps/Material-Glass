@@ -4,7 +4,7 @@
     <!-- MainActivity Strings -->
     <string name="app_name">Material Glass</string>
     <string name="app_long_name">Material Glass by Pitched Apps</string>
-    <string name="package_name">"com.pitchedapps.material.glass"</string>
+    <string name="package_name">com.pitchedapps.material.glass</string>
     <string name="theme_description">Pitched Apps is proud to present Material Glass, cm12\'s first and longest lasting theme! \nMade by 1 themer \nTweaked for 100+ hours \nUsed by 10 000+ users</string>
     <!-- Muzei Stuff -->
     <string name="artsource_name">@string/app_name</string>
@@ -85,8 +85,8 @@
 
 
     <!-- Messages shown when using LicenseChecker -->
-    <string name="license_failed">"You are not downloading PaperBoard from Google Play Store. You have two options only:"</string>
-    <string name="license_success">"Thank you for downloading my Icon Pack Dashboard Sample. If you like it, don't forget to rate and write a review at Google Play Store."</string>
+    <string name="license_failed">"You are not downloading Material Glass from the Google Play Store. You now have two options:"</string>
+    <string name="license_success">"Thank you for downloading Material Glass. If you like it, don't forget to rate and write a review at Google Play Store."</string>
 
     <!-- Texts you don't want to get when user downloads that wallpapers -->
     <!-- Examples: the url of the wall, and prefixes, etc. -->
@@ -121,4 +121,14 @@
     <string name="theme_ad_msg">@string/theme_description</string>
     <string name="title_activity_home">HomeActivity</string>
 
+
+    <string-array name="donation_google_catalog_values">
+        <item>$1</item>
+        <item>$2</item>
+        <item>$5</item>
+        <item>$10</item>
+        <item>$20</item>
+    </string-array>
+
+    <string name="donation_paypal_item">Donation</string>
 </resources>
