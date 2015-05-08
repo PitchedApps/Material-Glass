@@ -1,8 +1,10 @@
 package com.pitchedapps.material.glass.muzei;
 
-public class WallpaperInfo {
+class WallpaperInfo {
 
-    String wall_name, wall_author, wall_url;
+    private final String wall_name;
+    private final String wall_author;
+    private final String wall_url;
 
     public WallpaperInfo(String wall_name, String wall_author, String wall_url) {
         this.wall_name = wall_name;

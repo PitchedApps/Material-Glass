@@ -2,7 +2,7 @@
 <resources>
     <string name="current_version">0.9.7</string>
 
-    <string-array name="changelog_root">
+    <string-array name="fullchangelog">
         <item>@array/v23</item>
         <item>@array/v22</item>
         <item>@array/v21</item>

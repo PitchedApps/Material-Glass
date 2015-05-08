@@ -37,14 +37,30 @@
     <color name="primary_pressed">#039be5</color>
     <color name="accent">@color/text</color>
     <color name="ripple">#70ffffff</color>
+    <color name="ripple_accent">#70ffffff</color>
     <color name="accent_pressed">@color/textt</color>
     <color name="accent_secondary">@color/accent</color>
     <color name="secondary">@color/textt</color>
     <color name="secondary_pressed">@color/textt</color>
     <color name="navbar">#aa000000</color>
+    <!-- Ctrl + H and search for color/cardsbg if you want to customize card colors individually-->
+    <color name="cardsbg">#30000000</color>
+    <!-- Color for Backgrounds -->
+    <color name="light_bg">@color/backgroundt</color>
+    <!-- Color for texts in Dialogs -->
+    <color name="dialogcontent">@color/text</color>
+    <!-- Color for some ripples -->
+    <color name="semitransparent_white">#80ffffff</color>
+    <!-- Color for texts -->
+    <color name="dark_grey">@color/textt</color>
 
-    <!-- Don't Edit!!! -->
-    <color name="dialogcontent">@color/drawer</color>
-    <color name="theme">@color/primary</color>
-    <color name="divider">#20ffffff</color>
+
+    <!-- Don't edit -->
+    <color name="red">#f44336</color>
+    <color name="green">#4caf50</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="window_bg">@color/background</color>
+    <color name="divider_grey">#22ffffff</color>
+
 </resources>

@@ -1,39 +1,35 @@
 package com.pitchedapps.material.glass.fragments;
 
-import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.views.SlidingTabLayout;
 
-public class Previews extends Fragment {
+import com.pitchedapps.material.glass.R;
 
-    private ViewPager mPager;
-    private SlidingTabLayout mTabs;
-    private Context context;
-
+public class PreviewsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_all_icons, null);
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_all_icons, container, false);
 
-        context = getActivity();
+        ActionBar toolbar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        if (toolbar != null)
+            toolbar.setTitle(R.string.section_two);
 
-        ActionBar toolbar = ((AppCompatActivity) context).getSupportActionBar();
-        toolbar.setTitle(R.string.section_two);
-        toolbar.setElevation(0);
-
-        mPager = (ViewPager) root.findViewById(R.id.pager);
+        ViewPager mPager = (ViewPager) root.findViewById(R.id.pager);
         mPager.setAdapter(new MyPagerAdapter(getActivity().getSupportFragmentManager()));
-        mTabs = (SlidingTabLayout) root.findViewById(R.id.tabs);
+
+        SlidingTabLayout mTabs = (SlidingTabLayout) root.findViewById(R.id.tabs);
         mTabs.setViewPager(mPager);
         mTabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
             @Override
@@ -45,9 +41,27 @@ public class Previews extends Fragment {
         return root;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Toolbar appbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+            appbar.setElevation(0);
+        }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Toolbar appbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+            appbar.setElevation((int) getResources().getDimension(R.dimen.toolbar_elevation));
+        }
+    }
+
     class MyPagerAdapter extends FragmentPagerAdapter {
 
-        String[] tabs;
+        final String[] tabs;
 
         public MyPagerAdapter(android.support.v4.app.FragmentManager fm) {
             super(fm);
@@ -59,15 +73,12 @@ public class Previews extends Fragment {
             Fragment f = new Fragment();
             switch (position) {
                 case 0:
-                    f = IconsFragment.newInstance(R.array.user);
-                    break;
-                case 1:
                     f = IconsFragment.newInstance(R.array.system);
                     break;
-                case 2:
+                case 1:
                     f = IconsFragment.newInstance(R.array.google);
                     break;
-                case 3:
+                case 2:
                     f = IconsFragment.newInstance(R.array.icon_pack);
                     break;
             }
@@ -84,5 +95,4 @@ public class Previews extends Fragment {
             return tabs.length;
         }
     }
-
 }

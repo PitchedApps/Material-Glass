@@ -1,6 +1,5 @@
 package com.pitchedapps.material.glass.fragments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,31 +15,21 @@ import android.widget.TextView;
 
 import com.pitchedapps.material.glass.R;
 
-/**
- * Created by Jahir on 08/03/2015.
- */
-public class Credits extends Fragment {
-
-    private Context context;
+public class CreditsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_credits, null);
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_credits, container, false);
 
-        context = getActivity();
-
-        ActionBar toolbar = ((AppCompatActivity) context).getSupportActionBar();
-        toolbar.setTitle(R.string.section_six);
-        toolbar.setElevation(getResources().getDimension(R.dimen.toolbar_elevation));
+        ActionBar toolbar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        if (toolbar != null)
+            toolbar.setTitle(R.string.section_six);
 
         TextView authordesc = (TextView) root.findViewById(R.id.dashauthor_info);
         authordesc.setText(Html.fromHtml(getString(R.string.dashboard_author_desc)));
 
         TextView designerdesc = (TextView) root.findViewById(R.id.dev_card_content);
-        designerdesc.setText(Html.fromHtml(getString(R.string.themer_desc)));
-
-        TextView ivondesc = (TextView) root.findViewById(R.id.ivon_card_content);
-        ivondesc.setText(Html.fromHtml(getString(R.string.ivon_desc)));
+        designerdesc.setText(Html.fromHtml(getString(R.string.iconpack_designer_desc)));
 
         TextView fablib = (TextView) root.findViewById(R.id.libtwo_content);
         fablib.setText(Html.fromHtml(getString(R.string.fab_desc)));
@@ -54,11 +43,14 @@ public class Credits extends Fragment {
         TextView picassolib = (TextView) root.findViewById(R.id.libfive_content);
         picassolib.setText(Html.fromHtml(getString(R.string.picasso_desc)));
 
+        TextView pkiconrequestlib = (TextView) root.findViewById(R.id.libseven_content);
+        pkiconrequestlib.setText(Html.fromHtml(getString(R.string.libdonate_desc)));
+
         TextView okhttplib = (TextView) root.findViewById(R.id.libeight_content);
         okhttplib.setText(Html.fromHtml(getString(R.string.okhttp_desc)));
 
-        TextView donatelib = (TextView) root.findViewById(R.id.libdonate_content);
-        donatelib.setText(Html.fromHtml(getString(R.string.libdonate_desc)));
+        TextView rippleslib = (TextView) root.findViewById(R.id.libnine_content);
+        rippleslib.setText(Html.fromHtml(getString(R.string.materialripples_desc)));
 
         CardView libtwocard = (CardView) root.findViewById(R.id.libtwocard);
         libtwocard.setOnClickListener(new View.OnClickListener() {
@@ -96,6 +88,15 @@ public class Credits extends Fragment {
             }
         });
 
+        CardView libsevencard = (CardView) root.findViewById(R.id.libsevencard);
+        libsevencard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent libsevenweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.libdonate_web)));
+                startActivity(libsevenweb);
+            }
+        });
+
         CardView libeightcard = (CardView) root.findViewById(R.id.libeightcard);
         libeightcard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,12 +106,12 @@ public class Credits extends Fragment {
             }
         });
 
-        CardView libdonatecard = (CardView) root.findViewById(R.id.libdonatecard);
-        libdonatecard.setOnClickListener(new View.OnClickListener() {
+        CardView libninecard = (CardView) root.findViewById(R.id.libninecard);
+        libninecard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent libdonateweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.libdonate_web)));
-                startActivity(libdonateweb);
+                Intent libnineweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.materialripples_web)));
+                startActivity(libnineweb);
             }
         });
 
@@ -132,12 +133,12 @@ public class Credits extends Fragment {
             }
         });
 
-        TextView web = (TextView) root.findViewById(R.id.play_button);
+        TextView web = (TextView) root.findViewById(R.id.web_button);
         web.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent devplay = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_dev_link)));
-                startActivity(devplay);
+                Intent devweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_link)));
+                startActivity(devweb);
             }
         });
 
@@ -147,24 +148,6 @@ public class Credits extends Fragment {
             public void onClick(View v) {
                 Intent devgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_gplus_link)));
                 startActivity(devgplus);
-            }
-        });
-
-        TextView ivonweb = (TextView) root.findViewById(R.id.ivon_play_button);
-        ivonweb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent ivonweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ivon_play)));
-                startActivity(ivonweb);
-            }
-        });
-
-        TextView ivongoogleplus = (TextView) root.findViewById(R.id.ivon_gplus_button);
-        ivongoogleplus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent ivongplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ivon_gplus_link)));
-                startActivity(ivongplus);
             }
         });
 

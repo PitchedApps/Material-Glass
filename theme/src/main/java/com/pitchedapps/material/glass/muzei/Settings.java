@@ -13,9 +13,9 @@ import android.widget.NumberPicker;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.utilities.Preferences;
 
+import com.pitchedapps.material.glass.R;
 
 public class Settings extends AppCompatActivity implements View.OnClickListener {
 
@@ -32,7 +32,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(getResources().getString(R.string.muzei_settings));
-        toolbar.setTitleTextColor(getResources().getColor(R.color.text));
+        toolbar.setTitleTextColor(getResources().getColor(R.color.white));
         setSupportActionBar(toolbar);
 
         numberpicker = (NumberPicker) findViewById(R.id.number_picker);
@@ -131,5 +131,4 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
             }
         }
     }
-
 }
