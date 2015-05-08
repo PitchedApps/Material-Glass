@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void addItemsToDrawer() {
         IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(4);
-//        IDrawerItem request = new PrimaryDrawerItem().withName(thaRequest).withIcon(GoogleMaterial.Icon.gmd_forum).withIdentifier(5);
+        IDrawerItem donate = new SecondaryDrawerItem().withName(thaDonate).withIdentifier(5);
         if (enable_features) {
             result.addItem(walls, 3);
             result.addItem(donate, 4);

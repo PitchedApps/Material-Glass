@@ -28,8 +28,8 @@ public class ArtSource extends RemoteMuzeiArtSource {
     private ArrayList<WallpaperInfo> wallslist;
     private Preferences mPrefs;
 
-    private static final String ARTSOURCE_NAME = "Fimbo - Icon Pack";
-    private static final String JSON_URL = "https://raw.githubusercontent.com/jahirfiquitiva/MinDesigns-Wallpapers/master/JSON-Files/walls_test.json";
+    private static final String ARTSOURCE_NAME = "Material Glass";
+    private static final String JSON_URL = "https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass/0wallpapers.json";
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
     private static final int COMMAND_ID_SHARE = 1337;
 

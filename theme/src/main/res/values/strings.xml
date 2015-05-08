@@ -79,8 +79,10 @@
         <item>ALL</item>
     </string-array>
 
-
+    <!-- Strings for Wallpapers -->
+    <string name="walls_save_location">"/Material_Glass/Wallpapers/"</string>
     <string name="walls_prefix_name">Material_Glass_</string>
+
 
     <!-- Messages shown when using LicenseChecker -->
     <string name="license_failed">"You are not downloading PaperBoard from Google Play Store. You have two options only:"</string>
@@ -101,7 +103,7 @@
      And at the end the only text that will stay is "WallpaperName.png" which will be the final name of downloaded file.
      -->
     <string name="replace_one">"https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass/"</string>    <string name="replace_two">"Lines"</string>
-    <string name="replace_three">"Circles"</string>
+    <string name="replace_three">"Material_Glass"</string>
     <string name="replace_four">"Text"</string>
     <string name="replace_five">"text"</string>
     <string name="replace_six">"whatever"</string>
