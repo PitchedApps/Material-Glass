@@ -53,16 +53,16 @@
     <color name="dblue_t">#cc343d41</color>
 
     <!--appcompat
-    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
-    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_default">@color/text</color>
+    <color name="common_signin_btn_dark_text_pressed">@color/text</color>
     <color name="common_signin_btn_dark_text_disabled">#ffaaaaaa</color>
-    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
-    <color name="common_signin_btn_light_text_default">#ff737373</color>
-    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_focused">@color/text</color>
+    <color name="common_signin_btn_light_text_default">@color/text</color>
+    <color name="common_signin_btn_light_text_pressed">@color/text</color>
     <color name="common_signin_btn_light_text_disabled">#ffaaaaaa</color>
-    <color name="common_signin_btn_light_text_focused">#ff737373</color>
-    <color name="common_signin_btn_default_background">#ffdd4b39</color>
-    <color name="common_action_bar_splitter">#ffd2d2d2</color>
+    <color name="common_signin_btn_light_text_focused">@color/text</color>
+    <color name="common_signin_btn_default_background">@color/background</color>
+    <color name="common_action_bar_splitter">#22ffffff</color>
     <color name="wallet_bright_foreground_holo_dark">@color/text</color>
     <color name="wallet_dim_foreground_holo_dark">@color/textt</color>
     <color name="wallet_dim_foreground_disabled_holo_dark">@color/textt</color>
@@ -92,12 +92,12 @@
     <color name="ripple_material_light">#40ffffff</color>
     <color name="accent_material_light">@color/text</color>
     <color name="accent_material_dark">@color/text</color>
-    <color name="button_material_dark">@color/backgroundd</color>
-    <color name="button_material_light">@color/backgroundd</color>
+    <color name="button_material_dark">#55333333</color>
+    <color name="button_material_light">#55333333</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
-    <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <color name="bright_foreground_material_dark">@android:color/white</color>
-    <color name="bright_foreground_material_light">@android:color/white</color>
+    <color name="switch_thumb_normal_material_light">#ffbdbdbd</color>
+    <color name="bright_foreground_material_dark">@color/text</color>
+    <color name="bright_foreground_material_light">@color/text</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80ffffff</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -126,6 +126,10 @@
     <color name="material_blue_grey_900">@color/background</color>
     <color name="material_blue_grey_950">@color/background</color>
 
+    <color name="cardview_dark_background">#33000000</color>
+    <color name="cardview_light_background">#33000000</color>
+    <color name="cardview_shadow_end_color">#00000000</color>
+    <color name="cardview_shadow_start_color">#03000000</color>
     -->
 </resources>
 

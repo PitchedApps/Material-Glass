@@ -22,7 +22,7 @@
         <item name="material_drawer_background">@color/drawer</item>
         <item name="material_drawer_icons">@color/text</item>
         <item name="material_drawer_primary_text">@color/text</item>
-        <!--<item name="material_drawer_primary_icon">@color/text</item>-->
+        <item name="material_drawer_primary_icon">@color/texttt</item>
         <item name="material_drawer_secondary_text">@color/textt</item>
         <item name="material_drawer_hint_text">@color/textt</item>
         <item name="material_drawer_divider">@color/divider</item>

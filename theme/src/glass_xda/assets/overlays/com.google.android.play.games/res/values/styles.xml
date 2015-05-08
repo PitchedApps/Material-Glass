@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.AppCompat" parent="@*common:style/Pitch.AppCompat" />
+    <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
+
+    <style name="PlayPopupSelector" parent="@android:style/Theme.NoTitleBar" />
+    <style name="Games.PopupSelector" parent="@android:style/Theme.NoTitleBar" />
+</resources>

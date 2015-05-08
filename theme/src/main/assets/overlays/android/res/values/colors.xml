@@ -81,6 +81,12 @@
     </color>
     <color name="timepicker_default_selector_color_material">@color/backgrounddt</color>
 
+    <color name="timepicker_default_background_material">
+        @color/datepicker_default_header_selector_background_material_dark
+    </color>
+    <color name="timepicker_default_text_color_material">@color/text</color>
+    <color name="datepicker_default_header_selector_background_material_dark">#bb303030</color>
+    <color name="datepicker_default_view_animator_color_material_dark">#bb303030</color>
 
     <!--euphoria-->
     <color name="notification_material_action_textcolor">@color/textt</color>

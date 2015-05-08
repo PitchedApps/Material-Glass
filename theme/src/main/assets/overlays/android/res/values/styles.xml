@@ -83,17 +83,6 @@
     </style>
 
 
-    <style name="ThemeOverlay.Material" parent="@android:style/ThemeOverlay.Material">
-        <item name="android:panelColorBackground">@color/backgroundt</item>
-        <item name="android:panelColorForeground">@color/text</item>
-        <item name="android:colorBackground">@color/backgroundt</item>
-        <item name="android:colorForeground">@color/text</item>
-        <item name="android:windowBackground">@color/backgroundt</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-        <item name="android:colorControlActivated">@color/text</item>
-        <item name="android:navigationBarColor">@color/black_t</item>
-    </style>
     <style name="Theme.Material" parent="@android:style/Theme.Material">
         <item name="android:panelColorBackground">@color/backgroundt</item>
         <item name="android:panelColorForeground">@color/text</item>
