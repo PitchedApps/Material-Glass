@@ -1,4 +1,4 @@
-package com.pitchedapps.material.glass.adapters;
+package com.pitchedapps.material.glass.utilities;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,8 +12,8 @@ import com.pitchedapps.material.glass.R;
 
 public class ChangelogAdapter extends BaseAdapter {
 
-    private final Context mContext;
-    private final String[][] mChangelog;
+    private Context mContext;
+    private String[][] mChangelog;
 
     public ChangelogAdapter(Context context, int rootArray) {
 
@@ -49,13 +49,15 @@ public class ChangelogAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if (convertView == null) {
-            LayoutInflater inflater = LayoutInflater.from(mContext);
-            convertView = inflater.inflate(R.layout.changelog_content, parent, false);
+
+        View view = convertView;
+        if (view == null) {
+            LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            view = inflater.inflate(R.layout.changelog_content, null);
         }
 
-        TextView versionName = (TextView) convertView.findViewById(R.id.changelog_versionname);
-        TextView versionContent = (TextView) convertView.findViewById(R.id.changelog_versioncontent);
+        TextView versionName = (TextView) view.findViewById(R.id.changelog_versionname);
+        TextView versionContent = (TextView) view.findViewById(R.id.changelog_versioncontent);
 
         String nameStr = mChangelog[position][0];
         String contentStr = "";
@@ -72,7 +74,7 @@ public class ChangelogAdapter extends BaseAdapter {
         versionName.setText(nameStr);
         versionContent.setText(contentStr);
 
-        return convertView;
+        return view;
     }
 
 }

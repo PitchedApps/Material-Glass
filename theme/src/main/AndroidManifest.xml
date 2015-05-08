@@ -42,15 +42,19 @@
         android:label="@string/theme_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".HomeActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pitchedapps.material.glass.activities.Main"
+            android:label="@string/app_name">
             <intent-filter>
-            <action android:name="android.intent.action.PICK" />
+                <action android:name="android.intent.action.PICK" />
                 <category android:name="android.intent.category.DEFAULT" />
 
                 <data android:mimeType="image/*" />
@@ -71,20 +75,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pitchedapps.material.glass.activities.DetailedWallpaperActivity"
+            android:name="com.pitchedapps.material.glass.activities.DetailedWallpaper"
             android:label="@string/title_activity_detailed_wallpaper"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.DetailedWallpaperActivity" />
+                android:value="com.pitchedapps.material.glass.activities.DetailedWallpaper" />
         </activity>
         <activity
-            android:name="com.pitchedapps.material.glass.activities.DonationsActivity"
+            android:name="com.pitchedapps.material.glass.activities.Donations"
             android:label="@string/donate"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.MainActivity" />
+                android:value="com.pitchedapps.material.glass.activities.Main" />
         </activity>
 
         <service

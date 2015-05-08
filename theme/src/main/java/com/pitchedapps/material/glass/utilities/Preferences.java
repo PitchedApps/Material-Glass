@@ -14,14 +14,14 @@ public class Preferences {
             ROTATE_MINUTE = "rotate_time_minute",
             ROTATE_TIME = "muzei_rotate_time";
 
-    private final Context context;
+    private Context context;
 
     public Preferences(Context context) {
         this.context = context;
 
     }
 
-    private SharedPreferences getSharedPreferences() {
+    public SharedPreferences getSharedPreferences() {
         return context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
     }
 
@@ -33,28 +33,28 @@ public class Preferences {
         return getSharedPreferences().getBoolean(ENABLE_FEATURES, true);
     }
 
-    public boolean isRotateMinute() {
-        return getSharedPreferences().getBoolean(ROTATE_MINUTE, false);
-    }
-
-
-    public int getRotateTime() {
-        return getSharedPreferences().getInt(ROTATE_TIME, 900000);
-    }
-
     public void setFeaturesEnabled(boolean bool) {
         getSharedPreferences().edit().putBoolean(ENABLE_FEATURES, bool).apply();
     }
 
-    public void setNotFirstrun() {
-        getSharedPreferences().edit().putBoolean(FIRSTRUN, false).apply();
+    public boolean isRotateMinute() {
+        return getSharedPreferences().getBoolean(ROTATE_MINUTE, false);
+    }
+
+    public void setRotateMinute(boolean bool) {
+        getSharedPreferences().edit().putBoolean(ROTATE_MINUTE, bool).apply();
+    }
+
+    public int getRotateTime() {
+        return getSharedPreferences().getInt(ROTATE_TIME, 900000);
     }
 
     public void setRotateTime(int time) {
         getSharedPreferences().edit().putInt(ROTATE_TIME, time).apply();
     }
 
-    public void setRotateMinute(boolean bool) {
-        getSharedPreferences().edit().putBoolean(ROTATE_MINUTE, bool).apply();
-}
+    public void setNotFirstrun() {
+        getSharedPreferences().edit().putBoolean(FIRSTRUN, false).apply();
+    }
+
 }

@@ -1,0 +1,417 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundt">
+
+    <com.melnykov.fab.ObservableScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fillViewport="true"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/infocard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:clickable="false"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/card"
+                card_view:cardCornerRadius="@dimen/card_corner_radius"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/cards_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/welcometest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/welcome_title"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_big" />
+
+                    <TextView
+                        android:id="@+id/welcome_contenttest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/welcometest"
+                        android:layout_below="@id/welcometest"
+                        android:layout_marginBottom="@dimen/cards_text_margin"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="@string/theme_description"
+                        android:textColor="@color/textt"
+                        android:textSize="@dimen/text_small" />
+
+                    <ImageView
+                        android:id="@+id/pic1test"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/welcome_contenttest"
+                        android:padding="@dimen/image_home_padding"
+                        android:src="@drawable/icons_banner" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                card_view:cardBackgroundColor="@color/card"
+                card_view:cardCornerRadius="@dimen/card_corner_radius"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:minWidth="100dp"
+                        android:paddingLeft="@dimen/image_home_padding"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_donate" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/donate_home_title"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/text_big" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.2"
+                            android:paddingBottom="@dimen/cards_padding"
+                            android:paddingLeft="@dimen/cards_padding"
+                            android:paddingRight="@dimen/cards_padding"
+                            android:text="@string/donate_home_content"
+                            android:textColor="@color/textt"
+                            android:textSize="@dimen/text_small" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/divider"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/donate_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:background="?selectableItemBackground"
+                                android:gravity="right"
+                                android:padding="@dimen/cards_padding"
+                                android:text="@string/donate_caps"
+                                android:textColor="@color/text"
+                                android:textSize="@dimen/text_ultrasmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                card_view:cardBackgroundColor="@color/card"
+                card_view:cardCornerRadius="@dimen/card_corner_radius"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:minWidth="100dp"
+                        android:paddingLeft="@dimen/image_home_padding"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_playstore_logo" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titleTextView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/play_card_title"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/text_big" />
+
+                        <TextView
+                            android:id="@+id/descriptionTextView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.2"
+                            android:paddingBottom="@dimen/cards_padding"
+                            android:paddingLeft="@dimen/cards_padding"
+                            android:paddingRight="@dimen/cards_padding"
+                            android:text="@string/play_card_content"
+                            android:textColor="@color/textt"
+                            android:textSize="@dimen/text_small" />
+
+                        <View
+                            android:id="@+id/cardDivider"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/divider"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/play_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:background="?selectableItemBackground"
+                                android:gravity="right"
+                                android:padding="@dimen/cards_padding"
+                                android:text="@string/play"
+                                android:textColor="@color/text"
+                                android:textSize="@dimen/text_ultrasmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                card_view:cardBackgroundColor="@color/card"
+                card_view:cardCornerRadius="@dimen/card_corner_radius"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:minWidth="100dp"
+                        android:paddingLeft="@dimen/image_home_padding"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_xda" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/xda_title"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/text_big" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.2"
+                            android:paddingBottom="@dimen/cards_padding"
+                            android:paddingLeft="@dimen/cards_padding"
+                            android:paddingRight="@dimen/cards_padding"
+                            android:text="@string/xda_content"
+                            android:textColor="@color/textt"
+                            android:textSize="@dimen/text_small" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/divider"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/xda_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:background="?selectableItemBackground"
+                                android:gravity="right"
+                                android:padding="@dimen/cards_padding"
+                                android:text="@string/link"
+                                android:textColor="@color/text"
+                                android:textSize="@dimen/text_ultrasmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                card_view:cardBackgroundColor="@color/card"
+                card_view:cardCornerRadius="@dimen/card_corner_radius"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:minWidth="100dp"
+                        android:paddingLeft="@dimen/image_home_padding"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_pitched_glass" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/pitched_glass_title"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/text_big" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.2"
+                            android:paddingBottom="@dimen/cards_padding"
+                            android:paddingLeft="@dimen/cards_padding"
+                            android:paddingRight="@dimen/cards_padding"
+                            android:text="@string/pitched_glass_content"
+                            android:textColor="@color/textt"
+                            android:textSize="@dimen/text_small" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/divider"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/pitchedglass_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:background="?selectableItemBackground"
+                                android:gravity="right"
+                                android:padding="@dimen/cards_padding"
+                                android:text="@string/download"
+                                android:textColor="@color/text"
+                                android:textSize="@dimen/text_ultrasmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </com.melnykov.fab.ObservableScrollView>
+
+</RelativeLayout>
+

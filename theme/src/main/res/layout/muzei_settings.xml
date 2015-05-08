@@ -15,8 +15,7 @@
         android:minHeight="?actionBarSize"
         android:transitionName="actionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat"
-        app:theme="@style/MyActionBarTheme"
-        tools:ignore="UnusedAttribute" />
+        app:theme="@style/MyActionBarTheme" />
 
     <ScrollView
         android:layout_width="match_parent"

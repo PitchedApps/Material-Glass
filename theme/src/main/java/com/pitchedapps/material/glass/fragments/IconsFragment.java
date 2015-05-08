@@ -1,5 +1,6 @@
 package com.pitchedapps.material.glass.fragments;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -19,7 +20,8 @@ import java.util.ArrayList;
 
 public class IconsFragment extends Fragment {
 
-    private String[] iconsnames;
+
+    private Context context;
 
     public static IconsFragment newInstance(int iconsArray) {
         IconsFragment fragment = new IconsFragment();
@@ -29,13 +31,17 @@ public class IconsFragment extends Fragment {
         return fragment;
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.icons_grid, container, false);
+
+        context = getActivity();
         GridView gridview = (GridView) view.findViewById(R.id.icons_grid);
-        final IconAdapter icAdapter = new IconAdapter();
+        IconAdapter icAdapter = new IconAdapter();
         gridview.setAdapter(icAdapter);
         return view;
+
     }
 
     private class IconAdapter extends BaseAdapter {
@@ -62,25 +68,25 @@ public class IconsFragment extends Fragment {
 
         @Override
         public View getView(final int position, View convertView, ViewGroup parent) {
-            IconsHolder holder;
-            Animation anim = AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in);
 
-            if (convertView == null) {
-                LayoutInflater inflater = LayoutInflater.from(getActivity());
-                convertView = inflater.inflate(R.layout.icon, parent, false);
-                //added for support
-                convertView.setLayoutParams(new GridView.LayoutParams(120, 120));
-                holder = new IconsHolder(convertView);
-                convertView.setTag(holder);
+            View icono = convertView;
+            IconsHolder holder;
+            Animation anim = AnimationUtils.loadAnimation(context, R.anim.fade_in);
+
+            if (icono == null) {
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                icono = inflater.inflate(R.layout.icon, parent, false);
+                icono.setLayoutParams(new GridView.LayoutParams(120, 120));
+                holder = new IconsHolder(icono);
+                icono.setTag(holder);
             } else {
-                holder = (IconsHolder) convertView.getTag();
+                holder = (IconsHolder) icono.getTag();
+
             }
 
             holder.icon.startAnimation(anim);
             holder.icon.setImageResource(mThumbs.get(position));
-
-
-            return convertView;
+            return icono;
         }
 
         private void loadIcon() {
@@ -93,13 +99,14 @@ public class IconsFragment extends Fragment {
         }
 
         private void addIcon(Resources resources, String packageName, int list) {
-            iconsnames = resources.getStringArray(list);
-            for (String extra : iconsnames) {
+            final String[] extras = resources.getStringArray(list);
+            for (String extra : extras) {
                 int res = resources.getIdentifier(extra, "drawable", packageName);
                 if (res != 0) {
                     final int thumbRes = resources.getIdentifier(extra, "drawable", packageName);
-                    if (thumbRes != 0)
+                    if (thumbRes != 0) {
                         mThumbs.add(thumbRes);
+                    }
                 }
             }
         }
@@ -111,6 +118,8 @@ public class IconsFragment extends Fragment {
                 icon = (ImageView) v.findViewById(R.id.icon_img);
             }
         }
+
     }
-//    }
+
+
 }

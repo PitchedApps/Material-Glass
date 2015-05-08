@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.views.SlidingTabLayout;
 
-public class PreviewsFragment extends Fragment {
+public class Previews extends Fragment {
 
     private ViewPager mPager;
     private SlidingTabLayout mTabs;
