@@ -42,7 +42,7 @@
         android:label="@string/theme_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.pitchedapps.material.glass.activities.Main"
+            android:name="com.pitchedapps.material.glass.activities.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.PICK" />
@@ -66,12 +66,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pitchedapps.material.glass.activities.DetailedWallpaper"
+            android:name="com.pitchedapps.material.glass.activities.DetailedWallpaperActivity"
             android:label="@string/title_activity_detailed_wallpaper"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.pitchedapps.material.glass.activities.DetailedWallpaper" />
+                android:value="com.pitchedapps.material.glass.activities.DetailedWallpaperActivity" />
         </activity>
         <!--<activity-->
             <!--android:name=".fragments.DonationsFragment2"-->
