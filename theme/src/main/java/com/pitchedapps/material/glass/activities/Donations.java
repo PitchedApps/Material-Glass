@@ -29,7 +29,7 @@ import com.pitchedapps.material.glass.R;
 
 import org.sufficientlysecure.donations.DonationsFragment;
 
-public class DonationsActivity extends AppCompatActivity {
+public class Donations extends AppCompatActivity {
 //public class Donations extends AppCompatActivity implements View.OnClickListener {
 
     /**

@@ -33,7 +33,7 @@ class SlidingTabStrip extends LinearLayout {
         this(context, null);
     }
 
-    private SlidingTabStrip(Context context, AttributeSet attrs) {
+    SlidingTabStrip(Context context, AttributeSet attrs) {
         super(context, attrs);
         setWillNotDraw(false);
 

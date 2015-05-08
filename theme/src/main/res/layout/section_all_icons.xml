@@ -1,17 +1,20 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context="com.pitchedapps.material.glass.activities.MainActivity">
+        tools:context="com.pitchedapps.material.glass.activities.Main">
 
-        <com.pitchedapps.material.glass.views.SlidingTabLayout
+    <com.pitchedapps.material.glass.views.SlidingTabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/primary"
             android:clipToPadding="false"
-        android:elevation="@dimen/toolbar_elevation"
             android:paddingLeft="@dimen/tabs_contentInset"
             android:paddingStart="@dimen/tabs_contentInset"
             tools:ignore="NewApi,RtlSymmetry,UnusedAttribute" />
@@ -22,4 +25,6 @@
             android:layout_height="@dimen/no_height"
             android:layout_weight="1" />
 
-</LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

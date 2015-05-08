@@ -1,5 +1,6 @@
 package com.pitchedapps.material.glass.fragments;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,15 +16,22 @@ import android.widget.TextView;
 
 import com.pitchedapps.material.glass.R;
 
-public class CreditsFragment extends Fragment {
+/**
+ * Created by Jahir on 08/03/2015.
+ */
+public class Credits extends Fragment {
+
+    private Context context;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_credits, container, false);
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_credits, null);
 
-        ActionBar toolbar = ((AppCompatActivity) getActivity()).getSupportActionBar();
-        if (toolbar != null)
+        context = getActivity();
+
+        ActionBar toolbar = ((AppCompatActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.section_six);
+        toolbar.setElevation(getResources().getDimension(R.dimen.toolbar_elevation));
 
         TextView authordesc = (TextView) root.findViewById(R.id.dashauthor_info);
         authordesc.setText(Html.fromHtml(getString(R.string.dashboard_author_desc)));

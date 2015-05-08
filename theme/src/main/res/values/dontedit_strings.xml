@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+<resources>
+
     <!-- List Of Drawer Sections -->
     <string name="section_one">Home</string>
     <string name="section_two">Icons</string>

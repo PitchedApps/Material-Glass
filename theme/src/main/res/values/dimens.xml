@@ -62,5 +62,8 @@
 
     <dimen name="image_home_padding">5dp</dimen>
 
+    <dimen name="dialog_padding">8dp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_press_elevation">4dp</dimen>
 
 </resources>
