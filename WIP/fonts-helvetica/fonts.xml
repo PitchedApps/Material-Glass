@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<familyset version="22">
+    <!-- first font is default -->
+    <family name="sans-serif">
+        <font style="normal" weight="100">Roboto-Thin.otf</font>
+        <font style="italic" weight="100">Roboto-ThinItalic.otf</font>
+        <font style="normal" weight="300">Roboto-Light.otf</font>
+        <font style="italic" weight="300">Roboto-LightItalic.otf</font>
+        <font style="normal" weight="400">Roboto-Regular.otf</font>
+        <font style="italic" weight="400">Roboto-Italic.otf</font>
+        <font style="normal" weight="500">Roboto-Medium.otf</font>
+        <font style="italic" weight="500">Roboto-MediumItalic.otf</font>
+        <font style="normal" weight="900">Roboto-Black.otf</font>
+        <font style="italic" weight="900">Roboto-BlackItalic.otf</font>
+        <font style="normal" weight="700">Roboto-Bold.otf</font>
+        <font style="italic" weight="700">Roboto-BoldItalic.otf</font>
+    </family>
+
+    <!-- Note that aliases must come after the fonts they reference. -->
+    <alias name="sans-serif-thin" to="sans-serif" weight="100" />
+    <alias name="sans-serif-light" to="sans-serif" weight="300" />
+    <alias name="sans-serif-medium" to="sans-serif" weight="500" />
+    <alias name="sans-serif-black" to="sans-serif" weight="900" />
+    <alias name="arial" to="sans-serif" />
+    <alias name="helvetica" to="sans-serif" />
+    <alias name="tahoma" to="sans-serif" />
+    <alias name="verdana" to="sans-serif" />
+
+    <family name="sans-serif-condensed">
+        <font style="normal" weight="300">RobotoCondensed-Light.otf</font>
+        <font style="italic" weight="300">RobotoCondensed-LightItalic.otf</font>
+        <font style="normal" weight="400">RobotoCondensed-Regular.otf</font>
+        <font style="italic" weight="400">RobotoCondensed-Italic.otf</font>
+        <font style="normal" weight="700">RobotoCondensed-Bold.otf</font>
+        <font style="italic" weight="700">RobotoCondensed-BoldItalic.otf</font>
+    </family>
+    <alias name="sans-serif-condensed-light" to="sans-serif-condensed" weight="300" />
+
+</familyset>
