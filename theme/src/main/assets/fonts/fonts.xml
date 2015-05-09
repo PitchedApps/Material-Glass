@@ -2,18 +2,18 @@
 <familyset version="22">
     <!-- first font is default -->
     <family name="sans-serif">
-        <font style="normal" weight="100">Roboto-Thin.otf</font>
-        <font style="italic" weight="100">Roboto-ThinItalic.otf</font>
-        <font style="normal" weight="300">Roboto-Light.otf</font>
-        <font style="italic" weight="300">Roboto-LightItalic.otf</font>
-        <font style="normal" weight="400">Roboto-Regular.otf</font>
-        <font style="italic" weight="400">Roboto-Italic.otf</font>
-        <font style="normal" weight="500">Roboto-Medium.otf</font>
-        <font style="italic" weight="500">Roboto-MediumItalic.otf</font>
-        <font style="normal" weight="900">Roboto-Black.otf</font>
-        <font style="italic" weight="900">Roboto-BlackItalic.otf</font>
-        <font style="normal" weight="700">Roboto-Bold.otf</font>
-        <font style="italic" weight="700">Roboto-BoldItalic.otf</font>
+        <font style="normal" weight="100">HelveticaNeue-Thin.otf</font>
+        <font style="italic" weight="100">HelveticaNeue-ThinItalic.otf</font>
+        <font style="normal" weight="300">HelveticaNeue-Light.otf</font>
+        <font style="italic" weight="300">HelveticaNeue-LightItalic.otf</font>
+        <font style="normal" weight="400">HelveticaNeue-Regular.otf</font>
+        <font style="italic" weight="400">HelveticaNeue-Italic.otf</font>
+        <font style="normal" weight="500">HelveticaNeue-Medium.otf</font>
+        <font style="italic" weight="500">HelveticaNeue-MediumItalic.otf</font>
+        <font style="normal" weight="900">HelveticaNeue-Black.otf</font>
+        <font style="italic" weight="900">HelveticaNeue-BlackItalic.otf</font>
+        <font style="normal" weight="700">HelveticaNeue-Bold.otf</font>
+        <font style="italic" weight="700">HelveticaNeue-BoldItalic.otf</font>
     </family>
 
     <!-- Note that aliases must come after the fonts they reference. -->
@@ -27,12 +27,12 @@
     <alias name="verdana" to="sans-serif" />
 
     <family name="sans-serif-condensed">
-        <font style="normal" weight="300">RobotoCondensed-Light.otf</font>
-        <font style="italic" weight="300">RobotoCondensed-LightItalic.otf</font>
-        <font style="normal" weight="400">RobotoCondensed-Regular.otf</font>
-        <font style="italic" weight="400">RobotoCondensed-Italic.otf</font>
-        <font style="normal" weight="700">RobotoCondensed-Bold.otf</font>
-        <font style="italic" weight="700">RobotoCondensed-BoldItalic.otf</font>
+        <font style="normal" weight="300">Helvetica-Condensed-Light.otf</font>
+        <font style="italic" weight="300">Helvetica-Condensed-LightItalic.otf</font>
+        <font style="normal" weight="400">Helvetica-Condensed-Regular.otf</font>
+        <font style="italic" weight="400">Helvetica-Condensed-Italic.otf</font>
+        <font style="normal" weight="700">Helvetica-Condensed-Bold.otf</font>
+        <font style="italic" weight="700">Helvetica-Condensed-BoldItalic.otf</font>
     </family>
     <alias name="sans-serif-condensed-light" to="sans-serif-condensed" weight="300" />
 

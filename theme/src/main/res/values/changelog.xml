@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">0.9.7</string>
+    <string name="current_version">0.9.8</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v24</item>
         <item>@array/v23</item>
         <item>@array/v22</item>
         <item>@array/v21</item>
@@ -35,6 +36,20 @@
         <item></item>
         <item></item>
         <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v24">
+        <item>v0.9.8</item>
+        <item>UI: rebased to Paperboard v7 + lots of other fixes</item>
+        <item>Project: open sourced!</item>
+        <item>Framework:: fixed dark overflow on light themes</item>
+        <item>New: Themed google games (xda)</item>
+        <item>Google +: slightly more transparency (xda)</item>
+        <item>Google Services: fixed some white backgroudns (xda)</item>
+        <item>CellBroadcastReceiver: added latest style commits</item>
+        <item>Deskclock: added latest background commits</item>
         <item></item>
         <item></item>
     </string-array>

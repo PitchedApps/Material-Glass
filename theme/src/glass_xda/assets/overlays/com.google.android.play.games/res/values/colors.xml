@@ -290,9 +290,9 @@
     <color name="play_tab_strip_side">#19000000</color>
     <color name="play_translucent_separator_line">#26000000</color>
     <color name="play_transparent">#00000000</color>
-    <color name="play_white">#ffffffff</color>
-    <color name="play_white_disabled">#70ffffff</color>
-    <color name="play_white_half_transparent">#32ffffff</color>
+    <color name="play_white">@color/background</color>
+    <color name="play_white_disabled">#70000000</color>
+    <color name="play_white_half_transparent">#32000000</color>
 
     <color name="primary_text_default_material_dark">#ffffffff</color>
     <color name="primary_text_default_material_light">#ffffffff</color>
