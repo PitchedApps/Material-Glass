@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">0.9.8-beta1</string>
+    <string name="current_version">0.9.8</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v25</item>
         <item>@array/v24</item>
         <item>@array/v23</item>
         <item>@array/v22</item>
@@ -40,6 +41,15 @@
         <item></item>
     </string-array>
 
+    <string-array name="v25">
+        <item>v0.9.8</item>
+        <item>MMS: themed widget</item>
+        <item>Google +: moved xda version to play store build</item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <string-array name="v24">
         <item>v0.9.8-beta1</item>
         <item>UI: rebased to Paperboard v7 + lots of other fixes</item>
@@ -51,7 +61,6 @@
         <item>CellBroadcastReceiver: added latest style commits</item>
         <item>Deskclock: added latest background commits</item>
         <item>Reverted to older build tools</item>
-        <item></item>
     </string-array>
 
     <string-array name="v23">
