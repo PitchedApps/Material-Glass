@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<familyset version="22">
+    <!-- first font is default -->
+    <family name="sans-serif">
+        <font style="normal" weight="100">HelveticaNeue-Thin.otf</font>
+        <font style="italic" weight="100">HelveticaNeue-ThinItalic.otf</font>
+        <font style="normal" weight="300">HelveticaNeue-Light.otf</font>
+        <font style="italic" weight="300">HelveticaNeue-LightItalic.otf</font>
+        <font style="normal" weight="400">HelveticaNeue-Regular.otf</font>
+        <font style="italic" weight="400">HelveticaNeue-Italic.otf</font>
+        <font style="normal" weight="500">HelveticaNeue-Medium.otf</font>
+        <font style="italic" weight="500">HelveticaNeue-MediumItalic.otf</font>
+        <font style="normal" weight="900">HelveticaNeue-Black.otf</font>
+        <font style="italic" weight="900">HelveticaNeue-BlackItalic.otf</font>
+        <font style="normal" weight="700">HelveticaNeue-Bold.otf</font>
+        <font style="italic" weight="700">HelveticaNeue-BoldItalic.otf</font>
+    </family>
+
+    <!-- Note that aliases must come after the fonts they reference. -->
+    <alias name="sans-serif-thin" to="sans-serif" weight="100" />
+    <alias name="sans-serif-light" to="sans-serif" weight="300" />
+    <alias name="sans-serif-medium" to="sans-serif" weight="500" />
+    <alias name="sans-serif-black" to="sans-serif" weight="900" />
+    <alias name="arial" to="sans-serif" />
+    <alias name="helvetica" to="sans-serif" />
+    <alias name="tahoma" to="sans-serif" />
+    <alias name="verdana" to="sans-serif" />
+
+    <family name="sans-serif-condensed">
+        <font style="normal" weight="300">Helvetica-Condensed-Light.otf</font>
+        <font style="italic" weight="300">Helvetica-Condensed-LightItalic.otf</font>
+        <font style="normal" weight="400">Helvetica-Condensed-Regular.otf</font>
+        <font style="italic" weight="400">Helvetica-Condensed-Italic.otf</font>
+        <font style="normal" weight="700">Helvetica-Condensed-Bold.otf</font>
+        <font style="italic" weight="700">Helvetica-Condensed-BoldItalic.otf</font>
+    </family>
+    <alias name="sans-serif-condensed-light" to="sans-serif-condensed" weight="300" />
+
+</familyset>

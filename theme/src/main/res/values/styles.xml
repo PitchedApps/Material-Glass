@@ -32,7 +32,7 @@
     </style>
 
 
-    <style name="MyActionBarTheme" parent="ThemeOverlay.AppCompat.Dark">
+    <style name="MyActionBarTheme" parent="ThemeOverlay.AppCompat">
         <item name="android:textColorPrimary">@color/text</item>
         <item name="android:textColorSecondary">@color/text</item>
     </style>

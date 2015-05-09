@@ -15,6 +15,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
@@ -51,8 +53,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.section_donations);
-
+        setContentView(R.layout.activity_main);
 
         mPrefs = new Preferences(MainActivity.this);
 
@@ -83,12 +84,14 @@ public class MainActivity extends AppCompatActivity {
                 .withActivity(this)
                 .withToolbar(toolbar)
                 .withAccountHeader(headerResult)
+//                .withStatusBarColor(R.color.primary)
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
                         new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),
 //                        new PrimaryDrawerItem().withName(thaApply).withIcon(GoogleMaterial.Icon.gmd_open_in_browser).withIdentifier(3),
                         new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName(thaCredits).withIdentifier(6)
+                        new SecondaryDrawerItem().withName(thaDonate).withIdentifier(4),
+                        new SecondaryDrawerItem().withName(thaCredits).withIdentifier(5)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -104,18 +107,21 @@ public class MainActivity extends AppCompatActivity {
 //                                case 3:
 //                                    switchFragment(3, thaApply, "Apply");
 //                                    break;
-                                case 4:
+                                case 3:
                                     if (Util.hasNetwork(MainActivity.this)) {
-                                        switchFragment(4, thaWalls, "Wallpapers");
+                                        switchFragment(3, thaWalls, "Wallpapers");
                                     } else {
                                         showNotConnectedDialog();
                                     }
                                     break;
-                                case 5:
-                                    switchFragment(5, thaDonate, "Donate");
+                                case 4:
+//                                    switchFragment(4, thaDonate, "Donate");
+                                    Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
+                                    startActivity(intent);
+//                                    overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                                     break;
-                                case 6:
-                                    switchFragment(6, thaCredits, "Credits");
+                                case 5:
+                                    switchFragment(5, thaCredits, "Credits");
                                     break;
                             }
                         }
@@ -223,11 +229,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addItemsToDrawer() {
-        IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(4);
-        IDrawerItem donate = new SecondaryDrawerItem().withName(thaDonate).withIdentifier(5);
+        IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(3);
         if (enable_features) {
-            result.addItem(walls, 3);
-            result.addItem(donate, 4);
+            result.addItem(walls, 2);
         }
     }
 
@@ -260,10 +264,25 @@ public class MainActivity extends AppCompatActivity {
                 .title(R.string.changelog_dialog_title)
                 .adapter(new ChangelogAdapter(this, R.array.fullchangelog), null)
                 .positiveText(R.string.nice)
+                .negativeText(R.string.ratebtn)
+                .neutralText(R.string.donate)
                 .callback(new MaterialDialog.ButtonCallback() {
                     @Override
                     public void onPositive(MaterialDialog dialog) {
                         mPrefs.setNotFirstrun();
+                    }
+
+                    @Override
+                    public void onNegative(MaterialDialog dialog) {
+                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + getString(R.string.package_name)));
+                        startActivity(browserIntent);
+                    }
+
+                    //TODO fix
+                    @Override
+                    public void onNeutral(MaterialDialog dialog) {
+                        Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
+                        startActivity(intent);
                     }
                 }).show();
     }

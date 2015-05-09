@@ -29,7 +29,7 @@
     <string name="changelog">See changelog</string>
 
     <!-- Sharing theme -->
-    <string name="share_one">Check out this awesome icon pack by </string>
+    <string name="share_one">"Check out this awesome theme by "</string>
     <string name="share_two">.\nGet it now at </string>
 
     <!-- LauncherNotInstalled Dialog -->

@@ -44,7 +44,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_margin="@dimen/cards_text_margin"
                         android:text="@string/dashboard_author"
-                        android:textColor="@color/primary"
+                        android:textColor="@color/text"
                         android:textSize="@dimen/text_big" />
 
                     <TextView
@@ -130,7 +130,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_margin="@dimen/cards_text_margin"
                         android:text="@string/iconpack_designer"
-                        android:textColor="@color/primary"
+                        android:textColor="@color/text"
                         android:textSize="@dimen/text_big" />
 
                     <TextView
@@ -244,7 +244,7 @@
                             android:ellipsize="end"
                             android:maxLines="1"
                             android:text="@string/fab_name"
-                            android:textColor="@color/primary"
+                            android:textColor="@color/text"
                             android:textSize="@dimen/text_big"
                             android:textStyle="normal" />
 
@@ -323,7 +323,7 @@
                             android:ellipsize="end"
                             android:maxLines="1"
                             android:text="@string/materialdialogs_name"
-                            android:textColor="@color/primary"
+                            android:textColor="@color/text"
                             android:textSize="@dimen/text_big"
                             android:textStyle="normal" />
 
@@ -402,7 +402,7 @@
                             android:ellipsize="end"
                             android:maxLines="1"
                             android:text="@string/materialdrawer_name"
-                            android:textColor="@color/primary"
+                            android:textColor="@color/text"
                             android:textSize="@dimen/text_big"
                             android:textStyle="normal" />
 
@@ -480,7 +480,7 @@
                             android:ellipsize="end"
                             android:maxLines="1"
                             android:text="@string/materialripples_name"
-                            android:textColor="@color/primary"
+                            android:textColor="@color/text"
                             android:textSize="@dimen/text_big"
                             android:textStyle="normal" />
 
@@ -559,7 +559,7 @@
                             android:ellipsize="end"
                             android:maxLines="1"
                             android:text="@string/picasso_name"
-                            android:textColor="@color/primary"
+                            android:textColor="@color/text"
                             android:textSize="@dimen/text_big"
                             android:textStyle="normal" />
 
@@ -638,7 +638,7 @@
                             android:ellipsize="end"
                             android:maxLines="1"
                             android:text="@string/libdonate_name"
-                            android:textColor="@color/primary"
+                            android:textColor="@color/text"
                             android:textSize="@dimen/text_big"
                             android:textStyle="normal" />
 
@@ -717,7 +717,7 @@
                             android:ellipsize="end"
                             android:maxLines="1"
                             android:text="@string/okhttp_name"
-                            android:textColor="@color/primary"
+                            android:textColor="@color/text"
                             android:textSize="@dimen/text_big"
                             android:textStyle="normal" />
 

@@ -4,7 +4,7 @@
     <!-- MainActivity Strings -->
     <string name="app_name">Material Glass</string>
     <string name="app_long_name">Material Glass by Pitched Apps</string>
-    <string name="package_name">com.pitchedapps.material.glass</string>
+    <string name="package_name">com.pitchedapps.material.glass.free</string>
     <string name="theme_description">Pitched Apps is proud to present Material Glass, cm12\'s first and longest lasting theme! \nMade by 1 themer \nTweaked for 100+ hours \nUsed by 10 000+ users</string>
     <!-- Muzei Stuff -->
     <string name="artsource_name">@string/app_name</string>
@@ -28,7 +28,7 @@
     <string name="welcome_title">Let your wallpaper shine through with material darkness!</string>
 
     <string name="play_card_title">Pitched Apps on Google Play</string>
-    <string name="play_card_content">Check my other apps and download them.</string>
+    <string name="play_card_content">Check out my other apps and download them.</string>
 
     <string name="pitched_glass_title">Pitched Glass</string>
     <string name="pitched_glass_content">Want more icons? Check out my free icon pack with over 2000 hand crafted drawables.</string>
@@ -131,4 +131,5 @@
     </string-array>
 
     <string name="donation_paypal_item">Donation</string>
+    <string name="cm_not_installed">CyanogenMod theme engine is not found!</string>
 </resources>

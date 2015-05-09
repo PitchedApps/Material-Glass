@@ -7,10 +7,10 @@
     <color name="accent_material_dark">@color/text</color>
     <color name="accent_material_light">@color/text</color>
 
-    <color name="account_text_color">@color/manage_accounts_text_color</color>
+    <color name="account_text_color">@color/text</color>
     <color name="achievement_progress_bar">#66ffffff</color>
     <color name="achievement_progress_text">@color/text</color>
-    <color name="add_accounts_text_color">@color/manage_accounts_text_color</color>
+    <color name="add_accounts_text_color">@color/text</color>
 
 
     <color name="background_floating_material_dark">#cc060606</color>

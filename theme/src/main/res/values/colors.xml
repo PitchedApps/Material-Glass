@@ -25,7 +25,7 @@
     <color name="dialog">#bb060606</color>
 
     <color name="status">#881565c0</color>
-    <color name="actionbar">#881976d2</color>
+    <color name="actionbar">#ff1976d2</color>
 
     <color name="fab_unpressed">#bb1976d2</color>
     <color name="fab_pressed">#bb1565c0</color>
@@ -63,4 +63,5 @@
     <color name="window_bg">@color/background</color>
     <color name="divider_grey">#22ffffff</color>
 
+    <color name="divider">#1fffffff</color>
 </resources>

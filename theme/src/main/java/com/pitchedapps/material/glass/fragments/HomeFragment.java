@@ -12,7 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.pitchedapps.material.glass.activities.DonationsActivity;
 import com.pitchedapps.material.glass.activities.MainActivity;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ObservableScrollView;
@@ -30,7 +32,7 @@ public class HomeFragment extends Fragment {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_home, container, false);
 
         PlayStoreDevAccount = getResources().getString(R.string.play_store_dev_link);
-        PlayStoreListing = getActivity().getPackageName();
+        PlayStoreListing = getString(R.string.package_name);
         AppOnePackage = getResources().getString(R.string.app_one_package);
         AppTwoPackage = getResources().getString(R.string.app_two_package);
         AppThreePackage = getResources().getString(R.string.app_three_package);
@@ -42,15 +44,16 @@ public class HomeFragment extends Fragment {
         ObservableScrollView content = (ObservableScrollView) root.findViewById(R.id.HomeContent);
 
         //Cards
-        CardView cardone = (CardView) root.findViewById(R.id.cardOne);
-        CardView cardtwo = (CardView) root.findViewById(R.id.cardTwo);
+//        CardView cardone = (CardView) root.findViewById(R.id.cardOne);
+//        CardView cardtwo = (CardView) root.findViewById(R.id.cardTwo);
         CardView cardthree = (CardView) root.findViewById(R.id.cardThree);
-        if (AppIsInstalled(AppOnePackage)) {
-            cardone.setVisibility((cardone.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
-        }
-        if (AppIsInstalled(AppTwoPackage)) {
-            cardtwo.setVisibility((cardtwo.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
-        }
+//TODO fix
+//        if (AppIsInstalled(AppOnePackage)) {
+//            cardone.setVisibility((cardone.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
+//        }
+//        if (AppIsInstalled(AppTwoPackage)) {
+//            cardtwo.setVisibility((cardtwo.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
+//        }
         if (AppIsInstalled(AppThreePackage)) {
             cardthree.setVisibility((cardthree.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
         }
@@ -69,8 +72,8 @@ public class HomeFragment extends Fragment {
         apponebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent appone = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + AppOnePackage));
-                startActivity(appone);
+                Intent donate = new Intent(getActivity(), DonationsActivity.class);
+                startActivity(donate);
             }
         });
 
@@ -111,8 +114,12 @@ public class HomeFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) getActivity()).result.setSelectionByIdentifier(3);
-                ((MainActivity) getActivity()).switchFragment(5, getResources().getString(R.string.section_five), "Donate");
+                Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+                if (intent == null) {
+                    Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
+                } else {
+                    startActivity(intent);
+                }
             }
         });
 

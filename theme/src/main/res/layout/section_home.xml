@@ -58,7 +58,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="start|top"
                             android:text="@string/welcome_title"
-                            android:textColor="@color/primary"
+                            android:textColor="@color/text"
                             android:textSize="@dimen/text_big" />
 
                         <TextView
@@ -142,7 +142,7 @@
                             android:paddingRight="16dp"
                             android:paddingTop="16dp"
                             android:text="@string/play_card_title"
-                            android:textColor="@color/primary"
+                            android:textColor="@color/text"
                             android:textSize="@dimen/text_big" />
 
                         <TextView
@@ -230,7 +230,7 @@
                             android:paddingRight="16dp"
                             android:paddingTop="16dp"
                             android:text="@string/app_one_title"
-                            android:textColor="@color/primary"
+                            android:textColor="@color/text"
                             android:textSize="@dimen/text_big" />
 
                         <TextView
@@ -315,7 +315,7 @@
                             android:paddingRight="16dp"
                             android:paddingTop="16dp"
                             android:text="@string/app_two_title"
-                            android:textColor="@color/primary"
+                            android:textColor="@color/text"
                             android:textSize="@dimen/text_big" />
 
                         <TextView

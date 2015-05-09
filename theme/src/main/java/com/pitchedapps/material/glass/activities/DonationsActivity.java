@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011-2014 Dominik Schürmann <dominik@dominikschuermann.de>
+ * Copyright (C) 2011-2015 Dominik Schürmann <dominik@dominikschuermann.de>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,27 +14,23 @@
  * limitations under the License.
  */
 
-package com.pitchedapps.material.glass.fragments;
+package com.pitchedapps.material.glass.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.pitchedapps.material.glass.BuildConfig;
 import com.pitchedapps.material.glass.R;
 
 import org.sufficientlysecure.donations.DonationsFragment;
 
-public class DonationsFragment2 extends Fragment {
-//TODO fix errors
+public class DonationsActivity extends AppCompatActivity {
+
     /**
      * Google
      */
@@ -49,24 +45,26 @@ public class DonationsFragment2 extends Fragment {
     private static final String PAYPAL_USER = "pitchedapps@gmail.com";
     private static final String PAYPAL_CURRENCY_CODE = "CAD";
 
-    /**
-     * FABulous constants
-     */
-//    private static final String FAB_MAIN = "fab_main";
-    private Toolbar toolbar;
+
+
 
     /**
      * Called when the activity is first created.
      */
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        inflater.inflate(R.layout.section_donations, container, false);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-        ActionBar toolbar = ((AppCompatActivity) getActivity()).getSupportActionBar();
-        if (toolbar != null)
-            toolbar.setTitle(R.string.donate);
+        setContentView(R.layout.section_donations);
 
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        //noinspection ConstantConditions
+        getSupportActionBar().setTitle(R.string.donate_home_title);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         DonationsFragment donationsFragment;
         if (BuildConfig.DONATIONS_GOOGLE) {
             donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, true, GOOGLE_PUBKEY, GOOGLE_CATALOG,
@@ -79,26 +77,17 @@ public class DonationsFragment2 extends Fragment {
 
         ft.replace(R.id.donations_activity_container, donationsFragment, "donationsFragment");
         ft.commit();
-        //check below
-        return null;
     }
 
     /**
      * Needed for Google Play In-app Billing. It uses startIntentSenderForResult(). The result is not propagated to
      * the Fragment like in startActivityForResult(). Thus we need to propagate manually to our Fragment.
-     *
-     * @param requestCode
-     * @param resultCode
-     * @param data
      */
-
-    //below was protected void
-
     @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        FragmentManager fragmentManager = getFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragment = fragmentManager.findFragmentByTag("donationsFragment");
         if (fragment != null) {
             fragment.onActivityResult(requestCode, resultCode, data);
