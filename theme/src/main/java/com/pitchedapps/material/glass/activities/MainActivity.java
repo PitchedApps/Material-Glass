@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private String thaWalls;
     private String thaDonate;
     private String thaCredits;
+    private String thaInfo;
     public String version;
     private int currentItem = -1;
     private boolean firstrun, enable_features;
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         thaWalls = getResources().getString(R.string.section_four);
         thaDonate = getResources().getString(R.string.section_five);
         thaCredits = getResources().getString(R.string.section_six);
+        thaInfo = getResources().getString(R.string.section_eight);
 
         AccountHeader.Result headerResult = new AccountHeader()
                 .withActivity(this)
@@ -88,10 +90,10 @@ public class MainActivity extends AppCompatActivity {
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
                         new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),
-//                        new PrimaryDrawerItem().withName(thaApply).withIcon(GoogleMaterial.Icon.gmd_open_in_browser).withIdentifier(3),
+                        new PrimaryDrawerItem().withName(thaInfo).withIcon(GoogleMaterial.Icon.gmd_info).withIdentifier(3),
                         new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName(thaDonate).withIdentifier(4),
-                        new SecondaryDrawerItem().withName(thaCredits).withIdentifier(5)
+                        new SecondaryDrawerItem().withName(thaDonate).withIdentifier(5),
+                        new SecondaryDrawerItem().withName(thaCredits).withIdentifier(6)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -104,24 +106,24 @@ public class MainActivity extends AppCompatActivity {
                                 case 2:
                                     switchFragment(2, thaPreviews, "Previews");
                                     break;
-//                                case 3:
-//                                    switchFragment(3, thaApply, "Apply");
-//                                    break;
                                 case 3:
+                                    switchFragment(3, thaInfo, "Info");
+                                    break;
+                                case 4:
                                     if (Util.hasNetwork(MainActivity.this)) {
-                                        switchFragment(3, thaWalls, "Wallpapers");
+                                        switchFragment(4, thaWalls, "Wallpapers");
                                     } else {
                                         showNotConnectedDialog();
                                     }
                                     break;
-                                case 4:
+                                case 5:
 //                                    switchFragment(4, thaDonate, "Donate");
                                     Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
                                     startActivity(intent);
 //                                    overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                                     break;
-                                case 5:
-                                    switchFragment(5, thaCredits, "Credits");
+                                case 6:
+                                    switchFragment(6, thaCredits, "Credits");
                                     break;
                             }
                         }
@@ -229,9 +231,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addItemsToDrawer() {
-        IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(3);
+        IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(4);
         if (enable_features) {
-            result.addItem(walls, 2);
+            result.addItem(walls, 3);
         }
     }
 
