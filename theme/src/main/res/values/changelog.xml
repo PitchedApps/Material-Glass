@@ -45,9 +45,10 @@
         <item>v0.9.8</item>
         <item>MMS: themed widget</item>
         <item>Google +: moved xda version to play store build</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Framework: themed appops permission icons</item>
+        <item>Framework: themed some more dialogs</item>
+        <item>New: themed packageinstaller (minor)</item>
+        <item>UI: readded theme info section</item>
     </string-array>
 
     <string-array name="v24">

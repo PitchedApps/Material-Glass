@@ -8,7 +8,7 @@
     <string-array name="info_sections">
         <item>FAQ</item>
         <item>Themed Apps</item>
-        <item>Bugs/Known Issues</item>
+        <item>Bugs/Issues</item>
     </string-array>
 
     <!-- Tab contents -->
@@ -48,6 +48,7 @@
             \n&#8226; AOSP Keyboard
             \n&#8226; Launcher 3
             \n&#8226; MMS
+            \n&#8226; Package Installer
             \n\nGOOGLE
             \n\n&#8226; Google + (in xda version)
             \n&#8226; Gmail
@@ -67,6 +68,7 @@
             \n&#8226; Xposed
             \n&#8226; Hells Core Kernel Updater
             \n&#8226; Switchr
+            \n&#8226; Kernel Adiutor
             \n&#8226; Ebay (notification fix)
             \n&#8226; Adobe Acrobat (in xda version)
             \n&#8226; ModernHub (in xda version)
