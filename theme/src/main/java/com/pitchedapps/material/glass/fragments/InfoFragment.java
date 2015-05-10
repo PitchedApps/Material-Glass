@@ -26,10 +26,10 @@ public class InfoFragment extends Fragment {
         if (toolbar != null)
             toolbar.setTitle(R.string.section_eight);
 
-        ViewPager mPager = (ViewPager) root.findViewById(R.id.pager);
+        ViewPager mPager = (ViewPager) root.findViewById(R.id.info_pager);
         mPager.setAdapter(new MyPagerAdapter(getActivity().getSupportFragmentManager()));
 
-        SlidingTabLayout mTabs = (SlidingTabLayout) root.findViewById(R.id.tabs);
+        SlidingTabLayout mTabs = (SlidingTabLayout) root.findViewById(R.id.info_tabs);
         mTabs.setViewPager(mPager);
         mTabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
             @Override

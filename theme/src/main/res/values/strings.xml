@@ -65,6 +65,17 @@
     <string name="dev_link">@string/play_store_dev_link</string>
     <string name="dev_gplus_link">https://plus.google.com/+AllanWPitchedApps</string>
 
+    <!-- All about Ivon -->
+    <string name="ivon_play">https://play.google.com/store/apps/developer?id=Ivon+Liu</string>
+    <string name="ivon_gplus_link">https://plus.google.com/+IvonLiu</string>
+
+    <string name="ivon">Ivon Liu</string>
+    <string name="ivon_desc">
+        <![CDATA[
+        Just another bored guy who happens to make apps and stuff. Check out his stuff here:
+        ]]>
+    </string>
+
     <!-- Feature picture that appears above the description -->
     <string name="theme_feature">icons_banner</string>
 
