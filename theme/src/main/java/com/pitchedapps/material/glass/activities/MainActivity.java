@@ -10,19 +10,15 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.AdapterView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
-import com.pitchedapps.material.glass.utilities.Preferences;
-import com.pitchedapps.material.glass.utilities.Util;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.accountswitcher.AccountHeader;
@@ -30,14 +26,33 @@ import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-
+import com.pitchedapps.material.glass.BuildConfig;
 import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
+import com.pitchedapps.material.glass.utilities.Preferences;
+import com.pitchedapps.material.glass.utilities.Util;
+
+import org.sufficientlysecure.donations.DonationsFragment;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private static final boolean WITH_LICENSE_CHECKER = false;
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
+
+    /**
+     * Google
+     */
+    private static final String GOOGLE_PUBKEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg8bTVFK5zIg4FGYkHKKQ/j/iGZQlXU0qkAv2BA6epOX1ihbMz78iD4SmViJlECHN8bKMHxouRNd9pkmQKxwEBHg5/xDC/PHmSCXFx/gcY/xa4etA1CSfXjcsS9i94n+j0gGYUg69rNkp+p/09nO9sgfRTAQppTxtgKaXwpfKe1A8oqmDUfOnPzsEAG6ogQL6Svo6ynYLVKIvRPPhXkq+fp6sJ5YVT5Hr356yCXlM++G56Pk8Z+tPzNjjvGSSs/MsYtgFaqhPCsnKhb55xHkc8GJ9haq8k3PSqwMSeJHnGiDq5lzdmsjdmGkWdQq2jIhKlhMZMm5VQWn0T59+xjjIIwIDAQAB";
+    private static final String[] GOOGLE_CATALOG = new String[]{"glass.donation.1",
+            "glass.donation.2", "glass.donation.3", "glass.donation.5", "glass.donation.10",
+            "glass.donation.20"};
+
+    /**
+     * PayPal
+     */
+    private static final String PAYPAL_USER = "pitchedapps@gmail.com";
+    private static final String PAYPAL_CURRENCY_CODE = "CAD";
 
     public Drawer.Result result = null;
     private String thaApp;
@@ -117,9 +132,9 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                     break;
                                 case 5:
-//                                    switchFragment(4, thaDonate, "Donate");
-                                    Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
-                                    startActivity(intent);
+                                    switchFragment(4, thaDonate, "Donate");
+//                                    Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
+//                                    startActivity(intent);
 //                                    overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                                     break;
                                 case 6:
@@ -149,11 +164,27 @@ public class MainActivity extends AppCompatActivity {
         currentItem = itemId;
         if (getSupportActionBar() != null)
             getSupportActionBar().setTitle(title);
-        getSupportFragmentManager().beginTransaction()
-                .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                .replace(R.id.main, Fragment.instantiate(MainActivity.this,
-                        "com.pitchedapps.material.glass.fragments." + fragment + "Fragment"))
-                .commit();
+        if (title.equals(thaDonate)) {
+            DonationsFragment donationsFragment;
+            if (BuildConfig.DONATIONS_GOOGLE) {
+                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, true, GOOGLE_PUBKEY, GOOGLE_CATALOG,
+                        getResources().getStringArray(R.array.donation_google_catalog_values), false, null, null,
+                        null, false, null, null, false, null);
+            } else {
+                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, false, null, null, null, true, PAYPAL_USER,
+                        PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
+            }
+            getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                    .replace(R.id.main, donationsFragment, "donationsFragment")
+                    .commit();
+        } else {
+            getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                    .replace(R.id.main, Fragment.instantiate(MainActivity.this,
+                            "com.pitchedapps.material.glass.fragments." + fragment + "Fragment"))
+                    .commit();
+        }
     }
 
     @Override
@@ -377,4 +408,18 @@ public class MainActivity extends AppCompatActivity {
                 }).show();
     }
 
+    /**
+     * Needed for Google Play In-app Billing. It uses startIntentSenderForResult(). The result is not propagated to
+     * the Fragment like in startActivityForResult(). Thus we need to propagate manually to our Fragment.
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        Fragment fragment = fragmentManager.findFragmentByTag("donationsFragment");
+        if (fragment != null) {
+            fragment.onActivityResult(requestCode, resultCode, data);
+        }
+    }
 }
