@@ -281,6 +281,50 @@
         drawable="xposedinstaller" />
     <item component="ComponentInfo{com.truecaller.phoneapp/com.truecaller.phoneapp.DialActivity}"
         drawable="truedialer" />
-
+<!--05/11/2015-->
+    <item component="ComponentInfo{com.koushikdutta.cast/com.koushikdutta.cast.StartActivity}" drawable="allcast"/>
+    <item component="ComponentInfo{com.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity}" drawable="amazonshopping"/>
+    <item component="ComponentInfo{com.google.android.wearable.app/com.google.android.clockwork.companion.StatusActivity}" drawable="androidwear"/>
+    <item component="ComponentInfo{com.cyngn.maxxaudio/com.cyngn.maxxaudio.activity.ActivityMusic}" drawable="audiofx2"/>
+    <item component="ComponentInfo{com.google.zxing.client.android/com.google.zxing.client.android.CaptureActivity}" drawable="barcodescanner"/>
+    <item component="ComponentInfo{com.levelup.beautifulwidgets/com.levelup.beautifulwidgets.BeautifulLauncher}" drawable="beautifulwidgets"/>
+    <item component="ComponentInfo{com.bigoven.android/com.bigoven.android.spotlight.SpotlightActivity}" drawable="bigoven"/>
+    <item component="ComponentInfo{com.cyngn.cameranext/com.android.camera.CameraLauncher}" drawable="camera2"/>
+    <item component="ComponentInfo{com.konylabs.capitalone/com.konylabs.capitalone.EnterpriseMobileBanking.LaunchActivity}" drawable="capitalone"/>
+    <item component="ComponentInfo{com.google.android.apps.adm/com.google.android.apps.adm.MainActivity}" drawable="devicemanager"/>
+    <item component="ComponentInfo{com.google.android.apps.enterprise.dmagent/com.google.android.apps.enterprise.dmagent.DMAgentActivity}" drawable="devicepolicy"/>
+    <item component="ComponentInfo{com.duolingo/com.duolingo.app.LoginActivity}" drawable="duolingo"/>
+    <item component="ComponentInfo{com.boxer.email/com.boxer.email.activity.Welcome}" drawable="email2"/>
+    <item component="ComponentInfo{com.overlook.android.fing/com.overlook.android.fing.FingActivity}" drawable="fing"/>
+    <item component="ComponentInfo{org.mozilla.firefox_beta/org.mozilla.firefox_beta.App}" drawable="firefoxbeta"/>
+    <item component="ComponentInfo{nextapp.fx/nextapp.fx.ui.ExplorerActivity}" drawable="fx"/>
+    <item component="ComponentInfo{nextapp.fx/nextapp.fx.ui.textedit.TextEditorActivity}" drawable="fxtextedit"/>
+    <item component="ComponentInfo{com.cyngn.gallerynext/com.cyngn.gallerynext.app.GalleryActivity}" drawable="gallery2"/>
+    <item component="ComponentInfo{com.google.android.inputmethod.japanese/com.google.android.inputmethod.japanese.LauncherActivity}" drawable="googlejapaneseinput"/>
+    <item component="ComponentInfo{com.twentythreedivide.hsw/com.twentythreedivide.hsw.SplashScreen}" drawable="hsw"/>
+    <item component="ComponentInfo{com.media1908.lightningbug/com.media1908.lightningbug.SplashActivity}" drawable="lightningbug"/>
+    <item component="ComponentInfo{com.linkedin.android/com.linkedin.android.authenticator.LaunchActivity}" drawable="linkedin"/>
+    <item component="ComponentInfo{com.sec.print.mobileprint/com.sec.print.mobileprint.ui.LaunchScreenActivity}" drawable="mobileprint"/>
+    <item component="ComponentInfo{com.mxtech.videoplayer.pro/com.mxtech.videoplayer.pro.ActivityMediaList}" drawable="mxplayerpro"/>
+    <item component="ComponentInfo{com.netflix.mediaclient/com.netflix.mediaclient.ui.launch.UIWebViewActivity}" drawable="netflix"/>
+    <item component="ComponentInfo{com.newegg.app/com.newegg.app.activity.home.HomeStartActivity}" drawable="newegg"/>
+    <item component="ComponentInfo{org.torproject.android/org.torproject.android.OrbotMainActivity}" drawable="orbot"/>
+    <item component="ComponentInfo{com.rookiestudio.perfectviewer/com.rookiestudio.perfectviewer.TStartup}" drawable="perfectviewer"/>
+    <item component="ComponentInfo{com.google.android.apps.books/com.google.android.apps.books.app.BooksActivity}" drawable="playbooks"/>
+    <item component="ComponentInfo{com.google.android.play.games/com.google.android.gms.games.ui.destination.main.MainActivity}" drawable="playgames"/>
+    <item component="ComponentInfo{com.google.android.apps.magazines/com.google.apps.dots.android.app.activity.CurrentsStartActivity}" drawable="playnewsstand"/>
+    <item component="ComponentInfo{com.google.chromeremotedesktop/org.chromium.chromoting.Chromoting}" drawable="remotedesktop"/>
+    <item component="ComponentInfo{com.revision3.android.revision3/com.revision3.android.revision3.MainActivity}" drawable="revision3"/>
+    <item component="ComponentInfo{org.zwanoo.android.speedtest/com.ookla.speedtest.softfacade.MainActivity}" drawable="speedtest"/>
+    <item component="ComponentInfo{com.valvesoftware.android.steam.community/com.valvesoftware.android.steam.community.activity.SteamGuardActivity}" drawable="steam"/>
+    <item component="ComponentInfo{com.teamviewer.teamviewer.market.mobile/com.teamviewer.remotecontrollib.activity.MainActivity}" drawable="teamviewer"/>
+    <item component="ComponentInfo{com.android.terminal/com.android.terminal.TerminalActivity}" drawable="terminal"/>
+    <item component="ComponentInfo{com.cyngn.themestore/com.cyngn.themestore.ui.StoreActivity}" drawable="themes"/>
+    <item component="ComponentInfo{ch.bitspin.timely/ch.bitspin.timely.activity.MainActivity_}" drawable="timely"/>
+    <item component="ComponentInfo{com.viki.android/com.viki.android.SplashActivity}" drawable="viki"/>
+    <item component="ComponentInfo{com.google.android.apps.googlevoice/com.google.android.apps.googlevoice.SplashActivity}" drawable="voice"/>
+    <item component="ComponentInfo{com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.entrypoint.WalletRootActivity}" drawable="wallet"/>
+    <item component="ComponentInfo{com.farproc.wifi.analyzer/com.farproc.wifi.analyzer.MainScreen}" drawable="wifianalyzer"/>
+    <item component="ComponentInfo{com.utorrent.client/com.bittorrent.client.EntryActivity}" drawable="utorrent"/>
 
 </resources>

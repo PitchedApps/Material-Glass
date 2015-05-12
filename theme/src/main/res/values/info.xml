@@ -40,6 +40,7 @@
             \n&#8226; Cyanogenmod Updater
             \n&#8226; Cyanogenmod Theme Chooser
             \n&#8226; Euphoria OTA
+            \n&#8226; Package Installer
             \n\nAOSP
             \n\n&#8226; Calculator
             \n&#8226; Contacts
@@ -48,7 +49,6 @@
             \n&#8226; AOSP Keyboard
             \n&#8226; Launcher 3
             \n&#8226; MMS
-            \n&#8226; Package Installer
             \n\nGOOGLE
             \n\n&#8226; Google + (in xda version)
             \n&#8226; Gmail
@@ -80,7 +80,6 @@
             \n&#8226; Ambient display has black text: this was fixed in mid April, so make sure you have the latest commits in your rom.
             \n&#8226; Blisspop sometimes has incompatibilities. Please note that this rom is heavily modified, and deviates quite a lot from standard AOSP. As such, it may not always work with this theme.
             \n&#8226; Some issues with Cyanogen OS; Note that they have not merged the latest theme commits, which is why it isn\'t working. It\'s up to them to update it, and us themers can\'t do anything about it yet.
-            \n&#8226; Whatsapp settings is white on white; will be fixed when I have time.
         </item>
     </string-array>
 

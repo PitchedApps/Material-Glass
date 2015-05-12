@@ -25,7 +25,7 @@ public class HomeFragment extends Fragment {
 
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
 
-    private String PlayStoreDevAccount, PlayStoreListing, AppOnePackage, AppTwoPackage, AppThreePackage;
+    private String PlayStoreDevAccount, PlayStoreListing, AppFourPackage, AppTwoPackage, AppThreePackage;
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
@@ -33,9 +33,10 @@ public class HomeFragment extends Fragment {
 
         PlayStoreDevAccount = getResources().getString(R.string.play_store_dev_link);
         PlayStoreListing = getString(R.string.package_name);
-        AppOnePackage = getResources().getString(R.string.app_one_package);
+//        AppOnePackage = getResources().getString(R.string.app_one_package);
         AppTwoPackage = getResources().getString(R.string.app_two_package);
         AppThreePackage = getResources().getString(R.string.app_three_package);
+        AppFourPackage = getResources().getString(R.string.app_four_package);
 
         ActionBar toolbar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         if (toolbar != null)
@@ -47,6 +48,7 @@ public class HomeFragment extends Fragment {
 //        CardView cardone = (CardView) root.findViewById(R.id.cardOne);
 //        CardView cardtwo = (CardView) root.findViewById(R.id.cardTwo);
         CardView cardthree = (CardView) root.findViewById(R.id.cardThree);
+        CardView cardfour = (CardView) root.findViewById(R.id.cardFour);
 //TODO fix
 //        if (AppIsInstalled(AppOnePackage)) {
 //            cardone.setVisibility((cardone.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
@@ -54,8 +56,13 @@ public class HomeFragment extends Fragment {
 //        if (AppIsInstalled(AppTwoPackage)) {
 //            cardtwo.setVisibility((cardtwo.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
 //        }
+
         if (AppIsInstalled(AppThreePackage)) {
             cardthree.setVisibility((cardthree.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
+        }
+
+        if (AppIsInstalled(AppFourPackage)) {
+            cardfour.setVisibility((cardfour.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
         }
 
 
@@ -95,6 +102,24 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        TextView appfourbtn = (TextView) root.findViewById(R.id.appfour_button);
+        appfourbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent appfour = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.tbo_link)));
+                startActivity(appfour);
+            }
+        });
+
+        TextView appfourbtnxda = (TextView) root.findViewById(R.id.appfour_button_xda);
+        appfourbtnxda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent appfour = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.tbo_xda)));
+                startActivity(appfour);
+            }
+        });
+
         TextView ratebtn = (TextView) root.findViewById(R.id.rate_button);
         ratebtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,8 +130,8 @@ public class HomeFragment extends Fragment {
         });
 
         FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.apply_btn);
-        fab.setColorNormal(getResources().getColor(R.color.fab_unpressed));
-        fab.setColorPressed(getResources().getColor(R.color.fab_pressed));
+        fab.setColorNormal(getResources().getColor(R.color.primary));
+        fab.setColorPressed(getResources().getColor(R.color.primary_dark));
         fab.setColorRipple(getResources().getColor(R.color.semitransparent_white));
         fab.show(true);
         fab.attachToScrollView(content);

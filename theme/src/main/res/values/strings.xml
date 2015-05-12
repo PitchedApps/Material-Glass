@@ -5,7 +5,10 @@
     <string name="app_name">Material Glass</string>
     <string name="app_long_name">Material Glass by Pitched Apps</string>
     <string name="package_name">com.pitchedapps.material.glass.free</string>
-    <string name="theme_description">Pitched Apps is proud to present Material Glass, cm12\'s first and longest lasting theme! \nMade by 1 themer \nTweaked for 100+ hours \nUsed by 10 000+ users</string>
+    <string name="theme_description">Pitched Apps is proud to present Material Glass, cm12\'s first and longest lasting theme!
+        \nMade by 1 themer
+        \nTweaked for 200+ hours
+        \nUsed by 18 000+ users</string>
     <!-- Muzei Stuff -->
     <string name="artsource_name">@string/app_name</string>
     <string name="artsource_desc">Beautiful wallpapers for a beautiful theme</string>
@@ -28,7 +31,7 @@
     <string name="welcome_title">Let your wallpaper shine through with material darkness!</string>
 
     <string name="play_card_title">Pitched Apps on Google Play</string>
-    <string name="play_card_content">Check out my other apps and download them.</string>
+    <string name="play_card_content">Check out my other apps!</string>
 
     <string name="pitched_glass_title">Pitched Glass</string>
     <string name="pitched_glass_content">Want more icons? Check out my free icon pack with over 2000 hand crafted drawables.</string>
@@ -44,7 +47,7 @@
 
     <string name="app_one_title">@string/donate_home_title</string>
     <string name="app_one_content">@string/donate_home_content</string>
-    <string name="app_one_package">com.pitchedapps.icons.glass</string>
+    <!--<string name="app_one_package">com.pitchedapps.icons.glass</string>-->
 
     <string name="app_two_title">@string/xda_title</string>
     <string name="app_two_content">@string/xda_content</string>
@@ -53,6 +56,12 @@
     <string name="app_three_title">@string/pitched_glass_title</string>
     <string name="app_three_content">@string/pitched_glass_content</string>
     <string name="app_three_package">com.pitchedapps.icons.glass</string>
+
+    <string name="app_four_title">Team Black Out</string>
+    <string name="app_four_content">Want more dark and clear apps? Check out Team Black Out\'s updater! It contains apps that are otherwise unthemeable by the theme chooser itself. (Please note that for apps themed by Material Glass, you must keep the stock app to maintain compatibility)</string>
+    <string name="app_four_package">com.blackout.paidupdater</string>
+    <string name="tbo_link">https://www.androidfilehost.com/?fid=95784891001604630</string>
+    <string name="tbo_xda">http://forum.xda-developers.com/showthread.php?t=2283828</string>
 
     <!-- Your card in About The App section (In desc you can use html markup)-->
     <string name="iconpack_designer">Pitched Apps</string>
@@ -136,11 +145,12 @@
     <string-array name="donation_google_catalog_values">
         <item>$1</item>
         <item>$2</item>
+        <item>$3</item>
         <item>$5</item>
         <item>$10</item>
-        <item>$20</item>
     </string-array>
 
     <string name="donation_paypal_item">Donation</string>
+    <string name="xda">XDA LINK</string>
     <string name="cm_not_installed">CyanogenMod theme engine is not found!</string>
 </resources>

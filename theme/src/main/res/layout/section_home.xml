@@ -449,6 +449,101 @@
 
             </android.support.v7.widget.CardView>
 
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardFour"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardThree"
+                android:layout_margin="@dimen/cards_margin"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardCornerRadius="@dimen/card_corner_radius"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/cards_margin"
+                    android:paddingRight="@dimen/cards_margin">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:minWidth="100dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_tbo" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/app_four_title"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/text_big" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.2"
+                            android:paddingBottom="@dimen/cards_padding"
+                            android:paddingLeft="@dimen/cards_padding"
+                            android:paddingRight="@dimen/cards_padding"
+                            android:text="@string/app_four_content"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/text_small" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/divider_grey"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/appfour_button_xda"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="?selectableItemBackground"
+                                android:padding="@dimen/cards_padding"
+                                android:text="@string/xda"
+                                android:textColor="@color/accent"
+                                android:textSize="@dimen/text_ultrasmall"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/appfour_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="?selectableItemBackground"
+                                android:padding="@dimen/cards_padding"
+                                android:text="@string/download"
+                                android:textColor="@color/accent"
+                                android:textSize="@dimen/text_ultrasmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
         </RelativeLayout>
 
     </com.melnykov.fab.ObservableScrollView>

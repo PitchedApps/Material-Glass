@@ -274,6 +274,7 @@
 
     <string-array name="v0">
         <item>v0.0.1</item>
+        <item>January 15th, 2015: Theme Engine is merged into CyanogenMod 12.0</item>
         <item>January 16th, 2015: Material Glass is born</item>
         <item>January 20th, 2015: Material Glass appears in the Play Store</item>
     </string-array>

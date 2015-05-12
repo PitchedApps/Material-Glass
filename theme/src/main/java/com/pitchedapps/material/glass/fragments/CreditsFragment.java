@@ -31,6 +31,9 @@ public class CreditsFragment extends Fragment {
         TextView designerdesc = (TextView) root.findViewById(R.id.dev_card_content);
         designerdesc.setText(Html.fromHtml(getString(R.string.iconpack_designer_desc)));
 
+        TextView ivondesc = (TextView) root.findViewById(R.id.ivon_card_content);
+        ivondesc.setText(Html.fromHtml(getString(R.string.ivon_desc)));
+
         TextView fablib = (TextView) root.findViewById(R.id.libtwo_content);
         fablib.setText(Html.fromHtml(getString(R.string.fab_desc)));
 
@@ -147,6 +150,24 @@ public class CreditsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent devgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_gplus_link)));
+                startActivity(devgplus);
+            }
+        });
+
+        TextView ivon = (TextView) root.findViewById(R.id.ivon_button);
+        ivon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ivon_play)));
+                startActivity(devweb);
+            }
+        });
+
+        TextView ivongoogleplus = (TextView) root.findViewById(R.id.ivon_gplus_button);
+        ivongoogleplus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ivon_gplus_link)));
                 startActivity(devgplus);
             }
         });
