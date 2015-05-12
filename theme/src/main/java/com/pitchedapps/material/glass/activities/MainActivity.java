@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                     break;
                                 case 5:
-                                    switchFragment(4, thaDonate, "Donate");
+                                    switchFragment(5, thaDonate, "Donate");
 //                                    Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
 //                                    startActivity(intent);
 //                                    overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
@@ -168,8 +168,8 @@ public class MainActivity extends AppCompatActivity {
             DonationsFragment donationsFragment;
             if (BuildConfig.DONATIONS_GOOGLE) {
                 donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, true, GOOGLE_PUBKEY, GOOGLE_CATALOG,
-                        getResources().getStringArray(R.array.donation_google_catalog_values), false, null, null,
-                        null, false, null, null, false, null);
+                        getResources().getStringArray(R.array.donation_google_catalog_values), true, PAYPAL_USER,
+                        PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
             } else {
                 donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, false, null, null, null, true, PAYPAL_USER,
                         PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
@@ -314,8 +314,9 @@ public class MainActivity extends AppCompatActivity {
                     //TODO fix
                     @Override
                     public void onNeutral(MaterialDialog dialog) {
-                        Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
-                        startActivity(intent);
+//                        Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
+//                        startActivity(intent);
+                        switchFragment(5, thaDonate, "Donate");
                     }
                 }).show();
     }

@@ -148,6 +148,7 @@
         <item>$3</item>
         <item>$5</item>
         <item>$10</item>
+        <item>$20</item>
     </string-array>
 
     <string name="donation_paypal_item">Donation</string>

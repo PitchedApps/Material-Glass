@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">0.9.8</string>
+    <string name="current_version">1.0.0</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v26</item>
         <item>@array/v25</item>
         <item>@array/v24</item>
         <item>@array/v23</item>

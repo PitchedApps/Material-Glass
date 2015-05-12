@@ -187,7 +187,8 @@
     <color name="histogram_green_stroke">#ff4db14d</color>
     <color name="histogram_red_fill">#ccffe6e6</color>
     <color name="histogram_red_stroke">#ffb14d4d</color>
-    <color name="host_background">@color/background</color>
+    <!--check-->
+    <color name="host_background">@color/backgroundt</color>
     <color name="ics_blue_glow">#ff33b5e5</color>
     <color name="image_selected_stroke">@android:color/white</color>
     <color name="item_selector_sub_panel_item_border_color">#22ffffff</color>
@@ -847,6 +848,7 @@
     <color name="text">#ffcccccc</color>
     <color name="textt">#ffc0c0c0</color>
     <color name="texttt">#ffbbbbbb</color>
+    <color name="backgroundt">#50000000</color>
     <color name="background">#88000000</color>
     <color name="backgroundd">#88161616</color>
     <color name="backgrounddd">#88323232</color>
@@ -855,4 +857,18 @@
     <color name="backgroundddx">#ff323232</color>
 
     <!--check bg_embed_lightgrey.9.png-->
+
+    <color name="acl_chip_view_collexion_text_color">@color/text</color>
+    <color name="acl_collexion_color">@color/quantum_purple</color>
+    <color name="adb_override_title">#aaffffff</color>
+    <color name="adb_override_value">#22ff0000</color>
+    <color name="advanced_parameter_selector_active_item_background">#e64285f4</color>
+    <color name="advanced_parameter_selector_active_item_text">#ffffffff</color>
+    <color name="advanced_parameter_selector_background">#8a000000</color>
+    <color name="advanced_parameter_selector_inactive_item_text">#7fffffff</color>
+    <color name="default_experiment_title">#aaffffff</color>
+    <color name="in_app_override_title">@color/text</color>
+    <color name="in_app_override_value">#229900cc</color>
+    <color name="overridden_experiment_title">#eeffffff</color>
+    <color name="quick_collect_header_background">@color/background</color>
 </resources>

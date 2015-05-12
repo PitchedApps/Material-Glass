@@ -14,7 +14,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.pitchedapps.material.glass.activities.DonationsActivity;
 import com.pitchedapps.material.glass.activities.MainActivity;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ObservableScrollView;
@@ -79,8 +78,8 @@ public class HomeFragment extends Fragment {
         apponebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent donate = new Intent(getActivity(), DonationsActivity.class);
-                startActivity(donate);
+                ((MainActivity) getActivity()).result.setSelectionByIdentifier(5);
+                ((MainActivity) getActivity()).switchFragment(5, getResources().getString(R.string.section_five), "Donate");
             }
         });
 
