@@ -101,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
                 .withActivity(this)
                 .withToolbar(toolbar)
                 .withAccountHeader(headerResult)
-//                .withStatusBarColor(R.color.primary)
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
                         new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),
@@ -133,9 +132,6 @@ public class MainActivity extends AppCompatActivity {
                                     break;
                                 case 5:
                                     switchFragment(5, thaDonate, "Donate");
-//                                    Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
-//                                    startActivity(intent);
-//                                    overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                                     break;
                                 case 6:
                                     switchFragment(6, thaCredits, "Credits");
@@ -311,11 +307,8 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(browserIntent);
                     }
 
-                    //TODO fix
                     @Override
                     public void onNeutral(MaterialDialog dialog) {
-//                        Intent intent = new Intent(MainActivity.this, DonationsActivity.class);
-//                        startActivity(intent);
                         switchFragment(5, thaDonate, "Donate");
                     }
                 }).show();

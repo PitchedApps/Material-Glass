@@ -32,7 +32,6 @@ public class HomeFragment extends Fragment {
 
         PlayStoreDevAccount = getResources().getString(R.string.play_store_dev_link);
         PlayStoreListing = getString(R.string.package_name);
-//        AppOnePackage = getResources().getString(R.string.app_one_package);
         AppTwoPackage = getResources().getString(R.string.app_two_package);
         AppThreePackage = getResources().getString(R.string.app_three_package);
         AppFourPackage = getResources().getString(R.string.app_four_package);
@@ -44,17 +43,8 @@ public class HomeFragment extends Fragment {
         ObservableScrollView content = (ObservableScrollView) root.findViewById(R.id.HomeContent);
 
         //Cards
-//        CardView cardone = (CardView) root.findViewById(R.id.cardOne);
-//        CardView cardtwo = (CardView) root.findViewById(R.id.cardTwo);
         CardView cardthree = (CardView) root.findViewById(R.id.cardThree);
         CardView cardfour = (CardView) root.findViewById(R.id.cardFour);
-//TODO fix
-//        if (AppIsInstalled(AppOnePackage)) {
-//            cardone.setVisibility((cardone.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
-//        }
-//        if (AppIsInstalled(AppTwoPackage)) {
-//            cardtwo.setVisibility((cardtwo.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
-//        }
 
         if (AppIsInstalled(AppThreePackage)) {
             cardthree.setVisibility((cardthree.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
