@@ -41,6 +41,15 @@
         <item></item>
     </string-array>
 
+    <string-array name="v26">
+        <item>v1.0.0</item>
+        <item>Out of beta!</item>
+        <item>Icons: 43 new</item>
+        <item>UI: added more credits + team blackout card (only visible if you haven\'t downloaded it yet)</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <string-array name="v25">
         <item>v0.9.8</item>
         <item>MMS: themed widget</item>

@@ -90,7 +90,8 @@
 
     </style>
 
-    <style name="PeopleTheme" parent="@android:style/Theme.Material">
+    <style name="PeopleTheme" parent="@style/PeoplePitch" />
+    <style name="PeoplePitch" parent="@android:style/Theme.Material">
         <item name="android:icon">@android:color/transparent</item>
         <item name="android:textColorPrimary">@color/primary_text_color</item>
         <item name="android:textColorSecondary">@color/secondary_text_color</item>

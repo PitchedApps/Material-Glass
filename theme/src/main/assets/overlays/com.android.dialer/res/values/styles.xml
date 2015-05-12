@@ -78,7 +78,8 @@
     <!--</style>-->
 
 
-    <style name="DialtactsTheme" parent="@android:style/Theme.Material">
+    <style name="DialtactsTheme" parent="@style/DialtactsPitch" />
+    <style name="DialtactsPitch" parent="@android:style/Theme.Material">
         <item name="android:textColorPrimary">@color/dialtacts_primary_text_color</item>
         <item name="android:textColorSecondary">@color/dialtacts_secondary_text_color</item>
         <item name="android:windowContentOverlay">@null</item>
