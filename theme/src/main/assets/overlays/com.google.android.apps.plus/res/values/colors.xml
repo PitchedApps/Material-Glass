@@ -380,7 +380,8 @@
     <color name="quantum_grey300">@color/background</color>
     <color name="quantum_grey400">@*common:color/textneutral</color>
     <color name="quantum_grey50">@color/background</color>
-    <color name="quantum_grey500">@color/background</color>
+    <!--controls number count text-->
+    <color name="quantum_grey500">@color/textt</color>
     <color name="quantum_grey600">@color/textt</color>
     <color name="quantum_grey700">@color/textt</color>
     <color name="quantum_grey800">@color/textt</color>
