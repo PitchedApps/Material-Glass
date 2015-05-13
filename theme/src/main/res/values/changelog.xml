@@ -47,8 +47,8 @@
         <item>Out of beta!</item>
         <item>Icons: 43 new</item>
         <item>UI: added more credits + team blackout card (only visible if you haven\'t downloaded it yet)</item>
-        <item></item>
-        <item></item>
+        <item>UI: added user icon section</item>
+        <item>Google +: lots of tweaks everywhere</item>
     </string-array>
 
     <string-array name="v25">
