@@ -79,6 +79,9 @@ public class PreviewsFragment extends Fragment {
                     f = IconsFragment.newInstance(R.array.google);
                     break;
                 case 2:
+                    f = IconsFragment.newInstance(R.array.user);
+                    break;
+                case 3:
                     f = IconsFragment.newInstance(R.array.icon_pack);
                     break;
             }

@@ -96,6 +96,7 @@
     <string-array name="tabs">
         <item>SYSTEM</item>
         <item>GOOGLE APPS</item>
+        <item>USER</item>
         <item>ALL</item>
     </string-array>
 
