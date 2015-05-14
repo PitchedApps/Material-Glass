@@ -62,7 +62,7 @@
     <color name="action_bar_button_text_color">#ffffffff</color>
     <color name="primary_color_dark">#ff0277bd</color>
     <color name="primary_color">#ff0288d1</color>
-    <!--TODO check-->
+    <!--check-->
     <color name="contacts_accent_color">@color/textt</color>
     <color name="floating_action_button_icon_color">@color/contacts_accent_color</color>
     <color name="expanding_entry_card_item_separator_color">#22ffffff</color>

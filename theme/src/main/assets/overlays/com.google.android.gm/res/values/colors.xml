@@ -107,7 +107,7 @@
     <color name="text_color_medium_grey">@color/text</color>
     <!--for subject and body-->
     <color name="text_color_grey">@color/textneutral</color>
-    <!--TODO check text-->
+    <!--check text-->
     <color name="text_color_black">@color/textneutral</color>
     <color name="text_color_disabled">@color/textt</color>
     <color name="accent_blue">@color/text</color>

@@ -1,5 +1,7 @@
 package com.pitchedapps.material.glass.fragments;
 
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -128,13 +130,23 @@ public class HomeFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+//                Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser" + "");
+                Intent intent = new Intent();
+
+//                Context context = getContext(); // this.getContext(); getApplicationContext(); etc.
+//                String sPackName = context.getPackageName();
+
+                intent.setComponent(new ComponentName("org.cyanogenmod.theme.chooser", "org.cyanogenmod.theme.chooser.ChooserActivity"));
+                intent.putExtra("pkgName", "com.pitchedapps.material.glass.xda");
+                startActivity(intent);
                 if (intent == null) {
                     Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
                 } else {
                     startActivity(intent);
                 }
             }
+
+
         });
 
         return root;
