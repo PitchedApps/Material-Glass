@@ -1,5 +1,6 @@
 package com.pitchedapps.material.glass.fragments;
 
+import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -139,10 +140,7 @@ public class HomeFragment extends Fragment {
                 if (intent == null) {
                     Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
                 } else {
-//                    MainActivity.startActivity("com.pitchedapps.material.glass.utilities.CmThemeEngineLauncher");
-//                    new CmThemeEngineLauncher();
                     final String className = "com.pitchedapps.material.glass.utilities.CmThemeEngineLauncher";
-
 
                     Class<?> cl = null;
                     try {
