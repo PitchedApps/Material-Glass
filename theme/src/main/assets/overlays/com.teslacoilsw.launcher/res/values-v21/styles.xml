@@ -2,7 +2,7 @@
 <resources>
     <style name="Base.MatCompat.Widget.Light.RadioButton"
         parent="@android:style/Widget.Material.CompoundButton.RadioButton" />
-    <style name="Base.MatCompat.Widget.SeekBar" parent="@android:style/Widget.Material.SeekBar" />
+    <!--<style name="Base.MatCompat.Widget.SeekBar" parent="@android:style/Widget.Material.SeekBar" />-->
     <style name="Base.ThemeOverlay.AppCompat.Light" parent="@android:style/ThemeOverlay.Material">
         <item name="isLightTheme">false</item>
         <item name="colorControlHighlight">@color/ripple_material_dark</item>

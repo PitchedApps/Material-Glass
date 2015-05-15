@@ -85,6 +85,10 @@
     <color name="workspace_all_apps_and_delete_zone_text_shadow_color">#a0000000</color>
     <color name="workspace_icon_text_color">@color/text</color>
 
+    <!--05/14-->
+    <color name="settings_background_idle_color">@android:color/transparent</color>
+    <color name="widgetdrawer_shortcut_textcolor">@color/text</color>
+
     <color name="text">#ffdddddd</color>
     <color name="textt">#ffcccccc</color>
     <color name="texttt">#ffaaaaaa</color>
