@@ -3,6 +3,7 @@
     <string name="current_version">1.0.0</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v27</item>
         <item>@array/v26</item>
         <item>@array/v25</item>
         <item>@array/v24</item>
@@ -34,6 +35,15 @@
 
 
     <string-array name="v">
+        <item>v</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v27">
         <item>v</item>
         <item></item>
         <item></item>
