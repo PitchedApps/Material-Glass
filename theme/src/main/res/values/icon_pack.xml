@@ -43,6 +43,7 @@
    </string-array>
 
    <string-array name="system">
+       <item>audiofx</item>
        <item>audiofx2</item>
        <item>browser</item>
        <item>calculator</item>
@@ -64,7 +65,6 @@
        <item>terminal</item>
        <item>themes</item>
        <item>voicedialer</item>
-       <item>voicesearch</item>
    </string-array>
 
    <string-array name="user">
@@ -75,7 +75,7 @@
        <item>allcast</item>
        <item>amazonshopping</item>
        <item>appredirect</item>
-       <item>audiofx</item>
+       <item>barcode_scanner</item>
        <item>barcodescanner</item>
        <item>beautifulwidgets</item>
        <item>bigoven</item>
@@ -104,8 +104,10 @@
        <item>gpsstatus</item>
        <item>greenify</item>
        <item>hsw</item>
+       <item>icon_filter_designer</item>
        <item>instagram</item>
        <item>k9mail</item>
+       <item>kernel_adiutor</item>
        <item>lightningbug</item>
        <item>linkedin</item>
        <item>lmt</item>
@@ -113,6 +115,7 @@
        <item>megav1</item>
        <item>messengerfb</item>
        <item>mobileprint</item>
+       <item>modernhub</item>
        <item>multirommanager</item>
        <item>mxplayer</item>
        <item>mxplayerpro</item>
@@ -140,6 +143,7 @@
        <item>speedtest</item>
        <item>steam</item>
        <item>swiftkeykeyboard</item>
+       <item>swype__dragon</item>
        <item>syncme</item>
        <item>tapatalk</item>
        <item>tasker</item>
@@ -173,6 +177,7 @@
        <item>audiofx</item>
        <item>audiofx2</item>
        <item>authenticator</item>
+       <item>barcode_scanner</item>
        <item>barcodescanner</item>
        <item>beautifulwidgets</item>
        <item>bigoven</item>
@@ -231,10 +236,12 @@
        <item>hangouts</item>
        <item>hangoutsdialer</item>
        <item>hsw</item>
+       <item>icon_filter_designer</item>
        <item>inbox</item>
        <item>instagram</item>
        <item>k9mail</item>
        <item>keep</item>
+       <item>kernel_adiutor</item>
        <item>lightningbug</item>
        <item>linkedin</item>
        <item>lmt</item>
@@ -245,6 +252,7 @@
        <item>messenger</item>
        <item>messengerfb</item>
        <item>mobileprint</item>
+       <item>modernhub</item>
        <item>multirommanager</item>
        <item>music</item>
        <item>mxplayer</item>
@@ -286,6 +294,7 @@
        <item>steam</item>
        <item>supersu</item>
        <item>swiftkeykeyboard</item>
+       <item>swype__dragon</item>
        <item>syncme</item>
        <item>tapatalk</item>
        <item>tasker</item>
@@ -304,7 +313,6 @@
        <item>viki</item>
        <item>voice</item>
        <item>voicedialer</item>
-       <item>voicesearch</item>
        <item>wallet</item>
        <item>wallpapersaver</item>
        <item>wechat</item>

@@ -326,5 +326,11 @@
     <item component="ComponentInfo{com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.entrypoint.WalletRootActivity}" drawable="wallet"/>
     <item component="ComponentInfo{com.farproc.wifi.analyzer/com.farproc.wifi.analyzer.MainScreen}" drawable="wifianalyzer"/>
     <item component="ComponentInfo{com.utorrent.client/com.bittorrent.client.EntryActivity}" drawable="utorrent"/>
+<!--05/14/2015-->
+    <item component="ComponentInfo{tool.scanner/com.google.zxing.client.android.CaptureActivity}" drawable="barcode_scanner"/>
+    <item component="ComponentInfo{com.scheffsblend.iconfilters/com.scheffsblend.iconfilters.FilterDesignerActivity}" drawable="icon_filter_designer"/>
+    <item component="ComponentInfo{com.grarak.kerneladiutor/com.grarak.kerneladiutor.MainActivity}" drawable="kernel_adiutor"/>
+    <item component="ComponentInfo{pw.bastiaan.github/pw.bastiaan.github.ui.MainActivity}" drawable="modernhub"/>
+    <item component="ComponentInfo{com.nuance.swype.dtc/com.nuance.swype.input.settings.SettingsDispatch}" drawable="swype__dragon"/>
 
 </resources>
