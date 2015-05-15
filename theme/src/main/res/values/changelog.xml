@@ -49,6 +49,7 @@
         <item>UI: added more credits + team blackout card (only visible if you haven\'t downloaded it yet)</item>
         <item>UI: added user icon section</item>
         <item>Google +: lots of tweaks everywhere</item>
+        <item>UI: FAB directly goes to Material Glass in the theme chooser (thanks Ivon)</item>
     </string-array>
 
     <string-array name="v25">

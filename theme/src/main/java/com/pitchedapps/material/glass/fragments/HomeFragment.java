@@ -136,12 +136,11 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
-                //TODO make this work
                 if (intent == null) {
                     Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
                 } else {
                     final String className = "com.pitchedapps.material.glass.utilities.CmThemeEngineLauncher";
-
+///make this nicer?
                     Class<?> cl = null;
                     try {
                         cl = Class.forName(className);

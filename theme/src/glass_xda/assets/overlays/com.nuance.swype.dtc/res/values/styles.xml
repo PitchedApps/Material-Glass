@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Swype.materialdark" parent="@style/Swype">
+        <item name="candidateComponent">@color/textt</item>
+        <item name="candidateOther">@color/text</item>
+        <item name="candidatePressed">@color/text</item>
+        <item name="candidateRecommended">@color/textt</item>
+        <item name="highlightedKeyTextColor">@color/textt</item>
+        <item name="componentForegroundColor">@color/textt</item>
+        <item name="convertingStringBackgroundColor">@color/textt</item>
+        <item name="defaultAltTextColor">@*common:color/ripple</item>
+        <item name="defaultAltTextColorSpace">@*common:color/ripple</item>
+        <item name="defaultKeyTextColor">@color/text</item>
+        <item name="defaultStrokeCandidateColor">@color/textt</item>
+        <item name="funcAltTextColor">@*common:color/ripple</item>
+        <item name="funcKeyTextColor">@color/textt</item>
+        <item name="funcBtmTextColor">@color/textt</item>
+        <item name="handwritingModeDisplayColor">@color/text</item>
+        <item name="listSelectorBackgroundTappedColor">@color/backgroundd</item>
+        <item name="popupKeyTextColor">@color/text</item>
+        <item name="popupKeyTextColorMenu">@color/text</item>
+        <item name="popupKeyTextColorPressed">@color/text</item>
+        <item name="unrecognizedWordUnderlineHighlightColor">@color/textt</item>
+        <item name="unrecognizedWordBackgroundHighlightColor">@color/textt</item>
+        <item name="traceColor">@color/textt</item>
+        <item name="verCandidateComponent">@color/textt</item>
+        <item name="verCandidateNormal">@color/text</item>
+        <item name="verCandidateOther">@color/text</item>
+        <item name="verCandidateRecommended">@color/textt</item>
+        <item name="verCandidateSelected">@color/textt</item>
+        <item name="wordErrorForegroundColor">@color/textt</item>
+        <item name="wordInlineBackgroundColor">@color/textt</item>
+        <item name="glowStretch">0.0dip</item>
+        <item name="keyContent5rowBaseline">0.0dip</item>
+        <item name="keyContent5rowLowerBaseline">0.0dip</item>
+        <item name="pressableBackgroundHighlight">@color/textt</item>
+        <item name="keyContentBaseline">0.0dip</item>
+    </style>
+    <style name="Swype.materiallight" parent="@style/Swype">
+        <item name="candidateComponent">@color/textt</item>
+        <item name="candidateOther">@color/text</item>
+        <item name="candidatePressed">@color/text</item>
+        <item name="candidateRecommended">@color/textt</item>
+        <item name="highlightedKeyTextColor">@color/textt</item>
+        <item name="componentForegroundColor">@color/textt</item>
+        <item name="convertingStringBackgroundColor">@color/textt</item>
+        <item name="defaultAltTextColor">@*common:color/ripple</item>
+        <item name="defaultAltTextColorSpace">@*common:color/ripple</item>
+        <item name="defaultKeyTextColor">@color/text</item>
+        <item name="defaultStrokeCandidateColor">@color/textt</item>
+        <item name="funcAltTextColor">@*common:color/ripple</item>
+        <item name="funcKeyTextColor">@color/textt</item>
+        <item name="funcBtmTextColor">@color/textt</item>
+        <item name="handwritingModeDisplayColor">@color/text</item>
+        <item name="listSelectorBackgroundTappedColor">@color/backgrounddt</item>
+        <item name="popupKeyTextColor">@color/text</item>
+        <item name="popupKeyTextColorMenu">@color/text</item>
+        <item name="popupKeyTextColorPressed">@color/text</item>
+        <item name="unrecognizedWordUnderlineHighlightColor">@color/textt</item>
+        <item name="unrecognizedWordBackgroundHighlightColor">@color/textt</item>
+        <item name="traceColor">@color/textt</item>
+        <item name="verCandidateComponent">@color/textt</item>
+        <item name="verCandidateNormal">@color/text</item>
+        <item name="verCandidateOther">@color/text</item>
+        <item name="verCandidateRecommended">@color/textt</item>
+        <item name="verCandidateSelected">@color/textt</item>
+        <item name="wordErrorForegroundColor">@color/textt</item>
+        <item name="wordInlineBackgroundColor">@color/textt</item>
+        <item name="glowStretch">0.0dip</item>
+        <item name="keyContent5rowBaseline">0.0dip</item>
+        <item name="keyContent5rowLowerBaseline">0.0dip</item>
+        <item name="pressableBackgroundHighlight">@color/textt</item>
+        <item name="keyContentBaseline">0.0dip</item>
+    </style>
+    <style name="Swype" parent="@android:style/Theme.Material.Wallpaper">
+        <item name="defaultAltShadowColor">@color/shadow</item>
+        <item name="defaultShadowColor">@color/shadow</item>
+        <item name="multitapBackgroundColor">@color/background</item>
+        <item name="multitapForegroundColor">@color/text</item>
+        <item name="selectedForegroundColor">@color/textt</item>
+        <item name="spellingForegroundColor">@color/text</item>
+        <item name="wordNextWordPredictionForegroundColor">@color/textt</item>
+        <item name="wordStemForegroundColor">@color/text</item>
+        <item name="wclCjkChineseCloudTextColor">@color/text</item>
+        <item name="wclCjkChineseCloudBackgroundColor">@color/background</item>
+    </style>
+</resources>
