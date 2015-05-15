@@ -14,7 +14,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.balysv.materialripple.MaterialRippleLayout;
+//import com.balysv.materialripple.MaterialRippleLayout;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -81,7 +81,7 @@ public class IconsFragment extends Fragment {
 
             holder.icon.startAnimation(anim);
             holder.icon.setImageResource(mThumbs.get(position));
-            holder.content.setOnClickListener(new View.OnClickListener() {
+            holder.icon.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     View dialogIconView = View.inflate(getActivity(), R.layout.dialog_icon, null);
@@ -102,11 +102,11 @@ public class IconsFragment extends Fragment {
         class IconsHolder {
 
             final ImageView icon;
-            final MaterialRippleLayout content;
+//            final MaterialRippleLayout content;
 
             IconsHolder(View v) {
                 icon = (ImageView) v.findViewById(R.id.icon_img);
-                content = (MaterialRippleLayout) v.findViewById(R.id.icons_ripple);
+//                content = (MaterialRippleLayout) v.findViewById(R.id.icons_ripple);
             }
         }
 

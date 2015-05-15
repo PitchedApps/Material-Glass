@@ -52,14 +52,7 @@
         <item>UI: FAB directly goes to Material Glass in the theme chooser (thanks Ivon)</item>
         <item>New: Themed swype (xda)</item>
         <item>Nova Launcher: fixed white idle background</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>UI: Fixed ipples for icon section</item>
     </string-array>
 
     <string-array name="v25">

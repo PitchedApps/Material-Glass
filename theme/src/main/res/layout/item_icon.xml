@@ -8,25 +8,13 @@
     android:paddingBottom="@dimen/no_height"
     android:paddingTop="@dimen/no_height">
 
-    <com.balysv.materialripple.MaterialRippleLayout
-        android:id="@+id/icons_ripple"
+    <ImageView
+        android:id="@+id/icon_img"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:mrl_rippleAlpha="0.2"
-        app:mrl_rippleColor="@color/ripple_accent"
-        app:mrl_rippleDelayClick="false"
-        app:mrl_rippleDuration="250"
-        app:mrl_rippleHover="true"
-        app:mrl_rippleOverlay="true">
-
-        <ImageView
-            android:id="@+id/icon_img"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="@dimen/margin_medium_sm"
-            android:paddingRight="@dimen/margin_medium_sm"
-            tools:ignore="ContentDescription" />
-
-    </com.balysv.materialripple.MaterialRippleLayout>
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:paddingLeft="@dimen/margin_medium_sm"
+        android:paddingRight="@dimen/margin_medium_sm"
+        tools:ignore="ContentDescription" />
 
 </LinearLayout>

@@ -4,7 +4,7 @@
     android:id="@+id/icon"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?selectableItemBackgroundBorderless"
+    android:background="?android:selectableItemBackgroundBorderless"
     android:paddingBottom="@dimen/no_height"
     android:paddingLeft="@dimen/mini_margin"
     android:paddingRight="@dimen/mini_margin"
