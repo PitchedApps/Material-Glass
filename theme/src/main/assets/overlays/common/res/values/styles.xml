@@ -9,6 +9,8 @@
     <!--
     <style name="Platform.AppCompat" parent="@*common:style/Pitch.AppCompat" />
     <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
+	
+	<style name="Platform.AppCompat.Light.Dialog" parent="@*common:style/Pitch.AppCompat.Light.Dialog" />
 
 -->
     <style name="Pitch.AppCompat" parent="@android:style/Theme.Material">
@@ -19,6 +21,10 @@
         <item name="android:colorBackgroundCacheHint">@color/cachehint</item>
         <item name="buttonBarStyle">@android:style/ButtonBar</item>
         <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
+    </style>
+	<style name="Pitch.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
     </style>
     <style name="Theme.Material.Black" parent="@style/Theme.Material" />
     <!--<style name="Theme.Material.Launcher" parent="@android:style/Theme.Material">-->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<style name="AppBaseTheme" parent="@style/Platform.AppCompat" />-->
+
+    <style name="Platform.AppCompat" parent="@*common:style/Pitch.AppCompat" />
+    <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
+
+    <style name="Platform.AppCompat.Light.Dialog" parent="@*common:style/Pitch.AppCompat.Light.Dialog" />
+
+    <style name="MD_Light" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="md_divider">@*common:color/divider</item>
+        <item name="md_list_selector">?android:selectableItemBackground</item>
+        <item name="md_btn_stacked_selector">?android:selectableItemBackground</item>
+        <item name="md_btn_positive_selector">@drawable/md_btn_selector_ripple</item>
+        <item name="md_btn_neutral_selector">@drawable/md_btn_selector_ripple</item>
+        <item name="md_btn_negative_selector">@drawable/md_btn_selector_ripple</item>
+    </style>
+</resources>

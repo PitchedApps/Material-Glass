@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="md_action_corner_radius">2.0dip</dimen>
+
+    <dimen name="md_button_padding_horizontal">8.0dip</dimen>
+    <dimen name="md_button_padding_vertical">4.0dip</dimen>
+    <dimen name="md_button_padding_horizontal_internalexternal">32.0dip</dimen>
+    <dimen name="md_button_padding_frame_side">12.0dip</dimen>
+
+    <dimen name="md_button_inset_vertical">6.0dip</dimen>
+    <dimen name="md_button_inset_horizontal">4.0dip</dimen>
+</resources>
