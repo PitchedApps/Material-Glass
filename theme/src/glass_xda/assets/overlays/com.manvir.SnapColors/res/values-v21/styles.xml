@@ -10,6 +10,6 @@
         <item name="android:colorAccent">@*common:color/text</item>
     </style>
 
-    <style name="Platform.AppCompat" parent="@*common:style/Pitch.AppCompat" />
+    <style name="Platform.AppCompat" parent="@*common:style/Theme.AppCompat" />
     <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
 </resources>

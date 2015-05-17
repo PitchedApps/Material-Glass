@@ -14,7 +14,7 @@
         parent="@android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu"
         parent="@android:style/Widget.Material.PopupMenu" />
-    <style name="Platform.AppCompat" parent="@*common:style/Pitch.AppCompat">
+    <style name="Platform.AppCompat" parent="@*common:style/Theme.AppCompat">
         <item name="android:textColor">@color/text</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
