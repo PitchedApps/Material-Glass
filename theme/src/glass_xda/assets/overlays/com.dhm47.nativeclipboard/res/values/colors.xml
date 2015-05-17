@@ -7,11 +7,11 @@
     <color name="primary_text">@*common:color/text</color>
     <color name="secondary_text">@*common:color/textt</color>
 
-    <color name="clipboard_bg">#60000000</color>
-    <color name="clipboard_preference_bg">#60000000</color>
-    <color name="background_white">#60000000</color>
+    <color name="clipboard_bg">#00000000</color>
+    <color name="clipboard_preference_bg">#00000000</color>
+    <color name="background_white">#00000000</color>
     <color name="textview_textcolor">#ffffffff</color>
     <color name="text_white">#ffffffff</color>
-    <color name="undo_src">#ffaaaaaa</color>
+    <color name="undo_src">#ccffffff</color>
 
 </resources>

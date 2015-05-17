@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="background_dark">@color/backgroundt</color>
-    <color name="background_light">#a0ffffff</color>
+    <color name="background_light">#90ffffff</color>
     <color name="holo_blue_light">@color/pblue</color>
     <color name="holo_blue_dark">@color/pbluee</color>
     <color name="holo_blue_bright">@color/backgrounddt</color>
@@ -9,8 +9,8 @@
     <color name="background_holo_dark">@color/backgroundt</color>
     <color name="highlighted_text_holo_dark">#66666666</color>
     <color name="highlighted_text_holo_light">#66666666</color>
-    <color name="background_material_dark">#a0303030</color>
-    <color name="background_material_light">#a0eeeeee</color>
+    <color name="background_material_dark">#90303030</color>
+    <color name="background_material_light">#90eeeeee</color>
     <color name="background_floating_material_dark">#cc111111</color>
     <color name="background_floating_material_light">#cceeeeee</color>
     <!--warning-->
@@ -98,16 +98,16 @@
 
     <color name="aaa">#ffff00ff</color>
     <color name="bbb">#ff00ffff</color>
-    <color name="black_t">#a0000000</color>
+    <color name="black_t">#90000000</color>
     <color name="background">#ff000000</color>
     <color name="backgroundd">#ff161616</color>
     <color name="backgrounddd">#ff323232</color>
-    <color name="backgroundt">#a0000000</color>
+    <color name="backgroundt">#90000000</color>
     <color name="backgroundtt">#00000000</color>
-    <color name="backgroundt_light">#a0ffffff</color>
-    <color name="background_t">#a0000000</color>
-    <color name="backgrounddt">#a0161616</color>
-    <color name="backgroundddt">#a0323232</color>
+    <color name="backgroundt_light">#90ffffff</color>
+    <color name="background_t">#90000000</color>
+    <color name="backgrounddt">#90161616</color>
+    <color name="backgroundddt">#90323232</color>
     <color name="text">#fff0f0f0</color>
     <color name="textb">#ffeeeeee</color>
     <color name="textt">#ddffffff</color>
