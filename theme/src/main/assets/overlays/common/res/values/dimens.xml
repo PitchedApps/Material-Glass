@@ -39,5 +39,8 @@
     <dimen name="abc_text_size_large_material">22.0sp</dimen>
     <dimen name="abc_text_size_medium_material">18.0sp</dimen>
     <dimen name="abc_text_size_small_material">14.0sp</dimen>
+    <dimen name="abc_button_inset_vertical_material">6.0dip</dimen>
+    <item type="dimen" name="abc_button_inset_horizontal_material">@dimen/abc_control_inset_material</item>
+    <item type="dimen" name="abc_button_padding_vertical_material">@dimen/abc_control_padding_material</item>
 </resources>
 
