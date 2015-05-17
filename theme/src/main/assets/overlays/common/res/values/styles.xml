@@ -173,6 +173,7 @@
     </style>
 
     <!--all appcompat-->
+    <style name="ThemeOverlay.AppCompat.ActionBar" parent="@style/Base.ThemeOverlay.AppCompat.ActionBar" />
     <style name="Widget.AppCompat.ActionBar" parent="@style/Base.Widget.AppCompat.ActionBar" />
     <style name="Widget.AppCompat.ActionBar.Solid" parent="@style/Base.Widget.AppCompat.ActionBar.Solid" />
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title" />
@@ -333,6 +334,11 @@
     <style name="Base.Widget.AppCompat.PopupMenu.Overflow" parent="@style/Base.Widget.AppCompat.PopupMenu">
         <item name="android:dropDownHorizontalOffset">-4.0dip</item>
         <item name="android:overlapAnchor">true</item>
+    </style>
+    <style name="Base.ThemeOverlay.AppCompat.ActionBar" parent="@android:style/ThemeOverlay.Material.ActionBar">
+        <item name="android:colorControlNormal">?colorControlNormal</item>
+        <item name="android:colorControlHighlight">?colorControlHighlight</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
     </style>
 
 
