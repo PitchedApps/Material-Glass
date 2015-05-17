@@ -197,6 +197,4 @@
     <attr name="switchPadding" format="dimension" />
     <attr name="splitTrack" format="boolean" />
     <attr name="showText" format="boolean" />
-    <!--google services-->
-    <attr name="dividerHorizontal" format="reference" />
 </resources>
