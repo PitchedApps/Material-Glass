@@ -48,8 +48,8 @@
         <item>Framework: revert actionbar theming for compatibility</item>
         <item>Common: huge appcompat port</item>
         <item>New: themed snapcolors</item>
-        <item></item>
-        <item></item>
+        <item>Framework: themed zen icons for Euphoria\'s power menu</item>
+        <item>New: themed native clip board</item>
     </string-array>
 
     <string-array name="v26">

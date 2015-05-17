@@ -15,10 +15,11 @@
         parent="@android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu"
         parent="@android:style/Widget.Material.PopupMenu" />
-    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-    </style>
+
+    <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.Light.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
+
     <style name="Base.ThemeOverlay.AppCompat.Light"
         parent="@android:style/ThemeOverlay.Material.Dark">
         <item name="isLightTheme">false</item>
