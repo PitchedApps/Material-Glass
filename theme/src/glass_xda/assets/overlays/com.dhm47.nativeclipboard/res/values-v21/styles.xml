@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--<style name="AppBaseTheme" parent="@style/Platform.AppCompat" />-->
+    <style name="AppBaseTheme" parent="@style/Platform.AppCompat" />
 
     <style name="Platform.AppCompat" parent="@*common:style/Pitch.AppCompat" />
     <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
@@ -14,5 +14,15 @@
         <item name="md_btn_positive_selector">@drawable/md_btn_selector_ripple</item>
         <item name="md_btn_neutral_selector">@drawable/md_btn_selector_ripple</item>
         <item name="md_btn_negative_selector">@drawable/md_btn_selector_ripple</item>
+    </style>
+
+    <style name="Setting" parent="@style/Platform.AppCompat">
+        <item name="android:navigationBarColor">@color/dark_deep_purple</item>
+        <item name="android:colorPrimary">@color/deep_purple</item>
+        <item name="android:colorPrimaryDark">@color/dark_deep_purple</item>
+        <item name="android:colorAccent">@color/light_deep_purple</item>
+        <item name="colorAccent">@color/light_deep_purple</item>
+        <item name="colorPrimary">@color/deep_purple</item>
+        <item name="colorPrimaryDark">@color/dark_deep_purple</item>
     </style>
 </resources>

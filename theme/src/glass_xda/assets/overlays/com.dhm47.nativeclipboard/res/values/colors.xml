@@ -7,6 +7,13 @@
     <color name="primary_text">@*common:color/text</color>
     <color name="secondary_text">@*common:color/textt</color>
 
+    <color name="clipboard_bg">#60000000</color>
+    <color name="clipboard_preference_bg">#60000000</color>
+    <color name="background_white">#60000000</color>
+    <color name="textview_textcolor">#ffffffff</color>
+    <color name="text_white">#ffffffff</color>
+    <color name="undo_src">#ffaaaaaa</color>
+
     <color name="abc_search_url_text_normal">#ff7fa87f</color>
     <color name="abc_search_url_text_selected">@*common:color/text</color>
     <color name="abc_search_url_text_pressed">@*common:color/text</color>

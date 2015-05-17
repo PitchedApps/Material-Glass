@@ -13,6 +13,8 @@
 	<style name="Platform.AppCompat.Light.Dialog" parent="@*common:style/Pitch.AppCompat.Light.Dialog" />
 
 -->
+    <style name="Theme.AppCompat.Light" parent="@style/Theme.AppCompat" />
+
     <style name="Pitch.AppCompat" parent="@android:style/Theme.Material">
         <item name="android:statusBarColor">@color/background</item>
         <item name="android:navigationBarColor">@color/background</item>
