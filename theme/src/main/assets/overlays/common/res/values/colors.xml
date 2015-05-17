@@ -53,29 +53,6 @@
     <color name="dblue_t">#cc343d41</color>
 
     <!--appcompat
-    <color name="common_signin_btn_dark_text_default">@*common:color/text</color>
-    <color name="common_signin_btn_dark_text_pressed">@*common:color/text</color>
-    <color name="common_signin_btn_dark_text_disabled">#ffaaaaaa</color>
-    <color name="common_signin_btn_dark_text_focused">@*common:color/text</color>
-    <color name="common_signin_btn_light_text_default">@*common:color/text</color>
-    <color name="common_signin_btn_light_text_pressed">@*common:color/text</color>
-    <color name="common_signin_btn_light_text_disabled">#ffaaaaaa</color>
-    <color name="common_signin_btn_light_text_focused">@*common:color/text</color>
-    <color name="common_signin_btn_default_background">@*common:color/background</color>
-    <color name="common_action_bar_splitter">#22ffffff</color>
-    <color name="wallet_bright_foreground_holo_dark">@*common:color/text</color>
-    <color name="wallet_dim_foreground_holo_dark">@*common:color/textt</color>
-    <color name="wallet_dim_foreground_disabled_holo_dark">@*common:color/textt</color>
-    <color name="wallet_dim_foreground_inverse_holo_dark">@*common:color/textt</color>
-    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">@*common:color/textt</color>
-    <color name="wallet_bright_foreground_disabled_holo_light">@*common:color/text</color>
-    <color name="wallet_bright_foreground_holo_light">@*common:color/text</color>
-    <color name="wallet_hint_foreground_holo_light">@*common:color/text</color>
-    <color name="wallet_hint_foreground_holo_dark">#ff808080</color>
-    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
-    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
-    <color name="wallet_holo_blue_light">#ff33b5e5</color>
-    <color name="wallet_link_text_light">#ff0000ee</color>
     <color name="abc_search_url_text_normal">#ff7fa87f</color>
     <color name="abc_search_url_text_selected">@*common:color/text</color>
     <color name="abc_search_url_text_pressed">@*common:color/text</color>
