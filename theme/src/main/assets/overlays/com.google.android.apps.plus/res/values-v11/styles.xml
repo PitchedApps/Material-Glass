@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppBaseTheme" parent="@style/Platform.AppCompat">
+    <style name="AppBaseTheme" parent="@*common:style/Theme.AppCompat">
         <item name="android:windowBackground">@color/background</item>
         <item name="android:colorBackground">@color/background</item>
         <item name="android:textColor">@color/text</item>
@@ -21,7 +21,7 @@
         <item name="android:colorBackground">@color/background</item>
         <item name="android:textColor">@color/text</item>
     </style>
-    <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat">
+    <style name="Platform.AppCompat.Light" parent="@*common:style/Theme.AppCompat">
         <item name="android:windowBackground">@color/background</item>
         <item name="android:colorBackground">@color/background</item>
         <item name="android:textColor">@color/text</item>

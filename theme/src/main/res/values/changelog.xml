@@ -44,10 +44,10 @@
     </string-array>
 
     <string-array name="v27">
-        <item>v</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>v1.0.1</item>
+        <item>Framework: revert actionbar theming for compatibility</item>
+        <item>Common: huge appcompat port</item>
+        <item>New: themed snapcolors</item>
         <item></item>
         <item></item>
     </string-array>

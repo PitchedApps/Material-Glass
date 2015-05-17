@@ -101,7 +101,7 @@
 
     </style>
 
-    <style name="Theme.AppCompat.CompactMenu" parent="@style/Platform.AppCompat" />
+    <style name="Theme.AppCompat.CompactMenu" parent="@*common:style/Theme.AppCompat" />
 
     <style name="RecipientEditTextViewBase" parent="@android:attr/autoCompleteTextViewStyle">
         <item name="android:textAppearance">?android:textAppearanceMedium</item>

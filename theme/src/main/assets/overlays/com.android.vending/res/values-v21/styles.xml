@@ -72,6 +72,6 @@
     </style>
 
     <style name="Platform.AppCompat" parent="@android:style/Theme.Material" />
-    <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
+    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
 
 </resources>
