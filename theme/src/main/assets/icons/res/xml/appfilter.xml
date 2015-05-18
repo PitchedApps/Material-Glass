@@ -278,7 +278,7 @@
         drawable="xda_premium4" />
     <item
         component="ComponentInfo{de.robv.android.xposed.installer/de.robv.android.xposed.installer.WelcomeActivity}"
-        drawable="xposedinstaller" />
+        drawable="xposed_installer" />
     <item component="ComponentInfo{com.truecaller.phoneapp/com.truecaller.phoneapp.DialActivity}"
         drawable="true_dialer" />
 <!--05/11/2015-->
@@ -345,5 +345,6 @@
     <item component="ComponentInfo{de.defim.apk.notifyclean/de.defim.apk.notifyclean.Launch0}" drawable="notify_clean"/>
     <item component="ComponentInfo{com.manvir.SnapColors/com.manvir.SnapColors.MainActivity}" drawable="snap_colors"/>
     <item component="ComponentInfo{hu.tagsoft.ttorrent.pro/hu.tagsoft.ttorrent.statuslist.StatusListActivity}" drawable="ttorrent_pro"/>
+    <item component="ComponentInfo{com.google.android.apps.docs.editors.slides/com.google.android.apps.docs.app.NewMainProxyActivity}" drawable="slides"/>
 
 </resources>
