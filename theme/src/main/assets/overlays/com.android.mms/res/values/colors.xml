@@ -107,6 +107,74 @@
     <!--new april 2-->
     <color name="search_activity_background_color">@color/background</color>
 
+    <!--bliss-->
+    <color name="compose_bg">#a0000000</color>
+    <!-- Quick messaging colors -->
+    <color name="qm_light_text">@color/text</color>
+    <color name="qm_hint_text">@color/textt</color>
+    <color name="qm_holo_blue_light">@color/text</color>
+    <color name="qm_link_text">@color/textt</color>
+    <color name="qm_dark_text">@color/text</color>
+    <color name="pager_arrow_dark_bg">#a0000000</color>
+    <color name="pager_arrow_light_bg">#a0000000</color>
+
+    <!-- widget background colors for unread/read -->
+    <color name="widget_unread_bgcolor">#20060606</color>
+    <color name="widget_read_bgcolor">#00000000</color>
+    <color name="widget_unread_bgcolor_light">#20060606</color>
+    <color name="widget_read_bgcolor_light">#00000000</color>
+
+    <!-- Theme defaults -->
+    <!-- == Conversation list default colors == -->
+    <color name="default_conv_list_background">@color/background</color>
+    <!-- Read defaults -->
+    <color name="default_read_bg">#00000000</color>
+    <color name="default_read_contact">@color/textt</color>
+    <color name="default_read_subject">@color/text</color>
+    <color name="default_read_date">@color/textt</color>
+    <color name="default_read_count">@color/textt</color>
+    <!-- Unread defaults -->
+    <color name="default_unread_bg">#20060606</color>
+    <color name="default_unread_contact">@color/text</color>
+    <color name="default_unread_subject">@color/text</color>
+    <color name="default_unread_date">@color/text</color>
+    <color name="default_unread_count">@color/text</color>
+
+    <!-- == Messages list view default colors == -->
+    <color name="default_message_background">@color/background</color>
+    <!-- Read defaults -->
+    <color name="default_recv_text_bg">@color/background</color>
+    <color name="default_recv_contact_color">@color/text</color>
+    <color name="default_recv_textcolor">@color/text</color>
+    <color name="default_recv_datecolor">@color/text</color>
+    <!-- Unread defaults -->
+    <color name="default_sent_text_bg">@color/backgroundd</color>
+    <color name="default_sent_contact_color">@color/text</color>
+    <color name="default_sent_textcolor">@color/text</color>
+    <color name="default_sent_datecolor">@color/text</color>
+
+    <!-- == Widget default colors == -->
+    <!-- widget dark -->
+    <!-- read -->
+    <color name="widget_senders_textcolor_read">@color/textt</color>
+    <color name="widget_subject_textcolor_read">@color/textt</color>
+    <color name="widget_date_textcolor_read">@color/textt</color>
+    <!-- unread -->
+    <color name="widget_senders_textcolor_unread">@color/text</color>
+    <color name="widget_subject_textcolor_unread">@color/text</color>
+    <color name="widget_date_textcolor_unread">@color/text</color>
+
+    <!-- widget light -->
+    <!-- read -->
+    <color name="widget_light_senders_textcolor_read">@color/textt</color>
+    <color name="widget_light_subject_textcolor_read">@color/textt</color>
+    <color name="widget_light_date_textcolor_read">@color/textt</color>
+    <!-- unread -->
+    <color name="widget_light_senders_textcolor_unread">@color/text</color>
+    <color name="widget_light_subject_textcolor_unread">@color/text</color>
+    <color name="widget_light_date_textcolor_unread">@color/text</color>
+    <!--end of bliss-->
+
     <color name="msg">#ff111111</color>
     <color name="msgg">#ff222222</color>
 
