@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">1.0.0</string>
+    <string name="current_version">1.0.1</string>
 
     <string-array name="fullchangelog">
         <item>@array/v27</item>
@@ -50,6 +50,9 @@
         <item>New: themed snapcolors</item>
         <item>Framework: themed zen icons for Euphoria\'s power menu</item>
         <item>New: themed native clip board</item>
+        <item>Theme: appcompat fixes all over the place</item>
+        <item>Icons: 13 new</item>
+        <item>MMS: added bliss + cyanogenmod caf colors</item>
     </string-array>
 
     <string-array name="v26">

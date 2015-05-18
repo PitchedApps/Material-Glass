@@ -178,7 +178,7 @@
        <item>snap_prefs</item>
        <item>wifi_key_view</item>
        <item>xinstaller</item>
-       <item>xposedinstaller</item>
+       <item>xposed_installer</item>
    </string-array>
 
    <string-array name="icon_pack" translatable="true">
@@ -348,7 +348,7 @@
        <item>wifi_key_view</item>
        <item>xda_premium4</item>
        <item>xinstaller</item>
-       <item>xposedinstaller</item>
+       <item>xposed_installer</item>
        <item>youtube</item>
    </string-array>
 
