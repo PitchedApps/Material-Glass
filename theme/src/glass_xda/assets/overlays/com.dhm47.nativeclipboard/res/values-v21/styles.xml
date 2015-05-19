@@ -11,12 +11,21 @@
     <style name="Base.ThemeOverlay.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
 
     <style name="MD_Light" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:textColor">@*common:color/text</item>
         <item name="md_divider">@*common:color/divider</item>
         <item name="md_list_selector">?android:selectableItemBackground</item>
         <item name="md_btn_stacked_selector">?android:selectableItemBackground</item>
         <item name="md_btn_positive_selector">@drawable/md_btn_selector_ripple</item>
         <item name="md_btn_neutral_selector">@drawable/md_btn_selector_ripple</item>
         <item name="md_btn_negative_selector">@drawable/md_btn_selector_ripple</item>
+
+        <item name="md_dark_theme">true</item>
+        <item name="md_title_color">@*common:color/text</item>
+        <item name="md_item_color">@*common:color/text</item>
+        <item name="md_content_color">@*common:color/text</item>
+        <item name="md_positive_color">@*common:color/text</item>
+        <item name="md_neutral_color">@*common:color/text</item>
+        <item name="md_negative_color">@*common:color/text</item>
     </style>
 
     <style name="Setting" parent="@style/Theme.AppCompat">
