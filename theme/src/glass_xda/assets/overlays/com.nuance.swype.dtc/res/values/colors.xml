@@ -11,13 +11,14 @@
     <color name="grey_lightest">@color/background</color>
     <color name="grey_lighter">@color/background</color>
     <color name="grey">@color/background</color>
+    <color name="semi_black">#33ffffff</color>
 
     <color name="text">#ffffffff</color>
     <color name="textt">#ccffffff</color>
     <color name="texttt">#99ffffff</color>
-    <color name="backgroundt">#88000000</color>
-    <color name="backgrounddt">#88161616</color>
-    <color name="backgroundddt">#88323232</color>
+    <color name="backgroundt">#50000000</color>
+    <color name="backgrounddt">#50161616</color>
+    <color name="backgroundddt">#50323232</color>
     <color name="background">#ff000000</color>
     <color name="backgroundd">#ff161616</color>
     <color name="backgrounddd">#ff323232</color>
