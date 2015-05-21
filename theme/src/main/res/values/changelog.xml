@@ -55,11 +55,6 @@
         <item>MMS: added bliss + cyanogenmod caf colors (did not test as I don\'t use bliss)</item>
         <item>Kernel Adiutor: fixed fab + style redo</item>
         <item>Swype: moved to main production (only material dark is themed)</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="v26">

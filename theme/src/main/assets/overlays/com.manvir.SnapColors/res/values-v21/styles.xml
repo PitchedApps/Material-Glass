@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@*common:style/Theme.AppCompat">
+        <item name="android:textColor">@*common:color/text</item>
+        <item name="colorPrimary">@*common:color/backgroundx</item>
+        <item name="android:colorPrimary">@*common:color/backgroundx</item>
+        <item name="colorPrimaryDark">@*common:color/backgroundx</item>
+        <item name="android:colorPrimaryDark">@*common:color/backgroundx</item>
+        <item name="colorAccent">@*common:color/text</item>
+        <item name="android:colorAccent">@*common:color/text</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
+</resources>

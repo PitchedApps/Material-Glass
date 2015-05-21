@@ -50,28 +50,33 @@
             \n&#8226; Launcher 3
             \n&#8226; MMS
             \n\nGOOGLE
-            \n\n&#8226; Google + (in xda version)
+            \n\n&#8226; Google +
             \n&#8226; Gmail
             \n&#8226; Google Search
             \n&#8226; Google Now
             \n&#8226; Youtube (bug fix only)
             \n&#8226; Google Keyboard
             \n&#8226; Google Handwriting
-            \n&#8226; Google Services (in xda version)
-            \n&#8226; Google Games (in xda version)
             \n\nUSER
             \n\n&#8226; K9-Mail
-            \n&#8226; Notification Manager (xposed)
-            \n&#8226; SnapPref (xposed)
             \n&#8226; Snapchat (light touches)
             \n&#8226; Nova Launcher
-            \n&#8226; Xposed
             \n&#8226; Hells Core Kernel Updater
             \n&#8226; Switchr
-            \n&#8226; Kernel Adiutor
+            \n&#8226; Kernel Adiutor (use dark theme)
             \n&#8226; Ebay (notification fix)
-            \n&#8226; Adobe Acrobat (in xda version)
-            \n&#8226; ModernHub (in xda version)
+            \n&#8226; Swype (modified material dark theme)
+            \n\nXPOSED
+            \n\n&#8226; Xposed Framework
+            \n&#8226; Notification Manager
+            \n&#8226; SnapPref
+            \n&#8226; SnapColors
+            \n&#8226; Native Clipboard
+            \n\nIN THE XDA BETA
+            \n\n&#8226; Adobe Acrobat
+            \n&#8226; Google Services
+            \n&#8226; Google Games
+            \n&#8226; ModernHub
         </item>
         <item>
             &#8226; Dialer and Contacts have unpredictable crashes, especially with custom DPI\'s or low DPI
@@ -80,6 +85,7 @@
             \n&#8226; Ambient display has black text: this was fixed in mid April, so make sure you have the latest commits in your rom.
             \n&#8226; Blisspop sometimes has incompatibilities. Please note that this rom is heavily modified, and deviates quite a lot from standard AOSP. As such, it may not always work with this theme.
             \n&#8226; Some issues with Cyanogen OS; Note that they have not merged the latest theme commits, which is why it isn\'t working. It\'s up to them to update it, and us themers can\'t do anything about it yet.
+            \n&#8226; Whatsapp cannot be themed as it has way too many hard coded colors. However, Team Blackout has made a nice modded apk, which you can get from their downloader, which is linked in Material Glass.
         </item>
     </string-array>
 
