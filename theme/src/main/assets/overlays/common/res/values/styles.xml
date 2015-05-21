@@ -8,6 +8,10 @@
     </style>
 
     <style name="Theme.Material.Black" parent="@style/Theme.Material" />
+    <style name="Theme.Material.Half" parent="@android:style/Theme.Material.Wallpaper">
+        <item name="android:windowBackground">@color/background_half</item>
+        <item name="android:actionBarStyle">@style/Pitch.ActionBar</item>
+    </style>
 
     <style name="Theme.Material" parent="@android:style/Theme.Material">
         <item name="android:panelColorBackground">@color/backgroundx</item>

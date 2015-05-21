@@ -50,8 +50,10 @@
     <color name="card_background_light">#30000000</color>
     <color name="cardview_dark_background">#55000000</color>
     <color name="cardview_light_background">#55000000</color>
-    <color name="fab_normal">#aa2a7289</color>
-    <color name="fab_pressed">#aa1d5060</color>
+    <!--<color name="fab_normal">#cc2a7289</color>-->
+    <!--<color name="fab_pressed">#cc1d5060</color>   -->
+    <color name="fab_normal">#cc060606</color>
+    <color name="fab_pressed">#cc121212</color>
     <color name="navigationdrawer_background_dark">#a0000000</color>
     <color name="navigationdrawer_background_light">#a0000000</color>
     <color name="primary_material_dark">#ff000000</color>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@*common:style/Theme.Material.Half" />
+    <style name="AppDialogTheme" parent="@android:style/Theme.DeviceDefault.Dialog" />
+    <style name="AppStartupThemeBase" parent="@*common:style/Theme.Material.Half" />
+</resources>

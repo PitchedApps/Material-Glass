@@ -21,7 +21,7 @@
         app:mrl_rippleAlpha="0.4"
         app:mrl_rippleColor="@color/semitransparent_white"
         app:mrl_rippleDelayClick="false"
-        app:mrl_rippleDuration="150"
+        app:mrl_rippleDuration="100"
         app:mrl_rippleHover="true"
         app:mrl_rippleInAdapter="true"
         app:mrl_rippleOverlay="true">
