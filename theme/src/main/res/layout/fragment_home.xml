@@ -1,334 +1,192 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pitchedapps.material.glass.fragments.HomeFragment"
-    android:id="@+id/home_container"
-    android:background="@color/light_bg" >
+    android:background="@color/light_bg">
 
     <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/scrollView">
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fillViewport="true"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:background="@color/cardsbg"
-            android:layout_marginTop="@dimen/card_external_padding"
-            android:layout_marginRight="@dimen/card_external_padding"
-            android:layout_marginLeft="@dimen/card_external_padding"
-            android:layout_marginBottom="@dimen/card_external_padding">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutDonate"
+            android:visibility="visible">
 
-            <LinearLayout
-                android:orientation="horizontal"
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarma1"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:showDividers="end"
-                android:background="?background_primary_shaded"
-                android:padding="@dimen/card_internal_padding">
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
 
-                <ImageView
-                    android:layout_width="@dimen/header_icon_size"
-                    android:layout_height="@dimen/header_icon_size"
-                    android:src="@drawable/ic_gift"
-                    android:contentDescription="@string/card_donate_title" />
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center_vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:enabled="false"
-                        android:layout_marginLeft="@dimen/pad_icon"
-                        android:layout_marginStart="@dimen/pad_icon"
-                        android:text="@string/card_donate_title"
-                        style="@style/TextTitleLight" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/card_donate_subtitle"
-                        android:layout_marginLeft="@dimen/pad_icon"
-                        android:layout_marginStart="@dimen/pad_icon"
-                        style="@style/TextCaptionLight" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <FrameLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:padding="@dimen/card_internal_padding"
-                    android:id="@+id/layoutDonate"
-                    android:visibility="visible">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/donate_text"
-                        style="?cardText"
-                        android:layout_marginBottom="@dimen/card_internal_padding" />
-
-                    <View style="@style/Divider"
-                        android:layout_marginBottom="@dimen/card_internal_padding" />
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/separator_pad"
-                        android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:id="@+id/buttonKarma1">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="fill_parent"
-                            android:text="@string/donate_1"
-                            android:layout_weight="1"
-                            style="?cardText"
-                            android:gravity="center_vertical" />
-
-                        <ImageView
-                            android:layout_width="@dimen/sub_icon_size"
-                            android:layout_height="@dimen/sub_icon_size"
-                            android:src="@drawable/ic_donate_2"
-                            android:layout_gravity="end"
-                            android:contentDescription="@string/donate_1" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/separator_pad"
-                        android:layout_marginBottom="@dimen/separator_pad"
-                        android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:id="@+id/buttonKarma5">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="fill_parent"
-                            android:text="@string/donate_5"
-                            android:gravity="center_vertical"
-                            android:layout_weight="1"
-                            style="?cardText" />
-
-                        <ImageView
-                            android:layout_width="@dimen/sub_icon_size"
-                            android:layout_height="@dimen/sub_icon_size"
-                            android:src="@drawable/ic_donate_5"
-                            android:layout_gravity="end"
-                            android:contentDescription="@string/donate_5" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/separator_pad"
-                        android:layout_marginBottom="@dimen/separator_pad"
-                        android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:id="@+id/buttonKarma10">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="fill_parent"
-                            android:text="@string/donate_10"
-                            android:gravity="center_vertical"
-                            android:layout_weight="1"
-                            style="?cardText" />
-
-                        <ImageView
-                            android:layout_width="@dimen/sub_icon_size"
-                            android:layout_height="@dimen/sub_icon_size"
-                            android:src="@drawable/ic_donate_10"
-                            android:layout_gravity="end"
-                            android:contentDescription="@string/donate_10" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/separator_pad"
-                        android:layout_marginBottom="@dimen/separator_pad"
-                        android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:id="@+id/buttonKarma10">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="fill_parent"
-                            android:text="@string/donate_10"
-                            android:gravity="center_vertical"
-                            android:layout_weight="1"
-                            style="?cardText" />
-
-                        <ImageView
-                            android:layout_width="@dimen/sub_icon_size"
-                            android:layout_height="@dimen/sub_icon_size"
-                            android:src="@drawable/ic_donate_10"
-                            android:layout_gravity="end"
-                            android:contentDescription="@string/donate_10" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="vertical"
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutDonateAgain"
-                    android:padding="@dimen/card_internal_padding"
-                    android:visibility="gone">
+                    android:layout_margin="@dimen/cards_margin">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/donate_thank_you"
-                        style="?cardText" />
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/dashboard_author"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarma2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/donate_more_button"
-                        android:id="@+id/buttonHelpFurther"
-                        android:gravity="center_horizontal"
-                        style="?cardTextValues"
-                        android:paddingTop="@dimen/card_internal_padding"
-                        android:paddingBottom="@dimen/card_internal_padding" />
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/dashboard_author"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
 
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:id="@+id/layoutExpandedDonateAgain"
-                        android:visibility="gone">
+                </RelativeLayout>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/donate_more_text"
-                            style="?cardText"
-                            android:paddingBottom="@dimen/card_external_padding" />
+            </android.support.v7.widget.CardView>
 
-                        <View style="@style/Divider"
-                            android:layout_marginBottom="@dimen/card_external_padding" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarma3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
 
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/separator_pad"
-                            android:clickable="true"
-                            android:background="?android:attr/selectableItemBackground"
-                            android:id="@+id/buttonKarma1Again">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="fill_parent"
-                                android:text="@string/donate_1"
-                                android:layout_weight="1"
-                                style="?cardText"
-                                android:gravity="center_vertical" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/dashboard_author"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
 
-                            <ImageView
-                                android:layout_width="@dimen/sub_icon_size"
-                                android:layout_height="@dimen/sub_icon_size"
-                                android:src="@drawable/ic_donate_1"
-                                android:layout_gravity="end"
-                                android:contentDescription="@string/donate_1" />
+                </RelativeLayout>
 
-                        </LinearLayout>
+            </android.support.v7.widget.CardView>
 
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/separator_pad"
-                            android:layout_marginBottom="@dimen/separator_pad"
-                            android:clickable="true"
-                            android:background="?android:attr/selectableItemBackground"
-                            android:id="@+id/buttonKarma5Again">
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarma5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="fill_parent"
-                                android:text="@string/donate_5"
-                                android:gravity="center_vertical"
-                                android:layout_weight="1"
-                                style="?cardText" />
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
 
-                            <ImageView
-                                android:layout_width="@dimen/sub_icon_size"
-                                android:layout_height="@dimen/sub_icon_size"
-                                android:src="@drawable/ic_donate_5"
-                                android:layout_gravity="end"
-                                android:contentDescription="@string/donate_5" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/dashboard_author"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
 
-                        </LinearLayout>
+                </RelativeLayout>
 
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/separator_pad"
-                            android:layout_marginBottom="@dimen/separator_pad"
-                            android:clickable="true"
-                            android:background="?android:attr/selectableItemBackground"
-                            android:id="@+id/buttonKarma10Again">
+            </android.support.v7.widget.CardView>
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="fill_parent"
-                                android:text="@string/donate_10"
-                                android:gravity="center_vertical"
-                                android:layout_weight="1"
-                                style="?cardText" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarma10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
 
-                            <ImageView
-                                android:layout_width="@dimen/sub_icon_size"
-                                android:layout_height="@dimen/sub_icon_size"
-                                android:src="@drawable/ic_donate_10"
-                                android:layout_gravity="end"
-                                android:contentDescription="@string/donate_10" />
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
 
-                        </LinearLayout>
-                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/dashboard_author"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarma20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/dashboard_author"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
 
         </LinearLayout>
+
     </ScrollView>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/imageBlur"
-        android:background="#000000"
-        android:alpha="0"
-        android:visibility="gone"
-        android:focusable="true"
-        android:clickable="true" />
-</FrameLayout>
+</RelativeLayout>
