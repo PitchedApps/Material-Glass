@@ -26,12 +26,10 @@ import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.pitchedapps.material.glass.BuildConfig;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
-import com.pitchedapps.material.glass.fragments.RequestFragment;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.Util;
 
@@ -150,18 +148,19 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 })
-//                .withOnDrawerItemLongClickListener(new Drawer.OnDrawerItemLongClickListener() {
-//                    @Override
-//                    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l, IDrawerItem iDrawerItem) {
-////TODO fix
-////                            if (drawerItem = thaPreviews) {
-////                                switchFragment(3, thaInfo, "Request");
-////                            }
-//                        if (drawerItem instanceof Nameable) {
-//                            switchFragment(2, thaPreviews, "Request");
-//                        }
-//                    }
-//                })
+                .withOnDrawerItemLongClickListener(new Drawer.OnDrawerItemLongClickListener() {
+                    @Override
+                    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l, IDrawerItem iDrawerItem) {
+
+                        if (iDrawerItem instanceof Nameable) {
+                            if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
+                                switchFragment(-1, "This value doesn't even matter, it gets overwritten in the RequestFragment anyways!", "Request");
+                                return true;
+                            }
+                        }
+                        return false;
+                    }
+                })
                 .withSavedInstance(savedInstanceState)
                 .build();
 

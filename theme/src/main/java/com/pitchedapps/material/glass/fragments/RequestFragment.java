@@ -15,19 +15,17 @@ import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.melnykov.fab.FloatingActionButton;
+import com.pitchedapps.material.glass.R;
 import com.pkmmte.requestmanager.AppInfo;
 import com.pkmmte.requestmanager.PkRequestManager;
 
 import java.util.LinkedList;
 import java.util.List;
-
-import com.pitchedapps.material.glass.R;
 
 public class RequestFragment extends Fragment {
 
@@ -51,7 +49,7 @@ public class RequestFragment extends Fragment {
 
         ActionBar toolbar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         if (toolbar != null)
-            toolbar.setTitle(R.string.section_five);
+            toolbar.setTitle(R.string.section_five);    // TODO Change the title. Right now it says "Donate"
 
         // Populate your ListView with your apps
         mList = (ListView) root.findViewById(R.id.appList);
