@@ -150,10 +150,11 @@ public class MainActivity extends AppCompatActivity {
                         //--> click on the footer
                         //those items don't contain a drawerItem
 //TODO fix
-                        if (drawerItem != null) {
-                            if (drawerItem = thaPreviews) {
-                                switchFragment(3, thaInfo, "Request");
-                            }
+//                            if (drawerItem = thaPreviews) {
+//                                switchFragment(3, thaInfo, "Request");
+//                            }
+                        if (drawerItem instanceof Nameable) {
+                            switchFragment(3, thaInfo, "Request");
                         }
                     }
                 })
