@@ -17,14 +17,13 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.balysv.materialripple.MaterialRippleLayout;
+import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.fragments.WallpapersFragment;
 import com.pitchedapps.material.glass.utilities.PaletteTransformation;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import com.pitchedapps.material.glass.R;
 
 import static com.pitchedapps.material.glass.utilities.PaletteTransformation.PaletteCallback;
 
@@ -125,7 +124,8 @@ public class WallsGridAdapter extends BaseAdapter {
         final ProgressBar progressBar;
         final LinearLayout titleBg;
         final MaterialRippleLayout content;
-//TODO use lollipop ripples rather than library
+
+        //TODO use lollipop ripples rather than library
         WallsHolder(View v) {
             wall = (ImageView) v.findViewById(R.id.wall);
             name = (TextView) v.findViewById(R.id.name);

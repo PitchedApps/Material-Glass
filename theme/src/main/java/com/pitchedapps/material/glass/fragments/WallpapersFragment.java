@@ -15,6 +15,7 @@ import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.DetailedWallpaperActivity;
 import com.pitchedapps.material.glass.adapters.WallsGridAdapter;
 import com.pitchedapps.material.glass.utilities.JSONParser;
@@ -26,15 +27,12 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.pitchedapps.material.glass.R;
-
 public class WallpapersFragment extends Fragment {
 
-    private static final int DEFAULT_COLUMNS_PORTRAIT = 2;
-    private static final int DEFAULT_COLUMNS_LANDSCAPE = 3;
     public static final String NAME = "name";
     public static final String WALL = "wall";
-
+    private static final int DEFAULT_COLUMNS_PORTRAIT = 2;
+    private static final int DEFAULT_COLUMNS_LANDSCAPE = 3;
     private ArrayList<HashMap<String, String>> arraylist;
     private ViewGroup root;
     private ProgressBar mProgress;

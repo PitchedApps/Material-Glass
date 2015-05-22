@@ -29,12 +29,10 @@ import java.util.List;
 
 public class RequestFragment extends Fragment {
 
-    // Request Manager
-    private PkRequestManager mRequestManager;
-
     // App List
     private final List<AppInfo> mApps = new LinkedList<>();
-
+    // Request Manager
+    private PkRequestManager mRequestManager;
     // List & Adapter
     private ListView mList;
     private ListAdapter mAdapter;
@@ -91,6 +89,31 @@ public class RequestFragment extends Fragment {
         });
 
         return root;
+    }
+
+    private void showNewAdviceDialog() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        if (!prefs.getBoolean("dontshowagain", false)) {
+            new MaterialDialog.Builder(getActivity())
+                    .title(R.string.advice)
+                    .content(R.string.request_advice)
+                    .positiveText(R.string.close)
+                    .neutralText(R.string.dontshow)
+                    .callback(new MaterialDialog.ButtonCallback() {
+                        @Override
+                        public void onPositive(MaterialDialog dialog) {
+                            PreferenceManager.getDefaultSharedPreferences(getActivity())
+                                    .edit().putBoolean("dontshowagain", false).commit();
+                        }
+
+                        @Override
+                        public void onNeutral(MaterialDialog dialog) {
+                            PreferenceManager.getDefaultSharedPreferences(getActivity())
+                                    .edit().putBoolean("dontshowagain", true).commit();
+                        }
+                    }).show();
+        }
+
     }
 
     private class GrabApplicationsTask extends AsyncTask<String, Void, String> {
@@ -179,30 +202,5 @@ public class RequestFragment extends Fragment {
             public TextView txtName;
             public CheckBox chkSelected;
         }
-    }
-
-    private void showNewAdviceDialog() {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        if (!prefs.getBoolean("dontshowagain", false)) {
-            new MaterialDialog.Builder(getActivity())
-                    .title(R.string.advice)
-                    .content(R.string.request_advice)
-                    .positiveText(R.string.close)
-                    .neutralText(R.string.dontshow)
-                    .callback(new MaterialDialog.ButtonCallback() {
-                        @Override
-                        public void onPositive(MaterialDialog dialog) {
-                            PreferenceManager.getDefaultSharedPreferences(getActivity())
-                                    .edit().putBoolean("dontshowagain", false).commit();
-                        }
-
-                        @Override
-                        public void onNeutral(MaterialDialog dialog) {
-                            PreferenceManager.getDefaultSharedPreferences(getActivity())
-                                    .edit().putBoolean("dontshowagain", true).commit();
-                        }
-                    }).show();
-        }
-
     }
 }

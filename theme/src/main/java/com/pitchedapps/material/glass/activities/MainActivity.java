@@ -56,13 +56,13 @@ public class MainActivity extends AppCompatActivity {
     private static final String PAYPAL_CURRENCY_CODE = "CAD";
 
     public Drawer.Result result = null;
+    public String version;
     private String thaApp;
     private String thaPreviews;
     private String thaWalls;
     private String thaDonate;
     private String thaCredits;
     private String thaInfo;
-    public String version;
     private int currentItem = -1;
     private boolean firstrun, enable_features;
     private Preferences mPrefs;
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         AccountHeader.Result headerResult = new AccountHeader()
                 .withActivity(this)
                 .withHeaderBackground(R.drawable.header)
-                //TODO
+                        //TODO
                 .withSelectionFirstLine(getResources().getString(R.string.app_long_name))
 //                .withOnAccountHeaderSelectionViewClickListener(new AccountHeader.OnAccountHeaderListener() {
 //                    @Override
@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
 
                         if (iDrawerItem instanceof Nameable) {
                             if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
-                                switchFragment(-1, "This value doesn't even matter, it gets overwritten in the RequestFragment anyways!", "Request");
+                                switchFragment(-1, thaPreviews, "Request");
                                 return true;
                             }
                         }

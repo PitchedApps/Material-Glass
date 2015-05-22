@@ -9,8 +9,15 @@ import android.widget.TextView;
 
 import com.pitchedapps.material.glass.R;
 
-public class Info extends Fragment
-{
+public class Info extends Fragment {
+
+    public static Info newInstance(String content) {
+        Info fragment = new Info();
+        Bundle args = new Bundle();
+        args.putString("content", content);
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -20,14 +27,6 @@ public class Info extends Fragment
         contentTextView.setText(getArguments().getString("content"));
         return view;
 
-    }
-
-    public static Info newInstance(String content) {
-        Info fragment = new Info();
-        Bundle args = new Bundle();
-        args.putString("content", content);
-        fragment.setArguments(args);
-        return fragment;
     }
 
 }

@@ -12,9 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.pitchedapps.material.glass.views.SlidingTabLayout;
-
 import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.views.SlidingTabLayout;
 
 public class PreviewsFragment extends Fragment {
 

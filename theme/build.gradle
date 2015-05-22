@@ -7,13 +7,13 @@ buildscript {
     }
 }
 
-tasks.whenTaskAdded { task ->
-    if (task.name.equals("lint")) {
-        task.enabled = false
-    } else if (task.name.equals("lintVitalRelease")) {
-        task.enabled = false
-    }
-}
+//tasks.whenTaskAdded { task ->
+//    if (task.name.equals("lint")) {
+//        task.enabled = false
+//    } else if (task.name.equals("lintVitalRelease")) {
+//        task.enabled = false
+//    }
+//}
 
 apply plugin: 'com.android.application'
 
@@ -57,9 +57,9 @@ android {
         }
     }
 
-//    lintOptions {
-//        abortonError false
-//    }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {

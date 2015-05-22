@@ -1,7 +1,5 @@
 package com.pitchedapps.material.glass.fragments;
 
-import android.app.Activity;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -18,12 +16,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.pitchedapps.material.glass.activities.MainActivity;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ObservableScrollView;
-
 import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.utilities.CmThemeEngineLauncher;
+import com.pitchedapps.material.glass.activities.MainActivity;
 
 import java.lang.reflect.Constructor;
 
