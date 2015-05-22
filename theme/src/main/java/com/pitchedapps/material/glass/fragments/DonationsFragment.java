@@ -53,7 +53,7 @@ public class DonationsFragment extends Fragment {
         ActionBar toolbar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         if (toolbar != null)
             toolbar.setTitle(R.string.donate_home_title);
-
+//TODO fix view
         setupKarma(View);
 
         updatePremiumUi();
@@ -409,6 +409,57 @@ public class DonationsFragment extends Fragment {
         });
 
         layout = (LinearLayout) view.findViewById(R.id.buttonKarma20);
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.20", 20, ((MainActivity) getActivity()).mPurchaseFinishedListener, "20");
+            }
+        });
+
+
+
+
+        LinearLayout layoutAgain = (LinearLayout) view.findViewById(R.id.buttonKarmaAgain1);
+        layoutAgain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.1", 1, ((MainActivity) getActivity()).mPurchaseFinishedListener, "1");
+            }
+        });
+
+        layout = (LinearLayout) view.findViewById(R.id.buttonKarmaAgain2);
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.2", 2, ((MainActivity) getActivity()).mPurchaseFinishedListener, "2");
+            }
+        });
+
+        layout = (LinearLayout) view.findViewById(R.id.buttonKarmaAgain3);
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.3", 3, ((MainActivity) getActivity()).mPurchaseFinishedListener, "3");
+            }
+        });
+
+        layout = (LinearLayout) view.findViewById(R.id.buttonKarmaAgain5);
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.5", 5, ((MainActivity) getActivity()).mPurchaseFinishedListener, "5");
+            }
+        });
+
+        layout = (LinearLayout) view.findViewById(R.id.buttonKarmaAgain10);
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.10", 10, ((MainActivity) getActivity()).mPurchaseFinishedListener, "10");
+            }
+        });
+
+        layout = (LinearLayout) view.findViewById(R.id.buttonKarmaAgain20);
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

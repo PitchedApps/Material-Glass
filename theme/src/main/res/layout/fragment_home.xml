@@ -41,7 +41,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/cards_text_margin"
-                        android:text="@string/dashboard_author"
+                        android:text="@string/donate_button_1"
                         android:textColor="@color/text"
                         android:textSize="@dimen/text_small"
                         android:gravity="center_vertical" />
@@ -68,7 +68,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/cards_text_margin"
-                        android:text="@string/dashboard_author"
+                        android:text="@string/donate_button_2"
                         android:textColor="@color/text"
                         android:textSize="@dimen/text_small"
                         android:gravity="center_vertical" />
@@ -95,7 +95,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/cards_text_margin"
-                        android:text="@string/dashboard_author"
+                        android:text="@string/donate_button_3"
                         android:textColor="@color/text"
                         android:textSize="@dimen/text_small"
                         android:gravity="center_vertical" />
@@ -122,7 +122,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/cards_text_margin"
-                        android:text="@string/dashboard_author"
+                        android:text="@string/donate_button_5"
                         android:textColor="@color/text"
                         android:textSize="@dimen/text_small"
                         android:gravity="center_vertical" />
@@ -149,7 +149,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/cards_text_margin"
-                        android:text="@string/dashboard_author"
+                        android:text="@string/donate_button_10"
                         android:textColor="@color/text"
                         android:textSize="@dimen/text_small"
                         android:gravity="center_vertical" />
@@ -176,7 +176,178 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/cards_text_margin"
-                        android:text="@string/dashboard_author"
+                        android:text="@string/donate_button_20"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutDonateAgain"
+            android:visibility="visible">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarmaAgain1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/donate_button_1"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarmaAgain2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/donate_button_2"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarmaAgain3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/donate_button_3"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarmaAgain5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/donate_button_5"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarmaAgain10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/donate_button_10"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:gravity="center_vertical" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonKarmaAgain20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/donate_button_20"
                         android:textColor="@color/text"
                         android:textSize="@dimen/text_small"
                         android:gravity="center_vertical" />
