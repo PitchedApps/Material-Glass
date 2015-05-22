@@ -26,6 +26,8 @@ import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
+import com.mikepenz.materialdrawer.model.interfaces.IProfile;
+import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.pitchedapps.material.glass.BuildConfig;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
@@ -90,7 +92,14 @@ public class MainActivity extends AppCompatActivity {
         AccountHeader.Result headerResult = new AccountHeader()
                 .withActivity(this)
                 .withHeaderBackground(R.drawable.header)
+                //TODO
                 .withSelectionFirstLine(getResources().getString(R.string.app_long_name))
+//                .withOnAccountHeaderSelectionViewClickListener(new AccountHeader.OnAccountHeaderListener() {
+//                    @Override
+//                    public boolean onProfileChanged(View view, IProfile iProfile, boolean b) {
+//                        return false;
+//                    }
+//                })
                 .withSelectionSecondLine("v" + Util.getAppVersion(this))
                 .withSavedInstance(savedInstanceState)
                 .build();
@@ -141,23 +150,18 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 })
-                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
-                        //check if the drawerItem is set.
-                        //there are different reasons for the drawerItem to be null
-                        //--> click on the header
-                        //--> click on the footer
-                        //those items don't contain a drawerItem
-//TODO fix
-//                            if (drawerItem = thaPreviews) {
-//                                switchFragment(3, thaInfo, "Request");
-//                            }
-                        if (drawerItem instanceof Nameable) {
-                            switchFragment(2, thaPreviews, "Request");
-                        }
-                    }
-                })
+//                .withOnDrawerItemLongClickListener(new Drawer.OnDrawerItemLongClickListener() {
+//                    @Override
+//                    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l, IDrawerItem iDrawerItem) {
+////TODO fix
+////                            if (drawerItem = thaPreviews) {
+////                                switchFragment(3, thaInfo, "Request");
+////                            }
+//                        if (drawerItem instanceof Nameable) {
+//                            switchFragment(2, thaPreviews, "Request");
+//                        }
+//                    }
+//                })
                 .withSavedInstance(savedInstanceState)
                 .build();
 
