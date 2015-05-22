@@ -29,6 +29,7 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.pitchedapps.material.glass.BuildConfig;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
+import com.pitchedapps.material.glass.fragments.RequestFragment;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.Util;
 
@@ -136,6 +137,22 @@ public class MainActivity extends AppCompatActivity {
                                 case 6:
                                     switchFragment(6, thaCredits, "Credits");
                                     break;
+                            }
+                        }
+                    }
+                })
+                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
+                        //check if the drawerItem is set.
+                        //there are different reasons for the drawerItem to be null
+                        //--> click on the header
+                        //--> click on the footer
+                        //those items don't contain a drawerItem
+//TODO fix
+                        if (drawerItem != null) {
+                            if (drawerItem = thaPreviews) {
+                                switchFragment(3, thaInfo, "Request");
                             }
                         }
                     }

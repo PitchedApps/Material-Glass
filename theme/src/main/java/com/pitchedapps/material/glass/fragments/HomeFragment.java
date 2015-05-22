@@ -126,8 +126,8 @@ public class HomeFragment extends Fragment {
         });
 
         FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.apply_btn);
-        fab.setColorNormal(getResources().getColor(R.color.primary));
-        fab.setColorPressed(getResources().getColor(R.color.primary_dark));
+        fab.setColorNormal(getResources().getColor(R.color.fab_unpressed));
+        fab.setColorPressed(getResources().getColor(R.color.fab_pressed));
         fab.setColorRipple(getResources().getColor(R.color.semitransparent_white));
         fab.show(true);
         fab.attachToScrollView(content);
