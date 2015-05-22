@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
 //                                switchFragment(3, thaInfo, "Request");
 //                            }
                         if (drawerItem instanceof Nameable) {
-                            switchFragment(3, thaInfo, "Request");
+                            switchFragment(2, thaPreviews, "Request");
                         }
                     }
                 })
