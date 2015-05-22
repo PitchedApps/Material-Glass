@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
@@ -32,6 +33,8 @@ import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.Util;
+import com.pkmmte.requestmanager.PkRequestManager;
+import com.pkmmte.requestmanager.RequestSettings;
 
 import org.sufficientlysecure.donations.DonationsFragment;
 
@@ -72,6 +75,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Grab a reference to the manager and store it in a variable. This helps make code shorter.
+        PkRequestManager mRequestManager = PkRequestManager.getInstance(this);
+        mRequestManager.setDebugging(false);
+        // Set your custom settings. Email address is required! Everything else is set to default.
+        mRequestManager.setSettings(new RequestSettings.Builder()
+                .addEmailAddress(getResources().getString(R.string.email_id))
+                .emailSubject(getResources().getString(R.string.email_request_subject))
+                .emailPrecontent(getResources().getString(R.string.request_precontent))
+                .saveLocation(Environment.getExternalStorageDirectory().getAbsolutePath() + getResources().getString(R.string.request_save_location))
+                .build());
+
         mPrefs = new Preferences(MainActivity.this);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -83,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         String thaHome = getResources().getString(R.string.section_one);
         thaPreviews = getResources().getString(R.string.section_two);
         thaWalls = getResources().getString(R.string.section_four);
-        thaDonate = getResources().getString(R.string.section_five);
+        thaDonate = getResources().getString(R.string.donate);
         thaCredits = getResources().getString(R.string.section_six);
         thaInfo = getResources().getString(R.string.section_eight);
 

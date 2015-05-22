@@ -72,7 +72,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 ((MainActivity) getActivity()).result.setSelectionByIdentifier(5);
-                ((MainActivity) getActivity()).switchFragment(5, getResources().getString(R.string.section_five), "Donate");
+                ((MainActivity) getActivity()).switchFragment(5, getResources().getString(R.string.donate), "Donate");
             }
         });
 

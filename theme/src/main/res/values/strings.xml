@@ -26,6 +26,8 @@
 
     <!-- Mail subjects for simple e-mail and requests e-mail -->
     <string name="email_subject">Material Glass Support</string>
+    <string name="email_request_subject">Material Glass - Secret Icon Request</string>
+    <string name="request_save_location">"/Material_Glass/Requests"</string>
 
     <!-- This are the strings for the cards in the main screen -->
     <string name="welcome_title">Let your wallpaper shine through with material darkness!</string>

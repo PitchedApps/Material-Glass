@@ -47,7 +47,7 @@ public class RequestFragment extends Fragment {
 
         ActionBar toolbar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         if (toolbar != null)
-            toolbar.setTitle(R.string.section_five);    // TODO Change the title. Right now it says "Donate"
+            toolbar.setTitle(R.string.section_five);
 
         // Populate your ListView with your apps
         mList = (ListView) root.findViewById(R.id.appList);
