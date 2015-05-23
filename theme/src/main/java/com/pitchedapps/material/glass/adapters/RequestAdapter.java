@@ -1,29 +1,18 @@
 package com.pitchedapps.material.glass.adapters;
 
-import java.util.List;
-import java.util.Locale;
-
-import view.QuickScroll.Scrollable;
-import android.animation.Animator;
-import android.animation.Animator.AnimatorListener;
-import android.animation.AnimatorInflater;
-import android.animation.AnimatorSet;
-import android.annotation.SuppressLint;
 import android.content.Context;
-import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
-import android.widget.FrameLayout;
-import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.pitchedapps.material.glass.R;
 import com.pkmmte.requestmanager.AppInfo;
+
+import java.util.List;
 
 public class RequestAdapter extends BaseAdapter
 {

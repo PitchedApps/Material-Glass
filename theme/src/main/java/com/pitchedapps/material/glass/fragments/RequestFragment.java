@@ -1,6 +1,5 @@
 package com.pitchedapps.material.glass.fragments;
 
-import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,11 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.BaseAdapter;
-import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.melnykov.fab.FloatingActionButton;
@@ -79,20 +74,20 @@ public class RequestFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ProgressDialog dialog;
-                dialog = new ProgressDialog(getActivity());
-                dialog.setMessage("Your message..");
-                dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-                dialog.setMax(100);
-                dialog.setCanceledOnTouchOutside(true);
-                dialog.show();
-//                Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
+//                ProgressDialog dialog;
+//                dialog = new ProgressDialog(getActivity());
+//                dialog.setMessage("Your message..");
+//                dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+//                dialog.setMax(100);
+//                dialog.setCanceledOnTouchOutside(true);
+//                dialog.show();
+                Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
                 mRequestManager.setActivity(getActivity());
                 if (mRequestManager.getNumSelected() < 1)
                     mRequestManager.sendAutomaticRequestAsync();
                 else
                     mRequestManager.sendRequestAsync();
-                dialog.dismiss();
+//                dialog.dismiss();
             }
 
         });
