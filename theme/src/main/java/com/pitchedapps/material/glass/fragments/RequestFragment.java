@@ -1,9 +1,7 @@
 package com.pitchedapps.material.glass.fragments;
 
-import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +16,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.afollestad.materialdialogs.MaterialDialog;
 import com.melnykov.fab.FloatingActionButton;
 import com.pitchedapps.material.glass.R;
 import com.pkmmte.requestmanager.AppInfo;
@@ -79,12 +76,20 @@ public class RequestFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                ProgressDialog dialog;
+//                dialog = new ProgressDialog(getActivity());
+//                dialog.setMessage("Your message..");
+//                dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+//                dialog.setMax(100);
+//                dialog.setCanceledOnTouchOutside(true);
+//                dialog.show();
+                Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
                 mRequestManager.setActivity(getActivity());
                 if (mRequestManager.getNumSelected() < 1)
                     mRequestManager.sendRequest(true, false);
                 else
                     mRequestManager.sendRequestAsync();
-                Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
+//                dialog.dismiss();
             }
 //            @Override
 //            public void onClick(View v) {
@@ -102,42 +107,17 @@ public class RequestFragment extends Fragment {
         fab.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
+                Toast.makeText(getActivity(), getString(R.string.unfiltered_request), Toast.LENGTH_LONG).show();
                 mRequestManager.removeAllAppFilterListeners();
 //                mRequestManager.setActivity(getActivity());
 //                if (mRequestManager.getNumSelected() < 1)
 //                    mRequestManager.sendRequest(true, false);
-                Toast.makeText(getActivity(), getString(R.string.unfiltered_request), Toast.LENGTH_LONG).show();
                 //TODO check if this is right
                 return false;
             }
         });
         return root;
     }
-
-    /*private void showNewAdviceDialog() {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        if (!prefs.getBoolean("dontshowagain", false)) {
-            new MaterialDialog.Builder(getActivity())
-                    .title(R.string.advice)
-                    .content(R.string.request_advice)
-                    .positiveText(R.string.close)
-                    .neutralText(R.string.dontshow)
-                    .callback(new MaterialDialog.ButtonCallback() {
-                        @Override
-                        public void onPositive(MaterialDialog dialog) {
-                            PreferenceManager.getDefaultSharedPreferences(getActivity())
-                                    .edit().putBoolean("dontshowagain", false).commit();
-                        }
-
-                        @Override
-                        public void onNeutral(MaterialDialog dialog) {
-                            PreferenceManager.getDefaultSharedPreferences(getActivity())
-                                    .edit().putBoolean("dontshowagain", true).commit();
-                        }
-                    }).show();
-        }
-
-    }*/
 
     private class GrabApplicationsTask extends AsyncTask<String, Void, String> {
 
