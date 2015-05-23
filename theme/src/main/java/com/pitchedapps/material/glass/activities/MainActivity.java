@@ -1,7 +1,6 @@
 package com.pitchedapps.material.glass.activities;
 
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -20,7 +19,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
@@ -34,19 +32,15 @@ import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.pitchedapps.material.glass.BuildConfig;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
-import com.google.android.gms.analytics.GoogleAnalytics;
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
-import com.pitchedapps.material.glass.inappbilling.IabHelper;
-import com.pitchedapps.material.glass.inappbilling.IabResult;
-import com.pitchedapps.material.glass.inappbilling.Inventory;
-import com.pitchedapps.material.glass.inappbilling.Purchase;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.Util;
 import com.pkmmte.requestmanager.PkRequestManager;
 import com.pkmmte.requestmanager.RequestSettings;
 
 import org.sufficientlysecure.donations.DonationsFragment;
+import org.sufficientlysecure.donations.google.util.IabHelper;
+import org.sufficientlysecure.donations.google.util.IabResult;
+import org.sufficientlysecure.donations.google.util.Inventory;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -54,13 +48,17 @@ public class MainActivity extends AppCompatActivity {
     private static final boolean WITH_LICENSE_CHECKER = false;
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
     private boolean mIsPremium = false;
+    IabHelper mHelper;
     /**
      * Google
      */
     private static final String GOOGLE_PUBKEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg8bTVFK5zIg4FGYkHKKQ/j/iGZQlXU0qkAv2BA6epOX1ihbMz78iD4SmViJlECHN8bKMHxouRNd9pkmQKxwEBHg5/xDC/PHmSCXFx/gcY/xa4etA1CSfXjcsS9i94n+j0gGYUg69rNkp+p/09nO9sgfRTAQppTxtgKaXwpfKe1A8oqmDUfOnPzsEAG6ogQL6Svo6ynYLVKIvRPPhXkq+fp6sJ5YVT5Hr356yCXlM++G56Pk8Z+tPzNjjvGSSs/MsYtgFaqhPCsnKhb55xHkc8GJ9haq8k3PSqwMSeJHnGiDq5lzdmsjdmGkWdQq2jIhKlhMZMm5VQWn0T59+xjjIIwIDAQAB";
-//    private static final String[] GOOGLE_CATALOG = new String[]{"glass.donation.1",
-//            "glass.donation.2", "glass.donation.3", "glass.donation.5", "glass.donation.10",
-//            "glass.donation.20"};
+    private static final String[] GOOGLE_CATALOG_FREE = new String[]{"glass.donation.1",
+            "glass.donation.2", "glass.donation.3", "glass.donation.5", "glass.donation.10",
+            "glass.donation.20"};
+    private static final String[] GOOGLE_CATALOG_PRO = new String[]{"glass.donation.consumable.1",
+            "glass.donation.consumable.2", "glass.donation.consumable.3", "glass.donation.consumable.5", "glass.donation.consumable.10",
+            "glass.donation.consumable.20"};
 
     /**
      * PayPal
@@ -70,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
     public Drawer.Result result = null;
     public String version;
+    private String[] GOOGLE_CATALOG;
     private String thaApp;
     private String thaPreviews;
     private String thaWalls;
@@ -79,8 +78,6 @@ public class MainActivity extends AppCompatActivity {
     private int currentItem = -1;
     private boolean firstrun, enable_features;
     private Preferences mPrefs;
-    public IabHelper mHelper;
-    private static final String TAG = "MaterialGlass: ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,75 +102,7 @@ public class MainActivity extends AppCompatActivity {
         //noinspection ConstantConditions
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //Setup donations
-
-        final IabHelper.QueryInventoryFinishedListener mGotInventoryListener = new IabHelper.QueryInventoryFinishedListener() {
-            public void onQueryInventoryFinished(IabResult result, Inventory inventory) {
-
-                if (result.isFailure()) {
-                    // update UI accordingly
-                    updateDonationUi();
-                    Log.d("MGlass", "IAP result failed with code: " + result.getMessage());
-                }
-                else {
-                    // does the user have the premium upgrade?
-                    Log.d("MGlass", "IAP result succeeded");
-                    if (inventory != null) {
-                        Log.d("MGlass", "IAP inventory exists");
-
-                        if (inventory.hasPurchase("glass.donation.1") ||
-                                inventory.hasPurchase("glass.donation.2") ||
-                                inventory.hasPurchase("glass.donation.3") ||
-                                inventory.hasPurchase("glass.donation.5") ||
-                                inventory.hasPurchase("glass.donation.10") ||
-                                inventory.hasPurchase("glass.donation.20")) {
-                            Log.d("MGlass", "IAP inventory contains a donation");
-
-                            mIsPremium = true;
-                        }
-                    }
-                    // update UI accordingly
-                    if (isPremium()) {
-                        updateDonationUi();
-                    }
-                }
-            }
-        };
-
-        //Normally we would secure this key, but we're not licensing this app.
-        String base64billing = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxwicOx54j03qBil36upqYab0uBWnf+WjoSRNOaTD9mkqj9bLM465gZlDXhutMZ+n5RlHUqmxl7jwH9KyYGTbwFqCxbLMCwR4oDhXVhX4fS6iggoHY7Ek6EzMT79x2XwCDg1pdQmX9d9TYRp32Sw2E+yg2uZKSPW29ikfdcmfkHcdCWrjFSuMJpC14R3d9McWQ7sg42eQq2spIuSWtP8ARGtj1M8eLVxgkQpXWrk9ijPgVcAbNZYWT9ndIZoKPg7VJVvzzAUNK/YOb+BzRurqJ42vCZy1+K+E4EUtmg/fxawHfXLZ3F/gNwictZO9fv1PYHPMa0sezSNVFAcm0yP1BwIDAQAB";
-        mHelper = new IabHelper(MainActivity.this, base64billing);
-        mHelper.startSetup(new IabHelper.OnIabSetupFinishedListener() {
-            public void onIabSetupFinished(IabResult result)
-            {
-                if (!result.isSuccess()) {
-                    Log.d(TAG, "In-app Billing setup failed: " + result);
-                    new AlertDialog.Builder(MainActivity.this)
-                            .setTitle("Pro features unavailable.")
-                            .setMessage("Your device doesn't support In App Billing.  You won't be able to purchase the Pro features of Unbounce.  This could be because you need to update your Google Play Store application, or because you live in a country where In App Billing is disabled.")
-                            .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                }
-                            })
-                            .setIcon(android.R.drawable.ic_dialog_alert)
-                            .show();
-
-                }
-                else {
-                    mHelper.queryInventoryAsync(false, mGotInventoryListener);
-                }
-
-            }
-        });
-//TODO check this
-//        startService(new Intent(this, SELinuxService.class));
-
-        GoogleAnalytics ga = GoogleAnalytics.getInstance(this);
-        Tracker tracker = ga.newTracker("UA-63277144-1");
-        tracker.setScreenName("MainActivity");
-        tracker.send(new HitBuilders.AppViewBuilder().build());
-
-
+        GOOGLE_CATALOG = GOOGLE_CATALOG_FREE;
         thaApp = getResources().getString(R.string.app_name);
         String thaHome = getResources().getString(R.string.section_one);
         thaPreviews = getResources().getString(R.string.section_two);
@@ -266,68 +195,64 @@ public class MainActivity extends AppCompatActivity {
             currentItem = -1;
             result.setSelectionByIdentifier(1);
         }
-    }
 
-    private void updateDonationUi() {
-        if (isPremium()) {
-            View againView = (View) findViewById(R.id.layoutDonateAgain);
-            if (againView != null)
-                againView.setVisibility(View.VISIBLE);
-            View donateView = (View) findViewById(R.id.layoutDonate);
-            if (donateView != null)
-                donateView.setVisibility(View.GONE);
-        }
-    }
+        //Setup donations
 
-    public boolean isPremium() {
-        return mIsPremium;
-    }
-//TODO check if necessary
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data)
-    {
-        if (!mHelper.handleActivityResult(requestCode, resultCode, data)) {
-            super.onActivityResult(requestCode, resultCode, data);
-        }
-    }
-//TODO check, originally did not have "public"
-    public IabHelper.OnIabPurchaseFinishedListener mPurchaseFinishedListener = new IabHelper.OnIabPurchaseFinishedListener() {
-        public void onIabPurchaseFinished(IabResult result, Purchase purchase)
-        {
-            if (result.getResponse() == IabHelper.BILLING_RESPONSE_RESULT_USER_CANCELED ||
-                    result.getResponse() == IabHelper.BILLING_RESPONSE_RESULT_BILLING_UNAVAILABLE ||
-                    result.getResponse() == IabHelper.BILLING_RESPONSE_RESULT_DEVELOPER_ERROR ||
-                    result.getResponse() == IabHelper.BILLING_RESPONSE_RESULT_ERROR ||
-                    result.getResponse() == IabHelper.BILLING_RESPONSE_RESULT_ITEM_NOT_OWNED ||
-                    result.getResponse() == IabHelper.BILLING_RESPONSE_RESULT_ITEM_UNAVAILABLE)
-            {
-                Toast.makeText(MainActivity.this, "Thank you for the thought, but the donation failed.  - Allan", Toast.LENGTH_LONG).show();
-            }
-            else if (result.getResponse() == IabHelper.BILLING_RESPONSE_RESULT_ITEM_ALREADY_OWNED) {
-                Toast.makeText(MainActivity.this, "Thank you for the thought, but you've already donated!  - Allan", Toast.LENGTH_LONG).show();
-            }
-            else if (result.isSuccess()) {
-                Toast.makeText(MainActivity.this, "Thank you SO much for donating!  - Allan", Toast.LENGTH_LONG).show();
-                mIsPremium = true;
-                updateDonationUi();
-                if (purchase.getSku().contains("consumable")) {
-                    mHelper.consumeAsync(purchase, mConsumeFinishedListener);
+        final IabHelper.QueryInventoryFinishedListener mGotInventoryListener = new IabHelper.QueryInventoryFinishedListener() {
+            public void onQueryInventoryFinished(IabResult result, Inventory inventory) {
+
+                if (inventory != null) {
+                    Log.d("MaterialGlass", "IAP inventory exists");
+
+                    if (inventory.hasPurchase("glass.donation.1") ||
+                            inventory.hasPurchase("glass.donation.2") ||
+                            inventory.hasPurchase("glass.donation.3") ||
+                            inventory.hasPurchase("glass.donation.5") ||
+                            inventory.hasPurchase("glass.donation.10") ||
+                            inventory.hasPurchase("glass.donation.20")) {
+                        Log.d("MaterialGlass", "IAP inventory contains a donation");
+
+                        mIsPremium = true;
+                    }
+                }
+                // update UI accordingly
+                if (isPremium()) {
+                    //TODO set google_catalog string to premium one
+
+//                    updateDonationUi();
                 }
             }
-            else
-            {
-                Toast.makeText(MainActivity.this, "Donation Failed", Toast.LENGTH_LONG).show();
-            }
-
-        }
-
-        IabHelper.OnConsumeFinishedListener mConsumeFinishedListener = new IabHelper.OnConsumeFinishedListener() {
-            public void onConsumeFinished(Purchase purchase, IabResult result) {
-                //Do nothing
-            }
         };
-    };
-    
+
+        //Normally we would secure this key, but we're not licensing this app.
+        String base64billing = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxwicOx54j03qBil36upqYab0uBWnf+WjoSRNOaTD9mkqj9bLM465gZlDXhutMZ+n5RlHUqmxl7jwH9KyYGTbwFqCxbLMCwR4oDhXVhX4fS6iggoHY7Ek6EzMT79x2XwCDg1pdQmX9d9TYRp32Sw2E+yg2uZKSPW29ikfdcmfkHcdCWrjFSuMJpC14R3d9McWQ7sg42eQq2spIuSWtP8ARGtj1M8eLVxgkQpXWrk9ijPgVcAbNZYWT9ndIZoKPg7VJVvzzAUNK/YOb+BzRurqJ42vCZy1+K+E4EUtmg/fxawHfXLZ3F/gNwictZO9fv1PYHPMa0sezSNVFAcm0yP1BwIDAQAB";
+        mHelper = new IabHelper(MainActivity.this, base64billing);
+        mHelper.startSetup(new IabHelper.OnIabSetupFinishedListener() {
+            public void onIabSetupFinished(IabResult result)
+            {
+//                if (!result.isSuccess()) {
+//                    Log.d(TAG, "In-app Billing setup failed: " + result);
+//                    new AlertDialog.Builder(MainActivity.this)
+//                            .setTitle("Pro features unavailable.")
+//                            .setMessage("Your device doesn't support In App Billing.  You won't be able to purchase the Pro features of Unbounce.  This could be because you need to update your Google Play Store application, or because you live in a country where In App Billing is disabled.")
+//                            .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+//                                public void onClick(DialogInterface dialog, int which) {
+//                                }
+//                            })
+//                            .setIcon(android.R.drawable.ic_dialog_alert)
+//                            .show();
+//
+//                }
+//                else {
+//                    mHelper.queryInventoryAsync(false, mGotInventoryListener);
+//                }
+                //TODO see if this is necessary
+                mHelper.queryInventoryAsync(false, mGotInventoryListener);
+
+            }
+        });
+    }
+
     public void switchFragment(int itemId, String title, String fragment) {
         if (currentItem == itemId) {
             // Don't allow re-selection of the currently active item
@@ -336,27 +261,27 @@ public class MainActivity extends AppCompatActivity {
         currentItem = itemId;
         if (getSupportActionBar() != null)
             getSupportActionBar().setTitle(title);
-//        if (title.equals(thaDonate)) {
-//            DonationsFragment donationsFragment;
-//            if (BuildConfig.DONATIONS_GOOGLE) {
-//                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, true, GOOGLE_PUBKEY, GOOGLE_CATALOG,
-//                        getResources().getStringArray(R.array.donation_google_catalog_values), true, PAYPAL_USER,
-//                        PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
-//            } else {
-//                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, false, null, null, null, true, PAYPAL_USER,
-//                        PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
-//            }
-//            getSupportFragmentManager().beginTransaction()
-//                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-//                    .replace(R.id.main, donationsFragment, "donationsFragment")
-//                    .commit();
-//        } else {
+        if (title.equals(thaDonate)) {
+            DonationsFragment donationsFragment;
+            if (BuildConfig.DONATIONS_GOOGLE) {
+                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, true, GOOGLE_PUBKEY, GOOGLE_CATALOG,
+                        getResources().getStringArray(R.array.donation_google_catalog_values), true, PAYPAL_USER,
+                        PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
+            } else {
+                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, false, null, null, null, true, PAYPAL_USER,
+                        PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
+            }
+            getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                    .replace(R.id.main, donationsFragment, "donationsFragment")
+                    .commit();
+        } else {
             getSupportFragmentManager().beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.main, Fragment.instantiate(MainActivity.this,
                             "com.pitchedapps.material.glass.fragments." + fragment + "Fragment"))
                     .commit();
-//        }
+        }
     }
 
     @Override
@@ -462,6 +387,11 @@ public class MainActivity extends AppCompatActivity {
                 showChangelogDialog();
             }
         }
+    }
+//todo check position
+
+    public boolean isPremium() {
+        return mIsPremium;
     }
 
     private void showChangelog() {
@@ -582,14 +512,14 @@ public class MainActivity extends AppCompatActivity {
      * Needed for Google Play In-app Billing. It uses startIntentSenderForResult(). The result is not propagated to
      * the Fragment like in startActivityForResult(). Thus we need to propagate manually to our Fragment.
      */
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-//        Fragment fragment = fragmentManager.findFragmentByTag("donationsFragment");
-//        if (fragment != null) {
-//            fragment.onActivityResult(requestCode, resultCode, data);
-//        }
-//    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        Fragment fragment = fragmentManager.findFragmentByTag("donationsFragment");
+        if (fragment != null) {
+            fragment.onActivityResult(requestCode, resultCode, data);
+        }
+    }
 }
