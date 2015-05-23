@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
     public Drawer.Result result = null;
     public String version;
-    private String[] GOOGLE_CATALOG;
+    private static String[] GOOGLE_CATALOG;
     private String thaApp;
     private String thaPreviews;
     private String thaWalls;
@@ -114,14 +114,7 @@ public class MainActivity extends AppCompatActivity {
         AccountHeader.Result headerResult = new AccountHeader()
                 .withActivity(this)
                 .withHeaderBackground(R.drawable.header)
-                        //TODO
                 .withSelectionFirstLine(getResources().getString(R.string.app_long_name))
-//                .withOnAccountHeaderSelectionViewClickListener(new AccountHeader.OnAccountHeaderListener() {
-//                    @Override
-//                    public boolean onProfileChanged(View view, IProfile iProfile, boolean b) {
-//                        return false;
-//                    }
-//                })
                 .withSelectionSecondLine("v" + Util.getAppVersion(this))
                 .withSavedInstance(savedInstanceState)
                 .build();
@@ -218,6 +211,7 @@ public class MainActivity extends AppCompatActivity {
                 // update UI accordingly
                 if (isPremium()) {
                     //TODO set google_catalog string to premium one
+                    GOOGLE_CATALOG = GOOGLE_CATALOG_PRO;
 
 //                    updateDonationUi();
                 }
