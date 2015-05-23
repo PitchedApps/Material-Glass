@@ -8,7 +8,7 @@
     <string-array name="info_sections">
         <item>FAQ</item>
         <item>Themed Apps</item>
-        <item>Bugs/Issues</item>
+        <item>Bugs and Issues</item>
     </string-array>
 
     <!-- Tab contents -->

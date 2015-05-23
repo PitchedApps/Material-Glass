@@ -1,5 +1,6 @@
 package com.pitchedapps.material.glass.fragments;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -18,6 +19,7 @@ import android.widget.Toast;
 
 import com.melnykov.fab.FloatingActionButton;
 import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.adapters.RequestAdapter;
 import com.pkmmte.requestmanager.AppInfo;
 import com.pkmmte.requestmanager.PkRequestManager;
 
@@ -32,7 +34,8 @@ public class RequestFragment extends Fragment {
     private PkRequestManager mRequestManager;
     // List & Adapter
     private ListView mList;
-    private ListAdapter mAdapter;
+    private RequestAdapter mAdapter;
+//    private ListAdapter mAdapter;
     private View mProgress;
     private FloatingActionButton fab;
 
@@ -76,20 +79,20 @@ public class RequestFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                ProgressDialog dialog;
-//                dialog = new ProgressDialog(getActivity());
-//                dialog.setMessage("Your message..");
-//                dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-//                dialog.setMax(100);
-//                dialog.setCanceledOnTouchOutside(true);
-//                dialog.show();
-                Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
+                ProgressDialog dialog;
+                dialog = new ProgressDialog(getActivity());
+                dialog.setMessage("Your message..");
+                dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                dialog.setMax(100);
+                dialog.setCanceledOnTouchOutside(true);
+                dialog.show();
+//                Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
                 mRequestManager.setActivity(getActivity());
                 if (mRequestManager.getNumSelected() < 1)
                     mRequestManager.sendAutomaticRequestAsync();
                 else
                     mRequestManager.sendRequestAsync();
-//                dialog.dismiss();
+                dialog.dismiss();
             }
 
         });
@@ -119,6 +122,7 @@ public class RequestFragment extends Fragment {
                 mRequestManager.loadAppsIfEmpty();
                 // Get the list of apps
 //                mApps.addAll(mRequestManager.getApps());
+                //TODO fix this horrrible loading
                 mApps = mRequestManager.getApps();
 //                mApps.add(mRequestManager.getApps());
             } catch (Exception ex) {
@@ -129,7 +133,8 @@ public class RequestFragment extends Fragment {
 
         @Override
         protected void onPostExecute(String result) {
-            mAdapter = new ListAdapter(mApps);
+            mAdapter = new RequestAdapter(getActivity(), mApps);
+//            mAdapter = new ListAdapter(mApps);
             mList.setAdapter(mAdapter);
             if (mAdapter != null)
                 mAdapter.notifyDataSetChanged();
@@ -143,7 +148,7 @@ public class RequestFragment extends Fragment {
     }
 
     // You should probably put this in a separate .java file
-    private class ListAdapter extends BaseAdapter {
+    /*private class ListAdapter extends BaseAdapter {
 
         private final List<AppInfo> mApps;
 
@@ -197,5 +202,5 @@ public class RequestFragment extends Fragment {
             public TextView txtName;
             public CheckBox chkSelected;
         }
-    }
+    }*/
 }
