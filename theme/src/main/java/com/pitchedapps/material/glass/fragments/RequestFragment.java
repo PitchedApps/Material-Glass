@@ -27,7 +27,7 @@ import java.util.List;
 public class RequestFragment extends Fragment {
 
     // App List
-    private final List<AppInfo> mApps = new LinkedList<>();
+    private List<AppInfo> mApps = new LinkedList<>();
     // Request Manager
     private PkRequestManager mRequestManager;
     // List & Adapter
@@ -86,21 +86,11 @@ public class RequestFragment extends Fragment {
                 Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
                 mRequestManager.setActivity(getActivity());
                 if (mRequestManager.getNumSelected() < 1)
-                    mRequestManager.sendRequest(true, false);
+                    mRequestManager.sendAutomaticRequestAsync();
                 else
                     mRequestManager.sendRequestAsync();
 //                dialog.dismiss();
             }
-//            @Override
-//            public void onClick(View v) {
-//                mRequestManager.setActivity(getActivity());
-//                if (mRequestManager.getNumSelected() > 0)
-//                    mRequestManager.sendRequestAsync();
-//                    Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
-//                else
-//                    mRequestManager.
-//                    Toast.makeText(getActivity(), getString(R.string.empty_request), Toast.LENGTH_LONG).show();
-//            }
 
         });
 
@@ -128,7 +118,9 @@ public class RequestFragment extends Fragment {
                 mRequestManager.setDebugging(false);
                 mRequestManager.loadAppsIfEmpty();
                 // Get the list of apps
-                mApps.addAll(mRequestManager.getApps());
+//                mApps.addAll(mRequestManager.getApps());
+                mApps = mRequestManager.getApps();
+//                mApps.add(mRequestManager.getApps());
             } catch (Exception ex) {
                 //could happen that the activity detaches :D
             }
