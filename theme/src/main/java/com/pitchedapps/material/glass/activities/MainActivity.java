@@ -282,7 +282,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean isPremium() {
         return mIsPremium;
     }
-
+//TODO check if necessary
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {

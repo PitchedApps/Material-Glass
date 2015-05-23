@@ -54,10 +54,11 @@ public class DonationsFragment extends Fragment {
         if (toolbar != null)
             toolbar.setTitle(R.string.donate_home_title);
 //TODO fix view
-        setupKarma(View);
+        setupKarma(view);
 
         updatePremiumUi();
 
+        return root;
     }
 //TODO merge later
 //    public static final String ARG_DEBUG = "debug";
@@ -423,7 +424,7 @@ public class DonationsFragment extends Fragment {
         layoutAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.1", 1, ((MainActivity) getActivity()).mPurchaseFinishedListener, "1");
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.consumable.1", 1, ((MainActivity) getActivity()).mPurchaseFinishedListener, "1");
             }
         });
 
@@ -431,7 +432,7 @@ public class DonationsFragment extends Fragment {
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.2", 2, ((MainActivity) getActivity()).mPurchaseFinishedListener, "2");
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.consumable.2", 2, ((MainActivity) getActivity()).mPurchaseFinishedListener, "2");
             }
         });
 
@@ -439,7 +440,7 @@ public class DonationsFragment extends Fragment {
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.3", 3, ((MainActivity) getActivity()).mPurchaseFinishedListener, "3");
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.consumable.3", 3, ((MainActivity) getActivity()).mPurchaseFinishedListener, "3");
             }
         });
 
@@ -447,7 +448,7 @@ public class DonationsFragment extends Fragment {
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.5", 5, ((MainActivity) getActivity()).mPurchaseFinishedListener, "5");
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.consumable.5", 5, ((MainActivity) getActivity()).mPurchaseFinishedListener, "5");
             }
         });
 
@@ -455,7 +456,7 @@ public class DonationsFragment extends Fragment {
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.10", 10, ((MainActivity) getActivity()).mPurchaseFinishedListener, "10");
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.consumable.10", 10, ((MainActivity) getActivity()).mPurchaseFinishedListener, "10");
             }
         });
 
@@ -463,7 +464,7 @@ public class DonationsFragment extends Fragment {
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.20", 20, ((MainActivity) getActivity()).mPurchaseFinishedListener, "20");
+                ((MainActivity) getActivity()).mHelper.launchPurchaseFlow(getActivity(), "glass.donation.consumable.20", 20, ((MainActivity) getActivity()).mPurchaseFinishedListener, "20");
             }
         });
 
