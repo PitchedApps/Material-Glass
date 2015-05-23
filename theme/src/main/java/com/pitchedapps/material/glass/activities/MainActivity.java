@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
     public Drawer.Result result = null;
     public String version;
-    private static String[] GOOGLE_CATALOG;
+    private String[] mGoogleCatalog;
     private String thaApp;
     private String thaPreviews;
     private String thaWalls;
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         //noinspection ConstantConditions
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        GOOGLE_CATALOG = GOOGLE_CATALOG_FREE;
+        mGoogleCatalog = GOOGLE_CATALOG_FREE;
         thaApp = getResources().getString(R.string.app_name);
         String thaHome = getResources().getString(R.string.section_one);
         thaPreviews = getResources().getString(R.string.section_two);
@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
                 // update UI accordingly
                 if (isPremium()) {
                     //TODO set google_catalog string to premium one
-                    GOOGLE_CATALOG = GOOGLE_CATALOG_PRO;
+                    mGoogleCatalog = GOOGLE_CATALOG_PRO;
 
 //                    updateDonationUi();
                 }
@@ -258,7 +258,7 @@ public class MainActivity extends AppCompatActivity {
         if (title.equals(thaDonate)) {
             DonationsFragment donationsFragment;
             if (BuildConfig.DONATIONS_GOOGLE) {
-                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, true, GOOGLE_PUBKEY, GOOGLE_CATALOG,
+                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, true, GOOGLE_PUBKEY, mGoogleCatalog,
                         getResources().getStringArray(R.array.donation_google_catalog_values), true, PAYPAL_USER,
                         PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
             } else {
