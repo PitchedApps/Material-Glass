@@ -77,32 +77,36 @@ public class RequestFragment extends Fragment {
         fab.attachToListView(mList);
 
         fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mRequestManager.setActivity(getActivity());
-//                if (mRequestManager.getNumSelected() < 1)
-//                    mRequestManager.sendRequest(true, false);
-//                else
-//                    mRequestManager.sendRequestAsync();
-//                Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
-//            }
             @Override
             public void onClick(View v) {
                 mRequestManager.setActivity(getActivity());
-                if (mRequestManager.getNumSelected() > 0)
+                if (mRequestManager.getNumSelected() < 1)
+                    mRequestManager.sendRequest(true, false);
+                else
                     mRequestManager.sendRequestAsync();
                 Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
             }
+//            @Override
+//            public void onClick(View v) {
+//                mRequestManager.setActivity(getActivity());
+//                if (mRequestManager.getNumSelected() > 0)
+//                    mRequestManager.sendRequestAsync();
+//                    Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
+//                else
+//                    mRequestManager.
+//                    Toast.makeText(getActivity(), getString(R.string.empty_request), Toast.LENGTH_LONG).show();
+//            }
 
         });
 
         fab.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                mRequestManager.setActivity(getActivity());
-                if (mRequestManager.getNumSelected() < 1)
-                    mRequestManager.sendRequest(true, false);
-                Toast.makeText(getActivity(), getString(R.string.automatic_request), Toast.LENGTH_LONG).show();
+                mRequestManager.removeAllAppFilterListeners();
+//                mRequestManager.setActivity(getActivity());
+//                if (mRequestManager.getNumSelected() < 1)
+//                    mRequestManager.sendRequest(true, false);
+                Toast.makeText(getActivity(), getString(R.string.unfiltered_request), Toast.LENGTH_LONG).show();
                 //TODO check if this is right
                 return false;
             }

@@ -93,7 +93,18 @@ public class MainActivity extends AppCompatActivity {
                 .emailSubject(getResources().getString(R.string.email_request_subject))
                 .emailPrecontent(getResources().getString(R.string.request_precontent))
                 .saveLocation(Environment.getExternalStorageDirectory().getAbsolutePath() + getResources().getString(R.string.request_save_location))
+                .appfilterName(getResources().getString(R.string.request_appfilter))
+                .compressFormat(PkRequestManager.PNG)
+                .appendInformation(true)
+                .createAppfilter(true)
+                .createZip(true)
+                .filterDefined(true)
+                .byteBuffer(2048)
+                .compressQuality(100)
                 .build());
+
+        // Load apps ahead of time
+        mRequestManager.loadAppsIfEmptyAsync();
 
         mPrefs = new Preferences(MainActivity.this);
 
@@ -172,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
                         if (iDrawerItem instanceof Nameable) {
                             if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
                                 switchFragment(-1, thaPreviews, "Request");
+                                result.closeDrawer();
                                 return true;
                             }
                         }
@@ -262,7 +274,9 @@ public class MainActivity extends AppCompatActivity {
                         getResources().getStringArray(R.array.donation_google_catalog_values), true, PAYPAL_USER,
                         PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
             } else {
-                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, false, null, null, null, true, PAYPAL_USER,
+//                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, false, null, null, null, true, PAYPAL_USER,
+                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, true, GOOGLE_PUBKEY, mGoogleCatalog,
+                        getResources().getStringArray(R.array.donation_google_catalog_values), true, PAYPAL_USER,
                         PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
             }
             getSupportFragmentManager().beginTransaction()
