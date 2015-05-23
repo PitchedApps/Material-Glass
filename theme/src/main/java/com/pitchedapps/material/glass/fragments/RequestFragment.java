@@ -43,7 +43,7 @@ public class RequestFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_icon_request, container, false);
 
-        showNewAdviceDialog();
+//        showNewAdviceDialog();
 
         ActionBar toolbar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         if (toolbar != null)
@@ -77,21 +77,40 @@ public class RequestFragment extends Fragment {
         fab.attachToListView(mList);
 
         fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                mRequestManager.setActivity(getActivity());
+//                if (mRequestManager.getNumSelected() < 1)
+//                    mRequestManager.sendRequest(true, false);
+//                else
+//                    mRequestManager.sendRequestAsync();
+//                Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
+//            }
             @Override
             public void onClick(View v) {
                 mRequestManager.setActivity(getActivity());
-                if (mRequestManager.getNumSelected() < 1)
-                    mRequestManager.sendRequest(true, false);
-                else
+                if (mRequestManager.getNumSelected() > 0)
                     mRequestManager.sendRequestAsync();
                 Toast.makeText(getActivity(), getString(R.string.building_request), Toast.LENGTH_LONG).show();
             }
+
         });
 
+        fab.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                mRequestManager.setActivity(getActivity());
+                if (mRequestManager.getNumSelected() < 1)
+                    mRequestManager.sendRequest(true, false);
+                Toast.makeText(getActivity(), getString(R.string.automatic_request), Toast.LENGTH_LONG).show();
+                //TODO check if this is right
+                return false;
+            }
+        });
         return root;
     }
 
-    private void showNewAdviceDialog() {
+    /*private void showNewAdviceDialog() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         if (!prefs.getBoolean("dontshowagain", false)) {
             new MaterialDialog.Builder(getActivity())
@@ -114,7 +133,7 @@ public class RequestFragment extends Fragment {
                     }).show();
         }
 
-    }
+    }*/
 
     private class GrabApplicationsTask extends AsyncTask<String, Void, String> {
 

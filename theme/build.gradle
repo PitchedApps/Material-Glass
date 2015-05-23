@@ -29,8 +29,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 22
-        versionCode 101
-        versionName '1.0.1'
+        versionCode 102
+        versionName '1.0.2'
     }
 
     buildTypes {
@@ -65,7 +65,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'org.sufficientlysecure:donations:2.3'
-    compile 'com.google.android.gms:play-services:+'
+//    compile 'com.google.android.gms:play-services:+'
 
     compile 'com.android.support:appcompat-v7:22.1.1@aar'
     compile 'com.android.support:support-v4:22.1.1@aar'
