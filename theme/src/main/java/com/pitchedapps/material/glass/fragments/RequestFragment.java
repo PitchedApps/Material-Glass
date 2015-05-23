@@ -30,7 +30,7 @@ public class RequestFragment extends Fragment {
     // List & Adapter
     private ListView mList;
     private RequestAdapter mAdapter;
-//    private ListAdapter mAdapter;
+//    private ListAdapter mAdapter; (now request adapter)
     private View mProgress;
     private FloatingActionButton fab;
 
@@ -74,6 +74,7 @@ public class RequestFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //TODO add progress dialog?
 //                ProgressDialog dialog;
 //                dialog = new ProgressDialog(getActivity());
 //                dialog.setMessage("Your message..");
@@ -117,7 +118,7 @@ public class RequestFragment extends Fragment {
                 mRequestManager.loadAppsIfEmpty();
                 // Get the list of apps
 //                mApps.addAll(mRequestManager.getApps());
-                //TODO fix this horrrible loading
+                //TODO fix this horrrible loading (creates diplicates; could be a small error on my side)
                 mApps = mRequestManager.getApps();
 //                mApps.add(mRequestManager.getApps());
             } catch (Exception ex) {
@@ -141,61 +142,4 @@ public class RequestFragment extends Fragment {
                 mProgress.setVisibility(View.GONE);
         }
     }
-
-    // You should probably put this in a separate .java file
-    /*private class ListAdapter extends BaseAdapter {
-
-        private final List<AppInfo> mApps;
-
-        public ListAdapter(List<AppInfo> apps) {
-            this.mApps = apps;
-        }
-
-        @Override
-        public int getCount() {
-            return mApps.size();
-        }
-
-        @Override
-        public AppInfo getItem(int position) {
-            return mApps.get(position);
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return position;
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            ViewHolder holder;
-            AppInfo mApp = mApps.get(position);
-
-            if (convertView == null) {
-                LayoutInflater inflater = LayoutInflater.from(getActivity());
-                convertView = inflater.inflate(R.layout.request_item, parent, false);
-
-                holder = new ViewHolder();
-                holder.imgIcon = (ImageView) convertView.findViewById(R.id.imgIcon);
-                holder.txtName = (TextView) convertView.findViewById(R.id.txtName);
-                holder.chkSelected = (CheckBox) convertView.findViewById(R.id.chkSelected);
-
-                convertView.setTag(holder);
-            } else {
-                holder = (ViewHolder) convertView.getTag();
-            }
-
-            holder.txtName.setText(mApp.getName());
-            holder.imgIcon.setImageDrawable(mApp.getImage());
-            holder.chkSelected.setChecked(mApp.isSelected());
-
-            return convertView;
-        }
-
-        private class ViewHolder {
-            public ImageView imgIcon;
-            public TextView txtName;
-            public CheckBox chkSelected;
-        }
-    }*/
 }
