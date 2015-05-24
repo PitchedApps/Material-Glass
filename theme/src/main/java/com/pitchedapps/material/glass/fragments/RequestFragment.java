@@ -116,11 +116,14 @@ public class RequestFragment extends Fragment {
             try {
                 mRequestManager = PkRequestManager.getInstance(getActivity());
                 mRequestManager.setDebugging(false);
-                mRequestManager.loadAppsIfEmpty();
+                //TODO verify async
+                mRequestManager.loadAppsIfEmptyAsync();
                 // Get the list of apps
 //                mApps.addAll(mRequestManager.getApps());
                 mApps = mRequestManager.getApps();
 //                mApps.add(mRequestManager.getApps());
+                // Set layout visibility based on loaded state
+                toggleLayoutVisibility(mRequestManager.appsLoaded());
             } catch (Exception ex) {
                 //could happen that the activity detaches :D
             }
@@ -133,12 +136,25 @@ public class RequestFragment extends Fragment {
             mList.setAdapter(mAdapter);
             if (mAdapter != null)
                 mAdapter.notifyDataSetChanged();
-            if (mList != null)
-                mList.setVisibility(View.VISIBLE);
+            //TODO switch toggle method?
+//            if (mList != null)
+//                mList.setVisibility(View.VISIBLE);
             if (fab != null)
                 fab.show(true);
-            if (mProgress != null)
-                mProgress.setVisibility(View.GONE);
+//            if (mProgress != null)
+//                mProgress.setVisibility(View.GONE);
+        }
+    }
+
+    private void toggleLayoutVisibility(boolean visible)
+    {
+        if(visible) {
+            mList.setVisibility(View.VISIBLE);
+            mProgress.setVisibility(View.GONE);
+        }
+        else {
+            mList.setVisibility(View.GONE);
+            mProgress.setVisibility(View.VISIBLE);
         }
     }
 
