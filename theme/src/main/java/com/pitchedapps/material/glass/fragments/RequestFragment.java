@@ -136,7 +136,7 @@ public class RequestFragment extends Fragment {
             mList.setAdapter(mAdapter);
             if (mAdapter != null)
                 mAdapter.notifyDataSetChanged();
-            //TODO switch toggle method?
+            //TODO switch toggle method? (see below)
 //            if (mList != null)
 //                mList.setVisibility(View.VISIBLE);
             if (fab != null)
