@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
     private static final boolean WITH_LICENSE_CHECKER = false;
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
     private boolean mIsPremium = false;
-    IabHelper mHelper;
     /**
      * Google
      */
@@ -98,7 +97,8 @@ public class MainActivity extends AppCompatActivity {
                 .appendInformation(true)
                 .createAppfilter(true)
                 .createZip(true)
-                .filterDefined(true)
+                //TODO add filter
+                .filterDefined(false)
                 .byteBuffer(2048)
                 .compressQuality(100)
                 .build());
@@ -180,11 +180,13 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l, IDrawerItem iDrawerItem) {
 
-                        if (iDrawerItem instanceof Nameable) {
-                            if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
-                                switchFragment(-1, thaPreviews, "Request");
-                                result.closeDrawer();
-                                return true;
+                        if (mIsPremium = true) {
+                            if (iDrawerItem instanceof Nameable) {
+                                if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
+                                    switchFragment(-1, thaPreviews, "Request");
+                                    result.closeDrawer();
+                                    return true;
+                                }
                             }
                         }
                         return false;
@@ -220,43 +222,11 @@ public class MainActivity extends AppCompatActivity {
                         mIsPremium = true;
                     }
                 }
-                // update UI accordingly
                 if (isPremium()) {
-                    //TODO set google_catalog string to premium one
                     mGoogleCatalog = GOOGLE_CATALOG_PRO;
-
-//                    updateDonationUi();
                 }
             }
         };
-
-        //Normally we would secure this key, but we're not licensing this app.
-        String base64billing = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxwicOx54j03qBil36upqYab0uBWnf+WjoSRNOaTD9mkqj9bLM465gZlDXhutMZ+n5RlHUqmxl7jwH9KyYGTbwFqCxbLMCwR4oDhXVhX4fS6iggoHY7Ek6EzMT79x2XwCDg1pdQmX9d9TYRp32Sw2E+yg2uZKSPW29ikfdcmfkHcdCWrjFSuMJpC14R3d9McWQ7sg42eQq2spIuSWtP8ARGtj1M8eLVxgkQpXWrk9ijPgVcAbNZYWT9ndIZoKPg7VJVvzzAUNK/YOb+BzRurqJ42vCZy1+K+E4EUtmg/fxawHfXLZ3F/gNwictZO9fv1PYHPMa0sezSNVFAcm0yP1BwIDAQAB";
-        mHelper = new IabHelper(MainActivity.this, base64billing);
-        mHelper.startSetup(new IabHelper.OnIabSetupFinishedListener() {
-            public void onIabSetupFinished(IabResult result)
-            {
-//                if (!result.isSuccess()) {
-//                    Log.d(TAG, "In-app Billing setup failed: " + result);
-//                    new AlertDialog.Builder(MainActivity.this)
-//                            .setTitle("Pro features unavailable.")
-//                            .setMessage("Your device doesn't support In App Billing.  You won't be able to purchase the Pro features of Unbounce.  This could be because you need to update your Google Play Store application, or because you live in a country where In App Billing is disabled.")
-//                            .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-//                                public void onClick(DialogInterface dialog, int which) {
-//                                }
-//                            })
-//                            .setIcon(android.R.drawable.ic_dialog_alert)
-//                            .show();
-//
-//                }
-//                else {
-//                    mHelper.queryInventoryAsync(false, mGotInventoryListener);
-//                }
-                //TODO see if this is necessary
-                mHelper.queryInventoryAsync(false, mGotInventoryListener);
-
-            }
-        });
     }
 
     public void switchFragment(int itemId, String title, String fragment) {
@@ -274,9 +244,7 @@ public class MainActivity extends AppCompatActivity {
                         getResources().getStringArray(R.array.donation_google_catalog_values), true, PAYPAL_USER,
                         PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
             } else {
-//                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, false, null, null, null, true, PAYPAL_USER,
-                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, true, GOOGLE_PUBKEY, mGoogleCatalog,
-                        getResources().getStringArray(R.array.donation_google_catalog_values), true, PAYPAL_USER,
+                donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, false, null, null, null, true, PAYPAL_USER,
                         PAYPAL_CURRENCY_CODE, getString(R.string.donation_paypal_item), false, null, null, false, null);
             }
             getSupportFragmentManager().beginTransaction()
@@ -396,7 +364,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-//todo check position
 
     public boolean isPremium() {
         return mIsPremium;
