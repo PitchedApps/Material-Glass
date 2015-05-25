@@ -262,7 +262,7 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     //TODO fix error
-                    .replace(R.id.main, requestFragment, "requestFragment")
+                    .replace(R.id.main, Fragment.instantiate(MainActivity.this, "com.pkmmte.requestmanager.RequestFragment"))
                     .commit();
         }
         } else {
