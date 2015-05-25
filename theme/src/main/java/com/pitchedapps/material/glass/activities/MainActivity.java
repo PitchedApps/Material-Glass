@@ -92,15 +92,15 @@ public class MainActivity extends AppCompatActivity {
                 .emailSubject(getResources().getString(R.string.email_request_subject))
                 .emailPrecontent(getResources().getString(R.string.request_precontent))
                 .saveLocation(Environment.getExternalStorageDirectory().getAbsolutePath() + getResources().getString(R.string.request_save_location))
-                .appfilterName(getResources().getString(R.string.request_appfilter))
-                .compressFormat(PkRequestManager.PNG)
-                .appendInformation(true)
-                .createAppfilter(true)
-                .createZip(true)
+//                .appfilterName(getResources().getString(R.string.request_appfilter))
+//                .compressFormat(PkRequestManager.PNG)
+//                .appendInformation(true)
+//                .createAppfilter(true)
+//                .createZip(true)
                 //TODO add filter
-                .filterDefined(true)
-                .byteBuffer(2048)
-                .compressQuality(100)
+//                .filterDefined(true)
+//                .byteBuffer(2048)
+//                .compressQuality(100)
                 .build());
 
         // Load apps ahead of time
@@ -128,6 +128,9 @@ public class MainActivity extends AppCompatActivity {
                 .withSelectionFirstLine(getResources().getString(R.string.app_long_name))
                 .withSelectionSecondLine("v" + Util.getAppVersion(this))
                 .withSavedInstance(savedInstanceState)
+                .withProfileImagesClickable(false)
+                .withSelectionListEnabled(false)
+                .withSelectionListEnabledForSingleProfile(false)
                 .build();
 
         enable_features = mPrefs.isFeaturesEnabled();
