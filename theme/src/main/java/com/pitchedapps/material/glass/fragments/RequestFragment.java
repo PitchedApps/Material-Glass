@@ -116,14 +116,8 @@ public class RequestFragment extends Fragment {
             try {
                 mRequestManager = PkRequestManager.getInstance(getActivity());
                 mRequestManager.setDebugging(false);
-                //TODO verify async
-                mRequestManager.loadAppsIfEmptyAsync();
-                // Get the list of apps
-//                mApps.addAll(mRequestManager.getApps());
+                mRequestManager.loadAppsIfEmpty();
                 mApps = mRequestManager.getApps();
-//                mApps.add(mRequestManager.getApps());
-                // Set layout visibility based on loaded state
-                toggleLayoutVisibility(mRequestManager.appsLoaded());
             } catch (Exception ex) {
                 //could happen that the activity detaches :D
             }
@@ -137,26 +131,15 @@ public class RequestFragment extends Fragment {
             if (mAdapter != null)
                 mAdapter.notifyDataSetChanged();
             //TODO switch toggle method? (see below)
-//            if (mList != null)
-//                mList.setVisibility(View.VISIBLE);
+            if (mList != null)
+                mList.setVisibility(View.VISIBLE);
             if (fab != null)
                 fab.show(true);
-//            if (mProgress != null)
-//                mProgress.setVisibility(View.GONE);
+            if (mProgress != null)
+                mProgress.setVisibility(View.GONE);
         }
     }
 
-    private void toggleLayoutVisibility(boolean visible)
-    {
-        if(visible) {
-            mList.setVisibility(View.VISIBLE);
-            mProgress.setVisibility(View.GONE);
-        }
-        else {
-            mList.setVisibility(View.GONE);
-            mProgress.setVisibility(View.VISIBLE);
-        }
-    }
 
     // You should probably put this in a separate .java file
     private class ListAdapter extends BaseAdapter {

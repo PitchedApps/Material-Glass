@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 .createAppfilter(true)
                 .createZip(true)
                 //TODO add filter
-                .filterDefined(false)
+                .filterDefined(true)
                 .byteBuffer(2048)
                 .compressQuality(100)
                 .build());
