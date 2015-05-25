@@ -32,6 +32,7 @@ import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.pitchedapps.material.glass.BuildConfig;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
+import com.pkmmte.requestmanager.RequestFragment;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.Util;
 import com.pkmmte.requestmanager.PkRequestManager;
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
     private String thaApp;
     private String thaPreviews;
     private String thaWalls;
+    private String thaRequest;
     private String thaDonate;
     private String thaCredits;
     private String thaInfo;
@@ -118,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
         String thaHome = getResources().getString(R.string.section_one);
         thaPreviews = getResources().getString(R.string.section_two);
         thaWalls = getResources().getString(R.string.section_four);
+        thaRequest = getResources().getString(R.string.section_five);
         thaDonate = getResources().getString(R.string.donate);
         thaCredits = getResources().getString(R.string.section_six);
         thaInfo = getResources().getString(R.string.section_eight);
@@ -186,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                         if (mIsPremium = true) {
                             if (iDrawerItem instanceof Nameable) {
                                 if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
-                                    switchFragment(-1, thaPreviews, "Request");
+                                    switchFragment(-1, thaRequest, "Request");
                                     result.closeDrawer();
                                     return true;
                                 }
@@ -254,6 +257,14 @@ public class MainActivity extends AppCompatActivity {
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.main, donationsFragment, "donationsFragment")
                     .commit();
+        if (title.equals(thaRequest)) {
+            RequestFragment requestFragment;
+            getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                    //TODO fix error
+                    .replace(R.id.main, requestFragment, "requestFragment")
+                    .commit();
+        }
         } else {
             getSupportFragmentManager().beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
