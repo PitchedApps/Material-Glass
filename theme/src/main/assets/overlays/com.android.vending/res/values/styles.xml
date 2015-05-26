@@ -30,29 +30,13 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-    <style name="SettingsTheme" parent="@android:style/Theme.Material">
-        <item name="android:windowBackground">@color/background</item>
-        <item name="android:listSeparatorTextViewStyle">@style/SettingsListHeader</item>
-    </style>
+
     <style name="InstrumentTheme" parent="@android:style/Theme.Material.NoActionBar" />
 
     <style name="ButtonBarDefaultStyle" parent="@android:style/Widget.Material.ButtonBar">
         <item name="android:paddingLeft">2.0dip</item>
         <item name="android:paddingTop">4.0dip</item>
         <item name="android:paddingRight">2.0dip</item>
-    </style>
-    <style name="RateReviewTheme" parent="@android:style/Theme.Material">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowAnimationStyle">@style/PlayPopupSelectorAnimation</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:windowSoftInputMode">adjustResize|stateUnchanged</item>
-        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
-        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
     </style>
 
     <!--play_white text colors-->
