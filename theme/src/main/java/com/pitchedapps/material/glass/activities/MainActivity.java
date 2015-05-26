@@ -186,9 +186,9 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l, IDrawerItem iDrawerItem) {
 //check this
-                        if (mIsPremium = true) {
-                            if (iDrawerItem instanceof Nameable) {
-                                if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
+                        if (iDrawerItem instanceof Nameable) {
+                            if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
+                                if (mIsPremium || !BuildConfig.DONATIONS_GOOGLE) {
                                     switchFragment(-1, thaRequest, "Request");
                                     result.closeDrawer();
                                     return true;
