@@ -1,17 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.AppCompat" parent="@*common:style/Theme.AppCompat" />
-    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
-    <style name="Theme.AppCompat.Light.DarkActionBar" parent="@*common:style/Theme.AppCompat" />
-    <style name="Base.Theme.AppCompat" parent="@*common:style/Theme.AppCompat" />
-    <style name="Base.Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
-    <style name="Base.ThemeOverlay.AppCompat" parent="@*common:style/Theme.AppCompat" />
-    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
-
-    <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
-    <style name="Theme.AppCompat.Light.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
-
-    <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
-
 
 </resources>

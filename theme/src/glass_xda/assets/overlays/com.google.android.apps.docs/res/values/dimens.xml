@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="doclist_group_separator_height">1.0dip</dimen>
+    <dimen name="selection_fh_radius">3.0dip</dimen>
+    <dimen name="viewer:action_bar_height">56.0dip</dimen>
+</resources>

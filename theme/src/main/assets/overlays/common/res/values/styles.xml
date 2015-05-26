@@ -512,5 +512,22 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
     </style>
+	
+	
+	<style name="Base.Widget.AppCompat.ActionBar" parent="">
+        <item name="android:gravity">center_vertical</item>
+        <item name="height">?actionBarSize</item>
+        <item name="displayOptions">showTitle</item>
+        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle</item>
+        <item name="divider">?dividerVertical</item>
+        <item name="background">@null</item>
+        <item name="backgroundStacked">@null</item>
+        <item name="backgroundSplit">@null</item>
+        <item name="elevation">8.0dip</item>
+        <item name="popupTheme">?actionBarPopupTheme</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+    </style>
 
 </resources>
