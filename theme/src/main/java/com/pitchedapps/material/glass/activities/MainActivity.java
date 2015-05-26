@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
                 .withOnDrawerItemLongClickListener(new Drawer.OnDrawerItemLongClickListener() {
                     @Override
                     public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l, IDrawerItem iDrawerItem) {
-
+//check this
                         if (mIsPremium = true) {
                             if (iDrawerItem instanceof Nameable) {
                                 if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
