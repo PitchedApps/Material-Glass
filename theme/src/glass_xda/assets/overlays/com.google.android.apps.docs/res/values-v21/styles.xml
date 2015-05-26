@@ -19,6 +19,7 @@
     <style name="Widget.AppCompat.ActionBar" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
 
     <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
+    <style name="BaseAppTheme" parent="@android:style/Theme.Material" />
 
 <!--base-->
     <style name="BaseActionBar" parent="@android:style/Widget.Material.ActionBar">
