@@ -52,6 +52,13 @@
     <color name="pblue_t">#cc748B96</color>
     <color name="pbluee_t">#cc62757e</color>
     <color name="dblue_t">#cc343d41</color>
+    <!--common sign in-->
+    <color name="common_action_bar_splitter">#22ffffff</color>
+    <color name="common_signin_btn_dark_text_default">@color/text</color>
+    <color name="common_signin_btn_dark_text_disabled">@color/texttt</color>
+    <color name="common_signin_btn_dark_text_focused">@color/text</color>
+    <color name="common_signin_btn_dark_text_pressed">@color/text</color>
+    <color name="common_signin_btn_default_background">#90dd4b39</color>
 
     <!--appcompat-->
     <color name="abc_search_url_text_normal">#ff7fa87f</color>
