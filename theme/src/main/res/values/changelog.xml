@@ -49,8 +49,10 @@
         <item>Settings: added validus icon</item>
         <item>App: compacted all images</item>
         <item>App: added secret feature</item>
-        <item></item>
-        <item></item>
+        <item>New: themed google drive (xda)</item>
+        <item>Play store: redid appcompats, themed more icons</item>
+        <item>Gmail: redid appcompats</item>
+        <item>App: redid donations section</item>
     </string-array>
 
     <string-array name="v27">
