@@ -178,6 +178,4 @@
         <item name="android:singleLine">true</item>
     </style>
 
-    <style name="Widget.AppCompat.Light.ActionBar.Solid"
-        parent="@android:style/Widget.Material.ActionBar" />
 </resources>

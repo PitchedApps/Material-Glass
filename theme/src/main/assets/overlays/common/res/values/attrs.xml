@@ -197,4 +197,5 @@
     <attr name="switchPadding" format="dimension" />
     <attr name="splitTrack" format="boolean" />
     <attr name="showText" format="boolean" />
+    <attr name="windowNoTitle" format="boolean" />
 </resources>

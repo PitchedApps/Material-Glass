@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="MinTimeProgressDialogStyleBase" parent="@android:style/Theme.Material.Dialog" />
     <style name="MessageAttachmentButtonBaseStyle" parent="@style/MessageButtonStyleBase">
         <item name="android:textAppearance">?android:textAppearanceSmall</item>
         <item name="android:textStyle">bold</item>
@@ -24,18 +23,6 @@
     <style name="NotificationPrimaryText">
         <item name="android:textColor">@color/text</item>
     </style>
-    <style name="UnifiedEmailTheme" parent="@android:style/Theme.Material">
-        <item name="android:listViewWhiteStyle">@android:style/Widget.Material.ListView</item>
-        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
-        <item name="android:actionModeBackground">@color/action_mode_background</item>
-        <item name="android:actionOverflowButtonStyle">@style/ActionBarOverflowButtonStyle</item>
-        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_wht_24dp_with_rtl</item>
-        <item name="android:actionBarWidgetTheme">@style/ActionBarWidgetTheme</item>
-    </style>
-    <style name="ActionBarOverflowButtonStyle"
-        parent="@android:style/Widget.Material.ActionButton.Overflow">
-        <item name="android:src">@drawable/ic_menu_moreoverflow_mtrl_alpha</item>
-    </style>
     <style name="ActionBarWidgetTheme" parent="@android:style/Theme.Material">
         <item name="android:dropDownListViewStyle">@style/ActionBarDividerlessListViewStyle</item>
         <item name="android:popupMenuStyle">@android:style/Widget.Material.ListPopupWindow</item>
@@ -58,11 +45,6 @@
     </style>
     <style name="AccountSetupDialogActivityTheme"
         parent="@android:style/Theme.Material.Dialog.NoActionBar" />
-    <style name="LabelSyncTheme" parent="@android:style/Theme.Material.Dialog" />
-    <style name="GmailTheme.NoActionBar" parent="@android:style/Theme.Material.NoActionBar" />
-    <style name="GmailTheme.NoActionBar.Fullscreen"
-        parent="@android:style/Theme.Material.NoActionBar.Fullscreen" />
-
 
     <style name="AbstractComposeArea">
         <item name="android:layout_gravity">center_horizontal</item>
@@ -84,24 +66,6 @@
         <item name="android:background">@color/backgroundx</item>
         <item name="android:textColor">@color/text</item>
     </style>
-    <style name="GmailTheme.NoActionBar.WelcomeTour" parent="@style/GmailTheme.NoActionBar">
-        <item name="android:windowBackground">@color/backgroundt</item>
-    </style>
-    <style name="UnifiedEmailTheme.Appcompat" parent="@android:style/Theme.Material">
-        <item name="actionModeBackground">@color/action_mode_background</item>
-        <item name="homeAsUpIndicator">@drawable/ic_arrow_back_wht_24dp_with_rtl</item>
-        <item name="colorPrimary">@color/primary_color</item>
-        <item name="colorPrimaryDark">@color/primary_dark_color</item>
-        <item name="colorAccent">@color/accent_blue</item>
-        <item name="android:statusBarColor">@color/backgroundx</item>
-        <!--<item name="android:background">@color/backgroundt</item>-->
-        <item name="android:colorBackground">@color/backgroundt</item>
-        <item name="android:windowBackground">@color/backgroundt</item>
-        <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-
-    </style>
-
-    <style name="Theme.AppCompat.CompactMenu" parent="@*common:style/Theme.AppCompat" />
 
     <style name="RecipientEditTextViewBase" parent="@android:attr/autoCompleteTextViewStyle">
         <item name="android:textAppearance">?android:textAppearanceMedium</item>

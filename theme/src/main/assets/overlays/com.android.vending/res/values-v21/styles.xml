@@ -7,10 +7,16 @@
     <style name="Base.Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
     <style name="Base.ThemeOverlay.AppCompat" parent="@*common:style/Theme.AppCompat" />
     <style name="Base.ThemeOverlay.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar" />
+
 
     <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
     <style name="Theme.AppCompat.Light.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
-    <style name="Widget.AppCompat.ActionBar" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
+    <style name="Base.Widget.AppCompat.ActionBar" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
+    <style name="Base.Widget.AppCompat.ActionBar.Solid" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.Solid" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.Solid.Inverse" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
 
     <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
 
@@ -24,9 +30,9 @@
     <style name="Theme.Base.InstrumentManager.Light" parent="@android:style/Theme.Material.NoActionBar" />
     <!--causes layering issues-->
     <style name="FinskyTheme" parent="@style/Theme.AppCompat.NoActionBar">
-    <item name="android:windowBackground">@*common:color/dialog</item>
-    <item name="android:windowContentOverlay">@null</item>
-    <item name="android:colorPrimaryDark">@color/backgroundx</item>
+        <item name="android:windowBackground">@*common:color/dialog</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorPrimaryDark">@color/backgroundx</item>
     </style>
 
     <style name="SettingsTheme" parent="@style/Theme.AppCompat">

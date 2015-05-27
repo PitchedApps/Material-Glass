@@ -38,7 +38,8 @@
     <color name="create_bar_button_background_pressed">@color/list_entry_pressed</color>
     <!--check-->
     <color name="create_entry_dialog_list_background">@*common:color/dialog</color>
-    <color name="default_account_details_color">@color/text</color>
+    <!--account name with white background-->
+    <color name="default_account_details_color">#ff000000</color>
     <color name="default_list_divider">@color/m_material_grey_300</color>
     <color name="default_text_color">@color/m_app_primary_text</color>
     <color name="default_text_highlighted_color">@color/text</color>
@@ -172,7 +173,8 @@
     <color name="m_toast_background">#cc060606</color>
     <color name="main_background">@color/background</color>
     <color name="main_overlay">#d0000000</color>
-    <color name="manage_accounts_text_color">@color/text</color>
+    <!--account switcher has hardcoded white background-->
+    <color name="manage_accounts_text_color">#ff000000</color>
 
     <color name="menu_item_default">@color/textt</color>
     <color name="menu_item_pressed">#22ffffff</color>

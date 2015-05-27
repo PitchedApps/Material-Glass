@@ -568,4 +568,5 @@
     <attr name="setup_wizard_navbar_bg_color" format="color" />
     <attr name="setup_wizard_navbar_text_color" format="color" />
     <attr name="setup_wizard_navbar_theme" format="reference" />
+    <attr name="windowNoTitle" format="boolean" />
 </resources>
