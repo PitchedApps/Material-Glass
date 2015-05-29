@@ -46,8 +46,8 @@
 
     <string-array name="v30">
         <item>v1.0.4</item>
-        <item>Google Services: redo</item>
-        <item></item>
+        <item>Google Services: redo, sign in dialog text is now visible</item>
+        <item>Nova: fixed dock background crash</item>
         <item></item>
         <item></item>
         <item></item>
