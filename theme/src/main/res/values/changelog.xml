@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="current_version">1.0.1</string>
-
     <string-array name="fullchangelog">
+        <item>@array/v30</item>
+        <item>@array/v29</item>
         <item>@array/v28</item>
         <item>@array/v27</item>
         <item>@array/v26</item>
@@ -42,6 +42,21 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+
+    <string-array name="v30">
+        <item>v1.0.4</item>
+        <item>Google Services: redo</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v29">
+        <item>v1.0.3</item>
+        <item>Fixed crashes for play store version</item>
+        <item>Notice: from now on, I will only be pushing updates to the play store in increments of 0.x, rather than 0.0.x. All additional builds in between will be hosted on androidfilehost as xda versions. As much as I love to publicize my apps, it seems as though I am prone to errors with multiple build flavours and many more individual packages. Though I generally fix these issues within 24 hours, it still doesn\'t seem to be enough for this community. So in essence, I will be updating more frequently on xda, where responses are more constructive than damaging, and actually help bring this project forwards.</item>
     </string-array>
 
     <string-array name="v28">
