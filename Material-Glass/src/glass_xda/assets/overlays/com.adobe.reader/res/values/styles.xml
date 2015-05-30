@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="readerActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:background">@drawable/top_action_bar_background</item>
+        <item name="android:height">@dimen/action_bar_custom_height</item>
+        <!--<item name="android:titleTextStyle">@style/actionBarTitleTextStyle</item>-->
+        <!--<item name="android:subtitleTextStyle">@style/actionBarSubtitleTextStyle</item>-->
+    </style>
+    <style name="readerActionModeStyle" parent="@android:style/Widget.Material.ActionMode">
+        <item name="android:background">@drawable/top_action_bar_background</item>
+        <item name="android:height">@dimen/action_bar_custom_height</item>
+    </style>
+    <style name="Theme.SwitcherStyle" parent="@android:style/Theme.Material">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/readerActionBarStyle</item>
+        <!--<item name="android:actionOverflowButtonStyle">@style/OverFlow</item>-->
+        <item name="android:homeAsUpIndicator">@drawable/chevron_left</item>
+        <item name="android:actionModeStyle">@style/readerActionModeStyle</item>
+    </style>
+    <style name="Theme.NoSwitcherStyle" parent="@android:style/Theme.Material">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/readerActionBarStyle</item>
+        <!--<item name="android:actionOverflowButtonStyle">@style/OverFlow</item>-->
+        <item name="android:homeAsUpIndicator">@drawable/chevron_left</item>
+        <item name="android:actionModeStyle">@style/readerActionModeStyle</item>
+    </style>
+    <style name="adobeReaderDialogLight" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowBackground">@*common:color/dialog</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+</resources>

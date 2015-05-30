@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="detailedview_pager_background">@color/backgrounddt</color>
+    <color name="title_author_background">@color/backgroundt</color>
+    <color name="offwhite">@color/backgroundd</color>
+    <color name="author_grey">@color/backgroundt</color>
+    <color name="primary">#ff0288d1</color>
+    <color name="primary_dark">#ff0277bd</color>
+    <color name="accent">#ff0091ea</color>
+    <color name="actionbar_text_color">@color/text</color>
+    <color name="primary_text_color">@color/text</color>
+    <color name="apply_button_text_color_enabled">@color/text</color>
+    <color name="apply_button_text_color_disabled">@color/textt</color>
+    <color name="apply_button_progress_color">@color/backgroundddt</color>
+    <color name="apply_button_default_color">@color/backgrounddt</color>
+    <color name="apply_button_pressed_color">@color/backgroundddt</color>
+    <color name="designed_for_color">@color/textt</color>
+    <color name="drawer_item_textcolor">@color/text</color>
+    <color name="drawer_item_default">#99000000</color>
+    <color name="drawer_item_pressed">#22ffffff</color>
+    <color name="drawer_divider_line">@android:color/transparent</color>
+    <color name="default_circle_indicator_fill_color">#ff00b1e5</color>
+    <color name="default_circle_indicator_page_color">#ff808184</color>
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+
+    <color name="black_t">#90000000</color>
+    <color name="backgroundt">#90000000</color>
+    <color name="background_t">#90000000</color>
+    <color name="backgrounddt">#90161616</color>
+    <color name="backgroundddt">#90323232</color>
+    <color name="pblue_t">#cc748B96</color>
+    <color name="pbluee_t">#cc62757e</color>
+    <color name="dblue_t">#cc343d41</color>
+
+    <color name="background">#ff000000</color>
+    <color name="backgroundd">#ff161616</color>
+    <color name="backgrounddd">#ff323232</color>
+    <color name="text">#ffffffff</color>
+    <color name="textt">#ddffffff</color>
+    <color name="texttt">#bbffffff</color>
+    <color name="hint">#cc000000</color>
+    <color name="pblue">#ff748B96</color>
+    <color name="pbluel">#ffa7b8c0</color>
+    <color name="pbluee">#ff62757e</color>
+    <color name="dblue">#ff343d41</color>
+</resources>

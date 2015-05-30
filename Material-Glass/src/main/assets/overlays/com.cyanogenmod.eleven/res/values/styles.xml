@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Eleven.Theme" parent="@android:style/Theme.Material">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:statusBarColor">@color/header_action_bar_color</item>
+        <!--<item name="android:dropDownListViewStyle">@style/DropDownListView</item>-->
+        <!--<item name="android:listViewStyle">@style/ListView</item>-->
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <!--<item name="android:actionOverflowButtonStyle">@style/ActionOverFlowButton</item>-->
+        <!--<item name="android:popupMenuStyle">@style/PopupMenu</item>-->
+        <!--<item name="android:textAppearanceLargePopupMenu">@style/LargePopupMenu</item>-->
+        <!--<item name="android:textAppearanceSmallPopupMenu">@style/SmallPopupMenu</item>-->
+        <!--<item name="android:actionBarWidgetTheme">@style/ActionBarWidgetTheme</item>-->
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+
+    <style name="NotificationText">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ActionBar" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:background">@color/header_action_bar_color</item>
+        <!--<item name="android:titleTextStyle">@style/ActionBar.TitleText</item>-->
+        <!--<item name="android:subtitleTextStyle">@style/ActionBar.SubtitleText</item>-->
+        <item name="android:actionOverflowButtonStyle">
+            @android:style/Widget.Material.ActionButton.Overflow
+        </item>
+    </style>
+</resources>

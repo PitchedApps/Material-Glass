@@ -1,0 +1,87 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
+    }
+}
+
+//tasks.whenTaskAdded { task ->
+//    if (task.name.equals("lint")) {
+//        task.enabled = false
+//    } else if (task.name.equals("lintVitalRelease")) {
+//        task.enabled = false
+//    }
+//}
+
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+    maven { url 'https://dl.bintray.com/drummer-aidan/maven' }
+    maven { url 'https://dl.bintray.com/asdfasdfvful/maven' }
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 105
+        versionName '1.0.5'
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            versionNameSuffix
+        }
+    }
+
+    productFlavors {
+        glass_free {
+            buildConfigField "boolean", "DONATIONS_GOOGLE", "true"
+            applicationId "com.pitchedapps.material.glass.free"
+        }
+        glass_xda {
+            buildConfigField "boolean", "DONATIONS_GOOGLE", "false"
+            applicationId "com.pitchedapps.material.glass.xda"
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'org.sufficientlysecure:donations:2.3'
+    compile 'com.pitchedapps:icon-request-tool:0.5@aar'
+
+    compile 'com.android.support:appcompat-v7:22.1.1@aar'
+    compile 'com.android.support:support-v4:22.1.1@aar'
+    compile 'com.android.support:cardview-v7:22.1.1@aar'
+    compile 'com.android.support:palette-v7:22.1.1@aar'
+    compile 'com.android.support:recyclerview-v7:22.1.1@aar'
+    compile 'com.afollestad:material-dialogs:0.7.4.1'
+    compile('com.mikepenz.materialdrawer:library:2.9.7@aar') {
+        transitive = true
+    }
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+    compile 'com.balysv:material-ripple:1.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.okhttp:okhttp:2.3.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0'
+    compile 'com.google.android.apps.muzei:muzei-api:2.0'
+}

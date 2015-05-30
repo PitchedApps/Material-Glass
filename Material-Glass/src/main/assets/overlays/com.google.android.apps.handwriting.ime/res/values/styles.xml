@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView"
+        parent="@android:style/Widget.Material.ActionBar.TabView" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText"
+        parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse"
+        parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.PopupMenu"
+        parent="@android:style/Widget.Material.PopupMenu" />
+
+    <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.Light.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
+
+    <style name="Base.ThemeOverlay.AppCompat.Light"
+        parent="@android:style/ThemeOverlay.Material.Dark">
+        <item name="isLightTheme">false</item>
+        <item name="colorControlHighlight">@color/ripple_material_dark</item>
+    </style>
+
+</resources>

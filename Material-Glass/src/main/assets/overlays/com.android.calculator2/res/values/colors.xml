@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calculator_accent_color">#ff222222</color>
+    <color name="calculator_error_color">#fff40056</color>
+    <color name="display_background_color">#88ffffff</color>
+    <color name="display_formula_text_color">#dd000000</color>
+    <color name="display_result_text_color">#dd000000</color>
+    <color name="pad_numeric_background_color">@color/background</color>
+    <color name="pad_operator_background_color">@color/backgroundd</color>
+    <color name="pad_advanced_background_color">@color/backgroundx</color>
+    <color name="pad_button_text_color">#ffffffff</color>
+    <color name="pad_button_advanced_text_color">#ffffffff</color>
+    <color name="pad_button_ripple_color">#33ffffff</color>
+    <color name="pad_button_advanced_ripple_color">#18ffffff</color>
+
+    <color name="pad_advanced_text_color_normal">@color/text</color>
+    <color name="pad_advanced_text_color_disabled">#33ffffff</color>
+    <color name="pad_text_color_disabled">#33ffffff</color>
+    <color name="pressed_color">#66ffffff</color>
+    <color name="history_input">#ffe6e6e6</color>
+    <color name="history_result">#ff999999</color>
+
+    <color name="abc_search_url_text_normal">#ff7fa87f</color>
+    <color name="abc_search_url_text_selected">@color/text</color>
+    <color name="abc_search_url_text_pressed">@color/text</color>
+    <color name="abc_input_method_navigation_guard">@color/text</color>
+    <color name="background_material_dark">@color/background</color>
+    <color name="background_material_light">@color/background</color>
+    <color name="background_floating_material_dark">#cc111111</color>
+    <color name="background_floating_material_light">#cc111111</color>
+    <color name="primary_material_dark">@color/backgrounddx</color>
+    <color name="primary_material_light">@color/backgrounddx</color>
+    <color name="primary_dark_material_dark">@color/backgrounddx</color>
+    <color name="primary_dark_material_light">@color/backgrounddx</color>
+    <color name="ripple_material_dark">#40ffffff</color>
+    <color name="ripple_material_light">#40ffffff</color>
+    <color name="accent_material_light">@color/text</color>
+    <color name="accent_material_dark">@color/text</color>
+    <color name="button_material_dark">@color/backgroundd</color>
+    <color name="button_material_light">@color/backgroundd</color>
+    <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
+    <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="bright_foreground_material_dark">@android:color/white</color>
+    <color name="bright_foreground_material_light">@android:color/white</color>
+    <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
+    <color name="bright_foreground_disabled_material_light">#80ffffff</color>
+    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light
+    </color>
+    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_light
+    </color>
+    <color name="dim_foreground_material_dark">#ffbebebe</color>
+    <color name="dim_foreground_material_light">#ffbebebe</color>
+    <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
+    <color name="dim_foreground_disabled_material_light">#80bebebe</color>
+    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark
+    </color>
+    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_dark
+    </color>
+    <color name="highlighted_text_material_dark">#66666666</color>
+    <color name="highlighted_text_material_light">#66666666</color>
+    <color name="link_text_material_dark">@color/textt</color>
+    <color name="link_text_material_light">@color/textt</color>
+    <color name="primary_text_default_material_light">#ffffffff</color>
+    <color name="secondary_text_default_material_light">#b3ffffff</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="primary_text_disabled_material_light">#4dffffff</color>
+    <color name="secondary_text_disabled_material_light">#36ffffff</color>
+    <color name="primary_text_disabled_material_dark">#4dffffff</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+    <color name="material_deep_teal_200">@color/text</color>
+    <color name="material_deep_teal_500">@color/text</color>
+    <color name="material_blue_grey_800">@color/background</color>
+    <color name="material_blue_grey_900">@color/background</color>
+    <color name="material_blue_grey_950">@color/background</color>
+
+    <color name="text">#ffffffff</color>
+    <color name="textt">#ddffffff</color>
+    <color name="texttt">#bbffffff</color>
+    <color name="backgroundx">#ff000000</color>
+    <color name="backgrounddx">#ff161616</color>
+    <color name="backgroundddx">#ff323232</color>
+    <color name="background">#88000000</color>
+    <color name="backgroundd">#88161616</color>
+    <color name="backgrounddd">#88323232</color>
+</resources>
