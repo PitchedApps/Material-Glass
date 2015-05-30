@@ -48,9 +48,8 @@
         <item>v1.0.4</item>
         <item>Google Services: redo, sign in dialog text is now visible</item>
         <item>Nova: fixed dock background crash</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>New: themed inbox (wip, xda)</item>
+        <item>Gmail: various fixes plus attempt to change white background for tablets</item>
     </string-array>
 
     <string-array name="v29">

@@ -15,7 +15,7 @@
     <string-array name="info_contents">
         <item>Welcome to the info section! Please take a moment to carefully read the section below if you have any bugs or concerns
             \n\nREBOOT YOUR PHONE BEFORE SENDING BUG REPORTS.
-            \n\nI\'ve received way too many bug reports that were solved with a simple restart. Additionally, DO NOTE SUBMIT REPORTS IF YOU HAVE XPOSED INSTALLED. The least you could do is disable all the modules and try again. However, if you have any other bug reports, please note that screenshots help a lot with the fixes.
+            \n\nI\'ve received way too many bug reports that were solved with a simple restart. Additionally, DO NOT SUBMIT REPORTS IF YOU HAVE XPOSED INSTALLED. The least you could do is disable all the modules and try again. However, if you have any other bug reports, please note that screenshots help a lot with the fixes.
             \n\nAnother common issue results from not having an updated rom; you MUST have a rom with the latest updated commits for this theme to properly function. New tweaks are added every day, and as of now the major changes were merged in early March. As such, if you don\'t have those commits, you will see issues that I won\'t be able to fix. Pay special attention to AOSP apps. If they are built into most roms, you can expect me to notice it if something is horribly wrong.
             \n\nMake sure you have a rom with the latest cm theme commits for everything to work properly. New changes are constantly added, so please check and use the latest rom before filing reports. Pay special attention to AOSP apps. If they are built into most roms, you can expect me to notice it if something is horribly wrong.
             \n\nHowever, please also note that newer roms like Cyanogen OS (not the same as CyanogenMod) do not have the commits either, so there will be some incompatibilities with it; but since you have the app themer there it shouldn\'t be a problem.
@@ -82,6 +82,7 @@
             &#8226; Dialer and Contacts have unpredictable crashes, especially with custom DPI\'s or low DPI
             \n&#8226; Dialer and Contacts cannot be made transparent; black for now
             \n&#8226; AOSP bugs: please read the FAQ
+            \n&#8226; Gmail has a white background in the two pane view. This color is hardcoded in a layouts file (two_pane_activity.xml) and can\'t be changed. Furthermore, I don\'t have a tablet and won\'t be spending a lot of energy in fixing a bug I can\'t test.
             \n&#8226; Ambient display has black text: this was fixed in mid April, so make sure you have the latest commits in your rom.
             \n&#8226; Blisspop sometimes has incompatibilities. Please note that this rom is heavily modified, and deviates quite a lot from standard AOSP. As such, it may not always work with this theme.
             \n&#8226; Some issues with Cyanogen OS; Note that they have not merged the latest theme commits, which is why it isn\'t working. It\'s up to them to update it, and us themers can\'t do anything about it yet.
