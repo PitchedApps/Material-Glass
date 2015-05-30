@@ -67,7 +67,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'org.sufficientlysecure:donations:2.3'
-    compile 'com.pitchedapps:icon-request-tool:0.5@aar'
+    compile 'com.pitchedapps:icon-request-tool:1.0@aar'
 
     compile 'com.android.support:appcompat-v7:22.1.1@aar'
     compile 'com.android.support:support-v4:22.1.1@aar'
