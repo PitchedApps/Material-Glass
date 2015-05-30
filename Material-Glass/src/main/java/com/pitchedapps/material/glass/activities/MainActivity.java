@@ -32,7 +32,6 @@ import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.pitchedapps.material.glass.BuildConfig;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
-import com.pkmmte.requestmanager.RequestFragment;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.Util;
 import com.pkmmte.requestmanager.PkRequestManager;
@@ -280,14 +279,12 @@ public class MainActivity extends AppCompatActivity {
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.main, donationsFragment, "donationsFragment")
                     .commit();
-        if (title.equals(thaRequest)) {
-            RequestFragment requestFragment;
+        } else if (title.equals(thaRequest)) {
             getSupportFragmentManager().beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     //TODO fix error
                     .replace(R.id.main, Fragment.instantiate(MainActivity.this, "com.pkmmte.requestmanager.RequestFragment"))
                     .commit();
-        }
         } else {
             getSupportFragmentManager().beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
