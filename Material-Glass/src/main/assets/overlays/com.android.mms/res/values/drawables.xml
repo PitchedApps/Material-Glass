@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="class_zero_background" type="drawable">@color/background</item>
+    <item name="text_color_red" type="drawable">#ffff4444</item>
+    <item name="text_color_black" type="drawable">@color/text</item>
+</resources>
