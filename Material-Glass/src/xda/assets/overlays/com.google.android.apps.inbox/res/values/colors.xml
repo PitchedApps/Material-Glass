@@ -33,7 +33,7 @@
     <color name="done_text_color_dark_disabled">#ff888888</color>
     <color name="done_disabled_dark">#ffbfbfbf</color>
 
-    <color name="solid_black">@color/background</color>
+    <color name="solid_black">@color/bbb</color>
     <color name="photo_status_bar_black">#d9000000</color>
     <color name="photo_crop_dim_color">#cc000000</color>
     <color name="photo_crop_highlight_color">#ffffffff</color>
@@ -57,10 +57,11 @@
     <color name="add_accounts_text_color">@color/manage_accounts_text_color</color>
     <color name="account_text_color">@color/manage_accounts_text_color</color>
     <color name="bt_action_bar_background_done">@color/bt_done_green</color>
-    <color name="bt_action_bar_background_grey">@color/background</color>
+    <color name="bt_action_bar_background_grey">@color/bt_container_blue</color>
     <color name="bt_action_bar_background_inbox">@color/bt_container_blue</color>
     <color name="bt_action_bar_background_upcoming">@color/bt_snooze_yellow</color>
-    <color name="bt_action_bar_background_white">@color/background</color>
+    <!--changed for both black and white font-->
+    <color name="bt_action_bar_background_white">@color/bt_container_blue</color>
     <color name="bt_action_bar_bottom_line">@color/bt_faint_text</color>
     <color name="bt_action_bar_bottom_line_done">@color/bt_action_bar_bottom_line</color>
     <color name="bt_action_bar_bottom_line_grey">@color/bt_action_bar_bottom_line</color>
@@ -74,7 +75,7 @@
     <color name="bt_blue">#ff3c80f6</color>
     <color name="bt_blue_disabled">#804285f4</color>
     <color name="bt_brick_activity_stroke_grey">#ffbdd4fb</color>
-    <color name="bt_bundle_configurator_background">@android:color/white</color>
+    <color name="bt_bundle_configurator_background">@color/background</color>
     <color name="bt_bundle_configurator_drop_shadow_end_color">#16000000</color>
     <color name="bt_bundle_configurator_drop_shadow_start_color">#00000000</color>
     <color name="bt_chip_background">#fff6f6f6</color>
@@ -231,7 +232,7 @@
     <color name="bt_smartmail_cv_event_day_of_month_header_text">#ff1a71ce</color>
     <color name="bt_smartmail_pop_image_overlay">@color/background</color>
     <color name="bt_smartmail_tl_tile_background">#11000000</color>
-    <color name="bt_smartmail_tl_tile_background_opaque">@color/background</color>
+    <color name="bt_smartmail_tl_tile_background_opaque">@color/backgroundx</color>
     <color name="bt_snooze_dialog_background">#cc060606</color>
     <color name="bt_snooze_yellow">#ffeca403</color>
     <color name="bt_speed_dial_background_color">@color/background</color>
@@ -242,7 +243,7 @@
     <color name="bt_status_bar_snoozed">#ffde9102</color>
     <color name="bt_status_bar_white">@color/background</color>
     <color name="bt_stroke_grey">#22ffffff</color>
-    <color name="bt_task_creating_bar_background">@color/background</color>
+    <color name="bt_task_creating_bar_background">@color/bbb</color>
     <color name="bt_task_creating_bar_background_blue">#ff75a6f7</color>
     <color name="bt_topic_tr_cluster_default">#ff512da8</color>
     <color name="bt_topic_tr_cluster_hero_image_text">#ff1a71ce</color>
@@ -267,12 +268,12 @@
 
     <color name="aaa">#ffff00ff</color>
     <color name="bbb">#ff00ffff</color>
-    <color name="text">#ffffffff</color>
-    <color name="textt">#ccffffff</color>
-    <color name="texttt">#99ffffff</color>
-    <color name="background">#ff000000</color>
-    <color name="backgroundd">#ff161616</color>
-    <color name="backgrounddd">#ff323232</color>
+    <color name="text">#ffdddddd</color>
+    <color name="textt">#ffdddddd</color>
+    <color name="texttt">#ffaaaaaa</color>
+    <color name="background">#88000000</color>
+    <color name="backgroundd">#88161616</color>
+    <color name="backgrounddd">#88323232</color>
     <color name="backgroundx">#ff000000</color>
     <color name="backgrounddx">#ff161616</color>
     <color name="backgroundddx">#ff323232</color>

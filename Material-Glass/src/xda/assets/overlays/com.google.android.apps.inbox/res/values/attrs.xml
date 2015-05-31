@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="color" format="color" />
+    <attr name="drawerArrowStyle" format="reference" />
+
+</resources>

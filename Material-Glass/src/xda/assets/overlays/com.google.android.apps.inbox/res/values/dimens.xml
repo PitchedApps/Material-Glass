@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bt_stroke_width">1.0px</dimen>
+    <dimen name="bt_hypercollapsed_message_circle_size">40.0dip</dimen>
+    <dimen name="bt_search_card_divider_height">1.0px</dimen>
+    <dimen name="chip_height">32.0dip</dimen>
+    <item type="dimen" name="bt_action_bar_height">@dimen/abc_action_bar_default_height_material</item>
+    <dimen name="abc_action_bar_default_height_material">56.0dip</dimen>
+    <dimen name="bt_action_bar_elevation">2.0dip</dimen>
+</resources>

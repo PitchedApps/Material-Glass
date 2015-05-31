@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="fullchangelog">
+        <item>@array/v31</item>
         <item>@array/v30</item>
         <item>@array/v29</item>
         <item>@array/v28</item>
@@ -39,6 +40,17 @@
         <item>v</item>
         <item></item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+
+    <string-array name="v31">
+        <item>v1.0.5</item>
+        <item>App: fixed up secret feature</item>
+        <item>App: fixed up donations fragment</item>
+        <item>Settings: added more white icons</item>
         <item></item>
         <item></item>
         <item></item>

@@ -37,5 +37,44 @@
         <item name="android:windowBackground">@color/background</item>
         <item name="android:statusBarColor">@color/bt_status_bar_white</item>
     </style>
-
+    <style name="RecipientEditTextViewBase" parent="@android:attr/autoCompleteTextViewStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/chip_height</item>
+        <item name="android:popupBackground">@color/background</item>
+        <item name="android:inputType">textEmailAddress|textMultiLine</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="bt_BigTopAppPreferencesTheme" parent="@android:style/Theme.Material">
+        <item name="android:colorBackground">@color/bt_megalist_background</item>
+        <item name="android:windowBackground">@color/bt_megalist_background</item>
+        <!--<item name="android:dropDownListViewStyle">@style/DividerlessListView</item>-->
+        <item name="android:actionBarStyle">@style/bt_StartupActionBar.Preferences</item>
+        <!--<item name="android:actionOverflowButtonStyle">@style/bt_Overflow</item>-->
+        <!--<item name="android:popupMenuStyle">@style/bt_PopupMenu</item>-->
+        <!--<item name="android:actionBarItemBackground">@drawable/bt_action_bar_home_background</item>-->
+        <item name="android:colorPrimary">@color/bt_container_blue</item>
+        <item name="android:colorAccent">@color/bt_blue</item>
+        <item name="android:statusBarColor">@color/bt_status_bar_default</item>
+        <item name="android:colorEdgeEffect">@color/bt_default_gray_material_light</item>
+        <item name="drawerArrowStyle">@style/bt_DrawerArrowToggle</item>
+    </style>
+    <style name="bt_StartupActionBar.Preferences" parent="@style/bt_StartupActionBar">
+        <item name="android:background">@drawable/bt_action_bar_background_grey</item>
+        <!--<item name="android:titleTextStyle">@style/bt_ActionBarTitle.Preferences</item>-->
+    </style>
+    <style name="bt_DrawerArrowToggle" parent="@*common:style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/bt_action_bar_drawer_toggle</item>
+    </style>
+    <style name="bt_StartupActionBar" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:background">@color/bt_container_blue</item>
+        <item name="android:height">@dimen/bt_action_bar_height</item>
+        <item name="android:displayOptions">none</item>
+        <!--<item name="android:titleTextStyle">@style/bt_ActionBarTitle</item>-->
+        <item name="android:elevation">@dimen/bt_action_bar_elevation</item>
+        <item name="android:outlineProvider">bounds</item>
+    </style>
 </resources>
