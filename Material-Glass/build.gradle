@@ -1,21 +1,12 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.2.3'
+apply plugin: 'com.android.application'
+
+tasks.whenTaskAdded { task ->
+    if (task.name.equals("lint")) {
+        task.enabled = false
+    } else if (task.name.equals("lintVitalRelease")) {
+        task.enabled = false
     }
 }
-
-//tasks.whenTaskAdded { task ->
-//    if (task.name.equals("lint")) {
-//        task.enabled = false
-//    } else if (task.name.equals("lintVitalRelease")) {
-//        task.enabled = false
-//    }
-//}
-
-apply plugin: 'com.android.application'
 
 repositories {
     jcenter()
@@ -41,19 +32,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         release {
-            minifyEnabled false
-            shrinkResources false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            versionNameSuffix
+            versionNameSuffix "-Release"
         }
     }
 
     productFlavors {
-        glass_free {
+        free {
             buildConfigField "boolean", "DONATIONS_GOOGLE", "true"
             applicationId "com.pitchedapps.material.glass.free"
         }
-        glass_xda {
+        xda {
             buildConfigField "boolean", "DONATIONS_GOOGLE", "false"
             applicationId "com.pitchedapps.material.glass.xda"
         }
@@ -74,7 +65,7 @@ dependencies {
     compile 'com.android.support:cardview-v7:22.1.1@aar'
     compile 'com.android.support:palette-v7:22.1.1@aar'
     compile 'com.android.support:recyclerview-v7:22.1.1@aar'
-    compile 'com.afollestad:material-dialogs:0.7.4.1'
+    compile 'com.afollestad:material-dialogs:0.7.4.2'
     compile('com.mikepenz.materialdrawer:library:2.9.7@aar') {
         transitive = true
     }

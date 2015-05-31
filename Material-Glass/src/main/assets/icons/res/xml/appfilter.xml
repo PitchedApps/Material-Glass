@@ -2,6 +2,12 @@
 <resources>
     <scale factor="0.65" />
     <!-- 40% eraser weight, 144x144 in 192x192, glow at 30, doubled -->
+    <!-- Material Glass -->
+    <item component="ComponentInfo{com.pitchedapps.material.glass.free/com.pitchedapps.material.glass.HomeActivity}" drawable="material_glass"/>
+    <!-- Material Glass XDA -->
+    <item component="ComponentInfo{com.pitchedapps.material.glass.xda/com.pitchedapps.material.glass.HomeActivity}" drawable="material_glass"/>
+
+
     <item component="ComponentInfo{org.adaway/org.adaway.ui.BaseActivity}" drawable="adaway" />
     <item component="ComponentInfo{org.cyanogenmod.audiofx/org.cyanogenmod.audiofx.ActivityMusic}"
         drawable="audio_fx" />
@@ -81,6 +87,8 @@
         component="ComponentInfo{com.cyanogenmod.eleven/com.cyanogenmod.eleven.ui.activities.HomeActivity}"
         drawable="music" />
     <item component="ComponentInfo{com.teslacoilsw.launcher/com.android.launcher2.Launcher}"
+        drawable="nova_launcher" />
+    <item component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaShortcutHandler}"
         drawable="nova_launcher" />
     <item component="ComponentInfo{com.android.dialer/com.android.dialer.DialtactsActivity}"
         drawable="phone" />
@@ -287,6 +295,7 @@
     <item component="ComponentInfo{com.google.android.wearable.app/com.google.android.clockwork.companion.StatusActivity}" drawable="android_wear"/>
     <item component="ComponentInfo{com.cyngn.maxxaudio/com.cyngn.maxxaudio.activity.ActivityMusic}" drawable="audio_fx2"/>
     <item component="ComponentInfo{com.google.zxing.client.android/com.google.zxing.client.android.CaptureActivity}" drawable="barcode_scanner"/>
+    <item component="ComponentInfo{tool.scanner/com.google.zxing.client.android.H5View}" drawable="barcode_scanner"/>
     <item component="ComponentInfo{com.levelup.beautifulwidgets/com.levelup.beautifulwidgets.BeautifulLauncher}" drawable="beautiful_widgets"/>
     <item component="ComponentInfo{com.bigoven.android/com.bigoven.android.spotlight.SpotlightActivity}" drawable="big_oven"/>
     <item component="ComponentInfo{com.cyngn.cameranext/com.android.camera.CameraLauncher}" drawable="camera2"/>
