@@ -127,7 +127,7 @@ public class HomeFragment extends Fragment {
         fab.setColorRipple(getResources().getColor(R.color.semitransparent_white));
         fab.show(true);
         fab.attachToScrollView(content);
-
+//TODO check for org.cyanogenmod.theme.chooser before displaying the fab, rather than checking after (so it won't show if it's not supported)
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
