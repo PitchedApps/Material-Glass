@@ -355,5 +355,42 @@
     <item component="ComponentInfo{com.manvir.SnapColors/com.manvir.SnapColors.MainActivity}" drawable="snap_colors"/>
     <item component="ComponentInfo{hu.tagsoft.ttorrent.pro/hu.tagsoft.ttorrent.statuslist.StatusListActivity}" drawable="ttorrent_pro"/>
     <item component="ComponentInfo{com.google.android.apps.docs.editors.slides/com.google.android.apps.docs.app.NewMainProxyActivity}" drawable="slides"/>
-
+<!--06/05/2015-->
+    <item component="ComponentInfo{acr.browser.barebones/acr.browser.barebones.MainActivity}" drawable="lightning"/>
+    <item component="ComponentInfo{air.com.longo.Xiangqi.android.free/air.com.longo.Xiangqi.android.free.AppEntry}" drawable="action_chinese_chess__co_tuong"/>
+    <item component="ComponentInfo{ca.transitdb.mobile.android/ca.transitdb.mobile.android.MainActivity}" drawable="transitdb"/>
+    <item component="ComponentInfo{com.UCMobile.intl/com.UCMobile.main.UCMobile}" drawable="uc_browser"/>
+    <item component="ComponentInfo{com.blackout.paidupdater/com.blackout.paidupdater.MainActivity}" drawable="teamblackout"/>
+    <item component="ComponentInfo{com.exigo.tinytunes/com.exigo.tinytunes.MainActivity}" drawable="tinytunes"/>
+    <item component="ComponentInfo{com.explore.web.browser/acr.browser.barebones.activities.BrowserActivity}" drawable="browser_2"/>
+    <item component="ComponentInfo{com.fongo.dellvoice/com.fongo.dellvoice.SplashActivity}" drawable="fongo"/>
+    <item component="ComponentInfo{com.gramgames.tenten/com.prime31.UnityPlayerNativeActivity}" drawable="a_1010"/>
+    <item component="ComponentInfo{com.herocraft.game.free.icerage/com.herocraft.game.free.icerage.Main}" drawable="ice_rage_hockey_free"/>
+    <item component="ComponentInfo{com.ketchapp.springninja/com.nopowerup.game.Game}" drawable="spring_ninja"/>
+    <item component="ComponentInfo{com.leconjugueur.droid/com.leconjugueur.MainActivity}" drawable="le_conjugueur"/>
+    <item component="ComponentInfo{com.logitech.ue.ueminiboom/com.logitech.ue.ueminiboom.activities.SplashActivity}" drawable="ue_mini_boom"/>
+    <item component="ComponentInfo{com.maxmpz.audioplayer.unlock/com.maxmpz.audioplayer.unlock.RedirectorActivity}" drawable="poweramp_full_version_unlocker"/>
+    <item component="ComponentInfo{com.mikedepaul.perfectscreenshot/com.mikedepaul.perfectscreenshot.MainActivity}" drawable="pss"/>
+    <item component="ComponentInfo{com.moscrop.official.test/com.moscrop.official.MainActivity}" drawable="moscrop_secondary"/>
+    <item component="ComponentInfo{com.moscrop.official/com.moscrop.official.MainActivity}" drawable="moscrop_secondary"/>
+    <item component="ComponentInfo{com.opera.browser/com.opera.Opera}" drawable="opera"/>
+    <item component="ComponentInfo{com.opera.mini.native/com.opera.mini.android.Browser}" drawable="opera_mini"/>
+    <item component="ComponentInfo{com.rectangularsoftware.appmonger/com.rectangularsoftware.appmonger.ReportingActivity}" drawable="appmonger"/>
+    <item component="ComponentInfo{com.shazam.android/com.shazam.android.activities.SplashActivity}" drawable="shazam"/>
+    <item component="ComponentInfo{com.socratica.mobile.chemistry/com.socratica.mobile.chemistry.HomeActivity}" drawable="periodic_table"/>
+    <item component="ComponentInfo{com.sonyericsson.digitalclockwidget2/com.sonyericsson.digitalclockwidget2.Info}" drawable="digital_clock_xperia"/>
+    <item component="ComponentInfo{com.syncedsynapse.eventflowwidget/com.syncedsynapse.eventflowwidget.agenda.config.AgendaConfigurationLauncherActivity}" drawable="event_flow_widget"/>
+    <item component="ComponentInfo{com.teslacoilsw.launcher.prime/com.teslacoilsw.launcher.prime.NovaLauncherPrimeActivity}" drawable="nova_launcher_prime"/>
+    <item component="ComponentInfo{com.ttxapps.dropsync.pro/com.ttxapps.dropsync.pro.MainActivity}" drawable="dropsync_pro_key"/>
+    <item component="ComponentInfo{com.uc.browser.en/com.uc.browser.ActivityBrowser}" drawable="uc_mini"/>
+    <item component="ComponentInfo{de.defim.apk.defimdonator/de.defim.apk.defimdonator.Main}" drawable="defimdonator"/>
+    <item component="ComponentInfo{eu.thedarken.sdm.unlocker/eu.thedarken.sdm.unlocker.SDMGreeting}" drawable="sd_maid_pro__unlocker"/>
+    <item component="ComponentInfo{livio.pack.lang.en_US/livio.pack.lang.en_US.DictionaryView}" drawable="english"/>
+    <item component="ComponentInfo{livio.pack.lang.fr_FR/livio.pack.lang.fr_FR.DictionaryView}" drawable="french"/>
+    <item component="ComponentInfo{mobi.mgeek.TunnyBrowser/mobi.mgeek.TunnyBrowser.BrowserActivity}" drawable="dolphin"/>
+    <item component="ComponentInfo{nu.tommie.inbrowser/nu.tommie.inbrowser.lib.Inbrowser}" drawable="inbrowser"/>
+    <item component="ComponentInfo{org.freegeof/org.freegeof.FreeGeoActivity}" drawable="freegeo"/>
+    <item component="ComponentInfo{org.mozilla.firefox/org.mozilla.firefox.App}" drawable="firefox"/>
+    <item component="ComponentInfo{org.transdroid.search/org.transdroid.search.gui.SettingsActivity}" drawable="torrent_search_by_transdroid"/>
+    <item component="ComponentInfo{personal.jhjeong.app.battery/personal.jhjeong.app.battery.BatteryActivityS}" drawable="battery_info"/>
 </resources>

@@ -51,9 +51,7 @@
         <item>App: fixed up secret feature</item>
         <item>App: fixed up donations fragment</item>
         <item>Settings: added more white icons</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Icons: 36 new</item>
     </string-array>
 
     <string-array name="v30">

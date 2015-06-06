@@ -70,17 +70,22 @@
 
    <string-array name="user">
        <item>a1weather</item>
+       <item>a_1010</item>
+       <item>action_chinese_chess__co_tuong</item>
        <item>adaway</item>
        <item>adobe_reader</item>
        <item>airdroid</item>
        <item>all_cast</item>
        <item>amazon_shopping</item>
        <item>app_redirect</item>
+       <item>appmonger</item>
        <item>barcode_scanner</item>
        <item>barcode_scanner2</item>
+       <item>battery_info</item>
        <item>beautiful_widgets</item>
        <item>big_oven</item>
        <item>bitbeaker</item>
+       <item>browser_2</item>
        <item>capital_one</item>
        <item>catlog</item>
        <item>checkersfree</item>
@@ -89,15 +94,24 @@
        <item>cm_security</item>
        <item>colornote</item>
        <item>copy</item>
+       <item>digital_clock_xperia</item>
+       <item>dolphin</item>
        <item>dropbox</item>
        <item>dropsync</item>
+       <item>dropsync_pro_key</item>
        <item>dumpster</item>
        <item>duolingo</item>
        <item>email2</item>
+       <item>english</item>
+       <item>event_flow_widget</item>
        <item>evolve_sms</item>
        <item>facebook</item>
        <item>fing</item>
+       <item>firefox</item>
        <item>firefox_beta</item>
+       <item>fongo</item>
+       <item>freegeo</item>
+       <item>french</item>
        <item>fx</item>
        <item>fxtextedit</item>
        <item>gmd_gestures</item>
@@ -105,18 +119,24 @@
        <item>gps_status</item>
        <item>greenify</item>
        <item>hsw</item>
+       <item>ice_rage_hockey_free</item>
        <item>icon_filter_designer</item>
+       <item>inbrowser</item>
        <item>instagram</item>
        <item>k9mail</item>
        <item>kernel_adiutor</item>
+       <item>le_conjugueur</item>
+       <item>lightning</item>
        <item>lightning_bug</item>
        <item>linkedin</item>
        <item>lmt</item>
        <item>mapsme</item>
+       <item>material_glass</item>
        <item>megav1</item>
        <item>messenger_fb</item>
        <item>mobile_print</item>
        <item>modernhub</item>
+       <item>moscrop_secondary</item>
        <item>multirom_manager</item>
        <item>mx_player</item>
        <item>mx_player_pro</item>
@@ -124,10 +144,16 @@
        <item>new_egg</item>
        <item>news_weather</item>
        <item>nova_launcher</item>
+       <item>nova_launcher_prime</item>
+       <item>opera</item>
+       <item>opera_mini</item>
        <item>orbot</item>
        <item>paperboard</item>
        <item>perfect_viewer</item>
+       <item>periodic_table</item>
        <item>poweramp</item>
+       <item>poweramp_full_version_unlocker</item>
+       <item>pss</item>
        <item>pushbullet</item>
        <item>quickpic</item>
        <item>quizlet</item>
@@ -138,10 +164,13 @@
        <item>rom_settings_backup_pro</item>
        <item>root_explorer</item>
        <item>sd_maid</item>
+       <item>sd_maid_pro__unlocker</item>
+       <item>shazam</item>
        <item>skype</item>
        <item>sms_backup_restore_pro</item>
        <item>snapchat</item>
        <item>speed_test</item>
+       <item>spring_ninja</item>
        <item>steam</item>
        <item>swiftkey_keyboard</item>
        <item>swype__dragon</item>
@@ -149,14 +178,21 @@
        <item>tapatalk</item>
        <item>tasker</item>
        <item>team_viewer</item>
+       <item>teamblackout</item>
        <item>tesla_unread_plugin</item>
        <item>theme_debug</item>
        <item>timely</item>
+       <item>tinytunes</item>
        <item>titanium_backup</item>
+       <item>torrent_search_by_transdroid</item>
+       <item>transitdb</item>
        <item>trickster_mod</item>
        <item>true_dialer</item>
        <item>ttorrent_pro</item>
        <item>twitter</item>
+       <item>uc_browser</item>
+       <item>uc_mini</item>
+       <item>ue_mini_boom</item>
        <item>utorrent</item>
        <item>viki</item>
        <item>wallpaper_saver</item>
@@ -171,6 +207,7 @@
        <item>amplify</item>
        <item>boot_manager</item>
        <item>custom_share</item>
+       <item>defimdonator</item>
        <item>native_clip_board</item>
        <item>notify_clean</item>
        <item>play_store_changelog</item>
@@ -183,6 +220,8 @@
 
    <string-array name="icon_pack" translatable="true">
        <item>a1weather</item>
+       <item>a_1010</item>
+       <item>action_chinese_chess__co_tuong</item>
        <item>activity_force_new_task</item>
        <item>adaway</item>
        <item>adobe_reader</item>
@@ -192,16 +231,19 @@
        <item>amplify</item>
        <item>android_wear</item>
        <item>app_redirect</item>
+       <item>appmonger</item>
        <item>audio_fx</item>
        <item>audio_fx2</item>
        <item>authenticator</item>
        <item>barcode_scanner</item>
        <item>barcode_scanner2</item>
+       <item>battery_info</item>
        <item>beautiful_widgets</item>
        <item>big_oven</item>
        <item>bitbeaker</item>
        <item>boot_manager</item>
        <item>browser</item>
+       <item>browser_2</item>
        <item>calculator</item>
        <item>calendar</item>
        <item>camera</item>
@@ -219,25 +261,35 @@
        <item>contacts</item>
        <item>copy</item>
        <item>custom_share</item>
+       <item>defimdonator</item>
        <item>device_manager</item>
        <item>device_policy</item>
+       <item>digital_clock_xperia</item>
        <item>docs</item>
        <item>documents</item>
+       <item>dolphin</item>
        <item>downloads</item>
        <item>drive</item>
        <item>dropbox</item>
        <item>dropsync</item>
+       <item>dropsync_pro_key</item>
        <item>dumpster</item>
        <item>duolingo</item>
        <item>earth</item>
        <item>email</item>
        <item>email2</item>
+       <item>english</item>
+       <item>event_flow_widget</item>
        <item>evolve_sms</item>
        <item>facebook</item>
        <item>file_manager</item>
        <item>fing</item>
+       <item>firefox</item>
        <item>firefox_beta</item>
        <item>fit</item>
+       <item>fongo</item>
+       <item>freegeo</item>
+       <item>french</item>
        <item>fx</item>
        <item>fxtextedit</item>
        <item>gallery</item>
@@ -256,23 +308,29 @@
        <item>hangouts</item>
        <item>hangouts_dialer</item>
        <item>hsw</item>
+       <item>ice_rage_hockey_free</item>
        <item>icon_filter_designer</item>
        <item>inbox</item>
+       <item>inbrowser</item>
        <item>instagram</item>
        <item>k9mail</item>
        <item>keep</item>
        <item>kernel_adiutor</item>
+       <item>le_conjugueur</item>
+       <item>lightning</item>
        <item>lightning_bug</item>
        <item>linkedin</item>
        <item>lmt</item>
        <item>maps</item>
        <item>mapsme</item>
+       <item>material_glass</item>
        <item>megav1</item>
        <item>messaging</item>
        <item>messenger</item>
        <item>messenger_fb</item>
        <item>mobile_print</item>
        <item>modernhub</item>
+       <item>moscrop_secondary</item>
        <item>multirom_manager</item>
        <item>music</item>
        <item>mx_player</item>
@@ -283,9 +341,13 @@
        <item>news_weather</item>
        <item>notify_clean</item>
        <item>nova_launcher</item>
+       <item>nova_launcher_prime</item>
+       <item>opera</item>
+       <item>opera_mini</item>
        <item>orbot</item>
        <item>paperboard</item>
        <item>perfect_viewer</item>
+       <item>periodic_table</item>
        <item>phone</item>
        <item>photos</item>
        <item>play_books</item>
@@ -296,6 +358,8 @@
        <item>play_store</item>
        <item>play_store_changelog</item>
        <item>poweramp</item>
+       <item>poweramp_full_version_unlocker</item>
+       <item>pss</item>
        <item>pushbullet</item>
        <item>quickpic</item>
        <item>quizlet</item>
@@ -307,7 +371,9 @@
        <item>rom_settings_backup_pro</item>
        <item>root_explorer</item>
        <item>sd_maid</item>
+       <item>sd_maid_pro__unlocker</item>
        <item>settings</item>
+       <item>shazam</item>
        <item>sheets</item>
        <item>skype</item>
        <item>slides</item>
@@ -317,6 +383,7 @@
        <item>snapchat</item>
        <item>sound_recorder</item>
        <item>speed_test</item>
+       <item>spring_ninja</item>
        <item>steam</item>
        <item>supersu</item>
        <item>swiftkey_keyboard</item>
@@ -325,17 +392,24 @@
        <item>tapatalk</item>
        <item>tasker</item>
        <item>team_viewer</item>
+       <item>teamblackout</item>
        <item>terminal</item>
        <item>tesla_unread_plugin</item>
        <item>theme_debug</item>
        <item>themes</item>
        <item>timely</item>
+       <item>tinytunes</item>
        <item>titanium_backup</item>
+       <item>torrent_search_by_transdroid</item>
+       <item>transitdb</item>
        <item>translate</item>
        <item>trickster_mod</item>
        <item>true_dialer</item>
        <item>ttorrent_pro</item>
        <item>twitter</item>
+       <item>uc_browser</item>
+       <item>uc_mini</item>
+       <item>ue_mini_boom</item>
        <item>utorrent</item>
        <item>viki</item>
        <item>voice</item>
