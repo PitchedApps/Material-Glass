@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="fullchangelog">
+        <item>@array/v32</item>
         <item>@array/v31</item>
         <item>@array/v30</item>
         <item>@array/v29</item>
@@ -45,6 +46,14 @@
         <item></item>
     </string-array>
 
+    <string-array name="v32">
+        <item>v1.0.6</item>
+        <item>App: fixed icon previews</item>
+        <item>MMS: fixed white patches</item>
+        <item>New: themed AudioFx</item>
+        <item></item>
+        <item></item>
+    </string-array>
 
     <string-array name="v31">
         <item>v1.0.5</item>
