@@ -15,22 +15,10 @@
     <color name="accent">@color/text</color>
     <color name="white">#fffafafa</color>
     <color name="black">@color/background</color>
-    <color name="grid_lines">#22ffffff</color>
-    <color name="cb">#88ffffff</color>
-    <color name="freq_hl">#2000ddff</color>
-    <color name="freq_hl2">#4033b5e5</color>
-    <color name="eq_red">#fff44336</color>
-    <color name="eq_green">#ff8bc34a</color>
-    <color name="eq_yellow">#ffff9800</color>
-    <color name="eq_holo_bright">#8000ddff</color>
-    <color name="eq_holo_blue">#8033b5e5</color>
-    <color name="eq_holo_dark">#800099cc</color>
-    <color name="cb_shader">#ffffffff</color>
-    <color name="cb_shader_alpha">#22ffffff</color>
+
     <color name="window_background">@color/background</color>
 
-    <color name="aaa">#ffff00ff</color>
-    <color name="bbb">#ff00ffff</color>
+
     <color name="text">#ffffffff</color>
     <color name="textt">#ccffffff</color>
     <color name="texttt">#99ffffff</color>

@@ -51,8 +51,7 @@
         <item>App: fixed icon previews</item>
         <item>MMS: fixed white patches</item>
         <item>New: themed AudioFx</item>
-        <item></item>
-        <item></item>
+        <item>Google Drive: moved to play store build</item>
     </string-array>
 
     <string-array name="v31">
