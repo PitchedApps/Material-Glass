@@ -23,7 +23,9 @@ import android.widget.AdapterView;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.materialdrawer.Drawer;
+import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.accountswitcher.AccountHeader;
+import com.mikepenz.materialdrawer.accountswitcher.AccountHeaderBuilder;
 import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
@@ -67,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
     private static final String PAYPAL_USER = "pitchedapps@gmail.com";
     private static final String PAYPAL_CURRENCY_CODE = "CAD";
 
-    public Drawer.Result result = null;
+    private AccountHeader headerResult = null;
+    public Drawer result = null;
     public String version;
     private String[] mGoogleCatalog;
     private String thaApp;
@@ -126,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         thaCredits = getResources().getString(R.string.section_six);
         thaInfo = getResources().getString(R.string.section_eight);
 
-        AccountHeader.Result headerResult = new AccountHeader()
+        headerResult = new AccountHeaderBuilder()
                 .withActivity(this)
                 .withHeaderBackground(R.drawable.header)
                 .withSelectionFirstLine(getResources().getString(R.string.app_long_name))
@@ -140,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         enable_features = mPrefs.isFeaturesEnabled();
         firstrun = mPrefs.isFirstRun();
 
-        result = new Drawer()
+        result = new DrawerBuilder()
                 .withActivity(this)
                 .withToolbar(toolbar)
                 .withAccountHeader(headerResult)
@@ -154,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
+                    public boolean onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
                         if (drawerItem != null) {
                             switch (drawerItem.getIdentifier()) {
                                 case 1:
@@ -181,6 +184,7 @@ public class MainActivity extends AppCompatActivity {
                                     break;
                             }
                         }
+                        return false;
                     }
                 })
                 .withOnDrawerItemLongClickListener(new Drawer.OnDrawerItemLongClickListener() {

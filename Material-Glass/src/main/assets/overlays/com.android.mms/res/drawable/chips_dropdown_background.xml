@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/chips_dropdown_background_activated" android:state_activated="true" />
+    <item android:state_pressed="true" android:drawable="@color/chips_dropdown_background_pressed" />
+    <item android:drawable="@color/chips_dropdown_background" />
+</selector>

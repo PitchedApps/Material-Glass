@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_bar_background">@*common:color/actionbar</color>
+    <color name="audiofx_background_color">@android:color/transparent</color>
+    <color name="eq_preset_label_text_color">@color/text</color>
+    <color name="reverb_label_text_color">@color/text</color>
+    <color name="highlight">#cc8f8f8f</color>
+    <color name="lowlight">#ccf4fcff</color>
+    <color name="grey">@color/text</color>
+    <color name="disabled">@color/backgroundd</color>
+    <color name="disabled_gallery">@color/backgroundd</color>
+    <color name="disabled_knob">@color/texttt</color>
+    <color name="primary">@color/backgroundx</color>
+    <color name="primary_dark">@color/backgroundx</color>
+    <color name="accent">@color/text</color>
+    <color name="white">#fffafafa</color>
+    <color name="black">@color/background</color>
+    <color name="grid_lines">#22ffffff</color>
+    <color name="cb">#88ffffff</color>
+    <color name="freq_hl">#2000ddff</color>
+    <color name="freq_hl2">#4033b5e5</color>
+    <color name="eq_red">#80f44336</color>
+    <color name="eq_green">#808bc34a</color>
+    <color name="eq_yellow">#80ff9800</color>
+    <color name="eq_holo_bright">#8000ddff</color>
+    <color name="eq_holo_blue">#8033b5e5</color>
+    <color name="eq_holo_dark">#800099cc</color>
+    <color name="cb_shader">#ffffffff</color>
+    <color name="cb_shader_alpha">#22ffffff</color>
+    <color name="window_background">@color/backgroundt</color>
+
+    <color name="aaa">#ffff00ff</color>
+    <color name="bbb">#ff00ffff</color>
+    <color name="text">#ffffffff</color>
+    <color name="textt">#ccffffff</color>
+    <color name="texttt">#99ffffff</color>
+    <color name="backgroundt">#70000000</color>
+    <color name="background">#88000000</color>
+    <color name="backgroundd">#88161616</color>
+    <color name="backgrounddd">#88323232</color>
+    <color name="backgroundx">#ff000000</color>
+    <color name="backgrounddx">#ff161616</color>
+    <color name="backgroundddx">#ff323232</color>
+</resources>

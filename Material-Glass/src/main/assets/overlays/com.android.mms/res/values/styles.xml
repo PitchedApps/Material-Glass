@@ -34,6 +34,7 @@
         <item name="android:windowBackground">@color/background</item>
         <item name="android:statusBarColor">@color/mms_theme_color_dark_t</item>
     </style>
+    <style name="MmsHoloTheme" parent="@android:style/Theme.Material" />
     <style name="HeaderTheme" parent="@android:style/ThemeOverlay.Material.Dark.ActionBar">
         <item name="android:colorBackground">@color/background</item>
         <item name="android:spinnerDropDownItemStyle">@style/HeaderSpinnerDropDown</item>

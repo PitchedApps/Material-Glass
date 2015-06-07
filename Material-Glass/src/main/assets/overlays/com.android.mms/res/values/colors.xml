@@ -4,7 +4,7 @@
     <color name="dialer_theme_color_dark">#ff0277bd</color>
     <color name="background_dialpad">@color/background</color>
     <color name="background_dialpad_pressed">@color/backgroundd</color>
-    <color name="dialpad_primary_text_color">@color/dialer_theme_color</color>
+    <color name="dialpad_primary_text_color">@color/text</color>
     <color name="dialpad_secondary_text_color">@color/textt</color>
     <color name="dialpad_digits_text_color">@color/textt</color>
     <color name="dialpad_separator_line_color">#22ffffff</color>
@@ -51,8 +51,9 @@
     <color name="search_shortcut_icon_color">#fff8f8f8</color>
     <color name="background_primary">@color/background</color>
     <color name="contact_all_list_background_color">@color/background</color>
-    <color name="chips_dropdown_background_activated">#ff4285f4</color>
-    <color name="chips_dropdown_background_pressed">@color/backgroundd</color>
+    <color name="chips_dropdown_background">#cc030303</color>
+    <color name="chips_dropdown_background_activated">#cc111111</color>
+    <color name="chips_dropdown_background_pressed">#cc111111</color>
     <color name="autocomplete_divider_color">#22ffffff</color>
     <color name="chip_background">@color/background</color>
     <color name="chip_background_selected">#ff4285f4</color>
@@ -94,12 +95,13 @@
     <color name="banner_item_selected">#88ffffff</color>
     <color name="banner_item_pressed">#66ffffff</color>
     <color name="text_shadow_color_light">#33000000</color>
-    <color name="solid_white">@color/background</color>
+    <!--text color reference-->
+    <color name="solid_white">@color/text</color>
     <color name="slot_indicator_background">@color/backgroundd</color>
     <color name="mms_theme_color">#ff00acc1</color>
-    <color name="mms_theme_color_t">#8800acc1</color>
+    <color name="mms_theme_color_t">#ff00acc1</color>
     <color name="mms_theme_color_dark">#ff0097a7</color>
-    <color name="mms_theme_color_dark_t">#880097a7</color>
+    <color name="mms_theme_color_dark_t">#ff0097a7</color>
     <color name="mms_theme_color_accent">#ff00bcd4</color>
     <color name="floating_action_button_icon_color">@color/text</color>
     <color name="tab_text_color">@color/text</color>
@@ -154,6 +156,8 @@
     <color name="default_sent_datecolor">@color/text</color>
 
     <!-- == Widget default colors == -->
+    <color name="unread_bgcolor">@color/backgroundd</color>
+    <color name="read_bgcolor">@color/background</color>
     <!-- widget dark -->
     <!-- read -->
     <color name="widget_senders_textcolor_read">@color/textt</color>
@@ -175,6 +179,9 @@
     <color name="widget_light_date_textcolor_unread">@color/text</color>
     <!--end of bliss-->
 
+    <!--06/06/2015-->
+    <color name="text_hairline">@color/textt</color>
+
     <color name="msg">#ff111111</color>
     <color name="msgg">#ff222222</color>
 
@@ -183,7 +190,7 @@
     <color name="text">#ffffffff</color>
     <color name="textt">#ccffffff</color>
     <color name="texttt">#99ffffff</color>
-    <color name="background">#88000000</color>
+    <color name="background">#60000000</color>
     <color name="backgroundd">#88161616</color>
     <color name="backgrounddd">#88323232</color>
     <color name="backgroundx">#ff000000</color>
