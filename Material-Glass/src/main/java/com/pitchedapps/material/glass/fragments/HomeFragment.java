@@ -122,48 +122,52 @@ public class HomeFragment extends Fragment {
         });
 
         FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.apply_btn);
-        fab.setColorNormal(getResources().getColor(R.color.fab_unpressed));
-        fab.setColorPressed(getResources().getColor(R.color.fab_pressed));
-        fab.setColorRipple(getResources().getColor(R.color.semitransparent_white));
-        fab.show(true);
-        fab.attachToScrollView(content);
-//TODO check for org.cyanogenmod.theme.chooser before displaying the fab, rather than checking after (so it won't show if it's not supported)
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
-                if (intent == null) {
-                    Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
-                } else {
-                    final String className = "com.pitchedapps.material.glass.utilities.CmThemeEngineLauncher";
-///make this nicer?
-                    Class<?> cl = null;
-                    try {
-                        cl = Class.forName(className);
-                    } catch (ClassNotFoundException e) {
-                        Log.e("LAUNCHER CLASS MISSING", "Launcher class for: '" + className + "' missing!");
-                    }
-                    if (cl != null) {
-                        Constructor<?> constructor = null;
+        Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+        if (intent != null) {
+            fab.setVisibility(View.VISIBLE);
+            fab.setColorNormal(getResources().getColor(R.color.fab_unpressed));
+            fab.setColorPressed(getResources().getColor(R.color.fab_pressed));
+            fab.setColorRipple(getResources().getColor(R.color.semitransparent_white));
+            fab.show(true);
+            fab.attachToScrollView(content);
+            fab.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+                    if (intent == null) {
+                        Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
+                    } else {
+                        final String className = "com.pitchedapps.material.glass.utilities.CmThemeEngineLauncher";
+                        Class<?> cl = null;
                         try {
-                            constructor = cl.getConstructor(Context.class);
-                        } catch (NoSuchMethodException e) {
-                            Log.e("LAUNCHER CLASS CONS",
-                                    "Launcher class for: '" + className + "' is missing a constructor!");
+                            cl = Class.forName(className);
+                        } catch (ClassNotFoundException e) {
+                            Log.e("LAUNCHER CLASS MISSING", "Launcher class for: '" + className + "' missing!");
                         }
-                        try {
-                            if (constructor != null)
-                                constructor.newInstance(getActivity());
-                        } catch (Exception e) {
-                            e.printStackTrace();
+                        if (cl != null) {
+                            Constructor<?> constructor = null;
+                            try {
+                                constructor = cl.getConstructor(Context.class);
+                            } catch (NoSuchMethodException e) {
+                                Log.e("LAUNCHER CLASS CONS",
+                                        "Launcher class for: '" + className + "' is missing a constructor!");
+                            }
+                            try {
+                                if (constructor != null)
+                                    constructor.newInstance(getActivity());
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
                         }
-                    }
 
+                    }
                 }
-            }
 
 
-        });
+            });
+        } else {
+            fab.setVisibility(View.GONE);
+        }
 
         return root;
     }
