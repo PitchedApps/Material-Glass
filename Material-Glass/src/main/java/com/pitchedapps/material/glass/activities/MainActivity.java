@@ -223,6 +223,13 @@ public class MainActivity extends AppCompatActivity {
                 if (inventory != null) {
                     Log.d(TAG, "IAP inventory exists");
 
+                    Log.d(TAG, "Donations 1 is " + inventory.hasPurchase("glass.donation.1"));
+                    Log.d(TAG, "Donations 2 is " + inventory.hasPurchase("glass.donation.2"));
+                    Log.d(TAG, "Donations 3 is " + inventory.hasPurchase("glass.donation.3"));
+                    Log.d(TAG, "Donations 5 is " + inventory.hasPurchase("glass.donation.5"));
+                    Log.d(TAG, "Donations 10 is " + inventory.hasPurchase("glass.donation.10"));
+                    Log.d(TAG, "Donations 20 is " + inventory.hasPurchase("glass.donation.20"));
+
                     if (inventory.hasPurchase("glass.donation.1") ||
                             inventory.hasPurchase("glass.donation.2") ||
                             inventory.hasPurchase("glass.donation.3") ||
