@@ -46,6 +46,12 @@
         <item></item>
     </string-array>
 
+    <string-array name="v33">
+        <item>v1.0.7</item>
+        <item>App: tests for donations</item>
+        <item>App: FAB will not appear unless supported (you can always apply via the actual theme chooser)</item>
+    </string-array>
+
     <string-array name="v32">
         <item>v1.0.6</item>
         <item>App: fixed icon previews</item>
