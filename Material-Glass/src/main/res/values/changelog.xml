@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="fullchangelog">
+        <item>@array/v33</item>
         <item>@array/v32</item>
         <item>@array/v31</item>
         <item>@array/v30</item>
@@ -47,7 +48,7 @@
     </string-array>
 
     <string-array name="v33">
-        <item>v1.0.7</item>
+        <item>v1.1.0</item>
         <item>App: tests for donations</item>
         <item>App: FAB will not appear unless supported (you can always apply via the actual theme chooser)</item>
     </string-array>

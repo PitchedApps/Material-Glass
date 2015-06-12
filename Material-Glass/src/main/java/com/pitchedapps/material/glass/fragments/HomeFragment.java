@@ -46,9 +46,13 @@ public class HomeFragment extends Fragment {
         ObservableScrollView content = (ObservableScrollView) root.findViewById(R.id.HomeContent);
 
         //Cards
+        CardView cardone = (CardView) root.findViewById(R.id.cardOne);
         CardView cardthree = (CardView) root.findViewById(R.id.cardThree);
         CardView cardfour = (CardView) root.findViewById(R.id.cardFour);
 
+        if (((MainActivity)getActivity()).mIsPremium) {
+            cardone.setVisibility((cardthree.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
+        }
         if (AppIsInstalled(AppThreePackage)) {
             cardthree.setVisibility((cardthree.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
         }
@@ -183,5 +187,7 @@ public class HomeFragment extends Fragment {
         }
         return installed;
     }
+
+
 
 }
