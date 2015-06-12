@@ -4,7 +4,7 @@
     android:color="@color/floating_action_button_touch_tint">
     <item android:id="@android:id/mask">
         <shape android:shape="oval">
-            <solid android:color="@*common:fab" />
+            <solid android:color="@*common:color/fab" />
         </shape>
     </item>
     <item android:drawable="@drawable/fab_accent"/>

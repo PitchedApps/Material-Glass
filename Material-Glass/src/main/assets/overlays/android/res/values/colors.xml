@@ -96,8 +96,6 @@
     <color name="notification_media_secondary_color">@color/textt</color>
     <color name="notification_action_color_filter">@color/textt</color>
 
-    <color name="aaa">#ffff00ff</color>
-    <color name="bbb">#ff00ffff</color>
     <color name="black_t">#90000000</color>
     <color name="background">#ff000000</color>
     <color name="backgroundd">#ff161616</color>

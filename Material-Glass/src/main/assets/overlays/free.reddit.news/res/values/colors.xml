@@ -66,8 +66,6 @@
     <color name="blue_grey_800">@color/background</color>
     <color name="blue_grey_900">@color/backgroundx</color>
 
-    <color name="aaa">#ffff00ff</color>
-    <color name="bbb">#ff00ffff</color>
     <color name="text">#ffffffff</color>
     <color name="textt">#ccffffff</color>
     <color name="texttt">#99ffffff</color>
