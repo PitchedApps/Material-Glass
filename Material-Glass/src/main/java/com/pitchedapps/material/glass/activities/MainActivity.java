@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private static final boolean WITH_LICENSE_CHECKER = false;
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
     public boolean mIsPremium = false;
-    private static final String TAG = "MGlass: ";
+    private static final String TAG = "M_Glass: ";
     IabHelper mHelper;
     /**
      * Google
