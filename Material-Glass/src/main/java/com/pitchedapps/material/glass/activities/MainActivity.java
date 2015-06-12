@@ -50,13 +50,13 @@ public class MainActivity extends AppCompatActivity {
 
     private static final boolean WITH_LICENSE_CHECKER = false;
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
-    private boolean mIsPremium = false;
+    public boolean mIsPremium = false;
     private static final String TAG = "MGlass: ";
     IabHelper mHelper;
     /**
      * Google
      */
-    private static final String GOOGLE_PUBKEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg8bTVFK5zIg4FGYkHKKQ/j/iGZQlXU0qkAv2BA6epOX1ihbMz78iD4SmViJlECHN8bKMHxouRNd9pkmQKxwEBHg5/xDC/PHmSCXFx/gcY/xa4etA1CSfXjcsS9i94n+j0gGYUg69rNkp+p/09nO9sgfRTAQppTxtgKaXwpfKe1A8oqmDUfOnPzsEAG6ogQL6Svo6ynYLVKIvRPPhXkq+fp6sJ5YVT5Hr356yCXlM++G56Pk8Z+tPzNjjvGSSs/MsYtgFaqhPCsnKhb55xHkc8GJ9haq8k3PSqwMSeJHnGiDq5lzdmsjdmGkWdQq2jIhKlhMZMm5VQWn0T59+xjjIIwIDAQAB";
+    private static final String GOOGLE_PUBKEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzw5avemZxxO/DYaMJOayfZIrUKSyVMaBk+oVgwXeIpciMmfLFtn4r94hwh0XIxLYkYcpxGW/c1GwE2LJiWEasVL3QLtsS664ETqLE1zdBMpuuaUre85K4YQGSS5Q8p8HtrIas52mikTk38o7FvGGRtypDGjLHciWYFKgJXweoLXF2tWKDtus8K/UOW6zlXYyetXq8qcl5vhFq9kmpD+R4Dk7hwAoGDqafcpF52uFcNMUNDn6YVdV000fN0EHR9D+P1+Oro1UG6P77k1tk8E3AboLu1f7m6GFIJJlHO1BAQVxR55OelGgC/l355RWLGB1RKR/fbQblpCHd6NLOd5AswIDAQAB/j/iGZQlXU0qkAv2BA6epOX1ihbMz78iD4SmViJlECHN8bKMHxouRNd9pkmQKxwEBHg5/xDC/PHmSCXFx/gcY/xa4etA1CSfXjcsS9i94n+j0gGYUg69rNkp+p/09nO9sgfRTAQppTxtgKaXwpfKe1A8oqmDUfOnPzsEAG6ogQL6Svo6ynYLVKIvRPPhXkq+fp6sJ5YVT5Hr356yCXlM++G56Pk8Z+tPzNjjvGSSs/MsYtgFaqhPCsnKhb55xHkc8GJ9haq8k3PSqwMSeJHnGiDq5lzdmsjdmGkWdQq2jIhKlhMZMm5VQWn0T59+xjjIIwIDAQAB";
     private static final String[] GOOGLE_CATALOG_FREE = new String[]{"glass.donation.1",
             "glass.donation.2", "glass.donation.3", "glass.donation.5", "glass.donation.10",
             "glass.donation.20"};
