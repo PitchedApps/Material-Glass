@@ -393,4 +393,40 @@
     <item component="ComponentInfo{org.mozilla.firefox/org.mozilla.firefox.App}" drawable="firefox"/>
     <item component="ComponentInfo{org.transdroid.search/org.transdroid.search.gui.SettingsActivity}" drawable="torrent_search_by_transdroid"/>
     <item component="ComponentInfo{personal.jhjeong.app.battery/personal.jhjeong.app.battery.BatteryActivityS}" drawable="battery_info"/>
+<!--06/11/2015-->
+    <item component="ComponentInfo{com.drummerGames.px14/com.ansca.corona.CoronaActivity}" drawable="a_14px"/>
+    <item component="ComponentInfo{me.kiip.skeemo/me.kiip.skeemo.ui.MainActivity}" drawable="a_7x7"/>
+    <item component="ComponentInfo{com.aide.ui/com.aide.ui.MainActivity}" drawable="aide"/>
+    <item component="ComponentInfo{com.joaomgcd.autoappshub/com.joaomgcd.autoappshub.activity.ActivityMain}" drawable="autoapps"/>
+    <item component="ComponentInfo{com.joaomgcd.autoinput/com.joaomgcd.autoapps.ActivityLaunchApp}" drawable="autoinput"/>
+    <item component="ComponentInfo{com.joaomgcd.autoshortcut/com.joaomgcd.autoapps.ActivityLaunchApp}" drawable="autoshortcut"/>
+    <item component="ComponentInfo{com.joaomgcd.autovoice/com.joaomgcd.autoapps.ActivityLaunchApp}" drawable="autovoice"/>
+    <item component="ComponentInfo{com.joaomgcd.autowear/com.joaomgcd.autoapps.ActivityLaunchApp}" drawable="autowear"/>
+    <item component="ComponentInfo{com.frogmind.badland/com.frogmind.badland.Badland}" drawable="badland"/>
+    <item component="ComponentInfo{com.saibotd.bitbeaker/com.saibotd.bitbeaker.activities.LoginActivity}" drawable="bitbeaker"/>
+    <item component="ComponentInfo{com.google.android.apps.blogger/com.google.android.apps.blogger.SignInActivity}" drawable="blogger"/>
+    <item component="ComponentInfo{com.box.android/com.box.android.activities.login.SplashScreenActivity}" drawable="box"/>
+    <item component="ComponentInfo{stericson.busybox/stericson.busybox.Activity.MainActivity}" drawable="busybox_free"/>
+    <item component="ComponentInfo{com.google.samples.apps.cardboarddemo/com.google.vr.cardboard.paperscope.carton.Home2D}" drawable="cardboard"/>
+    <item component="ComponentInfo{com.chrome.beta/com.google.android.apps.chrome.Main}" drawable="chrome_beta"/>
+    <item component="ComponentInfo{com.google.android.deskclock/com.android.deskclock.DeskClock}" drawable="clock"/>
+    <item component="ComponentInfo{org.coursera.android/org.coursera.android.MainActivity}" drawable="coursera"/>
+    <item component="ComponentInfo{flar2.elementalxkernel/flar2.elementalxkernel.StartActivity}" drawable="elementalx_kernel"/>
+    <item component="ComponentInfo{com.evernote/com.evernote.ui.HomeActivity}" drawable="evernote"/>
+    <item component="ComponentInfo{org.fdroid.fdroid/org.fdroid.fdroid.FDroid}" drawable="fdroid"/>
+    <item component="ComponentInfo{com.coffeestainstudios.goatsimulator/com.coffeestainstudios.goatsimulator.UE3JavaApp}" drawable="goat_simulator"/>
+    <item component="ComponentInfo{com.google.android.apps.unveil/com.google.android.apps.unveil.CaptureActivity}" drawable="goggles"/>
+    <item component="ComponentInfo{com.google.android.contacts/com.android.contacts.activities.PeopleActivity}" drawable="google_contacts"/>
+    <item component="ComponentInfo{com.google.android.dialer/com.google.android.dialer.extensions.GoogleDialtactsActivity}" drawable="google_dialer"/>
+    <item component="ComponentInfo{com.google.samples.apps.iosched/com.google.samples.apps.iosched.explore.ExploreIOActivity}" drawable="google_io_2015"/>
+    <item component="ComponentInfo{com.fingersoft.hillclimb/com.fingersoft.game.MainActivity}" drawable="hill_climb_racing"/>
+    <item component="ComponentInfo{com.hound.android.app/com.hound.android.appcommon.activity.ActivityLauncher}" drawable="hound"/>
+    <item component="ComponentInfo{com.nianticproject.ingress/com.nianticproject.ingress.NemesisActivity}" drawable="ingress"/>
+    <item component="ComponentInfo{com.ustwo.monumentvalley/com.ustwo.deviceutil.MainActivity}" drawable="monument_valley"/>
+    <item component="ComponentInfo{com.google.android.maps.mytracks/com.google.android.apps.mytracks.TrackListActivity}" drawable="my_tracks"/>
+    <item component="ComponentInfo{com.melodis.midomiMusicIdentifier.freemium/com.soundhound.android.appcommon.activity.SplashScreenActivity}" drawable="soundhound"/>
+    <item component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivity}" drawable="spotify"/>
+    <item component="ComponentInfo{com.speedsoftware.sqleditor/com.speedsoftware.sqleditor.SQLiteEditor}" drawable="sqlite_editor"/>
+    <item component="ComponentInfo{com.uzumapps.wakelockdetector/com.uzumapps.wakelockdetector.activity.IntroActivity}" drawable="wakelock_detector"/>
+
 </resources>

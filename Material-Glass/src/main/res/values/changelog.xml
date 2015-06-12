@@ -49,8 +49,16 @@
 
     <string-array name="v33">
         <item>v1.1.0</item>
-        <item>App: tests for donations</item>
+        <item>App: finally fixed donations, donating once will unlock a secret feature</item>
         <item>App: FAB will not appear unless supported (you can always apply via the actual theme chooser)</item>
+        <item>App: cleaned up manifest and other parts</item>
+        <item>Settings: added STweaks icon</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 
     <string-array name="v32">

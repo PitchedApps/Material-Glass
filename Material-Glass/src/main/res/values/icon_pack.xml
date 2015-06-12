@@ -4,9 +4,12 @@
    <string-array name="google">
        <item>android_wear</item>
        <item>authenticator</item>
+       <item>blogger</item>
        <item>calendar</item>
        <item>camera</item>
+       <item>cardboard</item>
        <item>chrome</item>
+       <item>chrome_beta</item>
        <item>chrome_cast</item>
        <item>device_manager</item>
        <item>device_policy</item>
@@ -15,7 +18,11 @@
        <item>earth</item>
        <item>fit</item>
        <item>gmail</item>
+       <item>goggles</item>
        <item>google</item>
+       <item>google_contacts</item>
+       <item>google_dialer</item>
+       <item>google_io_2015</item>
        <item>google_japanese_input</item>
        <item>google_keyboard</item>
        <item>google_now_launcher</item>
@@ -27,6 +34,7 @@
        <item>keep</item>
        <item>maps</item>
        <item>messenger</item>
+       <item>my_tracks</item>
        <item>photos</item>
        <item>play_books</item>
        <item>play_games</item>
@@ -71,21 +79,32 @@
    <string-array name="user">
        <item>a1weather</item>
        <item>a_1010</item>
+       <item>a_14px</item>
+       <item>a_7x7</item>
        <item>action_chinese_chess__co_tuong</item>
        <item>adaway</item>
        <item>adobe_reader</item>
+       <item>aide</item>
        <item>airdroid</item>
        <item>all_cast</item>
        <item>amazon_shopping</item>
        <item>app_redirect</item>
        <item>appmonger</item>
+       <item>autoapps</item>
+       <item>autoinput</item>
+       <item>autoshortcut</item>
+       <item>autovoice</item>
+       <item>autowear</item>
+       <item>badland</item>
        <item>barcode_scanner</item>
        <item>barcode_scanner2</item>
        <item>battery_info</item>
        <item>beautiful_widgets</item>
        <item>big_oven</item>
        <item>bitbeaker</item>
+       <item>box</item>
        <item>browser_2</item>
+       <item>busybox_free</item>
        <item>capital_one</item>
        <item>catlog</item>
        <item>checkersfree</item>
@@ -94,6 +113,7 @@
        <item>cm_security</item>
        <item>colornote</item>
        <item>copy</item>
+       <item>coursera</item>
        <item>digital_clock_xperia</item>
        <item>dolphin</item>
        <item>dropbox</item>
@@ -101,11 +121,14 @@
        <item>dropsync_pro_key</item>
        <item>dumpster</item>
        <item>duolingo</item>
+       <item>elementalx_kernel</item>
        <item>email2</item>
        <item>english</item>
        <item>event_flow_widget</item>
+       <item>evernote</item>
        <item>evolve_sms</item>
        <item>facebook</item>
+       <item>fdroid</item>
        <item>fing</item>
        <item>firefox</item>
        <item>firefox_beta</item>
@@ -115,13 +138,17 @@
        <item>fx</item>
        <item>fxtextedit</item>
        <item>gmd_gestures</item>
+       <item>goat_simulator</item>
        <item>google_developer_console</item>
        <item>gps_status</item>
        <item>greenify</item>
+       <item>hill_climb_racing</item>
+       <item>hound</item>
        <item>hsw</item>
        <item>ice_rage_hockey_free</item>
        <item>icon_filter_designer</item>
        <item>inbrowser</item>
+       <item>ingress</item>
        <item>instagram</item>
        <item>k9mail</item>
        <item>kernel_adiutor</item>
@@ -136,6 +163,7 @@
        <item>messenger_fb</item>
        <item>mobile_print</item>
        <item>modernhub</item>
+       <item>monument_valley</item>
        <item>moscrop_secondary</item>
        <item>multirom_manager</item>
        <item>mx_player</item>
@@ -169,8 +197,11 @@
        <item>skype</item>
        <item>sms_backup_restore_pro</item>
        <item>snapchat</item>
+       <item>soundhound</item>
        <item>speed_test</item>
+       <item>spotify</item>
        <item>spring_ninja</item>
+       <item>sqlite_editor</item>
        <item>steam</item>
        <item>swiftkey_keyboard</item>
        <item>swype__dragon</item>
@@ -195,6 +226,7 @@
        <item>ue_mini_boom</item>
        <item>utorrent</item>
        <item>viki</item>
+       <item>wakelock_detector</item>
        <item>wallpaper_saver</item>
        <item>wechat</item>
        <item>whatsapp</item>
@@ -221,10 +253,13 @@
    <string-array name="icon_pack" translatable="true">
        <item>a1weather</item>
        <item>a_1010</item>
+       <item>a_14px</item>
+       <item>a_7x7</item>
        <item>action_chinese_chess__co_tuong</item>
        <item>activity_force_new_task</item>
        <item>adaway</item>
        <item>adobe_reader</item>
+       <item>aide</item>
        <item>airdroid</item>
        <item>all_cast</item>
        <item>amazon_shopping</item>
@@ -235,24 +270,35 @@
        <item>audio_fx</item>
        <item>audio_fx2</item>
        <item>authenticator</item>
+       <item>autoapps</item>
+       <item>autoinput</item>
+       <item>autoshortcut</item>
+       <item>autovoice</item>
+       <item>autowear</item>
+       <item>badland</item>
        <item>barcode_scanner</item>
        <item>barcode_scanner2</item>
        <item>battery_info</item>
        <item>beautiful_widgets</item>
        <item>big_oven</item>
        <item>bitbeaker</item>
+       <item>blogger</item>
        <item>boot_manager</item>
+       <item>box</item>
        <item>browser</item>
        <item>browser_2</item>
+       <item>busybox_free</item>
        <item>calculator</item>
        <item>calendar</item>
        <item>camera</item>
        <item>camera2</item>
        <item>capital_one</item>
+       <item>cardboard</item>
        <item>catlog</item>
        <item>checkersfree</item>
        <item>chessfree</item>
        <item>chrome</item>
+       <item>chrome_beta</item>
        <item>chrome_cast</item>
        <item>clock</item>
        <item>cm_browser</item>
@@ -260,6 +306,7 @@
        <item>colornote</item>
        <item>contacts</item>
        <item>copy</item>
+       <item>coursera</item>
        <item>custom_share</item>
        <item>defimdonator</item>
        <item>device_manager</item>
@@ -276,12 +323,15 @@
        <item>dumpster</item>
        <item>duolingo</item>
        <item>earth</item>
+       <item>elementalx_kernel</item>
        <item>email</item>
        <item>email2</item>
        <item>english</item>
        <item>event_flow_widget</item>
+       <item>evernote</item>
        <item>evolve_sms</item>
        <item>facebook</item>
+       <item>fdroid</item>
        <item>file_manager</item>
        <item>fing</item>
        <item>firefox</item>
@@ -296,8 +346,13 @@
        <item>gallery2</item>
        <item>gmail</item>
        <item>gmd_gestures</item>
+       <item>goat_simulator</item>
+       <item>goggles</item>
        <item>google</item>
+       <item>google_contacts</item>
        <item>google_developer_console</item>
+       <item>google_dialer</item>
+       <item>google_io_2015</item>
        <item>google_japanese_input</item>
        <item>google_keyboard</item>
        <item>google_now_launcher</item>
@@ -307,11 +362,14 @@
        <item>greenify</item>
        <item>hangouts</item>
        <item>hangouts_dialer</item>
+       <item>hill_climb_racing</item>
+       <item>hound</item>
        <item>hsw</item>
        <item>ice_rage_hockey_free</item>
        <item>icon_filter_designer</item>
        <item>inbox</item>
        <item>inbrowser</item>
+       <item>ingress</item>
        <item>instagram</item>
        <item>k9mail</item>
        <item>keep</item>
@@ -330,11 +388,13 @@
        <item>messenger_fb</item>
        <item>mobile_print</item>
        <item>modernhub</item>
+       <item>monument_valley</item>
        <item>moscrop_secondary</item>
        <item>multirom_manager</item>
        <item>music</item>
        <item>mx_player</item>
        <item>mx_player_pro</item>
+       <item>my_tracks</item>
        <item>native_clip_board</item>
        <item>netflix</item>
        <item>new_egg</item>
@@ -382,8 +442,11 @@
        <item>snap_prefs</item>
        <item>snapchat</item>
        <item>sound_recorder</item>
+       <item>soundhound</item>
        <item>speed_test</item>
+       <item>spotify</item>
        <item>spring_ninja</item>
+       <item>sqlite_editor</item>
        <item>steam</item>
        <item>supersu</item>
        <item>swiftkey_keyboard</item>
@@ -414,6 +477,7 @@
        <item>viki</item>
        <item>voice</item>
        <item>voice_dialer</item>
+       <item>wakelock_detector</item>
        <item>wallet</item>
        <item>wallpaper_saver</item>
        <item>wechat</item>
