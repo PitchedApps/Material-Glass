@@ -4,82 +4,7 @@
     <color name="bind__active_gray">#44ffffff</color>
     <color name="bind__remove_bar_background">@color/bind__default_background</color>
     <color name="wallet_im_credit_card_invalid_text_color">#ffff0000</color>
-    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
-    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
-    <color name="common_signin_btn_dark_text_disabled">@color/texttt</color>
-    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
-    <color name="common_signin_btn_light_text_default">#ff737373</color>
-    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
-    <color name="common_signin_btn_light_text_disabled">@color/texttt</color>
-    <color name="common_signin_btn_light_text_focused">@color/text</color>
-    <color name="common_signin_btn_default_background">@color/background</color>
-    <color name="common_action_bar_splitter">#22ffffff</color>
-    <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
-    <color name="wallet_dim_foreground_holo_dark">#ffbebebe</color>
-    <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
-    <color name="wallet_dim_foreground_inverse_holo_dark">#ff323232</color>
-    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
-    <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
-    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
-    <color name="wallet_hint_foreground_holo_light">#ff808080</color>
-    <color name="wallet_hint_foreground_holo_dark">#ff808080</color>
-    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
-    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
-    <color name="wallet_holo_blue_light">@color/text</color>
-    <color name="wallet_link_text_light">@color/textt</color>
-    <color name="abc_search_url_text_normal">@color/text</color>
-    <color name="abc_search_url_text_selected">@android:color/white</color>
-    <color name="abc_search_url_text_pressed">@android:color/white</color>
-    <color name="abc_input_method_navigation_guard">@android:color/white</color>
-    <color name="background_material_dark">@color/backgrounddt</color>
-    <color name="background_material_light">@color/backgrounddt</color>
-    <color name="background_floating_material_dark">#cc111111</color>
-    <color name="background_floating_material_light">#cc111111</color>
-    <color name="primary_material_dark">@color/backgroundx</color>
-    <color name="primary_material_light">@color/backgroundx</color>
-    <color name="primary_dark_material_dark">#ff000000</color>
-    <color name="primary_dark_material_light">#ff000000</color>
-    <color name="ripple_material_dark">#40ffffff</color>
-    <color name="ripple_material_light">#40ffffff</color>
-    <color name="accent_material_light">@color/text</color>
-    <color name="accent_material_dark">@color/text</color>
-    <color name="button_material_dark">#33333333</color>
-    <color name="button_material_light">#33333333</color>
-    <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
-    <color name="switch_thumb_normal_material_light">#ffbdbdbd</color>
-    <color name="bright_foreground_material_dark">@android:color/white</color>
-    <color name="bright_foreground_material_light">@android:color/white</color>
-    <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
-    <color name="bright_foreground_disabled_material_light">#80ffffff</color>
-    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light
-    </color>
-    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark
-    </color>
-    <color name="dim_foreground_material_dark">#ffbebebe</color>
-    <color name="dim_foreground_material_light">#ffbebebe</color>
-    <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
-    <color name="dim_foreground_disabled_material_light">#80bebebe</color>
-    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark
-    </color>
-    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light
-    </color>
-    <color name="highlighted_text_material_dark">#66666666</color>
-    <color name="highlighted_text_material_light">#66666666</color>
-    <color name="link_text_material_dark">@color/textt</color>
-    <color name="link_text_material_light">@color/textt</color>
-    <color name="primary_text_default_material_light">#ffffffff</color>
-    <color name="secondary_text_default_material_light">#b3ffffff</color>
-    <color name="primary_text_default_material_dark">#ffffffff</color>
-    <color name="secondary_text_default_material_dark">#b3ffffff</color>
-    <color name="primary_text_disabled_material_light">#39ffffff</color>
-    <color name="secondary_text_disabled_material_light">#24ffffff</color>
-    <color name="primary_text_disabled_material_dark">#4dffffff</color>
-    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
-    <color name="material_deep_teal_200">@color/text</color>
-    <color name="material_deep_teal_500">@color/textt</color>
-    <color name="material_blue_grey_800">@color/background</color>
-    <color name="material_blue_grey_900">@color/background</color>
-    <color name="material_blue_grey_950">@color/background</color>
+
     <!--### buggy-->
     <color name="play_white">@color/backgroundd</color>
     <color name="play_white_half_transparent">#32ffffff</color>
@@ -126,26 +51,25 @@
     <color name="play_music_light">#a2ffb74d</color>
     <color name="play_newsstand_light">#a2304ffe</color>
     <color name="play_multi_light">#a290a4ae</color>
-    <color name="play_dismissed_overlay">#d0eeeeee</color>
     <color name="play_ripple_light">#20ffffff</color>
     <color name="play_ripple_dark">#20ffffff</color>
     <color name="play_action_button_pressed_grey">#80f0f0f0</color>
     <color name="play_drawer_profile_overlay_shade">#38000000</color>
     <color name="play_drawer_separator">#22ffffff</color>
-    <color name="play_avatar_outline">#33000000</color>
+    <color name="play_avatar_outline">#33ffffff</color>
     <color name="play_avatar_pressed_fill">@color/play_transparent</color>
-    <color name="play_avatar_pressed_outline">#ff33b5e5</color>
-    <color name="play_avatar_focused_outline">#8033b5e5</color>
+    <color name="play_avatar_pressed_outline">#ffffffff</color>
+    <color name="play_avatar_focused_outline">#80ffffff</color>
     <color name="play_default_download_arc_color_offline">#ff999999</color>
     <color name="play_header_list_tab_underline_color">#ffffffff</color>
     <color name="play_header_list_tab_pressed_bg_color">#40cccccc</color>
-    <color name="play_header_list_tab_ripple_color">@color/ripple_material_dark</color>
+    <color name="play_header_list_tab_ripple_color">@*common:color/ripple</color>
     <color name="play_header_list_banner_text_color">#ffffffff</color>
     <color name="play_header_list_banner_background_color">@color/backgroundt</color>
     <color name="play_card_light_background">#11000000</color>
     <color name="play_card_dark_background">#11000000</color>
-    <color name="play_card_shadow_start_color">#09ffffff</color>
-    <color name="play_card_shadow_end_color">#09ffffff</color>
+    <color name="play_card_shadow_start_color">#03000000</color>
+    <color name="play_card_shadow_end_color">#00000000</color>
     <color name="play_search_plate_hint_text_color">#ffbdbdbd</color>
     <!--###-->
     <color name="play_search_plate_navigation_button_color">#ffeeeeee</color>
@@ -164,7 +88,8 @@
     <color name="play_onboard_accent_color_d">#ff3367d6</color>
     <color name="details_review_source_text">#ff3f9fe0</color>
     <color name="white">@color/backgroundt</color>
-    <color name="black">@color/text</color>
+    <!--changed 06/14/2015-->
+    <color name="black">@color/backgroundt</color>
     <color name="black_overlay">#80000000</color>
     <color name="grey">#ff999999</color>
     <color name="red">#ffff0000</color>
@@ -229,10 +154,18 @@
     <color name="setup_wizard_color_secondary_dark">#ff8e8e8e</color>
     <color name="setup_wizard_color_secondary_light">#ff8e8e8e</color>
     <color name="action_bar_menu_color">#b0ffffff</color>
-    <color name="suggest_card_bg">#11ffffff</color>
+    <color name="suggest_card_bg">#11000000</color>
     <color name="person_follow_blue">#ff4285f4</color>
     <color name="person_follow_green">#ff56a843</color>
     <color name="my_account_action_fg">@color/text</color>
+
+    <!--06/14/2015-->
+    <color name="play_content_filter_toolbar_background">@color/background</color>
+    <color name="play_content_filter_top_info_title">@color/text</color>
+    <color name="play_dismissed_overlay">@color/background</color>
+    <color name="play_download_arc_background_color_download">#ffbbbbbb</color>
+    <color name="play_download_arc_background_color_press">#ff000000</color>
+
 
     <color name="background">#88000000</color>
     <color name="backgroundd">#88161616</color>
