@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="fullchangelog">
+        <item>@array/v34</item>
         <item>@array/v33</item>
         <item>@array/v32</item>
         <item>@array/v31</item>
@@ -42,6 +43,15 @@
         <item>v</item>
         <item></item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v34">
+        <item>v1.1.1</item>
+        <item>Play Store: updated for v5.6.8</item>
+        <item>App: removed dependency for balysv ripples</item>
         <item></item>
         <item></item>
         <item></item>

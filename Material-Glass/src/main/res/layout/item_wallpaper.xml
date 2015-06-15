@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?android:selectableItemBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="4dp">
-
+    android:padding="@dimen/walls_margin">
+<!--TODO fix ripple boundary-->
     <ProgressBar
         android:id="@+id/progress"
         style="?progressBarStyle"
@@ -14,18 +14,6 @@
         android:layout_gravity="center"
         android:layout_marginBottom="24dp" />
 
-    <com.balysv.materialripple.MaterialRippleLayout
-        android:id="@+id/walls_ripple"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:mrl_rippleAlpha="0.4"
-        app:mrl_rippleColor="@color/semitransparent_white"
-        app:mrl_rippleDelayClick="false"
-        app:mrl_rippleDuration="100"
-        app:mrl_rippleHover="true"
-        app:mrl_rippleInAdapter="true"
-        app:mrl_rippleOverlay="true">
-
         <com.pitchedapps.material.glass.views.SquareImageView
             android:id="@+id/wall"
             android:layout_width="match_parent"
@@ -33,8 +21,6 @@
             android:scaleType="centerCrop"
             android:transitionName="image"
             tools:ignore="ContentDescription,UnusedAttribute" />
-
-    </com.balysv.materialripple.MaterialRippleLayout>
 
     <LinearLayout
         android:id="@+id/titlebg"

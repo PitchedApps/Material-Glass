@@ -123,15 +123,12 @@ public class WallsGridAdapter extends BaseAdapter {
         final TextView name;
         final ProgressBar progressBar;
         final LinearLayout titleBg;
-        final MaterialRippleLayout content;
 
-        //TODO use lollipop ripples rather than library
         WallsHolder(View v) {
             wall = (ImageView) v.findViewById(R.id.wall);
             name = (TextView) v.findViewById(R.id.name);
             progressBar = (ProgressBar) v.findViewById(R.id.progress);
             titleBg = (LinearLayout) v.findViewById(R.id.titlebg);
-            content = (MaterialRippleLayout) v.findViewById(R.id.walls_ripple);
         }
     }
 }
