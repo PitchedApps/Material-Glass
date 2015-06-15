@@ -16,7 +16,6 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.balysv.materialripple.MaterialRippleLayout;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.fragments.WallpapersFragment;
 import com.pitchedapps.material.glass.utilities.PaletteTransformation;
