@@ -52,12 +52,10 @@
     </string-array>
 
     <string-array name="v34">
-        <item>v1.1.1</item>
+        <item>v2.0.0</item>
         <item>Play Store: updated for v5.6.8</item>
         <item>App: removed dependency for balysv ripples</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>LAYERS SUPPORT - get the new layers manager and check it out!</item>
     </string-array>
 
     <string-array name="v33">
