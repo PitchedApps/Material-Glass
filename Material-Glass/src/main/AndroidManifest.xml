@@ -42,6 +42,23 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/theme_name"
         android:theme="@style/AppTheme">
+        <!--layers-->
+
+        <service android:name=".Overlay"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.layers.plugins.PICK_OVERLAYS" />
+                <category android:name="Overlay" />
+            </intent-filter>
+
+        </service>
+
+        <meta-data android:name="Layers_Name" android:value="Material Glass"/>
+        <meta-data android:name="Layers_Developer" android:value="Pitched Apps"/>
+        <meta-data android:name="Layers_Colors" android:value=""/>
+        <meta-data android:name="Layers_Description" android:value="test"/>
+        <meta-data android:name="Layers_OverlayNames" android:value="@string/layers_apps"/>
+        <meta-data android:name="Layers_WhatsNew" android:value="Everything"/>
         <!-- MainActivity -->
         <activity
             android:name=".HomeActivity"
@@ -109,24 +126,6 @@
             android:label="@string/muzei_settings"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
-
-        <!--layers-->
-
-        <service android:name=".Overlay"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.layers.plugins.PICK_OVERLAYS" />
-                <category android:name="Overlay" />
-            </intent-filter>
-
-        </service>
-
-        <meta-data android:name="Layers_Name" android:value="@string/app_name"/>
-        <meta-data android:name="Layers_Developer" android:value="Pitched Apps"/>
-        <meta-data android:name="Layers_Colors" android:value=""/>
-        <meta-data android:name="Layers_Description" android:value="@string/welcome_title"/>
-        <meta-data android:name="Layers_OverlayNames" android:value="@string/layers_apps"/>
-        <meta-data android:name="Layers_WhatsNew" android:value="@string/layers_new"/>
     </application>
 
 </manifest>
