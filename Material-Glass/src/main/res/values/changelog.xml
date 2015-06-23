@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="layers_apps">" ,aframework, asystemui, asettings, ainstaller"</string>
+    <string name="layers_new">See in app changelog</string>
+
     <string-array name="fullchangelog">
         <item>@array/v34</item>
         <item>@array/v33</item>
