@@ -5,6 +5,7 @@
     <string-array name="fullchangelog">
         <item>@array/note</item>
 
+        <item>@array/v35</item>
         <item>@array/v34</item>
         <item>@array/v33</item>
         <item>@array/v32</item>
@@ -42,6 +43,10 @@
         <item>@array/v0</item>
     </string-array>
 
+    <string-array name="note">
+        <item>Notice</item>
+        <item>As of June 24th, 2015, Material Glass has become the first app to support both CM themes and the layers plugin. Please note that this is largely a WIP, and that bugs may arise. Make sure you know how to remove a layer in case bootloops happen, as I only have one device to test!</item>
+    </string-array>
 
     <string-array name="v">
         <item>v</item>
@@ -52,10 +57,10 @@
         <item></item>
     </string-array>
 
-
-    <string-array name="note">
-        <item>Notice</item>
-        <item>As of June 24th, 2015, Material Glass has become the first app to support both CM themes and the layers plugin. Please note that this is largely a WIP, and that bugs may arise. Make sure you know how to remove a layer in case bootloops happen, as I only have one device to test!</item>
+    <string-array name="v35">
+        <item>v2.1.0</item>
+        <item>Layers: fixed naming so zip installs properly</item>
+        <item>Layers: updates to framework, settings, and systemui</item>
     </string-array>
 
     <string-array name="v34">
