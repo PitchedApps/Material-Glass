@@ -8,7 +8,7 @@
     <string name="theme_description">Pitched Apps is proud to present Material Glass, cm12\'s first and longest lasting theme!
         \nMade by 1 themer
         \nTweaked for 300+ hours
-        \nUsed by 19 000+ users</string>
+        \nUsed by 20 000+ users</string>
     <!-- Muzei Stuff -->
     <string name="artsource_name">@string/app_name</string>
     <string name="artsource_desc">Beautiful wallpapers for a beautiful theme</string>
@@ -160,5 +160,7 @@
     <string name="cm_not_installed">CyanogenMod theme engine is not found!</string>
 
     <string name="request_title">@string/section_five</string>
+
+    <string name="layers_new">See in app changelog</string>
 
 </resources>

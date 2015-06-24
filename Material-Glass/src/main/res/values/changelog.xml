@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">" ,aframework,asystemui,asettings,ainstaller"</string>
-    <string name="layers_new">See in app changelog</string>
+    <string name="layers_apps">"aframework,asystemui,asettings,ainstaller, "</string>
 
     <string-array name="fullchangelog">
+        <item>@array/note</item>
+
         <item>@array/v34</item>
         <item>@array/v33</item>
         <item>@array/v32</item>
@@ -49,6 +50,12 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+
+
+    <string-array name="note">
+        <item>Notice</item>
+        <item>As of June 24th, 2015, Material Glass has become the first app to support both CM themes and the layers plugin. Please note that this is largely a WIP, and that bugs may arise. Make sure you know how to remove a layer in case bootloops happen, as I only have one device to test!</item>
     </string-array>
 
     <string-array name="v34">
