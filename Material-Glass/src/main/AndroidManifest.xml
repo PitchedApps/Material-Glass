@@ -18,10 +18,6 @@
         android:name="org.cyanogenmod.theme"
         android:required="false" />
 
-    <!--<uses-sdk
-        android:minSdkVersion="21"
-        android:targetSdkVersion="21" />-->
-
     <meta-data
         android:name="org.cyanogenmod.theme.name"
         android:value="@string/theme_name" />
@@ -121,7 +117,7 @@
 
         </service>
 
-        <meta-data android:name="Layers_Name" android:value="@string/app_name"/>
+        <meta-data android:name="Layers_Name" android:value="Material Glass"/>
         <meta-data android:name="Layers_Developer" android:value="Pitched Apps"/>
         <meta-data android:name="Layers_Colors" android:value=""/>
         <meta-data android:name="Layers_Description" android:value="@string/welcome_title"/>
