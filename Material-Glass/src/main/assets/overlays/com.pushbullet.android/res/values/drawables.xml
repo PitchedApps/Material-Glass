@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="com_facebook_picker_default_separator_color">#22ffffff</item>
+</resources>

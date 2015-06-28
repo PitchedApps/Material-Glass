@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppBaseTheme" parent="@*common:style/Theme.AppCompat">
-        <item name="android:windowBackground">@color/background</item>
-        <item name="android:colorBackground">@color/background</item>
-        <item name="android:textColor">@color/text</item>
-    </style>
     <style name="AppTheme" parent="@style/AppBaseTheme">
         <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
     </style>
@@ -15,18 +10,6 @@
     <!--<style name="Theme.Photos.ActionBar.Inverse.Overflow" parent="@android:style/Widget.Material.ActionButton.Overflow" />-->
     <style name="StoriesEditTextTheme" parent="@android:style/Theme.Material.NoActionBar" />
 
-    <style name="Platform.AppCompat" parent="@android:style/Theme.Material">
-        <item name="buttonBarStyle">@android:style/ButtonBar</item>
-        <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
-        <item name="android:windowBackground">@color/background</item>
-        <item name="android:colorBackground">@color/background</item>
-        <item name="android:textColor">@color/text</item>
-    </style>
-    <style name="Platform.AppCompat.Light" parent="@*common:style/Theme.AppCompat">
-        <item name="android:windowBackground">@color/background</item>
-        <item name="android:colorBackground">@color/background</item>
-        <item name="android:textColor">@color/text</item>
-    </style>
     <style name="Theme.EmeraldSea.Dialog" parent="@style/Platform.AppCompat.Dialog" />
     <style name="Theme.EmeraldSea.Preference.Dialog" parent="@style/Platform.AppCompat.Dialog" />
     <style name="DateTimePickerButton" parent="@android:style/Widget.Material.Spinner">
@@ -71,14 +54,6 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">1.0dip</item>
     </style>
-
-
-    <style name="Base.Theme.AppCompat.Light" parent="@android:style/Theme.Material">
-        <item name="android:windowBackground">@color/background</item>
-        <item name="android:colorBackground">@color/background</item>
-        <item name="android:textColor">@color/text</item>
-    </style>
-
 
     <style name="Base.Widget.AppCompat.ActionButton" parent="">
         <item name="android:gravity">center</item>

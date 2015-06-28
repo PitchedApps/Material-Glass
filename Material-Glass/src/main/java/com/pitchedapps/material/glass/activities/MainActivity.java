@@ -100,14 +100,6 @@ public class MainActivity extends AppCompatActivity {
                 .emailPrecontent(getResources().getString(R.string.request_precontent))
                 .saveLocation(Environment.getExternalStorageDirectory().getAbsolutePath() + getResources().getString(R.string.request_save_location))
 //                .appfilterName(getResources().getString(R.string.request_appfilter))
-//                .compressFormat(PkRequestManager.PNG)
-//                .appendInformation(true)
-//                .createAppfilter(true)
-//                .createZip(true)
-                //TODO add filter
-//                .filterDefined(true)
-//                .byteBuffer(2048)
-//                .compressQuality(100)
                 .build());
 
         // Load apps ahead of time
@@ -191,7 +183,6 @@ public class MainActivity extends AppCompatActivity {
                 .withOnDrawerItemLongClickListener(new Drawer.OnDrawerItemLongClickListener() {
                     @Override
                     public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l, IDrawerItem iDrawerItem) {
-//check this
                         if (iDrawerItem instanceof Nameable) {
                             if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
                                 if (mIsPremium || !BuildConfig.DONATIONS_GOOGLE) {
@@ -292,7 +283,6 @@ public class MainActivity extends AppCompatActivity {
         } else if (title.equals(thaRequest)) {
             getSupportFragmentManager().beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                    //TODO fix error
                     .replace(R.id.main, Fragment.instantiate(MainActivity.this, "com.pkmmte.requestmanager.RequestFragment"))
                     .commit();
         } else {

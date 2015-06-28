@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="app_accent">@color/text</color>-->
+    <!--<color name="app_primary">@color/backgroundx</color>-->
+    <!--<color name="app_primary_dark">@color/backgroundx</color>-->
+
+    <!--<color name="bg_actionbar">@color/background</color>-->
+    <color name="bg_card">@color/card</color>
+    <color name="bg_card_container">@color/background</color>
+    <color name="bg_card_shadow">#03000000</color>
+    <color name="bg_widget">@color/background</color>
+    <color name="bg_window">@color/bbb</color>
+    <color name="black">#ff000000</color>
+    <color name="black10">#1a000000</color>
+    <color name="black15">#26000000</color>
+    <color name="black20">#33000000</color>
+    <color name="black60">#99000000</color>
+
+    <color name="cardview_dark_background">@color/card</color>
+    <color name="cardview_light_background">@color/card</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#05000000</color>
+
+    <color name="gray1">@color/background</color>
+    <color name="gray2">@color/textt</color>
+    <!--below are both text and background-->
+    <color name="gray3">@color/text</color>
+    <color name="gray4">#ff4ab367</color>
+
+    <color name="mid_green">#ff4ab367</color>
+
+    <color name="red">#ffe85845</color>
+
+    <!--<color name="slightly_darker_green">@color/backgrounddx</color>-->
+    <color name="state_activated">@color/cardd</color>
+    <color name="state_pressed">@color/cardd</color>
+
+    <!--<color name="teal">@color/text</color>-->
+    <color name="text_hint">@color/textt</color>
+    <color name="text_link">@color/text</color>
+    <color name="text_primary">@color/text</color>
+    <color name="text_secondary">@color/textt</color>
+    <color name="tint_divider">#22ffffff</color>
+    <color name="tint_solid_divider">#22ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">@color/card</color>
+    <color name="white40">#4d000000</color>
+    <color name="white60">#99000000</color>
+    <color name="white65">#a6000000</color>
+    <color name="white90">#e6000000</color>
+
+    <color name="aaa">#ffff00ff</color>
+    <color name="bbb">#ff00ffff</color>
+    <color name="text">#ffffffff</color>
+    <color name="textt">#ccffffff</color>
+    <color name="texttt">#99ffffff</color>
+    <color name="card">#30000000</color>
+    <color name="cardd">#30333333</color>
+    <color name="background">#88000000</color>
+    <color name="backgroundd">#88161616</color>
+    <color name="backgrounddd">#88323232</color>
+    <color name="backgroundx">#ff000000</color>
+    <color name="backgrounddx">#ff161616</color>
+    <color name="backgroundddx">#ff323232</color>
+</resources>

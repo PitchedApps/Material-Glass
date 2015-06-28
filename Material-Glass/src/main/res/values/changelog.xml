@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"aframework,asystemui,asettings,ainstaller, "</string>
+    <string name="layers_apps">"aframework,asystemui,asettings,alayers,acontacts,anavbar, "</string>
 
     <string-array name="fullchangelog">
         <item>@array/note</item>
 
+        <item>@array/v36</item>
         <item>@array/v35</item>
         <item>@array/v34</item>
         <item>@array/v33</item>
@@ -48,11 +49,11 @@
         <item>As of June 24th, 2015, Material Glass has become the first app to support both CM themes and the layers plugin. Please note that this is largely a WIP, and that bugs may arise. Make sure you know how to remove a layer in case bootloops happen, as I only have one device to test!</item>
     </string-array>
 
-    <string-array name="v">
-        <item>v</item>
-        <item></item>
-        <item></item>
-        <item></item>
+    <string-array name="v36">
+        <item>v2.1.1</item>
+        <item>Settings: support AOSIP icon and custom colors</item>
+        <item>New: themed pushbullet</item>
+        <item>Google +: tinted white backgrounds</item>
         <item></item>
         <item></item>
     </string-array>
@@ -60,7 +61,14 @@
     <string-array name="v35">
         <item>v2.1.0</item>
         <item>Layers: fixed naming so zip installs properly</item>
-        <item>Layers: updates to framework, settings, and systemui</item>
+        <item>Layers: added complete ripples to pre lollipop</item>
+        <item>Layers: slim support for settings</item>
+        <item>Layers: themed layers manager</item>
+        <item>Layers: themed more core styles and drawables</item>
+        <item>Layers: themed contacts</item>
+        <item>Layers: fixed up systemui</item>
+        <item>Layers: cataclysm support for settings</item>
+        <item>Layers: moved nav bar icons to separate layers (uninstall if you have your own custom ones)</item>
     </string-array>
 
     <string-array name="v34">

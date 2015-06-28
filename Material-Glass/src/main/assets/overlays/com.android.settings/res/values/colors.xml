@@ -96,4 +96,8 @@
     <color name="running_processes_system_ram">#ccffffff</color>
     <color name="running_processes_apps_ram">#99dddddd</color>
     <color name="running_processes_free_ram">#55bbbbbb</color>
+
+    <!-- DSLV colors -->
+    <color name="dslv_icon_dark">@color/text</color>
+    <color name="dslv_float_cackground_color">@color/background</color>
 </resources>
