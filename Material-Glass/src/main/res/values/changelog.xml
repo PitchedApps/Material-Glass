@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,Settings,NavBar,Layers,Contacts,GooglePlay,NovaLauncher,SoftReboot, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUi,Settings,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,NovaLauncher,HellsCoreUpdater,SoftReboot, "</string>
 
     <string-array name="fullchangelog">
         <item>@array/note</item>
 
+        <item>@array/v37</item>
         <item>@array/v36</item>
         <item>@array/v35</item>
         <item>@array/v34</item>
@@ -56,6 +57,15 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+
+    <string-array name="v37">
+        <item>v2.1.2</item>
+        <item>New: themed cellbroadcastreceiver for layers</item>
+        <item>New: themed hellscoreupdater for layers</item>
+        <item>Layers: fixed up heroimage (only for play store version)</item>
+        <item>Layers: actual screenshots</item>
+        <item>App: redid icon sets</item>
     </string-array>
 
     <string-array name="v36">
