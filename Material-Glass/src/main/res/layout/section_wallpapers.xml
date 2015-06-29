@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/wallitem"
-    tools:context="com.pitchedapps.material.glass.activities.MainActivity">
+    tools:context="com.pitchedapps.material.glass.free.activities.MainActivity">
 
     <ProgressBar
         android:id="@+id/progress"

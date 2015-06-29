@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="24dp" />
 
-        <com.pitchedapps.material.glass.views.SquareImageView
+        <com.pitchedapps.material.glass.free.views.SquareImageView
             android:id="@+id/wall"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pitchedapps.material.glass"
+    package="com.pitchedapps.material.glass.free"
     android:sharedUserId="android.uid.MGlass"
     android:process="com.android.Layers">
 
@@ -51,7 +51,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pitchedapps.material.glass.activities.MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.PICK" />
@@ -75,16 +75,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pitchedapps.material.glass.activities.DetailedWallpaperActivity"
+            android:name=".activities.DetailedWallpaperActivity"
             android:label="@string/title_activity_detailed_wallpaper"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.pitchedapps.material.glass.activities.DetailedWallpaperActivity" />
+                android:value=".activities.DetailedWallpaperActivity" />
         </activity>
 
         <service
-            android:name="com.pitchedapps.material.glass.muzei.ArtSource"
+            android:name=".muzei.ArtSource"
             android:description="@string/artsource_desc"
             android:icon="@drawable/ic_muzei_logo"
             android:label="@string/artsource_name">
@@ -97,10 +97,10 @@
                 android:value="@color/primary" />
             <meta-data
                 android:name="settingsActivity"
-                android:value="com.pitchedapps.material.glass.muzei.Settings" />
+                android:value="com.pitchedapps.material.glass.free.muzei.Settings" />
         </service>
         <activity
-            android:name="com.pitchedapps.material.glass.muzei.Settings"
+            android:name=".muzei.Settings"
             android:exported="true"
             android:label="@string/muzei_settings"
             android:theme="@style/AppTheme"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"aframework,asystemui,asettings,alayers,acontacts,anavbar, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUi,Settings,NavBar,Layers,Contacts,GooglePlay,NovaLauncher,SoftReboot, "</string>
 
     <string-array name="fullchangelog">
         <item>@array/note</item>
@@ -49,13 +49,23 @@
         <item>As of June 24th, 2015, Material Glass has become the first app to support both CM themes and the layers plugin. Please note that this is largely a WIP, and that bugs may arise. Make sure you know how to remove a layer in case bootloops happen, as I only have one device to test!</item>
     </string-array>
 
+    <string-array name="v">
+        <item>v</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <string-array name="v36">
         <item>v2.1.1</item>
         <item>Settings: support AOSIP icon and custom colors</item>
         <item>New: themed pushbullet</item>
         <item>Google +: tinted white backgrounds</item>
-        <item></item>
-        <item></item>
+        <item>New: themed google play store for layers</item>
+        <item>New: themed nova launcher for layers</item>
+        <item>App: renamed layers and categorized them in the plugin</item>
     </string-array>
 
     <string-array name="v35">

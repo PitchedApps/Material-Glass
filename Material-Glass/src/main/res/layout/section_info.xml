@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.pitchedapps.material.glass.activities.MainActivity">
+    tools:context="com.pitchedapps.material.glass.free.activities.MainActivity">
 
-    <com.pitchedapps.material.glass.views.SlidingTabLayout
+    <com.pitchedapps.material.glass.free.views.SlidingTabLayout
         android:id="@+id/info_tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
