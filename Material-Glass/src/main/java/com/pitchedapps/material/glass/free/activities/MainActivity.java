@@ -288,7 +288,7 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.main, Fragment.instantiate(MainActivity.this,
-                            "com.pitchedapps.material.glass.fragments." + fragment + "Fragment"))
+                            "com.pitchedapps.material.glass.free.fragments." + fragment + "Fragment"))
                     .commit();
         }
     }
