@@ -2,11 +2,6 @@
 <resources>
     <scale factor="0.65" />
     <!-- 40% eraser weight, 144x144 in 192x192, glow at 30, doubled -->
-    <!-- Material Glass -->
-    <!--<item component="ComponentInfo{com.pitchedapps.material.glass.free/com.pitchedapps.material.glass.HomeActivity}" drawable="material_glass"/>-->
-    <!-- Material Glass XDA -->
-    <!--<item component="ComponentInfo{com.pitchedapps.material.glass.xda/com.pitchedapps.material.glass.HomeActivity}" drawable="material_glass"/>-->
-
 
     <item component="ComponentInfo{org.adaway/org.adaway.ui.BaseActivity}" drawable="adaway" />
     <item component="ComponentInfo{org.cyanogenmod.audiofx/org.cyanogenmod.audiofx.ActivityMusic}"
