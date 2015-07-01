@@ -9,23 +9,25 @@
     <color name="bg_card_container">@color/background</color>
     <color name="bg_card_shadow">#03000000</color>
     <color name="bg_widget">@color/background</color>
-    <color name="bg_window">@color/bbb</color>
+    <color name="bg_window">@color/background</color>
     <color name="black">#ff000000</color>
     <color name="black10">#1a000000</color>
-    <color name="black15">#26000000</color>
+    <color name="black15">#26ffffff</color>
     <color name="black20">#33000000</color>
-    <color name="black60">#99000000</color>
+    <color name="black54">#ccffffff</color>
+    <color name="black60">@color/aaa</color>
+    <!--<color name="black60">#99000000</color>-->
 
     <color name="cardview_dark_background">@color/card</color>
     <color name="cardview_light_background">@color/card</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#05000000</color>
 
-    <color name="gray1">@color/background</color>
+    <color name="gray1">@color/backgroundd</color>
     <color name="gray2">@color/textt</color>
     <!--below are both text and background-->
     <color name="gray3">@color/text</color>
-    <color name="gray4">#ff4ab367</color>
+    <color name="gray4">@color/aaa</color>
 
     <color name="mid_green">#ff4ab367</color>
 
@@ -43,11 +45,16 @@
     <color name="tint_divider">#22ffffff</color>
     <color name="tint_solid_divider">#22ffffff</color>
     <color name="transparent">#00000000</color>
-    <color name="white">@color/card</color>
+    <!--<color name="white">@color/text</color>-->
+    <color name="white">#a0000000</color>
     <color name="white40">#4d000000</color>
-    <color name="white60">#99000000</color>
+    <color name="white60">#99ffffff</color>
     <color name="white65">#a6000000</color>
     <color name="white90">#e6000000</color>
+
+    <!--new with material design-->
+    <color name="md_divider_black">#10ffffff</color>
+    <color name="bubble_share_icon">#ccffffff</color>
 
     <color name="aaa">#ffff00ff</color>
     <color name="bbb">#ff00ffff</color>
@@ -56,9 +63,9 @@
     <color name="texttt">#99ffffff</color>
     <color name="card">#30000000</color>
     <color name="cardd">#30333333</color>
-    <color name="background">#88000000</color>
-    <color name="backgroundd">#88161616</color>
-    <color name="backgrounddd">#88323232</color>
+    <color name="background">#90000000</color>
+    <color name="backgroundd">#90161616</color>
+    <color name="backgrounddd">#90323232</color>
     <color name="backgroundx">#ff000000</color>
     <color name="backgrounddx">#ff161616</color>
     <color name="backgroundddx">#ff323232</color>

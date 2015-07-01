@@ -141,7 +141,7 @@ public class HomeFragment extends Fragment {
                     if (intent == null) {
                         Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
                     } else {
-                        final String className = "com.pitchedapps.material.glass.utilities.CmThemeEngineLauncher";
+                        final String className = "com.pitchedapps.material.glass.free.utilities.CmThemeEngineLauncher";
                         Class<?> cl = null;
                         try {
                             cl = Class.forName(className);

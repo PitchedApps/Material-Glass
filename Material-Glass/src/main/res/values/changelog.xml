@@ -5,6 +5,7 @@
     <string-array name="fullchangelog">
         <item>@array/note</item>
 
+        <item>@array/v38</item>
         <item>@array/v37</item>
         <item>@array/v36</item>
         <item>@array/v35</item>
@@ -55,6 +56,15 @@
         <item></item>
         <item></item>
         <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v38">
+        <item>v2.1.2</item>
+        <item>New: themed gmail for layers</item>
+        <item>New: themed documentsui for layers</item>
+        <item>Framework: remove unneeded devicedefault modification</item>
         <item></item>
         <item></item>
     </string-array>

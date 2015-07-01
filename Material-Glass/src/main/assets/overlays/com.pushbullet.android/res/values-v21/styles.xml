@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.AppCompat" parent="@*common:style/Theme.AppCompat" />
-    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
-    <style name="Theme.AppCompat.Light.DarkActionBar" parent="@*common:style/Theme.AppCompat" />
-    <style name="Theme.AppCompat.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar" />
     <style name="Theme.AppCompat.Light.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar" />
-    <style name="Base.Theme.AppCompat" parent="@*common:style/Theme.AppCompat" />
-    <style name="Base.Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
-    <style name="Base.ThemeOverlay.AppCompat" parent="@*common:style/Theme.AppCompat" />
-    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
-
     <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
     <style name="Theme.AppCompat.Light.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
     <style name="Base.Widget.AppCompat.ActionBar" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
@@ -20,6 +11,14 @@
 
     <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
 
-    <style name="ListView.System" parent="@android:style/Widget.Material.ListView" />
-    <style name="ScrollView.System" parent="@android:style/Widget.Material.ScrollView" />
+    <style name="ChatBubbleText">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorLink">@color/text</item>
+        <!--<item name="android:paddingLeft">@dimen/half_standard_padding</item>-->
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 </resources>
