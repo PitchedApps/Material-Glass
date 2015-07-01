@@ -135,10 +135,7 @@
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
         <item name="android:statusBarColor">@color/backgroundt</item>
     </style>
-
-    <style name="AlertDialog.DeviceDefault" parent="@android:style/Theme.DeviceDefault.Dialog" />
-    <style name="AlertDialog.DeviceDefault.Light"
-        parent="@android:style/Theme.DeviceDefault.Dialog" />
+    
     <style name="DeviceDefault.Light.ButtonBar" parent="@android:style/Widget.Material.ButtonBar" />
     <style name="DeviceDefault.Light.ButtonBar.AlertDialog"
         parent="@android:style/Widget.Material.ButtonBar.AlertDialog" />
