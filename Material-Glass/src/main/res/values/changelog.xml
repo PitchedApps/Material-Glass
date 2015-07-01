@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,Settings,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,NovaLauncher,HellsCoreUpdater,SoftReboot, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,NovaLauncher,PushBullet,HellsCoreUpdater,SoftReboot, "</string>
 
     <string-array name="fullchangelog">
         <item>@array/note</item>
@@ -65,8 +65,7 @@
         <item>New: themed gmail for layers</item>
         <item>New: themed documentsui for layers</item>
         <item>Framework: remove unneeded devicedefault modification</item>
-        <item></item>
-        <item></item>
+        <item>Pushbullet: updated to material design and ported to layers</item>
     </string-array>
 
     <string-array name="v37">
@@ -85,7 +84,7 @@
         <item>Google +: tinted white backgrounds</item>
         <item>New: themed google play store for layers</item>
         <item>New: themed nova launcher for layers</item>
-        <item>App: renamed layers and categorized them in the plugin</item>
+        <item>App: renamed layers and categorized them in the plugin (you might want to manually delete the duplicates since they have different names and won\'t be overwritten)</item>
     </string-array>
 
     <string-array name="v35">

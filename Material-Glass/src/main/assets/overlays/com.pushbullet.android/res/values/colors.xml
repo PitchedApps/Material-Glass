@@ -15,7 +15,7 @@
     <color name="black15">#26ffffff</color>
     <color name="black20">#33000000</color>
     <color name="black54">#ccffffff</color>
-    <color name="black60">@color/aaa</color>
+    <color name="black60">#30ffffff</color>
     <!--<color name="black60">#99000000</color>-->
 
     <color name="cardview_dark_background">@color/card</color>
