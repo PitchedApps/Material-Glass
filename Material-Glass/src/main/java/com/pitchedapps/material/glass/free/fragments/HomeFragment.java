@@ -125,20 +125,20 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.apply_btn);
-        Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
-        if (intent != null) {
-            fab.setVisibility(View.VISIBLE);
-            fab.setColorNormal(getResources().getColor(R.color.fab_unpressed));
-            fab.setColorPressed(getResources().getColor(R.color.fab_pressed));
-            fab.setColorRipple(getResources().getColor(R.color.semitransparent_white));
-            fab.show(true);
-            fab.attachToScrollView(content);
-            fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fabcm = (FloatingActionButton) root.findViewById(R.id.apply_cm);
+        Intent intentcm = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+        if (intentcm != null) {
+            fabcm.setVisibility(View.VISIBLE);
+            fabcm.setColorNormal(getResources().getColor(R.color.fab_unpressed));
+            fabcm.setColorPressed(getResources().getColor(R.color.fab_pressed));
+            fabcm.setColorRipple(getResources().getColor(R.color.semitransparent_white));
+            fabcm.show(true);
+            fabcm.attachToScrollView(content);
+            fabcm.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
-                    if (intent == null) {
+                    Intent intentcm = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+                    if (intentcm == null) {
                         Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
                     } else {
                         final String className = "com.pitchedapps.material.glass.free.utilities.CmThemeEngineLauncher";
@@ -170,7 +170,55 @@ public class HomeFragment extends Fragment {
 
             });
         } else {
-            fab.setVisibility(View.GONE);
+            fabcm.setVisibility(View.GONE);
+        }
+
+        FloatingActionButton fabrro = (FloatingActionButton) root.findViewById(R.id.apply_rro);
+        Intent intentrro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
+        if (intentrro != null) {
+            fabrro.setVisibility(View.VISIBLE);
+            fabrro.setColorNormal(getResources().getColor(R.color.fab_unpressed));
+            fabrro.setColorPressed(getResources().getColor(R.color.fab_pressed));
+            fabrro.setColorRipple(getResources().getColor(R.color.semitransparent_white));
+            fabrro.show(true);
+            fabrro.attachToScrollView(content);
+            fabrro.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intentrro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
+                    if (intentrro == null) {
+                        Toast.makeText(getActivity(), getString(R.string.rro_not_installed), Toast.LENGTH_SHORT).show();
+                    } else {
+                        final String className = "com.pitchedapps.material.glass.free.utilities.RROLayersLauncher";
+                        Class<?> cl = null;
+                        try {
+                            cl = Class.forName(className);
+                        } catch (ClassNotFoundException e) {
+                            Log.e("LAUNCHER CLASS MISSING", "Launcher class for: '" + className + "' missing!");
+                        }
+                        if (cl != null) {
+                            Constructor<?> constructor = null;
+                            try {
+                                constructor = cl.getConstructor(Context.class);
+                            } catch (NoSuchMethodException e) {
+                                Log.e("LAUNCHER CLASS CONS",
+                                        "Launcher class for: '" + className + "' is missing a constructor!");
+                            }
+                            try {
+                                if (constructor != null)
+                                    constructor.newInstance(getActivity());
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                    }
+                }
+
+
+            });
+        } else {
+            fabrro.setVisibility(View.GONE);
         }
 
         return root;

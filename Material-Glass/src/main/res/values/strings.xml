@@ -158,6 +158,7 @@
     <string name="donation_paypal_item">Donation</string>
     <string name="xda">XDA LINK</string>
     <string name="cm_not_installed">CyanogenMod theme engine is not found!</string>
+    <string name="rro_not_installed">Layers Manager is not found!</string>
 
     <string name="request_title">@string/section_five</string>
 

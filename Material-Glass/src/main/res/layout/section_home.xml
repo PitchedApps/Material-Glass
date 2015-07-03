@@ -549,7 +549,7 @@
     </com.melnykov.fab.ObservableScrollView>
 
     <com.melnykov.fab.FloatingActionButton
-        android:id="@+id/apply_btn"
+        android:id="@+id/apply_cm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -558,6 +558,19 @@
         android:layout_marginBottom="@dimen/cards_padding"
         android:layout_marginEnd="@dimen/cards_padding"
         android:layout_marginRight="@dimen/cards_padding"
-        android:src="@drawable/ic_themes" />
+        android:src="@drawable/ic_cm" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/apply_rro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/cards_padding"
+        android:layout_marginEnd="@dimen/cards_padding"
+        android:layout_marginRight="@dimen/cards_padding"
+        android:src="@drawable/ic_rro" />
+
 
 </RelativeLayout>

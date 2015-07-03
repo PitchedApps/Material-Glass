@@ -7,8 +7,8 @@ import android.content.Intent;
 public class RROLayersLauncher {
     public RROLayersLauncher(Context context) {
         Intent intent = new Intent("android.intent.action.MAIN");
-        intent.setComponent(new ComponentName("com.lovejoy777.rroandlayersmanager", "com.lovejoy777.rroandlayersmanager.activities.menu"));
-        intent.putExtra("pkgName", context.getPackageName());
+        intent.setComponent(new ComponentName("com.lovejoy777.rroandlayersmanager", "com.lovejoy777.rroandlayersmanager.menu"));
+        intent.putExtra("pkgName", "com.pitchedapps.material.glass.free.Overlay");
         context.startActivity(intent);
     }
 }
