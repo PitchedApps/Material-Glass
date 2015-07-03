@@ -121,6 +121,38 @@ public class MainActivity extends AppCompatActivity {
         thaCredits = getResources().getString(R.string.section_six);
         thaInfo = getResources().getString(R.string.section_eight);
 
+        //Setup donations
+
+        final IabHelper.QueryInventoryFinishedListener mGotInventoryListener = new IabHelper.QueryInventoryFinishedListener() {
+            public void onQueryInventoryFinished(IabResult result, Inventory inventory) {
+
+                if (inventory != null) {
+                    Log.d(TAG, "IAP inventory exists");
+
+                    Log.d(TAG, "Donations 1 is " + inventory.hasPurchase("glass.donation.1"));
+                    Log.d(TAG, "Donations 2 is " + inventory.hasPurchase("glass.donation.2"));
+                    Log.d(TAG, "Donations 3 is " + inventory.hasPurchase("glass.donation.3"));
+                    Log.d(TAG, "Donations 5 is " + inventory.hasPurchase("glass.donation.5"));
+                    Log.d(TAG, "Donations 10 is " + inventory.hasPurchase("glass.donation.10"));
+                    Log.d(TAG, "Donations 20 is " + inventory.hasPurchase("glass.donation.20"));
+
+                    if (inventory.hasPurchase("glass.donation.1") ||
+                            inventory.hasPurchase("glass.donation.2") ||
+                            inventory.hasPurchase("glass.donation.3") ||
+                            inventory.hasPurchase("glass.donation.5") ||
+                            inventory.hasPurchase("glass.donation.10") ||
+                            inventory.hasPurchase("glass.donation.20")) {
+                        Log.d(TAG, "IAP inventory contains a donation");
+
+                        mIsPremium = true;
+                    }
+                }
+                if (isPremium()) {
+                    mGoogleCatalog = GOOGLE_CATALOG_PRO;
+                }
+            }
+        };
+
         headerResult = new AccountHeaderBuilder()
                 .withActivity(this)
                 .withHeaderBackground(R.drawable.header)
@@ -204,38 +236,6 @@ public class MainActivity extends AppCompatActivity {
             currentItem = -1;
             result.setSelectionByIdentifier(1);
         }
-
-        //Setup donations
-
-        final IabHelper.QueryInventoryFinishedListener mGotInventoryListener = new IabHelper.QueryInventoryFinishedListener() {
-            public void onQueryInventoryFinished(IabResult result, Inventory inventory) {
-
-                if (inventory != null) {
-                    Log.d(TAG, "IAP inventory exists");
-
-                    Log.d(TAG, "Donations 1 is " + inventory.hasPurchase("glass.donation.1"));
-                    Log.d(TAG, "Donations 2 is " + inventory.hasPurchase("glass.donation.2"));
-                    Log.d(TAG, "Donations 3 is " + inventory.hasPurchase("glass.donation.3"));
-                    Log.d(TAG, "Donations 5 is " + inventory.hasPurchase("glass.donation.5"));
-                    Log.d(TAG, "Donations 10 is " + inventory.hasPurchase("glass.donation.10"));
-                    Log.d(TAG, "Donations 20 is " + inventory.hasPurchase("glass.donation.20"));
-
-                    if (inventory.hasPurchase("glass.donation.1") ||
-                            inventory.hasPurchase("glass.donation.2") ||
-                            inventory.hasPurchase("glass.donation.3") ||
-                            inventory.hasPurchase("glass.donation.5") ||
-                            inventory.hasPurchase("glass.donation.10") ||
-                            inventory.hasPurchase("glass.donation.20")) {
-                        Log.d(TAG, "IAP inventory contains a donation");
-
-                        mIsPremium = true;
-                    }
-                }
-                if (isPremium()) {
-                    mGoogleCatalog = GOOGLE_CATALOG_PRO;
-                }
-            }
-        };
 
         mHelper = new IabHelper(MainActivity.this, GOOGLE_PUBKEY);
         mHelper.startSetup(new IabHelper.OnIabSetupFinishedListener() {

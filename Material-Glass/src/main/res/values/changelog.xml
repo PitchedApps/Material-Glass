@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,NovaLauncher,PushBullet,HellsCoreUpdater,SoftReboot, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,NovaLauncher,PushBullet,HellsCoreUpdater,SoftReboot,Snapchat, "</string>
+    <!--16 items-->
 
     <string-array name="fullchangelog">
         <item>@array/note</item>
 
+        <item>@array/v39</item>
         <item>@array/v38</item>
         <item>@array/v37</item>
         <item>@array/v36</item>
@@ -58,6 +60,14 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+
+    <string-array name="v39">
+        <item>v2.1.3</item>
+        <item>Google+: update colors and ported to layers</item>
+        <item>Nova: fixed white background for cm</item>
+        <item>New: themed franco kernel updater (free) for cm</item>
+        <item>Snapchat: updated loading background and ported to layers</item>
     </string-array>
 
     <string-array name="v38">

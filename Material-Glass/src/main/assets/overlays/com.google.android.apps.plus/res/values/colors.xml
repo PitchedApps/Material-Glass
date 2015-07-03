@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <color name="abc_input_method_navigation_guard">@color/text</color>
-    <color name="abc_search_url_text_normal">@color/text</color>
-    <color name="abc_search_url_text_pressed">@color/text</color>
-    <color name="abc_search_url_text_selected">@color/text</color>
-    <color name="accent_material_dark">@color/textt</color>
-    <color name="accent_material_light">@color/textt</color>
     <color name="acl_circle_color">@color/backgroundd</color>
     <color name="acl_circle_empty_color">@color/backgroundd</color>
     <color name="acl_extended_circles_color">@color/backgroundd</color>
@@ -42,10 +35,6 @@
     <color name="aqua_marine">@color/textt</color>
     <color name="avatar_background_color">@color/background</color>
     <color name="a_blue_whale1111">#ffa6b9ba</color>
-    <color name="background_floating_material_dark">#cc111111</color>
-    <color name="background_floating_material_light">#cc111111</color>
-    <color name="background_material_dark">@color/background</color>
-    <color name="background_material_light">@color/background</color>
     <color name="bar_graph_border">#22ffffff</color>
     <color name="bar_graph_content">#ff33b5e5</color>
     <color name="bar_graph_label">@color/text</color>
@@ -64,14 +53,7 @@
     <color name="blue_button_ripple">@*common:color/ripple</color>
     <color name="blue_separator">#33ffffff</color>
     <color name="blue_steel">#ffa0a0a0</color>
-    <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
-    <color name="bright_foreground_disabled_material_light">#80ffffff</color>
-    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light
-    </color>
-    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_light
-    </color>
-    <color name="bright_foreground_material_dark">@android:color/white</color>
-    <color name="bright_foreground_material_light">@android:color/white</color>
+  
     <color name="bt_stroke_grey">#22ffffff</color>
     <color name="bt_toastbar_button">@color/bt_stroke_grey</color>
     <color name="bt_toastbar_shadow">@android:color/black</color>
@@ -131,10 +113,6 @@
     <color name="dark_text">@color/text</color>
     <color name="default_bg">@color/background</color>
     <color name="dimmer_color">#bc000000</color>
-    <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
-    <color name="dim_foreground_disabled_material_light">#80bebebe</color>
-    <color name="dim_foreground_material_dark">#ffbebebe</color>
-    <color name="dim_foreground_material_light">#ffbebebe</color>
     <color name="downloading_message_color">@color/text</color>
     <color name="duration_label_background">@color/background</color>
     <color name="duration_selected_text_color">@color/text</color>
@@ -177,12 +155,6 @@
     <color name="help_touch_background_color">#8e000000</color>
     <color name="help_touch_color">#ff4285f4</color>
     <color name="highlighted_text">@color/text</color>
-    <color name="highlighted_text_material_dark">#66666666</color>
-    <color name="highlighted_text_material_light">#66666666</color>
-    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark
-    </color>
-    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_dark
-    </color>
     <color name="histogram_blue_fill">#ccd9d9b1</color>
     <color name="histogram_blue_stroke">#ff4d4db1</color>
     <color name="histogram_green_fill">#ccf2fff2</color>
@@ -212,11 +184,7 @@
     <color name="main_text">@color/text</color>
     <color name="map_circle_fill">#2292b8db</color>
     <color name="map_circle_stroke">#ff92b8db</color>
-    <color name="material_blue_grey_800">@color/background</color>
-    <color name="material_blue_grey_900">@color/background</color>
-    <color name="material_blue_grey_950">@color/background</color>
-    <color name="material_deep_teal_200">@color/text</color>
-    <color name="material_deep_teal_500">@color/text</color>
+   
     <color name="mediapicker_tile_text">@color/text</color>
     <color name="media_card_images_background">@android:color/transparent</color>
     <color name="mid_gray">@color/neutral</color>
@@ -296,14 +264,7 @@
     <color name="preview_controls_background">@color/background</color>
     <color name="preview_edge_fade">#af000000</color>
     <color name="preview_stroke">#22ffffff</color>
-    <color name="primary_dark_material_dark">@color/backgrounddx</color>
-    <color name="primary_dark_material_light">@color/backgrounddx</color>
-    <color name="primary_material_dark">@color/backgrounddx</color>
-    <color name="primary_material_light">@color/backgrounddx</color>
-    <color name="primary_text_default_material_dark">@color/text</color>
-    <color name="primary_text_default_material_light">@color/text</color>
-    <color name="primary_text_disabled_material_dark">#4dffffff</color>
-    <color name="primary_text_disabled_material_light">#4dffffff</color>
+   
     <color name="profile_about_color_hours_highlighted_background">@color/background</color>
     <color name="profile_cover_photo_bg">@color/background</color>
     <color name="profile_edit_bg">@color/background</color>
@@ -425,8 +386,6 @@
     <color name="quantum_white_text">@color/text</color>
 
     <color name="red_button_ripple">@color/non_white_button_ripple</color>
-    <color name="ripple_material_dark">#40ffffff</color>
-    <color name="ripple_material_light">#40ffffff</color>
     <color name="riviera_comment_background">@color/background</color>
     <color name="riviera_media">@color/aaa</color>
     <color name="riviera_media_overlay">#99000000</color>
@@ -444,11 +403,7 @@
     <color name="scrubber_remaining_bar">@color/textt</color>
     <color name="search_opaque_bg_color">@color/background</color>
     <color name="search_query_highlight_color">#ff6f8fc7</color>
-    <color name="secondary_text">@color/textt</color>
-    <color name="secondary_text_default_material_dark">#b3ffffff</color>
-    <color name="secondary_text_default_material_light">#b3ffffff</color>
-    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
-    <color name="secondary_text_disabled_material_light">#36ffffff</color>
+  
     <color name="section_header_color">@color/text</color>
     <color name="selected_photo_background">#66000000</color>
     <color name="selector_background">@color/background</color>
@@ -579,19 +534,7 @@
     <color name="transparent">#00000000</color>
     <color name="transparent_bg">#00000000</color>
     <color name="video_poster_loading_background">@color/background</color>
-    <!--<color name="wallet_bright_foreground_disabled_holo_light">@color/text</color>-->
-    <!--<color name="wallet_bright_foreground_holo_dark">@color/text</color>-->
-    <!--<color name="wallet_bright_foreground_holo_light">@color/text</color>-->
-    <!--<color name="wallet_dim_foreground_disabled_holo_dark">@color/textt</color>-->
-    <!--<color name="wallet_dim_foreground_holo_dark">@color/textt</color>-->
-    <!--<color name="wallet_dim_foreground_inverse_disabled_holo_dark">@color/textt</color>-->
-    <!--<color name="wallet_dim_foreground_inverse_holo_dark">@color/textt</color>-->
-    <!--<color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>-->
-    <!--<color name="wallet_highlighted_text_holo_light">#6633b5e5</color>-->
-    <!--<color name="wallet_hint_foreground_holo_dark">#ff808080</color>-->
-    <!--<color name="wallet_hint_foreground_holo_light">@color/text</color>-->
-    <!--<color name="wallet_holo_blue_light">#ff33b5e5</color>-->
-    <!--<color name="wallet_link_text_light">#ff0000ee</color>-->
+   
     <color name="warm_welcome_background_color">#ff03a9f4</color>
     <color name="warm_welcome_button_pressed_color">#ff0288d1</color>
     <color name="warm_welcome_button_stroke">@color/text</color>
@@ -648,5 +591,9 @@
 
     <color name="black_alpha54">#89ffffff</color>
     <color name="black_alpha80">#ccffffff</color>
+	
+	<!--07/02/2015-->
+    <color name="guns_notification_item_background_unread">@color/background</color>
+    <color name="text_gray_accessible_on_grey200">@color/textt</color>
 
 </resources>
