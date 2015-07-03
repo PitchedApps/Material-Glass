@@ -59,8 +59,6 @@
     <color name="bt_toastbar_shadow">@android:color/black</color>
     <color name="bt_toastbar_text">#ffffffff</color>
     <color name="button_bar_divider">#33ffffff</color>
-    <color name="button_material_dark">@color/backgroundd</color>
-    <color name="button_material_light">@color/backgroundd</color>
     <color name="button_pressed">@color/backgrounddd</color>
     <color name="camera_tile_color">#8cffffff</color>
     <color name="card_background_selected">@color/backgroundd</color>
@@ -174,8 +172,6 @@
     <color name="lightest_grey_90_percent">#e5e5e5e5</color>
     <color name="light_gray">@color/textt</color>
     <color name="light_slate_gray">@color/backgroundd</color>
-    <color name="link_text_material_dark">@color/textt</color>
-    <color name="link_text_material_light">@color/textt</color>
     <color name="local_business_review_embed_background">@color/background</color>
     <color name="locations_widget_empty_view_background">@color/background</color>
     <color name="locations_widget_item_background">@color/background</color>
@@ -459,8 +455,6 @@
     <color name="stream_one_up_stage_skyjam_tag_background">@color/background</color>
     <color name="swipe_instructions">@color/text</color>
     <color name="switcher_background">@color/background</color>
-    <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
-    <color name="switch_thumb_normal_material_light">#ffbdbdbd</color>
     <color name="tab_background_color">@color/background</color>
     <color name="talladega_promo_upcoming_birthdays_background">@color/background</color>
     <color name="tb_item_title_active">#ff4285f4</color>
