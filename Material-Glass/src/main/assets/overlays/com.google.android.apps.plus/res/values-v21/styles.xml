@@ -4,6 +4,7 @@
         <item name="android:windowBackground">@color/background</item>
         <item name="android:colorBackground">@color/background</item>
         <item name="android:textColor">@color/text</item>
+        <item name="android:backgroundTint">@*common:color/dialog</item>
     </style>
 
 
@@ -15,30 +16,17 @@
         parent="@android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu"
         parent="@android:style/Widget.Material.PopupMenu" />
-    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
-    <style name="Theme.AppCompat" parent="@*common:style/Theme.AppCompat" />
-    <style name="Platform.AppCompat.Dialog" parent="@android:style/Theme.Material.Dialog">
-        <item name="buttonBarStyle">?android:buttonBarStyle</item>
-        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
-        <item name="selectableItemBackground">?android:selectableItemBackground</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-    </style>
-    <style name="Platform.AppCompat.Light.Dialog" parent="@style/Platform.AppCompat.Dialog" />
-
-    <style name="Base.ThemeOverlay.AppCompat.Light"
-        parent="@android:style/ThemeOverlay.Material.Dark">
-        <item name="isLightTheme">false</item>
-        <item name="colorControlHighlight">@color/ripple_material_dark</item>
-        <item name="android:colorBackground">@color/background</item>
-        <item name="android:textColor">@color/text</item>
+    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat">
         <item name="android:backgroundTint">@*common:color/dialog</item>
     </style>
+    <style name="Theme.AppCompat" parent="@*common:style/Theme.AppCompat">
+        <item name="android:backgroundTint">@*common:color/dialog</item>
+    </style>
+    <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.Light.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
 
-    <style name="Base.Theme.AppCompat.Light" parent="@android:style/Theme.Material">
-        <item name="android:windowBackground">@color/background</item>
-        <item name="android:colorBackground">@color/background</item>
-        <item name="android:textColor">@color/text</item>
+    <style name="Base.ThemeOverlay.AppCompat.Light"
+        parent="@*common:style/Theme.AppCompat">
         <item name="android:backgroundTint">@*common:color/dialog</item>
     </style>
 

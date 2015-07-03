@@ -6,6 +6,7 @@
     <string-array name="fullchangelog">
         <item>@array/note</item>
 
+        <item>@array/v40</item>
         <item>@array/v39</item>
         <item>@array/v38</item>
         <item>@array/v37</item>
@@ -60,6 +61,12 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+
+    <string-array name="v40">
+        <item>v2.2.0</item>
+        <item>Fixed cm crash</item>
+        <item>Moved google and google now launcher theme to xda build for cm</item>
     </string-array>
 
     <string-array name="v39">
