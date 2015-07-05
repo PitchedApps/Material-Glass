@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,NovaLauncher,PushBullet,HellsCoreUpdater,SoftReboot,Snapchat, "</string>
-    <!--16 items-->
+    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,AOSPKeyboard,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,NovaLauncher,PushBullet,HellsCoreUpdater,Snapchat,SoftReboot,Swiftkey, "</string>
+    <!--19 items-->
 
     <string-array name="fullchangelog">
         <item>@array/note</item>
 
+        <item>@array/v41</item>
         <item>@array/v40</item>
         <item>@array/v39</item>
         <item>@array/v38</item>
@@ -61,6 +62,15 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+
+    <string-array name="v41">
+        <item>v2.2.2</item>
+        <item>Settings: vectorize icons</item>
+        <item>Settings: add bliss icon support</item>
+        <item>AOSP Keyboard: port to layers (test)</item>
+        <item>Google Keyboard: port to layers (test)</item>
+        <item>New: themed swiftkey side menu</item>
     </string-array>
 
     <string-array name="v40">

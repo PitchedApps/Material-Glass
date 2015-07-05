@@ -173,7 +173,7 @@ public class HomeFragment extends Fragment {
             fabcm.setVisibility(View.GONE);
         }
 
-        /*FloatingActionButton fabrro = (FloatingActionButton) root.findViewById(R.id.apply_rro);
+        FloatingActionButton fabrro = (FloatingActionButton) root.findViewById(R.id.apply_rro);
         Intent intentrro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
         if (intentrro != null) {
             fabrro.setVisibility(View.VISIBLE);
@@ -189,7 +189,9 @@ public class HomeFragment extends Fragment {
                     if (intentrro == null) {
                         Toast.makeText(getActivity(), getString(R.string.rro_not_installed), Toast.LENGTH_SHORT).show();
                     } else {
-                        final String className = "com.pitchedapps.material.glass.free.utilities.RROLayersLauncher";
+
+                        getActivity().startActivity(intentrro);
+                        /*final String className = "com.pitchedapps.material.glass.free.utilities.RROLayersLauncher";
                         Class<?> cl = null;
                         try {
                             cl = Class.forName(className);
@@ -210,7 +212,7 @@ public class HomeFragment extends Fragment {
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
-                        }
+                        }*/
 
                     }
                 }
@@ -219,7 +221,7 @@ public class HomeFragment extends Fragment {
             });
         } else {
             fabrro.setVisibility(View.GONE);
-        }*/
+        }
 
         return root;
     }
