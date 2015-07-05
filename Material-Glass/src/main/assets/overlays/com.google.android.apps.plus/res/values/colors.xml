@@ -77,16 +77,7 @@
     <color name="collapsed_genre_text">@color/text</color>
     <!--check-->
     <color name="commenter_indicator">@color/backgroundd</color>
-    <color name="common_action_bar_splitter">#33ffffff</color>
-    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
-    <color name="common_signin_btn_dark_text_disabled">#ffaaaaaa</color>
-    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
-    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
-    <color name="common_signin_btn_default_background">@color/background</color>
-    <color name="common_signin_btn_light_text_default">#ff737373</color>
-    <color name="common_signin_btn_light_text_disabled">#ffaaaaaa</color>
-    <color name="common_signin_btn_light_text_focused">#ff737373</color>
-    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+
     <color name="composebar_background_alpha">@color/background</color>
     <color name="composebar_background_color">@color/backgroundd</color>
     <color name="compose_empty_fg">@color/textt</color>
@@ -223,7 +214,7 @@
     <color name="photos_home_background_color">@color/background</color>
     <color name="photos_home_tab_color">#ff4285f4</color>
     <color name="photos_home_tab_text_non_selected_color">#96ffffff</color>
-    <color name="photos_home_tab_text_selected_color">#ff4285f4</color>
+    <color name="photos_home_tab_text_selected_color">@color/text</color>
     <color name="photos_host_background">@color/background</color>
     <color name="photo_action_bar_actionmode_background">@color/background</color>
     <color name="photo_action_bar_background">@color/backgroundx</color>
@@ -285,6 +276,10 @@
     <color name="quantum_black_text">#ddffffff</color>
 
     <color name="quantum_bluegrey50">@color/background</color>
+    <!--07/04/2015-->
+    <color name="quantum_bluegrey500">#40ffffff</color>
+    <color name="quantum_bluegrey700">@color/background</color>
+    <color name="quantum_bluegrey900">@color/text</color>
 
     <color name="quantum_deeporange100">@color/backgroundd</color>
     <color name="quantum_deeporange200">@color/backgroundd</color>
@@ -375,7 +370,8 @@
     <color name="quantum_orangeA400">@color/backgroundd</color>
     <color name="quantum_orangeA700">@color/backgroundd</color>
 
-    <color name="quantum_white_100">@color/backgroundx</color>
+    <!--07/04/2015 changed to white-->
+    <color name="quantum_white_100">@color/text</color>
     <color name="quantum_white_divider">#1fffffff</color>
     <color name="quantum_white_hint_text">#4dffffff</color>
     <color name="quantum_white_secondary_text">@color/textt</color>
@@ -457,16 +453,19 @@
     <color name="switcher_background">@color/background</color>
     <color name="tab_background_color">@color/background</color>
     <color name="talladega_promo_upcoming_birthdays_background">@color/background</color>
-    <color name="tb_item_title_active">#ff4285f4</color>
-    <color name="tb_item_title_disabled">#6e000000</color>
-    <color name="tb_item_title_normal">#ff646464</color>
+
+    <!--07/04/2015-->
+    <color name="tb_item_title_active">@color/text</color>
+    <color name="tb_item_title_disabled">#6effffff</color>
+    <color name="tb_item_title_normal">@color/text</color>
+
     <color name="text_black_26_percent">#42ffffff</color>
     <color name="text_black_54_percent">#89ffffff</color>
     <color name="text_black_87_percent">#ddffffff</color>
     <color name="text_blue">@color/text</color>
     <color name="text_gray">@color/textt</color>
     <color name="text_hint">@color/textt</color>
-    <color name="text_normal">#ffaaaaaa</color>
+    <color name="text_normal">@color/text</color>
     <color name="text_red">#ffc3352c</color>
     <color name="text_white">@color/text</color>
     <color name="text_white_26_percent">#42ffffff</color>
