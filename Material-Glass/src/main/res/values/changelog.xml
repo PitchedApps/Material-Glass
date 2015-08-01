@@ -71,6 +71,8 @@
         <item>AOSP Keyboard: port to layers (test)</item>
         <item>Google Keyboard: port to layers (test)</item>
         <item>New: themed swiftkey side menu</item>
+        <item>Google +: fixed up tinting for cm and fixed community title color</item>
+        <item>Added FAB for layers build</item>
     </string-array>
 
     <string-array name="v40">
