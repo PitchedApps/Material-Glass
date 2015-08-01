@@ -123,11 +123,11 @@
     <color name="status_bar_music">#88e65100</color>
     <color name="status_bar_movies">#88d23f31</color>
     <color name="status_bar_newsstand">#88304ffe</color>
-    <color name="whatsnew_apps">#11ffffff</color>
-    <color name="whatsnew_books">#11ffffff</color>
-    <color name="whatsnew_music">#11ffffff</color>
-    <color name="whatsnew_movies">#11ffffff</color>
-    <color name="whatsnew_newsstand">#11ffffff</color>
+    <color name="whatsnew_apps">#11000000</color>
+    <color name="whatsnew_books">#11000000</color>
+    <color name="whatsnew_music">#11000000</color>
+    <color name="whatsnew_movies">#11000000</color>
+    <color name="whatsnew_newsstand">#11000000</color>
     <color name="package_malware_title_color">@color/text</color>
     <color name="package_malware_text_color">@color/text</color>
     <color name="credit_card_invalid_text_color">#ffff0000</color>
@@ -136,7 +136,7 @@
     <!--### unmodified above-->
     <color name="play_banner_light_fg">@color/backgroundddt</color>
     <color name="play_banner_dark_fg">@color/backgroundddt</color>
-    <color name="purchase_button_icon_background">#11ffffff</color>
+    <color name="purchase_button_icon_background">#11000000</color>
     <color name="purchase_flow_permission_learn_more_link">@color/textt</color>
     <color name="play_rated_overlay">@color/backgroundd</color>
     <color name="your_review_label_bg_color">@color/backgroundd</color>
@@ -151,6 +151,8 @@
     <color name="setup_wizard_navbar_bg_light">@color/backgroundddt</color>
     <color name="setup_wizard_navbar_text_dark">#deffffff</color>
     <color name="setup_wizard_navbar_text_light">#deffffff</color>
+    <color name="setup_wizard_color_accent_dark">@color/text</color>
+    <color name="setup_wizard_color_accent_light">@color/text</color>
     <color name="setup_wizard_color_secondary_dark">#ff8e8e8e</color>
     <color name="setup_wizard_color_secondary_light">#ff8e8e8e</color>
     <color name="action_bar_menu_color">#b0ffffff</color>
@@ -166,6 +168,8 @@
     <color name="play_download_arc_background_color_download">#ffbbbbbb</color>
     <color name="play_download_arc_background_color_press">#ff000000</color>
 
+    <!--08/01/2015-->
+    <!--<color name="restore_notification">#ff607d8b</color>-->
 
     <color name="background">#88000000</color>
     <color name="backgroundd">#88161616</color>

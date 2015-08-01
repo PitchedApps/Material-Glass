@@ -24,6 +24,7 @@
     </style>
     <style name="PlayMediumPlainText">
         <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text</item>
     </style>
     <style name="Theme.Base.InstrumentManager.Light" parent="@android:style/Theme.Material.NoActionBar" />
     <!--causes layering issues-->
@@ -31,6 +32,7 @@
         <item name="android:windowBackground">@*common:color/dialog</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:colorPrimaryDark">@color/backgroundx</item>
+        <item name="android:textColor">@color/text</item>
     </style>
 
     <style name="SettingsTheme" parent="@style/Theme.AppCompat">
