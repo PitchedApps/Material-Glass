@@ -65,11 +65,9 @@
         <item>Settings: added icons for Chroma and Orion</item>
         <item>Play Store: fixed crash for layers and updated cm version</item>
         <item>New: themed soft reboot for cm</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Google: moved back to cm play store build with small updates</item>
+        <item>Cm: changed lockscreen background to a different image</item>
+        <item>App: update all dependencies to latest versions</item>
     </string-array>
 
     <string-array name="v41">
