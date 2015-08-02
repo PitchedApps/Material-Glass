@@ -362,6 +362,7 @@
     <!--???-->
     <color name="default_account_details_color">@color/backgroundd</color>
 
+
     <color name="aaa">#ffff00ff</color>
     <color name="bbb">#ff00ffff</color>
     <color name="text">#ffffffff</color>
