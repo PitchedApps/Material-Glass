@@ -1,77 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="abc_search_url_text_normal">#ff7fa87f</color>
-    <color name="abc_search_url_text_selected">@color/text</color>
-    <color name="abc_search_url_text_pressed">@color/text</color>
-    <color name="abc_input_method_navigation_guard">@color/text</color>
-    <color name="ripple_material_dark">#40ffffff</color>
-    <color name="ripple_material_light">#40ffffff</color>
-    <color name="accent_material_light">@color/text</color>
-    <color name="accent_material_dark">@color/text</color>
-    <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
-    <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <color name="bright_foreground_material_dark">@android:color/white</color>
-    <color name="bright_foreground_material_light">@android:color/white</color>
-    <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
-    <color name="bright_foreground_disabled_material_light">#80ffffff</color>
-    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light
-    </color>
-    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_light
-    </color>
-    <color name="dim_foreground_material_dark">#ffbebebe</color>
-    <color name="dim_foreground_material_light">#ffbebebe</color>
-    <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
-    <color name="dim_foreground_disabled_material_light">#80bebebe</color>
-    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark
-    </color>
-    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_dark
-    </color>
-    <color name="highlighted_text_material_dark">#66666666</color>
-    <color name="highlighted_text_material_light">#66666666</color>
-    <color name="link_text_material_dark">@color/textt</color>
-    <color name="link_text_material_light">@color/textt</color>
-    <color name="primary_text_default_material_light">#ffffffff</color>
-    <color name="secondary_text_default_material_light">#b3ffffff</color>
-    <color name="primary_text_default_material_dark">#ffffffff</color>
-    <color name="secondary_text_default_material_dark">#b3ffffff</color>
-    <color name="primary_text_disabled_material_light">#4dffffff</color>
-    <color name="secondary_text_disabled_material_light">#36ffffff</color>
-    <color name="primary_text_disabled_material_dark">#4dffffff</color>
-    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
-
     <color name="background_floating_material_dark">#cc060606</color>
-    <color name="background_floating_material_light">#cc060606</color>
     <color name="background_material_dark">#55000000</color>
-    <color name="background_material_light">#55000000</color>
     <color name="black">#55000000</color>
     <color name="button_material_dark">#33000000</color>
-    <color name="button_material_light">#33000000</color>
     <color name="card_background_dark">#30000000</color>
-    <color name="card_background_light">#30000000</color>
     <color name="cardview_dark_background">#55000000</color>
-    <color name="cardview_light_background">#55000000</color>
-    <!--<color name="fab_normal">#cc2a7289</color>-->
-    <!--<color name="fab_pressed">#cc1d5060</color>   -->
     <color name="fab_normal">#cc060606</color>
     <color name="fab_pressed">#cc121212</color>
     <color name="navigationdrawer_background_dark">#a0000000</color>
-    <color name="navigationdrawer_background_light">#a0000000</color>
     <color name="primary_material_dark">#ff000000</color>
-    <color name="primary_material_light">#ff000000</color>
     <color name="primary_dark_material_dark">#ff000000</color>
-    <color name="primary_dark_material_light">#ff000000</color>
     <color name="profile_list_background">#70000000</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#09000000</color>
-    <color name="textcolor_light">@color/text</color>
-
-    <color name="text">#ffffffff</color>
-    <color name="textt">#ccffffff</color>
-    <color name="texttt">#99ffffff</color>
-    <color name="background">#88000000</color>
-    <color name="backgroundd">#88161616</color>
-    <color name="backgrounddd">#88323232</color>
-    <color name="backgroundx">#ff000000</color>
-    <color name="backgrounddx">#ff161616</color>
-    <color name="backgroundddx">#ff323232</color>
 </resources>

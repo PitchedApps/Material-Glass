@@ -4,6 +4,7 @@
     <!--19 items-->
 
     <string-array name="fullchangelog">
+        <item>@array/v43</item>
         <item>@array/v42</item>
         <item>@array/v41</item>
         <item>@array/v40</item>
@@ -52,6 +53,15 @@
     <string-array name="v">
         <item>v</item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v43">
+        <item>v2.3.1</item>
+        <item>Settings: fix glitch in account and about sections for layers</item>
         <item></item>
         <item></item>
         <item></item>

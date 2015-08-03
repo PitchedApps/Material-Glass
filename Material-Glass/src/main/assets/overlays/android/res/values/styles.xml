@@ -392,5 +392,10 @@
         <item name="android:textColor">@color/background</item>
     </style>
 
-
+    <!--08/03/2015-->
+    <style name="Widget.Material.ListView" parent="@*android:style/Widget.ListView">
+        <item name="android:divider">?android:attr/listDivider</item>
+        <item name="android:listSelector">?android:attr/listChoiceBackgroundIndicator</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
 </resources>
