@@ -136,9 +136,9 @@
     <color name="pbluee_t">#cc62757e</color>
     <color name="dblue_t">#cc343d41</color>
 
-    <color name="background">#88000000</color>
-    <color name="backgroundd">#88161616</color>
-    <color name="backgrounddd">#88323232</color>
+    <color name="background">#ff000000</color>
+    <color name="backgroundd">#ff161616</color>
+    <color name="backgrounddd">#ff323232</color>
     <color name="backgroundx">#ff000000</color>
     <color name="backgrounddx">#ff161616</color>
     <color name="backgroundddx">#ff323232</color>
