@@ -8,7 +8,7 @@
     <color name="cardview_dark_background">#55000000</color>
     <color name="fab_normal">#cc060606</color>
     <color name="fab_pressed">#cc121212</color>
-    <color name="navigationdrawer_background_dark">#a0000000</color>
+    <color name="navigationdrawer_background_dark">#b0000000</color>
     <color name="primary_material_dark">#ff000000</color>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="profile_list_background">#70000000</color>
