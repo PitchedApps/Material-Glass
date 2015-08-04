@@ -1,0 +1,3 @@
+mogrify -format png32 *.png
+
+red *.png32 *.png

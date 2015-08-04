@@ -40,23 +40,23 @@
     </style>
 
     <!--play_white text colors-->
-    <style name="PlayClusterMore" parent="@style/PlayMediumPlainText">
-        <item name="android:textSize">@dimen/play_cluster_header_more_size</item>
-        <item name="android:textColor">@color/text</item>
-        <item name="android:paddingLeft">@dimen/play_cluster_header_more_xpadding</item>
-        <item name="android:paddingTop">@dimen/play_cluster_header_more_top_padding</item>
-        <item name="android:paddingRight">@dimen/play_cluster_header_more_xpadding</item>
-        <item name="android:paddingBottom">@dimen/play_cluster_header_more_bottom_padding</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:singleLine">true</item>
+    <!--<style name="PlayClusterMore" parent="@style/PlayMediumPlainText">-->
+        <!--<item name="android:textSize">@dimen/play_cluster_header_more_size</item>-->
+        <!--<item name="android:textColor">@color/text</item>-->
+        <!--<item name="android:paddingLeft">@dimen/play_cluster_header_more_xpadding</item>-->
+        <!--<item name="android:paddingTop">@dimen/play_cluster_header_more_top_padding</item>-->
+        <!--<item name="android:paddingRight">@dimen/play_cluster_header_more_xpadding</item>-->
+        <!--<item name="android:paddingBottom">@dimen/play_cluster_header_more_bottom_padding</item>-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:singleLine">true</item>-->
 
-        <item name="playCardBackgroundColor">@color/play_card_dark_background</item>
-        <item name="playCardCornerRadius">@dimen/play_action_button_corner</item>
-        <item name="playCardElevation">1.0dip</item>
-        <item name="playCardInset">0.0dip</item>
-        <item name="playCardClipToOutline">true</item>
-    </style>
+        <!--<item name="playCardBackgroundColor">@color/play_card_dark_background</item>-->
+        <!--<item name="playCardCornerRadius">@dimen/play_action_button_corner</item>-->
+        <!--<item name="playCardElevation">1.0dip</item>-->
+        <!--<item name="playCardInset">0.0dip</item>-->
+        <!--<item name="playCardClipToOutline">true</item>-->
+    <!--</style>-->
     <style name="Play_Purchase_Button" parent="@style/PlayPlainText">
         <item name="android:textSize">@dimen/play_purchase_secondary_size</item>
         <item name="android:textStyle">bold</item>
