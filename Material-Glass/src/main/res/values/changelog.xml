@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,AOSPKeyboard,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,NovaLauncher,PushBullet,HellsCoreUpdater,Snapchat,SoftReboot,Swiftkey, "</string>
-    <!--19 items-->
+    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,AOSPKeyboard,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,NovaLauncher,PushBullet,HellsCoreUpdater,Snapchat,Swiftkey,Pedometer,SoftReboot, "</string>
+    <!--21 items-->
 
     <string-array name="fullchangelog">
         <item>@array/v43</item>
@@ -62,10 +62,10 @@
     <string-array name="v43">
         <item>v2.3.1</item>
         <item>Settings: fix glitch in account and about sections for layers</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Play Store: removed some attributes available in only the latest version to add more compatibility</item>
+        <item>New: themed youtube for cm</item>
+        <item>New: themed Pedometer (by Ivon) for layers</item>
+        <item>DocumentsUI: fixed white tinting for layers</item>
     </string-array>
 
     <string-array name="v42">
