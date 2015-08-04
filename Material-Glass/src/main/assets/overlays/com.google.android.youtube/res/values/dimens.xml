@@ -3,4 +3,8 @@
     <dimen name="launchscreens_product_logo_bottom">16.0dip</dimen>
     <dimen name="launchscreens_product_logo_bottom_2">24.0dip</dimen>
     <dimen name="launchscreens_google_logo_bottom">48.0dip</dimen>
+
+    <dimen name="keyline_content_inset_start">72.0dip</dimen>
+
+    <dimen name="small_font_size">14.0sp</dimen>
 </resources>

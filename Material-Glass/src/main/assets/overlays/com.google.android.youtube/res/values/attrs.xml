@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="actionBarStyle" format="reference" />
+
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorPrimaryDark" format="color" />
+    <attr name="colorAccent" format="color" />
+
+    <attr name="defaultItemSelector" format="reference" />
+
+    <attr name="textAppearanceHeadline" format="reference" />
+    <attr name="textAppearanceTitle" format="reference" />
+    <attr name="textAppearanceTitleInverse" format="reference" />
+    <attr name="textAppearanceSubhead" format="reference" />
+    <attr name="textAppearanceSubheadInverse" format="reference" />
+    <attr name="textAppearanceBody2" format="reference" />
+    <attr name="textAppearanceBody2Inverse" format="reference" />
+    <attr name="textAppearanceBody1" format="reference" />
+    <attr name="textAppearanceBody1Inverse" format="reference" />
+    <attr name="textAppearanceCaption" format="reference" />
+    <attr name="textAppearanceCaptionInverse" format="reference" />
+    <attr name="textAppearanceMenu" format="reference" />
+    <attr name="textAppearanceButton" format="reference" />
+    <attr name="colorPrimaryAlternate" format="reference" />
+    <attr name="backgroundPrimary" format="reference" />
+    <attr name="backgroundPrimaryInverse" format="reference" />
+    <attr name="backgroundSecondary" format="reference" />
+    <attr name="backgroundSecondaryInverse" format="reference" />
+    <attr name="backgroundTertiary" format="reference" />
+    <attr name="backgroundTertiaryInverse" format="reference" />
+
+    <attr name="guideBackground" format="reference|color" />
+    <attr name="borderlessButtonStyle" format="reference" />
+
+    <attr name="displayOptions">
+        <flag name="none" value="0x00000000" />
+        <flag name="disableHome" value="0x00000020" />
+        <flag name="homeAsUp" value="0x00000004" />
+        <flag name="showCustom" value="0x00000010" />
+        <flag name="showHome" value="0x00000002" />
+        <flag name="showTitle" value="0x00000008" />
+        <flag name="useLogo" value="0x00000001" />
+    </attr>
+    <attr name="titleTextStyle" format="reference" />
+    <attr name="subtitleTextStyle" format="reference" />
+
+    <attr name="contentInsetStart" format="dimension" />
+
+    <attr name="quantumFabColor" format="color" />
+    <attr name="quantumFabRippleColor" format="color" />
+    <attr name="quantumSize">
+        <enum name="normal" value="0" />
+        <enum name="mini" value="1" />
+    </attr>
+
+    <attr name="selectableItemBackground" format="reference" />
+    <attr name="selectableItemBackgroundBorderless" format="reference" />
+</resources>

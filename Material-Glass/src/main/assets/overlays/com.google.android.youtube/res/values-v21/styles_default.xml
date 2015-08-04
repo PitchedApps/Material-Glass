@@ -19,8 +19,4 @@
     <style name="Base.Widget.AppCompat.Light.ActionBar.Solid.Inverse" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
 
     <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
-
-    <!--<style name="Theme.YouTube.Settings" parent="@android:style/Theme.Material">-->
-        <!--<item name="android:windowBackground">@color/background</item>-->
-    <!--</style>-->
 </resources>

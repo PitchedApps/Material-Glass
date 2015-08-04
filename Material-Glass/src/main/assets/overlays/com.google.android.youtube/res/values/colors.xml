@@ -100,7 +100,7 @@
     <color name="white">@android:color/white</color>
     
     <color name="light_grey">@color/background</color>
-    <color name="grey">#ff888888</color>
+    <color name="grey">@color/text</color>
     <color name="dark_grey">@color/textt</color>
     <color name="ics_grey">@color/textt</color>
     <color name="ics_blue_glow">#ff33b5e5</color>
@@ -116,14 +116,14 @@
     <color name="text_color_secondary_default_dark">#b3ffffff</color>
     <color name="color_brand_primary">#ffe62117</color>
     <color name="color_brand_primary_alternate">#ff2793e6</color>
-    <color name="background_primary_dark">@color/backgroundx</color>
-    <color name="background_secondary_dark">@color/backgroundx</color>
-    <color name="background_tertiary_dark">@color/backgroundx</color>
-    <color name="background_primary_light">@color/backgroundx</color>
-    <color name="background_secondary_light">@color/backgroundx</color>
-    <color name="background_tertiary_light">@color/backgroundx</color>
+    <color name="background_primary_dark">@color/background</color>
+    <color name="background_secondary_dark">@color/background</color>
+    <color name="background_tertiary_dark">@color/backgroundd</color>
+    <color name="background_primary_light">@color/background</color>
+    <color name="background_secondary_light">@color/background</color>
+    <color name="background_tertiary_light">@color/backgroundd</color>
     <color name="preview_image_error_background">@color/background</color>
-    <color name="app_bar_primary_background">#ffe62116</color>
+    <color name="app_bar_primary_background">@color/background</color>
     <color name="quantum_blue">#ff2192e7</color>
     <color name="callout_drawable_background_color">#ff2192e7</color>
     <color name="callout_drawable_text_color">@android:color/white</color>
@@ -143,6 +143,11 @@
     <color name="snackbar_action_button_ripple">#20ffffff</color>
     
     <color name="quantum_grey">@color/backgroundx</color>
+    <color name="quantum_grey500">@color/textt</color>
+    <color name="quantum_grey600">@color/textt</color>
+    <color name="quantum_grey700">@color/text</color>
+    <color name="quantum_grey800">@color/text</color>
+    <color name="quantum_grey900">@color/text</color>
     <color name="quantum_black_100">#ff000000</color>
     <color name="quantum_black_text">@color/text</color>
     <color name="quantum_black_secondary_text">@color/textt</color>
@@ -189,9 +194,9 @@
     <color name="thumbnail_background_border_color">#40000000</color>
     <color name="remote_control_panel_thumbnail_overlay_color">#a6000000</color>
     <!--check-->
-    <color name="set_row_color">#ff444444</color>
-    <color name="set_row_selected_color">#ff606060</color>
-    <color name="set_row_pressed_color">#ff222222</color>
+    <color name="set_row_color">@color/textt</color>
+    <color name="set_row_selected_color">@color/text</color>
+    <color name="set_row_pressed_color">@color/text</color>
     <color name="upload_activity_privacy_separator_color">#ff828282</color>
     <color name="upload_activity_privacy_popup_nonselected_color">@color/background</color>
     <color name="upload_activity_privacy_popup_selected_color">@color/backgroundd</color>
@@ -207,7 +212,7 @@
     <color name="guide_selected_text_color">@color/red</color>
     <color name="guide_label_text_color">@color/text</color>
     <color name="guide_account_thumbnail_background">@color/background</color>
-    <color name="subscribe_button_subscribe_font_color">#ffe62117</color>
+    <color name="subscribe_button_subscribe_font_color">@color/textt</color>
     <color name="subscribe_button_subscribed_font_color">@color/text</color>
     <color name="subscribe_button_paid_subscribe_font_color">#ff2793e6</color>
     <color name="theme_main_tab_text_color_activated">@android:color/white</color>
@@ -243,4 +248,7 @@
     <color name="theme_search_color_primary_dark">@color/backgroundx</color>
     <color name="theme_search_actionbar_text_color_primary">@color/text</color>
     <color name="theme_search_actionbar_text_color_secondary">@color/textt</color>
+
+    <color name="quantum_googred">@color/quantum_googred500</color>
+    <color name="quantum_googred500">#ffdb4437</color>
 </resources>
