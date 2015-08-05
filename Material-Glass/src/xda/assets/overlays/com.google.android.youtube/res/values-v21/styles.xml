@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.YouTube.Settings" parent="@android:style/Theme.Material">
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="StatusBarEventContent">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/textt</item>
+    </style>
+    <style name="AnnotationBannerDescriptionText">
+        <item name="android:textSize">@dimen/small_font_size</item>
+        <item name="android:textColor">@color/textt</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+
+    <style name="Base.Theme.YouTube.Light" parent="@*common:style/Theme.AppCompat">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.Dropdown</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+
+        <item name="android:backgroundTint">@color/background</item>
+
+        <item name="actionBarStyle">@style/Widget.YouTube.Light.ActionBar</item>
+        <item name="colorPrimary">@color/theme_main_color_primary</item>
+        <item name="colorPrimaryDark">@color/theme_main_color_primary_dark</item>
+        <item name="colorAccent">@color/theme_main_color_accent</item>
+        <item name="defaultItemSelector">?selectableItemBackground</item>
+        <item name="textAppearanceHeadline">@style/TextAppearance.YouTube.Headline</item>
+        <item name="textAppearanceTitle">@style/TextAppearance.YouTube.Title</item>
+        <item name="textAppearanceTitleInverse">@style/TextAppearance.YouTube.Title.Inverse</item>
+        <item name="textAppearanceSubhead">@style/TextAppearance.YouTube.Subhead</item>
+        <item name="textAppearanceSubheadInverse">@style/TextAppearance.YouTube.Subhead.Inverse</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.YouTube.Body2</item>
+        <item name="textAppearanceBody2Inverse">@style/TextAppearance.YouTube.Body2.Inverse</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.YouTube.Body1</item>
+        <item name="textAppearanceBody1Inverse">@style/TextAppearance.YouTube.Body1.Inverse</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.YouTube.Caption</item>
+        <item name="textAppearanceCaptionInverse">@style/TextAppearance.YouTube.Caption.Inverse</item>
+        <item name="textAppearanceMenu">@style/TextAppearance.YouTube.Menu</item>
+        <item name="textAppearanceButton">@style/TextAppearance.YouTube.Button</item>
+        <item name="colorPrimaryAlternate">@color/color_brand_primary_alternate</item>
+        <item name="backgroundPrimary">@color/background_primary_light</item>
+        <item name="backgroundPrimaryInverse">@color/background_primary_dark</item>
+        <item name="backgroundSecondary">@color/background_secondary_light</item>
+        <item name="backgroundSecondaryInverse">@color/background_secondary_dark</item>
+        <item name="backgroundTertiary">@color/background_tertiary_light</item>
+        <item name="backgroundTertiaryInverse">@color/background_tertiary_dark</item>
+        <item name="guideBackground">@color/background</item>
+        <item name="borderlessButtonStyle">?selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="Widget.YouTube.Light.ActionBar" parent="@*common:style/Widget.AppCompat.ActionBar">
+        <item name="displayOptions">showTitle</item>
+        <item name="titleTextStyle">@style/TextAppearance.YouTube.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.YouTube.Widget.ActionBar.Subtitle</item>
+        <item name="contentInsetStart">@dimen/keyline_content_inset_start</item>
+    </style>
+
+    <style name="TextAppearance.YouTube.Headline" parent="@*common:style/TextAppearance.AppCompat.Headline" />
+    <style name="TextAppearance.YouTube.Title" parent="@*common:style/TextAppearance.AppCompat.Title" />
+    <style name="TextAppearance.YouTube.Title.Inverse" parent="@*common:style/TextAppearance.AppCompat.Title.Inverse" />
+    <style name="TextAppearance.YouTube.Subhead" parent="@*common:style/TextAppearance.AppCompat.Subhead" />
+    <style name="TextAppearance.YouTube.Subhead.Inverse" parent="@*common:style/TextAppearance.AppCompat.Subhead.Inverse" />
+    <style name="TextAppearance.YouTube.Body2" parent="@*common:style/TextAppearance.AppCompat.Body2" />
+    <style name="TextAppearance.YouTube.Body2.Inverse" parent="@*common:style/TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+        <item name="android:textColorHighlight">?android:textColorHighlightInverse</item>
+        <item name="android:textColorHint">?android:textColorHintInverse</item>
+        <item name="android:textColorLink">?android:textColorLinkInverse</item>
+    </style>
+    <style name="TextAppearance.YouTube.Body1" parent="@*common:style/TextAppearance.AppCompat.Body1" />
+    <style name="TextAppearance.YouTube.Body1.Inverse" parent="@*common:style/TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+        <item name="android:textColorHighlight">?android:textColorHighlightInverse</item>
+        <item name="android:textColorHint">?android:textColorHintInverse</item>
+        <item name="android:textColorLink">?android:textColorLinkInverse</item>
+    </style>
+    <style name="TextAppearance.YouTube.Caption" parent="@*common:style/TextAppearance.AppCompat.Caption" />
+    <style name="TextAppearance.YouTube.Caption.Inverse" parent="@*common:style/TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">?android:textColorSecondaryInverse</item>
+        <item name="android:textColorHighlight">?android:textColorHighlightInverse</item>
+        <item name="android:textColorHint">?android:textColorHintInverse</item>
+        <item name="android:textColorLink">?android:textColorLinkInverse</item>
+    </style>
+    <style name="TextAppearance.YouTube.Menu" parent="@*common:style/TextAppearance.AppCompat.Menu" />
+    <style name="TextAppearance.YouTube.Button" parent="@*common:style/TextAppearance.AppCompat.Button" />
+    <style name="QuantumFloatingActionButton">
+        <item name="quantumFabColor">@color/quantum_googred</item>
+        <item name="quantumFabRippleColor">#20ffffff</item>
+        <item name="quantumSize">normal</item>
+    </style>
+
+    <style name="TextAppearance.YouTube.Widget.ActionBar.Title" parent="@*common:style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/theme_main_actionbar_text_color_primary</item>
+    </style>
+    <style name="TextAppearance.YouTube.Widget.ActionBar.Subtitle" parent="@*common:style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/theme_main_actionbar_text_color_secondary</item>
+    </style>
+
+    <style name="SpinnerItem.Dropdown" parent="@style/SpinnerItem">
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="SpinnerItem" parent="@style/Widget.YouTube.TextView">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="Widget.YouTube.TextView" parent="@android:style/Widget.Material.TextView" />
+</resources>
