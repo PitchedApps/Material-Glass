@@ -9,10 +9,10 @@
     <color name="result_minor_text">@color/textt</color>
     <color name="result_points">#c000ff00</color>
     <color name="result_text">@color/text</color>
-    <color name="result_view">@color/background</color>
+    <color name="result_view">@color/text</color>
     <color name="sbc_header_text">@color/text</color>
     <color name="sbc_header_view">@color/background</color>
-    <color name="sbc_list_item">@color/text</color>
+    <color name="sbc_list_item">@color/background</color>
     <color name="sbc_layout_view">@color/background</color>
     <color name="sbc_page_number_text">@color/text</color>
     <color name="sbc_snippet_text">@color/text</color>
@@ -29,7 +29,7 @@
     <color name="cardview_shadow_end_color">#01000000</color>
     <color name="sc_badge_color">#ff0098a9</color>
     <color name="full_transparent">@android:color/transparent</color>
-    <color name="dark_transparent">#61000000</color>
+    <color name="dark_transparent">#61ffffff</color>
     <color name="darker_transparent">#c1000000</color>
     <color name="pause_and_buffer_notification_color">#ffdd0000</color>
     <color name="youtube_blue_light">#ff2793e6</color>
