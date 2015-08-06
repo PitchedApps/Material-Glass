@@ -204,7 +204,7 @@
     <color name="primary_dark_color">@color/backgroundx</color>
     <color name="mail_activity_status_bar_color">@android:color/transparent</color>
     <color name="action_mode_background">@color/background</color>
-    <color name="action_mode_statusbar_color">@color/backgroundx</color>
+    <color name="action_mode_statusbar_color">@color/background</color>
     <color name="edge_effect_color">@color/text</color>
     <color name="snack_bar_background_color">@color/background</color>
     <color name="snack_bar_action_text_color">@color/text</color>
