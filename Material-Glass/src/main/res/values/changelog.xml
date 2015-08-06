@@ -62,7 +62,7 @@
 
     <string-array name="v44">
         <item>v2.3.2</item>
-        <item>New: fixed weather bug's notification issue</item>
+        <item>New: fixed weather bug\'s notification issue</item>
         <item>Play store: fixed uninstall dialog whiteness for cm</item>
         <item></item>
         <item></item>
