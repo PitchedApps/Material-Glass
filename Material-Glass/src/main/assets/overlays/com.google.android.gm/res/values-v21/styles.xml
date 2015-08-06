@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppBaseTheme" parent="@*common:style/Theme.AppCompat.T" />
-    <style name="Theme.AppCompat" parent="@*common:style/Theme.AppCompat.T" />
-    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat.T" />
-    <style name="Theme.AppCompat.Light.DarkActionBar" parent="@*common:style/Theme.AppCompat.T" />
+    <style name="AppBaseTheme" parent="@*common:style/Theme.AppCompat" />
+    <style name="Theme.AppCompat" parent="@*common:style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.Light.DarkActionBar" parent="@*common:style/Theme.AppCompat" />
     <style name="Theme.AppCompat.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar" />
     <style name="Theme.AppCompat.Light.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar" />
-    <style name="Base.Theme.AppCompat" parent="@*common:style/Theme.AppCompat.T" />
-    <style name="Base.Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat.T" />
-    <style name="Base.ThemeOverlay.AppCompat" parent="@*common:style/Theme.AppCompat.T" />
-    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@*common:style/Theme.AppCompat.T" />
+    <style name="Base.Theme.AppCompat" parent="@*common:style/Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
+    <style name="Base.ThemeOverlay.AppCompat" parent="@*common:style/Theme.AppCompat" />
+    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
 
     <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
     <style name="Theme.AppCompat.Light.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
@@ -98,7 +98,7 @@
         <item name="android:colorBackground">@color/background</item>
     </style>
 
-    <style name="UnifiedEmailTheme.Appcompat" parent="@style/Theme.AppCompat.T">
+    <style name="UnifiedEmailTheme.Appcompat" parent="@style/Theme.AppCompat">
         <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
         <item name="actionModeBackground">@color/action_mode_background</item>
         <item name="homeAsUpIndicator">@drawable/ic_arrow_back_wht_24dp_with_rtl</item>

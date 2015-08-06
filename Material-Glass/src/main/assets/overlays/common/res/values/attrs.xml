@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="title" format="string" />
     <attr name="height" format="dimension" />
     <attr name="isLightTheme" format="boolean" />
     <attr name="windowActionBar" format="boolean" />
@@ -87,21 +86,6 @@
     <attr name="colorControlHighlight" format="color" />
     <attr name="colorButtonNormal" format="color" />
     <attr name="colorSwitchThumbNormal" format="color" />
-    <attr name="navigationMode">
-        <enum name="normal" value="0" />
-        <enum name="listMode" value="1" />
-        <enum name="tabMode" value="2" />
-    </attr>
-    <attr name="displayOptions">
-        <flag name="disableHome" value="0x00000020" />
-        <flag name="homeAsUp" value="0x00000004" />
-        <flag name="none" value="0x00000000" />
-        <flag name="showCustom" value="0x00000010" />
-        <flag name="showHome" value="0x00000002" />
-        <flag name="showTitle" value="0x00000008" />
-        <flag name="useLogo" value="0x00000001" />
-    </attr>
-    <attr name="subtitle" format="string" />
     <attr name="titleTextStyle" format="reference" />
     <attr name="subtitleTextStyle" format="reference" />
     <attr name="icon" format="reference" />
@@ -127,16 +111,7 @@
     <attr name="paddingStart" format="dimension" />
     <attr name="paddingEnd" format="dimension" />
     <attr name="preserveIconSpacing" format="boolean" />
-    <attr name="showAsAction">
-        <flag name="always" value="0x00000002" />
-        <flag name="collapseActionView" value="0x00000008" />
-        <flag name="ifRoom" value="0x00000001" />
-        <flag name="never" value="0x00000000" />
-        <flag name="withText" value="0x00000004" />
-    </attr>
     <attr name="actionLayout" format="reference" />
-    <attr name="actionViewClass" format="string" />
-    <attr name="actionProviderClass" format="string" />
     <attr name="prompt" format="reference" />
     <attr name="spinnerMode">
         <enum name="dialog" value="0" />
@@ -146,7 +121,6 @@
     <attr name="disableChildrenWhenDisabled" format="boolean" />
     <attr name="layout" format="reference" />
     <attr name="iconifiedByDefault" format="boolean" />
-    <attr name="queryHint" format="string" />
     <attr name="closeIcon" format="reference" />
     <attr name="goIcon" format="reference" />
     <attr name="searchIcon" format="reference" />
@@ -155,7 +129,6 @@
     <attr name="suggestionRowLayout" format="reference" />
     <attr name="queryBackground" format="reference" />
     <attr name="submitBackground" format="reference" />
-    <attr name="initialActivityCount" format="string" />
     <attr name="expandActivityOverflowButtonDrawable" format="reference" />
     <attr name="textAllCaps" format="reference|boolean" />
     <attr name="measureWithLargestChild" format="boolean" />
@@ -176,9 +149,7 @@
     <attr name="maxButtonHeight" format="dimension" />
     <attr name="theme" format="reference" />
     <attr name="collapseIcon" format="reference" />
-    <attr name="collapseContentDescription" format="string" />
     <attr name="navigationIcon" format="reference" />
-    <attr name="navigationContentDescription" format="string" />
     <attr name="state_above_anchor" format="boolean" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="color" format="color" />

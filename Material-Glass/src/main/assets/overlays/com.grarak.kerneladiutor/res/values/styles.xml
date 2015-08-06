@@ -5,8 +5,4 @@
     <style name="Base.ThemeOverlay.AppCompat" parent="@*common:style/Theme.AppCompat" />
 
     <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
-
-    <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
-
-
 </resources>
