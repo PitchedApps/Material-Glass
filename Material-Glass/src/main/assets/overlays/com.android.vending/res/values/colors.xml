@@ -32,25 +32,25 @@
     <color name="play_movies_primary">#a2ed3b3b</color>
     <color name="play_music_primary">#a2ef6c00</color>
     <color name="play_newsstand_primary">#a2536dfe</color>
-    <color name="play_multi_primary">#a2455a64</color>
+    <color name="play_multi_primary">#ff455a64</color>
     <color name="play_apps_primary_disabled">#a2689f38</color>
     <color name="play_books_primary_disabled">#a2039be5</color>
     <color name="play_movies_primary_disabled">#a2ed3b3b</color>
     <color name="play_music_primary_disabled">#a2ef6c00</color>
     <color name="play_newsstand_primary_disabled">#a2536dfe</color>
-    <color name="play_multi_primary_disabled">#a2455a64</color>
+    <color name="play_multi_primary_disabled">#ff455a64</color>
     <color name="play_apps_secondary">#a2558b2f</color>
     <color name="play_books_secondary">#a20277bd</color>
     <color name="play_movies_secondary">#a2d23f31</color>
     <color name="play_music_secondary">#a2e65100</color>
     <color name="play_newsstand_secondary">#a23f51b5</color>
-    <color name="play_multi_secondary">#a2455a64</color>
+    <color name="play_multi_secondary">#ff455a64</color>
     <color name="play_apps_light">#a2aed581</color>
     <color name="play_books_light">#a28c9eff</color>
     <color name="play_movies_light">#a2ff8a80</color>
     <color name="play_music_light">#a2ffb74d</color>
     <color name="play_newsstand_light">#a2304ffe</color>
-    <color name="play_multi_light">#a290a4ae</color>
+    <color name="play_multi_light">#ff90a4ae</color>
     <color name="play_ripple_light">#20ffffff</color>
     <color name="play_ripple_dark">#20ffffff</color>
     <color name="play_action_button_pressed_grey">#80f0f0f0</color>
@@ -117,7 +117,7 @@
     <color name="now_playing_widget_hotseat_bg">#f2ffffff</color>
     <color name="now_playing_widget_empty_bg">#66000000</color>
     <color name="now_playing_widget_empty_fg">#66ffffff</color>
-    <color name="status_bar_multi">#8837474f</color>
+    <color name="status_bar_multi">#ff37474f</color>
     <color name="status_bar_apps">#88558b2f</color>
     <color name="status_bar_books">#880277bd</color>
     <color name="status_bar_music">#88e65100</color>
@@ -170,6 +170,8 @@
 
     <!--08/01/2015-->
     <!--<color name="restore_notification">#ff607d8b</color>-->
+
+    <color name="background_floating_material_light">#cc060606</color>
 
     <color name="background">#88000000</color>
     <color name="backgroundd">#88161616</color>
