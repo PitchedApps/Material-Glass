@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,AOSPKeyboard,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,NovaLauncher,PushBullet,HellsCoreUpdater,Snapchat,Swiftkey,Pedometer,SoftReboot, "</string>
-    <!--21 items-->
+    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,AOSPKeyboard,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,NovaLauncher,PushBullet,HellsCoreUpdater,Snapchat,Swiftkey,Pedometer,SoftReboot,WeatherBug, "</string>
+    <!--22 items-->
 
     <string-array name="fullchangelog">
         <item>@array/v44</item>
