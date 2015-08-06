@@ -4,6 +4,7 @@
     <!--21 items-->
 
     <string-array name="fullchangelog">
+        <item>@array/v44</item>
         <item>@array/v43</item>
         <item>@array/v42</item>
         <item>@array/v41</item>
@@ -54,6 +55,15 @@
         <item>v</item>
         <item></item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v44">
+        <item>v2.3.2</item>
+        <item>New: fixed weather bug's notification issue</item>
+        <item>Play store: fixed uninstall dialog whiteness for cm</item>
         <item></item>
         <item></item>
         <item></item>

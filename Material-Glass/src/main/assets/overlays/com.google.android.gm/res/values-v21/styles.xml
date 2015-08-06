@@ -38,6 +38,9 @@
         <item name="android:windowBackground">@color/background</item>
         <item name="android:colorBackgroundCacheHint">@color/background</item>
         <item name="android:cacheColorHint">@color/background</item>
+
+        <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
+        <item name="android:statusBarColor">@*common:color/backgroundt</item>
     </style>
     <style name="ActionBarOverflowButtonStyle"
         parent="@android:style/Widget.Material.ActionButton.Overflow" />

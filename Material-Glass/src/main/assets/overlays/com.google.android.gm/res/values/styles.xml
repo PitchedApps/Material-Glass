@@ -26,10 +26,8 @@
     <style name="ActionBarWidgetTheme" parent="@android:style/Theme.Material">
         <item name="android:dropDownListViewStyle">@style/ActionBarDividerlessListViewStyle</item>
         <item name="android:popupMenuStyle">@android:style/Widget.Material.ListPopupWindow</item>
-        <item name="android:textAppearanceLargePopupMenu">@style/ActionBarTextAppearanceLargeStyle
-        </item>
-        <item name="android:textAppearanceSmallPopupMenu">@style/ActionBarTextAppearanceSmallStyle
-        </item>
+        <item name="android:textAppearanceLargePopupMenu">@style/ActionBarTextAppearanceLargeStyle</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/ActionBarTextAppearanceSmallStyle</item>
     </style>
     <style name="ActionBarDividerlessListViewStyle"
         parent="@android:style/Widget.Material.ListView">

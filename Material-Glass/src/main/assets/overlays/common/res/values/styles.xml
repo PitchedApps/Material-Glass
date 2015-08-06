@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--
+    <item name="android:actionBarStyle">@*common:style/Pitch.ActionBar</item>
+    <item name="android:statusBarColor">@*common:color/backgroundt</item>
+-->
     <style name="Pitch.ActionBar" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:background">@color/backgroundt</item>
     </style>
