@@ -115,6 +115,15 @@ public class HomeFragment extends Fragment {
                 startActivity(appfour);
             }
         });
+		
+		TextView appplusbtn = (TextView) root.findViewById(R.id.appplus_button);
+        appplusbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent appplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.app_plus_link)));
+                startActivity(appplus);
+            }
+        });
 
         TextView ratebtn = (TextView) root.findViewById(R.id.rate_button);
         ratebtn.setOnClickListener(new View.OnClickListener() {

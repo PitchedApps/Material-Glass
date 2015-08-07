@@ -54,6 +54,10 @@
     <string name="app_two_title">@string/xda_title</string>
     <string name="app_two_content">@string/xda_content</string>
     <string name="app_two_package">@string/xda_link</string>
+	
+	<string name="app_plus_title">Pitched Apps Beta Community</string>
+    <string name="app_plus_content">Join the beta community to receive test builds before public releases and to stay up to date!</string>
+    <string name="app_plus_link">https://plus.google.com/u/0/communities/101836645831612238387</string>
 
     <string name="app_three_title">@string/pitched_glass_title</string>
     <string name="app_three_content">@string/pitched_glass_content</string>
