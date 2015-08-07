@@ -1,78 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="background_tab_pressed">#6633b5e5</color>
-    <color name="md__defaultBackground">@color/background</color>
-    <color name="divider">#22ffffff</color>
-    <color name="message_text">#ffffffff</color>
-    <color name="button_text">#ffacacac</color>
-    <color name="button_background">#11ffffff</color>
-    <color name="button_background_pressed">#22ffffff</color>
-
-    <color name="ab_black">@color/background</color>
-
-    <color name="divider_dark">#22ffffff</color>
-    <color name="divider_light">#ff999999</color>
-    <color name="icon_color_dark">#ffd0d0d0</color>
-    <color name="icon_color_light">#ff808080</color>
-    <color name="divider_lighter_dark">#11ffffff</color>
-    <color name="divider_lighter_light">#ffcccccc</color>
-    <color name="blue_accent_dark">@color/backgroundd</color>
-    <color name="blue_accent_light">#ff264d73</color>
-    <color name="sidebar_dark">#99000000</color>
-    <color name="sidebar_light">#ffffffff</color>
-    <color name="transparent">#00000000</color>
-    <color name="blue_highlight">#5041b2dc</color>
-    <color name="highlight_light">#ffc2e6f3</color>
-    <color name="highlight_dark">#88111111</color>
-    <color name="listview_dropdown_dark">#cc000000</color>
-    <color name="slidemenu_main_dark">@color/background</color>
-    <color name="slidemenu_main_highlight_dark">@color/backgroundd</color>
-    <color name="slidemenu_secondary_dark">@color/background</color>
-    <color name="slidemenu_secondary_highlight_dark">@color/backgroundd</color>
-    <color name="slidemenu_secondary_divider_dark">#22ffffff</color>
-    <color name="slidemenu_account_main_dark">@color/background</color>
-    <color name="slidemenu_account_dropdown_dark">#aa000000</color>
-    <color name="preview_shade">#bb000000</color>
-    <color name="white">#ffffffff</color>
-    <color name="black">#ff000000</color>
-    <color name="card_grey">#40000000</color>
-    <color name="card_bg_dark">#40000000</color>
-    <color name="white20">#20ffffff</color>
-    <color name="white40">#40ffffff</color>
-    <color name="fabOrange">#fffeaa3f</color>
-    <color name="fabRed">@color/backgrounddx</color>
-    <color name="bottom_bar_divider_light">#22ffffff</color>
-    <color name="bottom_bar_divider_dark">#22000000</color>
-    <color name="actionbar_blue">#ff3575e0</color>
-    <color name="actionbar_blue_on">#ff709ae0</color>
-    <color name="bar">@color/background</color>
-    <color name="bar_highlight">#ffd75829</color>
-    <color name="listview_colorhint">@color/background</color>
-
-    <color name="divider_material_dark">#1fffffff</color>
-    <!--<color name="reddit_news_blue">@color/background</color>-->
-
-    <color name="grey_600">@color/background</color>
-    <color name="grey_700">@color/background</color>
-    <color name="grey_800">@color/background</color>
-    <!--actually used-->
-    <color name="grey_900">@color/backgroundx</color>
-    <color name="grey_1000">@color/backgroundx</color>
-
-    <color name="blue_grey_400">@color/backgrounddd</color>
-    <color name="blue_grey_500">#88607d8b</color>
-    <color name="blue_grey_600">@color/backgrounddd</color>
-    <color name="blue_grey_700">@color/background</color>
-    <color name="blue_grey_800">@color/background</color>
-    <color name="blue_grey_900">@color/backgroundx</color>
-
-    <color name="text">#ffffffff</color>
-    <color name="textt">#ccffffff</color>
-    <color name="texttt">#99ffffff</color>
-    <color name="background">#bb000000</color>
-    <color name="backgroundd">#bb161616</color>
-    <color name="backgrounddd">#bb323232</color>
-    <color name="backgroundx">#ff000000</color>
-    <color name="backgrounddx">#ff161616</color>
-    <color name="backgroundddx">#ff323232</color>
+	<color name="card_bg_dark">#00000000</color>
+	<color name="card_grey">#15000000</color>
+	<color name="cd__defaultBackground">#80000000</color>
+	<color name="md__defaultBackground">#bb000000</color>
+	<color name="sidebar_dark">#bb000000</color>
+	<color name="slidemenu_account_dropdown_dark">#bb000000</color>
+	<color name="slidemenu_account_main_dark">#bb000000</color>
+	<color name="slidemenu_main_dark">#bb000000</color>
+	<color name="slidemenu_main_highlight_dark">#bb121212</color>
+	<color name="slidemenu_secondary_dark">#bb000000</color>
+	<color name="slidemenu_secondary_divider_dark">#22ffffff</color>
+    <color name="fabRed">#88121212</color>
 </resources>

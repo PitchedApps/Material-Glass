@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,AOSPKeyboard,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,NovaLauncher,PushBullet,HellsCoreUpdater,Snapchat,Swiftkey,Pedometer,SoftReboot,WeatherBug, "</string>
-    <!--22 items-->
+    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,AOSPKeyboard,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,NovaLauncher,Pandora,PushBullet,HellsCoreUpdater,Relay,RelayPro,Snapchat,Swiftkey,Pedometer,SoftReboot,WeatherBug, "</string>
+    <!--25 items-->
 
     <string-array name="fullchangelog">
         <item>@array/v44</item>
@@ -62,11 +62,11 @@
 
     <string-array name="v44">
         <item>v2.3.2</item>
-        <item>New: fixed weather bug\'s notification issue</item>
+        <item>New: fixed weather bug\'s notification issue for both cm and layers</item>
         <item>Play store: fixed uninstall dialog whiteness for cm</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Framework: fixed bad devicedefault modifications for both cm and layers (example being the privacy guard alert dialog)</item>
+        <item>New: fixed pandora notification for cm and layers</item>
+        <item>New: fully themed relay for reddit for layers and cm xda (this only works with the dark based themes, so switch before you use it)</item>
     </string-array>
 
     <string-array name="v43">
