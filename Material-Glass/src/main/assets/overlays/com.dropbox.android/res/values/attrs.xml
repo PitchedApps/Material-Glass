@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="drawerArrowStyle" format="reference" />
+    <attr name="promotedActionHeight" format="dimension" />
+    <attr name="promotedActionWidth" format="dimension" />
+    <attr name="actionBarSize" format="dimension">
+        <enum name="wrap_content" value="0" />
+    </attr>
+    <attr name="selectableItemBackground" format="reference" />
+    <attr name="selectableItemBackgroundBorderless" format="reference" />
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorPrimaryDark" format="color" />
+    <attr name="colorAccent" format="color" />
+    <attr name="colorControlNormal" format="color" />
+    <attr name="colorControlActivated" format="color" />
+    <attr name="colorControlHighlight" format="color" />
+    <attr name="colorSwitchThumbNormal" format="color" />
+    <attr name="color" format="color" />
+    <attr name="spinBars" format="boolean" />
+</resources>

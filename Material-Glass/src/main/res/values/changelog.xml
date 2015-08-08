@@ -4,6 +4,7 @@
     <!--25 items-->
 
     <string-array name="fullchangelog">
+        <item>@array/v45</item>
         <item>@array/v44</item>
         <item>@array/v43</item>
         <item>@array/v42</item>
@@ -54,6 +55,15 @@
     <string-array name="v">
         <item>v</item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v45">
+        <item>v2.3.3</item>
+        <item>App: added link card to google + beta community</item>
         <item></item>
         <item></item>
         <item></item>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="dbx_action_bar_size">@dimen/abc_action_bar_default_height_material</item>
+    <dimen name="abc_action_bar_default_height_material">56.0dip</dimen>
+    <dimen name="dbx_promoted_action_button_height">56.0dip</dimen>
+    <!--<dimen name="dbx_promoted_action_button_margin">16.0dip</dimen>-->
+    <dimen name="dbx_promoted_action_button_width">56.0dip</dimen>
+</resources>

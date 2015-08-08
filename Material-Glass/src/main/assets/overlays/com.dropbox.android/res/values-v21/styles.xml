@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.ToolbarActivity" parent="@style/Base.ToolbarActivity.VersionSpecific">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:actionBarSize">@dimen/dbx_action_bar_size</item>
+        <!--<item name="android:selectableItemBackground">@drawable/ripple_bounded_for_dark_views</item>-->
+        <!--<item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>-->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="promotedActionHeight">@dimen/dbx_promoted_action_button_height</item>
+        <item name="promotedActionWidth">@dimen/dbx_promoted_action_button_width</item>
+        <item name="actionBarSize">@dimen/dbx_action_bar_size</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="colorPrimary">@color/dbx_primary</item>
+        <item name="colorPrimaryDark">@color/dbx_primary_dark</item>
+        <item name="colorAccent">@color/dbx_primary</item>
+        <item name="colorControlNormal">@color/dbx_color_control_normal</item>
+        <item name="colorControlActivated">@color/dbx_color_control_activated</item>
+        <item name="colorControlHighlight">@color/dbx_color_control_highlight</item>
+        <item name="colorSwitchThumbNormal">@color/dbx_color_switch_thumbNormal</item>
+    </style>
+    <style name="Base.ToolbarActivity.VersionSpecific" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="DrawerArrowStyle" parent="@*common:style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/text</item>
+        <item name="spinBars">false</item>
+    </style>
+
+    <style name="Base.NoActionBar" parent="@style/Base.NoActionBar.VersionSpecific">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:actionBarSize">@dimen/dbx_action_bar_size</item>
+        <!--<item name="android:selectableItemBackground">@drawable/ripple_bounded_for_dark_views</item>-->
+        <!--<item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>-->
+        <item name="promotedActionHeight">@dimen/dbx_promoted_action_button_height</item>
+        <item name="promotedActionWidth">@dimen/dbx_promoted_action_button_width</item>
+        <item name="actionBarSize">@dimen/dbx_action_bar_size</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="colorPrimary">@color/dbx_primary</item>
+        <item name="colorPrimaryDark">@color/dbx_primary_dark</item>
+        <item name="colorAccent">@color/dbx_primary</item>
+        <item name="colorControlNormal">@color/dbx_color_control_normal</item>
+        <item name="colorControlActivated">@color/dbx_color_control_activated</item>
+        <item name="colorControlHighlight">@color/dbx_color_control_highlight</item>
+        <item name="colorSwitchThumbNormal">@color/dbx_color_switch_thumbNormal</item>
+    </style>
+    <style name="Base.NoActionBar.VersionSpecific" parent="@style/Theme.AppCompat.NoActionBar" />
+</resources>
