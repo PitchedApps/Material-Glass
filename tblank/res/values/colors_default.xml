@@ -11,6 +11,4 @@
     <color name="backgroundx">#ff000000</color>
     <color name="backgrounddx">#ff161616</color>
     <color name="backgroundddx">#ff323232</color>
-
-    <color name="background_floating_material_light">#cc060606</color>
 </resources>

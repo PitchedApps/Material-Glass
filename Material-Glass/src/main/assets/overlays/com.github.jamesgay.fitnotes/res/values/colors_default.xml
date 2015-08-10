@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_bar_background">#bb000000</color>
+    <color name="black">@color/text</color>
+    <color name="dark_grey">@color/textt</color>
+    <color name="hint_grey">#ffdddddd</color>
+    <color name="light_grey">#30000000</color>
+    <color name="medium_grey">@color/textt</color>
+    <color name="nav_drawer_option_background">#bb000000</color>
+    <color name="nav_drawer_option_selected">#bb121212</color>
+    <color name="navigation_background">#bb000000</color>
+    <color name="very_dark_grey">@color/text</color>
+    <color name="very_light_blue">#30333333</color>
+    <color name="very_light_grey">@color/background</color>
+    <color name="very_very_light_blue">#30333333</color>
+    <color name="white">#30000000</color>
+
+    <color name="text">#ffffffff</color>
+    <color name="textt">#ccffffff</color>
+    <color name="texttt">#99ffffff</color>
+    <color name="background">#88000000</color>
+    <color name="backgroundd">#88161616</color>
+    <color name="backgrounddd">#88323232</color>
+    <color name="backgroundx">#ff000000</color>
+    <color name="backgrounddx">#ff161616</color>
+    <color name="backgroundddx">#ff323232</color>
+</resources>
