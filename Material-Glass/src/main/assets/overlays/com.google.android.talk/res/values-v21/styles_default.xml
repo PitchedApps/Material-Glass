@@ -4,10 +4,13 @@
     <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
     <style name="Theme.AppCompat.Light.DarkActionBar" parent="@*common:style/Theme.AppCompat" />
     <style name="Theme.AppCompat.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar" />
-    <style name="Theme.AppCompat.Light.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar">
+        <!--<item name="android:navigationBarColor">@android:color/black</item>-->
+    </style>
     <style name="Base.Theme.AppCompat" parent="@*common:style/Theme.AppCompat" />
     <style name="Base.Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
     <style name="Base.ThemeOverlay.AppCompat" parent="@*common:style/Theme.AppCompat" />
+    <style name="ThemeOverlay.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
     <style name="Base.ThemeOverlay.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
 
     <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />

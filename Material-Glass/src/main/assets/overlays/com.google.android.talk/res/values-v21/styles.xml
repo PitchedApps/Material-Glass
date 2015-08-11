@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="verticalDividerStyle">
+        <item name="android:background">#22ffffff</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">12.0dip</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="inviteVerticalDividerStyle">
+        <item name="android:background">#22ffffff</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="horizontalDividerStyle">
+        <item name="android:background">#22ffffff</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+<!--
+    <style name="RealTimeChat.ConversationHeader.ConversationName" parent="@style/Theme.EmeraldSea">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="RealTimeChat.ParticipantHeader.ParticipantCount" parent="@style/Theme.EmeraldSea">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="RealTimeChat.Message.Author" parent="@style/Theme.EmeraldSea">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Theme.EmeraldSea" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:dividerHeight">@dimen/divider_height_settings</item>
+        <item name="android:listDivider">@drawable/list_divider_settings</item>
+        <item name="hangoutsListSelector">@android:drawable/list_selector_background</item>
+        <item name="editAudienceBackground">@android:drawable/edit_text</item>
+        <item name="editLocationBackground">@android:drawable/edit_text</item>
+        <item name="hangoutsButtonSelectableBackground">@drawable/bg_item_selectable</item>
+        <item name="actionOverflowButtonStyle">@style/ActionBarOverflow</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="actionModeBackground">@color/primary</item>
+        <item name="selectableItemBackground">@drawable/touch_item_background</item>
+        <item name="toolbarStyle">@style/Toolbar</item>
+        <item name="panelBackground">@#cc060606</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent_dark</item>
+    </style>
+    <style name="ActionBarOverflow" parent="@*common:style/Widget.AppCompat.ActionButton.Overflow" />
+    -->
+</resources>
