@@ -38,7 +38,7 @@
     <color name="fab">#aa222222</color>
     <color name="fabb">#aa555555</color>
     <color name="cc">#cc000000</color>
-    <color name="dialog">#cc111111</color>
+    <color name="dialog">#cc060606</color>
     <color name="status">#30000000</color>
     <color name="actionbar">@color/status</color>
     <color name="40000000">#40000000</color>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_text_size">18.0sp</dimen>
+	<dimen name="divider_height_settings">1.0dip</dimen>
+    <dimen name="sub_header_text_size">14.0sp</dimen>
+    <dimen name="settings_action_bar_content_inset_start">72.0dip</dimen>
+    <dimen name="conversation_message_list_item_vertical_padding">8.0dip</dimen>
+    <dimen name="l_space">16.0dip</dimen>
+    <dimen name="conversation_message_list_item_vertical_margin">8.0dip</dimen>
+    <dimen name="conversation_message_list_item_min_height">48.0dip</dimen>
+</resources>

@@ -11,4 +11,5 @@
     <color name="backgroundx">#ff000000</color>
     <color name="backgrounddx">#ff161616</color>
     <color name="backgroundddx">#ff323232</color>
+    <color name="backgroundtint">#aa000000</color>
 </resources>

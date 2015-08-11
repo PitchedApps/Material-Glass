@@ -1,3 +1,8 @@
 (#t<)|(#tt<)|(#ttt<)|(#b<)|(#bb<)|(#bbb<)|(#d<)|(#x<)|(#xx<)
 
-(?1#ffffffff<)(?2#ddffffff<)(?3#aaffffff<)(?4#80000000<)(?5#80060606<)(?6#80121212<)(?7#22ffffff<)(?8#ff000000<)(?9#ff060606<)
+(?1@color/text<)(?2@color/text<)(?3@color/text<)(?4@color/background<)(?5@color/background<)(?6@color/background<)(?7#22ffffff<)(?8@color/backgroundx<)(?9@color/backgroundxx<)
+
+
+(@color/text<)|(@color/textt<)|(@color/texttt<)|(@color/background<)|(@color/backgroundd<)|(@color/backgrounddd<)|(@color/backgroundx<)|(@color/backgroundxx<)
+
+(?1#ffffffff<)(?2#ddffffff<)(?3#aaffffff<)(?4#80000000<)(?5#80060606<)(?6#80121212<)(?7#ff000000<)(?8#ff060606<)
