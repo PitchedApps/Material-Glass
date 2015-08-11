@@ -7,7 +7,10 @@
         <item name="android:statusBarColor">@color/background</item>
     </style>
     <style name="Theme.AppCompat.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar" />
-    <style name="Theme.AppCompat.Light.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar">
+        <item name="android:backgroundTint">@color/backgroundtint</item>
+        <item name="android:statusBarColor">@color/backgroundtint</item>
+    </style>
     <style name="Base.Theme.AppCompat" parent="@*common:style/Theme.AppCompat" />
     <style name="Base.Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
     <style name="Base.ThemeOverlay.AppCompat" parent="@*common:style/Theme.AppCompat" />

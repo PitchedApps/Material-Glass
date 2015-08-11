@@ -26,7 +26,7 @@
         <item name="android:singleLine">true</item>
     </style>
 
-    <style name="RealTimeChat.ConversationSwitcher.main" parent="@style/Theme.EmeraldSea">
+    <style name="RealTimeChat.ConversationSwitcher.main" parent="@style/Pitch.EmeraldSea">
         <item name="android:textSize">14.0sp</item>
         <item name="android:typeface">sans</item>
         <item name="android:textColor">@color/text</item>
@@ -34,7 +34,7 @@
         <item name="android:singleLine">true</item>
         <item name="android:fontFamily">roboto-regular</item>
     </style>
-    <style name="RealTimeChat.ConversationHeader.ConversationName" parent="@style/Theme.EmeraldSea">
+    <style name="RealTimeChat.ConversationHeader.ConversationName" parent="@style/Pitch.EmeraldSea">
         <item name="android:textAppearance">?android:textAppearanceSmall</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/text</item>
@@ -42,7 +42,7 @@
         <item name="android:gravity">center_vertical</item>
         <item name="android:singleLine">true</item>
     </style>
-    <style name="RealTimeChat.ParticipantHeader.ParticipantCount" parent="@style/Theme.EmeraldSea">
+    <style name="RealTimeChat.ParticipantHeader.ParticipantCount" parent="@style/Pitch.EmeraldSea">
         <item name="android:textAppearance">?android:textAppearanceSmall</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/text</item>
@@ -50,7 +50,7 @@
         <item name="android:gravity">center_vertical</item>
         <item name="android:singleLine">true</item>
     </style>
-    <style name="RealTimeChat.Message.Author" parent="@style/Theme.EmeraldSea">
+    <style name="RealTimeChat.Message.Author" parent="@style/Pitch.EmeraldSea">
         <item name="android:textAppearance">?android:textAppearanceSmall</item>
         <item name="android:textSize">14.0sp</item>
         <item name="android:textStyle">bold</item>
@@ -60,7 +60,7 @@
         <item name="android:singleLine">true</item>
     </style>
 
-    <style name="RealTimeChat.Participant.Name" parent="@style/Theme.EmeraldSea">
+    <style name="RealTimeChat.Participant.Name" parent="@style/Pitch.EmeraldSea">
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:textSize">18.0sp</item>
         <item name="android:textColor">@color/text</item>
@@ -68,7 +68,7 @@
         <item name="android:singleLine">true</item>
     </style>
 
-    <style name="Theme.EmeraldSea" parent="@*common:style/Theme.AppCompat.NoActionBar">
+    <style name="Pitch.EmeraldSea" parent="@*common:style/Theme.AppCompat.NoActionBar">
         <item name="android:backgroundTint">@color/backgroundtint</item>
         <item name="android:statusBarColor">@color/backgroundtint</item>
 
@@ -162,7 +162,22 @@
         <item name="android:colorAccent">@color/callerid_blue</item>
     </style>
 
+    <style name="Theme.ConversationActivity" parent="@style/Pitch.EmeraldSea">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
 
+    <style name="Hangout.Settings.ActionBar" parent="@*common:style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Hangouts.ConversationParticipants" parent="@style/Pitch.EmeraldSea">
+        <item name="android:textColorSecondary">@color/textt</item>
+        <item name="colorAccent">@color/text</item>
+    </style>
+
+    <!--not needed-->
 
     <!--<style name="ConversationMessageListItemViewContainerStyle">-->
         <!--<item name="android:orientation">horizontal</item>-->
@@ -187,11 +202,6 @@
         <!--<item name="android:windowDisablePreview">true</item>-->
     <!--</style>-->
 
-    <style name="Theme.ConversationActivity" parent="@style/Theme.EmeraldSea">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="windowActionModeOverlay">true</item>
-    </style>
-
     <!--<style name="Theme.Hangout" parent="@style/Theme.EmeraldSea">-->
         <!--<item name="android:windowBackground">@android:color/transparent</item>-->
         <!--<item name="android:windowActionBarOverlay">true</item>-->
@@ -202,14 +212,4 @@
     <!--<style name="drawerArrowToggle" parent="@*common:style/Widget.AppCompat.DrawerArrowToggle">-->
         <!--<item name="color">@color/text</item>-->
     <!--</style>-->
-
-    <style name="Hangout.Settings.ActionBar" parent="@*common:style/Widget.AppCompat.ActionBar">
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:backgroundTint">@android:color/transparent</item>
-    </style>
-
-    <style name="Theme.Hangouts.ConversationParticipants" parent="@style/Theme.EmeraldSea">
-        <item name="android:textColorSecondary">@color/textt</item>
-        <item name="colorAccent">@color/text</item>
-    </style>
 </resources>

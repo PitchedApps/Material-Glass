@@ -66,8 +66,7 @@
         <item>App: added link card to google + beta community</item>
         <item>Google: black widget voice search</item>
         <item>Settings: added AICP icon</item>
-        <item></item>
-        <item></item>
+        <item>New: themed hangouts 4.0 in the cm xda version (bugs: avatars in the conversation list are black and if you rapidly switch conversations it will crash)</item>
     </string-array>
 
     <string-array name="v44">
