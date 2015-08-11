@@ -119,7 +119,8 @@
     </style>
 
     <style name="EsActionBar" parent="@android:style/Widget.Material.ActionBar">
-        <item name="android:background">@color/background</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:actionModeBackground">@android:color/transparent</item>
         <item name="android:logo">@android:color/transparent</item>
         <item name="android:titleTextStyle">@style/EsActionBar.Title</item>
     </style>
@@ -198,12 +199,17 @@
         <!--<item name="colorPrimaryDark">@android:color/black</item>-->
     <!--</style>-->
 
-    <style name="drawerArrowToggle" parent="@*common:style/Widget.AppCompat.DrawerArrowToggle">
-        <item name="color">@color/text</item>
-    </style>
+    <!--<style name="drawerArrowToggle" parent="@*common:style/Widget.AppCompat.DrawerArrowToggle">-->
+        <!--<item name="color">@color/text</item>-->
+    <!--</style>-->
 
     <style name="Hangout.Settings.ActionBar" parent="@*common:style/Widget.AppCompat.ActionBar">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Hangouts.ConversationParticipants" parent="@style/Theme.EmeraldSea">
+        <item name="android:textColorSecondary">@color/textt</item>
+        <item name="colorAccent">@color/text</item>
     </style>
 </resources>

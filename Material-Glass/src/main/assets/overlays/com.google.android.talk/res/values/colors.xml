@@ -71,7 +71,7 @@
     <color name="quantum_white_80">#ccffffff</color>
     <color name="application_background">@color/background</color>
     <!--beware-->
-    <color name="primary_dark">@color/textt</color>
+    <color name="primary_dark">@color/backgroundx</color>
     <color name="accent_dark">@color/text</color>
     <color name="text_secondary_default_color_dark">#9affffff</color>
     <color name="text_tertiary_default_color_dark">#66ffffff</color>
@@ -97,7 +97,7 @@
     <color name="quantum_black_hint_text">#42000000</color>
     <color name="quantum_black_divider">#1f000000</color>
     <!--###-->
-    <color name="quantum_white_100">@color/background</color>
+    <color name="quantum_white_100">@color/text</color>
     <color name="quantum_white_text">@color/text</color>
     <color name="quantum_white_secondary_text">#b3ffffff</color>
     <color name="quantum_white_hint_text">#4dffffff</color>
