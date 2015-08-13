@@ -4,6 +4,7 @@
     <!--25 items-->
 
     <string-array name="fullchangelog">
+        <item>@array/v46</item>
         <item>@array/v45</item>
         <item>@array/v44</item>
         <item>@array/v43</item>
@@ -55,6 +56,15 @@
     <string-array name="v">
         <item>v</item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v46">
+        <item>v2.3.4</item>
+        <item>Layers Manager: updated for new upcoming beta (themed from source)</item>
         <item></item>
         <item></item>
         <item></item>
