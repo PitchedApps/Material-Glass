@@ -7,9 +7,9 @@
     <!--yellow-->
     <color name="ccc">#ffff00</color>
     <!--red-->
-    <color name="ccc">#ff0000</color>
+    <color name="ddd">#ff0000</color>
     <!--blue-->
-    <color name="ddd">#0000ff</color>
+    <color name="eee">#0000ff</color>
     <!--green-->
-    <color name="eee">#00ff00</color>
+    <color name="fff">#00ff00</color>
 </resources>

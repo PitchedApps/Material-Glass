@@ -68,7 +68,10 @@
         <item>New: themed layers showcase for rro (filter dialog and search box cannot be themed yet)</item>
         <item>Settings: added slim icon and layers icon for xxhdpi</item>
         <item>RRO and CM: added lint.xml to all packages to help reduce force crash</item>
-        <item></item>
+        <item>Play Store: fixed black text in rating dialog and other colors</item>
+		<item>New: themed tapatalk for cm</item>
+		<item>Theme: cleaned up colors</item>
+		<item></item>
     </string-array>
 
     <string-array name="v45">
