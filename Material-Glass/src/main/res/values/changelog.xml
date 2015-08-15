@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,AOSPKeyboard,NavBar,Layers,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,NovaLauncher,Pandora,PushBullet,HellsCoreUpdater,Relay,RelayPro,Snapchat,Swiftkey,Pedometer,SoftReboot,WeatherBug, "</string>
-    <!--25 items-->
+    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,NovaLauncher,Pandora,PushBullet,HellsCoreUpdater,Relay,RelayPro,Snapchat,Swiftkey,Pedometer,SoftReboot,WeatherBug, "</string>
+    <!--26 items-->
 
     <string-array name="fullchangelog">
         <item>@array/v46</item>
@@ -65,9 +65,9 @@
     <string-array name="v46">
         <item>v2.3.4</item>
         <item>Layers Manager: updated for new upcoming beta (themed from source)</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>New: themed layers showcase for rro (filter dialog and search box cannot be themed yet)</item>
+        <item>Settings: added slim icon and layers icon for xxhdpi</item>
+        <item>RRO and CM: added lint.xml to all packages to help reduce force crash</item>
         <item></item>
     </string-array>
 

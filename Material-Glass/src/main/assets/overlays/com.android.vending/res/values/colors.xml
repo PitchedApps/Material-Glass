@@ -171,8 +171,6 @@
     <!--08/01/2015-->
     <!--<color name="restore_notification">#ff607d8b</color>-->
 
-    <color name="background_floating_material_light">#cc060606</color>
-
     <color name="background">#88000000</color>
     <color name="backgroundd">#88161616</color>
     <color name="backgrounddd">#88323232</color>
