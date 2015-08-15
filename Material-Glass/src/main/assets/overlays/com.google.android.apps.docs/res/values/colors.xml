@@ -258,8 +258,6 @@
     <color name="widget_text">#ffffffff</color>
 <!--TODO check sign in colors-->
 
-    <color name="aaa">#ffff00ff</color>
-    <color name="bbb">#ff00ffff</color>
     <color name="text">#ffffffff</color>
     <color name="textt">#ccffffff</color>
     <color name="texttt">#99ffffff</color>
