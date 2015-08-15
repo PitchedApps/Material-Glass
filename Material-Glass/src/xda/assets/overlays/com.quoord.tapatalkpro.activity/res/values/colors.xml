@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="about_bg">@color/backgroundt</color>
-    <color name="abs_drop_bg">#b2</color>
+    <color name="abs_drop_bg">@color/background</color>
     <color name="add_color">#ff2e2e2e</color>
     <!--<color name="all_gray">#ff6e6e6e</color>-->
     <color name="app_sectiontitle_yellow">@color/text</color>
@@ -46,14 +46,14 @@
     <color name="background_gray_b0">@color/backgroundt</color>
     <color name="background_gray_d">@color/backgroundt</color>
     <color name="background_gray_d1">@color/backgroundt</color>
-    <color name="background_topic_img_d">#b2</color>
+    <color name="background_topic_img_d">@color/background</color>
     <color name="background_white_d">@color/backgroundt</color>
     <color name="black_2729">@color/backgroundt</color>
     <color name="black_2c2e">@color/backgroundt</color>
     <color name="black_2e2f">@color/backgroundt</color>
     <color name="black_3436">@color/backgroundt</color>
     <color name="black_3f40">@color/backgroundt</color>
-    <color name="button_bar_bg">@color/backgroundt</color>
+    <color name="button_bar_bg">@color/eee</color>
     <color name="chat_auther_name_color">@color/text</color>
     <color name="chat_last_msg">@color/text</color>
     <color name="chat_last_time">@color/text</color>
@@ -105,21 +105,24 @@
     <color name="notification_icon_bg_color">@color/backgroundt</color>
     <color name="notificationsettingactivityback">@color/backgroundt</color>
     <color name="notificationsettingactivityitemback">@color/backgroundt</color>
-    <color name="tab_backgroud">@color/backgroundt</color>
+    <color name="tab_backgroud">@color/eee</color>
     <color name="tab_orange_text">@color/text</color>
     <color name="tab_orange_text_unselect">@color/text</color>
     <color name="tab_strip_dark">@color/backgroundt</color>
-    <color name="glay_121314">@color/backgroundt</color>
-    <color name="glay_242526">@color/backgroundt</color>
-    <color name="gray_141516">@color/backgroundt</color>
-    <color name="gray_2f2f">@color/backgroundt</color>
-    <color name="gray_636364">@color/backgroundt</color>
-    <color name="gray_6d7469">@color/backgroundt</color>
-    <color name="grey_3f4245">@color/backgroundt</color>
-    <color name="grey_4a4b">@color/backgroundt</color>
-    <color name="grey_5e5e5e">@color/backgroundt</color>
-    <color name="grey_797979">@color/backgroundt</color>
-    <color name="grey_8383">@color/backgroundt</color>
+    <color name="glay_121314">@color/ddd</color>
+    <color name="glay_242526">@color/ddd</color>
+    <color name="gray_141516">@color/ddd</color>
+    <color name="gray_2f2f">@color/ccc</color>
+    <color name="gray_636364">@color/ccc</color>
+    <color name="gray_6d7469">@color/ccc</color>
+    <color name="grey_3f4245">@color/bbb</color>
+    <color name="grey_4a4b">@color/bbb</color>
+    <color name="grey_5e5e5e">@color/bbb</color>
+    <color name="grey_797979">@color/aaa</color>
+    <color name="grey_8383">@color/aaa</color>
+    <color name="grey_a5a5">@color/aaa</color>
+    <!--<color name="grey_c2c2">@color/backgroundt</color>-->
+    <!--<color name="grey_cccc">@color/backgroundt</color>-->
 
     <color name="orange_b35">@color/backgroundx</color>
 </resources>
