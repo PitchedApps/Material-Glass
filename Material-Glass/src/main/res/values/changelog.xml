@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,DocumentsUI,Settings,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,NovaLauncher,Pandora,PushBullet,HellsCoreUpdater,Relay,RelayPro,Snapchat,Swiftkey,Pedometer,SoftReboot,WeatherBug, "</string>
-    <!--26 items-->
+    <string name="layers_apps">"FrameworkRes,SystemUi,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,HellsCoreUpdater,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,Snapchat,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v47</item>
         <item>@array/v46</item>
         <item>@array/v45</item>
         <item>@array/v44</item>
@@ -62,6 +62,15 @@
         <item></item>
     </string-array>
 
+    <string-array name="v47">
+        <item>v2.3.5</item>
+        <item>New: themed dialer for layers</item>
+        <item>Contacts: themed again for layers based on rro commits</item>
+        <item>New: added pitch black overlays for both contacts and dialer; make sure you apply the original layer along with this one</item>
+        <item>Tapatalk: added it to the layers list</item>
+        <item>Settings: themed bitsyko layers drawable and orion icon</item>
+    </string-array>
+
     <string-array name="v46">
         <item>v2.3.4</item>
         <item>Layers Manager: updated for new upcoming beta (themed from source)</item>
@@ -69,9 +78,9 @@
         <item>Settings: added slim icon and layers icon for xxhdpi</item>
         <item>RRO and CM: added lint.xml to all packages to help reduce force crash</item>
         <item>Play Store: fixed black text in rating dialog and other colors</item>
-		<item>New: themed tapatalk for cm</item>
+		<item>New: themed tapatalk for cm and layers (make sure you use the dark theme!)</item>
 		<item>Theme: cleaned up colors</item>
-		<item></item>
+		<item>Framework: changed notification accent to pitched blue</item>
     </string-array>
 
     <string-array name="v45">

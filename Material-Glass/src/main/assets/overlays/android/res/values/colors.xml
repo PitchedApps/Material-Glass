@@ -5,7 +5,7 @@
     <color name="holo_blue_light">@color/pblue</color>
     <color name="holo_blue_dark">@color/pbluee</color>
     <color name="holo_blue_bright">@color/backgrounddt</color>
-    <color name="system_notification_accent_color">@color/text</color>
+    <color name="system_notification_accent_color">@color/pbluee_t</color>
     <color name="background_holo_dark">@color/backgroundt</color>
     <color name="highlighted_text_holo_dark">#66666666</color>
     <color name="highlighted_text_holo_light">#66666666</color>

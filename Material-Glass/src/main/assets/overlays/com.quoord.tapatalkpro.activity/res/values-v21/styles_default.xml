@@ -17,7 +17,4 @@
     <style name="Base.Widget.AppCompat.Light.ActionBar" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.Solid" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.Solid.Inverse" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-
-    <color name="background_floating_material_light">#cc060606</color>
-
 </resources>

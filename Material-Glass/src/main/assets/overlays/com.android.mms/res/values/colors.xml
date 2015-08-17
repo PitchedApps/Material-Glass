@@ -87,7 +87,7 @@
     <color name="widget_loading">@color/text</color>
     <color name="darkgray_backgrounds">@color/background</color>
     <color name="quickmessage_body_dark_bg">#cc111111</color>
-    <color name="quickmessage_body_light_bg">#cc111111</color>
+    <!--<color name="quickmessage_body_light_bg">#cc111111</color>-->
     <color name="dividers">#33ffffff</color>
     <color name="transparent">#00000000</color>
     <color name="banner_item_transparent">#00000000</color>

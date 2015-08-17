@@ -3,6 +3,6 @@
     <style name="AppBaseTheme" parent="@android:style/Theme.Material.Wallpaper" />
 
     <style name="background_gray_f3">
-        <item name="android:background">@color/aaa</item>
+        <item name="android:background">@color/backgroundt</item>
     </style>
 </resources>
