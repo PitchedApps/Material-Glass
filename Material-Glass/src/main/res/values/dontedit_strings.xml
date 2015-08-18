@@ -13,13 +13,6 @@
     <string name="title_activity_detailed_wallpaper">Detailed Wallpaper</string>
     <string name="title_ab_detailed_wallpaper" />
 
-    <!-- Muzei Stuff -->
-    <string name="muzeisets_title">Refresh Source every:</string>
-    <string name="minutes">Minutes</string>
-    <string name="hours">Hours</string>
-    <string name="muzei_info">Note: This Settings may affect the update time of the Wallpapers info.</string>
-    <string name="justshare">Share</string>
-
     <!-- Strings for Dropdown Menu & Requests -->
     <string name="share">Share theme</string>
     <string name="share_title">Share via</string>

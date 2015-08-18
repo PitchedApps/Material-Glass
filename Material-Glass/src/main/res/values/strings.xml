@@ -9,15 +9,6 @@
         \nMade by 1 themer
         \nTweaked for 300+ hours
         \nUsed by 20 000+ users</string>
-    <!-- Muzei Stuff -->
-    <string name="artsource_name">@string/app_name</string>
-    <string name="artsource_desc">Beautiful wallpapers for a beautiful theme</string>
-    <string name="muzei_settings">Muzei Settings</string>
-    <string name="json_file_url">"https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass/0wallpapers.json"</string>    <!-- Sharing wallpaper from Muzei -->
-    <string name="partone">"My wallpaper for today is "</string>
-    <string name="parttwo">" by "</string>
-    <string name="partthree">" from "</string>
-    <string name="partfour">".\nGet it now at "</string>
 
     <!-- Developer Account Link -->
     <string name="play_store_dev_link">https://play.google.com/store/apps/developer?id=Pitched+Apps</string>

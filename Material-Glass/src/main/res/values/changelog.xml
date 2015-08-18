@@ -66,6 +66,10 @@
         <item>v2.3.6</item>
         <item>New: custom vector wifi and signal icons for layers and cm</item>
         <item>New: themed appmonger for cm and layers</item>
+        <item>App: updated dependencies and tools for android 6.0</item>
+        <item>Google +: made tinting slightly darker</item>
+        <item>App: removed muzei support and wakelock permission</item>
+        <item></item>
         <item></item>
         <item></item>
         <item></item>
