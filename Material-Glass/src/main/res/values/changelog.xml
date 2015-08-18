@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,HellsCoreUpdater,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,Snapchat,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUi,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,HellsCoreUpdater,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,Snapchat,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
         <item>@array/v47</item>
@@ -57,6 +57,15 @@
         <item>v</item>
         <item></item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v48">
+        <item>v2.3.6</item>
+        <item>New: custom vector wifi and signal icons for layers and cm</item>
+        <item>New: themed appmonger for cm and layers</item>
         <item></item>
         <item></item>
         <item></item>
