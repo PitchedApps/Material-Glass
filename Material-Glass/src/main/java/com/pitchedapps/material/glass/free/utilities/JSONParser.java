@@ -8,7 +8,7 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 
 public class JSONParser {
-
+//TODO add support for httpclient and httpcore (tried adding jars but it didn't work)
     public static JSONObject getJSONfromURL(String url) {
         try {
             HttpClient cl = new DefaultHttpClient();
