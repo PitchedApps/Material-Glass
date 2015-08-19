@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Appmonger,HellsCoreUpdater,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,Snapchat,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUi,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Appmonger,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,Snapchat,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
         <item>@array/v47</item>
@@ -66,7 +66,7 @@
         <item>v2.3.6</item>
         <item>New: custom vector wifi and signal icons for layers and cm</item>
         <item>New: themed appmonger for cm and layers</item>
-        <item>App: updated dependencies and tools to android 6.0</item>
+        <item>New: themed instagram for cm and layers</item>
         <item>Google +: made tinting slightly darker</item>
         <item></item>
         <item></item>

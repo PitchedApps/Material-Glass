@@ -2,12 +2,12 @@
 <resources>
     <color name="grey_9">@color/text</color>
     <color name="grey_8">@color/text</color>
-    <color name="grey_7">@color/ddd</color>
-    <color name="grey_6">@color/ddd</color>
+    <color name="grey_7">@color/text</color>
+    <color name="grey_6">@color/text</color>
     <color name="grey_5">@color/texttt</color>
     <color name="grey_4">@color/texttt</color>
     <color name="grey_3">@color/textt</color>
-    <color name="grey_2">@color/fff</color>
+    <color name="grey_2">@color/text</color>
     <color name="grey_1_5">@color/texttt</color>
     <color name="grey_1">@color/texttt</color>
     <color name="grey_0_5">@color/text</color>

@@ -186,9 +186,9 @@
     <color name="notification_bar_background">#bb000000</color>
     <color name="notification_count_background">@color/background</color>
     <color name="notification_divider">#33ffffff</color>
-    <color name="notification_item_background_read">#aa000000</color>
-    <color name="notification_item_background_unread">#aa111111</color>
-    <color name="notification_item_background_unseen">#aa111111</color>
+    <color name="notification_item_background_read">#ff000000</color>
+    <color name="notification_item_background_unread">#ff111111</color>
+    <color name="notification_item_background_unseen">#ff111111</color>
     <color name="notification_more_actors_dots">#ffbbbbbb</color>
     <color name="no_notifications_view_background">@color/background</color>
     <color name="off_white">@color/background</color>
@@ -543,8 +543,6 @@
     <color name="youtube_settings_prompt_bg">#cc000000</color>
 
     <color name="neutral">#ffaaaaaa</color>
-    <color name="aaa">#ffff00ff</color>
-    <color name="bbb">#ff0000ff</color>
     <color name="text">#ffcccccc</color>
     <color name="textt">#ffc0c0c0</color>
     <color name="texttt">#ffbbbbbb</color>
