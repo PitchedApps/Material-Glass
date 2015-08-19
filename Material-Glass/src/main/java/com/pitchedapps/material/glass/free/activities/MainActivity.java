@@ -34,7 +34,6 @@ import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.pitchedapps.material.glass.free.BuildConfig;
 import com.pitchedapps.material.glass.free.R;
 import com.pitchedapps.material.glass.free.adapters.ChangelogAdapter;
-import com.pitchedapps.material.glass.free.utilities.Preferences;
 import com.pitchedapps.material.glass.free.utilities.Util;
 import com.pkmmte.requestmanager.PkRequestManager;
 import com.pkmmte.requestmanager.RequestSettings;

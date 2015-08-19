@@ -79,5 +79,5 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.squareup.okhttp:okhttp:2.4.0'
     compile 'com.squareup.okhttp:okhttp-urlconnection:2.4.0'
-
+    compile 'com.google.android.apps.muzei:muzei-api:2.0'
 }

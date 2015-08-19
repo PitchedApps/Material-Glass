@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <uses-feature
@@ -81,6 +82,29 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.DetailedWallpaperActivity" />
         </activity>
+
+        <service
+            android:name=".muzei.ArtSource"
+            android:description="@string/artsource_desc"
+            android:icon="@drawable/ic_muzei_logo"
+            android:label="@string/artsource_name">
+            <intent-filter>
+                <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
+            </intent-filter>
+
+            <meta-data
+                android:name="color"
+                android:value="@color/primary" />
+            <meta-data
+                android:name="settingsActivity"
+                android:value="com.pitchedapps.material.glass.free.muzei.Settings" />
+        </service>
+        <activity
+            android:name=".muzei.Settings"
+            android:exported="true"
+            android:label="@string/muzei_settings"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
 
         <!--layers-->
 
