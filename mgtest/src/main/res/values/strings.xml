@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">MGTest</string>
-    <string name="hello_world">Just a wrapper for a theme test. Click the button to apply the theme.</string>
-    <string name="action_settings">Settings</string>
-    <string name="cm_not_installed">Could not find CM Theme Engine.</string>
-</resources>

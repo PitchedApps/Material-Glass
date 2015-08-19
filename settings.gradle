@@ -1,1 +1,1 @@
-include ':Material-Glass', ':mgtest'
+include ':Material-Glass', ':Material-Glass-Test'

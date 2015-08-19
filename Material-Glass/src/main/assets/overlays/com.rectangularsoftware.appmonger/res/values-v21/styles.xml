@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppmongerTheme" parent="@android:style/Theme.DeviceDefault">
+    <style name="AppmongerTheme" parent="@android:style/Theme.Material">
         <item name="android:windowTitleSize">42.0dip</item>
-        <item name="android:windowNoTitle">true</item>
         <item name="android:actionBarStyle">@android:style/Widget.Holo.ActionBar</item>
-	</style>
+    </style>
+
     <style name="TitleBar">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textStyle">normal</item>

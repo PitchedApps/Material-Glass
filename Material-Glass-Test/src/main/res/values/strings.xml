@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Material Glass Test</string>
+
+    <string name="hello_world">Just a wrapper for a theme test. Click the button to apply the theme.</string>
+    <string name="action_settings">Settings</string>
+    <string name="cm_not_installed">CM Theme Engine is not found.</string>
+    <string name="theme_author">Pitched Apps</string>
+    <string name="email_id">pitchedapps@gmail.com</string>
+</resources>
