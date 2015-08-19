@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@*common:style/Theme.AppCompat">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:backgroundTint">#c0000000</item>
+    </style>
+
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material.Wallpaper">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:backgroundTint">#c0000000</item>
+        <item name="android:statusBarColor">#c0000000</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.DarkActionBar" parent="@*common:style/Theme.AppCompat">
+        <item name="android:backgroundTint">#c0000000</item>
+        <item name="android:statusBarColor">#c0000000</item>
+    </style>
+
+
+
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView"
+        parent="@android:style/Widget.Material.ActionBar.TabView" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText"
+        parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse"
+        parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.PopupMenu"
+        parent="@android:style/Widget.Material.PopupMenu" />
+    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat">
+        <item name="android:backgroundTint">#c0000000</item>
+    </style>
+    <style name="Theme.AppCompat" parent="@*common:style/Theme.AppCompat">
+        <item name="android:backgroundTint">#c0000000</item>
+    </style>
+    <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.Light.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
+
+    <style name="Base.ThemeOverlay.AppCompat.Light"
+        parent="@*common:style/Theme.AppCompat">
+        <item name="android:backgroundTint">#c0000000</item>
+    </style>
+
+    <style name="Base.Widget.AppCompat.DropDownItem.Spinner" parent="@android:style/Widget.Material.DropDownItem.Spinner" />
+    <style name="Base.Widget.AppCompat.ListView.DropDown" parent="@android:style/Widget.Material.ListView.DropDown" />
+    <!--<style name="Base.Widget.AppCompat.ListView.Menu" parent="@android:style/Widget.Material.ListView.Menu" />-->
+    <style name="Base.Widget.AppCompat.ListPopupWindow" parent="@android:style/Widget.Material.ListPopupWindow" />
+    <style name="Base.Widget.AppCompat.PopupMenu" parent="@android:style/Widget.Material.PopupMenu" />
+
+    <style name="Theme.Poll.ActionBar.Text" parent="@style/Theme.Arkham.ActionBar.Text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+    <style name="Theme.Arkham.ActionBar.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+</resources>

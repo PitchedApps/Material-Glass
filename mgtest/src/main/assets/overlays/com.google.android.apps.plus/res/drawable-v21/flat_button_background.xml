@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/flat_button_pressed_bg">
+    <item android:id="@android:id/mask">
+        <color android:color="@color/backgroundx" />
+    </item>
+</ripple>
