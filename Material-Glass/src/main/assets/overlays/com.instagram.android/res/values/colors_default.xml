@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="text">#ffffffff</color>
-    <color name="textt">#bbffffff</color>
+    <color name="textt">#ccffffff</color>
     <color name="texttt">#88ffffff</color>
-    <color name="texttx">#ccc</color>
     <color name="background">#80000000</color>
-    <color name="backgroundd">#88161616</color>
-    <color name="backgrounddd">#88323232</color>
-    <color name="backgroundx">#ff000000</color>
-    <color name="backgrounddx">#ff161616</color>
-    <color name="backgroundddx">#ff323232</color>
+    <color name="backgroundd">#88222222</color>
     <color name="background_tint">#a0000000</color>
 </resources>
