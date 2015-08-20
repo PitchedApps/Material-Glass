@@ -4,19 +4,19 @@
         <item name="android:windowBackground">@color/background</item>
         <item name="android:colorBackground">@color/background</item>
         <item name="android:textColor">@color/text</item>
-        <item name="android:backgroundTint">#d0000000</item>
+        <item name="android:backgroundTint">#c0000000</item>
     </style>
 
     <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material.Wallpaper">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
-        <item name="android:backgroundTint">#d0000000</item>
-        <item name="android:statusBarColor">#d0000000</item>
+        <item name="android:backgroundTint">#c0000000</item>
+        <item name="android:statusBarColor">#c0000000</item>
     </style>
 
     <style name="Theme.AppCompat.Light.DarkActionBar" parent="@*common:style/Theme.AppCompat">
-        <item name="android:backgroundTint">#d0000000</item>
-        <item name="android:statusBarColor">#d0000000</item>
+        <item name="android:backgroundTint">#c0000000</item>
+        <item name="android:statusBarColor">#c0000000</item>
     </style>
 
 
