@@ -130,7 +130,7 @@
     <color name="friend_locations_onboarding_b_background">@color/backgroundd</color>
     <color name="friend_locations_opt_in_background">@color/background</color>
     <color name="friend_locations_white_text">#dfffffff</color>
-    <color name="generic_selected_item">#66aaaaaa</color>
+    <color name="generic_selected_item">#ff222222</color>
     <color name="gray_90_percent">#e6262626</color>
     <color name="gray_button_ripple">@color/non_white_button_ripple</color>
     <color name="gray_pink">#ffd2c5c3</color>
@@ -584,7 +584,7 @@
     <color name="black_alpha80">#ccffffff</color>
 	
 	<!--07/02/2015-->
-    <color name="guns_notification_item_background_unread">@color/background</color>
+    <color name="guns_notification_item_background_unread">@color/backgroundx</color>
     <color name="text_gray_accessible_on_grey200">@color/textt</color>
 
 </resources>
