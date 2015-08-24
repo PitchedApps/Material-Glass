@@ -430,5 +430,49 @@
     <item component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivity}" drawable="spotify"/>
     <item component="ComponentInfo{com.speedsoftware.sqleditor/com.speedsoftware.sqleditor.SQLiteEditor}" drawable="sqlite_editor"/>
     <item component="ComponentInfo{com.uzumapps.wakelockdetector/com.uzumapps.wakelockdetector.activity.IntroActivity}" drawable="wakelock_detector"/>
+<!--08/24/2015-->
+    <item component="ComponentInfo{com.cleanmaster.mguard/com.keniu.security.main.MainActivity}" drawable="clean_master"/>
+    <item component="ComponentInfo{com.ebay.mobile/com.ebay.mobile.activities.eBay}" drawable="ebay"/>
+    <item component="ComponentInfo{com.microsoft.office.excel/com.microsoft.office.apphost.LaunchActivity}" drawable="excel"/>
+    <item component="ComponentInfo{com.github.jamesgay.fitnotes/com.github.jamesgay.fitnotes.activity.MainActivity}" drawable="fitnotes"/>
+    <item component="ComponentInfo{com.microsoft.amp.apps.foodanddrink/com.microsoft.amp.apps.foodanddrink.activities.views.MainActivity}" drawable="food__drink"/>
+    <item component="ComponentInfo{com.microsoft.xboxmusic/com.microsoft.xboxmusic.uex.activity.MusicExperienceActivity}" drawable="groove"/>
+    <item component="ComponentInfo{com.microsoft.amp.apps.binghealthandfitness/com.microsoft.amp.apps.binghealthandfitness.activities.views.home.HomeActivity}" drawable="health__fitness"/>
+    <item component="ComponentInfo{kik.android/kik.android.chat.activity.IntroActivity}" drawable="kik"/>
+    <item component="ComponentInfo{com.microsoft.office.lync15/com.microsoft.office.lync.ui.splash.EntryPoint}" drawable="lync_2013"/>
+    <item component="ComponentInfo{com.microsoft.msa.authenticator/com.microsoft.onlineid.authenticator.LauncherActivity}" drawable="microsoft_account"/>
+    <item component="ComponentInfo{com.microsoft.kapp/com.microsoft.kapp.activities.SplashActivity}" drawable="microsoft_health"/>
+    <item component="ComponentInfo{com.microsoft.rdc.android/com.microsoft.rdc.ui.activities.HomeActivity}" drawable="microsoft_remote_desktop"/>
+    <item component="ComponentInfo{com.microsoft.rdc.android.beta/com.microsoft.rdc.ui.activities.HomeActivity}" drawable="microsoft_remote_desktop_beta"/>
+    <item component="ComponentInfo{com.microsoft.amp.apps.bingfinance/com.microsoft.amp.apps.bingfinance.activities.views.MainActivity}" drawable="money"/>
+    <item component="ComponentInfo{com.microsoft.myapps/com.microsoft.myapps.MainActivity}" drawable="my_apps"/>
+    <item component="ComponentInfo{com.microsoft.amp.apps.bingnews/com.microsoft.amp.apps.bingnews.activities.views.NewsHeadlinesMultiPanoActivity}" drawable="news"/>
+    <item component="ComponentInfo{com.ms.office365admin/md51e3db07bb459ebb8cb66a45000d0eacf.SplashScreen}" drawable="office_365_admin"/>
+    <item component="ComponentInfo{com.microsoft.office.officelens/com.microsoft.office.apphost.LaunchActivity}" drawable="office_lens"/>
+    <item component="ComponentInfo{com.microsoft.office.officehub/com.microsoft.office.officehub.OHubAppLaunchActivity}" drawable="office_mobile"/>
+    <item component="ComponentInfo{com.microsoft.office.officeremote/microsoft.office.glass.android.app.SplashScreen}" drawable="office_remote"/>
+    <item component="ComponentInfo{com.microsoft.skydrive/com.microsoft.skydrive.MainActivity}" drawable="onedrive"/>
+    <item component="ComponentInfo{com.microsoft.office.onenote/com.microsoft.office.onenote.ui.ONMSplashActivity}" drawable="onenote"/>
+    <item component="ComponentInfo{com.microsoft.office.outlook/com.microsoft.office.outlook.MainActivity}" drawable="outlook"/>
+    <item component="ComponentInfo{com.microsoft.exchange.mowa/com.microsoft.exchange.mowa.MOWAViewController}" drawable="owa"/>
+    <item component="ComponentInfo{com.pinterest/com.pinterest.activity.PinterestActivity}" drawable="pinterest"/>
+    <item component="ComponentInfo{com.infraware.office.link/com.infraware.service.ActLauncher}" drawable="polaris_office"/>
+    <item component="ComponentInfo{com.microsoft.office.powerpoint/com.microsoft.office.apphost.LaunchActivity}" drawable="powerpoint"/>
+    <item component="ComponentInfo{nl.leonardsimonse.softreboot/nl.leonardsimonse.softreboot.MainActivity}" drawable="soft_reboot_root"/>
+    <item component="ComponentInfo{com.soundcloud.android/com.soundcloud.android.main.LauncherActivity}" drawable="soundcloud"/>
+    <item component="ComponentInfo{com.td/com.td.mobile.controllers.SplashActivity}" drawable="td_canada"/>
+    <item component="ComponentInfo{org.telegram.messenger/org.telegram.ui.LaunchActivity}" drawable="telegram"/>
+    <item component="ComponentInfo{com.tinder/com.tinder.activities.ActivityLogin}" drawable="tinder"/>
+    <item component="ComponentInfo{com.microsoft.translator/com.microsoft.translator.activity.SplashActivity}" drawable="translator"/>
+    <item component="ComponentInfo{tv.twitch.android.app/tv.twitch.android.apps.SplashScreenActivity}" drawable="twitch"/>
+    <item component="ComponentInfo{com.ubercab/com.ubercab.UBUberActivity}" drawable="uber"/>
+    <item component="ComponentInfo{com.viber.voip/com.viber.voip.WelcomeActivity}" drawable="viber"/>
+    <item component="ComponentInfo{org.videolan.vlc/org.videolan.vlc.gui.MainActivity}" drawable="vlc"/>
+    <item component="ComponentInfo{com.microsoft.amp.apps.bingweather/com.microsoft.amp.apps.bingweather.activities.MainActivity}" drawable="weather"/>
+    <item component="ComponentInfo{com.microsoft.office.word/com.microsoft.office.apphost.LaunchActivity}" drawable="word"/>
+    <item component="ComponentInfo{com.microsoft.smartglass/com.microsoft.xbox.xle.app.XLEActivity}" drawable="xbox_360_smartglass"/>
+    <item component="ComponentInfo{com.microsoft.xboxone.smartglass/com.microsoft.xbox.xle.app.XLEActivity}" drawable="xbox_one_smartglass"/>
+    <item component="ComponentInfo{com.microsoft.xboxone.smartglass.beta/com.microsoft.xbox.xle.app.XLEActivity}" drawable="xbox_one_smartglass_beta"/>
+    <item component="ComponentInfo{com.yahoo.mobile.client.android.mail/com.yahoo.mobile.client.android.mail.activity.MainActivity}" drawable="yahoo_mail"/>
 
 </resources>

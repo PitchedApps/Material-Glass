@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,MMS,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Appmonger,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,Snapchat,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUi,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Appmonger,AutoHideSoftKey,EvolveSMS,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v49</item>
+        <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
         <item>@array/v45</item>
@@ -53,13 +55,13 @@
         <item>@array/v0</item>
     </string-array>
 
-    <string-array name="v">
-        <item>v</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+    <string-array name="v49">
+        <item>v2.4.0</item>
+        <item>Commence support for android M! Changes to framework, systemui, and settings for layers.</item>
+        <item>Layers, fix volume dialog hiding app foreground issue for M (posted fix in layers community)</item>
+        <item>New: themed GMD\'s auto hide soft keys; notification text cannot be changed</item>
+        <item>New: themed EvolveSMS\'s dark activity</item>
+        <item>New: made Francisco Franco\'s soft reboot app a dialog for easier access</item>
     </string-array>
 
     <string-array name="v48">
@@ -71,7 +73,6 @@
         <item>Google +: made notification panel less transparent</item>
         <item>Google +: transparent action bar</item>
         <item>New: themed MMS (preview) for layers</item>
-        <item></item>
     </string-array>
 
     <string-array name="v47">
