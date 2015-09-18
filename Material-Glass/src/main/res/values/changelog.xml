@@ -62,6 +62,12 @@
         <item>New: themed GMD\'s auto hide soft keys; notification text cannot be changed</item>
         <item>New: themed EvolveSMS\'s dark activity</item>
         <item>New: made Francisco Franco\'s soft reboot app a dialog for easier access</item>
+        <item>Added 5 more wallpapers online</item>
+        <item>Appmonger: fix crash on setup</item>
+        <item>New: themed face unlock for layers</item>
+        <item>New: themed telecom (system app) for layers</item>
+        <item>*Note that the Android M Preview does not fully support layers, so system bugs are to be expected and currently aren\'t fixable.*</item>
+        <item></item>
     </string-array>
 
     <string-array name="v48">
