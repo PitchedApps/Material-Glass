@@ -3,4 +3,7 @@
     <style name="AppTheme" parent="@*common:style/Theme.Material.Half" />
     <style name="AppDialogTheme" parent="@android:style/Theme.DeviceDefault.Dialog" />
     <style name="AppStartupThemeBase" parent="@*common:style/Theme.Material.Half" />
+    <style name="SwypeActionBar" parent="@*common:style/Pitch.ActionBar">
+        <item name="android:ellipsize">marquee</item>
+    </style>
 </resources>
