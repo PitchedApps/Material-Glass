@@ -4,7 +4,7 @@
 
     <uses-feature
         android:name="org.cyanogenmod.theme"
-        android:required="false" />
+        android:required="true" />
 
     <meta-data
         android:name="org.cyanogenmod.theme.name"
@@ -26,7 +26,6 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
