@@ -3,6 +3,7 @@
     <string name="layers_apps">"FrameworkRes,SystemUi,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Appmonger,AutoHideSoftKey,EvolveSMS,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v50</item>
         <item>@array/v49</item>
         <item>@array/v48</item>
         <item>@array/v47</item>
@@ -55,6 +56,24 @@
         <item>@array/v0</item>
     </string-array>
 
+    <string-array name="v">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v50">
+        <item>v2.4.1</item>
+        <item>Google Keyboard: fixed for layers (supports down to xhdpi)</item>
+        <item>New: themed Cyanogen OS Theme Chooser</item>
+        <item>New: themed spotify for cm and layers</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <string-array name="v49">
         <item>v2.4.0</item>
         <item>Commence support for android M! Changes to framework, systemui, and settings for layers.</item>
@@ -67,7 +86,6 @@
         <item>New: themed face unlock for layers</item>
         <item>New: themed telecom (system app) for layers</item>
         <item>*Note that the Android M Preview does not fully support layers, so system bugs are to be expected and currently aren\'t fixable.*</item>
-        <item></item>
     </string-array>
 
     <string-array name="v48">

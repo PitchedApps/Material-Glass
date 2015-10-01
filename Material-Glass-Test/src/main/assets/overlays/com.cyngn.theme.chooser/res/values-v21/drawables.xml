@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="component_selection_pressed">#40ffffff</item>
+</resources>
