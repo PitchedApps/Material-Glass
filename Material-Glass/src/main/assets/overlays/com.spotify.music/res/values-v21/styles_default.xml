@@ -17,9 +17,4 @@
     <style name="Base.Widget.AppCompat.Light.ActionBar" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.Solid" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.Solid.Inverse" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-
-    <color name="cat_grayscale_8">@*common:color/background</color>
-    <color name="cat_grayscale_12">@*common:color/background</color>
-    <color name="cat_grayscale_20">#55111111</color>
-    <color name="cat_grayscale_15">@*common:color/background</color>
 </resources>
