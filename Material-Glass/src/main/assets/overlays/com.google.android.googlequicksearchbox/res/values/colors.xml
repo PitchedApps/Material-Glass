@@ -352,4 +352,25 @@
     <color name="backgroundx">#ff000000</color>
     <color name="backgrounddx">#ff161616</color>
     <color name="backgroundddx">#ff323232</color>
+
+    <!--welome android M 10/08/2015-->
+    <color name="all_apps_grid_section_text_color">#ffffffff</color>
+    <color name="all_apps_search_market_button_focused_bg_color">#80111111</color>
+    <color name="assist_beta_branding_background_color">#33000000</color>
+    <color name="assist_beta_branding_text_color">#ccffffff</color>
+    <color name="container_fastscroll_thumb_active_color">#ffffffff</color>
+    <color name="container_fastscroll_thumb_inactive_color">#ccffffff</color>
+    <color name="corpus_bar_background_color">#80000000</color>
+    <color name="corpus_top_bar_background_color">#80000000</color>
+    <color name="corpus_top_container_select_bar">#80111111</color>
+    <color name="departure_info_module_background">#80000000</color>
+    <color name="go_to_google_now_background">#80000000</color>
+    <color name="go_to_google_now_background_ripple">#30ffffff</color>
+    <color name="normal_text_corpus_top_bar">#8affffff</color>
+    <!--<color name="uninstall_target_hover_tint">#fff0592b</color>-->
+    <!--<color name="voice_promo_suggestion_background_normal">#ff4285f4</color>-->
+    <!--<color name="voice_promo_suggestion_background_pressed">#ff7baaf7</color>-->
+    <color name="widgets_view_item_text_color">#ffffffff</color>
+    <color name="widgets_view_section_text_color">#ffffffff</color>
+    <color name="workspace_edge_effect_color">#ffffffff</color>
 </resources>

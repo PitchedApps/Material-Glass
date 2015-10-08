@@ -11,9 +11,12 @@
         <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
         <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
     </style>
-    <style name="Theme.Shim.Light" parent="@android:style/Theme.Material" />
+    <style name="Theme.Shim.Light" parent="@android:style/Theme.Material">
+        <item name="android:backgroundTint">#aa000000</item>
+    </style>
     <style name="Theme.Shim.Light.NoActionBar" parent="@android:style/Theme.Material.NoActionBar">
         <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundTint">#aa000000</item>
     </style>
     <style name="Theme.Shim.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
     <style name="Widget.Shim.Light.ActionBar" parent="@android:style/Widget.Material.ActionBar" />

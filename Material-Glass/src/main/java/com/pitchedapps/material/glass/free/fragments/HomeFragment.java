@@ -232,6 +232,33 @@ public class HomeFragment extends Fragment {
             fabrro.setVisibility(View.GONE);
         }
 
+        FloatingActionButton cyngn = (FloatingActionButton) root.findViewById(R.id.apply_cyngn);
+        Intent intentcyngn = getActivity().getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
+        if (intentcyngn != null) {
+            cyngn.setVisibility(View.VISIBLE);
+            cyngn.setColorNormal(getResources().getColor(R.color.fab_unpressed));
+            cyngn.setColorPressed(getResources().getColor(R.color.fab_pressed));
+            cyngn.setColorRipple(getResources().getColor(R.color.semitransparent_white));
+            cyngn.show(true);
+            cyngn.attachToScrollView(content);
+            cyngn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intentcyngn = getActivity().getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
+                    if (intentcyngn == null) {
+                        Toast.makeText(getActivity(), getString(R.string.cyngn_not_installed), Toast.LENGTH_SHORT).show();
+                    } else {
+
+                        getActivity().startActivity(intentcyngn);
+                    }
+                }
+
+
+            });
+        } else {
+            cyngn.setVisibility(View.GONE);
+        }
+
         return root;
     }
 

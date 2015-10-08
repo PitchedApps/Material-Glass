@@ -102,6 +102,7 @@
        <item>sound_recorder</item>
        <item>supersu</item>
        <item>terminal</item>
+       <item>theme_chooser_c_os</item>
        <item>themes</item>
        <item>voice_dialer</item>
    </string-array>
@@ -509,6 +510,7 @@
        <item>teamblackout</item>
        <item>terminal</item>
        <item>tesla_unread_plugin</item>
+       <item>theme_chooser_c_os</item>
        <item>theme_debug</item>
        <item>themes</item>
        <item>timely</item>

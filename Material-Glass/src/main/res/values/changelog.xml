@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Appmonger,AutoHideSoftKey,EvolveSMS,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUi,StatusBar,Settings,DeskClock,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,Google,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v51</item>
         <item>@array/v50</item>
         <item>@array/v49</item>
         <item>@array/v48</item>
@@ -65,13 +66,24 @@
         <item></item>
     </string-array>
 
+    <string-array name="v51">
+        <item>v2.4.2</item>
+        <item>New: themed Google for layers</item>
+        <item>Layers: fixed fab issue</item>
+        <item>New: themed Google Deskclock for layers (blue is the selected day for alarms, not white)</item>
+        <item>DocumentsUI: added support for android M</item>
+        <item>App: updated all dependencies for Android M</item>
+    </string-array>
+
     <string-array name="v50">
         <item>v2.4.1</item>
         <item>Google Keyboard: fixed for layers (supports down to xhdpi)</item>
+		<item>AOSP Keyboard: fixed for layers (supports down to xhdpi)</item>
         <item>New: themed Cyanogen OS Theme Chooser</item>
         <item>New: themed spotify for cm and layers</item>
-        <item></item>
-        <item></item>
+        <item>Apex Launcher: fixed for cm and themed for layers</item>
+		<item>Play Store: made selected drawer item dark</item>
+		<item>Theme: added fab for cyanogen os\'s theme chooser</item>
     </string-array>
 
     <string-array name="v49">

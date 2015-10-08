@@ -51,6 +51,36 @@
        <item>youtube</item>
    </string-array>
 
+   <string-array name="microsoft">
+       <item>excel</item>
+       <item>food__drink</item>
+       <item>groove</item>
+       <item>health__fitness</item>
+       <item>lync_2013</item>
+       <item>microsoft_account</item>
+       <item>microsoft_health</item>
+       <item>microsoft_remote_desktop</item>
+       <item>microsoft_remote_desktop_beta</item>
+       <item>money</item>
+       <item>my_apps</item>
+       <item>news</item>
+       <item>office_365_admin</item>
+       <item>office_lens</item>
+       <item>office_mobile</item>
+       <item>office_remote</item>
+       <item>onedrive</item>
+       <item>onenote</item>
+       <item>outlook</item>
+       <item>owa</item>
+       <item>powerpoint</item>
+       <item>translator</item>
+       <item>weather</item>
+       <item>word</item>
+       <item>xbox_360_smartglass</item>
+       <item>xbox_one_smartglass</item>
+       <item>xbox_one_smartglass_beta</item>
+   </string-array>
+
    <string-array name="system">
        <item>audio_fx</item>
        <item>audio_fx2</item>
@@ -72,6 +102,7 @@
        <item>sound_recorder</item>
        <item>supersu</item>
        <item>terminal</item>
+       <item>theme_chooser_c_os</item>
        <item>themes</item>
        <item>voice_dialer</item>
    </string-array>
@@ -330,6 +361,7 @@
        <item>event_flow_widget</item>
        <item>evernote</item>
        <item>evolve_sms</item>
+       <item>excel</item>
        <item>facebook</item>
        <item>fdroid</item>
        <item>file_manager</item>
@@ -338,6 +370,7 @@
        <item>firefox_beta</item>
        <item>fit</item>
        <item>fongo</item>
+       <item>food__drink</item>
        <item>freegeo</item>
        <item>french</item>
        <item>fx</item>
@@ -360,8 +393,10 @@
        <item>google_settings</item>
        <item>gps_status</item>
        <item>greenify</item>
+       <item>groove</item>
        <item>hangouts</item>
        <item>hangouts_dialer</item>
+       <item>health__fitness</item>
        <item>hill_climb_racing</item>
        <item>hound</item>
        <item>hsw</item>
@@ -379,6 +414,7 @@
        <item>lightning_bug</item>
        <item>linkedin</item>
        <item>lmt</item>
+       <item>lync_2013</item>
        <item>maps</item>
        <item>mapsme</item>
        <item>material_glass</item>
@@ -386,25 +422,40 @@
        <item>messaging</item>
        <item>messenger</item>
        <item>messenger_fb</item>
+       <item>microsoft_account</item>
+       <item>microsoft_health</item>
+       <item>microsoft_remote_desktop</item>
+       <item>microsoft_remote_desktop_beta</item>
        <item>mobile_print</item>
        <item>modernhub</item>
+       <item>money</item>
        <item>monument_valley</item>
        <item>moscrop_secondary</item>
        <item>multirom_manager</item>
        <item>music</item>
        <item>mx_player</item>
        <item>mx_player_pro</item>
+       <item>my_apps</item>
        <item>my_tracks</item>
        <item>native_clip_board</item>
        <item>netflix</item>
        <item>new_egg</item>
+       <item>news</item>
        <item>news_weather</item>
        <item>notify_clean</item>
        <item>nova_launcher</item>
        <item>nova_launcher_prime</item>
+       <item>office_365_admin</item>
+       <item>office_lens</item>
+       <item>office_mobile</item>
+       <item>office_remote</item>
+       <item>onedrive</item>
+       <item>onenote</item>
        <item>opera</item>
        <item>opera_mini</item>
        <item>orbot</item>
+       <item>outlook</item>
+       <item>owa</item>
        <item>paperboard</item>
        <item>perfect_viewer</item>
        <item>periodic_table</item>
@@ -419,6 +470,7 @@
        <item>play_store_changelog</item>
        <item>poweramp</item>
        <item>poweramp_full_version_unlocker</item>
+       <item>powerpoint</item>
        <item>pss</item>
        <item>pushbullet</item>
        <item>quickpic</item>
@@ -458,6 +510,7 @@
        <item>teamblackout</item>
        <item>terminal</item>
        <item>tesla_unread_plugin</item>
+       <item>theme_chooser_c_os</item>
        <item>theme_debug</item>
        <item>themes</item>
        <item>timely</item>
@@ -466,6 +519,7 @@
        <item>torrent_search_by_transdroid</item>
        <item>transitdb</item>
        <item>translate</item>
+       <item>translator</item>
        <item>trickster_mod</item>
        <item>true_dialer</item>
        <item>ttorrent_pro</item>
@@ -480,10 +534,15 @@
        <item>wakelock_detector</item>
        <item>wallet</item>
        <item>wallpaper_saver</item>
+       <item>weather</item>
        <item>wechat</item>
        <item>whatsapp</item>
        <item>wifi_analyzer</item>
        <item>wifi_key_view</item>
+       <item>word</item>
+       <item>xbox_360_smartglass</item>
+       <item>xbox_one_smartglass</item>
+       <item>xbox_one_smartglass_beta</item>
        <item>xda_premium4</item>
        <item>xinstaller</item>
        <item>xposed_installer</item>

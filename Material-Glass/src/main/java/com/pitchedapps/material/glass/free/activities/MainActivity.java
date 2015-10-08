@@ -18,14 +18,13 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
+import com.mikepenz.materialdrawer.AccountHeader;
+import com.mikepenz.materialdrawer.AccountHeaderBuilder;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
-import com.mikepenz.materialdrawer.accountswitcher.AccountHeader;
-import com.mikepenz.materialdrawer.accountswitcher.AccountHeaderBuilder;
 import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
@@ -34,12 +33,12 @@ import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 import com.pitchedapps.material.glass.free.BuildConfig;
 import com.pitchedapps.material.glass.free.R;
 import com.pitchedapps.material.glass.free.adapters.ChangelogAdapter;
+import com.pitchedapps.material.glass.free.fragments.DonationsFragment;
 import com.pitchedapps.material.glass.free.utilities.Preferences;
 import com.pitchedapps.material.glass.free.utilities.Util;
 import com.pkmmte.requestmanager.PkRequestManager;
 import com.pkmmte.requestmanager.RequestSettings;
 
-import com.pitchedapps.material.glass.free.fragments.DonationsFragment;
 import org.sufficientlysecure.donations.google.util.IabHelper;
 import org.sufficientlysecure.donations.google.util.IabResult;
 import org.sufficientlysecure.donations.google.util.Inventory;
@@ -175,13 +174,14 @@ public class MainActivity extends AppCompatActivity {
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
                         new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),
                         new PrimaryDrawerItem().withName(thaInfo).withIcon(GoogleMaterial.Icon.gmd_info).withIdentifier(3),
+                        new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(4),
                         new DividerDrawerItem(),
                         new SecondaryDrawerItem().withName(thaDonate).withIdentifier(5),
                         new SecondaryDrawerItem().withName(thaCredits).withIdentifier(6)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
-                    public boolean onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
+                    public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
                         if (drawerItem != null) {
                             switch (drawerItem.getIdentifier()) {
                                 case 1:
@@ -213,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .withOnDrawerItemLongClickListener(new Drawer.OnDrawerItemLongClickListener() {
                     @Override
-                    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l, IDrawerItem iDrawerItem) {
+                    public boolean onItemLongClick(View view, int position, IDrawerItem iDrawerItem) {
                         if (iDrawerItem instanceof Nameable) {
                             if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
                                 if (mIsPremium || !BuildConfig.DONATIONS_GOOGLE) {
@@ -230,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         result.getListView().setVerticalScrollBarEnabled(false);
-        runLicenseChecker();
+        showChangelogDialog();
 
         if (savedInstanceState == null) {
             currentItem = -1;
@@ -341,7 +341,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + getResources().getString(R.string.email_id)));
                 intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject));
 
-                emailBuilder.append("\n \n \nOS Version: ").append(System.getProperty("os.version")).append("(").append(Build.VERSION.INCREMENTAL).append(")");
+                emailBuilder.append("Write here");
+                emailBuilder.append("\n \nOS Version: ").append(System.getProperty("os.version")).append("(").append(Build.VERSION.INCREMENTAL).append(")");
                 emailBuilder.append("\nOS API Level: ").append(Build.VERSION.SDK_INT);
                 emailBuilder.append("\nDevice: ").append(Build.DEVICE);
                 emailBuilder.append("\nManufacturer: ").append(Build.MANUFACTURER);
@@ -367,36 +368,36 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    private void addItemsToDrawer() {
-        IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(4);
-        if (enable_features) {
-            result.addItem(walls, 3);
-        }
-    }
+//    private void addItemsToDrawer() {
+//        IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(4);
+//        if (enable_features) {
+//            result.addItem(walls, 3);
+//        }
+//    }
 
-    private void runLicenseChecker() {
-        if (firstrun) {
-            if (WITH_LICENSE_CHECKER) {
-                checkLicense();
-            } else {
-                mPrefs.setFeaturesEnabled(true);
-                addItemsToDrawer();
-                showChangelogDialog();
-            }
-        } else {
-            if (WITH_LICENSE_CHECKER) {
-                if (!enable_features) {
-                    showNotLicensedDialog();
-                } else {
-                    addItemsToDrawer();
-                    showChangelogDialog();
-                }
-            } else {
-                addItemsToDrawer();
-                showChangelogDialog();
-            }
-        }
-    }
+//    private void runChecker() {
+//        if (firstrun) {
+//            if (WITH_LICENSE_CHECKER) {
+//                checkLicense();
+//            } else {
+//                mPrefs.setFeaturesEnabled(true);
+//                addItemsToDrawer();
+//                showChangelogDialog();
+//            }
+//        } else {
+//            if (WITH_LICENSE_CHECKER) {
+//                if (!enable_features) {
+//                    showNotLicensedDialog();
+//                } else {
+//                    addItemsToDrawer();
+//                    showChangelogDialog();
+//                }
+//            } else {
+//                addItemsToDrawer();
+//                showChangelogDialog();
+//            }
+//        }
+//    }
 
     public boolean isPremium() {
         return mIsPremium;
@@ -456,31 +457,31 @@ public class MainActivity extends AppCompatActivity {
                 }).show();
     }
 
-    private void checkLicense() {
-        String installer = getPackageManager().getInstallerPackageName(getPackageName());
-        try {
-            if (installer.equals("com.google.android.feedback") ||
-                    installer.equals("com.android.vending")) {
-                new MaterialDialog.Builder(this)
-                        .title(R.string.license_success_title)
-                        .content(R.string.license_success)
-                        .positiveText(R.string.close)
-                        .callback(new MaterialDialog.ButtonCallback() {
-                            @Override
-                            public void onPositive(MaterialDialog dialog) {
-                                enable_features = true;
-                                mPrefs.setFeaturesEnabled(true);
-                                addItemsToDrawer();
-                                showChangelogDialog();
-                            }
-                        }).show();
-            } else {
-                showNotLicensedDialog();
-            }
-        } catch (Exception e) {
-            showNotLicensedDialog();
-        }
-    }
+//    private void checkLicense() {
+//        String installer = getPackageManager().getInstallerPackageName(getPackageName());
+//        try {
+//            if (installer.equals("com.google.android.feedback") ||
+//                    installer.equals("com.android.vending")) {
+//                new MaterialDialog.Builder(this)
+//                        .title(R.string.license_success_title)
+//                        .content(R.string.license_success)
+//                        .positiveText(R.string.close)
+//                        .callback(new MaterialDialog.ButtonCallback() {
+//                            @Override
+//                            public void onPositive(MaterialDialog dialog) {
+//                                enable_features = true;
+//                                mPrefs.setFeaturesEnabled(true);
+//                                addItemsToDrawer();
+//                                showChangelogDialog();
+//                            }
+//                        }).show();
+//            } else {
+//                showNotLicensedDialog();
+//            }
+//        } catch (Exception e) {
+//            showNotLicensedDialog();
+//        }
+//    }
 
     private void showNotLicensedDialog() {
         enable_features = false;

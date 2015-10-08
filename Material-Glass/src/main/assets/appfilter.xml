@@ -2,13 +2,6 @@
 <resources>
     <scale factor="0.65" />
     <!-- 40% eraser weight, 144x144 in 192x192, glow at 30, doubled -->
-    <!-- Material Glass -->
-
-    <!--extras-->
-    <item component="ComponentInfo{com.pitchedapps.material.glass.free/com.pitchedapps.material.glass.free.HomeActivity}" drawable="aaaaa"/>
-    <!-- Material Glass XDA -->
-    <item component="ComponentInfo{com.pitchedapps.material.glass.xda/com.pitchedapps.material.glass.free.HomeActivity}" drawable="aaaaa"/>
-
 
     <item component="ComponentInfo{org.adaway/org.adaway.ui.BaseActivity}" drawable="adaway" />
     <item component="ComponentInfo{org.cyanogenmod.audiofx/org.cyanogenmod.audiofx.ActivityMusic}"
@@ -474,5 +467,7 @@
     <item component="ComponentInfo{com.microsoft.xboxone.smartglass/com.microsoft.xbox.xle.app.XLEActivity}" drawable="xbox_one_smartglass"/>
     <item component="ComponentInfo{com.microsoft.xboxone.smartglass.beta/com.microsoft.xbox.xle.app.XLEActivity}" drawable="xbox_one_smartglass_beta"/>
     <item component="ComponentInfo{com.yahoo.mobile.client.android.mail/com.yahoo.mobile.client.android.mail.activity.MainActivity}" drawable="yahoo_mail"/>
+<!--10/02/2015-->
+    <item component="ComponentInfo{com.cyngn.theme.chooser/com.cyngn.theme.chooser.ChooserLauncher}" drawable="theme_chooser_c_os"/>
 
 </resources>
