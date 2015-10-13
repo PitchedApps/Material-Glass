@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     private String thaCredits;
     private String thaInfo;
     private int currentItem = -1;
-    private boolean firstrun, enable_features;
+    private boolean firstrun, enable_features; //TODO show changelog on firstrun
     private Preferences mPrefs;
 
     @Override
@@ -229,12 +229,12 @@ public class MainActivity extends AppCompatActivity {
                 .withSavedInstance(savedInstanceState)
                 .build();
 
-        result.getListView().setVerticalScrollBarEnabled(false);
+//        result.getListView().setVerticalScrollBarEnabled(false);
         showChangelogDialog();
 
         if (savedInstanceState == null) {
             currentItem = -1;
-            result.setSelectionByIdentifier(1);
+            result.setSelection(1);
         }
 
         mHelper = new IabHelper(MainActivity.this, GOOGLE_PUBKEY);
@@ -483,39 +483,39 @@ public class MainActivity extends AppCompatActivity {
 //        }
 //    }
 
-    private void showNotLicensedDialog() {
-        enable_features = false;
-        mPrefs.setFeaturesEnabled(false);
-        new MaterialDialog.Builder(this)
-                .title(R.string.license_failed_title)
-                .content(R.string.license_failed)
-                .positiveText(R.string.download)
-                .negativeText(R.string.exit)
-                .callback(new MaterialDialog.ButtonCallback() {
-                    @Override
-                    public void onPositive(MaterialDialog dialog) {
-                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + getPackageName()));
-                        startActivity(browserIntent);
-                    }
-
-                    @Override
-                    public void onNegative(MaterialDialog dialog) {
-                        finish();
-                    }
-                })
-                .cancelListener(new DialogInterface.OnCancelListener() {
-                    @Override
-                    public void onCancel(DialogInterface dialog) {
-                        finish();
-                    }
-                })
-                .dismissListener(new DialogInterface.OnDismissListener() {
-                    @Override
-                    public void onDismiss(DialogInterface dialog) {
-                        finish();
-                    }
-                }).show();
-    }
+//    private void showNotLicensedDialog() {
+//        enable_features = false;
+//        mPrefs.setFeaturesEnabled(false);
+//        new MaterialDialog.Builder(this)
+//                .title(R.string.license_failed_title)
+//                .content(R.string.license_failed)
+//                .positiveText(R.string.download)
+//                .negativeText(R.string.exit)
+//                .callback(new MaterialDialog.ButtonCallback() {
+//                    @Override
+//                    public void onPositive(MaterialDialog dialog) {
+//                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + getPackageName()));
+//                        startActivity(browserIntent);
+//                    }
+//
+//                    @Override
+//                    public void onNegative(MaterialDialog dialog) {
+//                        finish();
+//                    }
+//                })
+//                .cancelListener(new DialogInterface.OnCancelListener() {
+//                    @Override
+//                    public void onCancel(DialogInterface dialog) {
+//                        finish();
+//                    }
+//                })
+//                .dismissListener(new DialogInterface.OnDismissListener() {
+//                    @Override
+//                    public void onDismiss(DialogInterface dialog) {
+//                        finish();
+//                    }
+//                }).show();
+//    }
 
     /**
      * Needed for Google Play In-app Billing. It uses startIntentSenderForResult(). The result is not propagated to

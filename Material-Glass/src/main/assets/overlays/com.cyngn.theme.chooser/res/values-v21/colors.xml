@@ -37,7 +37,7 @@
     <color name="theme_title_text_color">#78ffffff</color>
     <color name="theme_author_text_color">#40ffffff</color>
     <color name="processing_text_color">#ffffffff</color>
-    <color name="per_app_theme_bg_color">@color/background</color>
+    <color name="per_app_theme_bg_color">#a0000000</color>
     <color name="per_app_theme_list_item_text_color">@color/text</color>
     <color name="per_app_theme_list_item_applied_text_color">#ff00b1e5</color>
     <color name="per_app_theme_remove_background_normal">#80000000</color>

@@ -75,7 +75,7 @@ public class HomeFragment extends Fragment {
         apponebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) getActivity()).result.setSelectionByIdentifier(5);
+                ((MainActivity) getActivity()).result.setSelection(5);
                 ((MainActivity) getActivity()).switchFragment(5, getResources().getString(R.string.donate), "Donate");
             }
         });

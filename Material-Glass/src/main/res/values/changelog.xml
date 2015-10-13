@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUi,StatusBar,Settings,DeskClock,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,Google,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DeskClock,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,Google,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
         <item>@array/v51</item>
@@ -73,6 +73,10 @@
         <item>New: themed Google Deskclock for layers (blue is the selected day for alarms, not white)</item>
         <item>DocumentsUI: added support for android M</item>
         <item>App: updated all dependencies for Android M</item>
+        <item>App: updated TBO updater link</item>
+        <item>New: themed google calendar</item>
+        <item></item>
+        <item></item>
     </string-array>
 
     <string-array name="v50">
