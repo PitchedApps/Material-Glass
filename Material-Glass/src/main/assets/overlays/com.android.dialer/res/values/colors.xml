@@ -151,4 +151,67 @@
     <color name="pbluee">#ff62757e</color>
     <color name="dblue">#ff343d41</color>
     <color name="dbluee">#ff2b3133</color>
+
+    <!--truecaller-->
+    <color name="expanding_card_color">#30000000</color>
+    <color name="expanding_card_selected_color">#30333333</color>
+    <color name="expanding_card_start_gradient">#10000000</color>
+
+    <color name="letter_tile_red_color">#aadb4437</color>
+    <color name="letter_tile_pink_color">#aae91e63</color>
+    <color name="letter_tile_purple_color">#aa9c27b0</color>
+    <color name="letter_tile_deep_purple_color">#aa673ab7</color>
+    <color name="letter_tile_indigo_color">#aa3f51b5</color>
+    <color name="letter_tile_blue_color">#aa4285f4</color>
+    <color name="letter_tile_light_blue_color">#aa039be5</color>
+    <color name="letter_tile_cyan_color">#aa0097a7</color>
+    <color name="letter_tile_teal_color">#aa009688</color>
+    <color name="letter_tile_green_color">#aa0f9d58</color>
+    <color name="letter_tile_light_green_color">#aa689f38</color>
+    <color name="letter_tile_orange_color">#aaef6c00</color>
+    <color name="letter_tile_deep_orange_color">#aaff5722</color>
+    <color name="letter_tile_grey_color">#aa757575</color>
+    <color name="letter_tile_red_color_dark">#aac53929</color>
+    <color name="letter_tile_pink_color_dark">#aac2185b</color>
+    <color name="letter_tile_purple_color_dark">#aa7b1fa2</color>
+    <color name="letter_tile_deep_purple_color_dark">#aa512da8</color>
+    <color name="letter_tile_indigo_color_dark">#aa303f9f</color>
+    <color name="letter_tile_blue_color_dark">#aa3367d6</color>
+    <color name="letter_tile_light_blue_color_dark">#aa0277bd</color>
+    <color name="letter_tile_cyan_color_dark">#aa006064</color>
+    <color name="letter_tile_teal_color_dark">#aa00796b</color>
+    <color name="letter_tile_green_color_dark">#aa0b8043</color>
+    <color name="letter_tile_light_green_color_dark">#aa33691e</color>
+    <color name="letter_tile_orange_color_dark">#aae65100</color>
+    <color name="letter_tile_deep_orange_color_dark">#aae64a19</color>
+    <color name="letter_tile_grey_color_dark">#aa424242</color>
+
+    <color name="ripple_light">#55ffffff</color>
+    <color name="incall_slate_color">@color/backgroundd</color>
+    <color name="quick_msg_item_bg_color">#cc060606</color>
+    <color name="quick_msg_item_text_color">#ffffffff</color>
+
+    <color name="setting_button_color">@*common:color/aaa</color>
+    <color name="dialer_activity_background">@color/background</color>
+    <color name="call_log_voicemail_status_background_color">@color/background</color>
+    <color name="call_log_voicemail_status_text_color">@color/text</color>
+
+    <color name="dialtacts_frame_color">@*common:color/bbb</color>
+
+    <color name="screen_bg_color">@color/background</color>
+    <color name="list_subheader_color">@color/textt</color>
+
+    <color name="recent_title_color">@color/text</color>
+    <color name="recent_subtitle_color">@color/textt</color>
+    <color name="search_contacts_text">@color/text</color>
+    <color name="list_subheader_separator_color">#22ffffff</color>
+
+    <color name="unknown_caller_icon_color">@color/texttt</color>
+    <color name="header_background_color">@color/backgroundd</color>
+    <color name="header_border_color">#11ffffff</color>
+    <color name="header_text_color">@color/text</color>
+    <color name="caller_info_dialog_negative">@color/textt</color>
+    <color name="caller_info_picker_description_text_color">#8affffff</color>
+    <color name="caller_info_picker_disclaimer_text_color">@color/text</color>
+    <color name="recent_name_color">@color/textt</color>
 </resources>
