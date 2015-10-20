@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DeskClock,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,Google,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,Google,GoogleDeskClock,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
         <item>@array/v51</item>
@@ -66,6 +66,14 @@
         <item></item>
     </string-array>
 
+    <string-array name="v52">
+        <item>v2.4.3</item>
+        <item>Fixed layers naming</item>
+        <item>Small updates for calendar</item>
+        <item>App: update gradle</item>
+        <item>Ready for stable</item>
+    </string-array>
+
     <string-array name="v51">
         <item>v2.4.2</item>
         <item>New: themed Google for layers</item>
@@ -74,9 +82,8 @@
         <item>DocumentsUI: added support for android M</item>
         <item>App: updated all dependencies for Android M</item>
         <item>App: updated TBO updater link</item>
-        <item>New: themed google calendar</item>
-        <item></item>
-        <item></item>
+        <item>New: themed google calendar (test in xda build, far from perfect)</item>
+        <item>Deskclock: moved cyanogenmod one to xda build to avoid certain issues</item>
     </string-array>
 
     <string-array name="v50">
