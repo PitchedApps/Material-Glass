@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,Google,GoogleDeskClock,GooglePlay,Gmail,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,Google,GoogleDeskClock,GooglePlay,Gmail,GooglePackageInstaller,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v53</item>
+        <item>@array/v52</item>
         <item>@array/v51</item>
         <item>@array/v50</item>
         <item>@array/v49</item>
@@ -63,6 +65,15 @@
         <item></item>
         <item></item>
         <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="v53">
+        <item>v2.5.0</item>
+        <item>System: removed custom statusbar icons for cm (if you\'re on layers, you can remove it from the manager, and if you still want it for cm, use the xda version)</item>
+        <item>Dialer: added support for Cyanogen OS\'s truecaller</item>
+        <item>Google Play Store: small updates for android M</item>
+        <item>New: themed google package installer</item>
         <item></item>
     </string-array>
 

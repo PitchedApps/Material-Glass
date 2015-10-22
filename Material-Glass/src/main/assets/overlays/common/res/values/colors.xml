@@ -115,6 +115,10 @@
     <color name="cardview_light_background">#33000000</color>
     <color name="cardview_shadow_end_color">#00000000</color>
     <color name="cardview_shadow_start_color">#03000000</color>
-    
+
+    <color name="aaa">#f0f</color>
+    <color name="bbb">#ff0</color>
+    <color name="ccc">#f00</color>
+
 </resources>
 
