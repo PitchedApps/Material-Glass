@@ -125,4 +125,10 @@
     <color name="backgroundt">#88000000</color>
     <color name="backgrounddt">#88161616</color>
     <color name="backgroundddt">#88323232</color>
+
+    <!--cyanogen os-->
+    <color name="divider_line_color_light">#22ffffff</color>
+    <color name="editor_disabled_text_color">@color/texttt</color>
+    <color name="editor_icon_color">@color/text</color>
+
 </resources>
