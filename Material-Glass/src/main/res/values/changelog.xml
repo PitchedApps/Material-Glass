@@ -68,6 +68,15 @@
         <item></item>
     </string-array>
 
+    <string-array name="v54">
+        <item>v2.5.1</item>
+        <item>System: fixed white on white for recent apps</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <string-array name="v53">
         <item>v2.5.0</item>
         <item>System: removed custom statusbar icons for cm (if you\'re on layers, you can remove it from the manager, and if you still want it for cm, use the xda version)</item>
