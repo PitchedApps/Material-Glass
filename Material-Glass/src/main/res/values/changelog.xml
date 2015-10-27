@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,Google,GoogleDeskClock,GooglePlay,Gmail,GooglePackageInstaller,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,HellsCoreUpdater,K9Mail,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,Google,GoogleDeskClock,GooglePlay,Gmail,GooglePackageInstaller,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,FreeOTP,HellsCoreUpdater,K9Mail,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v54</item>
         <item>@array/v53</item>
         <item>@array/v52</item>
         <item>@array/v51</item>
@@ -71,10 +72,12 @@
     <string-array name="v54">
         <item>v2.5.1</item>
         <item>System: fixed white on white for recent apps</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Play Store: reduced shadows for cards (black rating text cannot be fixed)</item>
+        <item>Google: made cards more transparent</item>
+        <item>Google Launcher: fixed white fastscroll</item>
+        <item>Instagram: changed green following button to black</item>
+        <item>New: themed freeotp</item>
+        <item>More to come...</item>
     </string-array>
 
     <string-array name="v53">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<style name="InstagramTheme" parent="@android:style/Theme.Material">
+    <style name="InstagramTheme" parent="@android:style/Theme.Material">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:textColorLink">@color/textt</item>
@@ -10,7 +10,7 @@
 
         <item name="android:backgroundTint">@color/background_tint</item>
         <item name="android:statusBarColor">@color/background_tint</item>
-</style>
+    </style>
 	
 	<style name="IgSwitchStyle">
         <item name="thumbDrawable">@drawable/toggle_nub</item>
