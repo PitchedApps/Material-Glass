@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,Google,GoogleDeskClock,GooglePlay,Gmail,GooglePackageInstaller,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,FreeOTP,HellsCoreUpdater,K9Mail,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Launcher3,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,PackageInstaller,Google,GoogleDeskClock,GooglePlay,Gmail,GooglePackageInstaller,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,FreeOTP,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v55</item>
         <item>@array/v54</item>
         <item>@array/v53</item>
         <item>@array/v52</item>
@@ -69,6 +70,15 @@
         <item></item>
     </string-array>
 
+    <string-array name="v55">
+        <item>v2.5.2</item>
+        <item>Launcher3: rethemed for cm and added to layers</item>
+        <item>PackageInstaller: fixes for aosp</item>
+        <item>Google +: minor changes for text color</item>
+        <item>MMS: fixed white background for SlimSaber</item>
+        <item>Dialer: fixed black dialpad for the pitch theme</item>
+    </string-array>
+
     <string-array name="v54">
         <item>v2.5.1</item>
         <item>System: fixed white on white for recent apps</item>
@@ -77,7 +87,6 @@
         <item>Google Launcher: fixed white fastscroll</item>
         <item>Instagram: changed green following button to black</item>
         <item>New: themed freeotp</item>
-        <item>More to come...</item>
     </string-array>
 
     <string-array name="v53">
@@ -86,7 +95,6 @@
         <item>Dialer: added support for Cyanogen OS\'s truecaller</item>
         <item>Google Play Store: small updates for android M</item>
         <item>New: themed google package installer</item>
-        <item>New: themed k9mail for layers (thanks to them for adding in my commits)</item>
         <item>New: started theming google package installer for layers</item>
     </string-array>
 
