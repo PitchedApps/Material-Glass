@@ -23,4 +23,15 @@
     <color name="dynamic_grid_preview_background">#cc000000</color>
     <color name="dynamic_grid_preview_foreground">#ffffffff</color>
     <color name="wallpaper_picker_translucent_gray">#66000000</color>
+
+    <!--android M 10/27/2015-->
+    <color name="quantum_panel_bg_color">#a0000000</color>
+    <color name="quantum_panel_bg_color_dark">#a0000000</color>
+    <color name="container_fastscroll_thumb_inactive_color">#42ffffff</color>
+    <color name="container_fastscroll_thumb_active_color">#ff748B96</color>
+    <color name="all_apps_grid_section_text_color">#ffffffff</color>
+    <color name="widgets_view_fastscroll_thumb_inactive_color">#42ffffff</color>
+    <color name="widgets_view_section_text_color">#ffffffff</color>
+    <color name="widgets_view_item_text_color">#ddffffff</color>
+    <color name="widgets_cell_color">#80000000</color>
 </resources>

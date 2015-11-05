@@ -344,8 +344,8 @@
     <color name="text">#ffffffff</color>
     <color name="textt">#ffdddddd</color>
     <color name="texttt">#ffaaaaaa</color>
-    <color name="card">#dd000000</color>
-    <color name="cardd">#dd111111</color>
+    <color name="card">#90000000</color>
+    <color name="cardd">#90111111</color>
     <color name="background">#88000000</color>
     <color name="backgroundd">#88161616</color>
     <color name="backgrounddd">#88323232</color>
@@ -358,8 +358,8 @@
     <color name="all_apps_search_market_button_focused_bg_color">#80111111</color>
     <color name="assist_beta_branding_background_color">#33000000</color>
     <color name="assist_beta_branding_text_color">#ccffffff</color>
-    <color name="container_fastscroll_thumb_active_color">#ffffffff</color>
-    <color name="container_fastscroll_thumb_inactive_color">#ccffffff</color>
+    <color name="container_fastscroll_thumb_active_color">#ff748B96</color>
+    <color name="container_fastscroll_thumb_inactive_color">#ff62757e</color>
     <color name="corpus_bar_background_color">#80000000</color>
     <color name="corpus_top_bar_background_color">#80000000</color>
     <color name="corpus_top_container_select_bar">#80111111</color>

@@ -305,7 +305,6 @@
     <dimen name="play_avatar_ring_size_min">1.0dip</dimen>
     <dimen name="play_card_action_size">14.0sp</dimen>
     <dimen name="play_card_content_vertical_inset">8.0dip</dimen>
-    <dimen name="play_card_default_elevation">2.0dip</dimen>
     <dimen name="play_card_default_radius">2.0dip</dimen>
     <dimen name="play_card_extra_vspace">2.0dip</dimen>
     <item type="dimen" name="play_card_inset">@dimen/play_card_default_inset</item>
@@ -421,4 +420,7 @@
     <dimen name="warm_welcome_v2_card_text_padding">24.0dip</dimen>
     <dimen name="widget_bottom_height">50.0dip</dimen>
     <dimen name="widget_image_max_height">63.0dip</dimen>
+
+    <!--10/24/2015-->
+    <dimen name="play_card_default_elevation">0.5dip</dimen>
 </resources>

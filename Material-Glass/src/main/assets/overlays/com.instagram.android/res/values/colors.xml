@@ -30,9 +30,9 @@
     <color name="accent_blue_2">@color/text</color>
     <color name="accent_blue_1">@color/text</color>
 
-    <color name="grey_dark">@color/grey_7</color>
-    <color name="grey_medium">@color/grey_5</color>
-    <color name="grey_light">@color/grey_3</color>
+    <!--<color name="grey_dark">@color/grey_7</color>-->
+    <!--<color name="grey_medium">@color/grey_5</color>-->
+    <!--<color name="grey_light">@color/grey_3</color>-->
 
     <color name="white">#89ABC4</color>
     <color name="white_transparent">#80ffffff</color>
@@ -42,10 +42,10 @@
 
     <color name="dialog_background">#55000000</color>
     <color name="image_placeholder">@color/background</color>
-    <color name="action_bar_top_highlight">@color/background</color>
-    <color name="dark_action_bar_top_highlight">@color/background</color>
-    <color name="action_bar_transparent_background">#20000000</color>
-    <color name="action_bar_transparent_background_pressed_state">#30000000</color>
+    <color name="action_bar_top_highlight">#a0111111</color>
+    <color name="dark_action_bar_top_highlight">#a0111111</color>
+    <color name="action_bar_transparent_background">@color/background_tint</color>
+    <color name="action_bar_transparent_background_pressed_state">#a0111111</color>
     <color name="action_bar_semi_transparent_white">#bf000000</color>
     <color name="status_bar_blue_background">@color/background_tint</color>
 
@@ -97,4 +97,15 @@
     <color name="result_bar_active_color">#ff4999da</color>
     <color name="disabled_text_off_white">#50ffffff</color>
     <color name="white_30_alpha">#4dffffff</color>
+
+    <!--10/27/2015-->
+    <!--<color name="green_9">#ff0a1304</color>-->
+    <!--<color name="green_8">#ff1e380d</color>-->
+    <!--<color name="green_7">#ff335e15</color>-->
+    <color name="green_6">@color/backgroundd</color>
+    <color name="green_5">@color/background</color>
+    <color name="green_4">@color/background</color>
+    <!--<color name="green_3">#ffb3de95</color>-->
+    <!--<color name="green_2">#ffb3de95</color>-->
+    <!--<color name="green_1">#fff0f9ea</color>-->
 </resources>
