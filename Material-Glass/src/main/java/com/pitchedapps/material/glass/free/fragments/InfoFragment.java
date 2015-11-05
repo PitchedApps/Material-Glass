@@ -2,7 +2,9 @@ package com.pitchedapps.material.glass.free.fragments;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
@@ -26,7 +28,7 @@ public class InfoFragment extends Fragment {
             toolbar.setTitle(R.string.section_eight);
 
         ViewPager mPager = (ViewPager) root.findViewById(R.id.info_pager);
-        mPager.setAdapter(new MyPagerAdapter(getActivity().getSupportFragmentManager()));
+        mPager.setAdapter(new MyPagerAdapter(getChildFragmentManager()));
 
         SlidingTabLayout mTabs = (SlidingTabLayout) root.findViewById(R.id.info_tabs);
         mTabs.setViewPager(mPager);
@@ -63,7 +65,7 @@ public class InfoFragment extends Fragment {
         final String[] tabs;
         final String[] content;
 
-        public MyPagerAdapter(android.support.v4.app.FragmentManager fm) {
+        public MyPagerAdapter(FragmentManager fm) {
             super(fm);
             tabs = getResources().getStringArray(R.array.info_sections);
             content = getResources().getStringArray(R.array.info_contents);
@@ -82,6 +84,13 @@ public class InfoFragment extends Fragment {
         @Override
         public int getCount() {
             return tabs.length;
+        }
+
+        // TODO this is a workaround.
+        // See this link: http://stackoverflow.com/questions/18642890/fragmentstatepageradapter-with-childfragmentmanager-fragmentmanagerimpl-getfra/19099987#19099987
+        @Override
+        public void restoreState(Parcelable arg0, ClassLoader arg1) {
+            //do nothing here! no call to super.restoreState(arg0, arg1);
         }
     }
 }

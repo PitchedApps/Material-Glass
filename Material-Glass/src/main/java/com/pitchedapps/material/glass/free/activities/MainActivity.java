@@ -1,7 +1,6 @@
 package com.pitchedapps.material.glass.free.activities;
 
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
@@ -304,7 +303,7 @@ public class MainActivity extends AppCompatActivity {
         if (result != null && result.isDrawerOpen()) {
             result.closeDrawer();
         } else if (result != null && currentItem != 1) {
-            result.setSelection(0);
+            result.setSelection(1);
         } else if (result != null) {
             super.onBackPressed();
         } else {

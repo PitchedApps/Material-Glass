@@ -2,12 +2,15 @@ package com.pitchedapps.material.glass.free.fragments;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +29,7 @@ public class PreviewsFragment extends Fragment {
             toolbar.setTitle(R.string.section_two);
 
         ViewPager mPager = (ViewPager) root.findViewById(R.id.pager);
-        mPager.setAdapter(new MyPagerAdapter(getActivity().getSupportFragmentManager()));
+        mPager.setAdapter(new MyPagerAdapter(getChildFragmentManager()));
 
         SlidingTabLayout mTabs = (SlidingTabLayout) root.findViewById(R.id.tabs);
         mTabs.setViewPager(mPager);
@@ -62,7 +65,7 @@ public class PreviewsFragment extends Fragment {
 
         final String[] tabs;
 
-        public MyPagerAdapter(android.support.v4.app.FragmentManager fm) {
+        public MyPagerAdapter(FragmentManager fm) {
             super(fm);
             tabs = getResources().getStringArray(R.array.tabs);
         }
@@ -87,6 +90,7 @@ public class PreviewsFragment extends Fragment {
                     f = IconsFragment.newInstance(R.array.icon_pack);
                     break;
             }
+            Log.i("TAG", "Switching tabs " + position);
             return f;
         }
 
@@ -98,6 +102,13 @@ public class PreviewsFragment extends Fragment {
         @Override
         public int getCount() {
             return tabs.length;
+        }
+
+        // TODO this is a workaround.
+        // See this link: http://stackoverflow.com/questions/18642890/fragmentstatepageradapter-with-childfragmentmanager-fragmentmanagerimpl-getfra/19099987#19099987
+        @Override
+        public void restoreState(Parcelable arg0, ClassLoader arg1) {
+            //do nothing here! no call to super.restoreState(arg0, arg1);
         }
     }
 }
