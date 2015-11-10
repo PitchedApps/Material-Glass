@@ -3,6 +3,7 @@
     <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Launcher3,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,PackageInstaller,Google,GoogleDeskClock,GooglePlay,Gmail,GooglePackageInstaller,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,FreeOTP,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v56</item>
         <item>@array/v55</item>
         <item>@array/v54</item>
         <item>@array/v53</item>
@@ -70,6 +71,15 @@
         <item></item>
     </string-array>
 
+    <string-array name="v56">
+        <item>Pushbullet: fixed background for latest update and removed green color</item>
+        <item>NovaLauncher: fixed white background in settings (thanks direktiv 4)</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <string-array name="v55">
         <item>v2.5.2</item>
         <item>Launcher3: rethemed for cm and added to layers</item>
@@ -77,6 +87,7 @@
         <item>Google +: minor changes for text color</item>
         <item>MMS: fixed white background for SlimSaber</item>
         <item>Dialer: fixed black dialpad for the pitch theme</item>
+        <item>App: updated description</item>
     </string-array>
 
     <string-array name="v54">

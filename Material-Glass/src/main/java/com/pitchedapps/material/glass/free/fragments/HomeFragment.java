@@ -134,9 +134,12 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        boolean themeengine = false;
+
         FloatingActionButton fabcm = (FloatingActionButton) root.findViewById(R.id.apply_cm);
         Intent intentcm = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
         if (intentcm != null) {
+            themeengine = true;
             fabcm.setVisibility(View.VISIBLE);
             fabcm.setColorNormal(getResources().getColor(R.color.fab_unpressed));
             fabcm.setColorPressed(getResources().getColor(R.color.fab_pressed));
@@ -185,6 +188,7 @@ public class HomeFragment extends Fragment {
         FloatingActionButton fabrro = (FloatingActionButton) root.findViewById(R.id.apply_rro);
         Intent intentrro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
         if (intentrro != null) {
+            themeengine = true;
             fabrro.setVisibility(View.VISIBLE);
             fabrro.setColorNormal(getResources().getColor(R.color.fab_unpressed));
             fabrro.setColorPressed(getResources().getColor(R.color.fab_pressed));
@@ -193,37 +197,7 @@ public class HomeFragment extends Fragment {
             fabrro.attachToScrollView(content);
             fabrro.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v) {
-                    Intent intentrro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
-                    if (intentrro == null) {
-                        Toast.makeText(getActivity(), getString(R.string.rro_not_installed), Toast.LENGTH_SHORT).show();
-                    } else {
-
-                        getActivity().startActivity(intentrro);
-                        /*final String className = "com.pitchedapps.material.glass.free.utilities.RROLayersLauncher";
-                        Class<?> cl = null;
-                        try {
-                            cl = Class.forName(className);
-                        } catch (ClassNotFoundException e) {
-                            Log.e("LAUNCHER CLASS MISSING", "Launcher class for: '" + className + "' missing!");
-                        }
-                        if (cl != null) {
-                            Constructor<?> constructor = null;
-                            try {
-                                constructor = cl.getConstructor(Context.class);
-                            } catch (NoSuchMethodException e) {
-                                Log.e("LAUNCHER CLASS CONS",
-                                        "Launcher class for: '" + className + "' is missing a constructor!");
-                            }
-                            try {
-                                if (constructor != null)
-                                    constructor.newInstance(getActivity());
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-                        }*/
-
-                    }
+                //TODO add material dialog with text & 3 buttons to press (2 leading to links, 1 that closes the dialog)
                 }
 
 
@@ -235,6 +209,7 @@ public class HomeFragment extends Fragment {
         FloatingActionButton cyngn = (FloatingActionButton) root.findViewById(R.id.apply_cyngn);
         Intent intentcyngn = getActivity().getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
         if (intentcyngn != null) {
+            themeengine = true;
             cyngn.setVisibility(View.VISIBLE);
             cyngn.setColorNormal(getResources().getColor(R.color.fab_unpressed));
             cyngn.setColorPressed(getResources().getColor(R.color.fab_pressed));
@@ -257,6 +232,28 @@ public class HomeFragment extends Fragment {
             });
         } else {
             cyngn.setVisibility(View.GONE);
+        }
+
+        FloatingActionButton noThemeEngine = (FloatingActionButton) root.findViewById(R.id.apply_cyngn);
+        if (themeengine == false) {
+            noThemeEngine.setVisibility(View.VISIBLE);
+            noThemeEngine.setColorNormal(getResources().getColor(R.color.fab_unpressed));
+            noThemeEngine.setColorPressed(getResources().getColor(R.color.fab_pressed));
+            noThemeEngine.setColorRipple(getResources().getColor(R.color.semitransparent_white));
+            noThemeEngine.show(true);
+            noThemeEngine.attachToScrollView(content);
+            noThemeEngine.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intentcyngn = getActivity().getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
+                    if (intentcyngn == null) {
+                        Toast.makeText(getActivity(), getString(R.string.cyngn_not_installed), Toast.LENGTH_SHORT).show();
+                    } else {
+
+                        getActivity().startActivity(intentcyngn);
+                    }
+                }
+            });
         }
 
         return root;

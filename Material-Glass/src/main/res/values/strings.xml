@@ -5,10 +5,11 @@
     <string name="app_name">Material Glass</string>
     <string name="app_long_name">Material Glass by Pitched Apps</string>
     <string name="package_name">com.pitchedapps.material.glass.free</string>
-    <string name="theme_description">Pitched Apps is proud to present Material Glass, cm12\'s first and longest lasting theme!
+    <string name="theme_description">Pitched Apps is proud to present Material Glass, cm12\'s first and longest lasting theme! Running since Lollipop, and still going with Marshmallow.
         \nMade by 1 themer
         \nTweaked for 1 000+ hours
-        \nUsed by 50 000+ users</string>
+        \nUsed by 50 000+ users
+        \n\nPress the FAB to apply! If it\'s not there, make sure you have a compatible theme chooser.</string>
     <!-- Muzei Stuff -->
     <string name="artsource_name">@string/app_name</string>
     <string name="artsource_desc">Beautiful wallpapers for a beautiful theme</string>
