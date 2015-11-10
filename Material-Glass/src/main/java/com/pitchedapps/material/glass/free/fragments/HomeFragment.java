@@ -197,7 +197,13 @@ public class HomeFragment extends Fragment {
             fabrro.attachToScrollView(content);
             fabrro.setOnClickListener(new View.OnClickListener() {
                 @Override
-                //TODO add material dialog with text & 3 buttons to press (2 leading to links, 1 that closes the dialog)
+                public void onClick(View v) {
+                    Intent intentrro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
+                    if (intentrro == null) {
+                        Toast.makeText(getActivity(), getString(R.string.rro_not_installed), Toast.LENGTH_SHORT).show();
+                    } else {
+                        getActivity().startActivity(intentrro);
+                    }
                 }
 
 
@@ -245,15 +251,11 @@ public class HomeFragment extends Fragment {
             noThemeEngine.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intentcyngn = getActivity().getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
-                    if (intentcyngn == null) {
-                        Toast.makeText(getActivity(), getString(R.string.cyngn_not_installed), Toast.LENGTH_SHORT).show();
-                    } else {
-
-                        getActivity().startActivity(intentcyngn);
-                    }
+                    //TODO add material dialog with text & 3 buttons to press (2 leading to links, 1 that closes the dialog)
                 }
             });
+        } else {
+            noThemeEngine.setVisibility(View.GONE);
         }
 
         return root;
