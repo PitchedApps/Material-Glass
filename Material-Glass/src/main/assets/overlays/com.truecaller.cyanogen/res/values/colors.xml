@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Black">@color/background</color>
+    <color name="BlueArea">#ff0091ea</color>
+    <color name="BlueLight">#ff0091ea</color>
+    <color name="CallerTextDetails">#8affffff</color>
+    <color name="ControlNormal">@color/backgroundd</color>
+    <color name="DarkMain">#fff</color>
+    <color name="DarkSub">#ddffffff</color>
+    <color name="GreyArea">#ddffffff</color>
+    <color name="Hint">#aaffffff</color>
+    <color name="LightGrey">#ddffffff</color>
+    <color name="LightMain">#ffffffff</color>
+    <color name="LightSub">#ffffffff</color>
+    <color name="SemiDarkGrey">#ff555555</color>
+    <color name="White">#ffffffff</color>
+
+    <color name="action_mode_background">@color/background</color>
+
+    <color name="color.border">#11ffffff</color>
+    <color name="color.list.background">@color/background</color>
+    <color name="color.list.border">#22ffffff</color>
+    <color name="color.list.selectionend">@color/backgroundd</color>
+    <color name="color.list.selectionstart">@color/backgroundd</color>
+
+</resources>

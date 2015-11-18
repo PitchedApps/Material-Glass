@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.StoreBase" parent="@android:style/Theme.Material">
+        <!--<item name="storeListPreferredItemHeightSmall">48.0dip</item>-->
+    </style>
+    <!--<style name="Theme.Store" parent="@style/Theme.StoreBase">-->
+        <!--&lt;!&ndash;<item name="android:windowBackground">@android:color/white</item>&ndash;&gt;-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:editTextStyle">@style/SearchEditTextStyle</item>-->
+        <!--<item name="android:actionBarStyle">@style/StoreActionBar</item>-->
+        <!--<item name="android:displayOptions">none</item>-->
+        <!--<item name="android:actionModeBackground">@color/action_bar_background</item>-->
+        <!--<item name="android:windowActionBarOverlay">true</item>-->
+        <!--<item name="android:actionBarSize">56.0dip</item>-->
+        <!--<item name="android:actionOverflowButtonStyle">@style/SortActionButtonOverflow</item>-->
+    <!--</style>-->
+
+    <!--<style name="SearchEditTextStyle" parent="@android:style/Widget.Material.EditText">-->
+        <!--<item name="android:background">@android:color/transparent</item>-->
+    <!--</style>-->
+
+    <!--<style name="StoreActionBar" parent="@android:style/Widget.Material.ActionBar">-->
+        <!--<item name="android:icon">@drawable/ic_ab_collections</item>-->
+        <!--&lt;!&ndash;<item name="android:background">@color/action_bar_background</item>&ndash;&gt;-->
+        <!--<item name="android:windowActionBarOverlay">true</item>-->
+        <!--<item name="android:titleTextStyle">@style/ActionBarTitle</item>-->
+    <!--</style>-->
+    <!--<style name="ActionBarTitle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">-->
+        <!--<item name="android:textSize">20.0sp</item>-->
+        <!--<item name="android:textStyle">normal</item>-->
+        <!--<item name="android:textColor">@color/actionbar_text</item>-->
+    <!--</style>-->
+
+    <!--<style name="mixnmatch_menu_btn" parent="@android:style/Widget.Material.Button.Borderless.Small">-->
+        <!--&lt;!&ndash;<item name="android:background">#ffd2d2c8</item>&ndash;&gt;-->
+        <!--<item name="android:padding">8.0dip</item>-->
+        <!--<item name="android:layout_width">fill_parent</item>-->
+        <!--<item name="android:layout_height">103.0dip</item>-->
+    <!--</style>-->
+    <!--<style name="mixnmatch_menu_firstline">-->
+        <!--<item name="android:textSize">16.0sp</item>-->
+        <!--<item name="android:textColor">#fff</item>-->
+    <!--</style>-->
+    <!--<style name="mixnmatch_menu_secondline">-->
+        <!--<item name="android:textSize">14.0sp</item>-->
+        <!--<item name="android:textColor">#ddffffff</item>-->
+    <!--</style>-->
+
+    <!--<style name="drawer_header">-->
+        <!--<item name="android:textSize">30.0sp</item>-->
+        <!--<item name="android:textColor">#ffffffff</item>-->
+        <!--<item name="android:gravity">left</item>-->
+        <!--<item name="android:background">#cc000000</item>-->
+        <!--<item name="android:paddingLeft">10.0dip</item>-->
+        <!--<item name="android:paddingTop">10.0dip</item>-->
+        <!--<item name="android:paddingBottom">10.0dip</item>-->
+    <!--</style>-->
+
+    <!--<style name="SortActionButtonOverflow" parent="@android:style/Widget.Material.ActionButton.Overflow">-->
+        <!--<item name="android:src">@drawable/ic_sort</item>-->
+    <!--</style>-->
+</resources>

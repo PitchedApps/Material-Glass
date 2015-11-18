@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey">#ccffffff</color>
+    <color name="disabled">#aaffffff</color>
+    <color name="window_background">@android:color/transparent</color>
+    <color name="knob_container_background">@android:color/transparent</color>
+    <color name="disabled_eq">#22ffffff</color>
+
+    <!--<color name="preset_custom">#33ce5b4c</color>-->
+    <!--<color name="preset_normal">#33cb6139</color>-->
+    <!--<color name="preset_classical">#33be963f</color>-->
+    <!--<color name="preset_dance">#33bebd3f</color>-->
+    <!--<color name="preset_flat">#3384b74e</color>-->
+    <!--<color name="preset_folk">#3380b74f</color>-->
+    <!--<color name="preset_metal">#3365b759</color>-->
+    <!--<color name="preset_hiphop">#335cb797</color>-->
+    <!--<color name="preset_jazz">#335b82b7</color>-->
+    <!--<color name="preset_pop">#33585dca</color>-->
+    <!--<color name="preset_rock">#339a62cb</color>-->
+    <!--<color name="preset_electronic">#33c862c5</color>-->
+    <!--<color name="preset_small_speakers">#33cb629a</color>-->
+</resources>

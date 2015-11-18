@@ -3,6 +3,7 @@
     <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Launcher3,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,PackageInstaller,Google,GoogleDeskClock,GooglePlay,Gmail,GooglePackageInstaller,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,FreeOTP,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
     <string-array name="fullchangelog">
+        <item>@array/v57</item>
         <item>@array/v56</item>
         <item>@array/v55</item>
         <item>@array/v54</item>
@@ -64,7 +65,7 @@
 
 	<!--todo
 	
-	CREATE PUSHBULLET FOR CM
+	c-apps
 	
 	systemui, inbox
 	check crash for google widget on lolli
@@ -75,8 +76,17 @@
 	-->
 	
     <string-array name="v">
+        <item>v</item>
         <item></item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
+    <string-array name="v57">
+        <item>v2.5.4</item>
+        <item>Swiftkey: darkened side panels in keyboard for emoji</item>
         <item></item>
         <item></item>
         <item></item>
@@ -89,8 +99,7 @@
         <item>NovaLauncher: fixed white background in settings for layers(thanks direktiv 4)</item>
         <item>MMS: some test fixes for Broken OS</item>
         <item>Google: fixed text color below search bar</item>
-        <item></item>
-        <item></item>
+        <item>C-Apps: added dialer, audiofx</item>
     </string-array>
 
     <string-array name="v55">

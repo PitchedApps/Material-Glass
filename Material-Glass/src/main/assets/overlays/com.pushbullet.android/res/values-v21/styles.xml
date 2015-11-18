@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.AppCompat.Light.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar" />
-    <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
-    <style name="Theme.AppCompat.Light.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
-    <style name="Base.Widget.AppCompat.ActionBar" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-    <style name="Base.Widget.AppCompat.ActionBar.Solid" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-    <style name="Base.Widget.AppCompat.Light.ActionBar" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-    <style name="Base.Widget.AppCompat.Light.ActionBar.Solid" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-    <style name="Base.Widget.AppCompat.Light.ActionBar.Solid.Inverse" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-
-    <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
-
     <style name="ChatBubbleText">
-        <item name="android:textColor">@color/text</item>
-        <item name="android:textColorLink">@color/text</item>
-        <!--<item name="android:paddingLeft">@dimen/half_standard_padding</item>-->
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorLink">#ffffffff</item>
         <item name="android:paddingLeft">8.0dip</item>
         <item name="android:paddingRight">8.0dip</item>
         <item name="android:visibility">gone</item>

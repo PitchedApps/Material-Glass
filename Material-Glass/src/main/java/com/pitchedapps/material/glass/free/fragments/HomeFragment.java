@@ -134,12 +134,13 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        boolean themeengine = false;
+//        boolean themeengine = false;
 
         FloatingActionButton fabcm = (FloatingActionButton) root.findViewById(R.id.apply_cm);
         Intent intentcm = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
         if (intentcm != null) {
-            themeengine = true;
+//            themeengine = true;
+            Log.d("MGlass", "org.cyanogenmod.theme.chooser is installed");
             fabcm.setVisibility(View.VISIBLE);
             fabcm.setColorNormal(getResources().getColor(R.color.fab_unpressed));
             fabcm.setColorPressed(getResources().getColor(R.color.fab_pressed));
@@ -182,13 +183,15 @@ public class HomeFragment extends Fragment {
 
             });
         } else {
+            Log.d("MGlass", "org.cyanogenmod.theme.chooser is not installed");
             fabcm.setVisibility(View.GONE);
         }
 
         FloatingActionButton fabrro = (FloatingActionButton) root.findViewById(R.id.apply_rro);
         Intent intentrro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
         if (intentrro != null) {
-            themeengine = true;
+//            themeengine = true;
+            Log.d("MGlass", "com.lovejoy777.rroandlayersmanager is installed");
             fabrro.setVisibility(View.VISIBLE);
             fabrro.setColorNormal(getResources().getColor(R.color.fab_unpressed));
             fabrro.setColorPressed(getResources().getColor(R.color.fab_pressed));
@@ -209,13 +212,15 @@ public class HomeFragment extends Fragment {
 
             });
         } else {
+            Log.d("MGlass", "com.lovejoy777.rroandlayersmanager is not installed");
             fabrro.setVisibility(View.GONE);
         }
 
         FloatingActionButton cyngn = (FloatingActionButton) root.findViewById(R.id.apply_cyngn);
         Intent intentcyngn = getActivity().getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
         if (intentcyngn != null) {
-            themeengine = true;
+//            themeengine = true;
+            Log.d("MGlass", "com.cyngn.theme.chooser is installed");
             cyngn.setVisibility(View.VISIBLE);
             cyngn.setColorNormal(getResources().getColor(R.color.fab_unpressed));
             cyngn.setColorPressed(getResources().getColor(R.color.fab_pressed));
@@ -237,11 +242,13 @@ public class HomeFragment extends Fragment {
 
             });
         } else {
+            Log.d("MGlass", "com.cyngn.theme.chooser is not installed");
             cyngn.setVisibility(View.GONE);
         }
-
+/*
         FloatingActionButton noThemeEngine = (FloatingActionButton) root.findViewById(R.id.apply_cyngn);
         if (themeengine == false) {
+            Log.d("MGlass", "No theme engine installed");
             noThemeEngine.setVisibility(View.VISIBLE);
             noThemeEngine.setColorNormal(getResources().getColor(R.color.fab_unpressed));
             noThemeEngine.setColorPressed(getResources().getColor(R.color.fab_pressed));
@@ -256,7 +263,7 @@ public class HomeFragment extends Fragment {
             });
         } else {
             noThemeEngine.setVisibility(View.GONE);
-        }
+        }*/
 
         return root;
     }

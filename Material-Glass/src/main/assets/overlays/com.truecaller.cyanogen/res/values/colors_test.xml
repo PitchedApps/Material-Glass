@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--magenta-->
+    <color name="aaa">#ff00ff</color>
+    <!--cyan-->
+    <color name="bbb">#00ffff</color>
+    <!--yellow-->
+    <color name="ccc">#ffff00</color>
+    <!--red-->
+    <color name="ddd">#ff0000</color>
+    <!--blue-->
+    <color name="eee">#0000ff</color>
+    <!--green-->
+    <color name="fff">#00ff00</color>
+</resources>
