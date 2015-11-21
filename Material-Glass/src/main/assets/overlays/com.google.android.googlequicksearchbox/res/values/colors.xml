@@ -154,7 +154,7 @@
     <color name="nav_suggest_text_inverse">@color/suggest_text_inverse</color>
     <color name="neutral_pressed">#33999999</color>
     <color name="normal_icon_corpus_bar">@color/normal_text_corpus_bar</color>
-    <color name="normal_text_corpus_bar">#ff111111</color>
+    <color name="normal_text_corpus_bar">#aaffffff</color>
     <color name="now_product_tutorial_1">@color/backgroundd</color>
     <color name="now_product_tutorial_2">@color/background</color>
     <color name="numbers_text_color">@color/text</color>
@@ -238,7 +238,8 @@
     <color name="second_screen_image_header_highlight">#1affffff</color>
     <color name="selected_icon_corpus_bar">@color/selected_text_corpus_bar</color>
     <color name="selected_search_language_header_background">@color/background</color>
-    <color name="selected_text_corpus_bar">#ff000000</color>
+    <!--bar below search from google app 11/10/2015-->
+    <color name="selected_text_corpus_bar">#fff</color>
     <color name="selection_highlight_color">#66666666</color>
     <color name="setup_wizard_color_accent_dark">@color/text</color>
     <color name="setup_wizard_color_accent_light">@color/text</color>
