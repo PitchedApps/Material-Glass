@@ -2,7 +2,11 @@
 <resources>
     <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Launcher3,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,PackageInstaller,Google,GoogleDeskClock,GooglePlay,Gmail,GooglePackageInstaller,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,FreeOTP,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
+	<!--WIP
+	Google Calendar, Hangouts, K9Mail, Frameworkmtest
+	-->
     <string-array name="fullchangelog">
+        <item>@array/v58</item>
         <item>@array/v57</item>
         <item>@array/v56</item>
         <item>@array/v55</item>
@@ -90,13 +94,22 @@
         <item></item>
     </string-array>
 	
+    <string-array name="v58">
+        <item>v2.6.1</item>
+        <item>New: themed file manager for cm</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
     <string-array name="v57">
-        <item>v2.5.4</item>
+        <item>v2.6.0</item>
         <item>Swiftkey: darkened side panels in keyboard for emoji</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Google +: fixed crash for collections tab and added other tweaks</item>
+        <item>Google: fixed text color below search bar for real</item>
+        <item>Bootanimation: new marshmallow version for cm</item>
+        <item>Layers: Rebuilt all layers with newest build tools</item>
     </string-array>
 
     <string-array name="v56">

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/material_palette_blue_accent_dark"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <color android:color="@android:color/white" />
+    </item>
+    <selector>
+        <item android:state_selected="true" android:drawable="@*common:color/backgroundd" />
+        <item android:state_enabled="false" android:drawable="@*common:color/background" />
+        <item android:state_enabled="true" android:drawable="@*common:color/backgroundd" />
+    </selector>
+</ripple>
