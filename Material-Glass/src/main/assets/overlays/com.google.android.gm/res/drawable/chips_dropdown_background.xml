@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/chips_dropdown_background_activated"
+    <item android:drawable="@android:color/background_dark"
         android:state_activated="true" />
-    <item android:drawable="@color/chips_dropdown_background_pressed"
+    <item android:drawable="@android:color/background_dark"
         android:state_pressed="true" />
-    <item android:drawable="@color/background" />
+    <item android:drawable="@android:color/background_dark" />
 </selector>

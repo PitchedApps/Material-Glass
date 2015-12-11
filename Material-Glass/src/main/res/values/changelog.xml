@@ -97,9 +97,9 @@
     <string-array name="v58">
         <item>v2.6.1</item>
         <item>New: themed file manager for cm</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Framework: support for marshmallow chooser grid</item>
+        <item>Marshmallow: initial support for night mode!</item>
+        <item>Settings: added new dashboard paddings</item>
         <item></item>
     </string-array>
 	
