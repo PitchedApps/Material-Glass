@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BugleBaseTheme" parent="@*common:style/Theme.AppCompat" />
+    <style name="Widget.AppCompat.Light.ActionBar.Solid" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
+    <style name="BugleTheme.DialogActivity" parent="@*common:style/Theme.AppCompat.Dialog" />
+    <style name="BugleTheme.ConversationListActivity" parent="@*common:style/Theme.AppCompat" />
+        <!--<item name="android:windowBackground">@android:color/background_light</item>-->
+    <!--</style>-->
+    <style name="RecipientEditTextViewBase" parent="@android:attr/autoCompleteTextViewStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/chip_height</item>
+        <item name="android:popupBackground">@*common:color/background</item>
+        <item name="android:inputType">textEmailAddress|textMultiLine</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+</resources>

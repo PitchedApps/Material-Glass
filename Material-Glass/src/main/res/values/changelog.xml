@@ -6,6 +6,7 @@
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
     <string-array name="fullchangelog">
+        <item>@array/v60</item>
         <item>@array/v59</item>
         <item>@array/v58</item>
         <item>@array/v57</item>
@@ -93,6 +94,12 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+	
+    <string-array name="v60">
+        <item>v2.6.3</item>
+        <item>New: themed messaging for cm13</item>
+        <item>New: themed exact calculator for cm13</item>
     </string-array>
 	
     <string-array name="v59">
