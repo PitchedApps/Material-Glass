@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,DocumentsUI,AOSPKeyboard,NavBar,Launcher3,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,PackageInstaller,Google,GoogleDeskClock,GoogleDrive,GooglePlay,Gmail,GooglePackageInstaller,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,FreeOTP,HellsCoreUpdater,Instagram,NovaLauncher,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,Calculator,DocumentsUI,AOSPKeyboard,NavBar,Launcher3,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,PackageInstaller,PureNexusSettings,Google,GoogleDeskClock,GoogleDrive,GooglePlay,Gmail,GooglePackageInstaller,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,FreeOTP,HellsCoreUpdater,Instagram,MatLog,NovaLauncher,NovaUnread,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,WeatherBug, "</string>
 
 	<!--WIP
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
     <string-array name="fullchangelog">
+        <item>@array/v61</item>
         <item>@array/v60</item>
         <item>@array/v59</item>
         <item>@array/v58</item>
@@ -71,16 +72,12 @@
 
 	<!--todo
 	
-	c-apps
-	
-	check log crash for bluetooth full menu
-	
 	http://forum.xda-developers.com/showthread.php?t=2213945 check white notification?
 	
 	truecaller dialpad cut off issue
 	
 	systemui, inbox
-	check crash for google widget on lolli
+	
 	nav bar in google maps, landscape
 	black on black menu in stock browser
 	k9mail is no longer in layers selection
@@ -90,6 +87,19 @@
     <string-array name="v">
         <item>v</item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
+    <string-array name="v61">
+        <item>v2.6.4</item>
+        <item>New: themed PureNexusSettings for layers</item>
+        <item>New: themed MatLog for cm and layers</item>
+        <item>New: themed TeslaUnread for cm and layers</item>
+        <item>Instagram: fixed color for pressed back button on actionbar</item>
+        <item>Google: Fixed crash when selecting transport preference</item>
         <item></item>
         <item></item>
         <item></item>
