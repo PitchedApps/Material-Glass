@@ -1,14 +1,12 @@
 package com.pitchedapps.material.glass.free.fragments;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.util.Log;
@@ -18,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ObservableScrollView;
 import com.pitchedapps.material.glass.free.R;
@@ -73,8 +72,8 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        TextView apponebtn = (TextView) root.findViewById(R.id.appone_button);
-        apponebtn.setOnClickListener(new View.OnClickListener() {
+        TextView appDonate_button = (TextView) root.findViewById(R.id.appDonate_button);
+        appDonate_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ((MainActivity) getActivity()).result.setSelection(5);
@@ -82,53 +81,53 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        TextView apptwobtn = (TextView) root.findViewById(R.id.appXda_button);
-        apptwobtn.setOnClickListener(new View.OnClickListener() {
+        TextView appXda_button = (TextView) root.findViewById(R.id.appXda_button);
+        appXda_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent apptwo = new Intent(Intent.ACTION_VIEW, Uri.parse(AppXdaPackage));
-                startActivity(apptwo);
+                Intent appXda = new Intent(Intent.ACTION_VIEW, Uri.parse(AppXdaPackage));
+                startActivity(appXda);
             }
         });
 
-        TextView appthreebtn = (TextView) root.findViewById(R.id.appPitched_glass_button);
-        appthreebtn.setOnClickListener(new View.OnClickListener() {
+        TextView appPitched_glass_button = (TextView) root.findViewById(R.id.appPitched_glass_button);
+        appPitched_glass_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent appthree = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + AppPitchedGlassPackage));
-                startActivity(appthree);
+                Intent appPitched_glass = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + AppPitchedGlassPackage));
+                startActivity(appPitched_glass);
             }
         });
 
-        TextView appfourbtn = (TextView) root.findViewById(R.id.appTbo_button);
-        appfourbtn.setOnClickListener(new View.OnClickListener() {
+        TextView appTbobtn = (TextView) root.findViewById(R.id.appTbo_button);
+        appTbobtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent appfour = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.tbo_link)));
-                startActivity(appfour);
+                Intent appTbo = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.tbo_link)));
+                startActivity(appTbo);
             }
         });
 
-        TextView appfourbtnxda = (TextView) root.findViewById(R.id.appTbo_button_xda);
-        appfourbtnxda.setOnClickListener(new View.OnClickListener() {
+        TextView appTbobtnxda = (TextView) root.findViewById(R.id.appTbo_button_xda);
+        appTbobtnxda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent appfour = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.tbo_xda)));
-                startActivity(appfour);
+                Intent appTboXda = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.tbo_xda)));
+                startActivity(appTboXda);
             }
         });
 		
-		TextView appplusbtn = (TextView) root.findViewById(R.id.appPlus_button);
-        appplusbtn.setOnClickListener(new View.OnClickListener() {
+		TextView appPlusbtn = (TextView) root.findViewById(R.id.appPlus_button);
+        appPlusbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent appplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.app_plus_link)));
-                startActivity(appplus);
+                Intent appPlus = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.app_plus_link)));
+                startActivity(appPlus);
             }
         });
 
-        TextView ratebtn = (TextView) root.findViewById(R.id.rate_button);
-        ratebtn.setOnClickListener(new View.OnClickListener() {
+        TextView rateBtn = (TextView) root.findViewById(R.id.rate_button);
+        rateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent rate = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + PlayStoreListing));
@@ -215,32 +214,24 @@ public class HomeFragment extends Fragment {
                 }
             });
         } else {
-            fabApply.setImageResource(R.drawable.ic_rro);
+            fabApply.setImageResource(R.drawable.ic_question);
             Log.d("MGlass", "No theme engine found");
-//            fabApply.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    AlertDialog noThemeEngine = new AlertDialog.Builder(getActivity())
-//                            .create();
-//                    noThemeEngine.setCancelable(false);
-//                    noThemeEngine.setTitle(R.string.NTED_title);
-//                    noThemeEngine.setMessage(getActivity().getString(R.string.NTED_message));
-////                    noThemeEngine.setButton(getActivity().getString(R.string.close), new DialogInterface.OnClickListener() {
-////
-////                        public void onClick(DialogInterface dialog, int which) {
-////                            dialog.dismiss();
-////                        }
-////                    });
-//                    noThemeEngine.setNegativeButton("Close", new DialogInterface.OnClickListener() {
-//                        public void onClick(DialogInterface dialog, int id) {
-//                            dialog.cancel();
-//                        }
-//                    });
-//                    noThemeEngine.show();
-//                }
-//            });
+            fabApply.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    noThemeEngine();
+                }
+            });
         }
         return root;
+    }
+
+    private void noThemeEngine() {
+        new MaterialDialog.Builder(getActivity())
+                .title(R.string.NTED_title)
+                .content(R.string.NTED_message)
+                .positiveText(R.string.understood)
+                .show();
     }
 
     private boolean AppIsInstalled(String packageName) {

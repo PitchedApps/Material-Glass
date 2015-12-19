@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
     private String thaCredits;
     private String thaInfo;
     private int currentItem = -1;
-//    private Preferences mPrefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
         // Load apps ahead of time
         mRequestManager.loadAppsIfEmptyAsync();
 
-//        mPrefs = new Preferences(MainActivity.this);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -363,37 +361,6 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-//    private void addItemsToDrawer() {
-//        IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(4);
-//        if (enable_features) {
-//            result.addItem(walls, 3);
-//        }
-//    }
-
-//    private void runChecker() {
-//        if (firstrun) {
-//            if (WITH_LICENSE_CHECKER) {
-//                checkLicense();
-//            } else {
-//                mPrefs.setFeaturesEnabled(true);
-//                addItemsToDrawer();
-//                showChangelogDialog();
-//            }
-//        } else {
-//            if (WITH_LICENSE_CHECKER) {
-//                if (!enable_features) {
-//                    showNotLicensedDialog();
-//                } else {
-//                    addItemsToDrawer();
-//                    showChangelogDialog();
-//                }
-//            } else {
-//                addItemsToDrawer();
-//                showChangelogDialog();
-//            }
-//        }
-//    }
-
     public boolean isPremium() {
         return mIsPremium;
     }
@@ -446,66 +413,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }).show();
     }
-
-//    private void checkLicense() {
-//        String installer = getPackageManager().getInstallerPackageName(getPackageName());
-//        try {
-//            if (installer.equals("com.google.android.feedback") ||
-//                    installer.equals("com.android.vending")) {
-//                new MaterialDialog.Builder(this)
-//                        .title(R.string.license_success_title)
-//                        .content(R.string.license_success)
-//                        .positiveText(R.string.close)
-//                        .callback(new MaterialDialog.ButtonCallback() {
-//                            @Override
-//                            public void onPositive(MaterialDialog dialog) {
-//                                enable_features = true;
-//                                mPrefs.setFeaturesEnabled(true);
-//                                addItemsToDrawer();
-//                                showChangelogDialog();
-//                            }
-//                        }).show();
-//            } else {
-//                showNotLicensedDialog();
-//            }
-//        } catch (Exception e) {
-//            showNotLicensedDialog();
-//        }
-//    }
-
-//    private void showNotLicensedDialog() {
-//        enable_features = false;
-//        mPrefs.setFeaturesEnabled(false);
-//        new MaterialDialog.Builder(this)
-//                .title(R.string.license_failed_title)
-//                .content(R.string.license_failed)
-//                .positiveText(R.string.download)
-//                .negativeText(R.string.exit)
-//                .callback(new MaterialDialog.ButtonCallback() {
-//                    @Override
-//                    public void onPositive(MaterialDialog dialog) {
-//                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + getPackageName()));
-//                        startActivity(browserIntent);
-//                    }
-//
-//                    @Override
-//                    public void onNegative(MaterialDialog dialog) {
-//                        finish();
-//                    }
-//                })
-//                .cancelListener(new DialogInterface.OnCancelListener() {
-//                    @Override
-//                    public void onCancel(DialogInterface dialog) {
-//                        finish();
-//                    }
-//                })
-//                .dismissListener(new DialogInterface.OnDismissListener() {
-//                    @Override
-//                    public void onDismiss(DialogInterface dialog) {
-//                        finish();
-//                    }
-//                }).show();
-//    }
 
     /**
      * Needed for Google Play In-app Billing. It uses startIntentSenderForResult(). The result is not propagated to

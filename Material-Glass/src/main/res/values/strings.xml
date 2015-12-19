@@ -9,7 +9,7 @@
         \nMade by 1 themer
         \nTweaked for 1 000+ hours
         \nUsed by 50 000+ users
-        \n\nPress the FAB to apply! If it\'s not there, make sure you have a compatible theme chooser.</string>
+        \n\nPress the FAB to apply!</string>
     <!-- Muzei Stuff -->
     <string name="artsource_name">@string/app_name</string>
     <string name="artsource_desc">Beautiful wallpapers for a beautiful theme</string>
@@ -48,9 +48,8 @@
     <string name="donate_home_content">Donations are always appreciated, and help me justify the countless hours I spend on creating this theme, as well as supporting apps I don\'t use.</string>
 
 
-    <string name="app_one_title">@string/donate_home_title</string>
-    <string name="app_one_content">@string/donate_home_content</string>
-    <!--<string name="app_one_package">com.pitchedapps.icons.glass</string>-->
+    <string name="donate_title">@string/donate_home_title</string>
+    <string name="donate_content">@string/donate_home_content</string>
 
     <string name="app_xda_title">@string/xda_title</string>
     <string name="app_xda_content">@string/xda_content</string>

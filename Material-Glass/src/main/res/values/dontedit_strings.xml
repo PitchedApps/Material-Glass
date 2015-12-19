@@ -77,6 +77,7 @@
     <string name="exit">Exit App</string>
 
     <!-- Some texts for Dialogs and Cards -->
+    <string name="understood">Understood</string>
     <string name="close">Close</string>
     <string name="advice">Advice</string>
     <string name="dontshow">Don\'t show again</string>
@@ -98,9 +99,7 @@
     <string name="request_precontent">These apps are not themed. Thanks in advance.\n\n</string>
 
     <!--No Theme Engine Dialog-->
-    <string name="NTED_title"></string>
-    <string name="NTED_message"></string>
-    <string name="NTED_layers"></string>
-    <string name="NTED_cm"></string>
+    <string name="NTED_title">Uh Oh!</string>
+    <string name="NTED_message">It seems like we aren\'t able to find a theme engine on your phone. If you know you have one, please open it and proceed from there. If you don\'t have one, please get a rom that supports either cyanogenmod or layers theming and follow their instructions.</string>
 
 </resources>
