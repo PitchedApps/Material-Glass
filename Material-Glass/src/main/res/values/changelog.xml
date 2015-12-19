@@ -100,10 +100,8 @@
         <item>New: themed TeslaUnread for cm and layers</item>
         <item>Instagram: fixed color for pressed back button on actionbar</item>
         <item>Google: Fixed crash when selecting transport preference</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>App: lots of code cleanup</item>
+        <item>App: added dialog if theme engine is not found</item>
     </string-array>
 	
     <string-array name="v60">

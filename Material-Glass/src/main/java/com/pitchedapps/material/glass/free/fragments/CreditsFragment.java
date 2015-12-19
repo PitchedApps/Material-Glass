@@ -118,21 +118,21 @@ public class CreditsFragment extends Fragment {
             }
         });
 
-        TextView dashauthorweb = (TextView) root.findViewById(R.id.dashauthor_web_button);
-        dashauthorweb.setOnClickListener(new View.OnClickListener() {
+        TextView dashAuthorWeb = (TextView) root.findViewById(R.id.dashauthor_web_button);
+        dashAuthorWeb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent dashauthorweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dashboard_author_link)));
-                startActivity(dashauthorweb);
+                Intent dashAuthorWeb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dashboard_author_link)));
+                startActivity(dashAuthorWeb);
             }
         });
 
-        TextView dashauthorgoogleplus = (TextView) root.findViewById(R.id.dashauthor_gplus_button);
-        dashauthorgoogleplus.setOnClickListener(new View.OnClickListener() {
+        TextView dashAuthorGooglePlus = (TextView) root.findViewById(R.id.dashauthor_gplus_button);
+        dashAuthorGooglePlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent dashauthorgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dashboard_author_gplus)));
-                startActivity(dashauthorgplus);
+                Intent dashAuthorPlus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dashboard_author_gplus)));
+                startActivity(dashAuthorPlus);
             }
         });
 
@@ -140,17 +140,17 @@ public class CreditsFragment extends Fragment {
         web.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent devweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_link)));
-                startActivity(devweb);
+                Intent devWeb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_link)));
+                startActivity(devWeb);
             }
         });
 
-        TextView googleplus = (TextView) root.findViewById(R.id.gplus_button);
-        googleplus.setOnClickListener(new View.OnClickListener() {
+        TextView googlePlus = (TextView) root.findViewById(R.id.gplus_button);
+        googlePlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent devgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_gplus_link)));
-                startActivity(devgplus);
+                Intent devPlus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_gplus_link)));
+                startActivity(devPlus);
             }
         });
 
@@ -158,17 +158,17 @@ public class CreditsFragment extends Fragment {
         ivon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent devweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ivon_play)));
-                startActivity(devweb);
+                Intent devWeb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ivon_play)));
+                startActivity(devWeb);
             }
         });
 
-        TextView ivongoogleplus = (TextView) root.findViewById(R.id.ivon_gplus_button);
-        ivongoogleplus.setOnClickListener(new View.OnClickListener() {
+        TextView ivonGooglePlus = (TextView) root.findViewById(R.id.ivon_gplus_button);
+        ivonGooglePlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent devgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ivon_gplus_link)));
-                startActivity(devgplus);
+                Intent devPlus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ivon_gplus_link)));
+                startActivity(devPlus);
             }
         });
 
