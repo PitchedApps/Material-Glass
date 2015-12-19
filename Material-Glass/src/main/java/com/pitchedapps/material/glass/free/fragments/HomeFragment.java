@@ -1,12 +1,14 @@
 package com.pitchedapps.material.glass.free.fragments;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.util.Log;
@@ -27,7 +29,7 @@ public class HomeFragment extends Fragment {
 
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
 
-    private String PlayStoreDevAccount, PlayStoreListing, AppFourPackage, AppTwoPackage, AppThreePackage;
+    private String PlayStoreDevAccount, PlayStoreListing, AppTboPackage, AppPitchedGlassPackage, AppXdaPackage;
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
@@ -35,9 +37,9 @@ public class HomeFragment extends Fragment {
 
         PlayStoreDevAccount = getResources().getString(R.string.play_store_dev_link);
         PlayStoreListing = getString(R.string.package_name);
-        AppTwoPackage = getResources().getString(R.string.app_two_package);
-        AppThreePackage = getResources().getString(R.string.app_three_package);
-        AppFourPackage = getResources().getString(R.string.app_four_package);
+        AppXdaPackage = getResources().getString(R.string.app_xda_package);
+        AppPitchedGlassPackage = getResources().getString(R.string.app_pitched_glass_package);
+        AppTboPackage = getResources().getString(R.string.app_tbo_package);
 
         ActionBar toolbar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         if (toolbar != null)
@@ -46,19 +48,19 @@ public class HomeFragment extends Fragment {
         ObservableScrollView content = (ObservableScrollView) root.findViewById(R.id.HomeContent);
 
         //Cards
-        CardView cardone = (CardView) root.findViewById(R.id.cardOne);
-        CardView cardthree = (CardView) root.findViewById(R.id.cardThree);
-        CardView cardfour = (CardView) root.findViewById(R.id.cardFour);
+        CardView cardDonate = (CardView) root.findViewById(R.id.cardDonate);
+        CardView cardPitchedGlass = (CardView) root.findViewById(R.id.cardPitchedGlass);
+        CardView cardTbo = (CardView) root.findViewById(R.id.cardTbo);
 
         if (((MainActivity)getActivity()).mIsPremium) {
-            cardone.setVisibility((cardthree.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
+            cardDonate.setVisibility((cardDonate.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
         }
-        if (AppIsInstalled(AppThreePackage)) {
-            cardthree.setVisibility((cardthree.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
+        if (AppIsInstalled(AppPitchedGlassPackage)) {
+            cardPitchedGlass.setVisibility((cardPitchedGlass.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
         }
 
-        if (AppIsInstalled(AppFourPackage)) {
-            cardfour.setVisibility((cardfour.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
+        if (AppIsInstalled(AppTboPackage)) {
+            cardTbo.setVisibility((cardTbo.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE));
         }
 
 
@@ -80,25 +82,25 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        TextView apptwobtn = (TextView) root.findViewById(R.id.apptwo_button);
+        TextView apptwobtn = (TextView) root.findViewById(R.id.appXda_button);
         apptwobtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent apptwo = new Intent(Intent.ACTION_VIEW, Uri.parse(AppTwoPackage));
+                Intent apptwo = new Intent(Intent.ACTION_VIEW, Uri.parse(AppXdaPackage));
                 startActivity(apptwo);
             }
         });
 
-        TextView appthreebtn = (TextView) root.findViewById(R.id.appthree_button);
+        TextView appthreebtn = (TextView) root.findViewById(R.id.appPitched_glass_button);
         appthreebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent appthree = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + AppThreePackage));
+                Intent appthree = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + AppPitchedGlassPackage));
                 startActivity(appthree);
             }
         });
 
-        TextView appfourbtn = (TextView) root.findViewById(R.id.appfour_button);
+        TextView appfourbtn = (TextView) root.findViewById(R.id.appTbo_button);
         appfourbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,7 +109,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        TextView appfourbtnxda = (TextView) root.findViewById(R.id.appfour_button_xda);
+        TextView appfourbtnxda = (TextView) root.findViewById(R.id.appTbo_button_xda);
         appfourbtnxda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -116,7 +118,7 @@ public class HomeFragment extends Fragment {
             }
         });
 		
-		TextView appplusbtn = (TextView) root.findViewById(R.id.appplus_button);
+		TextView appplusbtn = (TextView) root.findViewById(R.id.appPlus_button);
         appplusbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -133,8 +135,6 @@ public class HomeFragment extends Fragment {
                 startActivity(rate);
             }
         });
-
-//        boolean themeengine = false;
 
         FloatingActionButton fabApply = (FloatingActionButton) root.findViewById(R.id.apply_home);
         Intent cm = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
@@ -215,7 +215,30 @@ public class HomeFragment extends Fragment {
                 }
             });
         } else {
-            fabApply.setVisibility(View.GONE);
+            fabApply.setImageResource(R.drawable.ic_rro);
+            Log.d("MGlass", "No theme engine found");
+//            fabApply.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    AlertDialog noThemeEngine = new AlertDialog.Builder(getActivity())
+//                            .create();
+//                    noThemeEngine.setCancelable(false);
+//                    noThemeEngine.setTitle(R.string.NTED_title);
+//                    noThemeEngine.setMessage(getActivity().getString(R.string.NTED_message));
+////                    noThemeEngine.setButton(getActivity().getString(R.string.close), new DialogInterface.OnClickListener() {
+////
+////                        public void onClick(DialogInterface dialog, int which) {
+////                            dialog.dismiss();
+////                        }
+////                    });
+//                    noThemeEngine.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+//                        public void onClick(DialogInterface dialog, int id) {
+//                            dialog.cancel();
+//                        }
+//                    });
+//                    noThemeEngine.show();
+//                }
+//            });
         }
         return root;
     }

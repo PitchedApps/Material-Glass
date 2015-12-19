@@ -96,4 +96,11 @@
     <string name="request_advice">If you do not select any app for the icon request, it will be automatically generated with all your apps.</string>
     <!-- Content in Request mails before the unthemed apps info -->
     <string name="request_precontent">These apps are not themed. Thanks in advance.\n\n</string>
+
+    <!--No Theme Engine Dialog-->
+    <string name="NTED_title"></string>
+    <string name="NTED_message"></string>
+    <string name="NTED_layers"></string>
+    <string name="NTED_cm"></string>
+
 </resources>

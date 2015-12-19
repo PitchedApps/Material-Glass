@@ -79,8 +79,7 @@ public class MainActivity extends AppCompatActivity {
     private String thaCredits;
     private String thaInfo;
     private int currentItem = -1;
-    private boolean firstrun, enable_features; //TODO show changelog on firstrun
-    private Preferences mPrefs;
+//    private Preferences mPrefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         // Load apps ahead of time
         mRequestManager.loadAppsIfEmptyAsync();
 
-        mPrefs = new Preferences(MainActivity.this);
+//        mPrefs = new Preferences(MainActivity.this);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -161,9 +160,6 @@ public class MainActivity extends AppCompatActivity {
                 .withSelectionListEnabled(false)
                 .withSelectionListEnabledForSingleProfile(false)
                 .build();
-
-        enable_features = mPrefs.isFeaturesEnabled();
-        firstrun = mPrefs.isFirstRun();
 
         result = new DrawerBuilder()
                 .withActivity(this)
@@ -410,11 +406,6 @@ public class MainActivity extends AppCompatActivity {
                 .negativeText(R.string.ratebtn)
                 .neutralText(R.string.donate)
                 .callback(new MaterialDialog.ButtonCallback() {
-                    @Override
-                    public void onPositive(MaterialDialog dialog) {
-                        mPrefs.setNotFirstrun();
-                    }
-
                     @Override
                     public void onNegative(MaterialDialog dialog) {
                         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + getString(R.string.package_name)));

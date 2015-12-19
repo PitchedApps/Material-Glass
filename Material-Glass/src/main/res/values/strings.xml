@@ -52,21 +52,21 @@
     <string name="app_one_content">@string/donate_home_content</string>
     <!--<string name="app_one_package">com.pitchedapps.icons.glass</string>-->
 
-    <string name="app_two_title">@string/xda_title</string>
-    <string name="app_two_content">@string/xda_content</string>
-    <string name="app_two_package">@string/xda_link</string>
+    <string name="app_xda_title">@string/xda_title</string>
+    <string name="app_xda_content">@string/xda_content</string>
+    <string name="app_xda_package">@string/xda_link</string>
 	
 	<string name="app_plus_title">Pitched Apps Beta Community</string>
     <string name="app_plus_content">Join the beta community to receive test builds before public releases and to stay up to date!</string>
     <string name="app_plus_link">https://plus.google.com/u/0/communities/101836645831612238387</string>
 
-    <string name="app_three_title">@string/pitched_glass_title</string>
-    <string name="app_three_content">@string/pitched_glass_content</string>
-    <string name="app_three_package">com.pitchedapps.icons.glass</string>
+    <string name="app_pitched_glass_title">@string/pitched_glass_title</string>
+    <string name="app_pitched_glass_content">@string/pitched_glass_content</string>
+    <string name="app_pitched_glass_package">com.pitchedapps.icons.glass</string>
 
-    <string name="app_four_title">Team Black Out</string>
-    <string name="app_four_content">Want more dark and clear apps? Check out Team Black Out\'s updater! It contains apps that are otherwise unthemeable by the theme chooser itself. (Please note that for apps themed by Material Glass, you must keep the stock app to maintain compatibility)</string>
-    <string name="app_four_package">com.blackout.paidupdater</string>
+    <string name="app_tbo_title">Team Black Out</string>
+    <string name="app_tbo_content">Want more dark and clear apps? Check out Team Black Out\'s updater! It contains apps that are otherwise unthemeable by the theme chooser itself. (Please note that for apps themed by Material Glass, you must keep the stock app to maintain compatibility)</string>
+    <string name="app_tbo_package">com.blackout.paidupdater</string>
     <string name="tbo_link">https://androidfilehost.com/?fid=24052804347832819</string>
     <string name="tbo_xda">http://forum.xda-developers.com/showthread.php?t=2283828</string>
 
