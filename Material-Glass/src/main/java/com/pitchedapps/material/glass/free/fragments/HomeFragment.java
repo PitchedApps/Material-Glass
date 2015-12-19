@@ -136,18 +136,20 @@ public class HomeFragment extends Fragment {
 
 //        boolean themeengine = false;
 
-        FloatingActionButton fabcm = (FloatingActionButton) root.findViewById(R.id.apply_cm);
-        Intent intentcm = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
-        if (intentcm != null) {
-//            themeengine = true;
+        FloatingActionButton fabApply = (FloatingActionButton) root.findViewById(R.id.apply_home);
+        Intent cm = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+        Intent cyngn = getActivity().getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
+        Intent rro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
+        fabApply.setVisibility(View.VISIBLE);
+        fabApply.setColorNormal(getResources().getColor(R.color.fab_unpressed));
+        fabApply.setColorPressed(getResources().getColor(R.color.fab_pressed));
+        fabApply.setColorRipple(getResources().getColor(R.color.semitransparent_white));
+        fabApply.show(true);
+        fabApply.attachToScrollView(content);
+        if (cm != null) {
+            fabApply.setImageResource(R.drawable.ic_cm);
             Log.d("MGlass", "org.cyanogenmod.theme.chooser is installed");
-            fabcm.setVisibility(View.VISIBLE);
-            fabcm.setColorNormal(getResources().getColor(R.color.fab_unpressed));
-            fabcm.setColorPressed(getResources().getColor(R.color.fab_pressed));
-            fabcm.setColorRipple(getResources().getColor(R.color.semitransparent_white));
-            fabcm.show(true);
-            fabcm.attachToScrollView(content);
-            fabcm.setOnClickListener(new View.OnClickListener() {
+            fabApply.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intentcm = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
@@ -176,58 +178,15 @@ public class HomeFragment extends Fragment {
                                 e.printStackTrace();
                             }
                         }
-
                     }
                 }
 
 
             });
-        } else {
-            Log.d("MGlass", "org.cyanogenmod.theme.chooser is not installed");
-            fabcm.setVisibility(View.GONE);
-        }
-
-        FloatingActionButton fabrro = (FloatingActionButton) root.findViewById(R.id.apply_rro);
-        Intent intentrro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
-        if (intentrro != null) {
-//            themeengine = true;
-            Log.d("MGlass", "com.lovejoy777.rroandlayersmanager is installed");
-            fabrro.setVisibility(View.VISIBLE);
-            fabrro.setColorNormal(getResources().getColor(R.color.fab_unpressed));
-            fabrro.setColorPressed(getResources().getColor(R.color.fab_pressed));
-            fabrro.setColorRipple(getResources().getColor(R.color.semitransparent_white));
-            fabrro.show(true);
-            fabrro.attachToScrollView(content);
-            fabrro.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intentrro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
-                    if (intentrro == null) {
-                        Toast.makeText(getActivity(), getString(R.string.rro_not_installed), Toast.LENGTH_SHORT).show();
-                    } else {
-                        getActivity().startActivity(intentrro);
-                    }
-                }
-
-
-            });
-        } else {
-            Log.d("MGlass", "com.lovejoy777.rroandlayersmanager is not installed");
-            fabrro.setVisibility(View.GONE);
-        }
-
-        FloatingActionButton cyngn = (FloatingActionButton) root.findViewById(R.id.apply_cyngn);
-        Intent intentcyngn = getActivity().getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
-        if (intentcyngn != null) {
-//            themeengine = true;
+        } else if (cyngn != null) {
+            fabApply.setImageResource(R.drawable.ic_cyngn);
             Log.d("MGlass", "com.cyngn.theme.chooser is installed");
-            cyngn.setVisibility(View.VISIBLE);
-            cyngn.setColorNormal(getResources().getColor(R.color.fab_unpressed));
-            cyngn.setColorPressed(getResources().getColor(R.color.fab_pressed));
-            cyngn.setColorRipple(getResources().getColor(R.color.semitransparent_white));
-            cyngn.show(true);
-            cyngn.attachToScrollView(content);
-            cyngn.setOnClickListener(new View.OnClickListener() {
+            fabApply.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intentcyngn = getActivity().getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
@@ -241,30 +200,23 @@ public class HomeFragment extends Fragment {
 
 
             });
-        } else {
-            Log.d("MGlass", "com.cyngn.theme.chooser is not installed");
-            cyngn.setVisibility(View.GONE);
-        }
-/*
-        FloatingActionButton noThemeEngine = (FloatingActionButton) root.findViewById(R.id.apply_cyngn);
-        if (themeengine == false) {
-            Log.d("MGlass", "No theme engine installed");
-            noThemeEngine.setVisibility(View.VISIBLE);
-            noThemeEngine.setColorNormal(getResources().getColor(R.color.fab_unpressed));
-            noThemeEngine.setColorPressed(getResources().getColor(R.color.fab_pressed));
-            noThemeEngine.setColorRipple(getResources().getColor(R.color.semitransparent_white));
-            noThemeEngine.show(true);
-            noThemeEngine.attachToScrollView(content);
-            noThemeEngine.setOnClickListener(new View.OnClickListener() {
+        } else if (rro != null) {
+            fabApply.setImageResource(R.drawable.ic_rro);
+            Log.d("MGlass", "com.lovejoy777.rroandlayersmanager is installed");
+            fabApply.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //TODO add material dialog with text & 3 buttons to press (2 leading to links, 1 that closes the dialog)
+                    Intent intentrro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
+                    if (intentrro == null) {
+                        Toast.makeText(getActivity(), getString(R.string.rro_not_installed), Toast.LENGTH_SHORT).show();
+                    } else {
+                        getActivity().startActivity(intentrro);
+                    }
                 }
             });
         } else {
-            noThemeEngine.setVisibility(View.GONE);
-        }*/
-
+            fabApply.setVisibility(View.GONE);
+        }
         return root;
     }
 
