@@ -174,7 +174,7 @@
     <color name="main_background">@color/background</color>
     <color name="main_overlay">#d0000000</color>
     <!--account switcher has hardcoded white background-->
-    <color name="manage_accounts_text_color">#ff000000</color>
+    <color name="manage_accounts_text_color">#fff</color>
 
     <color name="menu_item_default">@color/textt</color>
     <color name="menu_item_pressed">#22ffffff</color>

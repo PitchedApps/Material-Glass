@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="FileManager.Theme.Material.Light" parent="@android:style/Theme.Material.Wallpaper">
+    <style name="FileManager.Theme.Material.Light.NoActionBar" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/default_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">false</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="FileManager.Theme.Material.Light" parent="@android:style/Theme.Material">
         <item name="android:windowBackground">@color/default_background</item>
         <item name="android:actionBarStyle">@style/FileManager.Widget.ActionBar.White</item>
         <item name="android:homeAsUpIndicator">@drawable/material_ripple_up_arrow</item>
         <item name="android:actionMenuTextColor">@android:color/white</item>
-        <item name="android:colorControlNormal">@android:color/white</item>
-        <item name="android:colorControlHighlight">@color/material_palette_blue_accent_dark</item>
-        <item name="android:colorPrimary">@color/material_palette_blue_primary</item>
-        <item name="android:colorPrimaryDark">@color/material_palette_blue_primary_dark</item>
-        <item name="android:colorAccent">@color/material_palette_blue_primary</item>
+
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:backgroundTint">@color/default_background</item>
     </style>
@@ -69,4 +76,13 @@
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:homeAsUpIndicator">@drawable/material_ripple_up_arrow</item>
     </style>
+
+    <!--12/19/2015-->
+
+    <style name="dialog_title_text_appearance">
+        <item name="android:textSize">@dimen/dialog_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
 </resources>

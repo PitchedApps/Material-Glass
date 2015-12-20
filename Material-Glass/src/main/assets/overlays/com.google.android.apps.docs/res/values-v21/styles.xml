@@ -113,4 +113,12 @@
         <item name="background">@color/action_bar_overlay</item>
     </style>
     <style name="OverlayActionBarStyleLight" parent="@style/OverlayActionBarStyle" />
+
+    <!--12/29/2015-->
+    <style name="PageIndicatorStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:gravity">center</item>
+    </style>
 </resources>
