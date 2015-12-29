@@ -366,24 +366,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showChangelog() {
-        new MaterialDialog.Builder(this)
-                .title(R.string.changelog_dialog_title)
-                .adapter(new ChangelogAdapter(this, R.array.fullchangelog), null)
-                .positiveText(R.string.nice)
-                .negativeText(R.string.ratebtn)
-                .neutralText(R.string.donate)
-                .callback(new MaterialDialog.ButtonCallback() {
-                    @Override
-                    public void onNegative(MaterialDialog dialog) {
-                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + getString(R.string.package_name)));
-                        startActivity(browserIntent);
-                    }
+//        if (getSharedPreferences("PrefsFile", MODE_PRIVATE).getString("version", "0").equals("0")) {
+//            new MaterialDialog.Builder(this)
+//                    .title(R.string.changelog_dialog_title)
+//                    .adapter(new ChangelogAdapter(this, R.array.fullchangelog), null)
+//                    .positiveText(R.string.nice)
+//                    .show();
+//        } else {
+            new MaterialDialog.Builder(this)
+                    .title(R.string.changelog_dialog_title)
+                    .adapter(new ChangelogAdapter(this, R.array.fullchangelog), null)
+                    .positiveText(R.string.nice)
+                    .negativeText(R.string.ratebtn)
+                    .neutralText(R.string.donate)
 
-                    @Override
-                    public void onNeutral(MaterialDialog dialog) {
-                        switchFragment(5, thaDonate, "Donate");
-                    }
-                }).show();
+                    .callback(new MaterialDialog.ButtonCallback() {
+                        @Override
+                        public void onNegative(MaterialDialog dialog) {
+                            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + getString(R.string.package_name)));
+                            startActivity(browserIntent);
+                        }
+
+                        @Override
+                        public void onNeutral(MaterialDialog dialog) {
+                            switchFragment(5, thaDonate, "Donate");
+                        }
+                    }).show();
+//        }
     }
 
     private void showChangelogDialog() {

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,Calculator,DocumentsUI,AOSPKeyboard,NavBar,Launcher3,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,PackageInstaller,PureNexusSettings,Google,GoogleDeskClock,GoogleDrive,GooglePlay,Gmail,GooglePackageInstaller,GooglePlus,GoogleKeyboard,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,FreeOTP,HellsCoreUpdater,Instagram,KernelAdiutor,MatLog,NovaLauncher,NovaUnread,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,UEMiniBoom,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,Calculator,DocumentsUI,AOSPKeyboard,NavBar,Launcher3,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,PackageInstaller,PureNexusSettings,Gmail,Google,GoogleDeskClock,GoogleDrive,GoogleKeyboard,GooglePlay,GooglePackageInstaller,GooglePlus,GoogleTranslate,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,FreeOTP,HellsCoreUpdater,Instagram,KernelAdiutor,MatLog,NovaLauncher,NovaUnread,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,UEMiniBoom,WeatherBug, "</string>
 
 	<!--WIP
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
     <string-array name="fullchangelog">
+        <item>@array/v63</item>
         <item>@array/v62</item>
         <item>@array/v61</item>
         <item>@array/v60</item>
@@ -90,6 +91,15 @@
         <item></item>
         <item></item>
         <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
+    <string-array name="v63">
+        <item>v2.7.2</item>
+        <item>App: changed \"Great\" to \"Close\", because apparently some people do not know how to close a dialog.</item>
+        <item>App: hid donate and rate buttons on first run</item>
+        <item>New: themed google translate (has voice input bug)</item>
         <item></item>
         <item></item>
     </string-array>

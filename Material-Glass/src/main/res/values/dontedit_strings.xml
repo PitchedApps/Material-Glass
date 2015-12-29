@@ -48,7 +48,7 @@
 
     <!-- Changelog Dialog Content -->
     <string name="changelog_dialog_title">Changelog</string>
-    <string name="nice">Great</string>
+    <string name="nice">Close</string>
 
     <!-- Wallpapers Stuff -->
     <string name="no_conn_title">No Connection Found</string>
