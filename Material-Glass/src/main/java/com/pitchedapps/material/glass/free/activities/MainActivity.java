@@ -33,7 +33,6 @@ import com.pitchedapps.material.glass.free.BuildConfig;
 import com.pitchedapps.material.glass.free.R;
 import com.pitchedapps.material.glass.free.adapters.ChangelogAdapter;
 import com.pitchedapps.material.glass.free.fragments.DonationsFragment;
-import com.pitchedapps.material.glass.free.utilities.Preferences;
 import com.pitchedapps.material.glass.free.utilities.Util;
 import com.pkmmte.requestmanager.PkRequestManager;
 import com.pkmmte.requestmanager.RequestSettings;
@@ -45,7 +44,6 @@ import org.sufficientlysecure.donations.google.util.Inventory;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final boolean WITH_LICENSE_CHECKER = false;
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
     public boolean mIsPremium = false;
     private static final String TAG = "M_Glass: ";
@@ -117,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
         thaInfo = getResources().getString(R.string.section_eight);
 
         //Setup donations
-
         final IabHelper.QueryInventoryFinishedListener mGotInventoryListener = new IabHelper.QueryInventoryFinishedListener() {
             public void onQueryInventoryFinished(IabResult result, Inventory inventory) {
 
@@ -230,24 +227,27 @@ public class MainActivity extends AppCompatActivity {
             result.setSelection(1);
         }
 
-        mHelper = new IabHelper(MainActivity.this, GOOGLE_PUBKEY);
-        mHelper.startSetup(new IabHelper.OnIabSetupFinishedListener() {
-            public void onIabSetupFinished(IabResult result)
-            {
-                if (!result.isSuccess()) {
-                    Log.d(TAG, "In-app Billing setup failed: " + result);
-                    new MaterialDialog.Builder(MainActivity.this)
-                            .title("Donations unavailable.")
-                            .content("Your device doesn't support In App Billing.  This could be because you need to update your Google Play Store application, or because you live in a country where In App Billing is disabled.")
-                            .positiveText(android.R.string.ok)
-                            .show();
+        if (BuildConfig.DONATIONS_GOOGLE) {
+            mHelper = new IabHelper(MainActivity.this, GOOGLE_PUBKEY);
+            mHelper.startSetup(new IabHelper.OnIabSetupFinishedListener() {
+                public void onIabSetupFinished(IabResult result)
+                {
+                    if (!result.isSuccess()) {
+                        Log.d(TAG, "In-app Billing setup failed: " + result);
+                        new MaterialDialog.Builder(MainActivity.this)
+                                .title("Donations unavailable.")
+                                .content("Your device doesn't support In App Billing.  This could be because you need to update your Google Play Store application, or because you live in a country where In App Billing is disabled.")
+                                .positiveText(android.R.string.ok)
+                                .show();
 
-                } else {
-                    mHelper.queryInventoryAsync(false, mGotInventoryListener);
+                    } else {
+                        mHelper.queryInventoryAsync(false, mGotInventoryListener);
+                    }
+
                 }
+            }) ;
+        }
 
-            }
-        });
     }
 
     public void switchFragment(int itemId, String title, String fragment) {
@@ -366,13 +366,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showChangelog() {
-//        if (getSharedPreferences("PrefsFile", MODE_PRIVATE).getString("version", "0").equals("0")) {
-//            new MaterialDialog.Builder(this)
-//                    .title(R.string.changelog_dialog_title)
-//                    .adapter(new ChangelogAdapter(this, R.array.fullchangelog), null)
-//                    .positiveText(R.string.nice)
-//                    .show();
-//        } else {
+        if (getSharedPreferences("PrefsFile", MODE_PRIVATE).getString("version", "0").equals("0")) {
+            new MaterialDialog.Builder(this)
+                    .title(R.string.changelog_dialog_title)
+                    .adapter(new ChangelogAdapter(this, R.array.fullchangelog), null)
+                    .positiveText(R.string.nice)
+                    .show();
+        } else {
             new MaterialDialog.Builder(this)
                     .title(R.string.changelog_dialog_title)
                     .adapter(new ChangelogAdapter(this, R.array.fullchangelog), null)
@@ -392,7 +392,7 @@ public class MainActivity extends AppCompatActivity {
                             switchFragment(5, thaDonate, "Donate");
                         }
                     }).show();
-//        }
+        }
     }
 
     private void showChangelogDialog() {
