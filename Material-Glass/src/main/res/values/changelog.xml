@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,Calculator,DocumentsUI,AOSPKeyboard,NavBar,Launcher3,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,PackageInstaller,PureNexusSettings,Gmail,Google,GoogleDeskClock,GoogleDrive,GoogleKeyboard,GoogleMessenger,GooglePlay,GooglePackageInstaller,GooglePlus,GoogleTranslate,Youtube,Apex,Appmonger,AutoHideSoftKey,EvolveSMS,FreeOTP,HellsCoreUpdater,Instagram,KernelAdiutor,MatLog,NovaLauncher,NovaUnread,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,UEMiniBoom,WeatherBug, "</string>
+    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,Calculator,DocumentsUI,AOSPKeyboard,NavBar,Launcher3,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,PackageInstaller,PureNexusSettings,Gmail,Google,GoogleDeskClock,GoogleDrive,GoogleKeyboard,GoogleMessenger,GooglePlay,GooglePackageInstaller,GooglePlus,GoogleTranslate,Youtube,Apex,Appmonger,AutoHideSoftKey,Dropbox,EvolveSMS,FreeOTP,HellsCoreUpdater,Instagram,KernelAdiutor,MatLog,NovaLauncher,NovaUnread,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,UEMiniBoom,WeatherBug, "</string>
 
 	<!--WIP
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
@@ -93,6 +93,13 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+	
+    <string-array name="v64">
+        <item>v2.7.3</item>
+        <item>GoogleMessenger: made outgoing messages black and added transparencies to text bubbles</item>
+        <item>Gmail: small tweaks here and there (if you see anything that is magenta coloured, let me know!)</item>
+        <item>Dropbox: redid theme for cm and added port to layers (if you see magenta let me know as well)</item>
     </string-array>
 	
     <string-array name="v63">
