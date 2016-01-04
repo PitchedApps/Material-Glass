@@ -100,7 +100,7 @@
         <item>v2.7.4</item>
         <item>Google Drive: updated a lot of things and fixed black text on share view</item>
         <item>Relay: further lightened the main window background</item>
-        <item>Settings: added option for two columns</item>
+        <item>New: themed Material Terminal for cm and layers</item>
         <item>Contacts and Dialer: merged two layers as a style option</item>
         <item>Updated layers in general to the new format (thanks to CrystalTronik as a template)</item>
     </string-array>
