@@ -29,7 +29,7 @@ public class CreditsFragment extends Fragment {
         authordesc.setText(Html.fromHtml(getString(R.string.dashboard_author_desc)));
 
         TextView designerdesc = (TextView) root.findViewById(R.id.dev_card_content);
-        designerdesc.setText(Html.fromHtml(getString(R.string.iconpack_designer_desc)));
+        designerdesc.setText(Html.fromHtml(getString(R.string.theme_dev_desc)));
 
         TextView ivondesc = (TextView) root.findViewById(R.id.ivon_card_content);
         ivondesc.setText(Html.fromHtml(getString(R.string.ivon_desc)));

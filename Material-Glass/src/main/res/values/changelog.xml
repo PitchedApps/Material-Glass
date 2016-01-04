@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layers_apps">"FrameworkRes,SystemUI,StatusBar,Settings,Calculator,DocumentsUI,AOSPKeyboard,NavBar,Launcher3,Layers,LayersShowcase,CellBroadcastReceiver,Contacts,ContactsPitchBlack,Dialer,DialerPitchBlack,FaceUnlock,MMS,Telecom,PackageInstaller,PureNexusSettings,Gmail,Google,GoogleDeskClock,GoogleDrive,GoogleKeyboard,GoogleMessenger,GooglePlay,GooglePackageInstaller,GooglePlus,GoogleTranslate,Youtube,Apex,Appmonger,AutoHideSoftKey,Dropbox,EvolveSMS,FreeOTP,HellsCoreUpdater,Instagram,KernelAdiutor,MatLog,NovaLauncher,NovaUnread,Pandora,Pedometer,PushBullet,Relay,RelayPro,SimpleReboot,Snapchat,Spotify,Swiftkey,SoftReboot,Tapatalk,UEMiniBoom,WeatherBug, "</string>
 
 	<!--WIP
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
     <string-array name="fullchangelog">
+        <item>@array/v65</item>
+        <item>@array/v64</item>
         <item>@array/v63</item>
         <item>@array/v62</item>
         <item>@array/v61</item>
@@ -93,6 +94,15 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+	
+    <string-array name="v65">
+        <item>v2.7.4</item>
+        <item>Google Drive: updated a lot of things and fixed black text on share view</item>
+        <item>Relay: further lightened the main window background</item>
+        <item>Settings: added option for two columns</item>
+        <item>Contacts and Dialer: merged two layers as a style option</item>
+        <item>Updated layers in general to the new format (thanks to CrystalTronik as a template)</item>
     </string-array>
 	
     <string-array name="v64">

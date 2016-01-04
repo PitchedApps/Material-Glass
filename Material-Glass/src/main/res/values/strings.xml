@@ -3,6 +3,7 @@
 
     <!-- MainActivity Strings -->
     <string name="app_name">Material Glass</string>
+    <string name="layers_name">Material Glass</string><!--needs to remain consistent even for different flavours-->
     <string name="app_long_name">Material Glass by Pitched Apps</string>
     <string name="package_name">com.pitchedapps.material.glass.free</string>
     <string name="theme_description">Pitched Apps is proud to present Material Glass, cm12\'s first and longest lasting theme! Running since Lollipop, and still going with Marshmallow.
@@ -70,8 +71,8 @@
     <string name="tbo_xda">http://forum.xda-developers.com/showthread.php?t=2283828</string>
 
     <!-- Your card in About The App section (In desc you can use html markup)-->
-    <string name="iconpack_designer">Pitched Apps</string>
-    <string name="iconpack_designer_desc">
+    <string name="theme_dev">Pitched Apps</string>
+    <string name="theme_dev_desc">
          <![CDATA[
         <b>Allan W</b> or asdfasdfvful on xda, is an avid themer who has spent countless hours in hopes of creating the best cm theme ever.
         ]]>
@@ -140,7 +141,7 @@
     <!-- These things are needed for some launchers (Feel free to edit, though is not needed) -->
     <string name="theme_title">@string/app_name</string>
     <string name="theme_name">@string/theme_title</string>
-    <string name="developer_name">@string/iconpack_designer</string>
+    <string name="developer_name">@string/theme_dev</string>
     <string name="developerName">@string/developer_name</string>
     <string name="theme_author">@string/developer_name</string>
     <string name="authorName">@string/developer_name</string>

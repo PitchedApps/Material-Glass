@@ -321,7 +321,7 @@ public class MainActivity extends AppCompatActivity {
                 sharingIntent.setType("text/plain");
                 String shareBody =
                         getResources().getString(R.string.share_one) +
-                                getResources().getString(R.string.iconpack_designer) +
+                                getResources().getString(R.string.theme_dev) +
                                 getResources().getString(R.string.share_two) +
                                 MARKET_URL + getString(R.string.package_name);
                 sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);

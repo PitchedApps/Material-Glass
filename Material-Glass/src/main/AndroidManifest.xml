@@ -241,11 +241,9 @@
 
         </service>
 
-        <meta-data android:name="Layers_Name" android:value="Material Glass"/>
-        <meta-data android:name="Layers_Developer" android:value="Pitched Apps"/>
-        <meta-data android:name="Layers_Colors" android:value=""/>
+        <meta-data android:name="Layers_Name" android:value="@string/layers_name"/>
+        <meta-data android:name="Layers_Developer" android:value="@string/theme_dev"/>
         <meta-data android:name="Layers_Description" android:value="@string/welcome_title"/>
-        <meta-data android:name="Layers_OverlayNames" android:value="@string/layers_apps"/>
         <meta-data android:name="Layers_WhatsNew" android:value="@string/layers_new"/>
     </application>
 

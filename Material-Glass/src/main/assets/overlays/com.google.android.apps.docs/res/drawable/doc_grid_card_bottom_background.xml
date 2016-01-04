@@ -4,13 +4,13 @@
     <item>
         <shape android:dither="false" android:shape="rectangle">
             <corners android:bottomLeftRadius="2.0dip" android:bottomRightRadius="2.0dip" />
-            <solid android:color="@color/doc_grid_entry_shadow" />
+            <solid android:color="#10000000" />
         </shape>
     </item>
     <item android:bottom="2.0dip">
         <shape android:dither="false" android:shape="rectangle">
             <corners android:bottomLeftRadius="2.0dip" android:bottomRightRadius="2.0dip" />
-            <solid android:color="@color/background" />
+            <solid android:color="#80000000" />
         </shape>
     </item>
 </layer-list>
