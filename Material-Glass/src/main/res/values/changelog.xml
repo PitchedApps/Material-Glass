@@ -104,10 +104,8 @@
         <item>SystemUI: added new custom colors for cm13</item>
         <item>Contacts: added new custom colors for cm13</item>
         <item>FrameworkRes: added new custom colors for cm13</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Settings: added new custom colors for cm13</item>
+        <item>CellBroadcastReceiver: added new custom colors for cm13</item>
     </string-array>
 	
     <string-array name="v65">
