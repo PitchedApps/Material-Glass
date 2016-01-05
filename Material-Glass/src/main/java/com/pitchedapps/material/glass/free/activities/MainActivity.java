@@ -204,13 +204,12 @@ public class MainActivity extends AppCompatActivity {
                 .withOnDrawerItemLongClickListener(new Drawer.OnDrawerItemLongClickListener() {
                     @Override
                     public boolean onItemLongClick(View view, int position, IDrawerItem iDrawerItem) {
-                        if (iDrawerItem instanceof Nameable) {
-                            if (((Nameable) iDrawerItem).getName().equals(thaPreviews)) {
-                                if (mIsPremium || !BuildConfig.DONATIONS_GOOGLE) {
-                                    switchFragment(-1, thaRequest, "Request");
-                                    result.closeDrawer();
-                                    return true;
-                                }
+                        if (iDrawerItem.getIdentifier() == 2) {
+                            if (mIsPremium || !BuildConfig.DONATIONS_GOOGLE) {
+                                Log.d(TAG, "Request tool enabled!");
+                                switchFragment(-1, thaRequest, "Request");
+                                result.closeDrawer();
+                                return true;
                             }
                         }
                         return false;

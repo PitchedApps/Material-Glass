@@ -401,7 +401,7 @@
     <item component="ComponentInfo{com.saibotd.bitbeaker/com.saibotd.bitbeaker.activities.LoginActivity}" drawable="bitbeaker"/>
     <item component="ComponentInfo{com.google.android.apps.blogger/com.google.android.apps.blogger.SignInActivity}" drawable="blogger"/>
     <item component="ComponentInfo{com.box.android/com.box.android.activities.login.SplashScreenActivity}" drawable="box"/>
-    <item component="ComponentInfo{stericson.busybox/stericson.busybox.Activity.MainActivity}" drawable="busybox_free"/>
+    <item component="ComponentInfo{stericson.busybox/stericson.busybox.Activity.MainActivity}" drawable="busybox"/>
     <item component="ComponentInfo{com.google.samples.apps.cardboarddemo/com.google.vr.cardboard.paperscope.carton.Home2D}" drawable="cardboard"/>
     <item component="ComponentInfo{com.chrome.beta/com.google.android.apps.chrome.Main}" drawable="chrome_beta"/>
     <item component="ComponentInfo{com.google.android.deskclock/com.android.deskclock.DeskClock}" drawable="clock"/>
@@ -469,5 +469,21 @@
     <item component="ComponentInfo{com.yahoo.mobile.client.android.mail/com.yahoo.mobile.client.android.mail.activity.MainActivity}" drawable="yahoo_mail"/>
 <!--10/02/2015-->
     <item component="ComponentInfo{com.cyngn.theme.chooser/com.cyngn.theme.chooser.ChooserLauncher}" drawable="theme_chooser_c_os"/>
+
+    <!--01/04/2016-->
+    <item component="ComponentInfo{com.kodarkooperativet.blackplayerfree/com.kodarkooperativet.blackplayerfree.activities.ViewPagerActivity}" drawable="blackplayer"/>
+    <item component="ComponentInfo{stericson.busybox.donate/stericson.busybox.donate.activities.MainActivity}" drawable="busybox"/>
+    <item component="ComponentInfo{cgeo.geocaching/cgeo.geocaching.MainActivity}" drawable="cgeo"/>
+    <item component="ComponentInfo{org.fastergps/org.fastergps.ui.BaseActivity}" drawable="fastergps"/>
+    <item component="ComponentInfo{com.lovejoy777.rroandlayersmanager/com.lovejoy777.rroandlayersmanager.MainActivity}" drawable="layers"/>
+    <item component="ComponentInfo{com.instagram.layout/com.instagram.layout.LayoutActivity}" drawable="layout"/>
+    <item component="ComponentInfo{com.linkbubble.playstore/com.linkbubble.ui.EntryActivity}" drawable="link_bubble"/>
+    <item component="ComponentInfo{com.pitchedapps.material.glass.free/com.pitchedapps.material.glass.free.HomeActivity}" drawable="material_glass"/>
+    <item component="ComponentInfo{com.pitchedapps.material.glass.xda/com.pitchedapps.material.glass.free.HomeActivity}" drawable="material_glass_xda"/>
+    <item component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.IntroActivity}" drawable="paypal"/>
+    <item component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}" drawable="photos"/>
+    <item component="ComponentInfo{com.pitchedapps.icons.glass/com.pitchedapps.icons.HomeActivity}" drawable="pitched_glass"/>
+    <item component="ComponentInfo{com.yik.yak/com.yik.yak.ui.activity.SplashActivity}" drawable="yik_yak"/>
+
 
 </resources>
