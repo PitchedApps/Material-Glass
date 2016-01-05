@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--01/04/2016-->
+    <color name="toggle_slider_text_color">#fff</color>
+    <color name="no_recent_apps_text_color">#fff</color>
+    <color name="no_notifications_text_color">#ffffff</color>
+    <color name="keyguard_overflow_number_text_color">#fff</color>
+    <color name="keyguard_carrier_text_color">#ffffff</color>
+    <color name="screen_pinning_description_text_color">@android:color/white</color>
+    <color name="screen_pinning_cancel_button_text_color">@android:color/white</color>
+    <color name="recents_empty_message_text_color">#ffffffff</color>
+    <color name="task_view_header_text_color">#ffffffff</color>
+    <color name="recents_search_bar_label_text_color">#99ffffff</color>
+    <color name="recents_empty_background_color">#80000000</color>
+    <color name="qs_tile_edit_header_instruction_text_color">@android:color/white</color>
+    <color name="mland_scorefield_text_color">#ddffffff</color>
+    <color name="keyguard_indication_text_color">#ffffff</color>
+    <color name="speedbump_line_divider">#22ffffff</color>
+    <color name="quick_settings_panel_background">#dd000000</color>
+    <color name="lockscreen_message_text_color">#bbffffff</color>
+    <!--<color name="lockscreen_middle_button_tint_color">#666666</color>-->
+    <color name="play_button_image_tint_color">#fff</color>
+    <color name="play_button_text_color">#fff</color>
+    <color name="zen_ic_close_tint_color">@android:color/white</color>
+    <color name="header_debug_info_text_color">#ccffffff</color>
+
+    <color name="qs_tile_reset_to_default_text_color">@android:color/white</color>
+    <color name="qs_title_text_color">#fff</color>
+    <color name="qs_edit_header_instruction_text_color">@android:color/white</color>
+    <color name="qs_row_text_color">@android:color/white</color>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CellBroadcastListActivityTheme" parent="@android:style/Theme.Material" />
+
+    <style name="CellBroadcastAlertDialog" parent="@android:style/Theme.Material.Dialog" />
+</resources>

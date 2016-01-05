@@ -133,11 +133,13 @@
        <item>beautiful_widgets</item>
        <item>big_oven</item>
        <item>bitbeaker</item>
+       <item>blackplayer</item>
        <item>box</item>
        <item>browser_2</item>
-       <item>busybox_free</item>
+       <item>busybox</item>
        <item>capital_one</item>
        <item>catlog</item>
+       <item>cgeo</item>
        <item>checkersfree</item>
        <item>chessfree</item>
        <item>cm_browser</item>
@@ -159,6 +161,7 @@
        <item>evernote</item>
        <item>evolve_sms</item>
        <item>facebook</item>
+       <item>fastergps</item>
        <item>fdroid</item>
        <item>fing</item>
        <item>firefox</item>
@@ -183,13 +186,17 @@
        <item>instagram</item>
        <item>k9mail</item>
        <item>kernel_adiutor</item>
+       <item>layers</item>
+       <item>layout</item>
        <item>le_conjugueur</item>
        <item>lightning</item>
        <item>lightning_bug</item>
+       <item>link_bubble</item>
        <item>linkedin</item>
        <item>lmt</item>
        <item>mapsme</item>
        <item>material_glass</item>
+       <item>material_glass_xda</item>
        <item>megav1</item>
        <item>messenger_fb</item>
        <item>mobile_print</item>
@@ -208,8 +215,10 @@
        <item>opera_mini</item>
        <item>orbot</item>
        <item>paperboard</item>
+       <item>paypal</item>
        <item>perfect_viewer</item>
        <item>periodic_table</item>
+       <item>pitched_glass</item>
        <item>poweramp</item>
        <item>poweramp_full_version_unlocker</item>
        <item>pss</item>
@@ -263,6 +272,7 @@
        <item>whatsapp</item>
        <item>wifi_analyzer</item>
        <item>xda_premium4</item>
+       <item>yik_yak</item>
    </string-array>
 
    <string-array name="xposed">
@@ -313,12 +323,13 @@
        <item>beautiful_widgets</item>
        <item>big_oven</item>
        <item>bitbeaker</item>
+       <item>blackplayer</item>
        <item>blogger</item>
        <item>boot_manager</item>
        <item>box</item>
        <item>browser</item>
        <item>browser_2</item>
-       <item>busybox_free</item>
+       <item>busybox</item>
        <item>calculator</item>
        <item>calendar</item>
        <item>camera</item>
@@ -326,6 +337,7 @@
        <item>capital_one</item>
        <item>cardboard</item>
        <item>catlog</item>
+       <item>cgeo</item>
        <item>checkersfree</item>
        <item>chessfree</item>
        <item>chrome</item>
@@ -363,6 +375,7 @@
        <item>evolve_sms</item>
        <item>excel</item>
        <item>facebook</item>
+       <item>fastergps</item>
        <item>fdroid</item>
        <item>file_manager</item>
        <item>fing</item>
@@ -409,15 +422,19 @@
        <item>k9mail</item>
        <item>keep</item>
        <item>kernel_adiutor</item>
+       <item>layers</item>
+       <item>layout</item>
        <item>le_conjugueur</item>
        <item>lightning</item>
        <item>lightning_bug</item>
+       <item>link_bubble</item>
        <item>linkedin</item>
        <item>lmt</item>
        <item>lync_2013</item>
        <item>maps</item>
        <item>mapsme</item>
        <item>material_glass</item>
+       <item>material_glass_xda</item>
        <item>megav1</item>
        <item>messaging</item>
        <item>messenger</item>
@@ -457,10 +474,12 @@
        <item>outlook</item>
        <item>owa</item>
        <item>paperboard</item>
+       <item>paypal</item>
        <item>perfect_viewer</item>
        <item>periodic_table</item>
        <item>phone</item>
        <item>photos</item>
+       <item>pitched_glass</item>
        <item>play_books</item>
        <item>play_games</item>
        <item>play_movies</item>
@@ -546,6 +565,7 @@
        <item>xda_premium4</item>
        <item>xinstaller</item>
        <item>xposed_installer</item>
+       <item>yik_yak</item>
        <item>youtube</item>
    </string-array>
 

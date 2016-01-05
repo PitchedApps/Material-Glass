@@ -131,4 +131,6 @@
     <color name="editor_disabled_text_color">@color/texttt</color>
     <color name="editor_icon_color">@color/text</color>
 
+    <!--01/04/2016-->
+    <color name="search_back_button_tint_color">#ddffffff</color>
 </resources>

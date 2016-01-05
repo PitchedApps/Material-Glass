@@ -484,6 +484,6 @@
     <item component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}" drawable="photos"/>
     <item component="ComponentInfo{com.pitchedapps.icons.glass/com.pitchedapps.icons.HomeActivity}" drawable="pitched_glass"/>
     <item component="ComponentInfo{com.yik.yak/com.yik.yak.ui.activity.SplashActivity}" drawable="yik_yak"/>
-
+    <item component=":LAUNCHER_ACTION_APP_DRAWER" drawable="ic_allapps" />
 
 </resources>

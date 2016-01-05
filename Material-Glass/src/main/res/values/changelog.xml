@@ -5,6 +5,7 @@
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
     <string-array name="fullchangelog">
+        <item>@array/v66</item>
         <item>@array/v65</item>
         <item>@array/v64</item>
         <item>@array/v63</item>
@@ -90,6 +91,19 @@
     <string-array name="v">
         <item>v</item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
+    <string-array name="v66">
+        <item>v2.7.5</item>
+        <item>Added a dozen new icons (check the icon packs for thousands more)</item>
+        <item>ExactCalculator: added padview background for cm13</item>
+        <item>SystemUI: added new custom colors for cm13</item>
+        <item>Contacts: added new custom colors for cm13</item>
+        <item>FrameworkRes: added new custom colors for cm13</item>
         <item></item>
         <item></item>
         <item></item>
