@@ -5,6 +5,7 @@
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
     <string-array name="fullchangelog">
+        <item>@array/v67</item>
         <item>@array/v66</item>
         <item>@array/v65</item>
         <item>@array/v64</item>
@@ -91,6 +92,15 @@
     <string-array name="v">
         <item>v</item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
+    <string-array name="v67">
+        <item>v2.7.6</item>
+        <item>Dialer: fixed background color for cm</item>
         <item></item>
         <item></item>
         <item></item>
