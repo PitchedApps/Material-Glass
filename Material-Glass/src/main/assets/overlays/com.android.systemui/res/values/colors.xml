@@ -71,7 +71,7 @@
     <color name="segmented_button_text_inactive">#77ffffff</color>
     <color name="status_bar_clock_color">@color/text</color>
     <color name="status_bar_recents_app_label_color">@color/text</color>
-    <color name="system_accent_color">@color/textb</color>
+    <color name="system_accent_color">@color/pblue</color>
     <color name="system_bar_background_opaque">@color/backgroundt</color>
     <color name="system_bar_background_semi_transparent">#66000000</color>
     <color name="system_bar_background_transparent">#00000000</color>

@@ -3,13 +3,13 @@
     <item android:state_pressed="true">
         <shape>
             <solid android:color="#33ffffff" />
-            <corners android:radius="@dimen/modular_action_contact_image_size" />
+            <corners android:radius="56.0dip" />
         </shape>
     </item>
     <item>
         <shape>
             <solid android:color="#00000000" />
-            <corners android:radius="@dimen/modular_action_contact_image_size" />
+            <corners android:radius="56.0dip" />
         </shape>
     </item>
 </selector>

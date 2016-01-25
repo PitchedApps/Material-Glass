@@ -5,6 +5,7 @@
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
     <string-array name="fullchangelog">
+        <item>@array/v68</item>
         <item>@array/v67</item>
         <item>@array/v66</item>
         <item>@array/v65</item>
@@ -83,6 +84,8 @@
 	
 	systemui, inbox
 	
+	whatsapp
+	
 	nav bar in google maps, landscape
 	black on black menu in stock browser
 	k9mail is no longer in layers selection
@@ -98,13 +101,26 @@
         <item></item>
     </string-array>
 	
+    <string-array name="v68">
+        <item>v2.7.7</item>
+        <item>Cm13: fix framework holo actionbar</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
     <string-array name="v67">
         <item>v2.7.6</item>
         <item>Dialer: fixed background color for cm</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Instagram: themed OGInstagram</item>
+        <item>MaterialTerminal: fixed white dialog colors</item>
+        <item>MMS: added slim lollipop support (for custom builds with the layers commit)</item>
+        <item>DeskClock: added untested layers variant with the newest commit (you need to have the commit in your rom for it to work)</item>
+        <item>New: added whatsapp test for cm and layers (some bugs couldn\'t be fixed)</item>
+        <item>Cm13: added lot of new colors for systemUI and frameworkRes</item>
+        <item>Cm13: fixed package installer name color</item>
+        <item>Google: fixed up lots of crashes and transparencies</item>
     </string-array>
 	
     <string-array name="v66">

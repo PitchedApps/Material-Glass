@@ -17,4 +17,10 @@
     <color name="typing_filter_background_color">#BB000000</color>
     <color name="status_bar_latest_event_content_bg_color">#bb000000</color>
     <color name="media_controller_background_color">#CC000000</color>
+
+   <!--01/22/2016-->
+    <color name="immersive_cling_bg_color">#80000000</color>
+    <color name="immersive_cling_text_color">#fff</color>
+    <color name="immersive_cling_button_text_color">#fff</color>
+    <color name="app_permission_icon_tint">#bbffffff</color>
 </resources>
