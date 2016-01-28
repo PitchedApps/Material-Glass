@@ -5,6 +5,7 @@
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
     <string-array name="fullchangelog">
+        <item>@array/v69</item>
         <item>@array/v68</item>
         <item>@array/v67</item>
         <item>@array/v66</item>
@@ -101,13 +102,19 @@
         <item></item>
     </string-array>
 	
+    <string-array name="v69">
+        <item>v2.7.8</item>
+        <item>Google: darkened overlay color</item>
+        <item>Gmail: changed white notification icon background to red</item>
+        <item>Dropbox: removed magenta in camera upload button</item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
     <string-array name="v68">
         <item>v2.7.7</item>
         <item>Cm13: fix framework holo actionbar</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Gmail: quick fix for cm builds. LAYERS IS NOT FIXED YET. I\'m not sure if it\'s possible.</item>
     </string-array>
 	
     <string-array name="v67">

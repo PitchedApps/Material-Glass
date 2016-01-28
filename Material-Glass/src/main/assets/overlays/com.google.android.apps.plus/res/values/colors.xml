@@ -284,7 +284,8 @@
     <color name="quantum_black_divider">#1fffffff</color>
     <color name="quantum_black_hint_text">#42ffffff</color>
     <color name="quantum_black_secondary_text">#89ffffff</color>
-    <color name="quantum_black_text">#ddffffff</color>
+    <!--main text, and also with the friends card with white background-->
+    <color name="quantum_black_text">#ccc</color>
 
     <color name="quantum_bluegrey50">#80000000</color>
 

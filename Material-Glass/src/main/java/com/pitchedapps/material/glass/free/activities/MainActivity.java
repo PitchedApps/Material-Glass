@@ -349,6 +349,19 @@ public class MainActivity extends AppCompatActivity {
                 emailBuilder.append("\nApp Version Name: ").append(appInfo.versionName);
                 emailBuilder.append("\nApp Version Code: ").append(appInfo.versionCode);
 
+                Intent cm = getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+                Intent cyngn = getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
+                Intent rro = getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
+                if (cm != null) {
+                    emailBuilder.append("\n\nCM theme chooser is installed.");
+                }
+                if (cyngn != null) {
+                    emailBuilder.append("\n\nCyanogenOS theme chooser is installed.");
+                }
+                if (rro != null) {
+                    emailBuilder.append("\n\nLayers theme engine is installed.");
+                }
+
                 intent.putExtra(Intent.EXTRA_TEXT, emailBuilder.toString());
                 startActivity(Intent.createChooser(intent, (getResources().getString(R.string.send_title))));
                 break;

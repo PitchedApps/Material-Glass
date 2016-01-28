@@ -87,4 +87,5 @@
         <item name="android:layout_margin">8.0dip</item>
         <item name="android:minHeight">60.0dip</item>
     </style>
+
 </resources>
