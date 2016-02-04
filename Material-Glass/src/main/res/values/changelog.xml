@@ -5,6 +5,7 @@
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
     <string-array name="fullchangelog">
+        <item>@array/v70</item>
         <item>@array/v69</item>
         <item>@array/v68</item>
         <item>@array/v67</item>
@@ -85,12 +86,10 @@
 	
 	systemui, inbox
 	
-	whatsapp
+	whatsapp ICON
 	
 	nav bar in google maps, landscape
 	black on black menu in stock browser
-	k9mail is no longer in layers selection
-	give fab instructions
 	-->
 	
     <string-array name="v">
@@ -102,13 +101,25 @@
         <item></item>
     </string-array>
 	
+    <string-array name="v70">
+        <item>v2.7.9</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
     <string-array name="v69">
         <item>v2.7.8</item>
         <item>Google: darkened overlay color</item>
+        <item>Google +: darkened main text color to make it visible in suggestions</item>
         <item>Gmail: changed white notification icon background to red</item>
         <item>Dropbox: removed magenta in camera upload button</item>
-        <item></item>
-        <item></item>
+        <item>Whatsapp: added it for real this time</item>
+        <item>Framework: thinner switch style for marshmallow (like back in lollipop)</item>
+        <item>SystemUI: changed settings drawables to outlines to match the status bar</item>
+        <item>DeskClock: changed accent color to make the alarm dialog more readable</item>
     </string-array>
 	
     <string-array name="v68">

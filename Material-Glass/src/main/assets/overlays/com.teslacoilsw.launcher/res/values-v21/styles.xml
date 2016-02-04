@@ -1,36 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.AppCompat" parent="@*common:style/Theme.AppCompat" />
-    <style name="Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
-    <style name="Theme.AppCompat.Light.DarkActionBar" parent="@*common:style/Theme.AppCompat" />
-    <style name="Theme.AppCompat.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar" />
-    <style name="Base.Theme.AppCompat" parent="@*common:style/Theme.AppCompat" />
-    <style name="Base.Theme.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
-    <style name="Base.ThemeOverlay.AppCompat" parent="@*common:style/Theme.AppCompat" />
-    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@*common:style/Theme.AppCompat" />
-
-    <style name="Theme.AppCompat.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
-    <style name="Theme.AppCompat.Light.Dialog" parent="@*common:style/Theme.AppCompat.Dialog" />
-    <style name="Base.Widget.AppCompat.ActionBar" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-    <style name="Base.Widget.AppCompat.ActionBar.Solid" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-    <style name="Base.Widget.AppCompat.Light.ActionBar" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-    <style name="Base.Widget.AppCompat.Light.ActionBar.Solid" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-    <style name="Base.Widget.AppCompat.Light.ActionBar.Solid.Inverse" parent="@*common:style/Base.Widget.AppCompat.ActionBar" />
-	
-    <style name="Theme.AppCompat.Light.NoActionBar" parent="@*common:style/Theme.AppCompat.NoActionBar">
-        <item name="android:backgroundTint">@color/background</item>
-        <item name="android:statusBarColor">@color/background</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-    </style>
-
-    <style name="MD_Light" parent="@android:style/Theme.Material.Dialog.Alert">
-        <item name="md_btn_negative_selector">@drawable/md_btn_selector_ripple</item>
-        <item name="md_btn_neutral_selector">@drawable/md_btn_selector_ripple</item>
-        <item name="md_btn_positive_selector">@drawable/md_btn_selector_ripple</item>
-        <item name="md_btn_stacked_selector">?android:selectableItemBackground</item>
-        <item name="md_divider">@color/md_divider_black</item>
-        <item name="md_list_selector">?android:selectableItemBackground</item>
-    </style>
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@android:style/Widget.Material.PopupMenu" />
-
 </resources>
