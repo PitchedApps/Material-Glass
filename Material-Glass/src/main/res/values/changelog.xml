@@ -5,6 +5,7 @@
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
     <string-array name="fullchangelog">
+        <item>@array/v71</item>
         <item>@array/v70</item>
         <item>@array/v69</item>
         <item>@array/v68</item>
@@ -101,13 +102,20 @@
         <item></item>
     </string-array>
 	
+    <string-array name="v71">
+        <item>v2.8.0</item>
+        <item>Quick fix for some cm crashes; one of the drawables was based on AOSP that CM changed</item>
+        <item>Cleaned up xda build for some potential future changes (calendar, hangouts, youtube removed)</item>
+    </string-array>
+	
     <string-array name="v70">
         <item>v2.7.9</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Nova: fixed settings crash on cm</item>
+        <item>Google: fixed up on cm</item>
+        <item>Gmail: fixed theme issue on cm</item>
+        <item>Tapatalk: fixed like count text color</item>
+        <item>DeskClock: removed layers test build</item>
+        <item>Ebay: added dark notification layer</item>
     </string-array>
 	
     <string-array name="v69">
