@@ -12,7 +12,6 @@ public class PNG2XML {
     private static List<File> images;
     private static List<File[]> subfolderIndex;
     private static StringBuilder icon;
-//    private static StringBuilder drawable;
 
     public static void main(String args[]) {
         // Get .jar directory
@@ -83,14 +82,11 @@ public class PNG2XML {
     private static void writeXML() {
         // Initialize String
         icon = new StringBuilder();
-//        drawable = new StringBuilder();
 
         // Write headers
         icon.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
         icon.append("<resources>\n\n");
-//        drawable.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
-//        drawable.append("<resources>\n\n");
-//        drawable.append("    <version>1</version>\n\n");
+
 
         // Loop through all the subfolders that need to have their own string-array
         for (File[] subfolder : subfolderIndex) {
@@ -102,36 +98,59 @@ public class PNG2XML {
                 if (!subfolderName.equals("uncategorized")) {
 
                     // Starting writing this subfolder's array
-                    icon.append("   <string-array name=\"" + subfolderName + "\">\n");
+                    icon.append("\t<string-array name=\"" + subfolderName + "\">\n");
 
                     // Loop through all the images within this subfolder and assign a value for each
                     // Drawables only need to be written once, so we will not write them here
                     for (File img : subfolder) {
-                        icon.append("       <item>" + img.getName().replace(".png", "").replace(".PNG", "") + "</item>\n");
+                        icon.append("\t\t<item>" + img.getName().replace(".png", "").replace(".PNG", "") + "</item>\n");
                     }
 
                     // Close this subfolder's array
-                    icon.append("   </string-array>\n\n");
+                    icon.append("\t</string-array>\n\n");
 
                 }
             }
         }
 
         // Start writing the main array
-        icon.append("   <string-array name=\"icon_pack\" translatable=\"true\">\n");
+        icon.append("\t<string-array name=\"icon_pack\" translatable=\"true\">\n");
 
         // Loop through all files and assign a value for each
         for (File img : images) {
-            icon.append("       <item>" + img.getName().replace(".png", "").replace(".PNG", "") + "</item>\n");
-//            drawable.append("       <item drawable=\"" + img.getName().replace(".png", "").replace(".PNG", "") + "\"/>\n");
+            icon.append("\t\t<item>" + img.getName().replace(".png", "").replace(".PNG", "") + "</item>\n");
         }
 
         // Close the main array
-        icon.append("   </string-array>\n\n");
+        icon.append("\t</string-array>\n\n");
+
+        // Start writing the tab array (for IconShowcase)
+        icon.append("\t<string-array name=\"tabs\" translatable=\"true\">\n");
+        // Loop through all the subfolders that need to have their own string-array
+        for (File[] subfolder : subfolderIndex) {
+            if (subfolder.length > 0) {
+
+                // Get name of subfolder
+                String subfolderName = subfolder[0].getParentFile().getName();
+
+                //space to underscore
+
+                subfolderName = subfolderName.replace("%20", "_");
+                if (!subfolderName.equals("uncategorized")) {
+
+
+                    // Starting writing this subfolder's array
+                    icon.append("\t<item>" + subfolderName + "</item>\n");
+
+                }
+            }
+        }
+
+        // Close the tab array
+        icon.append("\t</string-array>\n\n");
 
         // Write footers
         icon.append("</resources>");
-//        drawable.append("\n</resources>");
     }
 
     private static void saveFiles(String dir) {
@@ -144,18 +163,5 @@ public class PNG2XML {
         } catch (Exception e) {
             System.out.println("Oops, an error occured while writing icon_pack.xml");
         }
-
-        // Save drawable.xml
-        /*try
-        {
-            File drawableFile = new File(dir, "drawable.xml");
-            FileOutputStream f = new FileOutputStream(drawableFile);
-            f.write(drawable.toString().getBytes());
-            f.close();
-        }
-        catch(Exception e)
-        {
-            System.out.println("Oops, an error occured while writing drawable.xml");
-        }*/
     }
 }
