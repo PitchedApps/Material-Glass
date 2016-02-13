@@ -16,4 +16,7 @@
         <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
+    <style name="Settings" parent="@android:style/Theme.Material">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
 </resources>

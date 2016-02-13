@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cardsbg">#30000000</color>
+    <color name="cardview_light_background">#50000000</color>
+    <color name="background_material_dark">#80000000</color>
+    <color name="design_snackbar_background_color">#dd222222</color>
+
+    <color name="md_grey_800">#f0f</color>
+    <color name="md_grey_850">#f0f</color>
+</resources>

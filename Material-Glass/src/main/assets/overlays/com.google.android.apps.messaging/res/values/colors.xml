@@ -61,7 +61,7 @@
     <color name="contextual_action_bar_background_color">#000</color>
     <color name="archived_conversation_action_bar_background_color">#000</color>
     <color name="archived_conversation_action_bar_background_color_dark">#000</color>
-    <color name="conversation_list_item_read">#bbffffff</color>
+    <color name="conversation_list_item_read">#80ffffff</color>
     <color name="conversation_list_item_unread">#fff</color>
     <color name="conversation_list_error">#ffdc0000</color>
     <color name="conversation_list_name">#deffffff</color>

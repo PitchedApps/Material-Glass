@@ -70,7 +70,7 @@
     <color name="selected_list_item_bg">@color/background</color>
     <color name="widget_sender_text_color_read">@color/texttt</color>
     <color name="widget_sender_text_color_unread">@color/text</color>
-    <color name="widget_subject_text_color_read">@color/textt</color>
+    <color name="widget_subject_text_color_read">@color/texttt</color>
     <color name="widget_subject_text_color_unread">@color/text</color>
     <color name="translucent_white">#cc000000</color>
     <color name="compose_message_text_counter">#ccdddddd</color>
@@ -131,10 +131,10 @@
     <color name="default_conv_list_background">@color/background</color>
     <!-- Read defaults -->
     <color name="default_read_bg">#00000000</color>
-    <color name="default_read_contact">@color/textt</color>
-    <color name="default_read_subject">@color/text</color>
-    <color name="default_read_date">@color/textt</color>
-    <color name="default_read_count">@color/textt</color>
+    <color name="default_read_contact">@color/texttt</color>
+    <color name="default_read_subject">@color/texttt</color>
+    <color name="default_read_date">@color/texttt</color>
+    <color name="default_read_count">@color/texttt</color>
     <!-- Unread defaults -->
     <color name="default_unread_bg">#20060606</color>
     <color name="default_unread_contact">@color/text</color>
@@ -160,9 +160,9 @@
     <color name="read_bgcolor">@color/background</color>
     <!-- widget dark -->
     <!-- read -->
-    <color name="widget_senders_textcolor_read">@color/textt</color>
-    <color name="widget_subject_textcolor_read">@color/textt</color>
-    <color name="widget_date_textcolor_read">@color/textt</color>
+    <color name="widget_senders_textcolor_read">@color/texttt</color>
+    <color name="widget_subject_textcolor_read">@color/texttt</color>
+    <color name="widget_date_textcolor_read">@color/texttt</color>
     <!-- unread -->
     <color name="widget_senders_textcolor_unread">@color/text</color>
     <color name="widget_subject_textcolor_unread">@color/text</color>
@@ -187,7 +187,7 @@
 
     <color name="text">#ffffffff</color>
     <color name="textt">#ccffffff</color>
-    <color name="texttt">#99ffffff</color>
+    <color name="texttt">#80ffffff</color>
     <color name="background">#60000000</color>
     <color name="backgroundd">#88161616</color>
     <color name="backgrounddd">#88323232</color>

@@ -1,6 +1,5 @@
 package com.pitchedapps.material.glass.free.fragments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -14,15 +13,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ObservableScrollView;
 import com.pitchedapps.material.glass.free.R;
 import com.pitchedapps.material.glass.free.activities.MainActivity;
-
-import java.lang.reflect.Constructor;
+import com.pitchedapps.material.glass.free.utilities.ThemeEngineLauncher;
 
 public class HomeFragment extends Fragment {
 
@@ -135,83 +132,35 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        boolean cm = AppIsInstalled("org.cyanogenmod.theme.chooser");
+        boolean cyngn = AppIsInstalled("com.cyngn.theme.chooser");
+        boolean rro = AppIsInstalled("com.lovejoy777.rroandlayersmanager");
+
         FloatingActionButton fabApply = (FloatingActionButton) root.findViewById(R.id.apply_home);
-        Intent cm = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
-        Intent cyngn = getActivity().getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
-        Intent rro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
         fabApply.setVisibility(View.VISIBLE);
         fabApply.setColorNormal(getResources().getColor(R.color.fab_unpressed));
         fabApply.setColorPressed(getResources().getColor(R.color.fab_pressed));
         fabApply.setColorRipple(getResources().getColor(R.color.semitransparent_white));
         fabApply.show(true);
         fabApply.attachToScrollView(content);
-        if (cm != null) {
-            fabApply.setImageResource(R.drawable.ic_cm);
-            Log.d("MGlass", "org.cyanogenmod.theme.chooser is installed");
+        if (cm || cyngn || rro) {
+            if (cm) {
+                fabApply.setImageResource(R.drawable.ic_cm);
+                Log.d("MGlass", "org.cyanogenmod.theme.chooser is installed");
+            } else if (rro) {
+                fabApply.setImageResource(R.drawable.ic_rro);
+                Log.d("MGlass", "com.lovejoy777.rroandlayersmanager is installed");
+            } else {
+                fabApply.setImageResource(R.drawable.ic_cyngn);
+                Log.d("MGlass", "com.cyngn.theme.chooser is installed");
+            }
             fabApply.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intentcm = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
-                    if (intentcm == null) {
-                        Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
-                    } else {
-                        final String className = "com.pitchedapps.material.glass.free.utilities.CmThemeEngineLauncher";
-                        Class<?> cl = null;
-                        try {
-                            cl = Class.forName(className);
-                        } catch (ClassNotFoundException e) {
-                            Log.e("LAUNCHER CLASS MISSING", "Launcher class for: '" + className + "' missing!");
-                        }
-                        if (cl != null) {
-                            Constructor<?> constructor = null;
-                            try {
-                                constructor = cl.getConstructor(Context.class);
-                            } catch (NoSuchMethodException e) {
-                                Log.e("LAUNCHER CLASS CONS",
-                                        "Launcher class for: '" + className + "' is missing a constructor!");
-                            }
-                            try {
-                                if (constructor != null)
-                                    constructor.newInstance(getActivity());
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
+                    new ThemeEngineLauncher(getActivity().getApplicationContext());
+                    writing an error here so you don't compile this
                 }
 
-
-            });
-        } else if (cyngn != null) {
-            fabApply.setImageResource(R.drawable.ic_cyngn);
-            Log.d("MGlass", "com.cyngn.theme.chooser is installed");
-            fabApply.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intentcyngn = getActivity().getPackageManager().getLaunchIntentForPackage("com.cyngn.theme.chooser");
-                    if (intentcyngn == null) {
-                        Toast.makeText(getActivity(), getString(R.string.cyngn_not_installed), Toast.LENGTH_SHORT).show();
-                    } else {
-
-                        getActivity().startActivity(intentcyngn);
-                    }
-                }
-
-
-            });
-        } else if (rro != null) {
-            fabApply.setImageResource(R.drawable.ic_rro);
-            Log.d("MGlass", "com.lovejoy777.rroandlayersmanager is installed");
-            fabApply.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intentrro = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
-                    if (intentrro == null) {
-                        Toast.makeText(getActivity(), getString(R.string.rro_not_installed), Toast.LENGTH_SHORT).show();
-                    } else {
-                        getActivity().startActivity(intentrro);
-                    }
-                }
             });
         } else {
             fabApply.setImageResource(R.drawable.ic_question);

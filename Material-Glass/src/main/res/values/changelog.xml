@@ -5,6 +5,7 @@
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
     <string-array name="fullchangelog">
+        <item>@array/v73</item>
         <item>@array/v72</item>
         <item>@array/v71</item>
         <item>@array/v70</item>
@@ -103,6 +104,18 @@
         <item></item>
     </string-array>
 	
+    <string-array name="v73">
+        <item>v2.8.2</item>
+        <item>New: themed DU about</item>
+        <item>New: themed DU updater</item>
+        <item>New: updated Launcher3 for DU support</item>
+        <item>Messaging: made unread and read text colors more differentiable</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
     <string-array name="v72">
         <item>v2.8.1</item>
         <item>New: themed eventflow for cm and layers</item>
@@ -112,10 +125,6 @@
         <item>Google Settings: alpha theme for layers</item>
         <item>SystemUI: fixed battery bar dimmness in layers</item>
         <item>New: themed SuperSU for cm and layers</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
     </string-array>
 	
     <string-array name="v71">
