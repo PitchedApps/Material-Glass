@@ -59,13 +59,14 @@ public class MainFragment extends Fragment {
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
     private static final String PITCHED_GLASS = "com.pitchedapps.icons.glass";
     private static final String MATERIAL_GLASS = "com.pitchedapps.material.glass.free";
+    private static final String GPLUS_COMMUNITY = "https://plus.google.com/u/0/communities/101836645831612238387";
     private ViewGroup layout;
 
     private boolean cm, cyngn, rro; //to store theme engine installation status
 
     private RecyclerView mRecyclerView;
     private ArrayList<HomeCard> homeCards = new ArrayList<>();
-    private Drawable iconsDrawable, playStoreDrawable;
+    private Drawable iconsDrawable, playStoreDrawable, gplusDrawable, xdaDrawable;
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
@@ -87,8 +88,8 @@ public class MainFragment extends Fragment {
 
         setupIcons(getActivity());
 
-        AppCompatButton donatebtn = (AppCompatButton) layout.findViewById(R.id.rate_button);
-        donatebtn.setOnClickListener(new View.OnClickListener() {
+        AppCompatButton iconsbtn = (AppCompatButton) layout.findViewById(R.id.rate_button);
+        iconsbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent rate = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + MATERIAL_GLASS));
@@ -96,13 +97,23 @@ public class MainFragment extends Fragment {
             }
         });
 
-        AppCompatButton iconsbtn = (AppCompatButton) layout.findViewById(R.id.donate_button);
+        AppCompatButton donatebtn = (AppCompatButton) layout.findViewById(R.id.donate_button);
 
-        iconsbtn.setOnClickListener(new View.OnClickListener() {
+        donatebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Utils.log("dI " + ShowcaseActivity.donationsIdentifier);
                 ShowcaseActivity.drawerItemClick(ShowcaseActivity.donationsIdentifier);
                 ShowcaseActivity.drawer.setSelection(ShowcaseActivity.donationsIdentifier);
+            }
+        });
+
+        AppCompatButton emailbtn = (AppCompatButton) layout.findViewById(R.id.email_button);
+
+        emailbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Utils.sendEmailWithDeviceInfo(context);
             }
         });
 
@@ -119,14 +130,28 @@ public class MainFragment extends Fragment {
                 .onClickLink(getResources().getString(R.string.iconpack_author_playstore))
                 .build());
 
-//        if (!Utils.isAppInstalled(context, PITCHED_GLASS) {
+        if (!Utils.isAppInstalled(context, PITCHED_GLASS)) {
             homeCards.add(new HomeCard.Builder()
                     .title(getResources().getString(R.string.home_pitched_glass))
                     .description(getResources().getString(R.string.home_pitched_glass_long))
                     .icon(iconsDrawable)
                     .onClickLink(MARKET_URL + PITCHED_GLASS)
                     .build());
-//        }
+        }
+
+        homeCards.add(new HomeCard.Builder()
+                .title(getResources().getString(R.string.home_google_beta))
+                .description(getResources().getString(R.string.home_google_beta_long))
+                .icon(gplusDrawable)
+                .onClickLink(GPLUS_COMMUNITY)
+                .build());
+
+        homeCards.add(new HomeCard.Builder()
+                .title(getResources().getString(R.string.home_xda))
+                .description(getResources().getString(R.string.home_xda_long))
+                .icon(xdaDrawable)
+                .onClickLink(GPLUS_COMMUNITY)
+                .build());
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(context);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -135,6 +160,7 @@ public class MainFragment extends Fragment {
         HomeListAdapter mAdapter = new HomeListAdapter(homeCards, context);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setNestedScrollingEnabled(false);
+        mRecyclerView.setFocusable(false);
 
         super.onViewCreated(view, savedInstanceState);
     }
@@ -186,20 +212,17 @@ public class MainFragment extends Fragment {
                 .color(ThemeUtils.darkTheme ? light : dark)
                 .sizeDp(24);
 
-        Drawable wallsDrawable = new IconicsDrawable(context)
-                .icon(GoogleMaterial.Icon.gmd_collection_image)
-                .color(ThemeUtils.darkTheme ? light : dark)
-                .sizeDp(24);
-
-        Drawable widgetsDrawable = new IconicsDrawable(context)
-                .icon(GoogleMaterial.Icon.gmd_widgets)
-                .color(ThemeUtils.darkTheme ? light : dark)
-                .sizeDp(24);
-
         playStoreDrawable = new IconicsDrawable(context)
                 .icon(GoogleMaterial.Icon.gmd_case_play)
                 .color(ThemeUtils.darkTheme ? light : dark)
                 .sizeDp(24);
+
+        gplusDrawable = ContextCompat.getDrawable(context, R.drawable.ic_gplus);
+        gplusDrawable.setTint(ThemeUtils.darkTheme ? light : dark);
+
+        xdaDrawable = ContextCompat.getDrawable(context, R.drawable.ic_xda);
+        xdaDrawable.setTint(ThemeUtils.darkTheme ? light : dark);
+
     }
 
     private void modifyFABIcon() {

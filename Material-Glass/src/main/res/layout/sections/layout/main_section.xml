@@ -109,6 +109,14 @@
                         android:text="@string/rate"
                         android:textColor="?attr/accentColor"/>
 
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/email_button"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textColor="?attr/accentColor"/>
+
                 </LinearLayout>
 
             </RelativeLayout>

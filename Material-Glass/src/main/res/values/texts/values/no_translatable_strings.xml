@@ -173,6 +173,7 @@
         <item>@string/muzei_api_web</item>
     </string-array>
 
+    <string name="xda">XDA</string>
     <string name="google_plus">Google+</string>
     <string name="youtube">YouTube</string>
     <string name="twitter">Twitter</string>

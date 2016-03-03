@@ -115,12 +115,9 @@
     </style>
 
     <style name="AppTheme.Base.ClearLaunchScreen">
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@drawable/splash_screen_clear</item>
-        <item name="colorAccent">@android:color/transparent</item>
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/splash_clear_background</item>
+        <item name="colorAccent">@color/splash_clear_background</item>
     </style>
 
     <style name="EmptyActivity" parent="@style/Theme.AppCompat.NoActionBar">

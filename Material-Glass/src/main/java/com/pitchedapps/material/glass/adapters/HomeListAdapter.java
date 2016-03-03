@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -30,7 +31,6 @@ public class HomeListAdapter extends RecyclerView.Adapter<HomeListAdapter.HomeCa
     }
 
     public class HomeCardView extends RecyclerView.ViewHolder {
-
         LinearLayout lly, subLly;
         TextView cardTitle, cardDesc;
         ImageView cardIcon;
@@ -44,16 +44,31 @@ public class HomeListAdapter extends RecyclerView.Adapter<HomeListAdapter.HomeCa
             cardIcon = (ImageView) itemView.findViewById(R.id.home_card_image);
             subLly = (LinearLayout) itemView.findViewById(R.id.home_card_sub_layout);
         }
+
     }
 
     @Override
     public HomeCardView onCreateViewHolder(ViewGroup viewGroup, int i) {
+        final View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_card_home, viewGroup, true);
+        if (v != null) {
+            Utils.log("null view");
+        } else {
+            Utils.log("view " + v.toString());
+        }
+        final HomeCardView h = new HomeCardView(v);
+
+        Utils.log("count " + getItemCount());
         final int finalI = i;
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_card_home, viewGroup, false);
-        v.setOnClickListener(new View.OnClickListener() { //TODO make clicks work for more than just links
+        v.setOnClickListener(new OnClickListener() { //TODO make clicks work for more than just links
             @Override
             public void onClick(View v) {
-                Utils.openLink(c, homeCards.get(finalI).onClickLink);
+                int position = h.getAdapterPosition();
+                Utils.log("position " + position);
+                Utils.log("i " + finalI);
+                if (position != RecyclerView.NO_POSITION) {
+                    Utils.log("link " +  homeCards.get(position).onClickLink);
+                    Utils.openLink(c, homeCards.get(position).onClickLink);
+                }
             }
         });
         HomeCardView hcv = new HomeCardView(v);

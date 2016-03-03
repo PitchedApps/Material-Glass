@@ -233,6 +233,20 @@ public class Utils {
         assert appInfo != null;
         emailBuilder.append("\nApp Version Name: ").append(appInfo.versionName);
         emailBuilder.append("\nApp Version Code: ").append(appInfo.versionCode);
+        boolean cm = isAppInstalled(context, "org.cyanogenmod.theme.chooser");
+        boolean cyngn = isAppInstalled(context, "com.cyngn.theme.chooser");
+        boolean rro = isAppInstalled(context, "com.lovejoy777.rroandlayersmanager");
+
+        if (cm) {
+            emailBuilder.append("\nCMTE is installed.");
+        }
+        if (cyngn) {
+            emailBuilder.append("\nCyanogenOS is installed.");
+        }
+        if (rro) {
+            emailBuilder.append("\nLayers Manager is installed.");
+        }
+
         intent.putExtra(Intent.EXTRA_TEXT, emailBuilder.toString());
         context.startActivity(Intent.createChooser(intent, (context.getResources().getString(R.string.send_title))));
     }

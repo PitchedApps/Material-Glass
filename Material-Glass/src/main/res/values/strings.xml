@@ -40,7 +40,7 @@
     <string name="artsource_name">@string/app_name</string>
     <string name="artsource_desc">Some wallpapers to go with the theme.</string>
 
-    <string name="json_file_url">http://www.jahirfiquitiva.net/wallpapers/iconshowcase.json</string>
+    <string name="json_file_url">https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass/0wallpapers.json</string>
 
     <!-- Icon Pack designer/owner e-mail -->
     <string name="email_id">pitchedapps@gmail.com</string>
@@ -66,8 +66,8 @@
     <!-- TEXTS TO BE USED IN ABOUT SECTION -->
 
     <string name="iconpack_author_name">Allan W</string>
-    <string name="iconpack_author_photo" formatted="false" tools:ignore="TypographyDashes">https://raw.githubusercontent.com/asdfasdfvful/Material-Glass/master/GIMP/pitchedapps.png</string>
-    <string name="iconpack_author_banner" formatted="false" tools:ignore="TypographyDashes">https://lh5.googleusercontent.com/-eAPognoXTwE/UYFKq101UyI/AAAAAAAABiY/REl1Ei8txP8/w1600-h900/default_cover_5_ff9ff46d48dc181084c9c23a120b68d8.jpg</string>
+    <string name="iconpack_author_photo" formatted="false" tools:ignore="TypographyDashes">https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass_Storage/pitchedapps.jpg</string>
+    <string name="iconpack_author_banner" formatted="false" tools:ignore="TypographyDashes">https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass_Storage/banner.jpg</string>
     <string name="iconpack_author_description">First an icon pack creator, then a themer; now also a developer.</string>
     <string name="iconpack_author_gplus">https://plus.google.com/+AllanWPitchedApps</string>
     <string name="iconpack_author_gplus_community">https://plus.google.com/u/0/communities/101836645831612238387</string>

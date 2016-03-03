@@ -782,11 +782,13 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
                         drawerBuilder.addDrawerItems(creditsItem);
                         break;
                     case "Settings":
-                        settingsItem = new SecondaryDrawerItem().withName(thaSettings).withIdentifier(i + secondaryStart);
+                        settingsIdentifier = i + secondaryStart;
+                        settingsItem = new SecondaryDrawerItem().withName(thaSettings).withIdentifier(settingsIdentifier);
                         drawerBuilder.addDrawerItems(settingsItem);
                         break;
                     case "Donations":
-                        donationsItem = new SecondaryDrawerItem().withName(thaDonate).withIdentifier(i + secondaryStart);
+                        donationsIdentifier = i + secondaryStart;
+                        donationsItem = new SecondaryDrawerItem().withName(thaDonate).withIdentifier(donationsIdentifier);
                         drawerBuilder.addDrawerItems(donationsItem);
                         break;
                 }

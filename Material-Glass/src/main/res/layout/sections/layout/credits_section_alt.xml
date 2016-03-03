@@ -134,9 +134,9 @@
                             style="@style/Widget.AppCompat.Button.Borderless"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/visit_website"
+                            android:text="@string/xda"
                             android:textColor="?attr/accentColor"/>
-
+                        <!--changed to xda button-->
                     </LinearLayout>
 
                 </RelativeLayout>

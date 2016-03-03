@@ -59,7 +59,7 @@
     <color name="splash_dark_statusbar">#000000</color>
 
     <!--CLEAR THEME COLORS-->
-    <color name="splash_clear_background">#50000000</color>
+    <color name="splash_clear_background">#000</color>
     <color name="card_clear_background">#30000000</color>
     <color name="clear_bg">#70000000</color>
     <color name="home_clear_background">#aa000000</color>
@@ -105,7 +105,7 @@
     <color name="light_bg">#fafafa</color>
     <color name="home_light_background">@color/card_light_background</color>
     <color name="snackbar_light">#fafafa</color>
-    <color name="launcher_tint_light">@color/drawable_tint_light</color>
+    <color name="launcher_tint_light">#60222222</color>
     <color name="launcher_text_light">@color/secondary_text_light</color>
     <color name="material_drawer_primary_text">#de000000</color>
     <color name="material_drawer_primary_icon">#8A000000</color>

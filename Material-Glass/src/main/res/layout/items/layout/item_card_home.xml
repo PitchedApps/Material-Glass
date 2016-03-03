@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
-    android:clickable="false"
+    android:clickable="true"
     android:gravity="center_vertical"
     android:orientation="vertical">
 
@@ -13,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?selectableItemBackground"
-        android:clickable="true"
         android:orientation="vertical"
         android:paddingBottom="16dp">
 
