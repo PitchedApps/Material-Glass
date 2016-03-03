@@ -4,6 +4,19 @@
 	<!--WIP
 	Google Calendar, Hangouts, K9Mail, Frameworkmtest
 	-->
+
+    <!--TODO remove this-->
+    <string-array name="changelog_icons">
+        <item>facebook</item>
+        <item>chrome</item>
+        <item>dumb_ways_to_die</item>
+        <item>duolingo</item>
+        <item>cm_file_manager</item>
+        <item>fimbo</item>
+        <item>andy</item>
+        <item>cabinet</item>
+    </string-array>
+
     <string-array name="fullchangelog">
         <item>@array/v73</item>
         <item>@array/v72</item>
@@ -105,12 +118,21 @@
     </string-array>
 	
     <string-array name="v73">
-        <item>v2.8.2</item>
+        <item>v3.0.0</item>
+        <item>***New: Xposed Add-On in alpha testing***</item>
         <item>New: themed DU about</item>
         <item>New: themed DU updater</item>
         <item>New: updated Launcher3 for DU support</item>
         <item>Messaging: made unread and read text colors more differentiable</item>
-        <item></item>
+        <item>Dialer: added more compatibility for Yureka</item>
+        <item>Relay: removed free version as it didn\'t have theme support</item>
+        <item>Settings: darken status bar to match action bar for layers</item>
+        <item>GoogleDeskClock: thinner switches for layers</item>
+        <item>FrameworkRes: made holo blue bright a dark blue rather than black</item>
+        <item>New: themed Xposed (needs addon)</item>
+        <item>Settings: added PureNexus Layers colors</item>
+        <item>FrameworkRes: made default colorBackground slightly darker</item>
+        <item>Theme: added hacky modification for xposed</item>
         <item></item>
         <item></item>
         <item></item>

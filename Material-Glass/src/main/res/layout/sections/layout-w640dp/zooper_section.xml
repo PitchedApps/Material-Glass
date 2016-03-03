@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016.  Jahir Fiquitiva
+  ~
+  ~ Licensed under the CreativeCommons Attribution-ShareAlike
+  ~ 4.0 International License. You may not use this file except in compliance
+  ~ with the License. You may obtain a copy of the License at
+  ~
+  ~    http://creativecommons.org/licenses/by-sa/4.0/legalcode
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  ~ Big thanks to the project contributors. Check them in the repository.
+  ~
+  -->
+
+<!--
+  ~
+  -->
+
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:paddingBottom="8dp"
+    app:alignmentMode="alignBounds">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_column="0"
+        app:layout_columnWeight="1"
+        app:layout_row="0">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/previews_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/cards_margin"
+            android:layout_marginRight="@dimen/cards_margin"
+            android:layout_marginTop="@dimen/cards_margin"
+            android:clickable="false"
+            app:cardBackgroundColor="?attr/colorCardBackground">
+
+            <LinearLayout
+                style="@style/ZooperCardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/previewTexts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/md_listitem_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/icon_preview"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        tools:ignore="ContentDescription"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <TextView
+                            android:id="@+id/preview_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/zooper_preview_title"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                        <TextView
+                            android:id="@+id/preview_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/cards_margin"
+                            android:text="@string/zooper_preview_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/preview_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/cards_margin"
+                    android:layout_marginTop="@dimen/cards_margin"
+                    android:foreground="?selectableItemBackground"
+                    android:maxHeight="@dimen/toolbar_expanded"
+                    android:scaleType="fitCenter"
+                    tools:ignore="ContentDescription"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/zooper_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/previews_card"
+            android:layout_marginLeft="@dimen/cards_margin"
+            android:layout_marginRight="@dimen/cards_margin"
+            android:layout_marginTop="@dimen/cards_margin"
+            android:clickable="false"
+            app:cardBackgroundColor="?attr/colorCardBackground">
+
+            <RelativeLayout
+                style="@style/ZooperCardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/texts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/md_listitem_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/icon_zooper"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        tools:ignore="ContentDescription"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <TextView
+                            android:id="@+id/card_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/zooper_download_title"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                        <TextView
+                            android:id="@+id/card_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/cards_margin"
+                            android:text="@string/zooper_download_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/texts"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/download_button"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/download"
+                        android:textColor="?attr/accentColor"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mu_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zooper_card"
+            android:layout_marginLeft="@dimen/cards_margin"
+            android:layout_marginRight="@dimen/cards_margin"
+            android:layout_marginTop="@dimen/cards_margin"
+            android:clickable="false"
+            app:cardBackgroundColor="?attr/colorCardBackground">
+
+            <RelativeLayout
+                style="@style/ZooperCardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/mu_texts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/md_listitem_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/icon_mu"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        tools:ignore="ContentDescription"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <TextView
+                            android:id="@+id/mu_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mu_download_title"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                        <TextView
+                            android:id="@+id/mu_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/cards_margin"
+                            android:text="@string/mu_download_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/mu_texts"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/mu_download_button"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/download"
+                        android:textColor="?attr/accentColor"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_column="1"
+        app:layout_columnWeight="1"
+        app:layout_row="0">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/fonts_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mu_card"
+            android:layout_marginLeft="@dimen/cards_margin"
+            android:layout_marginRight="@dimen/cards_margin"
+            android:layout_marginTop="@dimen/cards_margin"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="?attr/colorCardBackground">
+
+            <RelativeLayout
+                style="@style/CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/fonts_card_texts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/md_listitem_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/icon_fonts"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        tools:ignore="ContentDescription"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <TextView
+                            android:id="@+id/fonts_card_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/zooper_install_fonts_title"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                        <TextView
+                            android:id="@+id/fonts_card_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/cards_margin"
+                            android:text="@string/zooper_install_fonts_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/iconsets_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fonts_card"
+            android:layout_marginLeft="@dimen/cards_margin"
+            android:layout_marginRight="@dimen/cards_margin"
+            android:layout_marginTop="@dimen/cards_margin"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="?attr/colorCardBackground">
+
+            <RelativeLayout
+                style="@style/CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/iconsets_card_texts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/md_listitem_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/icon_iconsets"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        tools:ignore="ContentDescription"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <TextView
+                            android:id="@+id/iconsets_card_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/zooper_install_iconsets_title"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                        <TextView
+                            android:id="@+id/iconsets_card_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/cards_margin"
+                            android:text="@string/zooper_install_iconsets_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/bitmaps_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconsets_card"
+            android:layout_marginLeft="@dimen/cards_margin"
+            android:layout_marginRight="@dimen/cards_margin"
+            android:layout_marginTop="@dimen/cards_margin"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="?attr/colorCardBackground">
+
+            <RelativeLayout
+                style="@style/CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/bitmaps_card_texts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/md_listitem_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/icon_bitmaps"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        tools:ignore="ContentDescription"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <TextView
+                            android:id="@+id/bitmaps_card_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/zooper_install_bitmaps_title"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                        <TextView
+                            android:id="@+id/bitmaps_card_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/cards_margin"
+                            android:text="@string/zooper_install_bitmaps_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mediautilities_info_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bitmaps_card"
+            android:layout_marginLeft="@dimen/cards_margin"
+            android:layout_marginRight="@dimen/cards_margin"
+            android:layout_marginTop="@dimen/cards_margin"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="?attr/colorCardBackground">
+
+            <RelativeLayout
+                style="@style/ZooperCardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mediautilities_info_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lists_padding"
+                    android:layout_marginRight="@dimen/lists_padding"
+                    android:layout_marginTop="@dimen/lists_padding"
+                    android:text="@string/mu_info_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                <TextView
+                    android:id="@+id/mediautilities_info_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mediautilities_info_title"
+                    android:layout_marginLeft="@dimen/lists_padding"
+                    android:layout_marginRight="@dimen/lists_padding"
+                    android:layout_marginTop="@dimen/lists_padding"
+                    android:text="@string/mu_info_content"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/mediautilities_info_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/mu_open_button"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/open"
+                        android:textColor="?attr/accentColor"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.v7.widget.GridLayout>
