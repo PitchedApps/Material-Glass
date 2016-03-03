@@ -49,7 +49,7 @@ public class HomeListAdapter extends RecyclerView.Adapter<HomeListAdapter.HomeCa
 
     @Override
     public HomeCardView onCreateViewHolder(ViewGroup viewGroup, int i) {
-        final View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_card_home, viewGroup, true);
+        final View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_card_home, viewGroup, false);
         if (v != null) {
             Utils.log("null view");
         } else {
