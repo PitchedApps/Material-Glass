@@ -86,7 +86,7 @@
                         android:layout_marginTop="@dimen/cards_content_margin_small"
                         android:layout_toEndOf="@id/designerPhoto"
                         android:layout_toRightOf="@id/designerPhoto"
-                        android:text="@string/iconpack_author_name"
+                        android:text="@string/dev_name"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
 
                     <TextView
@@ -98,7 +98,7 @@
                         android:layout_marginLeft="@dimen/cards_content_margin_small"
                         android:layout_marginRight="@dimen/cards_content_margin_small"
                         android:layout_marginTop="@dimen/cards_content_margin_mini"
-                        android:text="@string/iconpack_author_description"
+                        android:text="@string/dev_description"
                         android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
 
                     <LinearLayout
@@ -224,7 +224,7 @@
                             android:textColor="?attr/accentColor"/>
 
                         <android.support.v7.widget.AppCompatButton
-                            android:id="@+id/dev_website_btn"
+                            android:id="@+id/dev_xda_btn"
                             style="@style/Widget.AppCompat.Button.Borderless"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

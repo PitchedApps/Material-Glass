@@ -32,25 +32,21 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.AppCompatButton;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.ShowcaseActivity;
-import com.pitchedapps.material.glass.adapters.HomeListAdapter;
-import com.pitchedapps.material.glass.models.HomeCard;
 import com.pitchedapps.material.glass.utilities.LauncherIntents;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
-
-import java.util.ArrayList;
 
 public class MainFragment extends Fragment {
 
@@ -59,14 +55,11 @@ public class MainFragment extends Fragment {
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
     private static final String PITCHED_GLASS = "com.pitchedapps.icons.glass";
     private static final String MATERIAL_GLASS = "com.pitchedapps.material.glass.free";
-    private static final String GPLUS_COMMUNITY = "https://plus.google.com/u/0/communities/101836645831612238387";
     private ViewGroup layout;
 
     private boolean cm, cyngn, rro; //to store theme engine installation status
 
-    private RecyclerView mRecyclerView;
-    private ArrayList<HomeCard> homeCards = new ArrayList<>();
-    private Drawable iconsDrawable, playStoreDrawable, gplusDrawable, xdaDrawable;
+    private ImageView iPlay, iPGlass, iGPlus, iXDA;
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
@@ -84,7 +77,10 @@ public class MainFragment extends Fragment {
             //Do nothing
         }
 
-        mRecyclerView = (RecyclerView) layout.findViewById(R.id.home_rv);
+        iPlay = (ImageView) layout.findViewById(R.id.home_play_image);
+        iPGlass = (ImageView) layout.findViewById(R.id.home_pitched_glass_image);
+        iGPlus = (ImageView) layout.findViewById(R.id.home_gplus_image);
+        iXDA = (ImageView) layout.findViewById(R.id.home_xda_image);
 
         setupIcons(getActivity());
 
@@ -117,52 +113,45 @@ public class MainFragment extends Fragment {
             }
         });
 
-        return layout;
-    }
+        LinearLayout playCard = (LinearLayout) layout.findViewById(R.id.home_play);
+        playCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Utils.openLink(context, getResources().getString(R.string.dev_playstore));
+            }
+        });
 
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-
-        homeCards.add(new HomeCard.Builder()
-                .title(getResources().getString(R.string.more_apps))
-                .description(getResources().getString(R.string.more_apps_long))
-                .icon(playStoreDrawable)
-                .onClickLink(getResources().getString(R.string.iconpack_author_playstore))
-                .build());
-
-        if (!Utils.isAppInstalled(context, PITCHED_GLASS)) {
-            homeCards.add(new HomeCard.Builder()
-                    .title(getResources().getString(R.string.home_pitched_glass))
-                    .description(getResources().getString(R.string.home_pitched_glass_long))
-                    .icon(iconsDrawable)
-                    .onClickLink(MARKET_URL + PITCHED_GLASS)
-                    .build());
+        LinearLayout pitchedGlassCard = (LinearLayout) layout.findViewById(R.id.home_pitched_glass);
+        View pitchedGlassDivider = layout.findViewById(R.id.home_pitched_glass_divider);
+        if (Utils.isAppInstalled(context, PITCHED_GLASS)) {
+            pitchedGlassCard.setVisibility(View.GONE);
+            pitchedGlassDivider.setVisibility(View.GONE);
+        } else {
+            pitchedGlassCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Utils.openLink(context, MARKET_URL + PITCHED_GLASS);
+                }
+            });
         }
 
-        homeCards.add(new HomeCard.Builder()
-                .title(getResources().getString(R.string.home_google_beta))
-                .description(getResources().getString(R.string.home_google_beta_long))
-                .icon(gplusDrawable)
-                .onClickLink(GPLUS_COMMUNITY)
-                .build());
+        LinearLayout gPlusCard = (LinearLayout) layout.findViewById(R.id.home_gplus);
+        gPlusCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Utils.openLink(context, getResources().getString(R.string.dev_gplus_community));
+            }
+        });
 
-        homeCards.add(new HomeCard.Builder()
-                .title(getResources().getString(R.string.home_xda))
-                .description(getResources().getString(R.string.home_xda_long))
-                .icon(xdaDrawable)
-                .onClickLink(GPLUS_COMMUNITY)
-                .build());
+        LinearLayout xdaCard = (LinearLayout) layout.findViewById(R.id.home_xda);
+        xdaCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Utils.openLink(context, getResources().getString(R.string.dev_xda));
+            }
+        });
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(context);
-        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        mRecyclerView.setLayoutManager(layoutManager);
-
-        HomeListAdapter mAdapter = new HomeListAdapter(homeCards, context);
-        mRecyclerView.setAdapter(mAdapter);
-        mRecyclerView.setNestedScrollingEnabled(false);
-        mRecyclerView.setFocusable(false);
-
-        super.onViewCreated(view, savedInstanceState);
+        return layout;
     }
 
     @Override
@@ -207,22 +196,26 @@ public class MainFragment extends Fragment {
         final int light = ContextCompat.getColor(context, R.color.drawable_tint_dark);
         final int dark = ContextCompat.getColor(context, R.color.drawable_tint_light);
 
-        iconsDrawable = new IconicsDrawable(context)
+        Drawable iconsDrawable = new IconicsDrawable(context)
                 .icon(GoogleMaterial.Icon.gmd_android_alt)
                 .color(ThemeUtils.darkTheme ? light : dark)
                 .sizeDp(24);
 
-        playStoreDrawable = new IconicsDrawable(context)
+        Drawable playStoreDrawable = new IconicsDrawable(context)
                 .icon(GoogleMaterial.Icon.gmd_case_play)
                 .color(ThemeUtils.darkTheme ? light : dark)
                 .sizeDp(24);
 
-        gplusDrawable = ContextCompat.getDrawable(context, R.drawable.ic_gplus);
+        Drawable gplusDrawable = ContextCompat.getDrawable(context, R.drawable.ic_gplus);
         gplusDrawable.setTint(ThemeUtils.darkTheme ? light : dark);
 
-        xdaDrawable = ContextCompat.getDrawable(context, R.drawable.ic_xda);
+        Drawable xdaDrawable = ContextCompat.getDrawable(context, R.drawable.ic_xda);
         xdaDrawable.setTint(ThemeUtils.darkTheme ? light : dark);
 
+        iPlay.setImageDrawable(playStoreDrawable);
+        iPGlass.setImageDrawable(iconsDrawable);
+        iGPlus.setImageDrawable(gplusDrawable);
+        iXDA.setImageDrawable(xdaDrawable);
     }
 
     private void modifyFABIcon() {

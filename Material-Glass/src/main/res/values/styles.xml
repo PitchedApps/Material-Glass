@@ -63,6 +63,7 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:windowBackground">@color/clear_bg</item>
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Clear</item>
+        <item name="fabTintColor">@color/fab_background_tint_clear_theme</item>
         <item name="homeBackground">@color/home_clear_background</item>
         <item name="material_drawer_background">@color/material_drawer_clear_background</item>
         <item name="md_background_color">@color/md_background_color_clear</item>

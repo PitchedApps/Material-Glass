@@ -64,7 +64,7 @@
     True, means yes.
     False, means no.
     -->
-    <bool name="allow_user_theme_change">false</bool>
+    <bool name="allow_user_theme_change">true</bool>
 
     <!--
     Do you want to allow users to hide the app icon?
@@ -110,13 +110,6 @@
     <bool name="secondary_drawer_items_icons">false</bool>
 
     <!--
-    Do you want the app to use the icons based changelog, instead of texts one?
-    True, means the icons based changelog will be used.
-    False, mean the text based changelog will be used.
-    -->
-    <bool name="icons_changelog">false</bool>
-
-    <!--
     Do you want to have ripples when pressing an item in the text changelog?
     True, means yes.
     False, means no.
@@ -124,25 +117,11 @@
     <bool name="changelog_ripples">true</bool>
 
     <!--
-    Do you want the icons in toolbar to be randomized?
-    True, means yes.
-    False, means no.
-    -->
-    <bool name="shuffle_toolbar_icons">true</bool>
-
-    <!--
     If you include Zooper widgets, do any of them need MediaUtilities to work properly?
     True, means yes.
     False, means no.
     -->
     <bool name="mu_needed">false</bool>
-
-    <!--
-    Do you want to use the cards based About/Credits section?
-    True, means the About/Credits section will have cards.
-    False, means such section will show the list.
-    -->
-    <bool name="cards_credits">true</bool>
 
     <!--
     Do you have a website?
@@ -164,7 +143,7 @@
     True, means yes.
     False, means no.
     -->
-    <bool name="use_palette_api">false</bool>
+    <bool name="use_palette_api">true</bool>
 
     <!--
     Do you want the app to use palette api in texts in wallpapers section?

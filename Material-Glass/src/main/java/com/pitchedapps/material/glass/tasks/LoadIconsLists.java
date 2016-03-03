@@ -44,7 +44,7 @@ import java.util.Set;
 public class LoadIconsLists extends AsyncTask<Void, String, Boolean> {
 
     private Context context;
-    public static ArrayList<IconsLists> iconsLists;
+//    public static ArrayList<IconsLists> iconsLists;
     public static ArrayList<IconsCategory> categories;
     long startTime, endTime;
 
@@ -65,34 +65,34 @@ public class LoadIconsLists extends AsyncTask<Void, String, Boolean> {
         Resources r = context.getResources();
         String p = context.getPackageName();
 
-        iconsLists = new ArrayList<>();
+//        iconsLists = new ArrayList<>();
 
-        if (r.getStringArray(R.array.changelog_icons) != null) {
-            String[] newIcons = r.getStringArray(R.array.changelog_icons);
-            List<String> newIconsL = sortList(newIcons);
-
-            ArrayList<IconItem> changelogIconsArray = new ArrayList<>();
-            for (String icon : newIconsL) {
-                int iconResId = getIconResId(r, p, icon);
-                if (iconResId != 0) {
-                    changelogIconsArray.add(new IconItem(icon, iconResId));
-                }
-            }
-            iconsLists.add(new IconsLists("Changelog", changelogIconsArray));
-        }
-
-        if (r.getStringArray(R.array.preview) != null) { //TODO change this
-            String[] prev = r.getStringArray(R.array.preview);
-            List<String> previewIconsL = sortList(prev);
-            ArrayList<IconItem> previewIconsArray = new ArrayList<>();
-            for (String icon : previewIconsL) {
-                int iconResId = getIconResId(r, p, icon);
-                if (iconResId != 0) {
-                    previewIconsArray.add(new IconItem(icon, iconResId));
-                }
-            }
-            iconsLists.add(new IconsLists("Previews", previewIconsArray));
-        }
+//        if (r.getStringArray(R.array.changelog_icons) != null) {
+//            String[] newIcons = r.getStringArray(R.array.changelog_icons);
+//            List<String> newIconsL = sortList(newIcons);
+//
+//            ArrayList<IconItem> changelogIconsArray = new ArrayList<>();
+//            for (String icon : newIconsL) {
+//                int iconResId = getIconResId(r, p, icon);
+//                if (iconResId != 0) {
+//                    changelogIconsArray.add(new IconItem(icon, iconResId));
+//                }
+//            }
+//            iconsLists.add(new IconsLists("Changelog", changelogIconsArray));
+//        }
+//
+//        if (r.getStringArray(R.array.preview) != null) { //TODO change this
+//            String[] prev = r.getStringArray(R.array.preview);
+//            List<String> previewIconsL = sortList(prev);
+//            ArrayList<IconItem> previewIconsArray = new ArrayList<>();
+//            for (String icon : previewIconsL) {
+//                int iconResId = getIconResId(r, p, icon);
+//                if (iconResId != 0) {
+//                    previewIconsArray.add(new IconItem(icon, iconResId));
+//                }
+//            }
+//            iconsLists.add(new IconsLists("Previews", previewIconsArray));
+//        }
 
         String[] tabsNames = r.getStringArray(R.array.tabs);
 
@@ -226,9 +226,9 @@ public class LoadIconsLists extends AsyncTask<Void, String, Boolean> {
         }
     }
 
-    public static ArrayList<IconsLists> getIconsLists() {
-        return iconsLists.size() > 0 ? iconsLists : null;
-    }
+//    public static ArrayList<IconsLists> getIconsLists() {
+//        return iconsLists.size() > 0 ? iconsLists : null;
+//    }
 
     public static ArrayList<IconsCategory> getIconsCategories() {
         return categories.size() > 0 ? categories : null;

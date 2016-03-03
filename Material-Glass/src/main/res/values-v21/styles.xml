@@ -51,12 +51,4 @@
         <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
     </style>
 
-    <style name="AppTheme.Base.ClearLaunchScreen">
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowBackground">@drawable/splash_screen_clear</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="colorAccent">@android:color/transparent</item>
-    </style>
-
 </resources>

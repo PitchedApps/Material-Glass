@@ -84,70 +84,6 @@ public final class ISDialogs {
         }
     }
 
-    public static void showIconsChangelogDialog(final Context context) {
-
-        final MaterialDialog materialDialog = new MaterialDialog.Builder(context).title(R.string.changelog)
-                .customView(R.layout.icons_changelog, false)
-                .positiveText(context.getResources().getString(R.string.close))
-                .build();
-
-        final View v = materialDialog.getCustomView();
-        final RecyclerView iconsGrid = (RecyclerView) v.findViewById(R.id.changelogRV);
-        final int grids = context.getResources().getInteger(R.integer.icons_grid_width);
-        iconsGrid.setLayoutManager(new GridLayoutManager(context, grids));
-
-        ArrayList<IconItem> icons = null;
-
-        if (LoadIconsLists.getIconsLists() != null) {
-            icons = LoadIconsLists.getIconsLists().get(0).getIconsArray();
-        }
-
-        final IconsAdapter adapter = new IconsAdapter(context, icons, true);
-        iconsGrid.setAdapter(adapter);
-
-        //get total number of images
-        int images = 0;
-        if (icons != null) {
-            images = icons.size();
-        }
-
-        final int numberOfImages = images;
-
-        materialDialog.setOnShowListener(new DialogInterface.OnShowListener() {
-            @Override
-            public void onShow(final DialogInterface dialog) {
-                //calculate the total number of rows
-                final int rows = numberOfImages / grids + (numberOfImages % grids == 0 ? 0 : 1);
-                Utils.triggerMethodOnceViewIsDisplayed(iconsGrid, new Callable<Void>() {
-                    @Override
-                    public Void call() throws Exception {
-                        try {
-                            //get single image height
-                            if (iconsGrid.getChildCount() > 0) {
-                                int imageHeight = iconsGrid.getChildAt(0).getHeight();
-                                final ViewGroup.LayoutParams layoutParams = v.getLayoutParams();
-                                int calculatedHeight = imageHeight * rows + 2 * context.getResources().getDimensionPixelSize(R.dimen.dialog_margin_bottom);
-                                DisplayMetrics displaymetrics = new DisplayMetrics();
-                                ((AppCompatActivity) context).getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
-                                int height = displaymetrics.heightPixels - 4 * context.getResources().getDimensionPixelSize(R.dimen.dialog_margin_bottom);
-
-                                if (calculatedHeight < height) {
-                                    layoutParams.height = calculatedHeight;
-                                    v.setLayoutParams(layoutParams);
-                                }
-                            }
-                        } catch (NullPointerException e) {
-                            //do nothing
-                        }
-                        return null;
-                    }
-                });
-            }
-        });
-
-        materialDialog.show();
-    }
-
     public static void showLicenseSuccessDialog(Context context, MaterialDialog.SingleButtonCallback singleButtonCallback) {
         String message = context.getResources().getString(R.string.license_success,
                 context.getResources().getString(R.string.app_name));
@@ -476,7 +412,7 @@ public final class ISDialogs {
         new MaterialDialog.Builder(context)
                 .title(R.string.more)
                 .negativeText(R.string.close)
-                .items(R.array.iconpack_author_sites)
+                .items(R.array.dev_sites)
                 .itemsCallback(new MaterialDialog.ListCallback() {
                     @Override
                     public void onSelection(MaterialDialog materialDialog, View view,

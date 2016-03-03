@@ -27,7 +27,7 @@
     <!-- These texts are shown in Zooper -->
     <string name="zooper_pack_name">@string/app_name</string>
     <string name="zooper_pack_desc">Cool widgets.</string>
-    <string name="zooper_pack_author">@string/iconpack_author_name</string>
+    <string name="zooper_pack_author">@string/dev_name</string>
 
     <!-- If set to 0, the user will not be allowed to save the templates you provide -->
     <integer name="zooper_pack_allowsave">1</integer>

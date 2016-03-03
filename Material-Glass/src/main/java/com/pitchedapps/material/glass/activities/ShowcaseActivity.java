@@ -92,8 +92,6 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
             WITH_INSTALLED_FROM_AMAZON = false,
             WITH_ZOOPER_SECTION = false,
             WITH_DONATIONS_SECTION = false,
-            WITH_ICONS_BASED_CHANGELOG = true,
-            WITH_ALTERNATIVE_ABOUT_SECTION = true,
             WITH_SECONDARY_DRAWER_ITEMS_ICONS = false,
 
             //Donations stuff
@@ -125,7 +123,7 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
             nova_action = "com.novalauncher.THEME";
 
     public static boolean iconsPicker, wallsPicker, iconsPickerEnabled = false, wallsEnabled = false,
-            applyEnabled = false, SHUFFLE = true, shuffleIcons = true, selectAll = true;
+            applyEnabled = false, selectAll = true;
 
     private static String thaAppName, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaDonate, thaFAQs,
             thaZooper, thaCredits, thaSettings;
@@ -138,7 +136,7 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
             iconsPickerIdentifier = 0, applyIdentifier = 0, settingsIdentifier = 0, donationsIdentifier = 0,
             secondaryStart = 0;
 
-    public static int numOfIcons = 4, wallpaper = -1;
+    public static int wallpaper = -1;
 
     private boolean mLastTheme, mLastNavBar;
     private static Preferences mPrefs;
@@ -180,11 +178,7 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
 
         getAction();
 
-        WITH_ICONS_BASED_CHANGELOG = getResources().getBoolean(R.bool.icons_changelog);
-        WITH_ALTERNATIVE_ABOUT_SECTION = getResources().getBoolean(R.bool.cards_credits);
         WITH_SECONDARY_DRAWER_ITEMS_ICONS = getResources().getBoolean(R.bool.secondary_drawer_items_icons);
-
-        shuffleIcons = getResources().getBoolean(R.bool.shuffle_toolbar_icons);
 
         //donations stuff
         //google
@@ -211,10 +205,6 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
             secondaryDrawerItems = new String[]{"Credits", "Settings", "Donations"};
         } else {
             secondaryDrawerItems = new String[]{"Credits", "Settings"};
-        }
-
-        if (WITH_ALTERNATIVE_ABOUT_SECTION) { //use alternative credits layout if selected
-            secondaryDrawerItems[0] = "CreditsAlt";
         }
 
         switch (getResources().getInteger(R.integer.nav_drawer_header_style)) {
@@ -338,8 +328,6 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
             case "FAQs":
                 return thaFAQs;
             case "Credits":
-                return thaCredits;
-            case "CreditsAlt":
                 return thaCredits;
             case "Settings":
                 return thaSettings;
@@ -487,11 +475,7 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
         super.onOptionsItemSelected(item);
         int i = item.getItemId();
         if (i == R.id.changelog) {
-            if (WITH_ICONS_BASED_CHANGELOG) {
-                ISDialogs.showIconsChangelogDialog(this);
-            } else {
-                ISDialogs.showChangelogDialog(this);
-            }
+            ISDialogs.showChangelogDialog(this);
         } else if (i == R.id.refresh) {
             WallpapersFragment.refreshWalls(context);
             loadWallsList();
@@ -552,11 +536,7 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
                     new ZooperIconFontsHelper(context).check(true);
                 }
             }
-            if (WITH_ICONS_BASED_CHANGELOG) {
-                ISDialogs.showIconsChangelogDialog(this);
-            } else {
-                ISDialogs.showChangelogDialog(this);
-            }
+            ISDialogs.showChangelogDialog(this);
         }
     }
 
@@ -754,10 +734,6 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
                         creditsItem = new SecondaryDrawerItem().withName(thaCredits).withIcon(GoogleMaterial.Icon.gmd_info).withIdentifier(i + secondaryStart);
                         drawerBuilder.addDrawerItems(creditsItem);
                         break;
-                    case "CreditsAlt":
-                        creditsItem = new SecondaryDrawerItem().withName(thaCredits).withIcon(GoogleMaterial.Icon.gmd_info).withIdentifier(i + secondaryStart);
-                        drawerBuilder.addDrawerItems(creditsItem);
-                        break;
                     case "Settings":
                         settingsIdentifier = i + secondaryStart;
                         settingsItem = new SecondaryDrawerItem().withName(thaSettings).withIcon(GoogleMaterial.Icon.gmd_settings).withIdentifier(settingsIdentifier);
@@ -774,10 +750,6 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
             for (int i = 0; i < secondaryDrawerItems.length; i++) {
                 switch (secondaryDrawerItems[i]) {
                     case "Credits":
-                        creditsItem = new SecondaryDrawerItem().withName(thaCredits).withIdentifier(i + secondaryStart);
-                        drawerBuilder.addDrawerItems(creditsItem);
-                        break;
-                    case "CreditsAlt":
                         creditsItem = new SecondaryDrawerItem().withName(thaCredits).withIdentifier(i + secondaryStart);
                         drawerBuilder.addDrawerItems(creditsItem);
                         break;

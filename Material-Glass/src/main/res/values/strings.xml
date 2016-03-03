@@ -65,32 +65,32 @@
 
     <!-- TEXTS TO BE USED IN ABOUT SECTION -->
 
-    <string name="iconpack_author_name">Allan W</string>
-    <string name="iconpack_author_photo" formatted="false" tools:ignore="TypographyDashes">https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass_Storage/pitchedapps.jpg</string>
-    <string name="iconpack_author_banner" formatted="false" tools:ignore="TypographyDashes">https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass_Storage/banner.jpg</string>
-    <string name="iconpack_author_description">First an icon pack creator, then a themer; now also a developer.</string>
-    <string name="iconpack_author_gplus">https://plus.google.com/+AllanWPitchedApps</string>
-    <string name="iconpack_author_gplus_community">https://plus.google.com/u/0/communities/101836645831612238387</string>
-    <string name="iconpack_author_fb"></string>
-    <string name="iconpack_author_fb_alt"></string>
-    <string name="iconpack_author_twitter"></string>
-    <string name="iconpack_author_twitter_alt"></string>
-    <string name="iconpack_author_playstore">https://play.google.com/store/apps/developer?id=Pitched+Apps</string>
-    <!--xda--><string name="iconpack_author_website">http://forum.xda-developers.com/google-nexus-5/themes-apps/theme-material-glass-t3005025</string>
-    <string name="iconpack_author_youtube"></string>
+    <string name="dev_name">Allan W</string>
+    <string name="dev_photo" formatted="false" tools:ignore="TypographyDashes">https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass_Storage/pitchedapps.jpg</string>
+    <string name="dev_banner" formatted="false" tools:ignore="TypographyDashes">https://raw.githubusercontent.com/asdfasdfvful/Pitched-Wallpapers/master/Material_Glass_Storage/banner.jpg</string>
+    <string name="dev_description">First an icon pack creator, then a themer; now also a developer.</string>
+    <string name="dev_gplus">https://plus.google.com/+AllanWPitchedApps</string>
+    <string name="dev_gplus_community">https://plus.google.com/u/0/communities/101836645831612238387</string>
+    <string name="dev_fb"></string>
+    <string name="dev_fb_alt"></string>
+    <string name="dev_twitter"></string>
+    <string name="dev_twitter_alt"></string>
+    <string name="dev_playstore">https://play.google.com/store/apps/dev?id=9057916668129524571</string>
+    <!--xda--><string name="dev_xda">http://forum.xda-developers.com/google-nexus-5/themes-apps/theme-material-glass-t3005025</string>
+    <string name="dev_youtube"></string>
 
-    <string-array name="iconpack_author_sites">
+    <string-array name="dev_sites">
         <item>@string/play_store</item>
         <item>@string/join_community</item>
     </string-array>
 
-    <string-array name="iconpack_author_links">
-        <item>@string/iconpack_author_playstore</item>
-        <item>@string/iconpack_author_gplus_community</item>
+    <string-array name="dev_links">
+        <item>@string/dev_playstore</item>
+        <item>@string/dev_gplus_community</item>
     </string-array>
 
     <!-- This array will only be used if you enable the List style in About section. -->
-    <string-array name="iconpack_author_sites_in_list">
+    <string-array name="dev_sites_in_list">
         <item>@string/play_store</item>
         <item>@string/google_plus</item>
         <item>@string/join_community</item>
@@ -112,7 +112,7 @@
     <string name="developerName">@string/developer_name</string>
     <string name="theme_author">@string/developer_name</string>
     <string name="authorName">@string/developer_name</string>
-    <string name="authorLink">@string/iconpack_author_website</string>
+    <string name="authorLink">@string/dev_xda</string>
     <string name="theme_info">@string/theme_description</string>
     <string name="theme_ad_msg">@string/theme_description</string>
 

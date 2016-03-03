@@ -29,6 +29,8 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
+import com.pitchedapps.material.glass.utilities.Utils;
+
 /**
  * @author Aidan Follestad (afollestad)
  */
@@ -56,6 +58,8 @@ public class SquaredImageView extends ImageView {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         //noinspection SuspiciousNameCombination
-        setMeasuredDimension(widthMeasureSpec, widthMeasureSpec);
+        setMeasuredDimension(widthMeasureSpec, widthMeasureSpec); //TODO check, two values should be the same
+        Utils.log(widthMeasureSpec + " by " + heightMeasureSpec);
+
     }
 }
