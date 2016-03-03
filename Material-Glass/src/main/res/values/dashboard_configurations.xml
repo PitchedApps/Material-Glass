@@ -38,7 +38,6 @@
     <string-array name="primary_drawer_items">
         <item>Previews</item>
         <item>Wallpapers</item>
-        <item>Requests</item>
         <item>Apply</item>
         <item>FAQs</item>
     </string-array>

@@ -66,9 +66,9 @@
     <!-- TEXTS TO BE USED IN ABOUT SECTION -->
 
     <string name="iconpack_author_name">Allan W</string>
-    <string name="iconpack_author_photo" formatted="false" tools:ignore="TypographyDashes">https://lh3.googleusercontent.com/-0mdcClKXlgM/AAAAAAAAAAI/AAAAAAAAAAA/xgdLWeAg7pM/s120-c/photo.jpg</string>
+    <string name="iconpack_author_photo" formatted="false" tools:ignore="TypographyDashes">https://raw.githubusercontent.com/asdfasdfvful/Material-Glass/master/GIMP/pitchedapps.png</string>
     <string name="iconpack_author_banner" formatted="false" tools:ignore="TypographyDashes">https://lh5.googleusercontent.com/-eAPognoXTwE/UYFKq101UyI/AAAAAAAABiY/REl1Ei8txP8/w1600-h900/default_cover_5_ff9ff46d48dc181084c9c23a120b68d8.jpg</string>
-    <string name="iconpack_author_description">First an icon pack creator, then a themer, now also a developer.</string>
+    <string name="iconpack_author_description">First an icon pack creator, then a themer; now also a developer.</string>
     <string name="iconpack_author_gplus">https://plus.google.com/+AllanWPitchedApps</string>
     <string name="iconpack_author_gplus_community">https://plus.google.com/u/0/communities/101836645831612238387</string>
     <string name="iconpack_author_fb"></string>
