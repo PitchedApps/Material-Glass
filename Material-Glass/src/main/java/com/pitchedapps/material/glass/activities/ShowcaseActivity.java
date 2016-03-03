@@ -24,7 +24,6 @@
 package com.pitchedapps.material.glass.activities;
 
 import android.annotation.SuppressLint;
-import android.app.WallpaperManager;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -32,7 +31,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -45,13 +43,10 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayout;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -67,17 +62,6 @@ import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialize.util.UIUtils;
-
-import org.sufficientlysecure.donations.DonationsFragment;
-import org.sufficientlysecure.donations.google.util.IabHelper;
-import org.sufficientlysecure.donations.google.util.IabResult;
-import org.sufficientlysecure.donations.google.util.Inventory;
-
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Random;
-
 import com.pitchedapps.material.glass.BuildConfig;
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.RequestsAdapter;
@@ -87,15 +71,20 @@ import com.pitchedapps.material.glass.fragments.RequestsFragment;
 import com.pitchedapps.material.glass.fragments.SettingsFragment;
 import com.pitchedapps.material.glass.fragments.WallpapersFragment;
 import com.pitchedapps.material.glass.models.DrawerHeaderStyle;
-import com.pitchedapps.material.glass.models.IconItem;
 import com.pitchedapps.material.glass.models.WallpapersList;
-import com.pitchedapps.material.glass.tasks.LoadIconsLists;
 import com.pitchedapps.material.glass.utilities.PermissionUtils;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
 import com.pitchedapps.material.glass.utilities.ZooperIconFontsHelper;
 import com.pitchedapps.material.glass.views.CustomCoordinatorLayout;
+
+import org.sufficientlysecure.donations.DonationsFragment;
+import org.sufficientlysecure.donations.google.util.IabHelper;
+import org.sufficientlysecure.donations.google.util.IabResult;
+import org.sufficientlysecure.donations.google.util.Inventory;
+
+import java.io.File;
 
 public class ShowcaseActivity extends AppCompatActivity implements FolderChooserDialog.FolderSelectionCallback, PermissionUtils.OnPermissionResultListener {
 
@@ -380,14 +369,6 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
                         .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                         .replace(R.id.main, donationsFragment, "donationsFragment")
                         .commit();
-//            } else if (fragment.equals("Main")) {
-//
-//                MainFragment mainFragment;
-//                mainFragment = MainFragment.newInstance(sHomeCards);
-//                context.getSupportFragmentManager().beginTransaction()
-//                        .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-//                        .replace(R.id.main, mainFragment, "mainFragment")
-//                        .commit();
             } else {
                 context.getSupportFragmentManager().beginTransaction()
                         .setCustomAnimations(R.anim.enter, R.anim.exit, R.anim.pop_enter, R.anim.pop_exit)
@@ -911,124 +892,6 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
         }
     }
 
-    public static void setupIcons(final ImageView icon1, final ImageView icon2,
-                                  final ImageView icon3, final ImageView icon4,
-                                  final ImageView icon5, final ImageView icon6,
-                                  final ImageView icon7, final ImageView icon8,
-                                  int numOfIcons) {
-
-        ArrayList<IconItem> icons = null;
-
-        if (LoadIconsLists.getIconsLists() != null) {
-            icons = LoadIconsLists.getIconsLists().get(1).getIconsArray();
-        }
-
-        ArrayList<IconItem> finalIconsList = new ArrayList<>();
-
-        if (icons != null && SHUFFLE && shuffleIcons) {
-            Collections.shuffle(icons);
-        }
-
-        int i = 0;
-
-        if (icons != null) {
-            while (i < numOfIcons) {
-                finalIconsList.add(icons.get(i));
-                i++;
-            }
-            icon1.setImageResource(finalIconsList.get(0).getResId());
-            icon2.setImageResource(finalIconsList.get(1).getResId());
-            icon3.setImageResource(finalIconsList.get(2).getResId());
-            icon4.setImageResource(finalIconsList.get(3).getResId());
-            if (numOfIcons == 6) {
-                icon5.setImageResource(finalIconsList.get(4).getResId());
-                icon6.setImageResource(finalIconsList.get(5).getResId());
-            } else if (numOfIcons == 8) {
-                icon5.setImageResource(finalIconsList.get(4).getResId());
-                icon6.setImageResource(finalIconsList.get(5).getResId());
-                icon7.setImageResource(finalIconsList.get(6).getResId());
-                icon8.setImageResource(finalIconsList.get(7).getResId());
-            }
-        }
-
-        SHUFFLE = false;
-    }
-
-    public static void animateIcons(ImageView icon1, ImageView icon2,
-                                    ImageView icon3, ImageView icon4,
-                                    ImageView icon5, ImageView icon6,
-                                    ImageView icon7, ImageView icon8,
-                                    int numOfIcons) {
-
-        icon1.setVisibility(View.GONE);
-        icon2.setVisibility(View.GONE);
-        icon3.setVisibility(View.GONE);
-        icon4.setVisibility(View.GONE);
-        icon5.setVisibility(View.GONE);
-        icon6.setVisibility(View.GONE);
-        icon7.setVisibility(View.GONE);
-        icon8.setVisibility(View.GONE);
-
-        if (!iconsPicker && !wallsPicker) {
-            switch (numOfIcons) {
-                case 4:
-                    icon1.setVisibility(View.VISIBLE);
-                    icon2.setVisibility(View.VISIBLE);
-                    icon3.setVisibility(View.VISIBLE);
-                    icon4.setVisibility(View.VISIBLE);
-                    break;
-                case 6:
-                    icon1.setVisibility(View.VISIBLE);
-                    icon2.setVisibility(View.VISIBLE);
-                    icon3.setVisibility(View.VISIBLE);
-                    icon4.setVisibility(View.VISIBLE);
-                    icon5.setVisibility(View.VISIBLE);
-                    icon6.setVisibility(View.VISIBLE);
-                    break;
-                case 8:
-                    icon1.setVisibility(View.VISIBLE);
-                    icon2.setVisibility(View.VISIBLE);
-                    icon3.setVisibility(View.VISIBLE);
-                    icon4.setVisibility(View.VISIBLE);
-                    icon5.setVisibility(View.VISIBLE);
-                    icon6.setVisibility(View.VISIBLE);
-                    icon7.setVisibility(View.VISIBLE);
-                    icon8.setVisibility(View.VISIBLE);
-                    break;
-            }
-        }
-
-        if (mPrefs.getAnimationsEnabled()) {
-            Animation anim = AnimationUtils.loadAnimation(context, R.anim.bounce);
-            playIconsAnimations(icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, anim, numOfIcons);
-        }
-    }
-
-    private static void playIconsAnimations(ImageView icon1, ImageView icon2,
-                                            ImageView icon3, ImageView icon4,
-                                            ImageView icon5, ImageView icon6,
-                                            ImageView icon7, ImageView icon8,
-                                            Animation anim, int numOfIcons) {
-
-        icon1.startAnimation(anim);
-        icon2.startAnimation(anim);
-        icon3.startAnimation(anim);
-        icon4.startAnimation(anim);
-
-        switch (numOfIcons) {
-            case 6:
-                icon5.startAnimation(anim);
-                icon6.startAnimation(anim);
-                break;
-            case 8:
-                icon5.startAnimation(anim);
-                icon6.startAnimation(anim);
-                icon7.startAnimation(anim);
-                icon8.startAnimation(anim);
-                break;
-        }
-    }
-
     public static void setupToolbarHeader(Context context, ImageView toolbarHeader) {
 
         toolbarHeader.setImageResource(R.drawable.heroimage);
@@ -1041,25 +904,6 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
     public boolean isPremium() {
         return mIsPremium;
     }
-
-//    public void addHomeCard(HomeCard object) {
-//        homeCards.add(object);
-//    }
-
-//    public void sendCards() {
-//        mainIntent = new Intent(this, MainFragment.class);
-//        Log.e("asdf home", homeCards.toString());
-//        mainIntent.putParcelableArrayListExtra("homeCards", homeCards);
-//        sHomeCards = homeCards;
-//        Log.e("asdf", "cards sent");
-//        Log.e("asdf", "" + sHomeCards.toString());
-//        Bundle bundle = new Bundle();
-//        bundle.putParcelable("homeCards", (Parcelable) homeCards);
-// set Fragmentclass Arguments
-//        MainFragment mF = new MainFragment();
-//        mF.setArguments(bundle);
-//        MainFragment(mainIntent);
-//    }
 
     public void enableDonations(boolean WITH_DONATIONS_SECTION) {
         this.WITH_DONATIONS_SECTION = WITH_DONATIONS_SECTION;

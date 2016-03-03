@@ -38,14 +38,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-
-import java.util.List;
-import java.util.Locale;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.fragments.ApplyFragment;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
+
+import java.util.List;
+import java.util.Locale;
 
 public class LaunchersAdapter extends RecyclerView.Adapter<LaunchersAdapter.LauncherHolder> implements View.OnClickListener {
 

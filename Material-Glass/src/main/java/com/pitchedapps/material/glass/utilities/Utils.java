@@ -58,17 +58,16 @@ import android.view.ViewTreeObserver;
 
 import com.github.florent37.glidepalette.GlidePalette;
 import com.mikepenz.materialize.util.UIUtils;
-
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.util.Locale;
-import java.util.concurrent.Callable;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.WallpapersAdapter;
 import com.pitchedapps.material.glass.utilities.color.ColorUtils;
 import com.pitchedapps.material.glass.utilities.color.ToolbarColorizer;
 import com.pitchedapps.material.glass.views.CustomCoordinatorLayout;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Locale;
+import java.util.concurrent.Callable;
 
 /**
  * With a little help from Aidan Follestad (afollestad)

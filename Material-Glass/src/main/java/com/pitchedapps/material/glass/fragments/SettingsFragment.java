@@ -39,9 +39,6 @@ import android.util.Log;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
-
-import java.io.File;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.dialogs.FolderChooserDialog;
@@ -51,6 +48,8 @@ import com.pitchedapps.material.glass.utilities.PermissionUtils;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
+
+import java.io.File;
 
 public class SettingsFragment extends PreferenceFragment implements PermissionUtils.OnPermissionResultListener {
 
@@ -98,20 +97,6 @@ public class SettingsFragment extends PreferenceFragment implements PermissionUt
 
         PreferenceCategory uiCategory = (PreferenceCategory) findPreference("uiPreferences");
         CheckBoxPreference wallHeaderCheck = (CheckBoxPreference) findPreference("wallHeader");
-        if (!ShowcaseActivity.WITH_USER_WALLPAPER_AS_TOOLBAR_HEADER) {
-            uiCategory.removePreference(wallHeaderCheck);
-        } else {
-            wallHeaderCheck.setChecked(mPrefs.getWallpaperAsToolbarHeaderEnabled());
-            wallHeaderCheck.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-                public boolean onPreferenceChange(Preference preference, Object newValue) {
-                    mPrefs.setWallpaperAsToolbarHeaderEnabled(newValue.toString().equals("true"));
-                    ShowcaseActivity.setupToolbarHeader(getActivity(), ShowcaseActivity.toolbarHeader);
-                    Utils.setupToolbarIconsAndTextsColors(getActivity(), ShowcaseActivity.appbar,
-                            ShowcaseActivity.toolbar, ShowcaseActivity.toolbarHeaderImage);
-                    return true;
-                }
-            });
-        }
 
         WSL = findPreference("wallsSaveLocation");
         WSL.setSummary(getResources().getString(R.string.pref_summary_wsl, location));

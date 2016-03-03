@@ -46,19 +46,17 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
 
 import com.mikepenz.materialize.util.UIUtils;
-
-import java.util.ArrayList;
-import java.util.Locale;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.fragments.base.FragmentStatePagerAdapter;
 import com.pitchedapps.material.glass.models.IconsCategory;
 import com.pitchedapps.material.glass.tasks.LoadIconsLists;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
-import com.pitchedapps.material.glass.utilities.Utils;
 import com.pitchedapps.material.glass.utilities.color.ToolbarColorizer;
 import com.pitchedapps.material.glass.views.CustomCoordinatorLayout;
+
+import java.util.ArrayList;
+import java.util.Locale;
 
 public class PreviewsFragment extends Fragment {
 

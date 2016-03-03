@@ -30,6 +30,10 @@ import android.os.AsyncTask;
 import com.google.android.apps.muzei.api.Artwork;
 import com.google.android.apps.muzei.api.RemoteMuzeiArtSource;
 import com.google.android.apps.muzei.api.UserCommand;
+import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.utilities.JSONParser;
+import com.pitchedapps.material.glass.utilities.Preferences;
+import com.pitchedapps.material.glass.utilities.Utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -37,11 +41,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Random;
-
-import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.utilities.JSONParser;
-import com.pitchedapps.material.glass.utilities.Preferences;
-import com.pitchedapps.material.glass.utilities.Utils;
 
 public class ArtSource extends RemoteMuzeiArtSource {
 

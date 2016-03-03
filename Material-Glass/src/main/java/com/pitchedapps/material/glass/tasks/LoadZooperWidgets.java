@@ -29,6 +29,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 
+import com.pitchedapps.material.glass.models.ZooperWidget;
+import com.pitchedapps.material.glass.utilities.Utils;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -39,9 +42,6 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
-
-import com.pitchedapps.material.glass.models.ZooperWidget;
-import com.pitchedapps.material.glass.utilities.Utils;
 
 public class LoadZooperWidgets extends AsyncTask<Void, String, Boolean> {
 

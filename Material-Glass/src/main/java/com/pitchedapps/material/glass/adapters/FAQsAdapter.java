@@ -32,10 +32,10 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.List;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.models.FAQsItem;
+
+import java.util.List;
 
 public class FAQsAdapter extends RecyclerView.Adapter<FAQsAdapter.FAQsHolder> {
 

@@ -33,10 +33,9 @@ import android.preference.PreferenceManager;
 import android.support.v4.content.ContextCompat;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.pitchedapps.material.glass.R;
 
 import java.util.Calendar;
-
-import com.pitchedapps.material.glass.R;
 
 public class ThemeUtils {
 

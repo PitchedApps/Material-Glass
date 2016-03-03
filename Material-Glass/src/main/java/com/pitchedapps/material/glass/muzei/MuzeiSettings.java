@@ -43,7 +43,6 @@ import android.widget.RadioButton;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.dialogs.ISDialogs;
 import com.pitchedapps.material.glass.utilities.Preferences;

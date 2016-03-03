@@ -27,8 +27,6 @@ import android.app.Application;
 import android.content.Context;
 import android.os.AsyncTask;
 
-import java.util.ArrayList;
-
 import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.fragments.WallpapersFragment;
 import com.pitchedapps.material.glass.models.RequestItem;
@@ -36,6 +34,8 @@ import com.pitchedapps.material.glass.models.WallpapersList;
 import com.pitchedapps.material.glass.tasks.LoadAppsToRequest;
 import com.pitchedapps.material.glass.tasks.LoadIconsLists;
 import com.pitchedapps.material.glass.tasks.LoadZooperWidgets;
+
+import java.util.ArrayList;
 
 public class ApplicationBase extends Application {
 

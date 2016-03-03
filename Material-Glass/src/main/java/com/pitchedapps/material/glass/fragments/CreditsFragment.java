@@ -37,7 +37,6 @@ import android.widget.LinearLayout;
 
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.dialogs.ISDialogs;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;

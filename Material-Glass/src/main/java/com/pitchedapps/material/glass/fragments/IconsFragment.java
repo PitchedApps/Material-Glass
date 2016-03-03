@@ -33,15 +33,13 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import com.mikepenz.materialize.util.UIUtils;
-import com.pitchedapps.material.glass.utilities.Utils;
-import com.pluscubed.recyclerfastscroll.RecyclerFastScroller;
-
-import java.util.ArrayList;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.IconsAdapter;
 import com.pitchedapps.material.glass.models.IconItem;
 import com.pitchedapps.material.glass.models.IconsCategory;
+import com.pluscubed.recyclerfastscroll.RecyclerFastScroller;
+
+import java.util.ArrayList;
 
 public class IconsFragment extends Fragment {
 

@@ -53,18 +53,6 @@ import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
-import com.pluscubed.recyclerfastscroll.RecyclerFastScroller;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.FileOutputStream;
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.activities.ViewerActivity;
@@ -77,6 +65,17 @@ import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
 import com.pitchedapps.material.glass.views.GridSpacingItemDecoration;
+import com.pluscubed.recyclerfastscroll.RecyclerFastScroller;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.FileOutputStream;
+import java.lang.ref.WeakReference;
+import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class WallpapersFragment extends Fragment {
 

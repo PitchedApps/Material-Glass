@@ -44,11 +44,6 @@ import android.widget.ImageView;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.models.ZooperWidget;
 import com.pitchedapps.material.glass.tasks.CopyFilesToStorage;
@@ -57,6 +52,10 @@ import com.pitchedapps.material.glass.utilities.PermissionUtils;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
 import com.pitchedapps.material.glass.views.CustomCoordinatorLayout;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class ZooperFragment extends Fragment implements PermissionUtils.OnPermissionResultListener {
 

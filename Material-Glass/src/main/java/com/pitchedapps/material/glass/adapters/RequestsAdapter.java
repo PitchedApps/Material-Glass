@@ -34,11 +34,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.dialogs.ISDialogs;
 import com.pitchedapps.material.glass.models.RequestItem;
+
+import java.util.ArrayList;
 
 public class RequestsAdapter extends RecyclerView.Adapter<RequestsAdapter.RequestsHolder> {
 

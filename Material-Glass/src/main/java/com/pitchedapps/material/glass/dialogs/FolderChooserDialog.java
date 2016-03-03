@@ -41,14 +41,13 @@ import android.view.View;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.pitchedapps.material.glass.R;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-
-import com.pitchedapps.material.glass.R;
 
 public class FolderChooserDialog extends DialogFragment implements MaterialDialog.ListCallback {
 

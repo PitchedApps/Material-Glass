@@ -29,7 +29,6 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.AppCompatButton;
@@ -59,7 +58,7 @@ public class MainFragment extends Fragment {
 
     private static final String MARKET_URL = "https://play.google.com/store/apps/details?id=";
     private static final String PITCHED_GLASS = "com.pitchedapps.icons.glass";
-    private String PlayStoreListing;
+    private static final String MATERIAL_GLASS = "com.pitchedapps.material.glass.free";
     private ViewGroup layout;
 
     private boolean cm, cyngn, rro; //to store theme engine installation status
@@ -88,13 +87,11 @@ public class MainFragment extends Fragment {
 
         setupIcons(getActivity());
 
-        PlayStoreListing = getActivity().getPackageName();
-
         AppCompatButton donatebtn = (AppCompatButton) layout.findViewById(R.id.rate_button);
         donatebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent rate = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + PlayStoreListing));
+                Intent rate = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + MATERIAL_GLASS));
                 startActivity(rate);
             }
         });
@@ -137,7 +134,7 @@ public class MainFragment extends Fragment {
 
         HomeListAdapter mAdapter = new HomeListAdapter(homeCards, context);
         mRecyclerView.setAdapter(mAdapter);
-//        mRecyclerView.setNestedScrollingEnabled(false);
+        mRecyclerView.setNestedScrollingEnabled(false);
 
         super.onViewCreated(view, savedInstanceState);
     }

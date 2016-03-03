@@ -33,6 +33,12 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.support.v4.content.ContextCompat;
 
+import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.fragments.RequestsFragment;
+import com.pitchedapps.material.glass.models.RequestItem;
+import com.pitchedapps.material.glass.utilities.ApplicationBase;
+import com.pitchedapps.material.glass.utilities.Utils;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -44,12 +50,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.fragments.RequestsFragment;
-import com.pitchedapps.material.glass.models.RequestItem;
-import com.pitchedapps.material.glass.utilities.ApplicationBase;
-import com.pitchedapps.material.glass.utilities.Utils;
 
 public class LoadAppsToRequest extends AsyncTask<Void, String, ArrayList<RequestItem>> {
 

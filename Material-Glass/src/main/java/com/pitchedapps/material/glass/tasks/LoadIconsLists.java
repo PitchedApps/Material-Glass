@@ -27,19 +27,19 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.AsyncTask;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.models.IconItem;
 import com.pitchedapps.material.glass.models.IconsCategory;
 import com.pitchedapps.material.glass.models.IconsLists;
 import com.pitchedapps.material.glass.utilities.Utils;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class LoadIconsLists extends AsyncTask<Void, String, Boolean> {
 

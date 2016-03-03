@@ -46,9 +46,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.lang.reflect.Field;
-
 import com.pitchedapps.material.glass.R;
+
+import java.lang.reflect.Field;
 
 public class ToolbarColorizer {
 

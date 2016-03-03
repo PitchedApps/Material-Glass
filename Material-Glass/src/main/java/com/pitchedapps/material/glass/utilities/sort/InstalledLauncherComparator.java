@@ -25,9 +25,9 @@ package com.pitchedapps.material.glass.utilities.sort;
 
 import android.content.Context;
 
-import java.util.Comparator;
-
 import com.pitchedapps.material.glass.fragments.ApplyFragment;
+
+import java.util.Comparator;
 
 /**
  * @author Aidan Follestad (afollestad)

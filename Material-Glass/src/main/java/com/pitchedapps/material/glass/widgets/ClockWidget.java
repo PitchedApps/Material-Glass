@@ -32,10 +32,10 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.widget.RemoteViews;
 
-import java.util.HashMap;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.utilities.Utils;
+
+import java.util.HashMap;
 
 public class ClockWidget extends AppWidgetProvider {
 

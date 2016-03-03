@@ -9,11 +9,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.models.HomeCard;
 import com.pitchedapps.material.glass.utilities.Utils;
+
+import java.util.ArrayList;
 
 /**
  * Created by 7681 on 2016-02-24.

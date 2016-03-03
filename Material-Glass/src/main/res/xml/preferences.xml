@@ -48,13 +48,6 @@
             android:summary="@string/pref_summary_anims"
             android:title="@string/pref_title_anims"/>
 
-        <CheckBoxPreference
-            android:defaultValue="true"
-            android:key="wallHeader"
-            android:persistent="true"
-            android:summary="@string/pref_summary_wall_header"
-            android:title="@string/pref_title_wall_header"/>
-
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/pref_header_storage">

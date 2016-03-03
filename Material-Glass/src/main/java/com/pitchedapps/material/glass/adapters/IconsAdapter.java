@@ -40,15 +40,14 @@ import android.widget.ImageView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.bumptech.glide.Glide;
-
-import java.util.ArrayList;
-import java.util.Locale;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.models.IconItem;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.Utils;
+
+import java.util.ArrayList;
+import java.util.Locale;
 
 public class IconsAdapter extends RecyclerView.Adapter<IconsAdapter.IconsHolder> {
 

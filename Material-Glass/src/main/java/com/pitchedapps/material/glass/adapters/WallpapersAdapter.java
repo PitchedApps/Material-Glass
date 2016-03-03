@@ -36,13 +36,12 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-
-import java.util.ArrayList;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.models.WallpaperItem;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.Utils;
+
+import java.util.ArrayList;
 
 public class WallpapersAdapter extends RecyclerView.Adapter<WallpapersAdapter.WallsHolder> {
 

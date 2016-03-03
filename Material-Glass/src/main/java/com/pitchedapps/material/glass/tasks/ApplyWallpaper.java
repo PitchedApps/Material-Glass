@@ -39,14 +39,13 @@ import android.widget.LinearLayout;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.github.clans.fab.FloatingActionMenu;
-
-import java.io.IOException;
-import java.lang.ref.WeakReference;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
+
+import java.io.IOException;
+import java.lang.ref.WeakReference;
 
 public class ApplyWallpaper extends AsyncTask<Void, String, Boolean> {
 

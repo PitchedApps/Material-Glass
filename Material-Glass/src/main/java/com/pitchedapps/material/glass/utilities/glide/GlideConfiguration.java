@@ -31,7 +31,6 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.GlideBuilder;
 import com.bumptech.glide.load.DecodeFormat;
 import com.bumptech.glide.module.GlideModule;
-
 import com.pitchedapps.material.glass.R;
 
 public class GlideConfiguration implements GlideModule {

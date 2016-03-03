@@ -34,17 +34,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.pluscubed.recyclerfastscroll.RecyclerFastScroller;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.FAQsAdapter;
 import com.pitchedapps.material.glass.models.FAQsItem;
 import com.pitchedapps.material.glass.utilities.Utils;
 import com.pitchedapps.material.glass.views.DividerItemDecoration;
 import com.pitchedapps.material.glass.views.GridSpacingItemDecoration;
+import com.pluscubed.recyclerfastscroll.RecyclerFastScroller;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class FAQsFragment extends Fragment {
 

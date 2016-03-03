@@ -66,11 +66,6 @@ import com.bumptech.glide.request.target.Target;
 import com.github.clans.fab.FloatingActionMenu;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.dialogs.ISDialogs;
 import com.pitchedapps.material.glass.tasks.ApplyWallpaper;
@@ -82,6 +77,10 @@ import com.pitchedapps.material.glass.utilities.Utils;
 import com.pitchedapps.material.glass.utilities.color.ColorUtils;
 import com.pitchedapps.material.glass.utilities.color.ToolbarColorizer;
 import com.pitchedapps.material.glass.views.TouchImageView;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
 public class ViewerActivity extends AppCompatActivity {
 

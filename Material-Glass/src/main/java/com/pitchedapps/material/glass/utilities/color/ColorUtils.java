@@ -26,10 +26,10 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.graphics.Palette;
 
+import com.pitchedapps.material.glass.utilities.Utils;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
-
-import com.pitchedapps.material.glass.utilities.Utils;
 
 /**
  * Utility methods for working with colors.

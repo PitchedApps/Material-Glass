@@ -37,6 +37,10 @@ import android.os.Build;
 import android.os.Environment;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.models.RequestItem;
+import com.pitchedapps.material.glass.utilities.Preferences;
+import com.pitchedapps.material.glass.utilities.Utils;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -56,11 +60,6 @@ import java.util.Locale;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipException;
 import java.util.zip.ZipOutputStream;
-
-import com.pitchedapps.material.glass.R;
-import com.pitchedapps.material.glass.models.RequestItem;
-import com.pitchedapps.material.glass.utilities.Preferences;
-import com.pitchedapps.material.glass.utilities.Utils;
 
 public class ZipFilesToRequest extends AsyncTask<Void, String, Boolean> {
 

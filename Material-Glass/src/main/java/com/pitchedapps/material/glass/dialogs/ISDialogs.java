@@ -42,10 +42,6 @@ import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
-
-import java.util.ArrayList;
-import java.util.concurrent.Callable;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
 import com.pitchedapps.material.glass.adapters.IconsAdapter;
@@ -55,6 +51,9 @@ import com.pitchedapps.material.glass.tasks.LoadIconsLists;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
+
+import java.util.ArrayList;
+import java.util.concurrent.Callable;
 
 /**
  * This Class was created by Patrick Jung

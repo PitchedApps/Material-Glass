@@ -45,13 +45,6 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.pluscubed.recyclerfastscroll.RecyclerFastScroller;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.RequestsAdapter;
 import com.pitchedapps.material.glass.dialogs.ISDialogs;
@@ -61,6 +54,12 @@ import com.pitchedapps.material.glass.utilities.PermissionUtils;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.Utils;
 import com.pitchedapps.material.glass.views.GridSpacingItemDecoration;
+import com.pluscubed.recyclerfastscroll.RecyclerFastScroller;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class RequestsFragment extends Fragment implements PermissionUtils.OnPermissionResultListener {
 

@@ -38,15 +38,14 @@ import android.widget.LinearLayout;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.github.clans.fab.FloatingActionMenu;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.lang.ref.WeakReference;
-
 import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.lang.ref.WeakReference;
 
 public class WallpaperToCrop extends AsyncTask<Void, String, Boolean> {
 

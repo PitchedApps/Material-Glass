@@ -1,8 +1,6 @@
 package com.pitchedapps.material.glass.models;
 
 import android.graphics.drawable.Drawable;
-import android.os.Parcel;
-import android.os.Parcelable;
 
 /**
  * Created by 7681 on 2016-02-24.
