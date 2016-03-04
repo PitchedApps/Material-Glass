@@ -103,12 +103,10 @@ public class ArtSource extends RemoteMuzeiArtSource {
 
     @Override
     protected void onTryUpdate(int reason) throws RetryException {
-        if (mPrefs.areFeaturesEnabled()) {
-            try {
-                new DownloadJSONAndSetWall().execute();
-            } catch (Exception e) {
-                throw new RetryException();
-            }
+        try {
+            new DownloadJSONAndSetWall().execute();
+        } catch (Exception e) {
+            throw new RetryException();
         }
 
     }

@@ -61,25 +61,15 @@
                 app:layout_collapseMode="parallax"
                 tools:ignore="ContentDescription"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/materialize_statusbar"
-                android:fitsSystemWindows="true"
-                app:layout_collapseMode="parallax">
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="@dimen/materialize_statusbar"-->
+                <!--android:fitsSystemWindows="true"-->
+                <!--app:layout_collapseMode="parallax">-->
+            <!--</LinearLayout>-->
 
-                <ImageView
-                    android:id="@+id/zooperWidget"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/fab_size_mini"
-                    android:fitsSystemWindows="true"
-                    android:scaleType="fitCenter"
-                    android:visibility="invisible"
-                    app:layout_collapseMode="parallax"
-                    tools:ignore="ContentDescription"/>
-
-            </LinearLayout>
+            <!--TODO check this-->
 
             <include
                 layout="@layout/toolbar_icons_grid"

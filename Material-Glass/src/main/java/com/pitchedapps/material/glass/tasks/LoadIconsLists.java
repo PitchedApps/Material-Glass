@@ -31,7 +31,6 @@ import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.models.IconItem;
 import com.pitchedapps.material.glass.models.IconsCategory;
-import com.pitchedapps.material.glass.models.IconsLists;
 import com.pitchedapps.material.glass.utilities.Utils;
 
 import java.util.ArrayList;

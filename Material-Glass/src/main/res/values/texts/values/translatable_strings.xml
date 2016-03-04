@@ -254,7 +254,6 @@
     <string name="zooper_install_bitmaps_content">This will fix issues with widgets bitmaps.</string>
 
     <string name="assets_installed">%1$s already installed</string>
-    <string name="copying_assets">Copying files to ZooperWidget/%1$s</string>
 
     <string name="icon_pack_in_numbers">Icon Pack in numbers</string>
     <string name="themed_icons">Over %1$s themed icons.</string>

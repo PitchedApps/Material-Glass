@@ -29,8 +29,6 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.pitchedapps.material.glass.utilities.Utils;
-
 /**
  * @author Aidan Follestad (afollestad)
  */

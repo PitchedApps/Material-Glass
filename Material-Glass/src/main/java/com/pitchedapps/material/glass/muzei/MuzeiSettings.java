@@ -106,22 +106,17 @@ public class MuzeiSettings extends AppCompatActivity implements View.OnClickList
         minute = (RadioButton) findViewById(R.id.minute);
         hour = (RadioButton) findViewById(R.id.hour);
 
-        if (mPrefs.areFeaturesEnabled()) {
+        minute.setOnClickListener(this);
+        hour.setOnClickListener(this);
 
-            minute.setOnClickListener(this);
-            hour.setOnClickListener(this);
-
-            if (mPrefs.isRotateMinute()) {
-                hour.setChecked(false);
-                minute.setChecked(true);
-                numberpicker.setValue(Utils.convertMillisToMinutes(mPrefs.getRotateTime()));
-            } else {
-                hour.setChecked(true);
-                minute.setChecked(false);
-                numberpicker.setValue(Utils.convertMillisToMinutes(mPrefs.getRotateTime()) / 60);
-            }
+        if (mPrefs.isRotateMinute()) {
+            hour.setChecked(false);
+            minute.setChecked(true);
+            numberpicker.setValue(Utils.convertMillisToMinutes(mPrefs.getRotateTime()));
         } else {
-            showNotLicensedDialog();
+            hour.setChecked(true);
+            minute.setChecked(false);
+            numberpicker.setValue(Utils.convertMillisToMinutes(mPrefs.getRotateTime()) / 60);
         }
     }
 
@@ -140,28 +135,24 @@ public class MuzeiSettings extends AppCompatActivity implements View.OnClickList
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int i = item.getItemId();
-        if (mPrefs.areFeaturesEnabled()) {
-            if (i == R.id.save) {
-                int rotate_time;
-                if (minute.isChecked()) {
-                    rotate_time = Utils.convertMinutesToMillis(numberpicker.getValue());
-                    mPrefs.setRotateMinute(true);
-                    mPrefs.setRotateTime(rotate_time);
-                } else {
-                    rotate_time = Utils.convertMinutesToMillis(numberpicker.getValue()) * 60;
-                    mPrefs.setRotateMinute(false);
-                    mPrefs.setRotateTime(rotate_time);
-                }
-                Intent intent = new Intent(MuzeiSettings.this, ArtSource.class);
-                intent.putExtra("service", "restarted");
-                startService(intent);
-                Utils.showSimpleSnackbar(context, customCoordinatorLayout,
-                        Utils.getStringFromResources(this, R.string.settings_saved), 1);
-                finish();
-                return true;
+        if (i == R.id.save) {
+            int rotate_time;
+            if (minute.isChecked()) {
+                rotate_time = Utils.convertMinutesToMillis(numberpicker.getValue());
+                mPrefs.setRotateMinute(true);
+                mPrefs.setRotateTime(rotate_time);
+            } else {
+                rotate_time = Utils.convertMinutesToMillis(numberpicker.getValue()) * 60;
+                mPrefs.setRotateMinute(false);
+                mPrefs.setRotateTime(rotate_time);
             }
-        } else {
-            showNotLicensedDialog();
+            Intent intent = new Intent(MuzeiSettings.this, ArtSource.class);
+            intent.putExtra("service", "restarted");
+            startService(intent);
+            Utils.showSimpleSnackbar(context, customCoordinatorLayout,
+                    Utils.getStringFromResources(this, R.string.settings_saved), 1);
+            finish();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -189,20 +180,16 @@ public class MuzeiSettings extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         int i = v.getId();
-        if (mPrefs.areFeaturesEnabled()) {
-            if (i == R.id.minute) {
-                if (minute.isChecked()) {
-                    hour.setChecked(false);
-                    minute.setChecked(true);
-                }
-            } else if (i == R.id.hour) {
-                if (hour.isChecked()) {
-                    minute.setChecked(false);
-                    hour.setChecked(true);
-                }
+        if (i == R.id.minute) {
+            if (minute.isChecked()) {
+                hour.setChecked(false);
+                minute.setChecked(true);
             }
-        } else {
-            showNotLicensedDialog();
+        } else if (i == R.id.hour) {
+            if (hour.isChecked()) {
+                minute.setChecked(false);
+                hour.setChecked(true);
+            }
         }
     }
 
@@ -221,30 +208,4 @@ public class MuzeiSettings extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    private void showNotLicensedDialog() {
-        ISDialogs.showLicenseFailDialog(this,
-                new MaterialDialog.SingleButtonCallback() {
-                    @Override
-                    public void onClick(@NonNull MaterialDialog materialDialog, @NonNull DialogAction dialogAction) {
-                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_URL + getPackageName()));
-                        startActivity(browserIntent);
-                    }
-                }, new MaterialDialog.SingleButtonCallback() {
-                    @Override
-                    public void onClick(@NonNull MaterialDialog materialDialog, @NonNull DialogAction dialogAction) {
-                        finish();
-                    }
-                }, new MaterialDialog.OnCancelListener() {
-                    @Override
-                    public void onCancel(DialogInterface dialog) {
-                        finish();
-                    }
-                }, new MaterialDialog.OnDismissListener() {
-
-                    @Override
-                    public void onDismiss(DialogInterface dialog) {
-                        finish();
-                    }
-                });
-    }
 }

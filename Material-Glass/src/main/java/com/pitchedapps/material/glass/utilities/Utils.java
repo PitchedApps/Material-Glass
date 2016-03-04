@@ -176,7 +176,7 @@ public class Utils {
     }
 
     public static void showLog(Context context, String s) {
-        String tag = "IconShowcase + " + context.getResources().getString(R.string.app_name);
+        String tag = "MGX + " + context.getResources().getString(R.string.app_name);
         Log.d(tag, s);
     }
 
@@ -186,7 +186,7 @@ public class Utils {
     }
 
     public static void showLog(String s) {
-        Log.d("IconShowcase ", s);
+        Log.d("MGX ", s);
     }
 
     public static String getStringFromResources(Context context, int id) {

@@ -33,7 +33,6 @@ import com.pitchedapps.material.glass.models.RequestItem;
 import com.pitchedapps.material.glass.models.WallpapersList;
 import com.pitchedapps.material.glass.tasks.LoadAppsToRequest;
 import com.pitchedapps.material.glass.tasks.LoadIconsLists;
-import com.pitchedapps.material.glass.tasks.LoadZooperWidgets;
 
 import java.util.ArrayList;
 
@@ -63,7 +62,6 @@ public class ApplicationBase extends Application {
             public void run() {
                 new LoadIconsLists(context).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
                 loadWallsList();
-                new LoadZooperWidgets(context).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
                 loadAppsForRequest();
             }
         }).start();

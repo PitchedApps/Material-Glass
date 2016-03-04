@@ -68,14 +68,6 @@ public class Preferences {
         return getSharedPreferences().getBoolean(FIRST_RUN, true);
     }
 
-    public void setFeaturesEnabled(boolean enable) {
-        getSharedPreferences().edit().putBoolean(FEATURES_ENABLED, enable).apply();
-    }
-
-    public boolean areFeaturesEnabled() {
-        return getSharedPreferences().getBoolean(FEATURES_ENABLED, true);
-    }
-
     public void setRotateTime(int time) {
         getSharedPreferences().edit().putInt(ROTATE_TIME, time).apply();
     }

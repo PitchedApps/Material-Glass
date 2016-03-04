@@ -18,6 +18,7 @@
     </string-array>
 
     <string-array name="fullchangelog">
+        <item>@array/header</item>
         <item>@array/v73</item>
         <item>@array/v72</item>
         <item>@array/v71</item>
@@ -117,9 +118,14 @@
         <item></item>
     </string-array>
 	
+    <string-array name="header">
+        <item>***New: Xposed Add-On in alpha testing***</item>
+        <item>Join the beta community for early access</item>
+        <item>Link is in this app</item>
+    </string-array>
+	
     <string-array name="v73">
         <item>v3.0.0</item>
-        <item>***New: Xposed Add-On in alpha testing***</item>
         <item>New: themed DU about</item>
         <item>New: themed DU updater</item>
         <item>New: updated Launcher3 for DU support</item>
@@ -129,13 +135,14 @@
         <item>Settings: darken status bar to match action bar for layers</item>
         <item>GoogleDeskClock: thinner switches for layers</item>
         <item>FrameworkRes: made holo blue bright a dark blue rather than black</item>
-        <item>New: themed Xposed (needs addon)</item>
         <item>Settings: added PureNexus Layers colors</item>
         <item>FrameworkRes: made default colorBackground slightly darker</item>
+        <item>New: starting to create xposed module addon</item>
         <item>Theme: added hacky modification for xposed</item>
-        <item></item>
-        <item></item>
-        <item></item>
+		<item>New: themed Xposed (needs xposed addon)</item>
+        <item>New: themed Adaway for layers (needs xposed addon)</item>
+        <item>New: fixed Settings white button (needs xposed addon)</item>
+        <item>New: themed instagram (needs xposed addon)</item>
     </string-array>
 	
     <string-array name="v72">

@@ -28,12 +28,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.preference.PreferenceManager;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.DisplayMetrics;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -43,17 +38,12 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
 import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.adapters.ChangelogAdapter;
-import com.pitchedapps.material.glass.adapters.IconsAdapter;
 import com.pitchedapps.material.glass.fragments.WallpapersFragment;
-import com.pitchedapps.material.glass.models.IconItem;
-import com.pitchedapps.material.glass.tasks.LoadIconsLists;
 import com.pitchedapps.material.glass.utilities.Preferences;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
-
-import java.util.ArrayList;
-import java.util.concurrent.Callable;
 
 /**
  * This Class was created by Patrick Jung
@@ -69,56 +59,21 @@ public final class ISDialogs {
 
     public static void showChangelogDialog(Context context) {
         if (context.getResources().getBoolean(R.bool.changelog_ripples)) {
-            new MaterialDialog.Builder(context)
+            ShowcaseActivity.changelog = new MaterialDialog.Builder(context)
                     .title(R.string.changelog_dialog_title)
                     .adapter(new ChangelogAdapter(context, R.array.fullchangelog), null)
                     .positiveText(R.string.great)
-                    .show();
+                    .build();
+            ShowcaseActivity.changelog.show();
         } else {
             new MaterialDialog.Builder(context)
                     .title(R.string.changelog_dialog_title)
                     .adapter(new ChangelogAdapter(context, R.array.fullchangelog), null)
                     .positiveText(R.string.great)
                     .listSelector(android.R.color.transparent)
-                    .show();
+                    .build();
+            ShowcaseActivity.changelog.show();
         }
-    }
-
-    public static void showLicenseSuccessDialog(Context context, MaterialDialog.SingleButtonCallback singleButtonCallback) {
-        String message = context.getResources().getString(R.string.license_success,
-                context.getResources().getString(R.string.app_name));
-        new MaterialDialog.Builder(context)
-                .title(R.string.license_success_title)
-                .content(message)
-                .positiveText(R.string.close)
-                .onPositive(singleButtonCallback)
-                .show();
-    }
-
-    public static void showLicenseFailDialog(Context context,
-                                             MaterialDialog.SingleButtonCallback onPositive,
-                                             MaterialDialog.SingleButtonCallback onNegative,
-                                             MaterialDialog.OnCancelListener onCancel,
-                                             MaterialDialog.OnDismissListener onDismiss) {
-
-        String message = context.getResources().getString(R.string.license_failed,
-                context.getResources().getString(R.string.app_name));
-
-        MaterialDialog licenseFailDialog = new MaterialDialog.Builder(context)
-                .title(R.string.license_failed_title)
-                .content(message)
-                .positiveText(R.string.download)
-                .negativeText(R.string.exit)
-                .onPositive(onPositive)
-                .onNegative(onNegative)
-                .cancelable(false)
-                .autoDismiss(false)
-                .build();
-
-        licenseFailDialog.setOnCancelListener(onCancel);
-        licenseFailDialog.setOnDismissListener(onDismiss);
-
-        licenseFailDialog.show();
     }
 
     /*

@@ -164,10 +164,10 @@ public class MainFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-//        if (ShowcaseActivity.currentItem != 1) { //TODO figure out why I need this
+        if (ShowcaseActivity.currentItem != 1) { //TODO figure out why I need this
             ShowcaseActivity.fab.setVisibility(View.GONE);
             ShowcaseActivity.fab.hide();
-//        }
+        }
     }
 
     private void showFAB() {

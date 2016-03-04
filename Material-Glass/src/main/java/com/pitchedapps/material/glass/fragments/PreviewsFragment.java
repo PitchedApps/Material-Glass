@@ -177,8 +177,8 @@ public class PreviewsFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         TextView title = (TextView) getActivity().findViewById(R.id.title);
-        title.setVisibility(View.GONE);
         if (title != null) title.setVisibility(View.GONE);
+        if (mTabs != null) mTabs.setVisibility(View.GONE);
     }
 
     @Override
