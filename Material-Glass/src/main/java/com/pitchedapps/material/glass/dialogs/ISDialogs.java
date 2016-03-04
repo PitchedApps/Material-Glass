@@ -66,7 +66,7 @@ public final class ISDialogs {
                     .build();
             ShowcaseActivity.changelog.show();
         } else {
-            new MaterialDialog.Builder(context)
+            ShowcaseActivity.changelog = new MaterialDialog.Builder(context)
                     .title(R.string.changelog_dialog_title)
                     .adapter(new ChangelogAdapter(context, R.array.fullchangelog), null)
                     .positiveText(R.string.great)

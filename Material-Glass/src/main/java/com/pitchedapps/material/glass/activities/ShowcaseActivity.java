@@ -31,7 +31,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -50,7 +49,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.materialdrawer.AccountHeader;
@@ -67,6 +65,7 @@ import com.pitchedapps.material.glass.R;
 import com.pitchedapps.material.glass.adapters.RequestsAdapter;
 import com.pitchedapps.material.glass.dialogs.FolderChooserDialog;
 import com.pitchedapps.material.glass.dialogs.ISDialogs;
+import com.pitchedapps.material.glass.fragments.DonationsFragment;
 import com.pitchedapps.material.glass.fragments.RequestsFragment;
 import com.pitchedapps.material.glass.fragments.SettingsFragment;
 import com.pitchedapps.material.glass.fragments.WallpapersFragment;
@@ -78,7 +77,6 @@ import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
 import com.pitchedapps.material.glass.views.CustomCoordinatorLayout;
 
-import org.sufficientlysecure.donations.DonationsFragment;
 import org.sufficientlysecure.donations.google.util.IabHelper;
 import org.sufficientlysecure.donations.google.util.IabResult;
 import org.sufficientlysecure.donations.google.util.Inventory;
@@ -199,12 +197,13 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
             GOOGLE_CATALOG_PRO = getResources().getStringArray(R.array.consumable_google_donation_items);
             mGoogleCatalog = GOOGLE_CATALOG_FREE;
             GOOGLE_CATALOG_VALUES = getResources().getStringArray(R.array.google_donations_catalog);
-            if (GOOGLE_CATALOG_FREE == null || GOOGLE_CATALOG_PRO == null || mGoogleCatalog == null) {
-                DONATIONS_GOOGLE = false;
-            } else
             //TODO check if 50 is a good reference value
-            if (!(GOOGLE_PUBKEY.length() > 50) || !(GOOGLE_CATALOG_VALUES.length > 0) || !(GOOGLE_CATALOG_FREE.length == GOOGLE_CATALOG_PRO.length) || !(GOOGLE_CATALOG_FREE.length == GOOGLE_CATALOG_VALUES.length)) {
-                DONATIONS_GOOGLE = false; //google donations setup is incorrect
+            try {
+                if (!(GOOGLE_PUBKEY.length() > 50) || !(GOOGLE_CATALOG_VALUES.length > 0) || !(GOOGLE_CATALOG_FREE.length == GOOGLE_CATALOG_PRO.length) || !(GOOGLE_CATALOG_FREE.length == GOOGLE_CATALOG_VALUES.length)) {
+                    DONATIONS_GOOGLE = false; //google donations setup is incorrect
+                }
+            } catch (Exception e) {
+                DONATIONS_GOOGLE = false;
             }
         }
 
@@ -241,8 +240,6 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
         }
 
         setContentView(R.layout.showcase_activity);
-
-        onFirstRun();
 
         coordinatorLayout = (CustomCoordinatorLayout) findViewById(R.id.mainCoordinatorLayout);
         appbar = (AppBarLayout) findViewById(R.id.appbar);
@@ -311,6 +308,8 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
         }
 
         setupDrawer(toolbar, savedInstanceState);
+
+        onFirstRun();
 
         if (savedInstanceState == null) {
             if (iconsPicker && iconsPickerEnabled) {
