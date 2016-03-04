@@ -85,18 +85,18 @@ public class SettingsFragment extends PreferenceFragment implements PermissionUt
         final String packageName = Utils.getAppPackageName(getActivity().getApplicationContext());
         String activityName = getResources().getString(R.string.main_activity_name);
         final String componentNameString = packageName + "." + activityName;
-
+        Utils.log("comp " + componentNameString);
         try {
             className = Class.forName(componentNameString);
         } catch (ClassNotFoundException e) {
             //Do nothing
+            Utils.log("class not found");
         }
 
         final PreferenceScreen preferences = (PreferenceScreen) findPreference("preferences");
         final PreferenceCategory launcherIcon = (PreferenceCategory) findPreference("launcherIconPreference");
 
         PreferenceCategory uiCategory = (PreferenceCategory) findPreference("uiPreferences");
-        CheckBoxPreference wallHeaderCheck = (CheckBoxPreference) findPreference("wallHeader");
 
         WSL = findPreference("wallsSaveLocation");
         WSL.setSummary(getResources().getString(R.string.pref_summary_wsl, location));

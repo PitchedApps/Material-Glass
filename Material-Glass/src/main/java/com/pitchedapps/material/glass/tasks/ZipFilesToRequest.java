@@ -341,9 +341,9 @@ public class ZipFilesToRequest extends AsyncTask<Void, String, Boolean> {
             }
             zipOutputStream.close();
         } catch (FileNotFoundException e) {
-            Utils.showLog("File not found" + e.getMessage());
+            Utils.showLog("File not found: " + e.getMessage());
         } catch (IOException e) {
-            Utils.showLog("IOException" + e.getMessage());
+            Utils.showLog("IOException: " + e.getMessage());
         }
     }
 

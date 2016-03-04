@@ -185,4 +185,7 @@
         <item>Amazon App Store</item>
     </string-array>
 
+    <string name="clearcache_dialog_title">@string/pref_title_cache</string>
+    <string name="md_error_label">@string/error</string>
+
 </resources>

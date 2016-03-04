@@ -135,7 +135,9 @@ public class PreviewsFragment extends Fragment {
         }
 
         TextView title = (TextView) getActivity().findViewById(R.id.title);
-        title.setVisibility(View.VISIBLE);
+        if (title != null) {
+            title.setVisibility(View.VISIBLE);
+        }
 
         // Lock CoordinatorLayout so the toolbar can't be scrolled away
         coordinatorLayout.setScrollAllowed(false);
@@ -176,7 +178,7 @@ public class PreviewsFragment extends Fragment {
         super.onDestroyView();
         TextView title = (TextView) getActivity().findViewById(R.id.title);
         title.setVisibility(View.GONE);
-        if (mTabs != null) mTabs.setVisibility(View.GONE);
+        if (title != null) title.setVisibility(View.GONE);
     }
 
     @Override

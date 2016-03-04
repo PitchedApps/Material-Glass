@@ -59,7 +59,6 @@ public class SquaredImageView extends ImageView {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         //noinspection SuspiciousNameCombination
         setMeasuredDimension(widthMeasureSpec, widthMeasureSpec); //TODO check, two values should be the same
-        Utils.log(widthMeasureSpec + " by " + heightMeasureSpec);
 
     }
 }

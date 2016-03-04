@@ -482,8 +482,12 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
         } else if (i == R.id.columns) {
             ISDialogs.showColumnsSelectorDialog(context);
         } else if (i == R.id.select_all) {
-            RequestsFragment.requestsAdapter.selectOrDeselectAll(selectAll);
-            selectAll = !selectAll;
+            if (RequestsFragment.requestsAdapter != null && RequestsFragment.requestsAdapter.appsList.size() > 0) {
+                RequestsFragment.requestsAdapter.selectOrDeselectAll(selectAll);
+                selectAll = !selectAll;
+            } else {
+                ISDialogs.showLoadingRequestAppsDialog(this);
+            }
         }
         return true;
     }

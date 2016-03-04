@@ -74,6 +74,7 @@ public class WallpapersAdapter extends RecyclerView.Adapter<WallpapersAdapter.Wa
 
     @Override
     public WallsHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
         LayoutInflater inflater = LayoutInflater.from(context);
         return new WallsHolder(inflater.inflate(R.layout.item_wallpaper, parent, false));
     }

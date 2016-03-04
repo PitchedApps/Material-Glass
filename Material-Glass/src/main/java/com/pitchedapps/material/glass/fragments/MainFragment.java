@@ -164,10 +164,10 @@ public class MainFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        if (ShowcaseActivity.currentItem != 1) { //TODO figure out why I need this
+//        if (ShowcaseActivity.currentItem != 1) { //TODO figure out why I need this
             ShowcaseActivity.fab.setVisibility(View.GONE);
             ShowcaseActivity.fab.hide();
-        }
+//        }
     }
 
     private void showFAB() {
@@ -221,11 +221,9 @@ public class MainFragment extends Fragment {
     private void modifyFABIcon() {
         cm = Utils.isAppInstalled(context, "org.cyanogenmod.theme.chooser");
         cyngn = Utils.isAppInstalled(context, "com.cyngn.theme.chooser");
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            rro = Utils.isAppInstalled(context, "com.lovejoy777.rroandlayersmanager");
-        } else {
-            rro = false; //don't enable rro before lollipop, it didn't exist before that
-        }
+        //don't enable rro before lollipop, it didn't exist before that
+        rro = Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP &&
+                Utils.isAppInstalled(context, "com.lovejoy777.rroandlayersmanager");
 
         if (cm || cyngn) {
             ShowcaseActivity.fab.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_apply_cm));

@@ -51,4 +51,12 @@
         <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
     </style>
 
+    <style name="AppTheme.Base.DarkLaunchScreen">
+        <item name="android:windowBackground">@drawable/splash_screen_dark</item>
+        <item name="colorPrimaryDark">@color/splash_dark_statusbar</item>
+        <item name="colorAccent">@color/splash_dark_statusbar</item>
+        <item name="android:statusBarColor">@color/splash_dark_statusbar</item>
+        <item name="android:navigationBarColor">@color/splash_dark_statusbar</item>
+    </style>
+
 </resources>

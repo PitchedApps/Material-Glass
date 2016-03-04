@@ -49,7 +49,7 @@
     <!-- Specify splashscreen color
     Can be LightLaunchScreen or DarkLaunchScreen
     -->
-    <style name="AppTheme.LaunchScreen" parent="@style/AppTheme.Base.ClearLaunchScreen"/>
+    <style name="AppTheme.LaunchScreen" parent="@style/AppTheme.Base.DarkLaunchScreen"/>
 
     <!-- Default theme
     1. Light

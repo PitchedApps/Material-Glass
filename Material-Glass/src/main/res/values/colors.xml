@@ -55,11 +55,10 @@
     <color name="tabs_indicator_dark">#ffffff</color>
     <color name="tabs_normal_text_dark">#80ffffff</color>
     <color name="tabs_selected_text_dark">#ffffff</color>
-    <color name="splash_dark_background">@color/dark_bg</color>
-    <color name="splash_dark_statusbar">#000000</color>
+    <color name="splash_dark_background">#111</color>
+    <color name="splash_dark_statusbar">#111</color>
 
     <!--CLEAR THEME COLORS-->
-    <color name="splash_clear_background">#111</color>
     <color name="card_clear_background">#30000000</color>
     <color name="clear_bg">#70000000</color>
     <color name="home_clear_background">#aa000000</color>

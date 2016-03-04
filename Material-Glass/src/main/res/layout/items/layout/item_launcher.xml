@@ -46,7 +46,7 @@
             android:layout_height="match_parent"
             android:background="?attr/colorCardBackground"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/ic_na_launcher"
             tools:ignore="ContentDescription, UnusedAttribute"/>
 
         <TextView

@@ -51,7 +51,7 @@
             android:maxHeight="64dp"
             android:maxWidth="64dp"
             android:padding="@dimen/lists_padding"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/ic_na_launcher"
             tools:ignore="ContentDescription"/>
 
         <LinearLayout

@@ -184,8 +184,6 @@ public class WallpapersFragment extends Fragment {
 
                     mRecyclerView.setAdapter(mAdapter);
 
-                    fastScroller.attachRecyclerView(mRecyclerView);
-
                     if (fastScroller.getVisibility() != View.VISIBLE) {
                         fastScroller.setVisibility(View.VISIBLE);
                     }
@@ -286,6 +284,8 @@ public class WallpapersFragment extends Fragment {
             mRecyclerView.setVisibility(View.VISIBLE);
         }
 
+        fastScroller.attachRecyclerView(mRecyclerView);
+
         if (fastScroller.getVisibility() != View.VISIBLE) {
             fastScroller.setVisibility(View.VISIBLE);
         }
@@ -321,6 +321,7 @@ public class WallpapersFragment extends Fragment {
 
     public static void openViewer(Context context, WallpapersAdapter.WallsHolder wallsHolder,
                                   int index, final ArrayList<WallpaperItem> list) {
+        Utils.log("wallpaper open viewer");
 
         final Intent intent = new Intent(context, ViewerActivity.class);
 

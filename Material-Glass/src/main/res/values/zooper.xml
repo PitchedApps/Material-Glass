@@ -33,6 +33,6 @@
     <integer name="zooper_pack_allowsave">1</integer>
 
     <!-- This is the icon that will be shown in Zooper -->
-    <drawable name="zooper_pack_icon">@drawable/ic_launcher</drawable>
+    <drawable name="zooper_pack_icon">@drawable/ic_na_launcher</drawable>
 
 </resources>

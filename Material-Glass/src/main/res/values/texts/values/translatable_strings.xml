@@ -96,7 +96,7 @@
 
     <!-- License Check Dialog -->
     <string name="license_failed_title">License Check Failed</string>
-    <string name="license_success_title">License Check Success</string>
+    <string name="license_success_title">License Check Successful</string>
     <string name="exit">Exit</string>
 
     <!-- Some texts for Dialogs and Cards -->
@@ -164,7 +164,6 @@
 
     <string name="pref_summary_launcher_icon">When checked, launcher icon will be hidden.</string>
 
-    <string name="clearcache_dialog_title">@string/pref_title_cache</string>
     <string name="clearcache_dialog_content">Are you sure you want to delete app data, cache and
         settings? Applied icons won\'t be affected.
     </string>
@@ -263,7 +262,6 @@
     <string name="included_widgets">Over %1$s included widgets for Zooper.</string>
     <string name="icons">Icons</string>
 
-    <string name="md_error_label">@string/error</string>
     <string name="md_storage_perm_error">You have not granted the \"Read External Storage\" permission to %1$s, which is needed to complete this action.</string>
 
     <string name="new_folder">New Folder</string>
@@ -332,4 +330,5 @@
     <string name="NTED_title">Uh Oh!</string>
     <string name="NTED_message">It seems like we aren\'t able to find a theme engine on your phone. If you know you have one, please open it and proceed from there. If you don\'t have one, please get a rom that supports either cyanogenmod or layers theming and follow their instructions.</string>
 
+    <string name="loading_apps">Please wait until the apps load, it will take a few more seconds…</string>
 </resources>
