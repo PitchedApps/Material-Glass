@@ -98,7 +98,6 @@ public class MainFragment extends Fragment {
         donatebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Utils.log("dI " + ShowcaseActivity.donationsIdentifier);
                 ShowcaseActivity.drawerItemClick(ShowcaseActivity.donationsIdentifier);
                 ShowcaseActivity.drawer.setSelection(ShowcaseActivity.donationsIdentifier);
             }

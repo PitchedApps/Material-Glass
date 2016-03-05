@@ -20,7 +20,7 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 299
+        versionCode 300
         versionName '3.0.0'
     }
 
@@ -70,9 +70,11 @@ android {
 
     productFlavors {
         free {
+            buildConfigField "boolean", "PLAY_STORE", "true"
             applicationId "com.pitchedapps.material.glass.free"
         }
         xda {
+            buildConfigField "boolean", "PLAY_STORE", "false"
             applicationId "com.pitchedapps.material.glass.xda"
         }
     }

@@ -376,7 +376,10 @@ public class DonationsFragment extends Fragment {
                     Log.d(TAG, "Purchase successful.");
 
                 // directly consume in-app purchase, so that people can donate multiple times
-                mHelper.consumeAsync(purchase, mConsumeFinishedListener);
+                //mHelper.consumeAsync(purchase, mConsumeFinishedListener);
+                if (purchase.getSku().contains("consumable")) {
+                    mHelper.consumeAsync(purchase, mConsumeFinishedListener);
+                }
 
                 // show thanks openDialog
                 openDialog(android.R.drawable.ic_dialog_info, R.string.donations__thanks_dialog_title,

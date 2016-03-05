@@ -185,7 +185,7 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
             //Do nothing
         }
 
-        if (playStore) {
+        if (playStore || BuildConfig.PLAY_STORE) {
             DONATIONS_PAYPAL = false; ///disable paypal as you can't use it in the play store.
         } else {
             DONATIONS_GOOGLE = false; //TODO check boolean stuff
