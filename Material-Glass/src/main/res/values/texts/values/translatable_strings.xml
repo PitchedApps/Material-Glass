@@ -299,10 +299,14 @@
 
     <string-array name="answers">
         <item>Firstly, please make sure you\'ve rebooted your phone.
-            If the issue is in some part that is essential, such as the notification drawer, it is likely not an issue on my side.
-            Please also read the changelog before reporting just to make sure that it is actually an issue, rather than the intended removal of something.
-            If there truly is an issue however, feel free to post a bug report in my g+ community or send me an email.
-            Please note that low ratings do not help solve the problems.
+            \n\n\u2022 If the issue is in some part that is essential, such as the notification drawer, it is likely not an issue on my side.
+            \n\u2022 If the app has a light or dark theme, you normally need to use the dark version.
+            \n\u2022 Note that theme engines don\'t have access to all the possible resources.
+            That is why I\'ve created the XMaterial Glass Addon, so I can fix things here and there via xposed.
+            The exception is the stock keyboard, where I themed light as clear and dark as black.
+            \n\u2022 Please also read the changelog before reporting just to make sure that it is actually an issue, rather than the intended removal of something.
+            \n\u2022 If there truly is an issue however, feel free to post a bug report in my g+ community or send me an email.
+            \n\nPlease note that low ratings do not help solve the problems.
         </item>
         <item>
             Google is your friend. In essence, find a logcat app, repeat your error, then submit the resulting text file.

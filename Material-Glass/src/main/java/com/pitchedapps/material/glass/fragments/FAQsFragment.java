@@ -77,7 +77,7 @@ public class FAQsFragment extends Fragment {
 
         faqs = new ArrayList<>();
         for (int i = 0; i < questions.length; i++) {
-            FAQsItem item = new FAQsItem(questions[i], answers[i]);
+            FAQsItem item = new FAQsItem((i+1) + ". " + questions[i], answers[i]);
             faqs.add(item);
         }
 

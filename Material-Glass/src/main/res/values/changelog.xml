@@ -19,6 +19,8 @@
 
     <string-array name="fullchangelog">
         <item>@array/header</item>
+        <item>@array/v76</item>
+        <item>@array/v75</item>
         <item>@array/v74</item>
         <item>@array/v73</item>
         <item>@array/v72</item>
@@ -123,6 +125,23 @@
         <item>***New: Xposed Add-On in alpha testing***</item>
         <item>Join the beta community for early access</item>
         <item>Link is in this app</item>
+    </string-array>
+	
+	  <string-array name="v76">
+        <item>v3.0.3</item>
+        <item>Google+: fixed non theming issue on cm</item>
+        <item>PureNexusSettings: made logo cleaner</item>
+        <item>PureNexusSettings: themed for cm variant</item>
+        <item>Dialer: fixed up dimensions for cm</item>
+        <item>Contacts: fixed up dimensions for cm</item>
+    </string-array>
+	
+	<string-array name="v75">
+        <item>v3.0.2</item>
+        <item>Google+: fixed search bar issue</item>
+        <item>Instagram: removed for real this time. It is now in the xposed add on</item>
+        <item>Whatsapp: added it back for now</item>
+        <item>App: fixed hide app icon feature</item>
     </string-array>
 	
 	<string-array name="v74">
