@@ -35,6 +35,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.adapters.FAQsAdapter;
 import com.pitchedapps.material.glass.models.FAQsItem;
 import com.pitchedapps.material.glass.utilities.Utils;
@@ -108,6 +109,8 @@ public class FAQsFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        ShowcaseActivity.fab.hide();
+        ShowcaseActivity.fab.setVisibility(View.GONE);
         Utils.collapseToolbar(getActivity());
     }
 

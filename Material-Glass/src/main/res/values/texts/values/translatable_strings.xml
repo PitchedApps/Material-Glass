@@ -186,7 +186,7 @@
 
     <string name="dashboard_author">Dashboard App Development</string>
     <string name="dashboard_author_copyright">From Colombia to the world.\nDashboard shared under CreativeCommons Attribution-ShareAlike License. Copyright © 2016.</string>
-    <string name="iconpack_author">Designer Info</string>
+    <string name="iconpack_author">Pitched Apps</string>
 
     <string name="fork_on_github">Fork on GitHub</string>
     <string name="visit_website">Website</string>
@@ -195,7 +195,7 @@
     <string name="home_pitched_glass">Pitched Glass</string>
     <string name="home_pitched_glass_long">Want more icons? Check out Pitched Glass, a free icon pack containing over 2000 icons!</string>
     <string name="home_google_beta">Google+ Beta Community</string>
-    <string name="home_google_beta_long">Join the beta community and help support the development!</string>
+    <string name="home_google_beta_long">Join the beta community and help support the development! \nMake sure you opt into beta with the link in the community after you join.</string>
     <string name="home_xda">XDA Thread</string>
     <string name="home_xda_long">Join the thread on xda.</string>
 
@@ -282,7 +282,10 @@
 
     <string-array name="questions">
         <item>There\'s a bug in this theme!</item>
+        <item>How do I submit a log?</item>
         <item>Why aren\'t the dialer and contact apps themed?</item>
+        <item>I don\'t like xxx; can you remove it?</item>
+        <item>Why did you remove xxx? Can we get it back?</item>
         <item>Can you add more icons?</item>
         <item>How can I help?</item>
         <item>Can I make requests?</item>
@@ -297,11 +300,24 @@
     <string-array name="answers">
         <item>Firstly, please make sure you\'ve rebooted your phone.
             If the issue is in some part that is essential, such as the notification drawer, it is likely not an issue on my side.
+            Please also read the changelog before reporting just to make sure that it is actually an issue, rather than the intended removal of something.
             If there truly is an issue however, feel free to post a bug report in my g+ community or send me an email.
             Please note that low ratings do not help solve the problems.
         </item>
+        <item>
+            Google is your friend. In essence, find a logcat app, repeat your error, then submit the resulting text file.
+            If you can, filter it to error only or something else to make it easier to read.
+        </item>
         <item>Those two apps have restrictions that prevents it from being transparent, which is why I have themed them in black for now.
             In the event that this is fixed, I will definitely make it transparent.
+        </item>
+        <item>
+            Please understand that I am one themer/developer catering to tens of thousands of users.
+            I try my best to please the majority, but it is inevitable that some of you may dislike certain changes.
+            Feel free to voice your opinions, but note that you are not the only user.
+        </item>
+        <item>
+            See above.
         </item>
         <item>Please note that this is primarily a theme and not an icon pack.
             Though I will add some essential icons from time to time, I try to keep the icons limited to reduce the size of this app.

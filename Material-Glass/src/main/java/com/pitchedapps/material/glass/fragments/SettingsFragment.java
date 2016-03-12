@@ -36,6 +36,7 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
@@ -83,9 +84,7 @@ public class SettingsFragment extends PreferenceFragment implements PermissionUt
         Class<?> className = null;
 
         final String packageName = Utils.getAppPackageName(getActivity().getApplicationContext());
-        String activityName = getResources().getString(R.string.main_activity_name);
-        final String componentNameString = packageName + "." + activityName;
-        Utils.log("comp " + componentNameString);
+        final String componentNameString = "com.pitchedapps.material.glass.HomeActivity";
         try {
             className = Class.forName(componentNameString);
         } catch (ClassNotFoundException e) {
@@ -240,6 +239,8 @@ public class SettingsFragment extends PreferenceFragment implements PermissionUt
     @Override
     public void onResume() {
         super.onResume();
+        ShowcaseActivity.fab.hide();
+        ShowcaseActivity.fab.setVisibility(View.GONE);
         Utils.collapseToolbar(getActivity());
     }
 

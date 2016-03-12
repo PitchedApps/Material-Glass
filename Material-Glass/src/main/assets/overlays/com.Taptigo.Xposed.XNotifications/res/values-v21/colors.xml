@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#fff</color>
+    <color name="add_background">#ffff5252</color>
+    <color name="add_background_pressed">#ffe54949</color>
+    <color name="add_from_history_background">#ff03a9f4</color>
+    <color name="add_from_history_background_pressed">#ff2196f3</color>
+    <color name="ampm_text_color">#aaffffff</color>
+    <color name="background">#80000000</color>
+
+    <color name="bg_item_dragging_active_state">#80222222</color>
+    <color name="bg_item_dragging_state">#80222222</color>
+    <color name="bg_item_normal_state">#80000000</color>
+    <color name="bg_swipe_item_neutral">#80000000</color>
+
+    <color name="bpDark_gray">#cc000000</color>
+    <color name="bpLight_gray">#cc000000</color>
+
+    <color name="bpLine_background">#22ffffff</color>
+    <color name="bpLine_dark">#55ffffff</color>
+
+    <color name="calendar_header">#cc000000</color>
+    <color name="calendar_selected_date_text">#ddffffff</color>
+    <color name="circle_background">#cc000000</color>
+    <color name="date_picker_text_normal">#fff</color>
+    <color name="date_picker_view_animator">#cc111111</color>
+
+    <color name="default_text_color_holo_dark_disabled">#99ffffff</color>
+    <color name="default_text_color_holo_light">#fff</color>
+    <color name="default_text_color_holo_light_disabled">#99ffffff</color>
+    <color name="dialog_background">#cc060606</color>
+
+    <color name="divider">#22ffffff</color>
+    <color name="done_disabled_dark">#80000000</color>
+    <color name="done_text_color_dark_disabled">#99ffffff</color>
+    <color name="done_text_color_dark_normal">#ffffffff</color>
+    <color name="done_text_color_disabled">#99ffffff</color>
+    <color name="done_text_color_normal">#fff</color>
+
+    <color name="half_black">#88808080</color>
+    <color name="highlight">#88888888</color>
+
+    <color name="inbox_selected_background">#80111111</color>
+    <color name="layout_background">#80000000</color>
+
+    <color name="numbers_text_color">#ccffffff</color>
+</resources>

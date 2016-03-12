@@ -108,7 +108,7 @@
     <!-- These things are needed for some launchers (Feel free to edit, though is not needed) -->
     <string name="theme_title">@string/app_name</string>
     <string name="theme_name">@string/theme_title</string>
-    <string name="developer_name">@string/iconpack_author</string>
+    <string name="developer_name">@string/theme_dev</string>
     <string name="developerName">@string/developer_name</string>
     <string name="theme_author">@string/developer_name</string>
     <string name="authorName">@string/developer_name</string>

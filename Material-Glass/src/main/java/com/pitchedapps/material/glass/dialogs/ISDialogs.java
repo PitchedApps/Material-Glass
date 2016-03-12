@@ -246,7 +246,8 @@ public final class ISDialogs {
     }
 
     public static MaterialDialog showThemeChooserDialog(final Activity context) {
-        final int[] selectedTheme = {PreferenceManager.getDefaultSharedPreferences(context).getInt("theme", 0)};
+        int defaultTheme = context.getResources().getInteger(R.integer.default_theme) - 1;
+        final int[] selectedTheme = {PreferenceManager.getDefaultSharedPreferences(context).getInt("theme", defaultTheme)};
         final int[] newSelectedTheme = new int[1];
         final Preferences mPrefs = new Preferences(context);
         return new MaterialDialog.Builder(context)

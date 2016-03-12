@@ -40,6 +40,7 @@ import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -541,6 +542,12 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
                 adapter.selectOrDeselectAll(false);
             }
         }
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        Fragment fragment = fragmentManager.findFragmentByTag("donationsFragment");
+        if (fragment != null) {
+            fragment.onActivityResult(requestCode, resultCode, data);
+        }
     }
 
     private void onFirstRun() {
@@ -629,7 +636,7 @@ public class ShowcaseActivity extends AppCompatActivity implements FolderChooser
 
                     @Override
                     public boolean onItemLongClick(View view, int position, IDrawerItem drawerItem) {
-                        if (drawerItem.getIdentifier() == iconsPickerIdentifier && (mIsPremium || !playStore)) {
+                        if (drawerItem.getIdentifier() == iconsPickerIdentifier && mIsPremium) {
                             switchFragment(iconsPickerIdentifier, "Requests", context);
                             drawer.closeDrawer();
                         }

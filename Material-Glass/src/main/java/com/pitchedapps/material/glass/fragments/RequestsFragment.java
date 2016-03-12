@@ -46,6 +46,7 @@ import android.widget.ProgressBar;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.adapters.RequestsAdapter;
 import com.pitchedapps.material.glass.dialogs.ISDialogs;
 import com.pitchedapps.material.glass.tasks.ZipFilesToRequest;
@@ -174,6 +175,8 @@ public class RequestsFragment extends Fragment implements PermissionUtils.OnPerm
     @Override
     public void onResume() {
         super.onResume();
+        ShowcaseActivity.fab.hide();
+        ShowcaseActivity.fab.setVisibility(View.GONE);
         Utils.collapseToolbar(getActivity());
     }
 

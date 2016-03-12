@@ -39,6 +39,7 @@ import android.view.ViewGroup;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.adapters.LaunchersAdapter;
 import com.pitchedapps.material.glass.dialogs.ISDialogs;
 import com.pitchedapps.material.glass.utilities.LauncherIntents;
@@ -101,6 +102,8 @@ public class ApplyFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        ShowcaseActivity.fab.hide();
+        ShowcaseActivity.fab.setVisibility(View.GONE);
         Utils.collapseToolbar(getActivity());
         updateLaunchersList();
     }

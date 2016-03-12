@@ -32,7 +32,6 @@ public class Preferences {
 
     private static final String
             PREFERENCES_NAME = "DASHBOARD_PREFERENCES",
-            FEATURES_ENABLED = "features_enabled",
             FIRST_RUN = "first_run",
             ROTATE_MINUTE = "rotate_time_minute",
             ROTATE_TIME = "muzei_rotate_time",

@@ -129,7 +129,6 @@
         <item name="android:windowBackground">@color/backgroundt</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@color/backgroundt</item>
-        <item name="android:statusBarColor">@color/backgroundt</item>
     </style>
 
     <style name="DeviceDefault.Light.ButtonBar" parent="@android:style/Widget.Material.ButtonBar" />

@@ -50,8 +50,7 @@ public class LauncherIconRestorerActivity extends Activity {
         Class<?> className = null;
 
         final String packageName = Utils.getAppPackageName(getApplicationContext());
-        String activityName = getResources().getString(R.string.main_activity_name);
-        final String componentNameString = packageName + "." + activityName;
+        final String componentNameString = "com.pitchedapps.material.glass.HomeActivity"; //TODO fix in iconshowcase
 
         try {
             className = Class.forName(componentNameString);

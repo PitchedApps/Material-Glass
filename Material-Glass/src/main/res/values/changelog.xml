@@ -19,6 +19,7 @@
 
     <string-array name="fullchangelog">
         <item>@array/header</item>
+        <item>@array/v74</item>
         <item>@array/v73</item>
         <item>@array/v72</item>
         <item>@array/v71</item>
@@ -122,6 +123,15 @@
         <item>***New: Xposed Add-On in alpha testing***</item>
         <item>Join the beta community for early access</item>
         <item>Link is in this app</item>
+    </string-array>
+	
+	<string-array name="v74">
+        <item>v3.0.1</item>
+        <item>DU about: updated for appcompat support</item>
+        <item>Dropbox: temporarily removed it from cm as it wasn\'t working</item>
+        <item>Whatsapp: temporarily removed it from cm</item>
+        <item>App: various updates</item>
+        <item>FrameworkRes: fixed some transparency issues</item>
     </string-array>
 	
     <string-array name="v73">

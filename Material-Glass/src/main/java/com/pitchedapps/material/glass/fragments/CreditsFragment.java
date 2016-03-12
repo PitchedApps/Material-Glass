@@ -39,6 +39,7 @@ import com.bumptech.glide.Glide;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
 import com.pitchedapps.material.glass.R;
+import com.pitchedapps.material.glass.activities.ShowcaseActivity;
 import com.pitchedapps.material.glass.dialogs.ISDialogs;
 import com.pitchedapps.material.glass.utilities.ThemeUtils;
 import com.pitchedapps.material.glass.utilities.Utils;
@@ -154,6 +155,8 @@ public class CreditsFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        ShowcaseActivity.fab.hide();
+        ShowcaseActivity.fab.setVisibility(View.GONE);
         Utils.collapseToolbar(getActivity());
     }
 
