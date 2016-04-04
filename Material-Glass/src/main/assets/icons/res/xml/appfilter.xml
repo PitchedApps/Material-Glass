@@ -108,7 +108,7 @@
         drawable="settings" />
     <item
         component="ComponentInfo{com.riteshsahu.SMSBackupRestorePro/com.riteshsahu.SMSBackupRestorePro.ProMain}"
-        drawable="sms_backup_restore_pro" />
+        drawable="sms_backup_restore" />
     <item component="ComponentInfo{com.snapchat.android/com.snapchat.android.LandingPageActivity}"
         drawable="snapchat" />
     <item
@@ -485,5 +485,23 @@
     <item component="ComponentInfo{com.pitchedapps.icons.glass/com.pitchedapps.icons.HomeActivity}" drawable="pitched_glass"/>
     <item component="ComponentInfo{com.yik.yak/com.yik.yak.ui.activity.SplashActivity}" drawable="yik_yak"/>
     <item component=":LAUNCHER_ACTION_APP_DRAWER" drawable="ic_allapps" />
+
+    <!--03/27/2016-->
+    <item component="ComponentInfo{com.oasisfeng.greenify.pro/com.oasisfeng.greenify.pro.PilotActivity}" drawable="greenify"/>
+    <item component="ComponentInfo{com.gsamlabs.bbm/com.gsamlabs.bbm.lib.activities.MainActivity}" drawable="gsam_battery_monitor"/>
+    <item component="ComponentInfo{jahirfiquitiva.apps.iconshowcase.sample/jahirfiquitiva.apps.iconshowcase.sample.HomeActivity}" drawable="iconshowcase"/>
+    <item component="ComponentInfo{com.lovejoy777.rroandlayersmanager/com.lovejoy777.rroandlayersmanager.menu}" drawable="layers"/>
+    <item component="ComponentInfo{jp.naver.line.android/jp.naver.line.android.activity.SplashActivity}" drawable="line"/>
+    <item component="ComponentInfo{com.linecorp.linelite/com.linecorp.linelite.ui.android.main.IntroActivity}" drawable="line"/>
+    <item component="ComponentInfo{com.pluscubed.matlog/com.pluscubed.logcat.ui.LogcatActivity}" drawable="matlog"/>
+    <item component="ComponentInfo{com.mcgill/com.oohlala.controller.mainactivity.MainActivity}" drawable="mcgill"/>
+    <item component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.startup.activities.StartupActivity}" drawable="paypal"/>
+    <item component="ComponentInfo{com.google.android.apps.plus/com.google.android.apps.plus.phone.PhotosLegacyLauncherActivity}" drawable="photos"/>
+    <item component="ComponentInfo{com.android.purenexussettings/com.android.purenexussettings.LauncherActivity}" drawable="purenexus"/>
+    <item component="ComponentInfo{com.riteshsahu.SMSBackupRestore/com.riteshsahu.SMSBackupRestore.FreeMain}" drawable="sms_backup_restore"/>
+    <item component="ComponentInfo{com.valvesoftware.android.steam.community/com.valvesoftware.android.steam.community.activity.MainActivity}" drawable="steam"/>
+    <item component="ComponentInfo{com.gettad/com.gettad.MainActivity}" drawable="tad"/>
+    <item component="ComponentInfo{hu.tagsoft.ttorrent.pro/hu.tagsoft.ttorrent.statuslist.SplashActivity}" drawable="ttorrent_pro"/>
+
 
 </resources>

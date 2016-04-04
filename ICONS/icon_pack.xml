@@ -98,6 +98,7 @@
 		<item>messaging</item>
 		<item>music</item>
 		<item>phone</item>
+		<item>purenexus</item>
 		<item>settings</item>
 		<item>sound_recorder</item>
 		<item>supersu</item>
@@ -176,11 +177,13 @@
 		<item>google_developer_console</item>
 		<item>gps_status</item>
 		<item>greenify</item>
+		<item>gsam_battery_monitor</item>
 		<item>hill_climb_racing</item>
 		<item>hound</item>
 		<item>hsw</item>
 		<item>ice_rage_hockey_free</item>
 		<item>icon_filter_designer</item>
+		<item>iconshowcase</item>
 		<item>inbrowser</item>
 		<item>ingress</item>
 		<item>instagram</item>
@@ -191,12 +194,15 @@
 		<item>le_conjugueur</item>
 		<item>lightning</item>
 		<item>lightning_bug</item>
+		<item>line</item>
 		<item>link_bubble</item>
 		<item>linkedin</item>
 		<item>lmt</item>
 		<item>mapsme</item>
 		<item>material_glass</item>
 		<item>material_glass_xda</item>
+		<item>matlog</item>
+		<item>mcgill</item>
 		<item>megav1</item>
 		<item>messenger_fb</item>
 		<item>mobile_print</item>
@@ -235,7 +241,7 @@
 		<item>sd_maid_pro__unlocker</item>
 		<item>shazam</item>
 		<item>skype</item>
-		<item>sms_backup_restore_pro</item>
+		<item>sms_backup_restore</item>
 		<item>snapchat</item>
 		<item>soundhound</item>
 		<item>speed_test</item>
@@ -246,6 +252,7 @@
 		<item>swiftkey_keyboard</item>
 		<item>swype__dragon</item>
 		<item>sync_me</item>
+		<item>tad</item>
 		<item>tapatalk</item>
 		<item>tasker</item>
 		<item>team_viewer</item>
@@ -407,6 +414,7 @@
 		<item>gps_status</item>
 		<item>greenify</item>
 		<item>groove</item>
+		<item>gsam_battery_monitor</item>
 		<item>hangouts</item>
 		<item>hangouts_dialer</item>
 		<item>health__fitness</item>
@@ -415,6 +423,7 @@
 		<item>hsw</item>
 		<item>ice_rage_hockey_free</item>
 		<item>icon_filter_designer</item>
+		<item>iconshowcase</item>
 		<item>inbox</item>
 		<item>inbrowser</item>
 		<item>ingress</item>
@@ -427,6 +436,7 @@
 		<item>le_conjugueur</item>
 		<item>lightning</item>
 		<item>lightning_bug</item>
+		<item>line</item>
 		<item>link_bubble</item>
 		<item>linkedin</item>
 		<item>lmt</item>
@@ -435,6 +445,8 @@
 		<item>mapsme</item>
 		<item>material_glass</item>
 		<item>material_glass_xda</item>
+		<item>matlog</item>
+		<item>mcgill</item>
 		<item>megav1</item>
 		<item>messaging</item>
 		<item>messenger</item>
@@ -491,6 +503,7 @@
 		<item>poweramp_full_version_unlocker</item>
 		<item>powerpoint</item>
 		<item>pss</item>
+		<item>purenexus</item>
 		<item>pushbullet</item>
 		<item>quickpic</item>
 		<item>quizlet</item>
@@ -508,7 +521,7 @@
 		<item>sheets</item>
 		<item>skype</item>
 		<item>slides</item>
-		<item>sms_backup_restore_pro</item>
+		<item>sms_backup_restore</item>
 		<item>snap_colors</item>
 		<item>snap_prefs</item>
 		<item>snapchat</item>
@@ -523,6 +536,7 @@
 		<item>swiftkey_keyboard</item>
 		<item>swype__dragon</item>
 		<item>sync_me</item>
+		<item>tad</item>
 		<item>tapatalk</item>
 		<item>tasker</item>
 		<item>team_viewer</item>

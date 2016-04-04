@@ -57,7 +57,7 @@
     <color name="message_bubble_color_selected">#ff8bc34a</color>
     <color name="message_image_selected_tint">#80689f38</color>
     <color name="generic_video_icon">#aaffffff</color>
-    <color name="color_filter_base_color">#ffff0000</color>
+    <color name="color_filter_base_color">#80000000</color>
     <color name="contact_avatar_default_background">#80111111</color>
     <color name="contact_avatar_pressed_color">#33ffffff</color>
     <color name="contact_list_text_primary">#fff</color>

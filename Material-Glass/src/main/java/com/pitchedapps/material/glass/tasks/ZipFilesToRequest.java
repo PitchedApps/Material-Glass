@@ -218,7 +218,7 @@ public class ZipFilesToRequest extends AsyncTask<Void, String, Boolean> {
             if (appsCount != 0) {
 
                 try {
-                    FileWriter fileWriter1 = new FileWriter(filesLocation + "/" + date + "_appfilter.xml");
+                    FileWriter fileWriter1 = new FileWriter(filesLocation + "/" + date.format(new Date()) + "_appfilter.xml");
                     BufferedWriter bufferedWriter1 = new BufferedWriter(fileWriter1);
                     bufferedWriter1.write(appFilterBuilder.toString());
                     bufferedWriter1.close();
@@ -227,7 +227,7 @@ public class ZipFilesToRequest extends AsyncTask<Void, String, Boolean> {
                 }
 
                 try {
-                    FileWriter fileWriter2 = new FileWriter(filesLocation + "/" + date + "_appmap.xml");
+                    FileWriter fileWriter2 = new FileWriter(filesLocation + "/" + date.format(new Date()) + "_appmap.xml");
                     BufferedWriter bufferedWriter2 = new BufferedWriter(fileWriter2);
                     bufferedWriter2.write(appMapBuilder.toString());
                     bufferedWriter2.close();
@@ -236,7 +236,7 @@ public class ZipFilesToRequest extends AsyncTask<Void, String, Boolean> {
                 }
 
                 try {
-                    FileWriter fileWriter3 = new FileWriter(filesLocation + "/" + date + "_theme_resources.xml");
+                    FileWriter fileWriter3 = new FileWriter(filesLocation + "/" + date.format(new Date()) + "_theme_resources.xml");
                     BufferedWriter bufferedWriter3 = new BufferedWriter(fileWriter3);
                     bufferedWriter3.write(themeResourcesBuilder.toString());
                     bufferedWriter3.close();

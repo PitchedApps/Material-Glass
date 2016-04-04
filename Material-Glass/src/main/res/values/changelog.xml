@@ -19,6 +19,7 @@
 
     <string-array name="fullchangelog">
         <item>@array/header</item>
+        <item>@array/v77</item>
         <item>@array/v76</item>
         <item>@array/v75</item>
         <item>@array/v74</item>
@@ -127,13 +128,23 @@
         <item>Link is in this app</item>
     </string-array>
 	
+	<string-array name="v77">
+        <item>v3.0.4</item>
+        <item>Bliss: added more icon support</item>
+        <item>Cm: thinner switch tracks</item>
+        <item>MMS: no more red message bubbles for cm bases</item>
+        <item>Icons: a dozen more icons</item>
+        <item>Nova: fixed for April 1st build</item>
+        <item>Framework: small edit</item>
+    </string-array>
+	
 	  <string-array name="v76">
-        <item>v3.0.3</item>
-        <item>Google+: fixed non theming issue on cm</item>
-        <item>PureNexusSettings: made logo cleaner</item>
-        <item>PureNexusSettings: themed for cm variant</item>
-        <item>Dialer: fixed up dimensions for cm</item>
-        <item>Contacts: fixed up dimensions for cm</item>
+		<item>v3.0.3</item>
+		<item>Google+: fixed non theming issue on cm</item>
+		<item>PureNexusSettings: made logo cleaner</item>
+		<item>PureNexusSettings: themed for cm variant</item>
+		<item>Dialer: fixed up dimensions for cm</item>
+		<item>Contacts: fixed up dimensions for cm</item>
     </string-array>
 	
 	<string-array name="v75">
