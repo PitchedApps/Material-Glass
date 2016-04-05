@@ -128,6 +128,15 @@
         <item>Link is in this app</item>
     </string-array>
 	
+	 <string-array name="v78">
+        <item>v3.0.5</item>
+        <item>Framework: removed thin switch style for cm13 to support cm12</item>
+        <item>App: fixed layers fab button</item>
+        <item>Swiftkey: updated theme to theme the UI</item>
+        <item>New: themed Android N-ify</item>
+        <item>New: themed GravityBox for android M</item>
+    </string-array>
+	
 	<string-array name="v77">
         <item>v3.0.4</item>
         <item>Bliss: added more icon support</item>

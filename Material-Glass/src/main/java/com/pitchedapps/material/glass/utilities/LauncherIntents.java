@@ -289,11 +289,20 @@ public class LauncherIntents {
 
     //for theme support
     public void Layers(Context context) {
-        Intent layers = new Intent("android.intent.action.MAIN");
-        layers.setComponent(new ComponentName("com.lovejoy777.rroandlayersmanager",
-                "com.lovejoy777.rroandlayersmanager.MainActivity"));
-        layers.putExtra("pkgName", context.getPackageName());
-        context.startActivity(layers);
+        try {
+            Intent layers = new Intent("android.intent.action.MAIN");
+            layers.setComponent(new ComponentName("com.lovejoy777.rroandlayersmanager",
+                    "com.lovejoy777.rroandlayersmanager.menu"));
+            layers.putExtra("pkgName", context.getPackageName());
+            context.startActivity(layers);
+        } catch (Exception e) {
+            Intent layers = new Intent("android.intent.action.MAIN");
+            layers.setComponent(new ComponentName("com.lovejoy777.rroandlayersmanager",
+                    "com.lovejoy777.rroandlayersmanager.MainActivity"));
+            layers.putExtra("pkgName", context.getPackageName());
+            context.startActivity(layers);
+        }
+
     }
 
 }
