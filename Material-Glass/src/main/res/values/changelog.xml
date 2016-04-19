@@ -19,6 +19,8 @@
 
     <string-array name="fullchangelog">
         <item>@array/header</item>
+        <item>@array/v79</item>
+        <item>@array/v78</item>
         <item>@array/v77</item>
         <item>@array/v76</item>
         <item>@array/v75</item>
@@ -126,6 +128,15 @@
         <item>***New: Xposed Add-On in alpha testing***</item>
         <item>Join the beta community for early access</item>
         <item>Link is in this app</item>
+    </string-array>
+	
+	<string-array name="v79">
+        <item>v3.0.6</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 	
 	 <string-array name="v78">
