@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016.  Jahir Fiquitiva
+  ~
+  ~ Licensed under the CreativeCommons Attribution-ShareAlike
+  ~ 4.0 International License. You may not use this file except in compliance
+  ~ with the License. You may obtain a copy of the License at
+  ~
+  ~    http://creativecommons.org/licenses/by-sa/4.0/legalcode
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  ~ Big thanks to the project contributors. Check them in the repository.
+  ~
+  -->
+
+<resources>
+
+    <!--
+    Do you want the app to use palette api in wallpapers section?
+    True, means yes.
+    False, means no.
+    -->
+    <bool name="use_palette_api">true</bool>
+
+    <!--
+    Do you want the app to use palette api in texts in wallpapers section?
+    True, means yes.
+    False, means no.
+    -->
+    <bool name="use_palette_api_in_texts">false</bool>
+
+    <!--
+    Choose one of the palette styles: (use only the numbers here (1~6))
+    1. VIBRANT
+    2. VIBRANT_LIGHT
+    3. VIBRANT_DARK
+    4. MUTED
+    5. MUTED_LIGHT
+    6. MUTED_DARK
+    -->
+    <integer name="palette_swatch">1</integer>
+
+    <!--
+       Do you want the app to use palette api in wallpapers viewer?
+       True, means yes.
+       False, means no.
+       -->
+    <bool name="use_palette_api_in_viewer">true</bool>
+
+    <!--
+    Do you want to use high definition wallpapers?
+    (the difference between -medium- and -high- definition is pretty minimal.
+    use high definition if your wallpapers have transparency stuff.
+    medium definition will make pictures load faster.
+    high definition will make pictures load slower, and increase cache size, and memory (ram) usage.
+    -->
+    <bool name="high_definition_walls">true</bool>
+
+</resources>

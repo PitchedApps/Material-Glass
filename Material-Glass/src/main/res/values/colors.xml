@@ -68,28 +68,28 @@
 
     <!-- COLORS FOR INSTALLED LAUNCHERS -->
     <color name="action_launcher_color">#f44336</color>
-    <color name="adw_launcher_color">#5b9cc8</color>
-    <color name="adw_ex_launcher_color">#5b9cc8</color>
-    <color name="apex_launcher_color">#63cded</color>
-    <color name="atom_launcher_color">#a657bd</color>
-    <color name="aviate_launcher_color">#fc842d</color>
-    <color name="cm_theme_engine_color">#29b6f6</color>
-    <color name="go_launcher_color">#95c955</color>
-    <color name="google_now_launcher_color">#0097f6</color>
-    <color name="holo_launcher_color">#65473c</color>
-    <color name="holo_hd_launcher_color">#8bc34a</color>
-    <color name="kk_launcher_color">#ffc107</color>
-    <color name="l_launcher_color">#f67c00</color>
+    <color name="adw_launcher_color">#2196f3</color>
+    <color name="adw_ex_launcher_color">#ffc107</color>
+    <color name="apex_launcher_color">#2196f3</color>
+    <color name="atom_launcher_color">#3f51b5</color>
+    <color name="aviate_launcher_color">#673ab7</color>
+    <color name="cm_theme_engine_color">#2196f3</color>
+    <color name="go_launcher_color">#8bc34a</color>
+    <color name="google_now_launcher_color">#2196f3</color>
+    <color name="holo_launcher_color">#03a9f4</color>
+    <color name="holo_ics_launcher_color">#78c257</color>
+    <color name="kk_launcher_color">#e91e63</color>
+    <color name="l_launcher_color">#ff5722</color>
     <color name="lg_home_color">#00bcd4</color>
-    <color name="lucid_launcher_color">#2196f4</color>
-    <color name="mini_launcher_color">#4caf50</color>
-    <color name="next_launcher_color">#5787c5</color>
-    <color name="nova_launcher_color">#f83729</color>
-    <color name="s_launcher_color">#00bcd4</color>
-    <color name="smart_launcher_color">#2eb3d9</color>
-    <color name="smart_pro_launcher_color">#2eb3d9</color>
-    <color name="solo_launcher_color">#ba68c8</color>
-    <color name="tsf_launcher_color">#2196f3</color>
+    <color name="lucid_launcher_color">#2196f3</color>
+    <color name="mini_launcher_color">#c0ca33</color>
+    <color name="next_launcher_color">#3f51b5</color>
+    <color name="nova_launcher_color">#e53935</color>
+    <color name="s_launcher_color">#2196f3</color>
+    <color name="smart_launcher_color">#03a9f4</color>
+    <color name="smart_pro_launcher_color">#03a9f4</color>
+    <color name="solo_launcher_color">#9c27b0</color>
+    <color name="tsf_launcher_color">#03a9f4</color>
     <color name="unicon_pro_color">#78c257</color>
 
     <!-- ADDITIONAL COLORS -->
@@ -138,6 +138,7 @@
 
     <!-- THEME INDEPENDENT COLORS -->
     <color name="semitransparent_white">#80ffffff</color>
+    <color name="white_highlight">#66ffffff</color>
     <color name="semitransparent_black">#66000000</color>
     <color name="drawable_base_tint">#616161</color>
     <color name="divider">#757575</color>

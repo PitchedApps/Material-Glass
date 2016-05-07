@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016.  Jahir Fiquitiva
+  ~
+  ~ Licensed under the CreativeCommons Attribution-ShareAlike
+  ~ 4.0 International License. You may not use this file except in compliance
+  ~ with the License. You may obtain a copy of the License at
+  ~
+  ~    http://creativecommons.org/licenses/by-sa/4.0/legalcode
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  ~ Big thanks to the project contributors. Check them in the repository.
+  ~
+  -->
+
+<!--
+  ~
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string-array name="fullchangelog">
+        <item>@array/newstuff</item>
+        <item>@array/improvements</item>
+    </string-array>
+
+    <string-array name="newstuff">
+        <item>New:</item>
+        <item>Reworked icon requests code. Thanks to Steve Albright.</item>
+        <item>Buttons in about section are working.</item>
+        <item>Implemented Chrome Custom Tabs in About section.</item>
+        <item>New design of Main section.</item>
+        <item>Implemented Icons and Wallpapers pickers.</item>
+        <item>Added facebook in designers card.</item>
+        <item>Added Zooper section.</item>
+        <item>Added Changelog grid.</item>
+        <item>Added option to enable or disable drawer header. (In Code).</item>
+        <item>Fixed apps names length in requests section.</item>
+        <item>Fixed ripples in requests section.</item>
+    </string-array>
+
+    <string-array name="improvements">
+        <item>Improvements:</item>
+        <item>Back to advice dialogs in Requests and Apply sections.</item>
+        <item>Some renamed stuff for better understanding.</item>
+    </string-array>
+
+    <string-array name="changelog_icons">
+        <item>facebook</item>
+        <item>chrome</item>
+        <item>dumb_ways_to_die</item>
+        <item>duolingo</item>
+        <item>cm_file_manager</item>
+        <item>fimbo</item>
+        <item>andy</item>
+        <item>cabinet</item>
+    </string-array>
+
+</resources>

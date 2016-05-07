@@ -29,14 +29,14 @@
         android:value="@string/email_id" />
 
     <application
-        android:name=".utilities.ApplicationBase"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/theme_name"
+        android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="UnusedAttribute">
+        tools:ignore="AllowBackup,UnusedAttribute">
+
         <uses-library
             android:name="com.sec.android.app.multiwindow"
             android:required="false"/>
@@ -79,7 +79,7 @@
 
         <!-- Icons -->
         <activity
-            android:name=".activities.ShowcaseActivity"
+            android:name="jahirfiquitiva.iconshowcase.activities.ShowcaseActivity"
             android:label="@string/app_name">
 
             <intent-filter tools:ignore="GoogleAppIndexingDeepLinkError,GoogleAppIndexingUrlError,GoogleAppIndexingWarning">
@@ -165,6 +165,10 @@
             </intent-filter>
             <!-- Turbo Launcher -->
             <intent-filter>
+                <action android:name="com.phonemetra.turbo.launcher.THEMES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
                 <action android:name="com.phonemetra.turbo.launcher.icons.ACTION_PICK_ICON"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
@@ -234,16 +238,31 @@
 
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
+
+            <!-- Remove comment marks to enable Zooper
+            <intent-filter>
+                <action android:name="org.zooper.zw.TEMPLATES"/>
+            </intent-filter>
+			-->
+
         </activity>
+
+        <!-- Remove comment marks to enable Zooper
+        Replace jahirfiquitiva.apps.iconshowcase.sample with your app's package
+        <provider
+            android:name=".zooper.TemplateProvider"
+            android:authorities="jahirfiquitiva.apps.iconshowcase.sample.zwprovider"
+            tools:ignore="ExportedContentProvider"/>
+		-->
 
         <!-- Wallpapers Activity -->
         <activity
-            android:name=".activities.ViewerActivity"
+            android:name="jahirfiquitiva.iconshowcase.activities.ViewerActivity"
             android:label="@string/title_activity_detailed_wallpaper"
             android:theme="@style/AppTheme"/>
 
         <service
-            android:name=".muzei.ArtSource"
+            android:name="jahirfiquitiva.iconshowcase.services.MuzeiArtSourceService"
             android:description="@string/artsource_desc"
             android:icon="@drawable/ic_muzei_logo"
             android:label="@string/artsource_name"
@@ -257,21 +276,21 @@
                 android:value="@color/primary"/>
             <meta-data
                 android:name="settingsActivity"
-                android:value="com.pitchedapps.material.glass.muzei.MuzeiSettings"/>
+                android:value="jahirfiquitiva.iconshowcase.activities.MuzeiSettings"/>
         </service>
 
         <activity
-            android:name=".muzei.MuzeiSettings"
+            android:name="jahirfiquitiva.iconshowcase.activities.MuzeiSettings"
             android:exported="true"
             android:label="@string/muzei_settings"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme.LaunchScreen"/>
 
         <!-- WIDGETS -->
 
         <!-- Icon restorer Widget -->
 
         <receiver
-            android:name=".widgets.IconRestorerWidget"
+            android:name="jahirfiquitiva.iconshowcase.widgets.IconRestorerWidget"
             android:icon="@drawable/app_logo"
             android:label="@string/iconrestorer_widget_title">
             <intent-filter>
@@ -284,23 +303,19 @@
         </receiver>
 
         <activity
-            android:name=".activities.LauncherIconRestorerActivity"
-            android:label="@string/app_name">
+            android:name="jahirfiquitiva.iconshowcase.activities.LauncherIconRestorerActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/EmptyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
 
-        <!--was in restoreractivity-->
-
-        <!--android:noHistory="true"-->
-        <!--android:theme="@style/EmptyActivity"-->
-
 
         <!-- Clock Widget -->
-
         <receiver
-            android:name=".widgets.ClockWidget"
+            android:name="jahirfiquitiva.iconshowcase.widgets.ClockWidget"
             android:label="@string/clock_widget_title">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -315,8 +330,24 @@
         </receiver>
 
         <meta-data
-            android:name="com.pitchedapps.material.glass.utilities.glide.GlideConfiguration"
+            android:name="jahirfiquitiva.iconshowcase.utilities.GlideConfiguration"
             android:value="GlideModule"/>
+
+        <!-- Notifications service -->
+        <service
+            android:name="jahirfiquitiva.iconshowcase.services.NotificationsService"
+            android:enabled="true"
+            android:exported="false"
+            android:icon="@mipmap/ic_launcher"/>
+        <receiver
+            android:name="jahirfiquitiva.iconshowcase.services.NotificationsReceiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
 
         <!--layers-->
 
@@ -333,6 +364,7 @@
         <meta-data android:name="Layers_Developer" android:value="@string/theme_dev"/>
         <meta-data android:name="Layers_Description" android:value="@string/welcome_title"/>
         <meta-data android:name="Layers_WhatsNew" android:value="@string/layers_new"/>
+
     </application>
 
 </manifest>

@@ -32,25 +32,22 @@ android {
         }
     }
 
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+
     sourceSets {
         main {
             res.srcDirs = [
                     'src/main/res',
                     'src/main/res/drawable',
-                    'src/main/res/drawable/dashboard',
                     'src/main/res/drawable/designer',
                     'src/main/res/drawable/icon_pack',
                     'src/main/res/drawable/launchers_icons',
-                    'src/main/res/drawable/splash_screens',
                     'src/main/res/drawable/widgets',
-                    'src/main/res/layout',
-                    'src/main/res/layout/activities',
-                    'src/main/res/layout/extras',
-                    'src/main/res/layout/items',
-                    'src/main/res/layout/sections',
-                    'src/main/res/layout/widgets',
+                    'src/main/res/values',
                     'src/main/res/values/icon_pack',
-                    'src/main/res/values/texts'
+                    'src/main/res/values/configuration'
             ]
         }
     }
@@ -83,55 +80,17 @@ android {
         abortOnError false
     }
 
-    useLibrary 'org.apache.http.legacy'
+//    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Main library
+//    compile 'com.github.asdfasdfvful:IconShowcase:3.0.2@aar'
+    compile project(':themeshowcase')
 
     //Android support libraries needed to build the sample
     compile 'com.android.support:appcompat-v7:23.3.0@aar'
-    compile 'com.android.support:support-v4:23.3.0@aar'
-    compile 'com.android.support:design:23.3.0'
-    compile 'com.android.support:cardview-v7:23.3.0@aar'
-    compile 'com.android.support:recyclerview-v7:23.3.0@aar'
-    compile 'com.android.support:palette-v7:23.3.0@aar'
-    compile 'com.android.support:gridlayout-v7:23.3.0@aar'
-    compile 'com.android.support:customtabs:23.3.0'
-
-    //Material Dialogs
-    compile('com.github.afollestad.material-dialogs:core:0.8.5.6@aar') {
-        transitive = true
-    }
-
-    //Material Drawer
-    compile('com.mikepenz:materialdrawer:5.0.9@aar') {
-        transitive = true
-    }
-
-    //Material icons fonts
-//    compile 'com.mikepenz:iconics-core:2.5.8@aar'
-    compile 'com.mikepenz:google-material-typeface:2.2.0.1@aar'
-
-    //Glide Library - Image Loading Lib
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-
-    //Glide Palette Library
-    compile 'com.github.florent37:glidepalette:1.0.6'
-
-    //Muzei API
-    compile 'com.google.android.apps.muzei:muzei-api:2.0'
-
-    //Floating Action Menu
-    compile 'com.github.clans:fab:1.6.2'
-
-    //Circular Image View
-    compile 'de.hdodenhof:circleimageview:2.0.0'
-
-    //RecyclerView Fast Scroller
-    compile 'com.github.pluscubed:recycler-fast-scroll:0.3.0@aar'
-
-    //Donations Lib
-    compile 'org.sufficientlysecure:donations:2.4'
 
 }

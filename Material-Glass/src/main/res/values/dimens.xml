@@ -38,13 +38,14 @@
     <dimen name="grid_padding_vertical">8dp</dimen>
     <dimen name="card_little_margin">6dp</dimen>
 
+    <dimen name="launchers_icons_padding">8dp</dimen>
+
     <dimen name="lists_padding">8dp</dimen>
 
     <dimen name="fab_size_normal">56dp</dimen>
     <dimen name="fab_size_mini">40dp</dimen>
 
     <dimen name="toolbar_expanded">256dp</dimen>
-    <dimen name="toolbar_contentInset">72dp</dimen>
     <integer name="toolbar_elevation">4</integer>
     <dimen name="tabs_contentInset">68dp</dimen>
 
@@ -55,11 +56,14 @@
 
     <dimen name="credits_headers">96dp</dimen>
     <dimen name="credits_photo_margin">48dp</dimen>
+    <dimen name="credits_photo_size">96dp</dimen>
+
+    <dimen name="app_card_icon_size">48dp</dimen>
 
     <!-- Dimensions for some dialogs -->
     <dimen name="dialog_margin">24dp</dimen>
     <dimen name="dialog_margin_bottom">16dp</dimen>
-    <dimen name="dialog_icon_size">96dp</dimen>
+    <dimen name="dialog_icon_size">120dp</dimen>
 
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
@@ -67,5 +71,9 @@
 
     <!-- Splash screen dimens -->
     <dimen name="splash_logo">16dp</dimen>
+
+    <dimen name="first_keyline">16dp</dimen>
+    <dimen name="second_keyline">72dp</dimen>
+    <dimen name="toolbar_horizontal_padding">4dp</dimen>
 
 </resources>
