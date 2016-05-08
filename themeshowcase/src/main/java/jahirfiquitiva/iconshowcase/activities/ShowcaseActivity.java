@@ -45,6 +45,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -147,7 +148,8 @@ public class ShowcaseActivity extends AppCompatActivity implements
     private static AppCompatActivity context;
 
     public static long currentItem = -1, iconsPickerIdentifier = 0, applyIdentifier = 0;
-    private static long wallsIdentifier = 0, settingsIdentifier = 0, secondaryStart = 0;
+    private static long wallsIdentifier = 0, settingsIdentifier = 0;
+    public static long secondaryStart = 0;
 
     public static int numOfIcons = 4;
     private static int wallpaper = -1;
@@ -249,6 +251,8 @@ public class ShowcaseActivity extends AppCompatActivity implements
             DONATIONS_FLATTR = false;
             DONATIONS_BITCOIN = false;
         }
+
+        Log.e("asdf", installedFromPlayStore + " " + DONATIONS_PAYPAL);
 
         //Initialize SecondaryDrawerItems
         if (WITH_DONATIONS_SECTION) {
@@ -950,6 +954,11 @@ public class ShowcaseActivity extends AppCompatActivity implements
             appName.setText(headerAppName);
             appVersion.setText(headerAppVersion);
         }
+    }
+
+    public void toDonate() {
+        drawerItemClick(donationsIdentifier);
+        drawer.setSelection(donationsIdentifier);
     }
 
     public void drawerItemClick(long id) {

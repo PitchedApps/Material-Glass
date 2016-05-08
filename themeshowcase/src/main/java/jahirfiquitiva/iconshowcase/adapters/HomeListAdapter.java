@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -93,32 +94,44 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public class WelcomeCard extends RecyclerView.ViewHolder {
 
         final LinearLayout buttons;
-        AppCompatButton ratebtn, moreappsbtn;
+        AppCompatButton ratebtn, moreappsbtn, donatebtn;
 
         public WelcomeCard(View itemView) {
             super(itemView);
             buttons = (LinearLayout) itemView.findViewById(R.id.buttons);
-            if (hasAppsList) {
+//            if (hasAppsList) {
                 buttons.setVisibility(View.VISIBLE);
-            } else {
-                buttons.setVisibility(View.GONE);
-            }
+//            } else {
+//                buttons.setVisibility(View.GONE);
+//            }
             ratebtn = (AppCompatButton) itemView.findViewById(R.id.rate_button);
             ratebtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent rate = new Intent(Intent.ACTION_VIEW,
-                            Uri.parse("https://play.google.com/store/apps/details?id=" + context.getPackageName()));
+                            Uri.parse("https://play.google.com/store/apps/details?id=com.pitchedapps.material.glass.free"));
                     context.startActivity(rate);
                 }
             });
-            moreappsbtn = (AppCompatButton) itemView.findViewById(R.id.more_apps_button);
+            moreappsbtn = (AppCompatButton) itemView.findViewById(R.id.send_email_button);
             moreappsbtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Utils.openLink(context, context.getResources().getString(R.string.iconpack_author_playstore));
+                    Utils.sendEmailWithDeviceInfo(context);
                 }
             });
+
+            donatebtn = (AppCompatButton) itemView.findViewById(R.id.donate_home_button);
+            donatebtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ShowcaseActivity s = new ShowcaseActivity();
+                    long l = s.secondaryStart + 1;
+                    s.drawerItemClick(l);
+                    s.drawer.setSelection(l);
+                }
+            });
+
         }
     }
 

@@ -37,6 +37,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -81,6 +82,8 @@ public class MainFragment extends Fragment {
             hasAppsList = true;
         }
 
+        Log.e("asdf", "info " + hasAppsList + names + descs + icons + packs);
+
         context = getActivity();
 
         if (layout != null) {
@@ -118,6 +121,7 @@ public class MainFragment extends Fragment {
 
         if (hasAppsList) {
             for (int i = 0; i < appsNames.length; i++) {
+                Log.e("asdf", "test " + i);
                 try {
                     if (appsPackages[i].indexOf("http") != -1) { //checks if package is a site
                         homeCards.add(new HomeCard.Builder()

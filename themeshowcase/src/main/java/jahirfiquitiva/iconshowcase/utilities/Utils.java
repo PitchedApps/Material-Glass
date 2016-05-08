@@ -210,7 +210,7 @@ public class Utils {
         StringBuilder emailBuilder = new StringBuilder();
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + context.getResources().getString(R.string.email_id)));
         intent.putExtra(Intent.EXTRA_SUBJECT, context.getResources().getString(R.string.email_subject));
-        emailBuilder.append("\n \n \nOS Version: ").append(System.getProperty("os.version")).append("(").append(Build.VERSION.INCREMENTAL).append(")");
+        emailBuilder.append("Write stuff here\n \n \nOS Version: ").append(System.getProperty("os.version")).append("(").append(Build.VERSION.INCREMENTAL).append(")");
         emailBuilder.append("\nOS API Level: ").append(Build.VERSION.SDK_INT);
         emailBuilder.append("\nDevice: ").append(Build.DEVICE);
         emailBuilder.append("\nManufacturer: ").append(Build.MANUFACTURER);

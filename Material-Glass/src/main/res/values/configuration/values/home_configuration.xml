@@ -64,18 +64,24 @@
     -->
     <integer name="zooper_widgets">0</integer>
 
+    <!--<string-array name="apps_titles">-->
+        <!--<item>Google+ Beta Community</item>-->
+        <!--&lt;!&ndash;<item>XDA Thread</item>&ndash;&gt;-->
+    <!--</string-array>-->
 
-    <string-array name="apps_titles">
+    <!--<string-array name="apps_descriptions">-->
+        <!--&lt;!&ndash;<item>Google+ Beta Community</item>&ndash;&gt;-->
+        <!--<item>Google+ Beta Community</item>-->
+    <!--</string-array>-->
 
-    </string-array>
+    <!--<string-array name="apps_icons">-->
+        <!--&lt;!&ndash;<item>ic_gplus</item>&ndash;&gt;-->
+        <!--<item>ic_na_launcher</item>-->
+    <!--</string-array>-->
 
-    <string-array name="apps_descriptions">
-    </string-array>
-
-    <string-array name="apps_icons">
-    </string-array>
-
-    <string-array name="apps_packages">
-    </string-array>
+    <!--<string-array name="apps_packages">-->
+        <!--&lt;!&ndash;<item>http://www.google.ca</item>&ndash;&gt;-->
+        <!--<item>com.pitchedapps.material.glass.test</item>-->
+    <!--</string-array>-->
 
 </resources>
