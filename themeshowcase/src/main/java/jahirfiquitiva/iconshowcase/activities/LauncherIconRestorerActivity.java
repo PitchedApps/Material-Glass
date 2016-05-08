@@ -43,8 +43,7 @@ public class LauncherIconRestorerActivity extends Activity {
         Class<?> className = null;
 
         final String packageName = Utils.getAppPackageName(getApplicationContext());
-        String activityName = getResources().getString(R.string.main_activity_name);
-        final String componentNameString = packageName + "." + activityName;
+        final String componentNameString = getResources().getString(R.string.main_activity_fullname);
 
         try {
             className = Class.forName(componentNameString);

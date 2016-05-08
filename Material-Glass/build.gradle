@@ -46,6 +46,7 @@ android {
                     'src/main/res/drawable/launchers_icons',
                     'src/main/res/drawable/widgets',
                     'src/main/res/values',
+                    'src/main/res/values/texts',
                     'src/main/res/values/icon_pack',
                     'src/main/res/values/configuration'
             ]

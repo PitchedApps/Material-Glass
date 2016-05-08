@@ -38,6 +38,6 @@
     True, means colored.
     False, means black.
     -->
-    <bool name="color_navbar_by_default">true</bool>
+    <bool name="color_navbar_by_default">false</bool>
 
 </resources>

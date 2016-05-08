@@ -408,8 +408,9 @@ public class ShowcaseActivity extends AppCompatActivity implements
                 return thaCredits;
             case "Settings":
                 return thaSettings;
+            default:
+                return ":(";
         }
-        return ":(";
     }
 
     public void switchFragment(long itemId, String fragment,

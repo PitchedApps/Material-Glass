@@ -56,7 +56,7 @@
     then write Activity
     -->
     <string name="main_activity_name">HomeActivity</string>
-    <string name="main_activity_fullname">com.packagename.appname.HomeActivity</string>
+    <string name="main_activity_fullname">com.pitchedapps.material.glass.HomeActivity</string>
 
     <!-- TEXTS TO BE USED IN ABOUT SECTION -->
 
