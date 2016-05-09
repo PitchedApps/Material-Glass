@@ -125,10 +125,7 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             donatebtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ShowcaseActivity s = new ShowcaseActivity();
-                    long l = s.secondaryStart + 1;
-                    s.drawerItemClick(l);
-                    s.drawer.setSelection(l);
+                    ((ShowcaseActivity)context).toDonate();
                 }
             });
 
@@ -250,7 +247,9 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 }
             });
 
-            if (homeCards.get(i - cards).isInstalled) {
+            if (!homeCards.get(i - cards).isAnApp) {
+                description = homeCards.get(pos - cards).desc;
+            } else if (homeCards.get(i - cards).isInstalled) {
                 description = context.getResources().getString(
                         R.string.tap_to_open,
                         homeCards.get(i - cards).desc);

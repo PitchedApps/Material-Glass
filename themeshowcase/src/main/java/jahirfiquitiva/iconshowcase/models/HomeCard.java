@@ -14,7 +14,7 @@ public class HomeCard implements Parcelable {
     public final Drawable img;
     private Context context;
     public final boolean imgEnabled;
-    private boolean isAnApp;
+    public boolean isAnApp;
     public boolean isInstalled;
     public Intent intent;
 

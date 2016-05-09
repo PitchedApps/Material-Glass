@@ -149,7 +149,7 @@ public class ShowcaseActivity extends AppCompatActivity implements
 
     public static long currentItem = -1, iconsPickerIdentifier = 0, applyIdentifier = 0;
     private static long wallsIdentifier = 0, settingsIdentifier = 0;
-    public static long secondaryStart = 0;
+    public static long secondaryStart = 0, donationsIdentifier = 0;
 
     public static int numOfIcons = 4;
     private static int wallpaper = -1;
@@ -251,8 +251,6 @@ public class ShowcaseActivity extends AppCompatActivity implements
             DONATIONS_FLATTR = false;
             DONATIONS_BITCOIN = false;
         }
-
-        Log.e("asdf", installedFromPlayStore + " " + DONATIONS_PAYPAL);
 
         //Initialize SecondaryDrawerItems
         if (WITH_DONATIONS_SECTION) {
@@ -883,6 +881,7 @@ public class ShowcaseActivity extends AppCompatActivity implements
                     drawerBuilder.addDrawerItems(settingsItem);
                     break;
                 case "Donations":
+                    donationsIdentifier = i + secondaryStart;
                     donationsItem = new SecondaryDrawerItem().withName(thaDonate).withIdentifier(i + secondaryStart);
                     drawerBuilder.addDrawerItems(donationsItem);
                     break;
@@ -957,6 +956,7 @@ public class ShowcaseActivity extends AppCompatActivity implements
     }
 
     public void toDonate() {
+        if (donationsIdentifier == 0) return;
         drawerItemClick(donationsIdentifier);
         drawer.setSelection(donationsIdentifier);
     }

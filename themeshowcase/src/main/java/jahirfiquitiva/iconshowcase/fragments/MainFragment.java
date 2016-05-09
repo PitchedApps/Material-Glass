@@ -82,8 +82,6 @@ public class MainFragment extends Fragment {
             hasAppsList = true;
         }
 
-        Log.e("asdf", "info " + hasAppsList + names + descs + icons + packs);
-
         context = getActivity();
 
         if (layout != null) {
@@ -121,9 +119,8 @@ public class MainFragment extends Fragment {
 
         if (hasAppsList) {
             for (int i = 0; i < appsNames.length; i++) {
-                Log.e("asdf", "test " + i);
                 try {
-                    if (appsPackages[i].indexOf("http") != -1) { //checks if package is a site
+                    if (appsPackages[i].indexOf("http") == 0) { //checks if package is a site
                         homeCards.add(new HomeCard.Builder()
                                 .context(getActivity())
                                 .title(appsNames[i])
@@ -246,15 +243,16 @@ public class MainFragment extends Fragment {
 
         if (themeMode) {
             modifyFABIcon();
-            fab.setVisibility(View.VISIBLE);
             fab.show();
+            fab.setVisibility(View.VISIBLE);
         } else {
             if (!hasAppsList) {
-                fab.setVisibility(View.VISIBLE);
                 fab.show();
+                fab.setVisibility(View.VISIBLE);
             } else {
-                fab.setVisibility(View.GONE);
                 fab.hide();
+                fab.setVisibility(View.GONE);
+
             }
         }
 

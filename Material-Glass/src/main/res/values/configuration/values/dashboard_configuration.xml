@@ -107,4 +107,36 @@
     <bool name="light_statusbar_in_dark_theme">false</bool>
     <bool name="light_statusbar_in_clear_theme">false</bool>
 
+    <string-array name="nonconsumable_google_donation_items">
+        <item>glass.donation.1</item>
+        <item>glass.donation.2</item>
+        <item>glass.donation.5</item>
+        <item>glass.donation.10</item>
+        <item>glass.donation.20</item>
+    </string-array>
+
+    <string-array name="consumable_google_donation_items">
+        <item>glass.donation.consumable.1</item>
+        <item>glass.donation.consumable.2</item>
+        <item>glass.donation.consumable.5</item>
+        <item>glass.donation.consumable.10</item>
+        <item>glass.donation.consumable.20</item>
+    </string-array>
+
+    <string-array name="google_donations_catalog">
+        <item>$1</item>
+        <item>$2</item>
+        <item>$5</item>
+        <item>$10</item>
+        <item>$20</item>
+    </string-array>
+
+    <!--paypal stuff; must all be completed for this to be enabled-->
+
+    <!--add your email here-->
+    <string name="paypal_user">pitchedapps@gmail.com</string>
+
+    <!--paypal currency code (ie CAD); make sure this is a valid code-->
+    <string name="paypal_currency_code">CAD</string>
+
 </resources>

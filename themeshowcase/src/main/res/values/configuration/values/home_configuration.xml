@@ -66,21 +66,22 @@
 
     <string-array name="apps_titles">
         <item>Google+ Beta Community</item>
-        <!--<item>XDA Thread</item>-->
+        <item>XDA Thread</item>
     </string-array>
 
     <string-array name="apps_descriptions">
-        <!--<item>Google+ Beta Community</item>-->
+        <item>Google+ Beta Community</item>
         <item>Google+ Beta Community</item>
     </string-array>
 
     <string-array name="apps_icons">
-        <!--<item>ic_gplus</item>-->
+        <item>ic_na_launcher</item>
         <item>ic_na_launcher</item>
     </string-array>
 
     <string-array name="apps_packages">
-        <!--<item>http://www.google.ca</item>-->
+        <!--<item>com.asdf</item>-->
+        <item>http://www.google.ca</item>
         <item>com.pitchedapps.material.glass.test</item>
     </string-array>
 
