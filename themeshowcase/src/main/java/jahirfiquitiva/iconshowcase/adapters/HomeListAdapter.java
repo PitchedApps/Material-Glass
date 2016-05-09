@@ -55,19 +55,18 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                         viewGroup, false);
                 return new WelcomeCard(welcomeCard);
             case 1:
-                if (!(context.getResources().getBoolean(R.bool.hide_pack_info))) {
-                    View infoCard = LayoutInflater.from(
-                            viewGroup.getContext()).inflate(R.layout.item_packinfo_card,
-                            viewGroup, false);
-                    return new AppInfoCard(infoCard);
-                }
-            case 2:
-                if (!hasAppsList) {
-                    View moreAppsCard = LayoutInflater.from(
-                            viewGroup.getContext()).inflate(R.layout.item_moreapps_card,
-                            viewGroup, false);
-                    return new MoreAppsCard(moreAppsCard);
-                }
+                View moreAppsCard = LayoutInflater.from(
+                viewGroup.getContext()).inflate(R.layout.item_moreapps_card,
+                    viewGroup, false);
+                return new MoreAppsCard(moreAppsCard);
+
+//            case 2:
+//                if (!hasAppsList) { //show anyways
+//                    View moreAppsCard = LayoutInflater.from(
+//                            viewGroup.getContext()).inflate(R.layout.item_moreapps_card,
+//                            viewGroup, false);
+//                    return new MoreAppsCard(moreAppsCard);
+//                }
             default:
                 final View appCard = LayoutInflater.from(
                         viewGroup.getContext()).inflate(R.layout.item_app_card,
@@ -267,6 +266,7 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             cardDesc.setText(description);
             if (homeCards.get(i - cards).imgEnabled) {
                 cardIcon.setImageDrawable(homeCards.get(i - cards).img);
+//                cardIcon.setImageDrawable(homeCards.get(i - cards).img);
             } else {
                 subLly.removeView(cardIcon);
             }

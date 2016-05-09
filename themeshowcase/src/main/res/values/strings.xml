@@ -73,6 +73,8 @@
     <string name="iconpack_author_playstore">https://play.google.com/store/apps/dev?id=7438639276314720952</string>
     <string name="iconpack_author_website">http://www.jahirfiquitiva.net/</string>
     <string name="iconpack_author_youtube">https://www.youtube.com/channel/UCBTheBoZEA1p95HyjEHqouA</string>
+    <!--xda--><string name="iconpack_author_xda">http://forum.xda-developers.com/google-nexus-5/themes-apps/theme-material-glass-t3005025</string>
+
 
     <string-array name="iconpack_author_sites">
         <item>@string/facebook</item>

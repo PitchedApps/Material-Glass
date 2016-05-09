@@ -65,24 +65,35 @@
     <integer name="zooper_widgets">0</integer>
 
     <string-array name="apps_titles">
+        <!--<item>More Apps Test</item>-->
+        <item>More Apps</item>
         <item>Google+ Beta Community</item>
         <item>XDA Thread</item>
+        <item>Pitched Glass</item>
     </string-array>
 
     <string-array name="apps_descriptions">
-        <item>Google+ Beta Community</item>
-        <item>Google+ Beta Community</item>
+        <!--<item>Test</item>-->
+        <item>Check the other apps I have published in the Google Play Store</item>
+        <item>Join the beta community and help support the development!\nMake sure you opt into beta with the link in the community after you join.</item>
+        <item>Join the thread on xda</item>
+        <item>Check out my free icon pack with over 2500 icons!</item>
     </string-array>
 
     <string-array name="apps_icons">
-        <item>ic_na_launcher</item>
-        <item>ic_na_launcher</item>
+        <!--<item>ic_na_launcher</item>-->
+        <item>ic_gplus</item>
+        <item>ic_gplus</item>
+        <item>ic_xda</item>
+        <item>ic_pitched_glass</item>
     </string-array>
 
     <string-array name="apps_packages">
-        <!--<item>com.asdf</item>-->
-        <item>http://www.google.ca</item>
-        <item>com.pitchedapps.material.glass.test</item>
+        <!--<item>@string/iconpack_author_playstore</item>-->
+        <item>@string/iconpack_author_playstore</item>
+        <item>@string/iconpack_author_gplus_community</item>
+        <item>@string/iconpack_author_xda</item>
+        <item>com.pitchedapps.icons.glass</item>
     </string-array>
 
 </resources>

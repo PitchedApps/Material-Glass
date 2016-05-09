@@ -252,7 +252,6 @@ public class MainFragment extends Fragment {
             } else {
                 fab.hide();
                 fab.setVisibility(View.GONE);
-
             }
         }
 
