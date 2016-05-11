@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test Glass</string>
+
+    <string name="theme_name">@string/app_name</string>
+    <string name="theme_author">Pitched Apps</string>
+    <string name="email_id">pitchedapps@gmail.com</string>
+</resources>

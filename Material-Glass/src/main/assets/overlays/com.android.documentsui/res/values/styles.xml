@@ -2,7 +2,7 @@
 <resources>
     <style name="DialogWhenReallyLarge" parent="@android:style/Theme.Material.Wallpaper" />
     <style name="DocumentsTheme" parent="@style/DialogWhenReallyLarge">
-        <!--<item name="android:windowNoTitle">true</item>-->
+        <item name="android:windowNoTitle">true</item>
         <!--<item name="android:listDivider">@android:drawable/list_divider_material</item>-->
         <item name="android:windowSoftInputMode">adjustUnspecified|stateUnspecified</item>
         <item name="android:windowActionBar">false</item>

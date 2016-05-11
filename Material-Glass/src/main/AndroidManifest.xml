@@ -2,10 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.pitchedapps.material.glass"
+    android:sharedUserId="android.uid.MGlass"
     android:process="com.android.Layers">
-
-    <!--android:sharedUserId="android.uid.MGlass"-->
-
 
     <uses-permission android:name="com.android.vending.BILLING" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
