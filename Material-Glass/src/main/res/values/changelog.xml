@@ -18,7 +18,7 @@
     </string-array>
 
     <string-array name="fullchangelog">
-        <item>@array/header</item>
+        <item>@array/v80</item>
         <item>@array/v79</item>
         <item>@array/v78</item>
         <item>@array/v77</item>
@@ -124,10 +124,12 @@
         <item></item>
     </string-array>
 	
-    <string-array name="header">
-        <item>***New: Xposed Add-On in alpha testing***</item>
-        <item>Join the beta community for early access</item>
-        <item>Link is in this app</item>
+    <string-array name="v80">
+        <item>v3.0.7</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 	
 	<string-array name="v79">
@@ -136,11 +138,7 @@
         <item>New: themed Pushbullet Portal</item>
         <item>New: themed Google Calculator</item>
         <item>Google Drive: removed for cm; updated for layers</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>New: themed Minuum free (use the default theme)</item>
     </string-array>
 	
 	 <string-array name="v78">

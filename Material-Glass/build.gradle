@@ -20,8 +20,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 306
-        versionName '3.0.6'
+        versionCode 307
+        versionName '3.0.7'
     }
 
     applicationVariants.all { variant ->
