@@ -87,5 +87,27 @@
         <item name="android:layout_margin">8.0dip</item>
         <item name="android:minHeight">60.0dip</item>
     </style>
+	
+	<!--2016/05/11-->
+
+    <style name="AbstractCalendarPromotionTitle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20.0dip</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="AbstractCalendarPromotionText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
 
 </resources>

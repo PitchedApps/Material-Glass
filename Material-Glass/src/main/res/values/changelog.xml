@@ -126,9 +126,10 @@
 	
     <string-array name="v80">
         <item>v3.0.7</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Renamed some layers (make sure you uninstall and reinstall everything!)</item>
+        <item>Gmail: updated lots of colors</item>
+        <item>New: themed Google Music</item>
+        <item>New: themed Inbox</item>
         <item></item>
     </string-array>
 	
