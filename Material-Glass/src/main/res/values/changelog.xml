@@ -18,6 +18,7 @@
     </string-array>
 
     <string-array name="fullchangelog">
+        <item>@array/v81</item>
         <item>@array/v80</item>
         <item>@array/v79</item>
         <item>@array/v78</item>
@@ -124,13 +125,22 @@
         <item></item>
     </string-array>
 	
+    <string-array name="v81">
+        <item>v3.0.8</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
     <string-array name="v80">
         <item>v3.0.7</item>
         <item>Renamed some layers (make sure you uninstall and reinstall everything!)</item>
         <item>Gmail: updated lots of colors</item>
         <item>New: themed Google Music</item>
         <item>New: themed Inbox</item>
-        <item></item>
+        <item>SystemUI: simplistic brightness thumb</item>
     </string-array>
 	
 	<string-array name="v79">
