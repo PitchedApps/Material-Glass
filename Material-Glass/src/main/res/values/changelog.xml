@@ -127,11 +127,11 @@
 	
     <string-array name="v81">
         <item>v3.0.8</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Google Translate: fixed crash</item>
+        <item>Google Play Store: updated search bar logo</item>
+        <item>Google Play Store: made fixed tab text color white for layers</item>
+        <item>New: themed L Speed</item>
+        <item>New: themed XDA Labs</item>
     </string-array>
 	
     <string-array name="v80">

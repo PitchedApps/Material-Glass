@@ -87,14 +87,14 @@ android {
 dependencies {
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.3.0@aar'
-    compile 'com.android.support:support-v4:23.3.0@aar'
-    compile 'com.android.support:design:23.3.0'
-    compile 'com.android.support:cardview-v7:23.3.0@aar'
-    compile 'com.android.support:recyclerview-v7:23.3.0@aar'
-    compile 'com.android.support:palette-v7:23.3.0@aar'
-    compile 'com.android.support:gridlayout-v7:23.3.0'
-    compile 'com.android.support:customtabs:23.3.0'
+    compile 'com.android.support:appcompat-v7:23.4.0@aar'
+    compile 'com.android.support:support-v4:23.4.0@aar'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0@aar'
+    compile 'com.android.support:recyclerview-v7:23.4.0@aar'
+    compile 'com.android.support:palette-v7:23.4.0@aar'
+    compile 'com.android.support:gridlayout-v7:23.4.0'
+    compile 'com.android.support:customtabs:23.4.0'
 
     //Material Dialogs
     compile('com.github.afollestad.material-dialogs:core:0.8.5.8@aar') {
