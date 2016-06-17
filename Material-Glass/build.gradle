@@ -20,8 +20,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 308
-        versionName '3.0.8'
+        versionCode 310
+        versionName '3.1.0'
     }
 
     applicationVariants.all { variant ->
@@ -92,6 +92,6 @@ dependencies {
     compile project(':themeshowcase')
 
     //Android support libraries needed to build the sample
-    compile 'com.android.support:appcompat-v7:23.3.0@aar'
+    compile 'com.android.support:appcompat-v7:23.4.0@aar'
 
 }

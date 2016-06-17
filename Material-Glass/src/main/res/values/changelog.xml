@@ -18,6 +18,7 @@
     </string-array>
 
     <string-array name="fullchangelog">
+        <item>@array/v82</item>
         <item>@array/v81</item>
         <item>@array/v80</item>
         <item>@array/v79</item>
@@ -123,6 +124,25 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+	
+    <string-array name="v83">
+        <item>v3.1.0</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+	
+	 <string-array name="v82">
+        <item>v3.0.9</item>
+        <item>Google Music: fixed white widget; now blue</item>
+        <item>New: themed Google Dev Console</item>
+        <item>Gmail: updated hdpi widget background for layers</item>
+        <item>Gmail: fixed some green test colors</item>
+        <item>New: theme Instagram once again</item>
+        <item>Whatsapp: some very minor fixes</item>
     </string-array>
 	
     <string-array name="v81">

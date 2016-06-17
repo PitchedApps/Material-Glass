@@ -97,4 +97,13 @@
     <color name="voice_note_scrubber_green">#ff09d261</color>
     <color name="voice_note_scrubber_grey">#ff93a98b</color>
     <color name="white">#ffffffff</color>
+
+
+    <!--2016/06/14-->
+    <color name="about_statusbar">#ff112d2e</color>
+    <color name="camera_thumb">#40000000</color>
+    <color name="chat_info_activity">#80000000</color>
+    <color name="gallery_separator">#33ffffff</color>
+    <color name="home_row_selection">#0dffffff</color>
+
 </resources>
