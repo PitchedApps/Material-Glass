@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--2016/06/14-->
+    <!--2016/06/25-->
     <color name="grey_9">#fff</color>
-    <color name="grey_8">#fff</color>
-    <color name="grey_7">#fff</color>
+    <color name="grey_8">#30ffffff</color>
+    <color name="grey_7">#80ffffff</color>
     <color name="grey_6">#fff</color>
-    <color name="grey_5">#fff</color>
-    <color name="grey_4">#fff</color>
-    <color name="grey_3">#fff</color>
-    <color name="grey_2">#fff</color>
+    <color name="grey_5">#aaffffff</color>
+    <color name="grey_4">#aaffffff</color>
+    <color name="grey_3">#a0ffffff</color> <!--button background-->
+    <color name="grey_2">#111</color>
     <color name="grey_1_5">#fff</color>
-    <color name="grey_1">#fff</color>
+    <color name="grey_1">#111</color>
     <color name="grey_0_7">#fff</color>
-    <color name="grey_0_5">#fff</color>
+    <color name="grey_0_5">#80ffffff</color>
 
-    <color name="black">#ffff0000</color>
-    <color name="black_6_transparent">#0fff0000</color>
-    <color name="black_10_transparent">#1aff0000</color>
-    <color name="black_25_transparent">#40ff0000</color>
-    <color name="black_30_transparent">#4dff0000</color>
-    <color name="black_40_transparent">#66ff0000</color>
-    <color name="black_50_transparent">#80ff0000</color>
-    <color name="black_80_transparent">#cdff0000</color>
-    <color name="black_95_transparent">#f2ff0000</color>
+    <color name="blue_6">#33ffffff</color>
+    <color name="blue_2">#222</color>
+    <color name="blue_1">#000</color>
+
+    <color name="black">#000</color>
+    <color name="black_6_transparent">#0f000000</color>
+    <color name="black_10_transparent">#1a000000</color>
+    <color name="black_25_transparent">#40000000</color>
+    <color name="black_30_transparent">#4d000000</color>
+    <color name="black_40_transparent">#66000000</color>
+    <color name="black_50_transparent">#80000000</color>
+    <color name="black_80_transparent">#cd000000</color>
+    <color name="black_95_transparent">#f2000000</color>
 
     <color name="grey_7_transparent">#00000000</color>
     <color name="grey_5_50_transparent">#80333333</color>
@@ -37,7 +41,7 @@
     <color name="pill_background_outline_pressed">#4dffffff</color>
     <color name="default_slideout_icon_text_color">#fff</color>
     <color name="default_slideout_icon_background">#b3000000</color>
-    <color name="gray">#fff</color>
+    <color name="gray">#ccffffff</color>
     <color name="iosblue">#ff0044e2</color>
     <color name="photo_map_disabled_text">#ff98d281</color>
     <color name="people_tagging_search_background_default">#e616181a</color>
@@ -79,7 +83,7 @@
     <color name="grey_3_whiteout">#88ffffff</color>
     <color name="grey_2_whiteout">#88ffffff</color>
     <color name="grey_1_whiteout">#22ffffff</color>
-    <color name="grey_0_whiteout">#22ffffff</color>
+    <color name="grey_0_whiteout">#fff</color><!--actionbar opacity-->
 
     <color name="blue_9_whiteout">#ff748B96</color>
     <color name="blue_8_whiteout">#ff748B96</color>
@@ -92,4 +96,10 @@
     <color name="blue_1_whiteout">#ffdfefff</color>
     <color name="blue_0_whiteout">#fff4faff</color>
 
+    <color name="blue_medium">#ff748B96</color>
+
+    <color name="action_bar_top_highlight">#000</color>
+    <color name="dark_action_bar_top_highlight">#000</color>
+    <color name="action_bar_transparent_background">#20000000</color>
+    <color name="action_bar_transparent_background_pressed_state">#30ffffff</color>
 </resources>

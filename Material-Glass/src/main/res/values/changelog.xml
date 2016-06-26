@@ -18,6 +18,7 @@
     </string-array>
 
     <string-array name="fullchangelog">
+        <item>@array/v83</item>
         <item>@array/v82</item>
         <item>@array/v81</item>
         <item>@array/v80</item>
@@ -128,11 +129,9 @@
 	
     <string-array name="v83">
         <item>v3.1.0</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Updated to latest layer commits for the following apps: Dialer, Contact, Calculator, CellBroadcastReceiver</item>
+        <item>Instagram: changed to a black layout and fixed the DM white</item>
+        <item>App: fixed some general crashes</item>
     </string-array>
 	
 	 <string-array name="v82">

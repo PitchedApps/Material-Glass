@@ -28,6 +28,8 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 
+import com.afollestad.materialdialogs.MaterialDialog;
+
 import jahirfiquitiva.iconshowcase.R;
 import jahirfiquitiva.iconshowcase.activities.ShowcaseActivity;
 
@@ -298,11 +300,18 @@ public class LauncherIntents {
             layers.putExtra("pkgName", context.getPackageName());
             context.startActivity(layers);
         } catch (Exception e) {
-            Intent layers = new Intent("android.intent.action.MAIN");
-            layers.setComponent(new ComponentName("com.lovejoy777.rroandlayersmanager",
-                    "com.lovejoy777.rroandlayersmanager.MainActivity"));
-            layers.putExtra("pkgName", context.getPackageName());
-            context.startActivity(layers);
+            try {
+                Intent layers = new Intent("android.intent.action.MAIN");
+                layers.setComponent(new ComponentName("com.lovejoy777.rroandlayersmanager",
+                        "com.lovejoy777.rroandlayersmanager.MainActivity"));
+                layers.putExtra("pkgName", context.getPackageName());
+                context.startActivity(layers);
+            } catch (Exception ee) {
+                new MaterialDialog.Builder(context)
+                        .title(R.string.NTED_title)
+                        .content(R.string.NTED_message)
+                        .show();
+            }
         }
 
     }

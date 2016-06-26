@@ -224,6 +224,25 @@ public class Utils {
         assert appInfo != null;
         emailBuilder.append("\nApp Version Name: ").append(appInfo.versionName);
         emailBuilder.append("\nApp Version Code: ").append(appInfo.versionCode);
+
+        boolean cm, cyngn, rro;
+        cm = Utils.isAppInstalled(context, "org.cyanogenmod.theme.chooser");
+        cyngn = Utils.isAppInstalled(context, "com.cyngn.theme.chooser");
+
+        //don't enable rro before lollipop, it didn't exist before that
+        rro = Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP &&
+                Utils.isAppInstalled(context, "com.lovejoy777.rroandlayersmanager");
+
+        if (cm) {
+            emailBuilder.append("\nCM Theme Engine");
+        }
+        if (rro) {
+            emailBuilder.append("\nLayers Manager");
+        }
+        if (cyngn) {
+            emailBuilder.append("\nCyanogenOS Theme Engine");
+        }
+
         intent.putExtra(Intent.EXTRA_TEXT, emailBuilder.toString());
         context.startActivity(Intent.createChooser(intent, (context.getResources().getString(R.string.send_title))));
     }

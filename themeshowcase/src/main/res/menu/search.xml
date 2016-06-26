@@ -29,7 +29,7 @@
 
     <item
         android:id="@+id/search"
-        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+        android:icon="@drawable/ic_search"
         android:title="@string/search_icons"
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="always|collapseActionView"
