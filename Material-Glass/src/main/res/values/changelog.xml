@@ -18,6 +18,7 @@
     </string-array>
 
     <string-array name="fullchangelog">
+        <item>@array/v84</item>
         <item>@array/v83</item>
         <item>@array/v82</item>
         <item>@array/v81</item>
@@ -125,6 +126,12 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+
+    <string-array name="v84">
+        <item>v3.1.1</item>
+        <item>Second attempt at fixing instagram</item>
+        <item>As always, make sure you properly update the theme. Uninstall and reinstall the overlay for layers and check the faq if you need more info.</item>
     </string-array>
 	
     <string-array name="v83">

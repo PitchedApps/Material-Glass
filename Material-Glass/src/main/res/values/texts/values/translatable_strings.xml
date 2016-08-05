@@ -281,6 +281,7 @@
     </string-array>
 
     <string-array name="questions">
+        <item>How do I use this theme?</item>
         <item>There\'s a bug in this theme!</item>
         <item>How do I submit a log?</item>
         <item>Why aren\'t the dialer and contact apps themed?</item>
@@ -298,8 +299,11 @@
     </string-array>
 
     <string-array name="answers">
+        <item>If you have a theme engine, it should be pretty straightforward. Either open the engine and apply my theme for there or press my FAB button. If applying it isn\'t straigtforward, odds are you don\'t have a theme engine. In that case, please find a compatible rom; there is extensive documentation on both engines online.
+        </item>
         <item>Firstly, please make sure you\'ve rebooted your phone.
             \n\n\u2022 If the issue is in some part that is essential, such as the notification drawer, it is likely not an issue on my side.
+            \n\n\u2022 If you are using layers, you need to install the overlay apks to update. Uninstall the overlay and install the new one, then reboot.
             \n\u2022 If the app has a light or dark theme, you normally need to use the dark version.
             \n\u2022 Note that theme engines don\'t have access to all the possible resources.
             That is why I\'ve created the XMaterial Glass Addon, so I can fix things here and there via xposed.
