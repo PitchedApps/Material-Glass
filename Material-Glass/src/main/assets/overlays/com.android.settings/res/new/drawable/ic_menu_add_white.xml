@@ -1,3 +1,0 @@
-<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-	android:src="@drawable/ic_menu_add_white_bm"
-	android:tint="@*common:color/zed_text" />

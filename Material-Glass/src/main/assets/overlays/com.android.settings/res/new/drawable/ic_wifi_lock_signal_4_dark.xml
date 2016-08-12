@@ -1,3 +1,0 @@
-<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-	android:src="@drawable/ic_wifi_lock_signal_4_dark_bm"
-	android:tint="@*common:color/zed_text" />

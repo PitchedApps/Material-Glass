@@ -147,6 +147,7 @@
         <item>Google Messenger: Fixed black text for delete dialog</item>
         <item>Relay for Reddit: Fixed crash in new update</item>
         <item>GoogleDeskClock: added back for layers</item>
+		<item>Gmail: Text fixes for CM and tablets</item>
     </string-array>
 
     <string-array name="v84">
