@@ -1,0 +1,3 @@
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+	android:src="@drawable/nfc_payment_empty_state_bm"
+	android:tint="@*common:color/zed_text" />

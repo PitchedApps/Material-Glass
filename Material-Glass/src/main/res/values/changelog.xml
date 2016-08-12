@@ -18,6 +18,8 @@
     </string-array>
 
     <string-array name="fullchangelog">
+        <item>@array/notice</item>
+        <item>@array/v85</item>
         <item>@array/v84</item>
         <item>@array/v83</item>
         <item>@array/v82</item>
@@ -126,6 +128,25 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+	
+    <string-array name="notice">
+        <item>Notice</item>
+        <item>Substratum: I have already started supporting it, and I use it in my primary rom. Due to incompatibilities, I cannot include it in this apk. Check the play store description to get a link to the project folder and join the beta community for more updates.</item>
+        <item>Layers: As of now, I will still support layers as I find it more stable than Substratum. As Substratum becomes more mature, I will be dropping support.</item>
+        <item>Project Zed: I am starting a complete revamp of Material Glass, and will be supporting color and transparency customization; more info on this in the beta community.</item>
+        <item>CM: Cyanogenmod will still be supported in future builds, and will be the base for Project Zed</item>
+        <item>Android N: I currently do not support Android N, as there are many changes both theme and structure wise. Use it as is and expect bugs!</item>
+		<item>This app: Alongisde Project Zed, I will be completely redoing the UI for this app. It will contain some automatic bug reports, as well as push notifications. This is a very long task for a single person, so it won\'t be available on the play store any time soon. It will however be the base UI for Project Zed.</item>
+    </string-array>
+	
+    <string-array name="v85">
+        <item>v3.2.0</item>
+        <item>Whatsapp: Made background blue; I\'m getting too many reports saying that black on black is unreadable. This is my final attempt in theming it, as the black text is hardcoded. If you like it, use it; otherwise, remove this overlay from the theme.</item>
+        <item>Instagram: Fixed black text for stories</item>
+        <item>Google Messenger: Fixed black text for delete dialog</item>
+        <item>Relay for Reddit: Fixed crash in new update</item>
+        <item>GoogleDeskClock: added back for layers</item>
     </string-array>
 
     <string-array name="v84">

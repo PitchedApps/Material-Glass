@@ -62,27 +62,28 @@
     <color name="light_gray">#f0f</color><!--???-->
     <color name="link_color_incoming">#ff2b9fd9</color>
     <color name="link_color_outgoing">#ff14a1b3</color>
+    <color name="list_item_info">#74ffffff</color>
     <color name="list_item_sub_title">#8affffff</color>
     <color name="list_item_title">#deffffff</color>
 
-    <color name="material_grey_100">#f0f</color>
-    <color name="material_grey_300">#f0f</color>
-    <color name="material_grey_50">#f0f</color>
-    <color name="material_grey_600">#f0f</color>
-    <color name="material_grey_800">#f0f</color>
-    <color name="material_grey_850">#f0f</color>
-    <color name="material_grey_900">#f0f</color>
+    <color name="material_grey_100">#ff37657A</color>
+    <color name="material_grey_300">#ff37657A</color>
+    <color name="material_grey_50">#ff37657A</color>
+    <color name="material_grey_600">#ff37657A</color>
+    <color name="material_grey_800">#ff37657A</color>
+    <color name="material_grey_850">#ff37657A</color>
+    <color name="material_grey_900">#ff37657A</color>
     <color name="media_message_progress_determinate">#ff09d261</color>
     <color name="media_message_progress_indeterminate">#ffffffff</color>
     <color name="music_scrubber">#ffffad1f</color>
     <color name="notice_text">#ff517cd3</color>
     <color name="patina">#ff549388</color>
     <color name="popup_dim">#99000000</color>
-    <color name="primary">#ff075e54</color>
-    <color name="primary_dark">#ff054d44</color>
-    <color name="primary_dark_voip">#ff006c61</color>
+    <color name="primary">#ff37657A</color>
+    <color name="primary_dark">#ff37657A</color>
+    <color name="primary_dark_voip">#ff37657A</color>
 
-    <color name="primary_voip">#ff00786c</color>
+    <color name="primary_voip">#ff37657A</color>
     <color name="red">#ff8b0000</color>
     <color name="row_1">#f0f</color>
     <color name="row_2">#f0f</color>
@@ -98,12 +99,12 @@
     <color name="voice_note_scrubber_grey">#ff93a98b</color>
     <color name="white">#ffffffff</color>
 
-
     <!--2016/06/14-->
     <color name="about_statusbar">#ff112d2e</color>
-    <color name="camera_thumb">#40000000</color>
+    <color name="camera_thumb">#40ffffff</color>
     <color name="chat_info_activity">#80000000</color>
     <color name="gallery_separator">#33ffffff</color>
     <color name="home_row_selection">#0dffffff</color>
+
 
 </resources>

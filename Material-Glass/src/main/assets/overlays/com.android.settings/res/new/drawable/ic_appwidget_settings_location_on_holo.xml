@@ -1,0 +1,3 @@
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+	android:src="@drawable/ic_appwidget_settings_location_on_holo_bm"
+	android:tint="@*common:color/zed_text" />
