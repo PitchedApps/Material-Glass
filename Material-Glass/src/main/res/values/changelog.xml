@@ -19,6 +19,7 @@
 
     <string-array name="fullchangelog">
         <item>@array/notice</item>
+        <item>@array/v86</item>
         <item>@array/v85</item>
         <item>@array/v84</item>
         <item>@array/v83</item>
@@ -128,6 +129,12 @@
         <item></item>
         <item></item>
         <item></item>
+    </string-array>
+
+    <string-array name="v86">
+        <item>v3.2.1</item>
+        <item>Gmail: Fixed search text color for cm; attempt to fix white panel for bigger device screens</item>
+        <item>Relay: Fixed crash for cm; cannot be tinted so it has to be opaque</item>
     </string-array>
 	
     <string-array name="notice">

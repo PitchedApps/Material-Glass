@@ -8,20 +8,21 @@ tasks.whenTaskAdded { task ->
     }
 }
 
-repositories {
-    jcenter()
-    maven { url "https://jitpack.io" }
+ext {
+    TARGET_SDK = 23
+    BUILD_TOOLS = "23.0.3"
+    ANDROID_SUPPORT_LIBS = "23.4.0"
 }
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion TARGET_SDK
+    buildToolsVersion BUILD_TOOLS
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 23
-        versionCode 320
-        versionName '3.2.0'
+        targetSdkVersion TARGET_SDK
+        versionCode 321
+        versionName '3.2.1'
     }
 
     applicationVariants.all { variant ->
@@ -92,6 +93,6 @@ dependencies {
     compile project(':themeshowcase')
 
     //Android support libraries needed to build the sample
-    compile 'com.android.support:appcompat-v7:23.4.0@aar'
+    compile "com.android.support:appcompat-v7:$ANDROID_SUPPORT_LIBS@aar"
 
 }

@@ -66,24 +66,24 @@
     <color name="list_item_sub_title">#8affffff</color>
     <color name="list_item_title">#deffffff</color>
 
-    <color name="material_grey_100">#ff37657A</color>
-    <color name="material_grey_300">#ff37657A</color>
-    <color name="material_grey_50">#ff37657A</color>
-    <color name="material_grey_600">#ff37657A</color>
-    <color name="material_grey_800">#ff37657A</color>
-    <color name="material_grey_850">#ff37657A</color>
-    <color name="material_grey_900">#ff37657A</color>
+    <color name="material_grey_100">#ff555555</color>
+    <color name="material_grey_300">#ff555555</color>
+    <color name="material_grey_50">#ff555555</color>
+    <color name="material_grey_600">#ff555555</color>
+    <color name="material_grey_800">#ff555555</color>
+    <color name="material_grey_850">#ff555555</color>
+    <color name="material_grey_900">#ff555555</color>
     <color name="media_message_progress_determinate">#ff09d261</color>
     <color name="media_message_progress_indeterminate">#ffffffff</color>
     <color name="music_scrubber">#ffffad1f</color>
     <color name="notice_text">#ff517cd3</color>
     <color name="patina">#ff549388</color>
     <color name="popup_dim">#99000000</color>
-    <color name="primary">#ff37657A</color>
-    <color name="primary_dark">#ff37657A</color>
-    <color name="primary_dark_voip">#ff37657A</color>
+    <color name="primary">#ff555555</color>
+    <color name="primary_dark">#ff555555</color>
+    <color name="primary_dark_voip">#ff555555</color>
 
-    <color name="primary_voip">#ff37657A</color>
+    <color name="primary_voip">#ff555555</color>
     <color name="red">#ff8b0000</color>
     <color name="row_1">#f0f</color>
     <color name="row_2">#f0f</color>
