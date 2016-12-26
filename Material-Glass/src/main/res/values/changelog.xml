@@ -19,6 +19,7 @@
 
     <string-array name="fullchangelog">
         <item>@array/notice</item>
+        <item>@array/v87</item>
         <item>@array/v86</item>
         <item>@array/v85</item>
         <item>@array/v84</item>
@@ -131,20 +132,27 @@
         <item></item>
     </string-array>
 
-    <string-array name="v86">
-        <item>v3.2.1</item>
-        <item>Gmail: Fixed search text color for cm; attempt to fix white panel for bigger device screens</item>
-        <item>Relay: Fixed crash for cm; cannot be tinted so it has to be opaque</item>
-    </string-array>
-	
     <string-array name="notice">
         <item>Notice</item>
-        <item>Substratum: I have already started supporting it, and I use it in my primary rom. Due to incompatibilities, I cannot include it in this apk. Check the play store description to get a link to the project folder and join the beta community for more updates.</item>
-        <item>Layers: As of now, I will still support layers as I find it more stable than Substratum. As Substratum becomes more mature, I will be dropping support.</item>
-        <item>Project Zed: I am starting a complete revamp of Material Glass, and will be supporting color and transparency customization; more info on this in the beta community.</item>
-        <item>CM: Cyanogenmod will still be supported in future builds, and will be the base for Project Zed</item>
-        <item>Android N: I currently do not support Android N, as there are many changes both theme and structure wise. Use it as is and expect bugs!</item>
-		<item>This app: Alongisde Project Zed, I will be completely redoing the UI for this app. It will contain some automatic bug reports, as well as push notifications. This is a very long task for a single person, so it won\'t be available on the play store any time soon. It will however be the base UI for Project Zed.</item>
+        <item>I now support Android 7.1.1 with Substratum. If you have the theme engine installed, press the FAB button and the dialog should have a download link.</item>
+        <item>Alongside Substratum, there will be significant changes to the CM variant, as well as Project Zed (see description) and the deprecation of the layers version.</item>
+    </string-array>
+
+    <string-array name="v87">
+        <item>v3.3.0</item>
+        <item>Happy Holidays!</item>
+        <item>Gmail: Fixed Compose body</item>
+        <item>New: Themed Google Calendar widget</item>
+        <item>New: Themed MyFitnessPal widget</item>
+        <item>Layers: Removed layers zip</item>
+        <item>Substratum: Added temporary download link</item>
+    </string-array>
+
+    <string-array name="v86">
+        <item>v3.2.2</item>
+        <item>Gmail: Fixed search text color for cm; attempt to fix white panel for bigger device screens</item>
+        <item>Relay: Fixed crash for cm; cannot be tinted so it has to be opaque</item>
+        <item>Whatsapp: Changed from blue to a neutral gray</item>
     </string-array>
 	
     <string-array name="v85">

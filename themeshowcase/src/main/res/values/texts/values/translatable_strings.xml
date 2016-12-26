@@ -355,7 +355,12 @@
 
     <!--No Theme Engine Dialog-->
     <string name="NTED_title">Uh Oh!</string>
-    <string name="NTED_message">It seems like we aren\'t able to find a theme engine on your phone. If you know you have one, please open it and proceed from there. If you don\'t have one, please get a rom that supports either cyanogenmod or layers theming and follow their instructions.</string>
+    <string name="NTED_message">It seems like we aren\'t able to find a theme engine on your phone. If you know you have one, please open it and proceed from there. If you don\'t have one, please get a rom that supports either cyanogenmod or substratum theming and follow their instructions.</string>
+    <string name="layers_title">Hello Layers User</string>
+    <string name="layers_message">It\'s been a great run with you all, but I no longer support layers. Thankfully, Substratum has taken its place, and I have added support for that. The Substratum version isn\'t currently isn\'t in this build, but you can download it from Android FileHost (press download)</string>
+    <string name="substratum_title">Welcome Substratum</string>
+    <string name="substratum_message">After many long nights, I have finally added support for Substratum (and Android 7.1.1 too!). It currently isn\'t in this build, but you can download it from Android FileHost (press download).</string>
+    <string name="substratum_afh">https://www.androidfilehost.com/?w=files&amp;flid=89019</string>
 
     <string name="tap_to_download">%1$s\nTap this card to download it.</string>
     <string name="tap_to_open">%1$s\nTap this card to open the app.</string>

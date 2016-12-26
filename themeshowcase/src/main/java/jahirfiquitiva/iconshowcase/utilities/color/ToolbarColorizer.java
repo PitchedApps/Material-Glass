@@ -112,7 +112,7 @@ public class ToolbarColorizer {
     public static void tintSearchView(Context context, @NonNull Toolbar toolbar, MenuItem item,
                                       @NonNull SearchView searchView, @ColorInt int color) {
         item.setIcon(getTintedIcon(
-                ContextCompat.getDrawable(context, R.drawable.abc_ic_search_api_mtrl_alpha),
+                ContextCompat.getDrawable(context, R.drawable.ic_search),
                 color));
         final Class<?> cls = searchView.getClass();
         try {

@@ -81,4 +81,26 @@
     <style name="ConversationListFadeBase" parent="@android:style/Widget.Material.ListView">
         <item name="android:windowShowWallpaper">true</item>
     </style>
+
+    <!--Fix for compose message background-->
+    <style name="ComposeFieldLayout">
+        <item name="android:background">#80ffffff</item>
+        <item name="android:backgroundTint">#fff</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="RecipientComposeFieldLayout">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 </resources>

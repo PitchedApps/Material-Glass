@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.pitchedapps.material.glass"
-    android:sharedUserId="android.uid.MGlass"
-    android:process="com.android.Layers">
+    package="com.pitchedapps.material.glass">
 
     <uses-permission android:name="com.android.vending.BILLING" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -348,22 +346,6 @@
                 <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
             </intent-filter>
         </receiver>
-
-        <!--layers-->
-
-        <service android:name=".Overlay"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.layers.plugins.PICK_OVERLAYS" />
-                <category android:name="Overlay" />
-            </intent-filter>
-
-        </service>
-
-        <meta-data android:name="Layers_Name" android:value="@string/layers_name"/>
-        <meta-data android:name="Layers_Developer" android:value="@string/theme_dev"/>
-        <meta-data android:name="Layers_Description" android:value="@string/welcome_title"/>
-        <meta-data android:name="Layers_WhatsNew" android:value="@string/layers_new"/>
 
     </application>
 

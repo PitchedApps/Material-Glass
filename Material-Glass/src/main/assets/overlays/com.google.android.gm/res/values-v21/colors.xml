@@ -12,6 +12,8 @@
 	<color name="attachment_bg_color">#80000000</color>
 	<color name="autocomplete_divider_color">#11ffffff</color>
 	<color name="badge_background_color">#ff333333</color>
+	<color name="black_12pc">#1fffffff</color>
+	<color name="black_30pc">#4cffffff</color>
 	<color name="blue">#80161616</color>
 	<color name="blue_focused">#80323232</color>
 	<color name="calendar_header">#80161616</color>
@@ -28,16 +30,6 @@
 	<color name="chips_dropdown_text_default">#ffffffff</color>
 	<color name="chips_dropdown_text_highlighted">#ffffffff</color>
 	<color name="circle_background">#80000000</color>
-	<color name="common_action_bar_splitter">#22ffffff</color>
-	<color name="common_signin_btn_dark_text_default">@android:color/white</color>
-	<color name="common_signin_btn_dark_text_disabled">#ffaaaaaa</color>
-	<color name="common_signin_btn_dark_text_focused">@android:color/white</color>
-	<color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
-	<color name="common_signin_btn_default_background">#80000000</color>
-	<color name="common_signin_btn_light_text_default">#ff737373</color>
-	<color name="common_signin_btn_light_text_disabled">#ffaaaaaa</color>
-	<color name="common_signin_btn_light_text_focused">#ff737373</color>
-	<color name="common_signin_btn_light_text_pressed">@android:color/white</color>
 	<color name="compose_background">#80000000</color>
 	<color name="compose_label_hint">#aaffffff</color>
 	<color name="compose_label_text">#ddffffff</color>
@@ -74,8 +66,15 @@
 	<color name="done_text_color_dark_normal">#ffffffff</color>
 	<color name="done_text_color_disabled">#ddffffff</color>
 	<color name="done_text_color_normal">#ffffffff</color>
+	<color name="drag_n_drop_overlay_background">#dd000000</color>
+	<color name="drag_n_drop_overlay_textColor">#fff</color>
 	<color name="drawer_item_activated_background_color">#12ffffff</color>
+	<color name="drive_chip_background">#bb000000</color>
+	<color name="drive_chip_border">#222</color>
+	<color name="drive_chip_text">#fff</color>
 	<color name="edge_effect_color">#ffffffff</color>
+	<color name="empty_trash_spam_banner_background">#80000000</color>
+	<color name="empty_trash_spam_banner_text">#fff</color>
 	<color name="folder_list_divider_color">#22ffffff</color>
 	<color name="folder_list_heading_text_color">#ddffffff</color>
 	<color name="folder_teaser_count_text">#ddffffff</color>
@@ -124,6 +123,7 @@
 	<color name="promo_action_positive_text">#ffffffff</color>
 	<color name="promo_background">#80161616</color>
 	<color name="promo_card">#50000000</color>
+	<color name="propose_new_time_header_bg">#a0000000</color>
 	<color name="quantum_black_100">#fff</color>
 	<color name="quantum_black_divider">#1fffffff</color>
 	<color name="quantum_black_hint_text">#61ffffff</color>
@@ -144,6 +144,12 @@
 	<color name="quantum_greyblack1000">#ff0</color>
 	<color name="quantum_lightblue600">#ada</color>
 	<color name="quantum_lightblue700">#ada</color>
+	<color name="recurrence_bubble_text_normal">#fff</color>
+	<color name="recurrence_edit_event_text">#fff</color>
+	<color name="recurrence_edit_event_text_hint">#aaffffff</color>
+	<color name="recurrence_edit_event_text_link">#ffffff</color>
+	<color name="recurrence_picker_background">#a0000000</color>
+	<color name="recurrence_pressed">#22ffffff</color>
 	<color name="red">#80161616</color>
 	<color name="red_focused">#80323232</color>
 	<color name="rte_background_default">#80000000</color>
@@ -152,6 +158,7 @@
 	<color name="rte_button_background_on_default">#33ffffff</color>
 	<color name="rte_button_background_on_pressed">#66ffffff</color>
 	<color name="rte_button_background_ripple">#bbffffff</color>
+	<color name="rte_colorpicker_white_border">#22ffffff</color>
 	<color name="rte_fade_edge_end_color">#11ffffff</color>
 	<color name="rte_fill_tinted_gray">#f0f</color>
 	<color name="rte_swatch_button_background_pressed">#55ffffff</color>
@@ -169,8 +176,14 @@
 	<color name="snack_bar_background_color">#80000000</color>
 	<color name="snippet_text_color">#ddffffff</color>
 	<color name="solid_black">#ff000000</color>
+	<color name="spam_warning_background_color">#80000000</color>
+	<color name="srs_button_disabled_color">#33ffffff</color>
+	<color name="srs_button_text_disabled_color">#99ffffff</color>
 	<color name="subject_text_color_read">#ffffffff</color>
 	<color name="subject_text_color_unread">#ffffffff</color>
+	<color name="suggest_bar_background_color">#a0000000</color>
+	<color name="suggest_bar_button_text_color">#fff</color>
+	<color name="suggest_bar_description_text_color">#fff</color>
 	<color name="suw_list_item_icon_color_light">#89ffffff</color>
 	<color name="swipe_refresh_color1">#99111111</color>
 	<color name="swipe_refresh_color2">#99222222</color>
@@ -199,108 +212,10 @@
 	<color name="widget_conversation_list_divider_color">#22ffffff</color>
 	<color name="widget_header_bg_color">#80000000</color>
 
-
-	<!--Missing-->
-
-
-	<color name="autocomplete_bottom_shadow_start">#40000000</color>
-	<color name="black_12pc">#1fffffff</color>
-	<color name="black_30pc">#4cffffff</color>
-	<color name="black_half_transparent">#80000000</color>
-
-	<color name="chips_dropdown_permission_text">#fff</color>
-	<color name="compose_proposed_time_highlight_text">#fff</color>
-	<color name="drag_n_drop_overlay_background">#dd000000</color>
-	<color name="drag_n_drop_overlay_textColor">#fff</color>
-	<color name="drive_chip_background">#bb000000</color>
-	<color name="drive_chip_border">#222</color>
-	<color name="drive_chip_text">#fff</color>
-	<color name="duration_picker_gray">#f00</color>
-	<color name="empty_trash_spam_banner_background">#80000000</color>
-	<color name="empty_trash_spam_banner_text">#fff</color>
-	<color name="gray_75">#f0f</color>
-	<color name="letter_tile_font_spam_color">#fff</color>
-	<color name="propose_new_time_header_bg">#a0000000</color>
-	<color name="recurrence_bubble_text_normal">#fff</color>
-	<color name="recurrence_edit_event_button_background_stroke">#33000000</color>
-	<color name="recurrence_edit_event_text">#fff</color>
-	<color name="recurrence_edit_event_text_highlight">#55ffffff</color>
-	<color name="recurrence_edit_event_text_hint">#aaffffff</color>
-	<color name="recurrence_edit_event_text_link">#ffffff</color>
-	<color name="recurrence_picker_background">#a0000000</color>
-	<color name="recurrence_pressed">#22ffffff</color>
-	<color name="rte_colorpicker_white_border">#22ffffff</color>
-	<color name="spam_learn_more_text_color">#ffffff</color>
-	<color name="spam_warning_background_color">#80000000</color>
-	<color name="srs_button_disabled_color">#33ffffff</color>
-	<color name="srs_button_text_disabled_color">#99ffffff</color>
-	<color name="suggest_bar_background_color">#a0000000</color>
-	<color name="suggest_bar_button_text_color">#fff</color>
-	<color name="suggest_bar_description_text_color">#fff</color>
-	<color name="suw_color_accent_dark">#fff</color>
-	<!--<color name="suw_color_accent_glif_dark">#ff4285f4</color>-->
-	<!--<color name="suw_color_accent_glif_light">#ff4285f4</color>-->
-	<color name="suw_color_accent_light">#fff</color>
-	<color name="suw_link_color_dark">#fff</color>
-	<color name="suw_link_color_light">#fff</color>
-	<color name="suw_list_item_icon_color_dark">#b3ffffff</color>
-	<color name="suw_navbar_bg_dark">#a0000000</color>
-	<color name="suw_navbar_bg_light">#a0000000</color>
-	<color name="suw_progress_bar_color_dark">#ffffcd40</color>
-	<color name="suw_progress_bar_color_light">#fff4b400</color>
-
-
-	<!--Removed
-
-
-	<color name="abstractcomposearea">#88333333</color>
-	<color name="account_item_selected_text_color">#ffffffff</color>
-	<color name="account_setup_headline_color">#ffffffff</color>
-	<color name="account_setup_info_text_color">#ddffffff</color>
-	<color name="account_setup_label_large_text_color">#ffffffff</color>
-	<color name="account_setup_label_text_color">#ddffffff</color>
-	<color name="account_setup_xlarge_background_color">#80000000</color>
-	<color name="ap_background_color">#80000000</color>
-	<color name="ap_overflow_badge_color">#80161616</color>
-	<color name="ap_overflow_text_color">#ffffffff</color>
-	<color name="attachment_image_background_color">#80161616</color>
-	<color name="attachment_name_color">#ffaaaaaa</color>
-	<color name="attachment_tile_shadow_box_color">#33000000</color>
-	<color name="attachment_tile_subtitle_color">#aaffffff</color>
-	<color name="calendar_selected_date_text">#ffffffff</color>
-	<color name="chip_background_selected">#80161616</color>
-	<color name="compose_button_background_color">#88444444</color>
-	<color name="compose_button_pressed_background_color">#88666666</color>
-	<color name="compose_button_tint">#ccffffff</color>
-	<color name="conversation_item_grey_ripple_color">#30ffffff</color>
-	<color name="done_disabled_dark">#ffbfbfbf</color>
-	<color name="email_confirmation_color">#ddffffff</color>
-	<color name="folder_item_text_color_normal">#ddffffff</color>
-	<color name="gray_text_color">#ffaaaaaa</color>
-	<color name="grey_separator_color">#11ffffff</color>
-	<color name="high_spam_warning_background_color">#ffdd4b39</color>
-	<color name="holo_light_background_color">#80000000</color>
-	<color name="light_grey">#99999999</color>
-	<color name="link_text">#ddffffff</color>
-	<color name="low_spam_warning_background_color">#80323232</color>
-	<color name="mail_app_blue">#ffffffff</color>
-	<color name="mail_orange">#ffe7790d</color>
-	<color name="message_info_text_color">#ddffffff</color>
-	<color name="password_warning_color">#ffd30000</color>
-	<color name="promo_action_positive_background">#80161616</color>
-	<color name="promo_action_positive_background_pressed">#80161616</color>
-	<color name="statusbar_orange">#ffd06d0c</color>
-	<color name="swipe_to_refresh_text_color">#ddffffff</color>
-	<color name="text_color_medium_grey">#ffffffff</color>
-	<color name="text_primary_color">#fff</color>
-	<color name="text_secondary_color">#ddffffff</color>
-	<color name="tile_divider_color">#44ffffff</color>
-	<color name="vacation_responder_header_text_color">#ddffffff</color>
-	<color name="vacation_responder_main_text_color">#ffffffff</color>
-	<color name="vacation_responder_window_background">#80000000</color>
-	<color name="very_light_grey">#ff323232</color>
-	<color name="white">#99999999</color>
-	<color name="white_opacity_60pc">#99ffffff</color>
-
-	-->
+	<color name="avatar_tile_background_color">@android:color/black</color>
+	<color name="coupon_code_background_color">#80000000</color>
+	<color name="coupon_code_label_color">#8affffff</color>
+	<color name="coupon_code_text_color">#deffffff</color>
+	<color name="promo_offer_label_background_color">#80000000</color>
+	<color name="promo_offer_label_color">#8affffff</color>
 </resources>

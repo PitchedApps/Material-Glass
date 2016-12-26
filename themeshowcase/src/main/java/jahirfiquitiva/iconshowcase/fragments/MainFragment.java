@@ -30,6 +30,7 @@ import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
@@ -37,12 +38,12 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 
 import java.util.ArrayList;
@@ -60,7 +61,7 @@ public class MainFragment extends Fragment {
     private Context context;
     private ViewGroup layout;
 
-    private boolean themeMode, cm, cyngn, rro; //to store theme engine installation status
+    private boolean themeMode, cm, cyngn, rro, substratum; //to store theme engine installation status
 
     private FloatingActionButton fab;
     private final ArrayList<HomeCard> homeCards = new ArrayList<>();
@@ -261,8 +262,32 @@ public class MainFragment extends Fragment {
                 if (themeMode) {
                     if (cm || cyngn) {
                         new LauncherIntents(getActivity(), "Cmthemeengine");
+                    } else if (substratum) {
+                        new MaterialDialog.Builder(getActivity())
+                                .title(R.string.substratum_title)
+                                .content(R.string.substratum_message)
+                                .positiveText("Close")
+                                .neutralText("Download")
+                                .onNeutral(new MaterialDialog.SingleButtonCallback() {
+                                    @Override
+                                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                                        Utils.openLink(context, getString(R.string.substratum_afh));
+                                    }
+                                })
+                                .show();
                     } else if (rro) {
-                        new LauncherIntents(getActivity(), "Layers");
+                        new MaterialDialog.Builder(getActivity())
+                                .title(R.string.layers_title)
+                                .content(R.string.layers_message)
+                                .positiveText("Close")
+                                .neutralText("Download")
+                                .onNeutral(new MaterialDialog.SingleButtonCallback() {
+                                    @Override
+                                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                                        Utils.openLink(context, getString(R.string.substratum_afh));
+                                    }
+                                })
+                                .show();
                     } else {
                         new MaterialDialog.Builder(getActivity())
                                 .title(R.string.NTED_title)
@@ -287,10 +312,10 @@ public class MainFragment extends Fragment {
         //don't enable rro before lollipop, it didn't exist before that
         rro = Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP &&
                 Utils.isAppInstalled(context, "com.lovejoy777.rroandlayersmanager");
-
+        substratum = Utils.isAppInstalled(context, "projekt.substratum");
         if (cm || cyngn) {
             fab.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_apply_cm));
-        } else if (rro) {
+        } else if (rro || substratum) {
             fab.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_apply_layers));
         } else {
             fab.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_apply_icons));

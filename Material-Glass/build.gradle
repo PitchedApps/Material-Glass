@@ -9,9 +9,9 @@ tasks.whenTaskAdded { task ->
 }
 
 ext {
-    TARGET_SDK = 23
-    BUILD_TOOLS = "23.0.3"
-    ANDROID_SUPPORT_LIBS = "23.4.0"
+    TARGET_SDK = 25
+    BUILD_TOOLS = "25.0.2"
+    ANDROID_SUPPORT_LIBS = "25.1.0"
 }
 
 android {
@@ -21,8 +21,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion TARGET_SDK
-        versionCode 321
-        versionName '3.2.1'
+        versionCode 330
+        versionName '3.3.0'
     }
 
     applicationVariants.all { variant ->
