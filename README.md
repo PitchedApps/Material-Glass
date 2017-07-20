@@ -1,3 +1,9 @@
+# This project is now deprecated
+
+Support has been removed for the CMTE, and Material Glass has moved to substratum. See the new repo [here](https://github.com/PitchedApps/Material-Glass-Substratum).
+
+The last build for CM can be found on [AndroidFileHost](https://www.androidfilehost.com/?fid=817550096634787340)
+
 # Welcome to the open source project for Material Glass!
 
 You are free to take a look at all the content provided in this project, and may use small components for your own themes. However, please be advised that you are NOT allowed to take complete packages from assets or to simply port my commits to your app. I have made this open sourced to give you a project to learn from, not to copy. With that said, I hope that you do benefit from this access, and I strongly encourage other themers to open source their projects as well.
